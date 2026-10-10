@@ -816,12 +816,6 @@ def write_summary(out_dir: Path, toc_rows: list[tuple[int, str, str]], titles: d
             f"{indent}* [{escape_link_text(title)}]({urllib.parse.quote(rel, safe='/')})"
         )
         listed.add(rel)
-    extras = [page for page in pages if page not in listed]
-    if extras:
-        lines.append("* Topics linked from the help, outside the TOC")
-        for rel in extras:
-            label = titles.get(rel) or posixpath.splitext(posixpath.basename(rel))[0]
-            lines.append(f"  * [{escape_link_text(label)}]({urllib.parse.quote(rel, safe='/')})")
     (out_dir / "SUMMARY.md").write_text("\n".join(lines).rstrip() + "\n", encoding="utf-8")
 
 

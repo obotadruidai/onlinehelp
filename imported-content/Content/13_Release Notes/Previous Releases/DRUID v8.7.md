@@ -72,7 +72,7 @@ For more information, see [PDF Page Count](../../Druid%20AI%20Services/PDF%20Pag
 
 ![](../../Resources/Images/Alerts/languages.png)
 
-For more information, see [DRUID Supported Languages](../../Conversational%20AI/DRUID%20Supported%20Languages.md).
+For more information, see [DRUID Supported Languages](<https://docs.druidai.com/docs/Content/Conversational%20AI/DRUID%20Supported%20Languages.htm>).
 
 <a id="BugFixes"></a>
 

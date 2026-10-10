@@ -111,7 +111,7 @@ In the Text-to-Speech (TTS) section, configure the voice synthesis settings. You
 To add a TTS provider for a specific language:
 
 1. Click the **Add language** button.
-2. In the **Language** field, enter the standard Druid language code (for example, ro for Romanian) that matches either the default or an additional language configured for your AI Agent. For more information, see [Druid Supported Languages](../Conversational%20AI/DRUID%20Supported%20Languages.md).
+2. In the **Language** field, enter the standard Druid language code (for example, ro for Romanian) that matches either the default or an additional language configured for your AI Agent. For more information, see [Druid Supported Languages](<https://docs.druidai.com/docs/Content/Conversational%20AI/DRUID%20Supported%20Languages.htm>).
 3. From the **Text-to-Speech Resource** dropdown, select a speech resource you already created on the tenant. For more information, see [Speech Resource Management and Governance](Speech%20Resource%20Management%20and%20Governance.md).
 4. Save the configuration.
 

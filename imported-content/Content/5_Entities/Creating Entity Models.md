@@ -77,5 +77,5 @@ After creating the entity, you must define what data it holds:
 
 - [Field Types](Field%20Types.md)
 - [Managing Entity Fields](Managing%20Entity%20Fields.md)
-- [Manipulate Data Without DRUID Entity Structures](../How%20to/Manipulate%20Data%20without%20Entity%20Structures.md)
+- [Manipulate Data Without DRUID Entity Structures](<https://docs.druidai.com/docs/Content/How%20to/Manipulate%20Data%20without%20Entity%20Structures.htm>)
 - [System Entities](System%20Entities.md)

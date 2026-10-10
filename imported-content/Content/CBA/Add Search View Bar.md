@@ -24,7 +24,7 @@ To enable search, first add a new view of type ****Quick Search**** to the desir
 
 ![](../Resources/Images/CBA/quck%20search%20add%20view.png)
 
-To define the Quick Search view, follow the instructions provided in section [Create and Design Views](Create%20and%20Design%20Views.md) with the following special particularities:
+To define the Quick Search view, follow the instructions provided in section [Create and Design Views](<https://docs.druidai.com/docs/Content/CBA/Create%20and%20Design%20Views.htm>) with the following special particularities:
 
 <a id="Step2Definetheviewproperties"></a>
 

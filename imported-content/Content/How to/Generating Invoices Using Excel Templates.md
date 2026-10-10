@@ -21,12 +21,12 @@ In this video:
 ## Invoice Generation Procedure
 
 1. Create the excel document template to be used for invoice generation. For information on how to create an Excel template, see [Creating Excel Templates](../7_Integrations/Document%20Builder/Creating%20Excel%20Templates.md).
-2. Import the excel document template into the Druid Portal. For more information, see  [Upload document](../7_Integrations/Document%20Builder/Step%202%20Upload%20document.md).
-3. Create a connection action for invoice document generation. For more information, see [Create Action and Add Integration Tasks for Documents Generation](../7_Integrations/Document%20Builder/Step%203%20Create%20Action%20and%20Add.md).
+2. Import the excel document template into the Druid Portal. For more information, see  [Upload document](<https://docs.druidai.com/docs/Content/7_Integrations/Document%20Builder/Step%202%20Upload%20document.htm>).
+3. Create a connection action for invoice document generation. For more information, see [Create Action and Add Integration Tasks for Documents Generation](<https://docs.druidai.com/docs/Content/7_Integrations/Document%20Builder/Step%203%20Create%20Action%20and%20Add.htm>).
 4. Create the flow for invoice generation. In the video, the flow has three steps as follows:
    1. Get items from the SQL database.
    2. Generate the invoice document.
-      For more information, see [Call the connection action for document generation](../7_Integrations/Document%20Builder/Step%204%20Call%20action%20on%20the.md).
+      For more information, see [Call the connection action for document generation](<https://docs.druidai.com/docs/Content/7_Integrations/Document%20Builder/Step%204%20Call%20action%20on%20the.htm>).
    3. Deliver document to the chat user.
 
 To see the Document Generator in action, open the AI Agent and in the chat enter the utterance you set on the flow. It might take a few seconds until the SQL connector gets data from the SQL database and the Document Generator generates the invoice using the excel document template you provided.

@@ -43,7 +43,7 @@ If you have questions about your Druid tenant, please contact [support@druidai.c
 
 - **REST request payload generation**. The new CustomCode request type lets you construct dynamic JSON request bodies conditionally at runtime and assign them to **RestContext.RequestBody**.  For more information, see [Set request using Custom Code](../../7_Integrations/REST/Request%20Settings.md#Set).
 - **REST response mapping**. The new **Use Custom Code Mapping** option allows you to access **RestContext.ResponseContent** to programmatically parse, filter, and map complex or dynamic API response payloads directly to Druid entity fields.
-  For more information, see [Map REST Response using Custom Code](../../7_Integrations/REST/Map%20REST%20Response%20using%20Custom%20Code.md).
+  For more information, see [Map REST Response using Custom Code](<https://docs.druidai.com/docs/Content/7_Integrations/REST/Map%20REST%20Response%20using%20Custom%20Code.htm>).
 
 - **Knowledge Base - Enhanced answer relevance with Search Priority**. You can now weight KB data sources (Low, Normal (default), High) to control search retrieval behavior in vector search. This ensures critical documents (like official procedures or urgent updates) take precedence over general background materials, delivering more accurate, reliable responses to end users.
 > **Info:** **Search Priority** can be set on initial data source creation or updated at any time in the **Details** tab.

@@ -16,7 +16,7 @@ Druid offers a Dashboard template with predefined widgets, which provides you va
 - [Automations](#Automations_KPIs) – provides insights related to Druid integrations.
 - [NLU](#NLU_KPIs) – provides information that helps you analyze the performance of your NLP model.
 
-The dashboard template contains only predefined Druid KPIs. If you want to customize the dashboard with your own KPIs, see [Customizing the dashboard with custom KPIs](Customizing%20the%20dashboard%20with%20custom%20KPIs.md).
+The dashboard template contains only predefined Druid KPIs. If you want to customize the dashboard with your own KPIs, see [Customizing the dashboard with custom KPIs](<https://docs.druidai.com/docs/Content/Usage/Customizing%20the%20dashboard%20with%20custom%20KPIs.htm>).
 
 <a id="AccessingtheAIAgentSummaryDashboard"></a>
 

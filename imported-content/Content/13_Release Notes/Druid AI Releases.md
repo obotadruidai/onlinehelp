@@ -81,57 +81,57 @@ The table below provides the planned release schedule for upcoming Druid version
 | [8.3](Previous%20Releases/DRUID%20v8.3.md) |  | November 07, 2024 | November 21, 2024 | November 21, 2024 | November 21, 2024 |
 | [8.2](Previous%20Releases/DRUID%20v8.2.md) | Recommended | October 24, 2024 | November 21, 2024 (part of 8.3) | November 21, 2024 (part of 8.3) | November 21, 2024 (part of 7.21) |
 | [8.1](Previous%20Releases/DRUID%20v8.1.md) | Recommended | October 10, 2024 | October 24, 2024 | October 24, 2024 | October 24, 2024 |
-| [7.18](Previous%20Releases/DRUID%20v7.18.md) | Recommended | September 26, 2024 | October 24, 2024 (part of 8.1) | October 24, 2024 (part of 8.1) | October 24, 2024 (part of 8.1) |
-| [7.17](Previous%20Releases/DRUID%20v7.17.md) | Required | September 12, 2024 | September 26, 2024 | September 26, 2024 | September 26, 2024 |
-| [7.16](Previous%20Releases/DRUID%20v7.16.md) | Recommended | August 29, 2024 | September 26, 2024 (part of 7.17) | September 26, 2024 (part of 7.17) | September 26, 2024 (part of 7.17) |
-| [7.15](Previous%20Releases/DRUID%20v7.15.md) |  | August 16, 2024 | August 29, 2024 | August 29, 2024 | August 29, 2024 |
-| [7.14](Previous%20Releases/DRUID%20v7.14.md) | Recommended | August 01, 2024 | August 29, 2024 (part of 7.15) | August 29, 2024 (part of 7.15) | August 29, 2024 (part of 7.15) |
-| [7.13](Previous%20Releases/DRUID%20v7.13.md) | Recommended | July 18, 2024 | August 01, 2024 | August 01, 2024 | August 01, 2024 |
-| [7.12](Previous%20Releases/DRUID%20v7.12.md) |  | July 04, 2024 | August 01, 2024 | August 01, 2024 | August 01, 2024 |
-| [7.11](Previous%20Releases/DRUID%20v7.11.md) |  | June 20, 2024 | July 04, 2024 | July 04, 2024 | July 04, 2024 |
-| [7.10](Previous%20Releases/DRUID%20v7.10.md) |  | June 06, 2024 | July 04, 2024 (part of 7.11) | July 04, 2024 (part of 7.11) | July 04, 2024 (part of 7.11) |
-| [7.9](Previous%20Releases/DRUID%20v7.9.md) |  | May 23, 2024 | June 06, 2024 | June 06, 2024 | June 06, 2024 |
-| [7.8](Previous%20Releases/DRUID%20v7.8.md) |  | May 09, 2024 | June 06, 2024 (part of 7.9) | June 06, 2024 (part of 7.9) | June 06, 2024 (part of 7.9) |
-| [7.7](Previous%20Releases/DRUID%20v7.7.md) |  | April 25, 2024 | May 09, 2024 | May 09, 2024 | May 09, 2024 |
-| [7.6](Previous%20Releases/DRUID%20v7.6.md) |  | April 11, 2024 | May 09, 2024 (part of 7.7) | May 09, 2024 (part of 7.7) | May 09, 2024 (part of 7.7) |
-| [7.5](Previous%20Releases/DRUID%20v7.5.md) | Required | March 28, 2024 | April 11, 2024 | April 11, 2024 | April 11, 2024 |
-| [7.4](Previous%20Releases/DRUID%20v7.4.md) | Recommended | March 14, 2024 | April 11, 2024 (part of 7.5) | April 11, 2024 (part of 7.5) | April 11, 2024 (part of 7.5) |
-| [7.3](Previous%20Releases/DRUID%20v7.3.md) | Recommended | February 29, 2024 | March 14, 2024 | March 14, 2024 | March 14, 2024 |
-| [7.2](Previous%20Releases/DRUID%20v7.2.md) |  | February 15, 2024 | March 14, 2024 (part of 7.3) | March 14, 2024 (part of 7.3) | March 14, 2024 (part of 7.3) |
-| [7.1](Previous%20Releases/DRUID%20v7.1.md) | Required | February 01, 2024 | February 15, 2024 | February 15, 2024 | February 15, 2024 |
-| [7.0](Previous%20Releases/DRUID%20v7.0.md) |  | January 18, 2024 | February 15, 2024 (part of 7.1) | February 15, 2024 (part of 7.1) | February 15, 2024 (part of 7.1) |
-| [5.31](Previous%20Releases/DRUID%20v5.31.md) | Required | January 04, 2024 | January 18, 2024 | January 18, 2024 |  |
-| [5.30](Previous%20Releases/DRUID%20v5.30.md) |  | December 21, 2023 | January 18, 2024 (part of 5.31) | January 18, 2024 (part of 5.31) | January 18, 2023 (part of 5.31) |
-| [5.29](Previous%20Releases/DRUID%20v5.29.md) | Required | December 07, 2023 | December 21, 2023 | December 21, 2023 | December 21, 2023 |
-| [5.28](Previous%20Releases/DRUID%20v5.28.md) |  | November 23, 2023 | December 21, 2023 (part of 5.29) | December 21, 2023 (part of 5.29) | December 21, 2023 (part of 5.29) |
-| [5.27](Previous%20Releases/DRUID%20v5.27.md) | Recommended | November 09, 2023 | November 23, 2023 | November 23, 2023 | November 23, 2023 |
-| [5.26](Previous%20Releases/DRUID%20v5.26.md) |  | October 26, 2023 | November 23, 2023 (part of 5.27) | November 23, 2023 (part of 5.27) | November 23, 2023 (part of 5.27) |
-| [5.25](Previous%20Releases/DRUID%20v5.25.md) |  | October 12, 2023 | October 26, 2023 | October 26, 2023 | October 26, 2023 |
-| [5.24](Previous%20Releases/DRUID%20v5.24.md) |  | September 28, 2023 | October 26, 2023 (part of 5.25) | October 26, 2023 (part of 5.25) | October 26, 2023 (part of 5.25) |
-| [5.23](Previous%20Releases/DRUID%20v5.23.md) |  | September 15, 2023 | September 28, 2023 | September 28, 2023 | September 28, 2023 |
-| [5.22](Previous%20Releases/DRUID%20v5.22.md) |  | August 31, 2023 | September 28, 2023 (part of 5.23) | September 28, 2023 (part of 5.23) | September 28, 2023 (part of 5.23) |
-| [5.21](Previous%20Releases/DRUID%20v5.21.md) |  | August 17, 2023 | August 31, 2023 | August 31, 2023 | August 31, 2023 |
-| [5.20](Previous%20Releases/DRUID%20v5.20.md) |  | August 03, 2023 | August 31, 2023 (part of 5.21) | August 31, 2023 (part of 5.21) | August 31, 2023 (part of 5.21) |
-| [5.19](Previous%20Releases/DRUID%20v5.19.md) |  | July 20, 2023 | August 03, 2023 | August 03, 2023 | August 03, 2023 |
-| [5.18](Previous%20Releases/DRUID%20v5.18.md) | Recommended | July 06, 2023 | August 03, 2023 (part of 5.19) | August 03, 2023 (part of 5.19) | August 03, 2023 (part of 5.19) |
-| [5.17](Previous%20Releases/DRUID%20v5.17.md) |  | June 23, 2023 | July 06, 2023 | July 06, 2023 | July 06, 2023 |
-| [5.16](Previous%20Releases/DRUID%20v5.16.md) |  | June 12, 2023 | July 06, 2023 (part of 5.17) | July 06, 2023 (part of 5.17) | July 06, 2023 (part of 5.17) |
-| [5.15](Previous%20Releases/DRUID%20v5.15.md) |  | May 25, 2023 | June 08, 2023 | June 08, 2023 | June 08, 2023 |
-| [5.14](Previous%20Releases/DRUID%20v5.14.md) | Recommended | May 11, 2023 | June 08, 2023 (part of 5.15) | June 08, 2023 (part of 5.15) | June 08, 2023 (part of 5.15) |
-| [5.13](Previous%20Releases/DRUID%20v5.13.md) |  | April 27, 2023 | May 11, 2023 | May 11, 2023 | May 11, 2023 |
-| [5.12](Previous%20Releases/DRUID%20v5.12.md) | Recommended | April 20, 2023 | May 11, 2023 (part of 5.13) | May 11, 2023 (part of 5.13) | May 11, 2023 (part of 5.13) |
-| [5.11](Previous%20Releases/DRUID%20v5.11.md) | Recommended | March 30, 2023 | April 20, 2023 | April 20, 2023 | April 20, 2023 |
-| [5.10](Previous%20Releases/DRUID%20v5.10.md) |  | March 16, 2023 | April 20, 2023 (part of 5.11) | April 20, 2023 (part of 5.11) | April 20, 2023 (part of 5.11) |
-| [5.9](Previous%20Releases/DRUID%20v5.9.md) |  | March 02, 2023 | March 16, 2023 | March 16, 2023 | March 16, 2023 |
-| [5.8](Previous%20Releases/DRUID%20v5.8.md) | Yes | February 16, 2023 | March 16, 2023 (part of 5.9) | March 16, 2023 (part of 5.9) | March 16, 2023 (part of 5.9) |
-| [5.7](Previous%20Releases/DRUID%20v5.7.md) | Yes | February 02, 2023 | February 16, 2023 | February 16, 2023 | February 16, 2023 |
-| [5.6](Previous%20Releases/DRUID%20v5.6.md) |  | January 19, 2023 | February 16, 2023 (part of 5.7) | February 16, 2023 (part of 5.7) | February 16, 2023 (part of 5.7) |
-| [5.5](Previous%20Releases/DRUID%20v5.5.md) |  | January 05, 2023 | January 19, 2023 | January 19, 2023 | January 05, 2023 |
-| [5.4](Previous%20Releases/DRUID%20v5.4.md) | Yes | January 05, 2023 | January 19, 2023 (part of 5.5) | January 19, 2023 (part of 5.5) | January 19, 2023 (part of 5.5) |
-| [5.3](Previous%20Releases/DRUID%20v5.3.md) | Yes | December 08, 2022 | January 05, 2023 | January 05, 2023 | January 05, 2023 |
-| [5.2](Previous%20Releases/DRUID%20v5.2.md) |  | November 24, 2022 | January 05, 2023 (part of 5.3) | January 05, 2023 (part of 5.3) | January 05, 2023(part of 5.3) |
-| [5.1](Previous%20Releases/DRUID%20v5.1.md) |  | November 10, 2022 | November 24, 2022 | November 24, 2022 | November 24, 2022 |
-| [5.0](Previous%20Releases/DRUID%20V5.0.md) | Yes | October 27, 2022 | November 24, 2022 (part of 5.1) | November 24, 2022 (part of 5.1) | November 24, 2022 (part of 5.1) |
+| [7.18](<https://docs.druidai.com/docs/Content/13_Release%20Notes/Previous%20Releases/DRUID%20v7.18.htm>) | Recommended | September 26, 2024 | October 24, 2024 (part of 8.1) | October 24, 2024 (part of 8.1) | October 24, 2024 (part of 8.1) |
+| [7.17](<https://docs.druidai.com/docs/Content/13_Release%20Notes/Previous%20Releases/DRUID%20v7.17.htm>) | Required | September 12, 2024 | September 26, 2024 | September 26, 2024 | September 26, 2024 |
+| [7.16](<https://docs.druidai.com/docs/Content/13_Release%20Notes/Previous%20Releases/DRUID%20v7.16.htm>) | Recommended | August 29, 2024 | September 26, 2024 (part of 7.17) | September 26, 2024 (part of 7.17) | September 26, 2024 (part of 7.17) |
+| [7.15](<https://docs.druidai.com/docs/Content/13_Release%20Notes/Previous%20Releases/DRUID%20v7.15.htm>) |  | August 16, 2024 | August 29, 2024 | August 29, 2024 | August 29, 2024 |
+| [7.14](<https://docs.druidai.com/docs/Content/13_Release%20Notes/Previous%20Releases/DRUID%20v7.14.htm>) | Recommended | August 01, 2024 | August 29, 2024 (part of 7.15) | August 29, 2024 (part of 7.15) | August 29, 2024 (part of 7.15) |
+| [7.13](<https://docs.druidai.com/docs/Content/13_Release%20Notes/Previous%20Releases/DRUID%20v7.13.htm>) | Recommended | July 18, 2024 | August 01, 2024 | August 01, 2024 | August 01, 2024 |
+| [7.12](<https://docs.druidai.com/docs/Content/13_Release%20Notes/Previous%20Releases/DRUID%20v7.12.htm>) |  | July 04, 2024 | August 01, 2024 | August 01, 2024 | August 01, 2024 |
+| [7.11](<https://docs.druidai.com/docs/Content/13_Release%20Notes/Previous%20Releases/DRUID%20v7.11.htm>) |  | June 20, 2024 | July 04, 2024 | July 04, 2024 | July 04, 2024 |
+| [7.10](<https://docs.druidai.com/docs/Content/13_Release%20Notes/Previous%20Releases/DRUID%20v7.10.htm>) |  | June 06, 2024 | July 04, 2024 (part of 7.11) | July 04, 2024 (part of 7.11) | July 04, 2024 (part of 7.11) |
+| [7.9](<https://docs.druidai.com/docs/Content/13_Release%20Notes/Previous%20Releases/DRUID%20v7.9.htm>) |  | May 23, 2024 | June 06, 2024 | June 06, 2024 | June 06, 2024 |
+| [7.8](<https://docs.druidai.com/docs/Content/13_Release%20Notes/Previous%20Releases/DRUID%20v7.8.htm>) |  | May 09, 2024 | June 06, 2024 (part of 7.9) | June 06, 2024 (part of 7.9) | June 06, 2024 (part of 7.9) |
+| [7.7](<https://docs.druidai.com/docs/Content/13_Release%20Notes/Previous%20Releases/DRUID%20v7.7.htm>) |  | April 25, 2024 | May 09, 2024 | May 09, 2024 | May 09, 2024 |
+| [7.6](<https://docs.druidai.com/docs/Content/13_Release%20Notes/Previous%20Releases/DRUID%20v7.6.htm>) |  | April 11, 2024 | May 09, 2024 (part of 7.7) | May 09, 2024 (part of 7.7) | May 09, 2024 (part of 7.7) |
+| [7.5](<https://docs.druidai.com/docs/Content/13_Release%20Notes/Previous%20Releases/DRUID%20v7.5.htm>) | Required | March 28, 2024 | April 11, 2024 | April 11, 2024 | April 11, 2024 |
+| [7.4](<https://docs.druidai.com/docs/Content/13_Release%20Notes/Previous%20Releases/DRUID%20v7.4.htm>) | Recommended | March 14, 2024 | April 11, 2024 (part of 7.5) | April 11, 2024 (part of 7.5) | April 11, 2024 (part of 7.5) |
+| [7.3](<https://docs.druidai.com/docs/Content/13_Release%20Notes/Previous%20Releases/DRUID%20v7.3.htm>) | Recommended | February 29, 2024 | March 14, 2024 | March 14, 2024 | March 14, 2024 |
+| [7.2](<https://docs.druidai.com/docs/Content/13_Release%20Notes/Previous%20Releases/DRUID%20v7.2.htm>) |  | February 15, 2024 | March 14, 2024 (part of 7.3) | March 14, 2024 (part of 7.3) | March 14, 2024 (part of 7.3) |
+| [7.1](<https://docs.druidai.com/docs/Content/13_Release%20Notes/Previous%20Releases/DRUID%20v7.1.htm>) | Required | February 01, 2024 | February 15, 2024 | February 15, 2024 | February 15, 2024 |
+| [7.0](<https://docs.druidai.com/docs/Content/13_Release%20Notes/Previous%20Releases/DRUID%20v7.0.htm>) |  | January 18, 2024 | February 15, 2024 (part of 7.1) | February 15, 2024 (part of 7.1) | February 15, 2024 (part of 7.1) |
+| [5.31](<https://docs.druidai.com/docs/Content/13_Release%20Notes/Previous%20Releases/DRUID%20v5.31.htm>) | Required | January 04, 2024 | January 18, 2024 | January 18, 2024 |  |
+| [5.30](<https://docs.druidai.com/docs/Content/13_Release%20Notes/Previous%20Releases/DRUID%20v5.30.htm>) |  | December 21, 2023 | January 18, 2024 (part of 5.31) | January 18, 2024 (part of 5.31) | January 18, 2023 (part of 5.31) |
+| [5.29](<https://docs.druidai.com/docs/Content/13_Release%20Notes/Previous%20Releases/DRUID%20v5.29.htm>) | Required | December 07, 2023 | December 21, 2023 | December 21, 2023 | December 21, 2023 |
+| [5.28](<https://docs.druidai.com/docs/Content/13_Release%20Notes/Previous%20Releases/DRUID%20v5.28.htm>) |  | November 23, 2023 | December 21, 2023 (part of 5.29) | December 21, 2023 (part of 5.29) | December 21, 2023 (part of 5.29) |
+| [5.27](<https://docs.druidai.com/docs/Content/13_Release%20Notes/Previous%20Releases/DRUID%20v5.27.htm>) | Recommended | November 09, 2023 | November 23, 2023 | November 23, 2023 | November 23, 2023 |
+| [5.26](<https://docs.druidai.com/docs/Content/13_Release%20Notes/Previous%20Releases/DRUID%20v5.26.htm>) |  | October 26, 2023 | November 23, 2023 (part of 5.27) | November 23, 2023 (part of 5.27) | November 23, 2023 (part of 5.27) |
+| [5.25](<https://docs.druidai.com/docs/Content/13_Release%20Notes/Previous%20Releases/DRUID%20v5.25.htm>) |  | October 12, 2023 | October 26, 2023 | October 26, 2023 | October 26, 2023 |
+| [5.24](<https://docs.druidai.com/docs/Content/13_Release%20Notes/Previous%20Releases/DRUID%20v5.24.htm>) |  | September 28, 2023 | October 26, 2023 (part of 5.25) | October 26, 2023 (part of 5.25) | October 26, 2023 (part of 5.25) |
+| [5.23](<https://docs.druidai.com/docs/Content/13_Release%20Notes/Previous%20Releases/DRUID%20v5.23.htm>) |  | September 15, 2023 | September 28, 2023 | September 28, 2023 | September 28, 2023 |
+| [5.22](<https://docs.druidai.com/docs/Content/13_Release%20Notes/Previous%20Releases/DRUID%20v5.22.htm>) |  | August 31, 2023 | September 28, 2023 (part of 5.23) | September 28, 2023 (part of 5.23) | September 28, 2023 (part of 5.23) |
+| [5.21](<https://docs.druidai.com/docs/Content/13_Release%20Notes/Previous%20Releases/DRUID%20v5.21.htm>) |  | August 17, 2023 | August 31, 2023 | August 31, 2023 | August 31, 2023 |
+| [5.20](<https://docs.druidai.com/docs/Content/13_Release%20Notes/Previous%20Releases/DRUID%20v5.20.htm>) |  | August 03, 2023 | August 31, 2023 (part of 5.21) | August 31, 2023 (part of 5.21) | August 31, 2023 (part of 5.21) |
+| [5.19](<https://docs.druidai.com/docs/Content/13_Release%20Notes/Previous%20Releases/DRUID%20v5.19.htm>) |  | July 20, 2023 | August 03, 2023 | August 03, 2023 | August 03, 2023 |
+| [5.18](<https://docs.druidai.com/docs/Content/13_Release%20Notes/Previous%20Releases/DRUID%20v5.18.htm>) | Recommended | July 06, 2023 | August 03, 2023 (part of 5.19) | August 03, 2023 (part of 5.19) | August 03, 2023 (part of 5.19) |
+| [5.17](<https://docs.druidai.com/docs/Content/13_Release%20Notes/Previous%20Releases/DRUID%20v5.17.htm>) |  | June 23, 2023 | July 06, 2023 | July 06, 2023 | July 06, 2023 |
+| [5.16](<https://docs.druidai.com/docs/Content/13_Release%20Notes/Previous%20Releases/DRUID%20v5.16.htm>) |  | June 12, 2023 | July 06, 2023 (part of 5.17) | July 06, 2023 (part of 5.17) | July 06, 2023 (part of 5.17) |
+| [5.15](<https://docs.druidai.com/docs/Content/13_Release%20Notes/Previous%20Releases/DRUID%20v5.15.htm>) |  | May 25, 2023 | June 08, 2023 | June 08, 2023 | June 08, 2023 |
+| [5.14](<https://docs.druidai.com/docs/Content/13_Release%20Notes/Previous%20Releases/DRUID%20v5.14.htm>) | Recommended | May 11, 2023 | June 08, 2023 (part of 5.15) | June 08, 2023 (part of 5.15) | June 08, 2023 (part of 5.15) |
+| [5.13](<https://docs.druidai.com/docs/Content/13_Release%20Notes/Previous%20Releases/DRUID%20v5.13.htm>) |  | April 27, 2023 | May 11, 2023 | May 11, 2023 | May 11, 2023 |
+| [5.12](<https://docs.druidai.com/docs/Content/13_Release%20Notes/Previous%20Releases/DRUID%20v5.12.htm>) | Recommended | April 20, 2023 | May 11, 2023 (part of 5.13) | May 11, 2023 (part of 5.13) | May 11, 2023 (part of 5.13) |
+| [5.11](<https://docs.druidai.com/docs/Content/13_Release%20Notes/Previous%20Releases/DRUID%20v5.11.htm>) | Recommended | March 30, 2023 | April 20, 2023 | April 20, 2023 | April 20, 2023 |
+| [5.10](<https://docs.druidai.com/docs/Content/13_Release%20Notes/Previous%20Releases/DRUID%20v5.10.htm>) |  | March 16, 2023 | April 20, 2023 (part of 5.11) | April 20, 2023 (part of 5.11) | April 20, 2023 (part of 5.11) |
+| [5.9](<https://docs.druidai.com/docs/Content/13_Release%20Notes/Previous%20Releases/DRUID%20v5.9.htm>) |  | March 02, 2023 | March 16, 2023 | March 16, 2023 | March 16, 2023 |
+| [5.8](<https://docs.druidai.com/docs/Content/13_Release%20Notes/Previous%20Releases/DRUID%20v5.8.htm>) | Yes | February 16, 2023 | March 16, 2023 (part of 5.9) | March 16, 2023 (part of 5.9) | March 16, 2023 (part of 5.9) |
+| [5.7](<https://docs.druidai.com/docs/Content/13_Release%20Notes/Previous%20Releases/DRUID%20v5.7.htm>) | Yes | February 02, 2023 | February 16, 2023 | February 16, 2023 | February 16, 2023 |
+| [5.6](<https://docs.druidai.com/docs/Content/13_Release%20Notes/Previous%20Releases/DRUID%20v5.6.htm>) |  | January 19, 2023 | February 16, 2023 (part of 5.7) | February 16, 2023 (part of 5.7) | February 16, 2023 (part of 5.7) |
+| [5.5](<https://docs.druidai.com/docs/Content/13_Release%20Notes/Previous%20Releases/DRUID%20v5.5.htm>) |  | January 05, 2023 | January 19, 2023 | January 19, 2023 | January 05, 2023 |
+| [5.4](<https://docs.druidai.com/docs/Content/13_Release%20Notes/Previous%20Releases/DRUID%20v5.4.htm>) | Yes | January 05, 2023 | January 19, 2023 (part of 5.5) | January 19, 2023 (part of 5.5) | January 19, 2023 (part of 5.5) |
+| [5.3](<https://docs.druidai.com/docs/Content/13_Release%20Notes/Previous%20Releases/DRUID%20v5.3.htm>) | Yes | December 08, 2022 | January 05, 2023 | January 05, 2023 | January 05, 2023 |
+| [5.2](<https://docs.druidai.com/docs/Content/13_Release%20Notes/Previous%20Releases/DRUID%20v5.2.htm>) |  | November 24, 2022 | January 05, 2023 (part of 5.3) | January 05, 2023 (part of 5.3) | January 05, 2023(part of 5.3) |
+| [5.1](<https://docs.druidai.com/docs/Content/13_Release%20Notes/Previous%20Releases/DRUID%20v5.1.htm>) |  | November 10, 2022 | November 24, 2022 | November 24, 2022 | November 24, 2022 |
+| [5.0](<https://docs.druidai.com/docs/Content/13_Release%20Notes/Previous%20Releases/DRUID%20V5.0.htm>) | Yes | October 27, 2022 | November 24, 2022 (part of 5.1) | November 24, 2022 (part of 5.1) | November 24, 2022 (part of 5.1) |
 
 <a id="DRUIDReleaseLifeCycle"></a>
 

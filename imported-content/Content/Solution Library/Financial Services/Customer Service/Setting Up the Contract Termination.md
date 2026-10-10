@@ -97,4 +97,4 @@ Switch to UiPath Assistant. Find your process (the one waiting for install), cli
 
 ## Related Topics
 
-- [Integrating Using Robot.JS](../../../7_Integrations/UiPath/Integrating%20Using%20Robot.JS.md)
+- [Integrating Using Robot.JS](<https://docs.druidai.com/docs/Content/7_Integrations/UiPath/Integrating%20Using%20Robot.JS.htm>)

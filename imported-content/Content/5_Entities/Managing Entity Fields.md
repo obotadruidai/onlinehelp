@@ -87,5 +87,5 @@ In list view, a confirmation dialog appears upon attempting to delete a field. C
 
 - [Field Types](Field%20Types.md)
 - [Managing Entities](Managing%20Entities.md)
-- [Manipulate Data Without DRUID Entity Structures](../How%20to/Manipulate%20Data%20without%20Entity%20Structures.md)
+- [Manipulate Data Without DRUID Entity Structures](<https://docs.druidai.com/docs/Content/How%20to/Manipulate%20Data%20without%20Entity%20Structures.htm>)
 - [Multilingual Entity Fields](Multilingual%20Entity%20Fields.md)

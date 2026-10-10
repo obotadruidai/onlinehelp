@@ -21,7 +21,7 @@ To generate additional information for the extracted content using an LLM, turn 
 
 ![](../../Resources/Images/druid%2010.1/enable%20aug.png)
 
-> **Info:** Configure augmentation strategies in **Knowledge Base Settings** > **Advanced** > **Augmentation**. For more information, see [Augmentation.htm](Augmentation.md).
+> **Info:** Configure augmentation strategies in **Knowledge Base Settings** > **Advanced** > **Augmentation**. For more information, see [Augmentation.htm](<https://docs.druidai.com/docs/Content/Knowledgebase/KB%20Settings/Augmentation.htm>).
 
 <a id="LLMContentChunking"></a>
 

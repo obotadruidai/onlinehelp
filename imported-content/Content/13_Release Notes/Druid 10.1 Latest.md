@@ -80,7 +80,7 @@ The new **Augmentation** area in **Knowledge Base Settings** > **Advanced** allo
 
 ![](../Resources/Images/druid%2010.1/augmentation%20page.png)
 
-For more information, see [Augmentation](../Knowledgebase/KB%20Settings/Augmentation.md) and [Basic Content Chunking](../Knowledgebase/KB%20Settings/Content%20Chunkers.md#Basic).
+For more information, see [Augmentation](<https://docs.druidai.com/docs/Content/Knowledgebase/KB%20Settings/Augmentation.htm>) and [Basic Content Chunking](../Knowledgebase/KB%20Settings/Content%20Chunkers.md#Basic).
 
 <a id="Improvements"></a>
 

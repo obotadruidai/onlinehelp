@@ -58,7 +58,7 @@ If you have questions about your DRUID tenant, please contact [support@Druidai.c
 
 ![](../../Resources/Images/druid%209.9/form%20automations.png)
 
-- **DRUID – New Language Support**. This release adds support for the following languages: Bengali, Gujarati, Nepali, Farsi, Urdu, Pashto, and Mirpuri (a Punjabi dialect).  For details on all languages supported across DRUID NLP features, see [DRUID Supported Languages](../../Conversational%20AI/DRUID%20Supported%20Languages.md).
+- **DRUID – New Language Support**. This release adds support for the following languages: Bengali, Gujarati, Nepali, Farsi, Urdu, Pashto, and Mirpuri (a Punjabi dialect).  For details on all languages supported across DRUID NLP features, see [DRUID Supported Languages](<https://docs.druidai.com/docs/Content/Conversational%20AI/DRUID%20Supported%20Languages.htm>).
 
 <a id="BugFixes"></a>
 

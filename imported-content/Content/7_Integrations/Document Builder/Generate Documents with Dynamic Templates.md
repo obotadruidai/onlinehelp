@@ -103,5 +103,5 @@ If the user chooses Company A in the chat, then a document will be generated usi
 
 - [Creating Excel Templates](Creating%20Excel%20Templates.md)
 - [Creating Word Document Templates](Creating%20Word%20Document%20Templates.md)
-- [Step 3. Add Integration Tasks for Documents Generation](Step%203%20Create%20Action%20and%20Add.md)
-- [Step 4. Call action on the desired flow step](Step%204%20Call%20action%20on%20the.md)
+- [Step 3. Add Integration Tasks for Documents Generation](<https://docs.druidai.com/docs/Content/7_Integrations/Document%20Builder/Step%203%20Create%20Action%20and%20Add.htm>)
+- [Step 4. Call action on the desired flow step](<https://docs.druidai.com/docs/Content/7_Integrations/Document%20Builder/Step%204%20Call%20action%20on%20the.htm>)

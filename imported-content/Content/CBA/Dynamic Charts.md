@@ -63,7 +63,7 @@ Configure the parameters described in the table below.
 | Display Name | The Title of the chart, localized. |
 | Details | The Subtitle of the chart, localized. |
 | Integration | Select the integration you configured at [Step 1](#Step_1). |
-| View drill down | Select the special view you created (if any) to allow users click on the chart to get more insights about the information presented in the chart. For information on how to create a special view for this, see [Create special views to drill-down info in Forms and Charts](Create%20special%20views%20to%20drill-down%20info%20in%20Forms%20and%20Charts.md). |
+| View drill down | Select the special view you created (if any) to allow users click on the chart to get more insights about the information presented in the chart. For information on how to create a special view for this, see [Create special views to drill-down info in Forms and Charts](<https://docs.druidai.com/docs/Content/CBA/Create%20special%20views%20to%20drill-down%20info%20in%20Forms%20and%20Charts.htm>). |
 | Chart type | The current chart type. You can change the type. |
 | Show value on chart | Toggle this option on to display data labels directly on chart elements, ensuring key values are visible at a glance without requiring a mouse hover. |
 | Apply Dashboard Date Filter | Filters data in dynamic charts on the custom dashboards by dashboard date filter. For more information, see [Custom dashboards](../Data%20Analytics%20%26%20Insights/Track%20Business%20KPIs.md)..  **Info:** In Druid versions prior to 9.31, this field name is **Filter By**. |

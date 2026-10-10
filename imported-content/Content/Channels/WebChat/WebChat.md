@@ -86,5 +86,5 @@ The default snippet contains:
 ## Related Topics
 
 - [Handling Authentication](../../How%20to/Handling%20Authentication.md)
-- [WebChat Common Styling and Behavior (Bot framework v3)](WebChat%20Common%20Styling%20and%20Behavior_v3.md)
+- [WebChat Common Styling and Behavior (Bot framework v3)](<https://docs.druidai.com/docs/Content/Channels/WebChat/WebChat%20Common%20Styling%20and%20Behavior_v3.htm>)
 - [WebChat Common Styling and Behavior](WebChat_Common_Styling_and_Behavior_v4.md)
