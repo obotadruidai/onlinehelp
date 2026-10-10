@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Druid Vision"
 ---
 
 <a id="DruidVision"></a>
 
-# Druid Vision
 
 The Druid Vision API engine performs Optical Character Recognition (OCR) and data extraction from various types of documents.
 

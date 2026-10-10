@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Provisioning Portal Users with Active Directory via LDAP"
 ---
 
 <a id="ProvisioningPortalUserswithActiveDirectoryviaLDAP"></a>
 
-# Provisioning Portal Users with Active Directory via LDAP
 
 The Lightweight Directory Access Protocol (LDAP) makes it possible for DRUID to query user information from the Active Directory.
 

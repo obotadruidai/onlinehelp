@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Grocery"
 ---
 
 <a id="Grocery"></a>
 
-# Grocery
 
 This solution provides conversational flows that will help any company to cross and up sell while inspiring the customers with amazing recipes that will help them save time by proposing just the perfect ingredients they can buy from the online store. The client can easily add or remove products to their shopping list and place the order in one moment. Once the product has been added to the cart, the customer will get a speedy and straightforward checkout.
 

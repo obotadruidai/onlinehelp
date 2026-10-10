@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Annotating Conversation History"
 ---
 
 <a id="AnnotatingConversationHistory"></a>
 
-# Annotating Conversation History
 
 Using the Annotation Tool you can annotate messages one by one or in bulk.
 

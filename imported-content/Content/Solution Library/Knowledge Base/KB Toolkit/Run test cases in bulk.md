@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Run Test Plans and Analyze Results"
 ---
 
 <a id="RunTestPlansandAnalyzeResults"></a>
 
-# Run Test Plans and Analyze Results
 
 Running test cases in bulk ensures thorough testing and helps maintain the quality of your AI Agent performance. It allows you to efficiently test multiple scenarios within a test plan.
 

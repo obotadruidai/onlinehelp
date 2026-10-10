@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Generate ZUGFeRD XML"
 ---
 
 <a id="GenerateZUGFeRDXML"></a>
 
-# Generate ZUGFeRD XML
 
 The generate-zugferd-xml endpoint generates a ZUGFeRD-compliant XML invoice document based on the provided invoice data.
 

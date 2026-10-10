@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Azure Blob Storage Connector"
 ---
 
 <a id="AzureBlobStorageConnector"></a>
 
-# Azure Blob Storage Connector
 
 The Druid AI Platform enables you to connect to Azure Blob Storage to store large amounts of unstructured data, such as text or binary data, and get share URLs to access them from anywhere in the world via HTTP or HTTPS.
 

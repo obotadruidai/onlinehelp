@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Dashboard Drill-down Views"
 ---
 
 <a id="DashboardDrilldownViews"></a>
 
-# Dashboard Drill-down Views
 
 The dashboards are fully interactive, enabling a seamless transition from high-level visual trends to granular conversation analysis details. This hierarchy allows you to validate AI assessments and perform deep-dive root cause analysis.
 

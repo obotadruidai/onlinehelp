@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Customizing Live Chat"
 ---
 
 <a id="CustomizingLiveChat"></a>
 
-# Customizing Live Chat
 
 To help you understand how to customize the Live Chat Starter so that you have a live chat solution that best suits your needs, this section describes how the AI Agent handles live chat from different perspectives based on the predefined Live Chat Starter flows.
 

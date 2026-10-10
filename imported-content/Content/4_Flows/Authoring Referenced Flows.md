@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Authoring Referenced Flows"
 ---
 
 <a id="AuthoringReferencedFlows"></a>
 
-# Authoring Referenced Flows
 
 In the Druid AI Platform, a flow can reference (link) other flows, allowing you to build modular, reusable conversation structures. Referenced flows appear as expandable groups inside the Flow Diagram, so you can author them inline without navigating away from the current flow.
 

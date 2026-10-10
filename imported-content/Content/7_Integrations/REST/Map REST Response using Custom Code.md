@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Map REST Response using Custom Code"
 ---
 
 <a id="MapRESTResponseusingCustomCode"></a>
 
-# Map REST Response using Custom Code
 
 When integration scenarios require advanced data transformations, conditional checks, or custom array processing, you can write JavaScript directly in the REST response configuration to map response attributes to DRUID entity fields.
 

@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Sending Email Links in the Chat"
 ---
 
 <a id="SendingEmailLinksintheChat"></a>
 
-# Sending Email Links in the Chat
 
 Email links are used for linking directly to an email address, which will automatically launch an email browser (or the user’s default email client) when the link is clicked.
 

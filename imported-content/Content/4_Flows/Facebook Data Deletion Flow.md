@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Facebook Data Deletion Flow"
 ---
 
 <a id="FacebookDataDeletionFlow"></a>
 
-# Facebook Data Deletion Flow
 
 Facebook requires applications to provide a mechanism for deleting user personal data when a user requests it or deletes their Facebook account. Druid supports this requirement through the Facebook Data Deletion Flow.
 

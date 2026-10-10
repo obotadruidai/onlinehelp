@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Malay Stop Words"
 ---
 
 <a id="MalayStopWords"></a>
 
-# Malay Stop Words
 
 abdul
 

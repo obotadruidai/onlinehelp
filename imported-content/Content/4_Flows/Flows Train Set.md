@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Flows Train Set"
 ---
 
 <a id="FlowsTrainSet"></a>
 
-# Flows Train Set
 
 Flows Train Set is designed to simplify the business user experience creating simple conversations so that no chat AI Agent technology understanding is required.
 

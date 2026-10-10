@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "AI Knowledge Base Builder"
 ---
 
 <a id="AIKnowledgeBaseBuilder"></a>
 
-# AI Knowledge Base Builder
 
 The **AI Knowledge Base Builder** is an add-on for the **Live Chat Advanced** solution designed to automatically create and maintain your company’s Knowledge Base using real customer conversations. Powered by GPT-4.1, it analyzes live chat interactions between customers and human agents and automatically generates potential Knowledge Base articles (KB proposals). Each proposal includes a suggested question and a detailed answer extracted from real interactions.
 

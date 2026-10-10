@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Helpdesk, FAQ"
 ---
 
 <a id="HelpdeskFAQ"></a>
 
-# Helpdesk, FAQ
 
 The Helpdesk,FAQ solution template is designed to answer the most common questions from the IT Helpdesk area.
 

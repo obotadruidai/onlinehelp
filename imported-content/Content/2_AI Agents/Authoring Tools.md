@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Authoring Tools"
 ---
 
 <a id="AuthoringTools"></a>
 
-# Authoring Tools
 
 The platform provides a comprehensive suite of manual configuration tools within the user interface. These authoring tools give you complete, granular control over every technical building block of your AI Agent, allowing you to design precise customer experiences and enterprise data connections.
 

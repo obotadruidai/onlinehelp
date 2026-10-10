@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Using NER with Intent Recognition"
 ---
 
 <a id="UsingNERwithIntentRecognition"></a>
 
-# Using NER with Intent Recognition
 
 Expressions in input mapping fields are similar to flow training phrases. The difference is that they are not used for general model classification.
 

@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Managing Entity Records"
 ---
 
 <a id="ManagingEntityRecords"></a>
 
-# Managing Entity Records
 
 Business users and authors can manage (add, edit and delete) entity records displayed in views based on the workspace permissions granted to the assigned security role. For more information, see [Define specific security roles for business users](Define%20Security%20Roles%20for%20Business%20Users.md).
 

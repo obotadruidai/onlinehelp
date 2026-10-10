@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Run PeopleSoft automations"
 ---
 
 <a id="RunPeopleSoftautomations"></a>
 
-# Run PeopleSoft automations
 
 Before retrieving data from Oracle PeopleSoft, ensure that the student record meets the required prerequisites.
 

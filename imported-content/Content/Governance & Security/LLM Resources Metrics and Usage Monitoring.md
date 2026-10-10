@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "LLM Resources Metrics and Usage Monitoring"
 ---
 
 <a id="LLMResourcesMetricsandUsageMonitoring"></a>
 
-# LLM Resources Metrics and Usage Monitoring
 
 The LLM Resources metrics dashboard provides comprehensive visibility into your tenant’s Large Language Model (LLM) consumption, execution patterns, and performance behavior. It enables administrators to monitor token usage, track call volumes, analyze error rates, and optimize resource allocation across configured LLM endpoints.
 

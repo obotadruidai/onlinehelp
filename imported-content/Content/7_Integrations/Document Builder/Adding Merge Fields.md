@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Adding Merge Fields"
 ---
 
 <a id="AddingMergeFields"></a>
 
-# Adding Merge Fields
 
 To insert merge fields, follow these steps:
 

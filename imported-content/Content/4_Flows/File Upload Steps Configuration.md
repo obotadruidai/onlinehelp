@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "File Upload"
 ---
 
 <a id="FileUpload"></a>
 
-# File Upload
 
 A File Upload step enables chat users to upload one or more files directly into the conversation, either by selecting the plus icon (+) or by dragging and dropping files into the chat window.
 

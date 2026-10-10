@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Multilingual AI Agents"
 ---
 
 <a id="MultilingualAIAgents"></a>
 
-# Multilingual AI Agents
 
 Create AI Agents that communicate effectively with users in multiple languages by using either manual translations or real-time machine translation.
 

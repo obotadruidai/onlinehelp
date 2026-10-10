@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Cisco Contact Center Express Live Chat Integration"
 ---
 
 <a id="CiscoContactCenterExpressLiveChatIntegration"></a>
 
-# Cisco Contact Center Express Live Chat Integration
 
 You can integrate AI Agents with Cisco Contact Center Express functionality, for cases when chat clients need to be transferred to helpdesk agents who use the Cisco Contact Center Express instead of the DRUID built-in live agent.
 

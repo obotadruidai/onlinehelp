@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Update Entity"
 ---
 
 <a id="UpdateEntity"></a>
 
-# Update Entity
 
 The Update Entity integration task allows you to modify one or more entity records based on the stored Id within the conversation context or update multiple records meeting specific conditions.
 

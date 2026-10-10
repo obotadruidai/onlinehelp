@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Create Special Views for Forms and Charts"
 ---
 
 <a id="CreateSpecialViewsforFormsandCharts"></a>
 
-# Create Special Views for Forms and Charts
 
 In DRUID 5.16 and higher, you can create special views to provide business users with more information about fields displayed in forms, fields of type entity or entity list. You can also create a special view to provide business users with more detailed insights by drilling down in charts.
 

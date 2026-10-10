@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Channels"
 ---
 
 <a id="Channels"></a>
 
-# Channels
 
 Multi-channel deployment is supported by Druid and offers a wide range of digital channels in multiple languages so you can reach your customers wherever they like to be, in their natural digital way. With Druid conversational platform you will deliver the experience your customers and employees expect.
 

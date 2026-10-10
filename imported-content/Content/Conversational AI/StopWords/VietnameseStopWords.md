@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Vietnamese Stop Words"
 ---
 
 <a id="VietnameseStopWords"></a>
 
-# Vietnamese Stop Words
 
 a ha
 

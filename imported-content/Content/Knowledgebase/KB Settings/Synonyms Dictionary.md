@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Synonyms Dictionary"
 ---
 
 <a id="SynonymsDictionary"></a>
 
-# Synonyms Dictionary
 
 The Synonym Dictionary enables you to improve search results in the Knowledge Base by defining equivalent terms. It has effect across the entire retrieval pipeline, actively influencing both the initial BM25 search and the subsequent reranker stage.
 

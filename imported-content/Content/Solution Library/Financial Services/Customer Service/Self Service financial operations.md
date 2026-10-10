@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Self-Service Financial Operations"
 ---
 
 <a id="SelfServiceFinancialOperations"></a>
 
-# Self-Service Financial Operations
 
 This solution template provides flows that allow the customer to perform self service financial operations like: blocking and unblocking a card, requesting a new card, unblocking a PIN code, searching or modifying a contract, searching for an exchange rate, etc.
 

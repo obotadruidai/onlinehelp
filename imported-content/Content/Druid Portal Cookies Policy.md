@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Druid Portal Cookies Policy"
 ---
 
 <a id="DruidPortalCookiesPolicy"></a>
 
-# Druid Portal Cookies Policy
 
 A cookie is a small file that is downloaded to your computer when you access specific web pages. Cookies allow a web page to store and retrieve information about the users browsing or their machines. Based on the information the cookies contain, you can use them to recognize users and allow them efficiently surf the web pages.
 

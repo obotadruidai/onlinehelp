@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Latvian Stop Words"
 ---
 
 <a id="LatvianStopWords"></a>
 
-# Latvian Stop Words
 
 aiz
 

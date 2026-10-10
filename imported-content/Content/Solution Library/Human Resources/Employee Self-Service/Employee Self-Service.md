@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Employee Self-Service"
 ---
 
 <a id="EmployeeSelfService"></a>
 
-# Employee Self-Service
 
 This solution template provides a wide range of skills for employees:
 

@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Managing Entities"
 ---
 
 <a id="ManagingEntities"></a>
 
-# Managing Entities
 
 Druid empowers you to tailor the entity model according to your requirements by providing options to edit, remove, unlink, and link entities within your solution effortlessly. By effectively managing entities, you can fine-tune your solution's structure and enhance its functionality to meet your specific needs.
 

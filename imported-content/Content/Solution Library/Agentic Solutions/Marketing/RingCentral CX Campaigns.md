@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "RingCentral CX Campaigns"
 ---
 
 <a id="RingCentralCXCampaigns"></a>
 
-# RingCentral CX Campaigns
 
 RingCentral CX campaigns are automated outbound calling campaigns built on the Druid platform and integrated with RingCentral CX. They use a voice AI Agent to call contacts on behalf of the business and complete specific campaign goals, such as scheduling appointments, sending reminders, or collecting information.
 

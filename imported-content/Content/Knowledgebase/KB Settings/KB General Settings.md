@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "KB General Settings"
 ---
 
 <a id="KBGeneralSettings"></a>
 
-# KB General Settings
 
 The KB General Settings let you control how the Knowledge Base interacts with your AI Agent — from the embeddings model used to index your content, to the flows triggered when a match is found, to the score thresholds that determine what counts as a valid result.
 

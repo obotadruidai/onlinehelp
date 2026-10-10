@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Outbound Patient Engagement Agent"
 ---
 
 <a id="OutboundPatientEngagementAgent"></a>
 
-# Outbound Patient Engagement Agent
 
 The **Outbound Patient Engagement Agent** is the core outreach engine for proactive patient communication. It comes in with three foundational skills and enables healthcare organizations to automate personalized outreach at scale — reducing administrative overhead while keeping patients engaged and informed.
 

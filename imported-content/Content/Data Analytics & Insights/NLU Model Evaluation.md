@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "NLU Model Evaluation"
 ---
 
 <a id="NLUModelEvaluation"></a>
 
-# NLU Model Evaluation
 
 The NLU Model Evaluation provides tools to analyze how AI Agents interpret user inputs. By reviewing conversation history and confidence scores, you can identify areas where the NLU model requires further training or adjustment.
 

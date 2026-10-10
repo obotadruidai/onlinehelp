@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Druid External Live Chat"
 ---
 
 <a id="DruidExternalLiveChat"></a>
 
-# Druid External Live Chat
 
 The Druid External Live Chat is a unified contact center that enables support teams to efficiently manage and respond to customer interactions across multiple AI Agents from a single interface.
 

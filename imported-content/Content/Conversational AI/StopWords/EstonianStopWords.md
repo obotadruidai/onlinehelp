@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Estonian Stop Words"
 ---
 
 <a id="EstonianStopWords"></a>
 
-# Estonian Stop Words
 
 aga
 

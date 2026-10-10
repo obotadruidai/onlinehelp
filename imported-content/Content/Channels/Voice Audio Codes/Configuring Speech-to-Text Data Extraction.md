@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Configuring Speech-to-Text Data Extraction"
 ---
 
 <a id="ConfiguringSpeechtoTextDataExtraction"></a>
 
-# Configuring Speech-to-Text Data Extraction
 
 You can configure your Druid flows (using prompt steps) to extract specific data from user says using Speech-to-Text (STT) service integrated with AudioCodes. For example, authors can instruct ZevoTech Speech-to-Text (STT) service integrated with AudioCodes to extract dates from spoken input.
 

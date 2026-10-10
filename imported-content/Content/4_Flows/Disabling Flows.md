@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Disabling Flows"
 ---
 
 <a id="DisablingFlows"></a>
 
-# Disabling Flows
 
 Instead of permanently deleting flows that you might need again later, you can disable them. Disabled flows remain saved in your solution but are temporarily prevented from executing.
 

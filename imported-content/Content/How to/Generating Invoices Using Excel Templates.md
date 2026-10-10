@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Generating Invoices Using Excel Templates"
 ---
 
 <a id="GeneratingInvoicesUsingExcelTemplates"></a>
 
-# Generating Invoices Using Excel Templates
 
 This section provides you with the steps to generate an invoice in PDF format using data from an SQL database and an excel document template.
 

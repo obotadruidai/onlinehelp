@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "AI Agent Authoring Privileges via RBAC Policy"
 ---
 
 <a id="AIAgentAuthoringPrivilegesviaRBACPolicy"></a>
 
-# AI Agent Authoring Privileges via RBAC Policy
 
 > **NOTE:** RBAC functionality is not available by default, we activate it on request. To activate it, get in touch with [Druid Tech Support](<mailto:support@druidai.com?subject=Activate RBAC for my tenant>).
 

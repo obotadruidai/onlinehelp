@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Intent Not Recognized Flow"
 ---
 
 <a id="IntentNotRecognizedFlow"></a>
 
-# Intent Not Recognized Flow
 
 We recommend you to create, configure and activate an **Intent not found** flow. This flow is particularly useful when the intent is not recognized, i.e., the score given by the NLP engine analysis is lower than the **TargetMatchScore** set in AI Agent Designer and the AI Agent does not know what to do, which flow to choose. In case the intent is not matched, the AI Agent will choose the Intent not found flow.
 

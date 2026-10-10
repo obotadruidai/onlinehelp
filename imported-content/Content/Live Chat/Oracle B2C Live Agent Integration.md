@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Oracle B2C Live Agent Integration"
 ---
 
 <a id="OracleB2CLiveAgentIntegration"></a>
 
-# Oracle B2C Live Agent Integration
 
 You can integrate AI Agents with Oracle B2C Service Live Chat functionality, for cases when chat clients need to be transferred to helpdesk agents who use the Oracle B2C Agent functionality instead of the DRUID built-in live agent.
 

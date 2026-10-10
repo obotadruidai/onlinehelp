@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Freshchat Integration"
 ---
 
 <a id="FreshchatIntegration"></a>
 
-# Freshchat Integration
 
 > **NOTE:** Integrating AI Agents with Freshchat is available in DRUID version 5.10 and higher.
 

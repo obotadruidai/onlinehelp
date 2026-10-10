@@ -1,11 +1,8 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Agent Course Scheduling"
 ---
 
 <a id="AgentCourseScheduling"></a>
 
-# Agent Course Scheduling
 
 Documentation will be available soon.

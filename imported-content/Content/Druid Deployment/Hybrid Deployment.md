@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Hybrid Deployment"
 ---
 
 <a id="HybridDeployment"></a>
 
-# Hybrid Deployment
 
 In a hybrid deployment, you harness the capabilities of our Cloud conversational engine while utilizing one or more Druid-specific components to store all conversational data within your infrastructure.
 

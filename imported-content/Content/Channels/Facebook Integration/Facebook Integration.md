@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Facebook"
 ---
 
 <a id="Facebook"></a>
 
-# Facebook
 
 You can set up your AI Agent to interact with users through Facebook Messenger. This section explains how to create a Facebook app on the Facebook for Developers portal and connect it to your AI Agent in the Druid Portal.
 

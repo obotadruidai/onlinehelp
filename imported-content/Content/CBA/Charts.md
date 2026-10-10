@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Charts"
 ---
 
 <a id="Charts"></a>
 
-# Charts
 
 Charts are a powerful tool that allows authors to provide business users with grouped information about entity records. You can define charts on entities, add them to dashboards, and then include those dashboards as workspace links for easy access.
 

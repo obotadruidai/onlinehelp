@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Redirect to Another Step"
 ---
 
 <a id="RedirecttoAnotherStep"></a>
 
-# Redirect to Another Step
 
 In a conversational flow, steps are typically executed in sequence. However, you can redirect the conversation to any existing step in the dialog — skipping ahead, looping back, or branching based on a condition. This gives you greater control over the conversation path without duplicating steps.
 

@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "DRUID System Functions"
 ---
 
 <a id="DRUIDSystemFunctions"></a>
 
-# DRUID System Functions
 
 This section provides description of DRUID system functions you can use when mapping responses on connectors.
 

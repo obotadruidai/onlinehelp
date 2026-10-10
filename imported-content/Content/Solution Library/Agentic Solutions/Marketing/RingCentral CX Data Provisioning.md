@@ -1,12 +1,10 @@
 ---
-layout:
-  title:
-    visible: false
+title: "RingCentral CX Data Provisioning & Configuration"
 ---
 
 <a id="RingCentralCXDataProvisioningConfiguration"></a>
 
-# <a id="_RingCentral_CX_Data"></a>RingCentral CX Data Provisioning & Configuration
+<a id="_RingCentral_CX_Data"></a>
 
 > **Info:** To run RingCentral CX Campaigns requires business app upgrade to version 10.1. or higher.
 

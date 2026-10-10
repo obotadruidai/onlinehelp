@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Get Entity"
 ---
 
 <a id="GetEntity"></a>
 
-# Get Entity
 
 Retrieves a single Druid Data Service entity record by the ID saved within the conversation context.
 

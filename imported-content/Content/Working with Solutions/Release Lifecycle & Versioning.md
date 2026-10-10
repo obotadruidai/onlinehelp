@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Release Lifecycle & Versioning"
 ---
 
 <a id="ReleaseLifecycleVersioning"></a>
 
-# Release Lifecycle & Versioning
 
 AI Agent versioning and release management across environments in the Druid AI Platform is based on the concept of solutions and environment separation. This approach enables teams to package, transport, and deploy configurations across environments in a controlled and repeatable way.
 

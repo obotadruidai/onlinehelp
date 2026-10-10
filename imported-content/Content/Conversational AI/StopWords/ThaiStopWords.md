@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Thai Stop Words"
 ---
 
 <a id="ThaiStopWords"></a>
 
-# Thai Stop Words
 
 กล่าว
 

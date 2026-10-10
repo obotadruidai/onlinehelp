@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Integrate Land AI Agent Page with Telephony Systems"
 ---
 
 <a id="IntegrateLandAIAgentPagewithTelephonySystems"></a>
 
-# Integrate Land AI Agent Page with Telephony Systems
 
 The Land AI Agent page hosts the chat panel, enabling Portal users to engage with the AI Agent in a secure, authenticated context.
 

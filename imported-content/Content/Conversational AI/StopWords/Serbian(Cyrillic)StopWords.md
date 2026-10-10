@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Serbian (Cyrillic) Stop Words"
 ---
 
 <a id="SerbianCyrillicStopWords"></a>
 
-# Serbian (Cyrillic) Stop Words
 
 а
 

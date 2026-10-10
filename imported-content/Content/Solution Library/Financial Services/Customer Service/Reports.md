@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Reports"
 ---
 
 <a id="Reports"></a>
 
-# Reports
 
 This solution template provides you with a set of reports from the operational area of financial services. You can see how many tickets were opened in a specific period of time, how many cards were blocked or which was the average customer satisfaction.
 

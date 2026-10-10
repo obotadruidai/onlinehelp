@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Hungarian Stop Words"
 ---
 
 <a id="HungarianStopWords"></a>
 
-# Hungarian Stop Words
 
 a
 

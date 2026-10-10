@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Setting up the Add ServiceNow Ticket UiPath Process"
 ---
 
 <a id="SettinguptheAddServiceNowTicketUiPathProcess"></a>
 
-# Setting up the Add ServiceNow Ticket UiPath Process
 
 <a id="Step1CreateOrchestratorfolder"></a>
 

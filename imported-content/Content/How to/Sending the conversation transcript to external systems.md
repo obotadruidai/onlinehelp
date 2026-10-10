@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Sending the Conversation Transcript to External Systems"
 ---
 
 <a id="SendingtheConversationTranscripttoExternalSystems"></a>
 
-# Sending the Conversation Transcript to External Systems
 
 > **IMPORTANT!** The Conversation Transcript is now saved in [[ConversationInfo]].TranscriptTxt instead of [[ChatUser]].TranscriptTxt due to technical reasons. If you have a hybrid or on premise Druid deployment, install Druid Connector Host version 7.4 or above.
 

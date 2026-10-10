@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Druid Data Service"
 ---
 
 <a id="DruidDataService"></a>
 
-# Druid Data Service
 
 Druid Data Service is Druid data storage used to persist Druid entity records created and managed within the Druid Platform simplifying records authoring. authors can further use these records in NER training and in other different contexts. For example, if you have a CRM where you keep your Accounts list, you can have as well a Data Service from Druid where you can keep the account records list.
 

@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Authoring Flows and Voice Best Practices"
 ---
 
 <a id="AuthoringFlowsandVoiceBestPractices"></a>
 
-# Authoring Flows and Voice Best Practices
 
 Druid provides authors with a simple way to configure flows for Voice channel by providing the Speak message in the Voice section on flow steps.
 

@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Portuguese Stop Words"
 ---
 
 <a id="PortugueseStopWords"></a>
 
-# Portuguese Stop Words
 
 último
 

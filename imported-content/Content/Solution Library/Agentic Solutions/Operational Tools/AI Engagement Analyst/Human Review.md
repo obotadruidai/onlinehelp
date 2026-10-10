@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Human Review"
 ---
 
 <a id="HumanReview"></a>
 
-# Human Review
 
 While the AI Analyst automatically extracts and evaluates metrics from your AI Agent and human-assisted interactions, the solution is built on a robust **four-eye principle**. This framework is a critical security and quality control measure, especially for AI-driven interactions, where human oversight ensures that automated decisions remain accurate, ethical, and aligned with organizational standards.
 

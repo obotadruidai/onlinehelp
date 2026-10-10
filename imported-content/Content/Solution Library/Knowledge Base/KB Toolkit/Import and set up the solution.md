@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Import and Set Up the Solution"
 ---
 
 <a id="ImportandSetUptheSolution"></a>
 
-# Import and Set Up the Solution
 
 The KB Toolkit 2 solution provides tools and apps to support advanced testing scenarios, including multi-turn conversations and integration with Azure Cognitive Search and Embeddings. This section will walk you through the steps to import and configure the solution to ensure a smooth setup and operation.
 

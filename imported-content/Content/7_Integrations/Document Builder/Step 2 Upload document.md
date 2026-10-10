@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Step 2. Upload document"
 ---
 
 <a id="Step2Uploaddocument"></a>
 
-# Step 2. Upload document
 
 1. Log in the Druid Portal, select the AI Agent and solution.
 2. On the main menu, click **Documents**. The list of documents templates appears.

@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Provisioning Portal Users and Single Sign On Authentication via OpenID Connect"
 ---
 
 <a id="ProvisioningPortalUsersandSingleSignOnAuthenticationviaOpenIDConnect"></a>
 
-# Provisioning Portal Users and Single Sign On Authentication via OpenID Connect
 
 At Druid, we understand that most organizations rely on third-party identity providers to handle authentication while providing their employees to use a single secure means that serves as a universal login to all their accounts (Single Sign-On).
 

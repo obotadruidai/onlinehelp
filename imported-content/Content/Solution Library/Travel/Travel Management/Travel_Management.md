@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Travel Management"
 ---
 
 <a id="TravelManagement"></a>
 
-# Travel Management
 
 Booking a travel can be a complex process when there are tens of options for flights, hundreds of available accommodations and many other criteria that you have to consider when deciding to book a trip in a certain destination. This solution comes with conversational flows that will assist the user in finding the perfect holiday destination, while saving them time and money. The AI Agent will act as a personal travel assistant, helping the user to get a travel quote, to complete the reservation or to receive travel tips for specific destinations.
 

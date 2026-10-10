@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Training the Entities and the AI Agent"
 ---
 
 <a id="TrainingtheEntitiesandtheAIAgent"></a>
 
-# Training the Entities and the AI Agent
 
 We created Druid for enterprises and unlike other AI Agent platforms; its entities are business objects with attributes and references, similar to the UiPath Data Service entities.
 

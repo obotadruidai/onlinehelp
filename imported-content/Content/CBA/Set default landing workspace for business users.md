@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Set a Default Landing Workspace for Business Users"
 ---
 
 <a id="SetaDefaultLandingWorkspaceforBusinessUsers"></a>
 
-# Set a Default Landing Workspace for Business Users
 
 If business users have access to multiple workspaces within a AI Agent, you can set a default workspace that appears when they log in.
 

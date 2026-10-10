@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "UiPath Update Entity"
 ---
 
 <a id="UiPathUpdateEntity"></a>
 
-# UiPath Update Entity
 
 Updates an existing Entity record.
 

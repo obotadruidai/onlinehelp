@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Using the KB Agent Workspace"
 ---
 
 <a id="UsingtheKBAgentWorkspace"></a>
 
-# Using the KB Agent Workspace
 
 The [Understanding KB Agent V4 Routing Logic](Understanding%20AI%20Agent%20Routing%20Logic.md) topic explains how the KB Agent routes user requests to a conversation Flow, the Knowledge Base, or the OpenAI fallback. The **KB Agent Workspace** builds on that foundation by providing the operational insights needed to monitor those routing decisions in production, evaluate their effectiveness, and continuously optimize your Knowledge Base solution.
 

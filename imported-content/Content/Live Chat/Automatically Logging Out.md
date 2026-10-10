@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Automatically Logging Out Helpdesk Agents"
 ---
 
 <a id="AutomaticallyLoggingOutHelpdeskAgents"></a>
 
-# Automatically Logging Out Helpdesk Agents
 
 > **NOTE:**  This feature is available in DRUID version 1.62 and higher.
 

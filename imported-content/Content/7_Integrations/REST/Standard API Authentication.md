@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Standard API Authentication"
 ---
 
 <a id="StandardAPIAuthentication"></a>
 
-# Standard API Authentication
 
 Use this guide if the target API uses a static, long-lived bearer token, API secret, username key, or organization header. For these services, you can skip complex login workflows and directly add permanent credentials to outbound requests.
 

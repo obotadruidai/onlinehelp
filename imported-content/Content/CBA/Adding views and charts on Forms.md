@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Add Views and Charts to Forms Using Sub-Grids"
 ---
 
 <a id="AddViewsandChartstoFormsUsingSubGrids"></a>
 
-# Add Views and Charts to Forms Using Sub-Grids
 
 Sub-grids display a list of records on a form as either a table (classic view) or a chart. For example, on an employee form, you can display a list of cases related to that employee and a pie chart showing the number of cases per status.
 

@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Creating the BluePrism Connection Strings"
 ---
 
 <a id="CreatingtheBluePrismConnectionStrings"></a>
 
-# Creating the BluePrism Connection Strings
 
 The BluePrism connector allows integration with the BluePrism Orchestrator, to serve the BluePrism connector action with the credentials needed to perform the required tasks. Thus, the BluePrism connector app only stores access credentials to the BluePrism Orchestrator.
 

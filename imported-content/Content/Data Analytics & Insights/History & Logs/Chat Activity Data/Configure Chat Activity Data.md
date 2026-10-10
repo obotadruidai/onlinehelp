@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Configure Chat Activity Data"
 ---
 
 <a id="ConfigureChatActivityData"></a>
 
-# Configure Chat Activity Data
 
 The Chat Activity Data feature enables you to store specific context data in the database and use it for future reporting. For example, you want to store the customer age, specific customer choice and whether the customer has a loan or not.
 

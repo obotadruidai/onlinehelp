@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Automotive"
 ---
 
 <a id="Automotive"></a>
 
-# Automotive
 
 Conversational business applications today are transforming the automotive industry while creating a revolution in its real sense. There is a huge potential in the way the technology helps the automotive industry in dealing with customers, saving costs, generating leads or increasing customer engagement.
 

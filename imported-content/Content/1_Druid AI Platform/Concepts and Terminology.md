@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Concepts and Terminology"
 ---
 
 <a id="ConceptsandTerminology"></a>
 
-# Concepts and Terminology
 
 This topic introduces the key terms you must know before working with the **Druid AI Platform**.
 

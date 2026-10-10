@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Outbound Calling"
 ---
 
 <a id="OutboundCalling"></a>
 
-# Outbound Calling
 
 Outbound calling enables AI Agents to proactively contact users by phone to deliver information, collect responses, or automate business processes such as appointment reminders, payment notifications, surveys, or outreach campaigns.
 

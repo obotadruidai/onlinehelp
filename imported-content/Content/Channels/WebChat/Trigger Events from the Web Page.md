@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Trigger Events from the Web Page Hosting the AI Agent"
 ---
 
 <a id="TriggerEventsfromtheWebPageHostingtheAIAgent"></a>
 
-# Trigger Events from the Web Page Hosting the AI Agent
 
 > **NOTE:** Events are sent only if the AI Agent is initialized—meaning the AI Agent is open and the connection is established.
 

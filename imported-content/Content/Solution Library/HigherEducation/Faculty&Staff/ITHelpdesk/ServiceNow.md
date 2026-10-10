@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "ServiceNow"
 ---
 
 <a id="ServiceNow"></a>
 
-# ServiceNow
 
 This topic explains how to configure a DRUID REST app and integration tasks for ServiceNow integration. It covers authentication and supported API operations (GET, POST, PATCH).
 

@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "FAQ Car Rental"
 ---
 
 <a id="FAQCarRental"></a>
 
-# FAQ Car Rental
 
 This FAQ solution provides conversational flows that will assist the customer 24/7 in finding the right answer to questions related to rental conditions, payments, insurance policies required for car rental and many more.
 

@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "XCode OCR"
 ---
 
 <a id="XCodeOCR"></a>
 
-# XCode OCR
 
 The DRUID API engine performs OCR and data extraction from the following XCodes: QRCode, Barcode, PharmaCode and MaxCode.
 

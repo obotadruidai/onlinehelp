@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Jamaican Driver License OCR"
 ---
 
 <a id="JamaicanDriverLicenseOCR"></a>
 
-# Jamaican Driver License OCR
 
 The Druid API engine performs OCR and data extraction from Jamaican driver licenses.
 

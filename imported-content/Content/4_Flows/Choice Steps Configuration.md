@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Choice"
 ---
 
 <a id="Choice"></a>
 
-# Choice
 
 The Choice step is a powerful tool in your AI Agent’s flow that allows users to make selections from a set of predefined options, presented as buttons. This step not only enhances user engagement by offering clear choices but also allows you to guide the conversation in specific directions based on the user's input. Whether you're gathering user preferences, navigating through different conversation paths, or triggering specific actions, the Choice step provides a flexible way to manage interactions.
 

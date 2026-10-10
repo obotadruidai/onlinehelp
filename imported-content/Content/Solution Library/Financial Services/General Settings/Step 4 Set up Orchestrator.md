@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Step 4: Set up Orchestrator Victor\\_Advanced Process\\_Action Center"
 ---
 
 <a id="Step4SetupOrchestratorVictorAdvancedProcessActionCenter"></a>
 
-# Step 4: Set up Orchestrator Victor\_Advanced Process\_Action Center
 
 Go to [https://cloud.uipath.com/](https://cloud.uipath.com/) and log in to your orchestrator account and click on the tenant used in the basic setup.
 

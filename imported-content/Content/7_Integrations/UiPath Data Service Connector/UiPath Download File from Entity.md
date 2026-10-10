@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "UiPath Download File from Entity"
 ---
 
 <a id="UiPathDownloadFilefromEntity"></a>
 
-# UiPath Download File from Entity
 
 Downloads the file from the specified UiPath entity field to Druid.
 

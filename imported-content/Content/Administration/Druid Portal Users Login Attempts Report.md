@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Druid Portal Users Login Attempts Report"
 ---
 
 <a id="DruidPortalUsersLoginAttemptsReport"></a>
 
-# Druid Portal Users Login Attempts Report
 
 The Druid Portal Users Login Attempts Report provides administrators with a comprehensive view of login activity across their tenant. This report helps enhance security by tracking login attempts, detecting unauthorized access, and identifying unusual patterns. With advanced filtering options, administrators can refine search results based on specific criteria, exclude certain users for focused monitoring, and export data for further analysis. These capabilities support proactive threat detection, compliance auditing, and improved access control, helping organizations safeguard their Druid Portal environment.
 

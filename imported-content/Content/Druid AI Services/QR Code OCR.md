@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "QR Code OCR"
 ---
 
 <a id="QRCodeOCR"></a>
 
-# QR Code OCR
 
 The Druid API engine performs OCR and data extraction from QR codes.
 

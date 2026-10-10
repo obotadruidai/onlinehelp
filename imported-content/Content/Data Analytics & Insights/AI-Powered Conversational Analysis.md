@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "AI-Powered Conversational Analysis"
 ---
 
 <a id="AIPoweredConversationalAnalysis"></a>
 
-# AI-Powered Conversational Analysis
 
 Druid provides a suite of specialized tools to extract qualitative data from unstructured interactions, transforming raw dialogue into actionable intelligence. By analyzing the nuance of language and intent, the platform allows organizations to understand the human experience behind every AI Agent execution.
 

@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Email Connectors"
 ---
 
 <a id="EmailConnectors"></a>
 
-# Email Connectors
 
 Druid allows authors to integrate AI Agents with SMTP and Twilio SendGrid service, enabling the AI Agents to send emails.
 

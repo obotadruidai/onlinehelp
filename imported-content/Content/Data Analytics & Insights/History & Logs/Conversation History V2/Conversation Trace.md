@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Conversation Trace"
 ---
 
 <a id="ConversationTrace"></a>
 
-# Conversation Trace
 
 Conversation Trace provides a granular, tree-structured view of every step an AI Agent follows during a user interaction. By visualizing both visible responses and "silent" background operations—such as Knowledge Base queries, system integration calls, and LLM prompt execution—Conversation Trace offers deep visibility into the AI Agent reasoning chain.
 

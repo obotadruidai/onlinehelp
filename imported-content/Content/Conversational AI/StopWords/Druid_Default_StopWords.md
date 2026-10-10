@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Default DRUID StopWords"
 ---
 
 <a id="DefaultDRUIDStopWords"></a>
 
-# Default DRUID StopWords
 
 This section provides the stop words that are available by default in DRUID.
 

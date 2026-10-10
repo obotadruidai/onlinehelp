@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Active Directory Connector"
 ---
 
 <a id="ActiveDirectoryConnector"></a>
 
-# Active Directory Connector
 
 The Druid AI Platform enables you to connect to Active Directory to search, add to group and unlock users from Active Directory (AD).
 

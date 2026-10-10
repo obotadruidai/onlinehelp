@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Dynamic Charts"
 ---
 
 <a id="DynamicCharts"></a>
 
-# Dynamic Charts
 
 Dynamic charts let you visualize and analyze entity data directly in the Druid Portal, without requiring external tools or custom development.
 

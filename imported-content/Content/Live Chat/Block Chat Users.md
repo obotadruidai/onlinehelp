@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Block Chat Users for Live Chat"
 ---
 
 <a id="BlockChatUsersforLiveChat"></a>
 
-# Block Chat Users for Live Chat
 
 The block chat users feature is useful when you want to provide your helpdesk agents with the possibility to block for a specific period of time the chat users who are disrespectful, offensive or have incorrect behavior. For example, if a customer is using abusive language or sending spam messages, the helpdesk agent can block that user from being placed in the waiting queue.
 

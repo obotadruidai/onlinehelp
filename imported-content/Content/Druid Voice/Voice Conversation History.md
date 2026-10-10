@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Voice Conversation History"
 ---
 
 <a id="VoiceConversationHistory"></a>
 
-# Voice Conversation History
 
 Druid provides comprehensive visibility into your voice interactions, allowing you to review text transcripts, listen to call audio recordings, and analyze operational metrics like latency directly from the Druid Portal
 

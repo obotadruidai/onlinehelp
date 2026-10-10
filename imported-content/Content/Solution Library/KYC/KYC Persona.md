@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "KYC Persona"
 ---
 
 <a id="KYCPersona"></a>
 
-# KYC Persona
 
 The KYC Persona solution template enables your AI Agent to onboard customers by performing OCR of Romanian Identity Cards.
 

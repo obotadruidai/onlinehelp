@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Configure Druid SIP Connectivity"
 ---
 
 <a id="ConfigureDruidSIPConnectivity"></a>
 
-# Configure Druid SIP Connectivity
 
 To establish the connection between your AI Agent and your telephony system:
 

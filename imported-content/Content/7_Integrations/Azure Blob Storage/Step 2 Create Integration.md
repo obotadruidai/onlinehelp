@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Step 2. Create Integration Action"
 ---
 
 <a id="Step2CreateIntegrationAction"></a>
 
-# Step 2. Create Integration Action
 
 Connector Action (Integration) only represents a host for a group of one or more integration tasks. The integration technology/type (Azure Storage, SQL, REST, SOAP, SMTP, etc.) is defined at task level, not at action (integration) level.
 

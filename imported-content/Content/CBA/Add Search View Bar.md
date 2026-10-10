@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Add Quick Search to Table Views"
 ---
 
 <a id="AddQuickSearchtoTableViews"></a>
 
-# Add Quick Search to Table Views
 
 Authors can enhance table views by adding a Quick Search bar, allowing users to efficiently search for specific records. The search bar retrieves data from the **Data** tab defined on the entity or from **Workspaces**.
 

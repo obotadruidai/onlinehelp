@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Setting Up AI Center"
 ---
 
 <a id="SettingUpAICenter"></a>
 
-# Setting Up AI Center
 
 <a id="Prerequisites"></a>
 

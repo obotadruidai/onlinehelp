@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Bobble Chat"
 ---
 
 <a id="BobbleChat"></a>
 
-# Bobble Chat
 
 ![](../../Resources/Images/WebChat/bobble%20chat.png)
 

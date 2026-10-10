@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Email Case Handling Agentic Solution"
 ---
 
 <a id="EmailCaseHandlingAgenticSolution"></a>
 
-# Email Case Handling Agentic Solution
 
 **Email Case Handling Agentic Solution** is a fully agentic business application built entirely on Druid technology. Powered by Druid’s native LLMs (Becus) and compatible with external models (GPT), this solution automates the email support lifecycle — from intelligent triage and parameter extraction to multilingual responses and case management.
 

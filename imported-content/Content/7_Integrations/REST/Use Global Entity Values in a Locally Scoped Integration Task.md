@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Use Global Entity Values in a Locally Scoped Integration Task"
 ---
 
 <a id="UseGlobalEntityValuesinaLocallyScopedIntegrationTask"></a>
 
-# Use Global Entity Values in a Locally Scoped Integration Task
 
 There may be scenarios where the response entity is both local and global, and it possesses distinct memory slots. You have the capability to retrieve values from a globally scoped entity at the integration (connector action) level within an integration task that has local scope.
 

@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Druid AI Releases"
 ---
 
 <a id="DruidAIReleases"></a>
 
-# Druid AI Releases
 
 > **NOTE:** For Druid full-on premise deployments, releases are managed on a quarterly basis. You are not required to perform upgrades every month. For instance, if you are currently using version 9.21, you can upgrade to version 9.31.
 

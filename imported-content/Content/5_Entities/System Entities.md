@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "System Entities"
 ---
 
 <a id="SystemEntities"></a>
 
-# System Entities
 
 This section provides description of all system entities, listing the entity fields available. To view detailed information, click on the desired system entity below.
 

@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Twilio SMS"
 ---
 
 <a id="TwilioSMS"></a>
 
-# Twilio SMS
 
 Integrate Druid AI Agents with Twilio SMS to enable customers to start and conduct conversations with AI Agents through standard SMS text messaging.
 

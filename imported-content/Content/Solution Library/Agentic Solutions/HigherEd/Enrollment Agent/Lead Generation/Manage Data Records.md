@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Manage Data Records"
 ---
 
 <a id="ManageDataRecords"></a>
 
-# Manage Data Records
 
 All lead, student and outbound campaign data used by the solution is stored in the Druid Data Service, where you can review, update, or delete the records. The entities below represent the core building blocks the solution uses to orchestrate and record all outbound engagement operations.
 

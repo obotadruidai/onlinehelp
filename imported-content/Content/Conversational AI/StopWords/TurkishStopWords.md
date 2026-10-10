@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Turkish Stop Words"
 ---
 
 <a id="TurkishStopWords"></a>
 
-# Turkish Stop Words
 
 acaba
 

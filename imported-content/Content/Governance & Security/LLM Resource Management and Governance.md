@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "LLM Resource Management and Governance"
 ---
 
 <a id="LLMResourceManagementandGovernance"></a>
 
-# LLM Resource Management and Governance
 
 Druid provides a centralized, LLM-agnostic framework for managing connections to Large Language Models. This architecture decouples AI Agent logic from specific model providers, allowing you to configure, govern, and switch between models without modifying conversational flows.
 

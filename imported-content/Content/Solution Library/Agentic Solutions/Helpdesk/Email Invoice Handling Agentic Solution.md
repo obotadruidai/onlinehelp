@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Email Invoice Handling Agentic Solution"
 ---
 
 <a id="EmailInvoiceHandlingAgenticSolution"></a>
 
-# Email Invoice Handling Agentic Solution
 
 This intelligent solution automatically processes emails sent to a specified email address, extracting structured invoice data from both the email body and attachments (PDFs and image files). For each invoice received, it creates a case containing the following details:
 

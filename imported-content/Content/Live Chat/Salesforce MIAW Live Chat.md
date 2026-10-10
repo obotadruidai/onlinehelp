@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Salesforce MIAW Live Chat"
 ---
 
 <a id="SalesforceMIAWLiveChat"></a>
 
-# Salesforce MIAW Live Chat
 
 Salesforce MIAW enhances pre-chat support by identifying customer needs and accessing records before agents connect in the Service Console. It also enables real-time communication with clients directly within the Service Console.
 

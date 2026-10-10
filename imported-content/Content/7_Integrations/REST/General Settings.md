@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "General Settings"
 ---
 
 <a id="GeneralSettings"></a>
 
-# General Settings
 
 After you click to create a REST task, the Edit Connector Action page appears by default on the **General** tab.
 

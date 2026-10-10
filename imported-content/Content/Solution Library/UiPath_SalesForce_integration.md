@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "UiPath Salesforce Integration"
 ---
 
 <a id="UiPathSalesforceIntegration"></a>
 
-# UiPath Salesforce Integration
 
 Use this solution template if you want to showcase the ticket management process in Salesforce for opening a new ticket, see your tickets list and close tickets by using Druid-UiPath unattended activities integration.
 

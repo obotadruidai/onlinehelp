@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Creating Authoring Users (Portal Users)"
 ---
 
 <a id="CreatingAuthoringUsersPortalUsers"></a>
 
-# Creating Authoring Users (Portal Users)
 
 > **NOTE:** Only Portal admins can manage users.
 

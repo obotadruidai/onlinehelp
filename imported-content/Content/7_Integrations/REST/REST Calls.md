@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "REST Calls"
 ---
 
 <a id="RESTCalls"></a>
 
-# REST Calls
 
 Integration calls are API calls you configure to pass or request data from the Druid AI Platform to an external data source.
 

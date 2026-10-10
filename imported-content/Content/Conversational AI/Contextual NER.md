@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Contextual NER"
 ---
 
 <a id="ContextualNER"></a>
 
-# Contextual NER
 
 The Druid AI Platform allows authors to configure AI Agents so that they also perform entity recognition by taking into consideration a specific context.
 

@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Integrating Using Robot.JS"
 ---
 
 <a id="IntegratingUsingRobotJS"></a>
 
-# Integrating Using Robot.JS
 
 > **IMPORTANT!** This integration is available only for backward compatibility. We recommend you to use [Running UiPath Attended Processes.](Running%20UiPath%20Attended%20Processes.md)
 

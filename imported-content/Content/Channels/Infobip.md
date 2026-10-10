@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Infobip"
 ---
 
 <a id="Infobip"></a>
 
-# Infobip
 
 Connect your Druid AI Agent to WhatsApp via Infobip omnichannel communication platform. This integration enables automated messaging workflows, customer engagement, and cross-channel chat delivery managed through a single Druid Portal setup.
 

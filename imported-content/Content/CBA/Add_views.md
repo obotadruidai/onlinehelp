@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Add Views"
 ---
 
 <a id="AddViews"></a>
 
-# Add Views
 
 At authoring time, you can create multiple views for an entity, but only one can be set as the default. When business users click the entity in the workspace menu, the default view is displayed first. All other views defined for the entity appear as separate tabs, allowing users to switch between them as needed.
 

@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "AI Agent Summary Dashboard"
 ---
 
 <a id="AIAgentSummaryDashboard"></a>
 
-# AI Agent Summary Dashboard
 
 The AI Agent Summary Dashboard provides authors with insights on the AI Agent performance over time and enables them to identify actions they need to take to improve performance.
 

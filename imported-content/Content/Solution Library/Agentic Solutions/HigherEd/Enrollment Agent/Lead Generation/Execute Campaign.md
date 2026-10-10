@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Execute Campaign"
 ---
 
 <a id="ExecuteCampaign"></a>
 
-# Execute Campaign
 
 Campaigns can be executed automatically on a defined schedule or triggered manually on demand.
 

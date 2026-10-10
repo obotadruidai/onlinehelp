@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Multiple Intents"
 ---
 
 <a id="MultipleIntents"></a>
 
-# Multiple Intents
 
 DRUID Conversational AI breaks user messages down to their essence and can identify and follow-up on multiple flows, or intents, from a single message. If multiple intents are identified, the user is asked to select one of them.
 

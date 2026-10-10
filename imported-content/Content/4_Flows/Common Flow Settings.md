@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Common Flow Settings"
 ---
 
 <a id="CommonFlowSettings"></a>
 
-# Common Flow Settings
 
 Some of the General and Metadata configuration settings vary based on the flow step type, while the following configuration settings apply to all flow steps regardless their type:
 

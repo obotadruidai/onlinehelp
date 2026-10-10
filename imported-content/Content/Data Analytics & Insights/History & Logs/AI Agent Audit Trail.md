@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "AI Agent Audit Trail"
 ---
 
 <a id="AIAgentAuditTrail"></a>
 
-# AI Agent Audit Trail
 
 The AI Agent Audit Trail gives you a complete historical record of all changes made to flows, integrations and apps in the current AI Agent. This feature helps you track modifications, identify who made them, and ensure accountability for updates. You can also compare different versions to review changes in detail, making it easier to maintain and troubleshoot your AI Agent.
 

@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Product recommendation with GPT-Azure"
 ---
 
 <a id="ProductrecommendationwithGPTAzure"></a>
 
-# Product recommendation with GPT-Azure
 
 Combining the DRUID technology and GPT technology, you provide users with an amazing human-like multi-turn conversation based on form completion. DRUID orchestrates the entire conversation and asks expertise from GPT in the context of your data and business domain.
 

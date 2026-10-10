@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Authenticate Users in the Druid Webchat"
 ---
 
 <a id="AuthenticateUsersintheDruidWebchat"></a>
 
-# Authenticate Users in the Druid Webchat
 
 When you want to seamlessly authenticate users in the Webchat hosted on your web page, it's crucial to follow the proper procedures to ensure security and efficiency. This section provides detailed options for transferring authentication context from your web page to the Druid Webchat snippet, enabling automatic authentication of conversations.
 

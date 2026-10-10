@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Advanced Features and Optimization"
 ---
 
 <a id="AdvancedFeaturesandOptimization"></a>
 
-# Advanced Features and Optimization
 
 Beyond standard document ingestion, Druid provides powerful controls to fine-tune how your AI Agent retrieves, processes, and validates knowledge-base answers during live user conversations.
 

@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Defining Flat Information"
 ---
 
 <a id="DefiningFlatInformation"></a>
 
-# Defining Flat Information
 
 Providing flat information means that you invoke entity fields other than type Entity List by using the following syntax:
 

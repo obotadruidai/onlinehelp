@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "English Stop Words"
 ---
 
 <a id="EnglishStopWords"></a>
 
-# English Stop Words
 
 a
 

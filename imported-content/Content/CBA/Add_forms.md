@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Add Forms"
 ---
 
 <a id="AddForms"></a>
 
-# Add Forms
 
 Forms allow you to display and manipulate entity record data. Authors can create simple forms to show specific data or complex forms that enable business users to edit records, add details, attach files, and more.
 

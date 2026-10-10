@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Using NER in Dialogs"
 ---
 
 <a id="UsingNERinDialogs"></a>
 
-# Using NER in Dialogs
 
 This section covers deterministic NER, which refers to simple entities, that is, flat data type, type other than Entity and Entity List.
 

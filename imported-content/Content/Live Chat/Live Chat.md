@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Live Chat"
 ---
 
 <a id="LiveChat"></a>
 
-# Live Chat
 
 Live Chat allows authors to create AI Agents which handle rich conversations. While AI Agents are always active and can engage your clients 24×7 by answering their simple FAQs promptly, live chat is a better solution when the customers prefer talking to a human or when the AI Agent fails to understand customer issues and assistance from the support team is needed.
 

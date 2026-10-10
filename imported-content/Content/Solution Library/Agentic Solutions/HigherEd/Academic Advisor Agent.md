@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Academic Advisor Agent"
 ---
 
 <a id="AcademicAdvisorAgent"></a>
 
-# Academic Advisor Agent
 
 The Academic Advisor Agent is a ready-to-deploy, end-to-end agentic application for higher education institutions, built on Druid technology. Designed for colleges and universities, it replaces rigid, menu-driven student portals with a natural, conversational experience powered by a large language model (LLM). Students interact through a single AI Agent to browse courses, manage enrollments, track academic progress, and get answers to campus questions—all without navigating complex interfaces or contacting staff.
 

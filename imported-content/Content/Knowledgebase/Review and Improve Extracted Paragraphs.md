@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Review and Improve Extracted Paragraphs"
 ---
 
 <a id="ReviewandImproveExtractedParagraphs"></a>
 
-# Review and Improve Extracted Paragraphs
 
 To ensure your Knowledge Base delivers high-quality, accurate answers during live interactions, you should periodically review, refine, and update extracted text paragraphs.
 

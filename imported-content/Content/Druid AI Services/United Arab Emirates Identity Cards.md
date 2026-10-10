@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "United Arab Emirates Identity Cards"
 ---
 
 <a id="UnitedArabEmiratesIdentityCards"></a>
 
-# United Arab Emirates Identity Cards
 
 The Druid API engine supports OCR and data extraction for identity cards issued by the United Arab Emirates.
 

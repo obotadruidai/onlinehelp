@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Social Media Reactions Flow"
 ---
 
 <a id="SocialMediaReactionsFlow"></a>
 
-# Social Media Reactions Flow
 
 The **Social media reactions flow** is a special flow that allows authors to handle user reactions to social media stories (such as Instagram story reactions).
 

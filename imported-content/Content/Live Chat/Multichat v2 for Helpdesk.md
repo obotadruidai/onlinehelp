@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Multichat for Helpdesk Agents"
 ---
 
 <a id="MultichatforHelpdeskAgents"></a>
 
-# Multichat for Helpdesk Agents
 
 The figure below shows Multichat for a helpdesk agent who connected in a live chat session with a client.
 

@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Authoring User Management"
 ---
 
 <a id="AuthoringUserManagement"></a>
 
-# Authoring User Management
 
 The User Management module allows you to manage authors and AI Agent users (also known as “Chat Users”) and their permissions within the Druid Portal.
 

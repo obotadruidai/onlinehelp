@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Romanian Identity Cards OCR"
 ---
 
 <a id="RomanianIdentityCardsOCR"></a>
 
-# Romanian Identity Cards OCR
 
 The Druid API engine supports OCR and data extraction for Romanian identity cards.
 

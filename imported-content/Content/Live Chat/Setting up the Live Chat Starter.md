@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Setting up Live Chat"
 ---
 
 <a id="SettingupLiveChat"></a>
 
-# Setting up Live Chat
 
 Select the desired AI Agent. Go to the Solutions Library, search for solution Live Chat Advanced and import it. This solution template contains a basic Live Chat configuration to help you easily add Live Chat support to your AI Agent and let it handle live chat sessions between end users and help desk agents.
 

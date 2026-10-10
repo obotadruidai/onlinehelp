@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Map the JSON payload as JObject or JArray"
 ---
 
 <a id="MaptheJSONpayloadasJObjectorJArray"></a>
 
-# Map the JSON payload as JObject or JArray
 
 In some integrations, you may not need to map individual fields from a JSON response. Instead, you might want to capture the entire JSON object or array as-is and store it in a single field for further processing, logging, or passing to external services.
 

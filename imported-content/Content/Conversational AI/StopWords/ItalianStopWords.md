@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Italian Stop Words"
 ---
 
 <a id="ItalianStopWords"></a>
 
-# Italian Stop Words
 
 a
 

@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "webRTC"
 ---
 
 <a id="webRTC"></a>
 
-# webRTC
 
 The webRTC channel enables natural, bi-directional voice interactions directly within web pages, allowing users to talk with AI Agents using spoken language.
 

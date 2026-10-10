@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "DRUID 5.9"
 ---
 
 <a id="DRUID59"></a>
 
-# DRUID 5.9
 
 Deployment Dates
 

@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Test Plans"
 ---
 
 <a id="TestPlans"></a>
 
-# Test Plans
 
 Test plans help you organize and group test cases with a specific focus. By grouping multiple test cases, you can focus attention to a particular content area. Test plans also make it easy to run bulk tests whenever changes are made to your AI Agent or KB, ensuring consistent performance and accuracy.
 

@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Druid AI Platform Services and IPs"
 ---
 
 <a id="DruidAIPlatformServicesandIPs"></a>
 
-# Druid AI Platform Services and IPs
 
 In the context of the Druid AI Platform (Cloud and Hybrid Druid deployments), egress and ingress refer to outgoing and incoming traffic respectively. For example, in the Community environment, if a component within the platform attempts to access an external service, the external service perceives the request as originating from the egress IP address.
 

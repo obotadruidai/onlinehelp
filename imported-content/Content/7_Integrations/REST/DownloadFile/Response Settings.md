@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Response Settings"
 ---
 
 <a id="ResponseSettings"></a>
 
-# Response Settings
 
 While the request is similar to the REST requests, the response of this connector task captures a file and maps it in a Druid entity field of type entity, which is referencing the [[File]] entity.
 

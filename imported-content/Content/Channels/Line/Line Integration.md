@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "LINE"
 ---
 
 <a id="LINE"></a>
 
-# LINE
 
 Connect your Druid AI Agent directly to the LINE messaging ecosystem. This integration allows your AI Agent to operate as a native LINE Official Account, enabling automated conversational flows, customer support, and direct user engagement through LINE.
 

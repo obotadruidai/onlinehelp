@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Step 3. Add Integration Tasks for Documents Generation"
 ---
 
 <a id="Step3AddIntegrationTasksforDocumentsGeneration"></a>
 
-# Step 3. Add Integration Tasks for Documents Generation
 
 1. From the main menu, click **Integrations**. The list of actions appears.
 2. At the top-right corner of the page, click the **CreateConnectorAction** button (![](../../Resources/Images/Document%20Builder/Step%203%20Create%20Action%20and%20Add.png)). The Edit Connector Action page appears.

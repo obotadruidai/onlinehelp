@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Dynamic Search Priority at Conversation Time"
 ---
 
 <a id="DynamicSearchPriorityatConversationTime"></a>
 
-# Dynamic Search Priority at Conversation Time
 
 While you can configure default search priorities at the data source level, you can also override these priorities dynamically at runtime during a live conversation.
 

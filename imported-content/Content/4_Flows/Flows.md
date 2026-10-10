@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Flows"
 ---
 
 <a id="Flows"></a>
 
-# Flows
 
 In the Druid AI Platform, a flow is a structured sequence of interactions that defines how the AI Agent handles specific user requests. Depending on your automation goals and the complexity of the task, you can build two types of flows:
 

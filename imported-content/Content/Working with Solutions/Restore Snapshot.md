@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Restore Snapshot"
 ---
 
 <a id="RestoreSnapshot"></a>
 
-# Restore Snapshot
 
 > **NOTE:** Restoring a solution snapshot overwrites the current elements included in the solution with the ones from the snapshot.
 

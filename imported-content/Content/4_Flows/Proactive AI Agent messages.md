@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Proactive AI Agent Messages"
 ---
 
 <a id="ProactiveAIAgentMessages"></a>
 
-# Proactive AI Agent Messages
 
 Proactive AI Agent Messages for Long-Running Integrations allows you to keep users informed and engaged when a flow step involving an integration takes longer than expected to complete. By configuring proactive AI Agent messages at the flow step level, you can automatically send updates to the user at defined intervals. This helps manage expectations and prevents potential timeouts, especially in voice channels.
 

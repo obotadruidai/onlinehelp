@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Hebrew Stop Words"
 ---
 
 <a id="HebrewStopWords"></a>
 
-# Hebrew Stop Words
 
 אבל
 

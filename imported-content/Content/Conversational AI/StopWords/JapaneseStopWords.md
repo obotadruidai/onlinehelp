@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Japanese Stop Words"
 ---
 
 <a id="JapaneseStopWords"></a>
 
-# Japanese Stop Words
 
 あそこ
 

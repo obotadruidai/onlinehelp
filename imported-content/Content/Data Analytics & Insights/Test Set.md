@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Evaluate Test Phrases"
 ---
 
 <a id="EvaluateTestPhrases"></a>
 
-# Evaluate Test Phrases
 
 The sample of data used to provide an unbiased evaluation of a final trained model based on the selected train set. In general, the test set is well-curated. It contains carefully sampled data that spans the various classes that the model would face, when used in the real world.
 

@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Maltese Stop Words"
 ---
 
 <a id="MalteseStopWords"></a>
 
-# Maltese Stop Words
 
 a
 

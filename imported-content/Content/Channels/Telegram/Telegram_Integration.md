@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Telegram"
 ---
 
 <a id="Telegram"></a>
 
-# Telegram
 
 You can integrate AI Agents with Telegram allowing your customers to start conversations with the AI Agents in the Telegram app.
 

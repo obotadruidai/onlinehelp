@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "UiPath Start My Day"
 ---
 
 <a id="UiPathStartMyDay"></a>
 
-# UiPath Start My Day
 
 Inspired by the [https://marketplace.uipath.com/listings/start-my-day](https://marketplace.uipath.com/listings/start-my-day) workflow, we added adjustments to the actual process in order to showcase the Druid-UiPath start my day workflow.
 

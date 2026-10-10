@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Employee Onboarding"
 ---
 
 <a id="EmployeeOnboarding"></a>
 
-# Employee Onboarding
 
 This solution template provides onboarding skills for HR Admins and new employes, as follows:
 

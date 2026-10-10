@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "HR, Leave Management Agentic Solution"
 ---
 
 <a id="HRLeaveManagementAgenticSolution"></a>
 
-# HR, Leave Management Agentic Solution
 
 The **HR, Leave Management Agentic Solution** is a pre-built AI Agent designed to manage common HR processes, primarily focusing on employee leave. It is built on DRUID’s proprietary Agentic framework and is compatible with external models such as GPT-4. This solution enables users to create and manage leave requests through natural, conversational interactions.
 

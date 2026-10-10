@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Delete Files with the Druid Connector Host"
 ---
 
 <a id="DeleteFileswiththeDruidConnectorHost"></a>
 
-# Delete Files with the Druid Connector Host
 
 The **Delete File** integration task enables the Druid Connector Host to delete a single file from a specific local disk or network location accessible by the host machine.
 

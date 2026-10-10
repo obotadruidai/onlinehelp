@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Preview and Validate Forms"
 ---
 
 <a id="PreviewandValidateForms"></a>
 
-# Preview and Validate Forms
 
 The authors can preview a form by clicking on the **Preview** icon at the top of the Form Diagram.
 

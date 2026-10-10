@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Test Cases"
 ---
 
 <a id="TestCases"></a>
 
-# Test Cases
 
 A test case simulates a human tester and enables you to automate a conversation. A test case is a specification of the inputs, execution conditions, testing procedure, and expected results that define a single test to be executed to achieve a particular testing objective.
 

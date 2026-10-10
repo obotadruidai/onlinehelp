@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Step 3. Add Integration Task"
 ---
 
 <a id="Step3AddIntegrationTask"></a>
 
-# Step 3. Add Integration Task
 
 Druid provides you with four integration tasks:
 

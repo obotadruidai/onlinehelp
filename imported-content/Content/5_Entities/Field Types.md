@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Field Types"
 ---
 
 <a id="FieldTypes"></a>
 
-# Field Types
 
 Understanding the field type is essential as it determines specific capabilities, particularly in natural language processing (NLP). For instance, a field like Vacation.StartDate, categorized as datetime, will intelligently interpret user input to convert it into a date format.
 

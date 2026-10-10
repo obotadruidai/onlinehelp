@@ -1,12 +1,11 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Viewing Conversation History"
 ---
 
 <a id="ViewingConversationHistory"></a>
 
-# <a id="_Viewing_and_Annotating"></a><a id="_Viewing_Conversation_History"></a>Viewing Conversation History
+<a id="_Viewing_and_Annotating"></a>
+<a id="_Viewing_Conversation_History"></a>
 
 To access the Annotation Tool for a specific AI Agent, select the AI Agent and the solution. From the main menu, click **Evaluation** and the **Conversation History** tab.
 

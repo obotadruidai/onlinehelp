@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "How to use the solution (for users)"
 ---
 
 <a id="Howtousethesolutionforusers"></a>
 
-# How to use the solution (for users)
 
 The **Conversation Toolkit** and **Voice Conversation Toolkit** workspaces are the primary interfaces for business users to monitor and manage conversation analysis. While they offer the exact same metrics, insights, and tracking capabilities, they are separated by interaction type to help you stay focused on specific communication channels.
 

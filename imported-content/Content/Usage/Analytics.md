@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Analytics"
 ---
 
 <a id="Analytics"></a>
 
-# Analytics
 
 The default Automations page of the Dashboard template provides an overview of automations performed by the AI Agent.
 

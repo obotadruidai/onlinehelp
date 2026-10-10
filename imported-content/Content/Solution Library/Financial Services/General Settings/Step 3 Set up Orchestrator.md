@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Step 3: Set up Orchestrator Victor\\_Advanced Process\\_Data Service"
 ---
 
 <a id="Step3SetupOrchestratorVictorAdvancedProcessDataService"></a>
 
-# Step 3: Set up Orchestrator Victor\_Advanced Process\_Data Service
 
 Log in [https://cloud.uipath.com/](https://cloud.uipath.com/), go to your orchestrator tenant/Data Service and create four entities:
 

@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Retrieved Entities"
 ---
 
 <a id="RetrievedEntities"></a>
 
-# Retrieved Entities
 
 When a PeopleSoft automation retrieves student information, the data is stored in the Druid Data Service as a set of reusable entities.
 

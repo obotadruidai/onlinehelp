@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Helpdesk, Reset password"
 ---
 
 <a id="HelpdeskResetpassword"></a>
 
-# Helpdesk, Reset password
 
 This solution template enables your AI Agent to assist users resetting their password on request.
 

@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Druid Supported Languages"
 ---
 
 <a id="DruidSupportedLanguages"></a>
 
-# Druid Supported Languages
 
 This section lists the supported languages across Druid NLP features.
 

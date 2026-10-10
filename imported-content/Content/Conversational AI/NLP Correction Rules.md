@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "NLP Correction Rules"
 ---
 
 <a id="NLPCorrectionRules"></a>
 
-# NLP Correction Rules
 
 When working to make the NLP model better, what you want as an author is to either:
 

@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "See the AI Agent in action"
 ---
 
 <a id="SeetheAIAgentinaction"></a>
 
-# See the AI Agent in action
 
 The list below provides you with an extensive list of things you can say to the AI Agent in either English or Portuguese.
 

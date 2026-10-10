@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Operational Visibility and History"
 ---
 
 <a id="OperationalVisibilityandHistory"></a>
 
-# Operational Visibility and History
 
 Druid provides real-time and historical transparency into every session to support both human teams and automated workflows. By centralizing interaction data, the platform ensures that administrators and supervisors have the necessary oversight to monitor AI Agent execution and manage seamless transitions to human support staff.
 

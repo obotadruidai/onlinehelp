@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Calendar Views"
 ---
 
 <a id="CalendarViews"></a>
 
-# Calendar Views
 
 Calendar views allow you to look at your record events on a calendar. The records should have at least one Date / DateTime field.
 

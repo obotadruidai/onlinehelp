@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Welcome Flow"
 ---
 
 <a id="WelcomeFlow"></a>
 
-# Welcome Flow
 
 The Welcome flow is the first flow DRUID executes for each new conversation. It provides the first response the AI Agent sends to the user who starts the chat.
 

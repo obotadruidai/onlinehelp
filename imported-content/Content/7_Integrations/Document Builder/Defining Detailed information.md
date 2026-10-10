@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Defining Detailed information - table"
 ---
 
 <a id="DefiningDetailedinformationtable"></a>
 
-# Defining Detailed information - table
 
 When using the Druid Document Builder to generate Excel reports, you can dynamically populate tables with repeating rows of data. This is achieved by mapping an Entity List (a collection of records under an umbrella request entity) to a designated table area in your Excel template.
 

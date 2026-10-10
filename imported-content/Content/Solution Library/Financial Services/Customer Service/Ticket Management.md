@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Ticket Management"
 ---
 
 <a id="TicketManagement"></a>
 
-# Ticket Management
 
 This solution template provides conversational flows and integrations that allow the customer to easily open a new ticket on a specific problem, to add comments or photos to an opened ticket, to check the status of a particular ticket.
 

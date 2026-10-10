@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "UiPath Unattended Process"
 ---
 
 <a id="UiPathUnattendedProcess"></a>
 
-# UiPath Unattended Process
 
 Triggering unattended robots will execute tasks and interact with applications independent of human interaction. They typically perform batch operations that do not require user intervention. For example, a batch of new client information is received in a spreadsheet and needs to be entered into multiple applications.
 

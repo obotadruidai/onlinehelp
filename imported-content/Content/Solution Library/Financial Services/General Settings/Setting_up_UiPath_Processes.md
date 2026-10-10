@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Setting up the UiPath Process"
 ---
 
 <a id="SettinguptheUiPathProcess"></a>
 
-# Setting up the UiPath Process
 
 Download Victor specific UiPath processes by clicking on the **Download** button below and unzip it.
 

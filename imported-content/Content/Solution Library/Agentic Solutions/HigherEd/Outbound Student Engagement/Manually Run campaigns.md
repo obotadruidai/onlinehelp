@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Manually Run campaigns"
 ---
 
 <a id="ManuallyRuncampaigns"></a>
 
-# Manually Run campaigns
 
 for campaign managers
 

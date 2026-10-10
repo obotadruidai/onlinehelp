@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "PeopleSoft"
 ---
 
 <a id="PeopleSoft"></a>
 
-# PeopleSoft
 
 This section explains how to configure a DRUID SQL app to integrate with PeopleSoft.
 

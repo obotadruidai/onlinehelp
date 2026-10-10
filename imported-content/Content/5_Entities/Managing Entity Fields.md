@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Managing Entity Fields"
 ---
 
 <a id="ManagingEntityFields"></a>
 
-# Managing Entity Fields
 
 Entity fields play a crucial role in storing and managing data within your AI Agent. Druid offers a seamless process to add, edit, and delete entity fields, ensuring efficient management of your AI Agent informational model.
 

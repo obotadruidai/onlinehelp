@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Romanian Passports OCR"
 ---
 
 <a id="RomanianPassportsOCR"></a>
 
-# Romanian Passports OCR
 
 The DRUIDAPI engine performs OCR and data extraction from Romanian passports.
 

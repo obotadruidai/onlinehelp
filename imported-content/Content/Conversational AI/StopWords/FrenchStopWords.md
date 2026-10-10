@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "French Stop Words"
 ---
 
 <a id="FrenchStopWords"></a>
 
-# French Stop Words
 
 de
 

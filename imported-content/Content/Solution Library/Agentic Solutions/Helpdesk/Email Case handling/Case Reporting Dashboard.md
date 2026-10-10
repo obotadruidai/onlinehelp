@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Case Reporting Dashboard"
 ---
 
 <a id="CaseReportingDashboard"></a>
 
-# Case Reporting Dashboard
 
 For helpdesk managers
 

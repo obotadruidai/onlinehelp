@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "See AI Agent in Action"
 ---
 
 <a id="SeeAIAgentinAction"></a>
 
-# See AI Agent in Action
 
 | Skill | English | Romanian |
 | --- | --- | --- |

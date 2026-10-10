@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "WhatsApp Authentication"
 ---
 
 <a id="WhatsAppAuthentication"></a>
 
-# WhatsApp Authentication
 
 This solution template enables you to authenticate the users chatting with the AI Agent for the first time in the WhatsApp (Nexmo) channel.
 

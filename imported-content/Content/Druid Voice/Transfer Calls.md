@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Transfer Calls"
 ---
 
 <a id="TransferCalls"></a>
 
-# Transfer Calls
 
 Druid SIP supports two methods for transferring active calls from the AI Agent to an external contact center or target IP address:
 

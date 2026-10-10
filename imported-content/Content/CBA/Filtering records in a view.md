@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Filtering records in a view"
 ---
 
 <a id="Filteringrecordsinaview"></a>
 
-# Filtering records in a view
 
 > **IMPORTANT!** You need to upgrade both the DRUID Connector Host to version 5.29 or higher and the entity associated with the web view; otherwise, loading the web view will fail.
 

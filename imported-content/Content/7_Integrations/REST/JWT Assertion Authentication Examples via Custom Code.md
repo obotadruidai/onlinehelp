@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "JWT Assertion Authentication Examples via Custom Code"
 ---
 
 <a id="JWTAssertionAuthenticationExamplesviaCustomCode"></a>
 
-# JWT Assertion Authentication Examples via Custom Code
 
 This section describes examples of authentication with JWT assertion using Custom Code.
 

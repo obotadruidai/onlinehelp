@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Starting UiPath Unattended Processes"
 ---
 
 <a id="StartingUiPathUnattendedProcesses"></a>
 
-# Starting UiPath Unattended Processes
 
 DRUID offers a simplified UiPath integration, which enables you to start a job that executes a process directly on a UiPath robot using input arguments.
 

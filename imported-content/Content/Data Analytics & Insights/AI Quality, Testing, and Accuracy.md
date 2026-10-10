@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "AI Quality, Testing, and Accuracy"
 ---
 
 <a id="AIQualityTestingandAccuracy"></a>
 
-# AI Quality, Testing, and Accuracy
 
 Ensure your AI Agent delivers reliable, accurate, and enterprise-ready responses at every stage of its lifecycle.
 

@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Playground"
 ---
 
 <a id="Playground"></a>
 
-# Playground
 
 The **Playground** provides an interactive testing environment to evaluate your ElevenLabs speech resources directly within the Druid Portal. The available options change depending on whether you are accessing an STT (Speech-to-Text) or TTS (Text-to-Speech) resource.
 

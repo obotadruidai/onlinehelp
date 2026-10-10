@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Deployment Requirements"
 ---
 
 <a id="DeploymentRequirements"></a>
 
-# Deployment Requirements
 
 This section provides you with the hardware and software prerequisites for deploying various Druid configurations. Simply click on the **+** sign next to your desired configuration to reveal its specific requirements.
 

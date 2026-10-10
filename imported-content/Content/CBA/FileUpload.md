@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "File Upload in Web Views and Forms"
 ---
 
 <a id="FileUploadinWebViewsandForms"></a>
 
-# File Upload in Web Views and Forms
 
 Web views and forms allows uploading files, similar to how the Flow Engine captures files via chat.
 Web views and forms display the links to download the respective files.

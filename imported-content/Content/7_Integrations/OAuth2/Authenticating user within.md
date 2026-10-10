@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Signing in users with OAuth v2"
 ---
 
 <a id="SigninginuserswithOAuthv2"></a>
 
-# Signing in users with OAuth v2
 
 To enable user sign-in using OAuth 2.0 and ensure a smooth conversational experience, follow the steps below. This process includes the latest updates for automated session management and timeout handling.
 

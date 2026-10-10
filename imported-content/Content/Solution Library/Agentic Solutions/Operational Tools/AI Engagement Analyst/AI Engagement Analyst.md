@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "AI Engagement Analyst"
 ---
 
 <a id="AIEngagementAnalyst"></a>
 
-# AI Engagement Analyst
 
 Every conversation your business has with a customer is a goldmine of insight, but traditional manual reviews often leave critical data untapped. AI Engagement Analyst is a continuous, automated conversation intelligence solution designed to analyze chat and voice interactions at scale. By eliminating blind spots, it automatically extracts real-time and historical metrics—such as Sentiment, Friction, Clarity, and Outcome—across both AI-powered and live customer support channels.
 

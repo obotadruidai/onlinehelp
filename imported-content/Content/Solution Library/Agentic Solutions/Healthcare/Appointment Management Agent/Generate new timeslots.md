@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Generate New Timeslots"
 ---
 
 <a id="GenerateNewTimeslots"></a>
 
-# Generate New Timeslots
 
 For medical back-office
 

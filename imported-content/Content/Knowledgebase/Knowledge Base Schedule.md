@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Knowledge Base Schedule"
 ---
 
 <a id="KnowledgeBaseSchedule"></a>
 
-# Knowledge Base Schedule
 
 The Knowledge Base Schedule allows authors to schedule crawling, extraction, and training actions at a data source level to occur automatically.
 

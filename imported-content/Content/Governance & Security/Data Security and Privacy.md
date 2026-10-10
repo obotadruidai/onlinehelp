@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Data Security and Privacy"
 ---
 
 <a id="DataSecurityandPrivacy"></a>
 
-# Data Security and Privacy
 
 Druid protects data, identity, and access across the full platform runtime—from user authentication and role assignment through to data storage, system communication, and operational monitoring. Security controls are built into the platform architecture and apply consistently across all deployment topologies. They do not require additional configuration for regulated or sensitive deployments.
 

@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "SSO Authentication with SAML"
 ---
 
 <a id="SSOAuthenticationwithSAML"></a>
 
-# SSO Authentication with SAML
 
 You can use the Security Assertion Markup Language (SAML) protocol to authenticate users in Druid via single sign-on (SSO). Druid supports any Identity Provider (IDP), including custom implementations. Once SAML is configured, users can sign in through a secure link displayed in their chat session.
 

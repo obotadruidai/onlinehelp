@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Client Certificate Security"
 ---
 
 <a id="ClientCertificateSecurity"></a>
 
-# Client Certificate Security
 
 You can now integrate AI Agents with third party tools, which expose REST APIs that use a security certificate for authentication.
 

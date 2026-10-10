@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Campaign Automations"
 ---
 
 <a id="CampaignAutomations"></a>
 
-# Campaign Automations
 
 The campaign configuration page provides you with automations to improve efficiency. These automations are available only for **Notification**, **Survey**, and **Conversation campaigns**, and are located on the Campaign Information form.
 

@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Setting Up the Contract Termination UiPath Attended Process"
 ---
 
 <a id="SettingUptheContractTerminationUiPathAttendedProcess"></a>
 
-# Setting Up the Contract Termination UiPath Attended Process
 
 Go to [https://cloud.uipath.com.](https://cloud.uipath.com.)
 

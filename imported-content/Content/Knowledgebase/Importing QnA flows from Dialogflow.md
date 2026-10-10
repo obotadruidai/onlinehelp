@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Importing QnA flows from Dialogflow ES"
 ---
 
 <a id="ImportingQnAflowsfromDialogflowES"></a>
 
-# Importing QnA flows from Dialogflow ES
 
 DRUID QnA provides a streamlined way to import root level intents with no follow-up intents from Dialogflow Essentials (ES), putting at your disposal the Dialogflow data source (intents and responses).
 

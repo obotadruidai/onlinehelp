@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Setting Up the AI Agent"
 ---
 
 <a id="SettingUptheAIAgent"></a>
 
-# Setting Up the AI Agent
 
 <a id="Step1InstallthesolutionfromtheSolutionsLibrary"></a>
 

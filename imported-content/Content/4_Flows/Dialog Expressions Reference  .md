@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Dialog Expressions Reference"
 ---
 
 <a id="DialogExpressionsReference"></a>
 
-# Dialog Expressions Reference
 
 In the Druid AI Platform, you can utilize expressions in dialogs to perform various tasks, such as defining conditions for flow steps and crafting messages sent to users. Here's how you can use expressions effectively:
 

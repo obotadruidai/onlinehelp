@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Bulgarian Stop Words"
 ---
 
 <a id="BulgarianStopWords"></a>
 
-# Bulgarian Stop Words
 
 а
 

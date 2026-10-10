@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Setting Up the AI Agent Conversational AI (DRUID versions prior to 5.15)"
 ---
 
 <a id="SettingUptheAIAgentConversationalAIDRUIDversionspriorto515"></a>
 
-# Setting Up the AI Agent Conversational AI (DRUID versions prior to 5.15)
 
 To select the NLP interpreter, in the AI Agent Details page, click the Conversational AI section header. The Conversational AI settings area expands.
 

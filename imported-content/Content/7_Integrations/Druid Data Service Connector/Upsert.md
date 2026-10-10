@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Upsert Entity"
 ---
 
 <a id="UpsertEntity"></a>
 
-# Upsert Entity
 
 The Upsert Entity integration task combines the functionality of both the Update entity and Add entity tasks, simplifying records management processes. DRUID uses the specified identifying key(s) to check for the existence of records in the database and only conducts bulk insertion or update operations on lists that belong to the request entity, also referred to as the umbrella entity.
 

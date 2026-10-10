@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Creating SendGrid Connectors"
 ---
 
 <a id="CreatingSendGridConnectors"></a>
 
-# Creating SendGrid Connectors
 
 SendGrid is a cloud-based SMTP provider that allows you to send email without having to maintain email servers.
 

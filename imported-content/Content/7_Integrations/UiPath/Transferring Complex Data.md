@@ -1,14 +1,11 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Transferring Complex Data Type through the Start Unattended Job Integration"
 ---
 
 <a id="microcontent1"></a>
 
 <a id="TransferringComplexDataTypethroughtheStartUnattendedJobIntegration"></a>
 
-# Transferring Complex Data Type through the Start Unattended Job Integration
 
 **Required!** This feature is available for DRUID Connectors v1.47 or above. If you have a hybrid or on premise DRUID deployment, install DRUID Connector Host version 1.47 or above.
 

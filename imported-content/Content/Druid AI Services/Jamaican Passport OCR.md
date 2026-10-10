@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Jamaican Passport OCR"
 ---
 
 <a id="JamaicanPassportOCR"></a>
 
-# Jamaican Passport OCR
 
 The Druid API engine performs OCR and data extraction from Jamaican passports.
 

@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Provisioning Portal Users with Google SAML"
 ---
 
 <a id="ProvisioningPortalUserswithGoogleSAML"></a>
 
-# Provisioning Portal Users with Google SAML
 
 You can now streamline portal access for your team by enabling Google Single Sign-On (SSO) authentication with the SAML protocol. This feature allows team members to sign in to the portal using their managed Google Account credentials, eliminating the need to create and manage separate portal passwords.
 

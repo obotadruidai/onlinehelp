@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Backchannel Event (Bot Framework v3)"
 ---
 
 <a id="BackchannelEventBotFrameworkv3"></a>
 
-# Backchannel Event (Bot Framework v3)
 
 Backchannel Event steps can trigger events in the web page that hosts the AI Agent.
 

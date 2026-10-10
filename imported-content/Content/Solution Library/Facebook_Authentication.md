@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Facebook Authentication"
 ---
 
 <a id="FacebookAuthentication"></a>
 
-# Facebook Authentication
 
 This solution template enables you to authenticate the users chatting with the AI Agent for the first time in the Facebook channel.
 

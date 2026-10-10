@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Druid AI Platform"
 ---
 
 <a id="DruidAIPlatform"></a>
 
-# Druid AI Platform
 
 The Druid AI Platform is an enterprise Conversational AI platform used to build, deploy, and operate industry-specific AI Agents. The platform separates agent intelligence, conversation logic, and enterprise integrations, allowing organizations to scale AI solutions across departments and use cases.
 

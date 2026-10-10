@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Integrations"
 ---
 
 <a id="Integrations"></a>
 
-# Integrations
 
 The Druid AI Platform provides a high-performance connectivity framework designed to link AI Agents with your broader enterprise ecosystem. By leveraging these integrations, agents move beyond simple conversation—they gain the ability to query databases, trigger complex business workflows, and process multi-modal data in real-time.
 

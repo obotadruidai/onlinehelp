@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Salesforce Connector"
 ---
 
 <a id="SalesforceConnector"></a>
 
-# Salesforce Connector
 
 DRUID offers a library of Salesforce solution templates that help you cut the AI Agent authoring time by providing you with the basic elements. Use the solution templates as starting points and customize them to accommodate your specific needs.
 

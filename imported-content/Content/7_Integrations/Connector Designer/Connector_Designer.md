@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Connector Designer"
 ---
 
 <a id="ConnectorDesigner"></a>
 
-# Connector Designer
 
 The Connector Designer enables authors to create complex automations. It allows you to define the integration steps (for a connector action), add integration tasks, set conditions on integration tasks, link tasks, etc.
 

@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "LLM Response Validation"
 ---
 
 <a id="LLMResponseValidation"></a>
 
-# LLM Response Validation
 
 Ensure your LLM-powered AI Agents provide accurate and reliable information by setting up a flow that allows human agents to review and validate all LLM-generated responses before they reach users.
 

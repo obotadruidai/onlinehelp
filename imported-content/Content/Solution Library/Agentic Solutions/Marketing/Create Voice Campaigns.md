@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Create Voice Campaigns"
 ---
 
 <a id="CreateVoiceCampaigns"></a>
 
-# Create Voice Campaigns
 
 Voice campaigns initiate outbound automated voice calls to deliver spoken notification messages or run interactive voice conversations.
 

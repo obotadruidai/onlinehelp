@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "PDF Page Count"
 ---
 
 <a id="PDFPageCount"></a>
 
-# PDF Page Count
 
 This Vision endpoint provides the total number of pages in a PDF document. This feature is especially useful when preparing to convert specific PDF pages to JPEG.
 

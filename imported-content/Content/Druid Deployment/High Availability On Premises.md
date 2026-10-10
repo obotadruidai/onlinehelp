@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "High Availability On-Premises Deployment"
 ---
 
 <a id="HighAvailabilityOnPremisesDeployment"></a>
 
-# High Availability On-Premises Deployment
 
 Druid HA deployments leverage industry-standard Kubernetes technology. This setup is designed to handle light to moderate chat traffic, averaging 100 messages per minute, with occasional spikes up to 300 messages per minute, and no significant load on the Druid Connector.
 

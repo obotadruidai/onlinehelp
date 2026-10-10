@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "MS Teams Authentication"
 ---
 
 <a id="MSTeamsAuthentication"></a>
 
-# MS Teams Authentication
 
 This solution template enables you to authenticate the users chatting with the AI Agent for the first time in the MS Teams channel.
 

@@ -1,11 +1,8 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Slate"
 ---
 
 <a id="Slate"></a>
 
-# Slate
 
 Documentation will be available soon.

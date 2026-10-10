@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "eSignature DocuSign"
 ---
 
 <a id="eSignatureDocuSign"></a>
 
-# eSignature DocuSign
 
 eSignature DocuSign is a solution that uses DocuSign technology to provide your AI Agent with electronic signature capabilities. Use it if you want to showcase Druid-DocuSign integration.
 

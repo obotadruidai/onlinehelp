@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Viewing and Managing Entities in a Flow"
 ---
 
 <a id="ViewingandManagingEntitiesinaFlow"></a>
 
-# Viewing and Managing Entities in a Flow
 
 When building a conversational flow, keeping track of which entities and fields are used across steps can quickly become complex. The Entity Context Viewer gives you a centralized view of all entities used throughout the current flow, helping you author more accurately and efficiently.
 

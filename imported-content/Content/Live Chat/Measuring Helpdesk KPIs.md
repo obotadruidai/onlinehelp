@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Measuring Helpdesk KPIs"
 ---
 
 <a id="MeasuringHelpdeskKPIs"></a>
 
-# Measuring Helpdesk KPIs
 
 Measuring the performance of your helpdesk team requires you to track specific KPIs.
 

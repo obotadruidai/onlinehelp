@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Financial Services"
 ---
 
 <a id="FinancialServices"></a>
 
-# Financial Services
 
 Financial Services is a solution that addresses the Loan Origination. It can be used on top of existing applications and systems running within Financial Services organizations (Banking, Retail Banking, Leasing)) to provide an end-to-end conversational process, assisting customers and employees with day-to-day operations.
 

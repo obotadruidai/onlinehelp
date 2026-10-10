@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Understanding Entity Models"
 ---
 
 <a id="UnderstandingEntityModels"></a>
 
-# Understanding Entity Models
 
 Entity Diagrams simplify AI Agent authoring by providing a graphical representation of Enterprise Data Models. Druid offers industry-specific predefined templates, empowering users to design rich Data Models comprising hundreds of entities and fields. The Entity Diagram visualizes all business object relations within a solution, offering a familiar and intuitive interface that streamlines entity configurations. This enhances platform versatility and simplifies deployments, even for the most complex use-cases.
 

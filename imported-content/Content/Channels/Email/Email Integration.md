@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Email"
 ---
 
 <a id="Email"></a>
 
-# Email
 
 > **IMPORTANT!** The Email channel is deprecated starting with Druid 9.11. If you already have it configured from an earlier version, it will continue to work. However, you won’t be able to create new configurations in later versions. Use the [Outlook channel](../Outlook.md) instead.
 

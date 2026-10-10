@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Debugging and Understanding Contextual Meaning from the Chat"
 ---
 
 <a id="DebuggingandUnderstandingContextualMeaningfromtheChat"></a>
 
-# Debugging and Understanding Contextual Meaning from the Chat
 
 To debug and understand contextual meaning from the chat, use Druid internal system keywords. The table below provides the full list of Druid system keywords that can be used in the chat.
 

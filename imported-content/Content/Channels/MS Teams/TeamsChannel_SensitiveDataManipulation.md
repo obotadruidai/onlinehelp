@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Configuration for Sensitive Data Manipulation"
 ---
 
 <a id="ConfigurationforSensitiveDataManipulation"></a>
 
-# Configuration for Sensitive Data Manipulation
 
 DRUID provides authors with extensive options to create AI Agents able to securely capture sensitive data from chat users (passwords, credit card numbers, etc.) / receive secure data from external systems and transfer it in an encrypted way to third party applications using connector integrations.
 

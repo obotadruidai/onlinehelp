@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Use LLM Response Streaming for Voice Interactions"
 ---
 
 <a id="UseLLMResponseStreamingforVoiceInteractions"></a>
 
-# Use LLM Response Streaming for Voice Interactions
 
 To provide a more natural and fluid experience in voice-based conversations, you can use the LlmStreamer internal integration. This allows the AI Agent to stream the model output in real-time rather than waiting for the full generation to complete.
 

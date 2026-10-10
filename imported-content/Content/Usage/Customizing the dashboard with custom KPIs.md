@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Customizing the dashboard with custom KPIs"
 ---
 
 <a id="CustomizingthedashboardwithcustomKPIs"></a>
 
-# Customizing the dashboard with custom KPIs
 
 To customize the dashboard with your own KPIs (other than Druid predefined KPIs), get in touch with [Druid Tech Support](<mailto:support@druidai.com?subject=Dashboard Customization with custom KPIs>).
 

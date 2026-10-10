@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Web Chat Styles"
 ---
 
 <a id="WebChatStyles"></a>
 
-# Web Chat Styles
 
 This section provides you with HTML samples web chat HTML templates that you can download and easily customize by updating the classes in the custom css file and replacing the css file, the script which renders the web chat widget and the script which initializes it with values from the WebChat Snippet field. For more information, see [Embed Druid web chat within your website](WebChat.md).
 

@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Augmentation"
 ---
 
 <a id="Augmentation"></a>
 
-# Augmentation
 
 Augmentation defines how additional information is generated for Knowledge Base records using a Large Language Model (LLM).
 

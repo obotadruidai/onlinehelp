@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Data Analytics & Insights"
 ---
 
 <a id="DataAnalyticsInsights"></a>
 
-# Data Analytics & Insights
 
 **Data Analytics & Insights** in Druid provide the operational visibility and performance intelligence required to optimize AI Agent execution. This section consolidates system analytics and conversational data into a single layer to provide a 360-degree view of the automation ecosystem.
 

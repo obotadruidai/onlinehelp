@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Defining the Dialog"
 ---
 
 <a id="DefiningtheDialog"></a>
 
-# Defining the Dialog
 
 A dialog in the Druid AI Platform is a structured conversation that outlines responses to defined intents. It consists of one or multiple flow steps, each contributing to the overall interaction between the user and the AI Agent.
 

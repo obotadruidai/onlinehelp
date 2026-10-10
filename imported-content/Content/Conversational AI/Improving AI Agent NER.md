@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Improving AI Agent NER"
 ---
 
 <a id="ImprovingAIAgentNER"></a>
 
-# Improving AI Agent NER
 
 For DRUID version 1.67 and higher, you can improve the AI Agent NER by adding training phrases on flow steps with input mapping (prompt, choice, hero, thumbnail) enabling the AI Agent to extract specific information and store it in DRUID entities as part of intent recognition on a flow step level.
 

@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Conversation Time Translation"
 ---
 
 <a id="ConversationTimeTranslation"></a>
 
-# Conversation Time Translation
 
 Conversation Time Translation facilitates seamless communication in multiple languages during a chat session. When a language change occurs, all inbound and outbound messages are automatically translated between the AI Agent default language and the newly selected language. This ensures effective communication regardless of the user's preferred language.
 

@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Knowledgebase with GPT V4"
 ---
 
 <a id="KnowledgebasewithGPTV4"></a>
 
-# Knowledgebase with GPT V4
 
 Knowledge Base with GPT V4 integrates Druid flow orchestration capabilities with the power of Druid LLMs (Druid Becus and the Azure OpenAI gpt-4.1-mini model). This combination delivers accurate, conversational answers in real time, eliminating the need for user manual browsing through multiple articles.
 

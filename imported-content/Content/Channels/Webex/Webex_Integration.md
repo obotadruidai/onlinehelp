@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Webex"
 ---
 
 <a id="Webex"></a>
 
-# Webex
 
 Druid Portal allows you to create the AI Agent once and deploy it in Webex.
 

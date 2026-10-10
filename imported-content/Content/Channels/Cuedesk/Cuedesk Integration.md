@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Cuedesk"
 ---
 
 <a id="Cuedesk"></a>
 
-# Cuedesk
 
 Cuedesk is a customer service platform that supports AI Agents, live chat, and broadcasts. By integrating a Druid AI Agent with Cuedesk, you can manage user conversations within Cuedesk-supported channels, such as WhatsApp and Facebook Messenger.
 

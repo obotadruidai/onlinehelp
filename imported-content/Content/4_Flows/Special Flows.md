@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Special Flows"
 ---
 
 <a id="SpecialFlows"></a>
 
-# Special Flows
 
 The AI Agent Designer allows you to set specific responses triggered by special events in which a AI Agent might reach out. The predefined list of events is known as special flows. You can either set the list of responses via the AI Agent Designer or set the flows to provide customized responses via the Flow Designer.
 

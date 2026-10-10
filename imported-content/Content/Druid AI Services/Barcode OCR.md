@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Barcode OCR"
 ---
 
 <a id="BarcodeOCR"></a>
 
-# Barcode OCR
 
 The Druid API engine performs OCR and data extraction from Barcodes.
 

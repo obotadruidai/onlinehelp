@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Dashboards"
 ---
 
 <a id="Dashboards"></a>
 
-# Dashboards
 
 You can put at business users disposal data from web views and charts by adding multiple dashboards to workspaces.
 

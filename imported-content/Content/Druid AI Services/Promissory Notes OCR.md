@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Promissory Notes OCR"
 ---
 
 <a id="PromissoryNotesOCR"></a>
 
-# Promissory Notes OCR
 
 The Druid API engine performs OCR and data extraction from Promissory Notes.
 

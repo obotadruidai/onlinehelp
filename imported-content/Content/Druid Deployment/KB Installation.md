@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Knowledge Base Installation"
 ---
 
 <a id="KnowledgeBaseInstallation"></a>
 
-# Knowledge Base Installation
 
 The DRUID Knowledge Base operates as a Windows Service utilized by the DRUID conversation engine for managing and storing knowledge base data within the client's infrastructure. It serves as a robust internal DRUID tool, empowering authors and business users to curate a repository of text articles sourced exclusively from within the client's network. Furthermore, it facilitates the storage of all KB-related data within the client's infrastructure.
 

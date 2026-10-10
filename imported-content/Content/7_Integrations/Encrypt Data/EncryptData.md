@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Encrypt Data"
 ---
 
 <a id="EncryptData"></a>
 
-# Encrypt Data
 
 Users use AI Agents in communication with financial institutions, healthcare assistants, airport companies, online shops, and many others. There are cases when third party applications require specific user information (sensitive or not, e.g. user account credentials, client ID, client name, etc.) to be transmitted in a secure way.
 

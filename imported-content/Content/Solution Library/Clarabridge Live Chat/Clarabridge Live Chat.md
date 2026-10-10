@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Clarabridge Live Chat"
 ---
 
 <a id="ClarabridgeLiveChat"></a>
 
-# Clarabridge Live Chat
 
 <a id="Step1SetupSunshinechannel"></a>
 

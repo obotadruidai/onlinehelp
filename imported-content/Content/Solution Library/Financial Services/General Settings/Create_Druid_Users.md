@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Creating Druid Users For Financial Services"
 ---
 
 <a id="CreatingDruidUsersForFinancialServices"></a>
 
-# Creating Druid Users For Financial Services
 
 <a id="Step1CreateServiceAccountforUiPathIntegration"></a>
 

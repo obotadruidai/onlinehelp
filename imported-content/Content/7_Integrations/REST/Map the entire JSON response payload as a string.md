@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Map the Response Payload as a String"
 ---
 
 <a id="MaptheResponsePayloadasaString"></a>
 
-# Map the Response Payload as a String
 
 There are cases when you might want to save the entire JSON /XML response payload as a string in a DRUID entity (without mapping the specific fields in the JSON content) and pass it to other external services.
 

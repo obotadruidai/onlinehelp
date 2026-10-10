@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Hindi Stop Words"
 ---
 
 <a id="HindiStopWords"></a>
 
-# Hindi Stop Words
 
 अंदर
 

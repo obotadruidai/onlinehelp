@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "See AI Agent in Action"
 ---
 
 <a id="SeeAIAgentinAction"></a>
 
-# See AI Agent in Action
 
 > **NOTE:** The AI Agent is trained in two languages: RO and EN. If you want to switch between languages, just type the following commands in the snippet:
 >

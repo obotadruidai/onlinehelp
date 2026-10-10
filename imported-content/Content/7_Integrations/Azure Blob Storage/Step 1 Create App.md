@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Step 1. Create App"
 ---
 
 <a id="Step1CreateApp"></a>
 
-# Step 1. Create App
 
 Creating an Azure Blob Storage app means defining your Azure Blob Storage connection string for the AI Agent within the selected solution.
 

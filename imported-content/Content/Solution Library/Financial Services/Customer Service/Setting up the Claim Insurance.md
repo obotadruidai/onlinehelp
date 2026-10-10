@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Setting Up the Claim Insurance UiPath Process"
 ---
 
 <a id="SettingUptheClaimInsuranceUiPathProcess"></a>
 
-# Setting Up the Claim Insurance UiPath Process
 
 <a id="Step1CreateOrchestratorfolder"></a>
 

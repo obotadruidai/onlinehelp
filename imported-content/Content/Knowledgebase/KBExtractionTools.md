@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "KB Extraction Tools"
 ---
 
 <a id="KBExtractionTools"></a>
 
-# KB Extraction Tools
 
 DRUID provides you with two extraction tools that operate as content extraction tools during conversations, particularly valuable for document analysis using Large Language Models (LLMs).
 

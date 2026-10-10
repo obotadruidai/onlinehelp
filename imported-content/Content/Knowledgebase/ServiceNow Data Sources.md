@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "ServiceNow Data Sources"
 ---
 
 <a id="ServiceNowDataSources"></a>
 
-# ServiceNow Data Sources
 
 You can add data from your ServiceNow knowledge base to your AI Agent Knowledge Base.
 

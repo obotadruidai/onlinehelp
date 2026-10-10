@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Passkey Login Configuration"
 ---
 
 <a id="PasskeyLoginConfiguration"></a>
 
-# Passkey Login Configuration
 
 Starting with Druid 9.23, administrators can enable user login using a passkey. Once activated, portal users can configure their user profile to log into the Druid Portalsecurely without typing their password every time.
 

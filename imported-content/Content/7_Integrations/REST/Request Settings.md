@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "REST Request Settings"
 ---
 
 <a id="RESTRequestSettings"></a>
 
-# REST Request Settings
 
 Click the **Request** tab and set the request details.
 

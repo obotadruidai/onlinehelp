@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "QnA"
 ---
 
 <a id="QnA"></a>
 
-# QnA
 
 The QnA is a special type of conversational flow designed to simplify the business user experience when creating simple conversations. They are comprised of training phrases (primary and alternate questions) and a single step of type Message that delivers the response to the user (answer).
 

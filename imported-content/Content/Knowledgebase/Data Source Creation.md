@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Data Source Creation"
 ---
 
 <a id="DataSourceCreation"></a>
 
-# Data Source Creation
 
 This topic covers the initial setup steps and generic configuration parameters required when adding any new data source to the Knowledge Base.
 

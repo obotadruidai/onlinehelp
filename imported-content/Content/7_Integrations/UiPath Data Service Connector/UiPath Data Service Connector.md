@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "UiPath Data Service Connector"
 ---
 
 <a id="UiPathDataServiceConnector"></a>
 
-# UiPath Data Service Connector
 
 UiPath Data Service integration enables authors to create AI Agent informational model in sync with their data model from the UiPath Data Service.
 

@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Creating Chat User Through AI Agent Conversation"
 ---
 
 <a id="CreatingChatUserThroughAIAgentConversation"></a>
 
-# Creating Chat User Through AI Agent Conversation
 
 By default, all users who initiate a conversation with a Druid AI Agent are NOT authenticated – they are associated to the generic user **Anonymous**. To authenticate anonymous users, you must configure an authentication flow (dialogue).
 

@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Map Complex XML Responses"
 ---
 
 <a id="MapComplexXMLResponses"></a>
 
-# Map Complex XML Responses
 
 If a GET request returns an XML response with a complex or unstructured format that prevents direct field mapping, consider the following approach:
 

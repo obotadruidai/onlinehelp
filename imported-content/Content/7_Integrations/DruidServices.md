@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Druid Services"
 ---
 
 <a id="DruidServices"></a>
 
-# Druid Services
 
 To integrate DRUID-specific resources — such as DRUID LLM or DRUID Vision — especially when using solutions from the Solution Library or migrating them between tenants, you must configure the Base URL and token for each DRUID resource. DRUID Services apps simplify this process by using dedicated connector variables tailored to the DRUID services available in your tenant.
 

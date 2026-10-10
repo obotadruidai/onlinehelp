@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Speech Resource Management and Governance"
 ---
 
 <a id="SpeechResourceManagementandGovernance"></a>
 
-# Speech Resource Management and Governance
 
 Druid Speech Resource Management enables system administrators to centrally configure, govern, and manage Speech-to-Text (STT) and Text-to-Speech (TTS) integration services across the platform. Rather than binding speech services directly within individual channel configurations, speech resources can be defined at the tenant level under **Administration** and reused across Druid Voice channels.
 

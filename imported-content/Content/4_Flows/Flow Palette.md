@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Flow Palette"
 ---
 
 <a id="FlowPalette"></a>
 
-# Flow Palette
 
 The Flow Palette, accessible within the Flow Diagram , streamlines AI Agent authoring by integrating various functionality at the step level. It offers the following advantages AI Agent authors:
 

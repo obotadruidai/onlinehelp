@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Advanced Dynamic Authentication"
 ---
 
 <a id="AdvancedDynamicAuthentication"></a>
 
-# Advanced Dynamic Authentication
 
 Use this guide to handle complex, multi-step credential lifecycles, such as token generation and automatic refresh patterns. This configuration establishes a background loop that logs in to an identity service, passes the temporary token to your endpoints, intercepts token expiration errors, and triggers automatic refreshes.
 

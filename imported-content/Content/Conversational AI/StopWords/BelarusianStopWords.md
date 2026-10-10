@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Belarusian Stop Words"
 ---
 
 <a id="BelarusianStopWords"></a>
 
-# Belarusian Stop Words
 
 без
 

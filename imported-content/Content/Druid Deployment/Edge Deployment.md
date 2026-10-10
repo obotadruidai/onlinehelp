@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Edge Deployment"
 ---
 
 <a id="EdgeDeployment"></a>
 
-# Edge Deployment
 
 Edge deployment enables Druid to run AI knowledge management and productivity applications **close to enterprise data sources and users**, within customer-controlled infrastructure with **full data sovereignty**, rather than relying on centralized public cloud environments.
 

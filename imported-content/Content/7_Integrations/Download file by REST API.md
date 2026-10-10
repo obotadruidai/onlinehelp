@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Download File by REST API"
 ---
 
 <a id="DownloadFilebyRESTAPI"></a>
 
-# Download File by REST API
 
 The Download File integration enables you to use a REST API call to download a file from a third-party tool and store it directly in a DRUID entity.
 

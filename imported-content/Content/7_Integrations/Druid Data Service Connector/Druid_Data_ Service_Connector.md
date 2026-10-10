@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Druid Data Service Connector"
 ---
 
 <a id="DruidDataServiceConnector"></a>
 
-# Druid Data Service Connector
 
 Druid Data Service Connector enables authors to use (at a conversational level) Druid entity records that are stored in Druid Data Service. Using this connector is out of the box, as entity records are stored in Druid Data Service, there is no need to define connection strings. You create connector actions and define the Druid Data Service specific integration tasks, then call the integrations tasks on the flows as best suits your needs.
 

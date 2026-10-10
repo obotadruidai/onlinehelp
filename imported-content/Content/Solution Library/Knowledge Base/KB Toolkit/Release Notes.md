@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "KBToolkit Release Notes"
 ---
 
 <a id="KBToolkitReleaseNotes"></a>
 
-# KBToolkit Release Notes
 
 <a id="WhatsNewinVersion21"></a>
 

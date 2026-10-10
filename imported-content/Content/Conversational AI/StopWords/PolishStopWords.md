@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Polish Stop Words"
 ---
 
 <a id="PolishStopWords"></a>
 
-# Polish Stop Words
 
 ach
 

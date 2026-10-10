@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Create and Design Views"
 ---
 
 <a id="CreateandDesignViews"></a>
 
-# Create and Design Views
 
 At authoring time, the authors can define multiple views for an entity that will be displayed to the business users as a drop-down selection, but they can set only one as default.
 

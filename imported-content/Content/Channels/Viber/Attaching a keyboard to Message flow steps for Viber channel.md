@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Attaching a keyboard to Message Steps for Viber Channel"
 ---
 
 <a id="AttachingakeyboardtoMessageStepsforViberChannel"></a>
 
-# Attaching a keyboard to Message Steps for Viber Channel
 
 > **NOTE:** This feature is available in DRUID 5.3 and higher.
 

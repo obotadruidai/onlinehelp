@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "REST Apps"
 ---
 
 <a id="RESTApps"></a>
 
-# REST Apps
 
 REST Apps allow you to define and manage reusable connection strings for web services within the Druid AI Platform. Before your AI Agents can execute individual API actions, you must create a REST App to store the target application base URL and authentication credentials. By bundling these settings under a unique Connection Code, the platform abstracts technical details away from individual workflow steps, allowing you to manage environment endpoints and security keys in one centralized location."
 

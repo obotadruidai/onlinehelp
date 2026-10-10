@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Retail Agentic Solution"
 ---
 
 <a id="RetailAgenticSolution"></a>
 
-# Retail Agentic Solution
 
 The Retail Agentic Solution is a high-performance, end-to-end business application built on Druid technology. It transforms the traditional shopping experience from a static catalog into a natural, conversational, and visual journey. By orchestrating secure PII anonymization, real-time shop-aware inventory, and generative AI visualization, the solution automates complex retail administration while maintaining deep customer engagement and data privacy.
 

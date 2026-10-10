@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "UiPath Data Service"
 ---
 
 <a id="UiPathDataService"></a>
 
-# UiPath Data Service
 
 authors can easily create DRUID information model (at a tenant level) using UiPath schema, easily synchronizing DRUID informational model with UiPath informational model.
 

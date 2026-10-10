@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "UiPath Query Related Entity"
 ---
 
 <a id="UiPathQueryRelatedEntity"></a>
 
-# UiPath Query Related Entity
 
 Queries the request entity's records and returns a collection.
 

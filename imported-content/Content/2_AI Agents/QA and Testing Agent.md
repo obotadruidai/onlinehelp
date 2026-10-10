@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "QA Testing Agent"
 ---
 
 <a id="QATestingAgent"></a>
 
-# QA Testing Agent
 
 The QA Testing Agent runs automated test suites using simulated user interactions.
 

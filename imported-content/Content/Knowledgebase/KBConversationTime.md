@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "KB Management at Conversation Time"
 ---
 
 <a id="KBManagementatConversationTime"></a>
 
-# KB Management at Conversation Time
 
 You can perform Knowledge Base operations directly within your conversational flows using KB-specific internal actions. These actions enable you to:
 

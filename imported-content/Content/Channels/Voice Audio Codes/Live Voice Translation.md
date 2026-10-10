@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Live Voice Translation"
 ---
 
 <a id="LiveVoiceTranslation"></a>
 
-# Live Voice Translation
 
 Live Voice Translation, powered by AudioCodes Live Hub, enables real-time, bidirectional voice translation for your AI Agent. This feature allows your AI Agent to communicate seamlessly with users in multiple languages by automatically translating spoken conversations.
 

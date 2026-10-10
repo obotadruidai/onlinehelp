@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Website Data Sources"
 ---
 
 <a id="WebsiteDataSources"></a>
 
-# Website Data Sources
 
 Website data sources, classified as unstructured data sources, allow you to extract and index content directly from web pages to power your AI Agent responses. By crawling public or authenticated websites, the system parses the HTML content, breaks it down into semantic paragraphs, and vectorizes it for Retrieval-Augmented Generation (RAG).
 

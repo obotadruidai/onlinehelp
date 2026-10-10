@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Druid Voice"
 ---
 
 <a id="DruidVoice"></a>
 
-# Druid Voice
 
 Druid Voice enables organizations to deploy AI-powered voice Agents across telephony systems and digital voice channels. By combining speech recognition, conversational AI, large language models, and speech synthesis, Druid Voice allows users to interact naturally with AI Agents using their voice.
 

@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Product recommendation with GPT-Azure (ReAct)"
 ---
 
 <a id="ProductrecommendationwithGPTAzureReAct"></a>
 
-# Product recommendation with GPT-Azure (ReAct)
 
 Combining the DRUID technology and GPT technology, you provide users with an amazing human-like multi-turn conversation based on form completion and the GPT response. DRUID orchestrates the entire conversation.
 

@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Content Chunkers"
 ---
 
 <a id="ContentChunkers"></a>
 
-# Content Chunkers
 
 The Druid KB Engine supports two types of content chunking (article extraction) methods: **Basic** and **LLM**. These options help define how content is divided into chunks for processing, allowing you to customize the level of detail processed from documents.
 

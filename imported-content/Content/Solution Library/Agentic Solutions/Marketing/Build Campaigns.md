@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Build Campaigns"
 ---
 
 <a id="BuildCampaigns"></a>
 
-# Build Campaigns
 
 Campaign creation allows organizations to engage audiences across multiple channels using agentic automation or manual configuration workflows. Druid AI Platform supports four core campaign categories:
 

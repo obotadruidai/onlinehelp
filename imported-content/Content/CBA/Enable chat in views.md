@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Enable Chat in Views"
 ---
 
 <a id="EnableChatinViews"></a>
 
-# Enable Chat in Views
 
 Enabling chat in views allows business users to interact with the AI Agent directly within the context of a specific record. By clicking the **Chat** button, users can ask the AI Agent questions or request actions to be performed, all while staying within the relevant view.
 

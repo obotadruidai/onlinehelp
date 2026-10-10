@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Loading UiPath Entity Schema and Mapping Fields"
 ---
 
 <a id="LoadingUiPathEntitySchemaandMappingFields"></a>
 
-# Loading UiPath Entity Schema and Mapping Fields
 
 > **Info:**  Druid shows by default the mapped fields only. To view the full UiPath entity schema, tap off **Show mapped fields only**, click **Actions** and select **Refresh UiPath Schema**.
 

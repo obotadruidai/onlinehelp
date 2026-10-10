@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Vonage RCS"
 ---
 
 <a id="VonageRCS"></a>
 
-# Vonage RCS
 
 Vonage RCS (Rich Communication Services) is an advanced messaging channel provided by Vonage that upgrades standard SMS with interactive features like rich cards, carousels, suggested actions, media sharing, and verified branding.
 

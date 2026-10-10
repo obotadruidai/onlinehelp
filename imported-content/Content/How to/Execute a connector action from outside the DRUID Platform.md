@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Executing Connector Actions From Outside the DRUID Platform"
 ---
 
 <a id="ExecutingConnectorActionsFromOutsidetheDRUIDPlatform"></a>
 
-# Executing Connector Actions From Outside the DRUID Platform
 
 You can update data in DRUID based on actions taken in a third-party system using the connector action as a webhook in the DRUID Platform. To execute a connector action from outside the DRUID platform, from within your third-party system, call DRUID's API endpoint `/PerformOperations`.
 

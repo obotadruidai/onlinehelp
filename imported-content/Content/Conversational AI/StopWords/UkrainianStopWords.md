@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Ukrainian Stop Words"
 ---
 
 <a id="UkrainianStopWords"></a>
 
-# Ukrainian Stop Words
 
 авжеж
 

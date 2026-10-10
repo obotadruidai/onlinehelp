@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Take Snapshots"
 ---
 
 <a id="TakeSnapshots"></a>
 
-# Take Snapshots
 
 In the Solution configuration page, click the Solution Snapshots section header. The section expands. At the top-right corner of the table, click the **Take Snapshot** button.
 

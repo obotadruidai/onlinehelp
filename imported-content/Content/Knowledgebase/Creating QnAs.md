@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Creating QnAs"
 ---
 
 <a id="CreatingQnAs"></a>
 
-# Creating QnAs
 
 A QnA is a question-answer pair. The answer responds to a simple question.
 

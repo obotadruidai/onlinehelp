@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Using Machine Translation"
 ---
 
 <a id="UsingMachineTranslation"></a>
 
-# Using Machine Translation
 
 AI Agents built on the Druid AI Platform can seamlessly handle conversations in over 100 languages by integrating with machine translation services like SDL Machine Translation Cloud, Azure Translator, or a chosen Large Language Model (LLM).
 

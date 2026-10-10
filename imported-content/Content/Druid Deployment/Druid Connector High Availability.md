@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Druid Connector Host High Availability"
 ---
 
 <a id="DruidConnectorHostHighAvailability"></a>
 
-# Druid Connector Host High Availability
 
 DRUID allows you to deploy the Druid Connector Host in a high availability (HA) scenario, enabling load balancing by running multiple Connector Host instances in parallel for your tenant. If you are using multiple Connector Host instances, they automatically sync their configuration, operate concurrently, and can independently handle specific requests.
 

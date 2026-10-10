@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Lead Generation Campaign Configuration"
 ---
 
 <a id="LeadGenerationCampaignConfiguration"></a>
 
-# Lead Generation Campaign Configuration
 
 Campaigns are created and managed within the **Campaign** section of the **Campaign & Contacts** workspace. The solution includes a pre-configured, out-of-the-box campaign —**Lead Generation** — designed for immediate deployment to target prospective student engagement scenarios.
 

@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "NLP Special Parameters"
 ---
 
 <a id="NLPSpecialParameters"></a>
 
-# NLP Special Parameters
 
 To add special NLP parameters, go to the NLU Configurations page and click the **Intents** tab. Click on the Thresholds and parameters section header. In the Parameters table add parameters as best suits your needs.
 

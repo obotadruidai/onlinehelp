@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Data Modeler"
 ---
 
 <a id="DataModeler"></a>
 
-# Data Modeler
 
 The Data Modeler designs, reuses, and structures data entities required for agent operations.
 

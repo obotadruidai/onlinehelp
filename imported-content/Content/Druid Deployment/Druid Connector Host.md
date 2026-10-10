@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Druid Connector Host"
 ---
 
 <a id="DruidConnectorHost"></a>
 
-# Druid Connector Host
 
 In hybrid deployments, the AI Agents running in the Druid Cloud are integrated with on premise apps. The AI Agents and on premise apps communicate via the Druid Connector Host installed on your local servers, usually hosted in your DMZ zone.
 

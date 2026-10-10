@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Action"
 ---
 
 <a id="Action"></a>
 
-# Action
 
 The Action step is a key component, allowing your AI Agent to execute actions in external applications or perform system integrations (referred to as Internal Actions).
 

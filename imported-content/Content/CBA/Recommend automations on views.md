@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Recommend Automations on Views"
 ---
 
 <a id="RecommendAutomationsonViews"></a>
 
-# Recommend Automations on Views
 
 Empower your business users to seamlessly trigger conversational flows and integrations directly from views by providing a curated set of recommended automations—shortcuts or links to specific flows or integrations—tailored to the context of the view(s).
 

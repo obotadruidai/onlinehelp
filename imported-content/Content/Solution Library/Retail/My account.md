@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "My Account"
 ---
 
 <a id="MyAccount"></a>
 
-# My Account
 
 This solution template provides conversation flows that simplify the shopping experience by allowing the customers to save and use personal information into the "My account" section. From My Account, the customers can save their payment information, set up a favorite delivery address, update their profile, check the available vouchers, etc.
 

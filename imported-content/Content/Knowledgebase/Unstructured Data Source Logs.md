@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Unstructured Data Source Logs"
 ---
 
 <a id="UnstructuredDataSourceLogs"></a>
 
-# Unstructured Data Source Logs
 
 This section explains how to access the logs for an unstructured data source in Druid. These logs provide valuable insights into the status of crawling, data extraction and data source training, allowing you to ensure your Knowledge Base is populated with high-quality content.
 

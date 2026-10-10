@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Thumbnail"
 ---
 
 <a id="Thumbnail"></a>
 
-# Thumbnail
 
 Thumbnail steps work similarly to Hero steps, but with a more compact layout for the card images. While Hero cards feature larger, more prominent images, Thumbnail cards present the same information in a smaller format.
 

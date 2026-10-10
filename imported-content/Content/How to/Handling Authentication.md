@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Handling Authentication"
 ---
 
 <a id="HandlingAuthentication"></a>
 
-# Handling Authentication
 
 <a id="microcontent1"></a>
 

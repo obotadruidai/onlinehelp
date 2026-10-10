@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "User Permission-based Content Filtering"
 ---
 
 <a id="UserPermissionbasedContentFiltering"></a>
 
-# User Permission-based Content Filtering
 
 When using the Knowledge Base (KB) with a Large Language Model (LLM), you can refine the KB search results by performing a real-time permissions check for the current chat user against the referenced sources. This process is managed by the **KBCheckUserPermissions** internal action, which ensures the AI Agent only provides information that the user is authorized to view within the source system.
 

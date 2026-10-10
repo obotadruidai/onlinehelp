@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Talkdesk Live Chat"
 ---
 
 <a id="TalkdeskLiveChat"></a>
 
-# Talkdesk Live Chat
 
 Integrating Talkdesk as a live chat provider allows your AI Agent to handle initial customer inquiries and, when necessary, transfer the conversation to a human agent within the Talkdesk contact center. This integration ensures that agents have access to chat transcripts and customer context, enabling a more personalized and efficient support experience.
 

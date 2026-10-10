@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Bottom Bar"
 ---
 
 <a id="BottomBar"></a>
 
-# Bottom Bar
 
 ![](../../Resources/Images/WebChat/bottom%20bar.png)
 

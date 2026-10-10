@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Solutions Library"
 ---
 
 <a id="SolutionsLibrary"></a>
 
-# Solutions Library
 
 Druid offers a library of business applications and solution templates that help you cut the AI Agent authoring time by providing you with the basic elements. Use the solution templates as starting points and customize them to accommodate your specific needs.
 

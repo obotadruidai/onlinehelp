@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Manage Data Records"
 ---
 
 <a id="ManageDataRecords"></a>
 
-# Manage Data Records
 
 For medical back-office staff and solution admins
 

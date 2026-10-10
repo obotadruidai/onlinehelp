@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "SSO Authentication OAuth 2.0"
 ---
 
 <a id="SSOAuthenticationOAuth20"></a>
 
-# SSO Authentication OAuth 2.0
 
 OAuth (Open Authorization) 2.0 is an open standard authorization protocol designed to allow a website or application to access resources hosted by other web apps on behalf of a user. It acts as an intermediary layer, providing the third-party service (e.g., Google, Facebook, LinkedIn) with an access token that authorizes specific user account information to be shared.
 

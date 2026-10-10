@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Entity NER-specific Parameters"
 ---
 
 <a id="EntityNERspecificParameters"></a>
 
-# Entity NER-specific Parameters
 
 The table below describes the entity parameters you can set for NER when creating a Lexicon (an entity index).
 

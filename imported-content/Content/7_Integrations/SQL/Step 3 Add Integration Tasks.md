@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Step 3. Add Integration Tasks"
 ---
 
 <a id="Step3AddIntegrationTasks"></a>
 
-# Step 3. Add Integration Tasks
 
 At the top-right corner of the Edit Connector Action page, **ConnectorSteps** tab, click on the **Create Task** button, and then click **Sql Server**.
 

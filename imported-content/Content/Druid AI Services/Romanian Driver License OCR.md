@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Romanian Driver License OCR"
 ---
 
 <a id="RomanianDriverLicenseOCR"></a>
 
-# Romanian Driver License OCR
 
 The Druid API engine performs OCR and data extraction from Romanian driver licenses.
 

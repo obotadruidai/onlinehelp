@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Create KB Settings"
 ---
 
 <a id="CreateKBSettings"></a>
 
-# Create KB Settings
 
 The solution uses Conversational Business Applications to provide a test Knowledge Base without altering the actual KB.
 

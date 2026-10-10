@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Read ZUGFeRD XML"
 ---
 
 <a id="ReadZUGFeRDXML"></a>
 
-# Read ZUGFeRD XML
 
 The Read ZUGFeRD XML endpoint allows users to extract structured invoice data from a ZUGFeRD-compliant XML document. This endpoint processes the provided XML file and returns key invoice details, such as invoice number, buyer and seller information, payment references, and itemized trade line data. It helps automate invoice handling and integration into financial or ERP systems.
 

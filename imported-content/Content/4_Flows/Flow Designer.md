@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Flow Designer"
 ---
 
 <a id="FlowDesigner"></a>
 
-# Flow Designer
 
 The Flow Graphical Designer is a robust tool that simplifies flow design within the Druid AI Platform, enhancing efficiency for authors. It offers an intuitive interface for visualizing, creating, and updating flows.
 

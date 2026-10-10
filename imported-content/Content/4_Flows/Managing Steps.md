@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Managing Steps"
 ---
 
 <a id="ManagingSteps"></a>
 
-# Managing Steps
 
 When managing your flow in the Druid Portal, you have the flexibility to adjust the sequence of steps and delete unnecessary ones.
 

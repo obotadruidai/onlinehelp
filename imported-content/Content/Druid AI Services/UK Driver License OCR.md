@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "UK Driver License OCR"
 ---
 
 <a id="UKDriverLicenseOCR"></a>
 
-# UK Driver License OCR
 
 The Druid API engine performs OCR and data extraction from UK driver licenses.
 

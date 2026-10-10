@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Hero Cards"
 ---
 
 <a id="HeroCards"></a>
 
-# Hero Cards
 
 Hero Card steps are commonly used to display content like product details, menu options, or any structured data, allowing users to interact by selecting from various options.
 

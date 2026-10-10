@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "AI Agent Interaction With Web Forms"
 ---
 
 <a id="AIAgentInteractionWithWebForms"></a>
 
-# AI Agent Interaction With Web Forms
 
 This topic describes how DRUID enables real-time communication between an AI Agent embedded in a web form and the form itself. Through backchannel events, the AI Agent can perform dynamic actions that immediately affect the form, without requiring manual page refreshes.
 

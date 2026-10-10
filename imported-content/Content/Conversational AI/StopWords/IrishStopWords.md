@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Irish Stop Words"
 ---
 
 <a id="IrishStopWords"></a>
 
-# Irish Stop Words
 
 a
 

@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Handling Live Chat on Agent Side"
 ---
 
 <a id="HandlingLiveChatonAgentSide"></a>
 
-# Handling Live Chat on Agent Side
 
 With the Live Chat Starter solution, the AI Agents will do the following on the agent side:
 

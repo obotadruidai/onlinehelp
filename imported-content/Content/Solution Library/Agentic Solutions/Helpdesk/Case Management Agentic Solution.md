@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Case Management Agentic Solution"
 ---
 
 <a id="CaseManagementAgenticSolution"></a>
 
-# Case Management Agentic Solution
 
 **Case Management Agentic Solution** is a fully agentic business application built entirely on DRUID technology. Powered by Druid's native LLMs like Becus and compatible with external models like GPT-4o mini, this business app delivers end-to-end support case creation and management through natural, conversational interactions.
 

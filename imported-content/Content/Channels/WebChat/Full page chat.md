@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Full Page Chat"
 ---
 
 <a id="FullPageChat"></a>
 
-# Full Page Chat
 
 ![](../../Resources/Images/WebChat/full%20page%20chat.png)
 

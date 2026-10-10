@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "How Academic Staff Use the Solution"
 ---
 
 <a id="HowAcademicStaffUsetheSolution"></a>
 
-# How Academic Staff Use the Solution
 
 For academic staff
 

@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Define Security Roles for Business Users"
 ---
 
 <a id="DefineSecurityRolesforBusinessUsers"></a>
 
-# Define Security Roles for Business Users
 
 Authors control business user access to workspaces using security roles, ensuring users only interact with the data and functionalities relevant to their role.
 

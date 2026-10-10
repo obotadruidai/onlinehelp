@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "How to use the solution"
 ---
 
 <a id="Howtousethesolution"></a>
 
-# How to use the solution
 
 For medical providers
 

@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Live Chat With Multiple Queues"
 ---
 
 <a id="LiveChatWithMultipleQueues"></a>
 
-# Live Chat With Multiple Queues
 
 Chat queues help you strike the right balance between wait times and internal resources. They prevent chat overload for agents while keeping your waiting customers updated. They also help you streamline the customer service; if the agents in a live chat with a customer need information from agents in a different department, they can easily transfer the live chat call to the queue specifically defined for that department.
 

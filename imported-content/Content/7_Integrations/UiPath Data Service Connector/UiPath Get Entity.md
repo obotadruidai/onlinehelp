@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "UiPath Get Entity"
 ---
 
 <a id="UiPathGetEntity"></a>
 
-# UiPath Get Entity
 
 Retrieves a single UiPath Data Service entity record by ID.
 

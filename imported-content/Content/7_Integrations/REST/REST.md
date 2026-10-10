@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "REST"
 ---
 
 <a id="REST"></a>
 
-# REST
 
 The Druid AI Platform leverages standard REST APIs to establish seamless connectivity with external enterprise systems. Executed directly by the platform Flow Engine, these integrations package real-time conversational variables into external API requests and map the returned data payloads back into the ongoing conversation context.
 

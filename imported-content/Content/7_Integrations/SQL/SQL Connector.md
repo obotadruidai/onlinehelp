@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "SQL Connector"
 ---
 
 <a id="SQLConnector"></a>
 
-# SQL Connector
 
 The Druid AI Platform enables you to easily connect to any SQL database to store and retrieve data for different use cases.
 

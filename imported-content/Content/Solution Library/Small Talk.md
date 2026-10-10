@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Small Talk"
 ---
 
 <a id="SmallTalk"></a>
 
-# Small Talk
 
 This solution template enables you to provide your AI Agent with predefined messages, including:
 

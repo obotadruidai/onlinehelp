@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Map Header From JSON Response"
 ---
 
 <a id="MapHeaderFromJSONResponse"></a>
 
-# Map Header From JSON Response
 
 To extract values of keys from the HTTP response header, follow these steps:
 

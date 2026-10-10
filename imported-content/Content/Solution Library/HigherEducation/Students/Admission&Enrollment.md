@@ -1,11 +1,8 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Admission & Enrollment"
 ---
 
 <a id="AdmissionEnrollment"></a>
 
-# Admission & Enrollment
 
 Documentation will be available soon.

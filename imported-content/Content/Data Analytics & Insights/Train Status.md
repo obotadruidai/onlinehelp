@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Train Status"
 ---
 
 <a id="TrainStatus"></a>
 
-# Train Status
 
 The Train Log contains comprehensive validation metrics:
 

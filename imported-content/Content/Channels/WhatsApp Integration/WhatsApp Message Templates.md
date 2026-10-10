@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "WhatsApp Message Templates"
 ---
 
 <a id="WhatsAppMessageTemplates"></a>
 
-# WhatsApp Message Templates
 
 > **IMPORTANT!** If a customer messages the AI Agent via the WhatsApp channel, the AI Agent has 24 hours to respond to the customer with a free-form message. After this period, the message sent by the AI Agent has to be a template type message.
 

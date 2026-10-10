@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Creating Word Document Templates"
 ---
 
 <a id="CreatingWordDocumentTemplates"></a>
 
-# Creating Word Document Templates
 
 The word document template might contain the basic text that is the same in all of the generated documents. It may contain a letterhead, text, and entity-sourced dynamic data that vary from one generated document to another.
 

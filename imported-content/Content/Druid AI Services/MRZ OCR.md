@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Machine Reading Zone OCR"
 ---
 
 <a id="MachineReadingZoneOCR"></a>
 
-# Machine Reading Zone OCR
 
 The Druid API engine performs OCR and data extraction from documents which contain Machine Reading Zone (MRZ), such as Romanian identity cards (both old and new), living permits, passports and residence cards.
 

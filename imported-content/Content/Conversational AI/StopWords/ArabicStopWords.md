@@ -1,14 +1,11 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Arabic Stop Words"
 ---
 
 #
 
 <a id="ArabicStopWords"></a>
 
-# Arabic Stop Words
 
 ب
 

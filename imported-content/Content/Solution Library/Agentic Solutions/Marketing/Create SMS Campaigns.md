@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Create SMS Campaigns"
 ---
 
 <a id="CreateSMSCampaigns"></a>
 
-# Create SMS Campaigns
 
 SMS campaigns deliver direct text notification messages to contact mobile phone numbers.
 

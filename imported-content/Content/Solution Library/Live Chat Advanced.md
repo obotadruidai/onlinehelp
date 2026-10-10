@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Live Chat Advanced"
 ---
 
 <a id="LiveChatAdvanced"></a>
 
-# Live Chat Advanced
 
 This solution provides you with configurations for powerful route-to-human functionality:
 

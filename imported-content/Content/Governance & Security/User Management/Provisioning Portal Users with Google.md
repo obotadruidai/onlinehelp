@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Provisioning Portal Users with Google OAuth"
 ---
 
 <a id="ProvisioningPortalUserswithGoogleOAuth"></a>
 
-# Provisioning Portal Users with Google OAuth
 
 You can now streamline portal access for your team by enabling Google Single Sign-On (SSO) authentication. This feature allows team members to sign in to the portal using their existing Google credentials, eliminating the need to create and manage separate portal passwords.
 

@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Croatian Stop Words"
 ---
 
 <a id="CroatianStopWords"></a>
 
-# Croatian Stop Words
 
 a
 

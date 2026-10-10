@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Dutch Stop Words"
 ---
 
 <a id="DutchStopWords"></a>
 
-# Dutch Stop Words
 
 aan
 

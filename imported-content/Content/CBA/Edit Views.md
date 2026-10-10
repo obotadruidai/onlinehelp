@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Edit Views"
 ---
 
 <a id="EditViews"></a>
 
-# Edit Views
 
 The following actions are available on views in the View list: make default (a view that is not set as being default view), preview, clone, edit and delete.
 

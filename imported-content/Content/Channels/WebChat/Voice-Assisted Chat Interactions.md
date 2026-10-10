@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Chat and Voice-Assisted Chat Interactions"
 ---
 
 <a id="ChatandVoiceAssistedChatInteractions"></a>
 
-# Chat and Voice-Assisted Chat Interactions
 
 The Voice-assisted chat interactions allows web users to speak their messages instead of manually typing. Similar to using a voice-assisted keyboard on a mobile device, users can tap a voice icon within the chat interface to speak their input. Users can switch effortlessly between typing and speaking.
 

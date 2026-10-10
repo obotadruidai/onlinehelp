@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Delete Entity"
 ---
 
 <a id="DeleteEntity"></a>
 
-# Delete Entity
 
 Deletes an entity record based on the Id saved within the conversation context
 

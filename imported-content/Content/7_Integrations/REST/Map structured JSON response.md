@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Map Structured JSON Response Body"
 ---
 
 <a id="MapStructuredJSONResponseBody"></a>
 
-# Map Structured JSON Response Body
 
 > **IMPORTANT!** The structure of entities that capture the JSON object response should reflect the structure of the JSON data object that you map on the response.
 

@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "WebChat Common Styling and Behavior"
 ---
 
 <a id="WebChatCommonStylingandBehavior"></a>
 
-# WebChat Common Styling and Behavior
 
 The webchat customization UI allows extensive configuration of styling and behavior parameters for AI Agents using Bot Framework v4.
 

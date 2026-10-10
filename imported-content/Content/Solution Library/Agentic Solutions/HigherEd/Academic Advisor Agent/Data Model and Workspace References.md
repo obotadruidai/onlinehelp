@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Data Model and Workspace References"
 ---
 
 <a id="DataModelandWorkspaceReferences"></a>
 
-# Data Model and Workspace References
 
 The Academic Advisor Agent structures its data across three purpose-built workspaces, each scoped to a specific user role and exposes only the entities relevant to that role — giving staff, administrators and instructors access to the information they need.
 

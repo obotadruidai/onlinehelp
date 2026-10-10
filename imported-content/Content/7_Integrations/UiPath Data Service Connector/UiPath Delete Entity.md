@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "UiPath Delete Entity"
 ---
 
 <a id="UiPathDeleteEntity"></a>
 
-# UiPath Delete Entity
 
 Deletes an existing Entity record.
 

@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "SAML Assertion Authentication"
 ---
 
 <a id="SAMLAssertionAuthentication"></a>
 
-# SAML Assertion Authentication
 
 A SAML assertion is an XML document that verifies the user's authentication to the OAuth provider. If you integrate with an API that requires SAML assertion authentication, you need to create a DRUID app with the security type 'SamlAssertion'.
 

@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Finnish Stop Words"
 ---
 
 <a id="FinnishStopWords"></a>
 
-# Finnish Stop Words
 
 aiemmin
 

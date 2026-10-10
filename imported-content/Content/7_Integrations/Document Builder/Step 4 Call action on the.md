@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Step 4. Call action on the desired flow step"
 ---
 
 <a id="Step4Callactiononthedesiredflowstep"></a>
 
-# Step 4. Call action on the desired flow step
 
 On the desired flow step, in the PostAction section, call the connection action you created for document generation.
 

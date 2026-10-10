@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Netopia Payments"
 ---
 
 <a id="NetopiaPayments"></a>
 
-# Netopia Payments
 
 The Netopia Payments integration lets you collect payments directly in your conversational flows. With this integration, your AI Agent can guide users through a seamless payment experience—from capturing billing and shipping details to generating a secure payment link through Netopia Payments.
 

@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Conversational AI"
 ---
 
 <a id="ConversationalAI"></a>
 
-# Conversational AI
 
 AI Agents use Conversational Artificial Intelligence (Conversational AI) to improve the customer/user experience. They mimic human conversations through the user journey using contextual information to deliver relevant messages to users and they assist your Support Center Helpdesk Agents during live conversations with the clients.
 

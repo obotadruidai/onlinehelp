@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Afrikaans Stop Words"
 ---
 
 <a id="AfrikaansStopWords"></a>
 
-# Afrikaans Stop Words
 
 'n
 

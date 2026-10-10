@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Auditing Metrics Configuration Changes"
 ---
 
 <a id="AuditingMetricsConfigurationChanges"></a>
 
-# Auditing Metrics Configuration Changes
 
 for solution admins
 

@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "SharePoint Data Sources"
 ---
 
 <a id="SharePointDataSources"></a>
 
-# SharePoint Data Sources
 
 You can add a SharePoint data source to the KB, enabling the extraction of paragraphs from Excel, Word, and PDF documents within SharePoint site libraries.
 

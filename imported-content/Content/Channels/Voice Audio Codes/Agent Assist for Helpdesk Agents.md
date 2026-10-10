@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Agent Assist for Helpdesk Agents"
 ---
 
 <a id="AgentAssistforHelpdeskAgents"></a>
 
-# Agent Assist for Helpdesk Agents
 
 Configure advanced agent assist capabilities and outbound campaign automation for your voice channel through AudioCodes Live Hub. This topic explains how to deploy Agent Assist to provide real-time response recommendations, map backend settings to preserve live-agent handoff transcripts in DRUID conversation history, and optimize outbound dialer flows with automated voicemail and machine detection.
 

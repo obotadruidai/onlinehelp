@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Response General Settings"
 ---
 
 <a id="ResponseGeneralSettings"></a>
 
-# Response General Settings
 
 Once you’ve set up the request settings, you need to set up the response as well. To do so, click the **Response** tab and make the necessary response settings as described in this section.
 

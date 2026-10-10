@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Appointment Management Agent"
 ---
 
 <a id="AppointmentManagementAgent"></a>
 
-# Appointment Management Agent
 
 The **Appointment Management Agent** is a comprehensive, end-to-end agentic business application built on Druid technology. It transforms the patient journey from a rigid, menu-driven process into a natural, conversational experience. By orchestrating secure identity verification, intelligent medical triage, and real-time scheduling, the solution automates routine clinical administration while maintaining data accuracy and patient empathy.
 

@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Observability and Explainability"
 ---
 
 <a id="ObservabilityandExplainability"></a>
 
-# Observability and Explainability
 
 Governance requires the technical ability to audit and explain the specific logic behind every AI Agent decision. Druid provides deep visibility into the conversational reasoning process, transforming the "Black Box" of generative AI into a transparent, auditable evidence chain.
 

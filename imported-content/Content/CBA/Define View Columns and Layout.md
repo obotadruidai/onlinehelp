@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Define View Columns and Layout"
 ---
 
 <a id="DefineViewColumnsandLayout"></a>
 
-# Define View Columns and Layout
 
 To configure a view, you need to define the columns and adjust their layout.
 

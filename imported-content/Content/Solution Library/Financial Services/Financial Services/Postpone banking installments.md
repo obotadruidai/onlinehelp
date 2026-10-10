@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Postpone Banking Installments"
 ---
 
 <a id="PostponeBankingInstallments"></a>
 
-# Postpone Banking Installments
 
 This solution template provides you with a fully automated flow to credit deferrals. The AI Agent identifies the client, accesses the client's list of credits and collects the necessary information to save the request in the CRM banking system.
 

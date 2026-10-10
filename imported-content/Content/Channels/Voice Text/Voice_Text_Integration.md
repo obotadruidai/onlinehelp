@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "VoiceText"
 ---
 
 <a id="VoiceText"></a>
 
-# VoiceText
 
 The VoiceText Channel enables voice integration in Contact Centers, supporting scenarios where voice services and voice AI Agents are provided by third-party platforms. It allows seamless interactions between a user and a AI Agent by handling speech-to-text and text-to-speech conversions.
 

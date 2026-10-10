@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Hospitality"
 ---
 
 <a id="Hospitality"></a>
 
-# Hospitality
 
 The hospitality solution is a multi-language solution that offers comprehensive support for both clients and hotel staff. Guests can effortlessly search for hotel information, book rooms, and report any room issues. Hotel employees can use the assistant to streamline their daily tasks, boosting efficiency and service quality.
 

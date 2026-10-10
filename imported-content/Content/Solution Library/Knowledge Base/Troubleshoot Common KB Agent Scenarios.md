@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Troubleshoot Common AI Agent Scenarios"
 ---
 
 <a id="TroubleshootCommonAIAgentScenarios"></a>
 
-# Troubleshoot Common AI Agent Scenarios
 
 The KB Agent Workspace helps you identify routing issues, improve AI Agent accuracy, and optimize the overall user experience. Use the following table to quickly identify where to investigate common issues, then refer to the corresponding troubleshooting scenario for detailed guidance.
 

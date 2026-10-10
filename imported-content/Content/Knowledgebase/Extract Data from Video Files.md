@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Extract Data from Video Files"
 ---
 
 <a id="ExtractDatafromVideoFiles"></a>
 
-# Extract Data from Video Files
 
 Druid can process video files to extract data from video content, making it searchable and usable within your knowledge base.
 

@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Define View Properties"
 ---
 
 <a id="DefineViewProperties"></a>
 
-# Define View Properties
 
 You can customize view properties to enhance usability, set default behaviors, and ensure proper record layout rendering for business users.
 

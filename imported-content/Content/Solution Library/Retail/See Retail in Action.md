@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "See Retail Bot in Action"
 ---
 
 <a id="SeeRetailBotinAction"></a>
 
-# See Retail Bot in Action
 
 The list below provides you with an extensive list of things you can say to the AI Agent in either English or Romanian.
 

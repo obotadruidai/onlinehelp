@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Web Chat Maintenance"
 ---
 
 <a id="WebChatMaintenance"></a>
 
-# Web Chat Maintenance
 
 Druid visibility settings enable you easily control if you want to show the chat widget and when you want to show it. You can choose between disabling the chat widget icon and having it hidden if technical issues occur with the Druid AI Platform or with the external services integrated with your AI Agent.
 

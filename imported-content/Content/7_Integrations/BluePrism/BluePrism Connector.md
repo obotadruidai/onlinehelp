@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "BluePrism Connector"
 ---
 
 <a id="BluePrismConnector"></a>
 
-# BluePrism Connector
 
 > **NOTE:** The Blue Prism Connector is available in DRUID 1.58 and higher.
 

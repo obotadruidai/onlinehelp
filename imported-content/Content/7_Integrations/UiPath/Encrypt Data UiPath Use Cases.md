@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Encrypt Data - UiPath Use Cases"
 ---
 
 <a id="EncryptDataUiPathUseCases"></a>
 
-# Encrypt Data - UiPath Use Cases
 
 Druid version 1.61 and higher enables authors to send encrypted data from Druid connectors to the UiPath Orchestrator and RPA robots in integrations with UiPath Orchestrator Queues and UiPath unattended jobs. For the later, the UiPath processes executed by the jobs will have as input arguments the parameters encrypted.
 

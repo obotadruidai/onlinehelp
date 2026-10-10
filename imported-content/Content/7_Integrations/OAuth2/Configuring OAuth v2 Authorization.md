@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Configuring OAuth v2 Authorization"
 ---
 
 <a id="ConfiguringOAuthv2Authorization"></a>
 
-# Configuring OAuth v2 Authorization
 
 Configuring OAuth v2 authorization in Druid involves two primary, interdependent processes:
 

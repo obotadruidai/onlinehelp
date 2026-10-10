@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Voice"
 ---
 
 <a id="Voice"></a>
 
-# Voice
 
 The Voice section is relevant when you are using voice on a flow and the flow has steps of type Choice, Thumbnail, or Hero, for which the system will not render the options using voice. In this case, you will provide the voice message as text, including all available options.
 

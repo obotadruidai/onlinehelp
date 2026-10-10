@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Voice AudioCodes"
 ---
 
 <a id="VoiceAudioCodes"></a>
 
-# Voice AudioCodes
 
 The Voice channel through VoiceAI Connect from AudioCodes enables you to deliver a seamless voice experience to the users talking to your DruidAI Agents.
 

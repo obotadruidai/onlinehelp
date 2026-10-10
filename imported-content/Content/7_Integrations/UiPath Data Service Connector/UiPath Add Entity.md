@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "UiPath Add Entity"
 ---
 
 <a id="UiPathAddEntity"></a>
 
-# UiPath Add Entity
 
 Creates a new entity record in UiPath Data Service using data stored in conversations.
 

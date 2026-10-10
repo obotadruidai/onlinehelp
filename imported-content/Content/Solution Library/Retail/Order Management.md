@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Order Management"
 ---
 
 <a id="OrderManagement"></a>
 
-# Order Management
 
 This solution template simplifies and accelerates the order management process by guiding the website visitor through the purchase of a product. Once the order is placed via the AI Agent, the customers can ask where their package is located, the date and time of the delivery, and they can also request information about the post service.
 

@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Understanding AI Agent Routing Logic"
 ---
 
 <a id="UnderstandingAIAgentRoutingLogic"></a>
 
-# Understanding AI Agent Routing Logic
 
 The following diagram illustrates how the AI Agent determines the most appropriate way to respond to a user request. The decision process combines intent recognition, flow matching, Knowledge Base (KB) search, and generative AI fallback to ensure the user receives the best possible answer.
 

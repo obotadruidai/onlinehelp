@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "eSign Namirial"
 ---
 
 <a id="eSignNamirial"></a>
 
-# eSign Namirial
 
 You can use [Namirial technology](https://www.namirial.com/en/trust-services/) to provide your AI Agents with electronic signature capabilities, enabling users to apply electronic signatures on documents through AI Agents, in both office and work-from-home environments.
 

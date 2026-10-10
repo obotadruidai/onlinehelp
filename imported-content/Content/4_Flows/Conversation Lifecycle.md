@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Conversation Lifecycle"
 ---
 
 <a id="ConversationLifecycle"></a>
 
-# Conversation Lifecycle
 
 The lifecycle of a conversation within the Druid AI Platform consists of two primary states: "in flow" and "idle". An AI Agent transitions between these states based on user interactions and flow execution.
 

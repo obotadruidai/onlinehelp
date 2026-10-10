@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Troubleshooting Connector Errors"
 ---
 
 <a id="TroubleshootingConnectorErrors"></a>
 
-# Troubleshooting Connector Errors
 
 The connector errors are marked with **CONN ERR** in the error details. When you see a CONN ERROR, it means that there is a PreAction or PostAction call on the Flow Step that raises the respective error.
 

@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Outbound Student Engagement"
 ---
 
 <a id="OutboundStudentEngagement"></a>
 
-# Outbound Student Engagement
 
 The Outbound Student Engagement Agent is a solution designed to help higher education institutions transition to proactive student engagement. It automates personalized outreach across the enrollment funnel, enabling academic and admissions teams to scale their efforts without increasing headcount.
 

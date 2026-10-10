@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Jamaican Voter ID Card OCR"
 ---
 
 <a id="JamaicanVoterIDCardOCR"></a>
 
-# Jamaican Voter ID Card OCR
 
 The Druid API engine performs OCR and data extraction from Jamaican voter ID cards.
 

@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Document Builder"
 ---
 
 <a id="DocumentBuilder"></a>
 
-# Document Builder
 
 <a id="microcontent1"></a>
 

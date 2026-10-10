@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Convert PDF Page to JPEG"
 ---
 
 <a id="ConvertPDFPagetoJPEG"></a>
 
-# Convert PDF Page to JPEG
 
 This Vision endpoint allows you to convert individual PDF pages into .jpeg format, enabling you to send images to GPT-4.o, which cannot perform OCR directly from PDF files.
 

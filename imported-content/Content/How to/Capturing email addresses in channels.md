@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Capturing Email Addresses"
 ---
 
 <a id="CapturingEmailAddresses"></a>
 
-# Capturing Email Addresses
 
 An email address identifies an email mailbox to which messages are delivered. An email address is comprised of local-part, the symbol @ and a domain. The classic validation rules on the email address format and transmission as per RFC 5322 and RFC 6854 are restrictive.
 

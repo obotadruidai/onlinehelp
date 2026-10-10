@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Views"
 ---
 
 <a id="Views"></a>
 
-# Views
 
 A view is a structured representation of entity data, similar to a database table. It displays specific records in a grid format, with dynamically generated rows and columns based on the view definition. Views retrieve and aggregate data from various sources through integrations.
 

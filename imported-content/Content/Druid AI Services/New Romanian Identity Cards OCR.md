@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "New Romanian Identity Cards OCR"
 ---
 
 <a id="NewRomanianIdentityCardsOCR"></a>
 
-# New Romanian Identity Cards OCR
 
 The Druid API engine supports OCR and data extraction for Romanian identity cards issued with a CIP (electronic chip), applicable to identity cards issued starting in January 2024.
 

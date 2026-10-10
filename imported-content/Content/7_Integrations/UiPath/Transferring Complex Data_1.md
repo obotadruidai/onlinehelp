@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Transferring Complex Data Type through the Start Attended Job Integration"
 ---
 
 <a id="TransferringComplexDataTypethroughtheStartAttendedJobIntegration"></a>
 
-# Transferring Complex Data Type through the Start Attended Job Integration
 
 **Required!** This feature is available for DRUID Connectors v1.54 or above. If you have a hybrid or on premise DRUID deployment, install DRUID Connector Host version 1.54 or above.
 

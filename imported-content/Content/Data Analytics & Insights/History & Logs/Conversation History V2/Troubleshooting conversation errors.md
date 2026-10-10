@@ -1,12 +1,10 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Troubleshooting Conversation Errors"
 ---
 
 <a id="TroubleshootingConversationErrors"></a>
 
-# <a id="kanchor1"></a>Troubleshooting Conversation Errors
+<a id="kanchor1"></a>
 
 **Prerequisite**: In the chat, copy the error code, you’ll need it for troubleshooting.
 

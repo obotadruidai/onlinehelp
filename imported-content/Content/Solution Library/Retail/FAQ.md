@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "FAQ"
 ---
 
 <a id="FAQ"></a>
 
-# FAQ
 
 The solution template contains answers to the most common questions asked by customers related to order status, refunds, delivery fees, order tracking, payment methods accepted by the store and many more.
 

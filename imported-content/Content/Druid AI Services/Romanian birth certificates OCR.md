@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Romanian Birth Certificates"
 ---
 
 <a id="RomanianBirthCertificates"></a>
 
-# Romanian Birth Certificates
 
 The Druid API engine performs OCR and data extraction from Romanian birth certificates.
 

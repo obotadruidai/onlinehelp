@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Manage Data Records"
 ---
 
 <a id="ManageDataRecords"></a>
 
-# Manage Data Records
 
 The **Outbound Admin** workspace is the central repository for the agent’s intelligence. It manages the nomenclatures (static data lists) that the AI Agent uses to categorize campaign needs and use the right audience filters.
 

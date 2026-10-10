@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Customize AI Agent Flows"
 ---
 
 <a id="CustomizeAIAgentFlows"></a>
 
-# Customize AI Agent Flows
 
 The RingCentral CX outbound campaign solution includes a preconfigured AI Agent with trigger flow steps that support key interactions during outbound calls. You can customize these interactions by creating and linking dedicated flows that implement your specific business requirements.
 

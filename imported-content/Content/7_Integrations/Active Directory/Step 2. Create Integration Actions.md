@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Step 2. Create Integration Actions"
 ---
 
 <a id="Step2CreateIntegrationActions"></a>
 
-# Step 2. Create Integration Actions
 
 A Connector Action (Integration) only represents a host for a group of one or more integration tasks. The integration technology / type (SQL, REST, SOAP, SMTP, AD, etc.) is defined at task level, not at action (integration) level.
 

@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Defining Connection Strings (Apps)"
 ---
 
 <a id="DefiningConnectionStringsApps"></a>
 
-# Defining Connection Strings (Apps)
 
 Once you define the data model (the [entities](../5_Entities/AI%20Agent%20Informational%20Model.md)) the AI Agent uses to collect and store information), you can define the connection strings (apps) used for integration with third-party applications. Connection strings provide specific connection details.
 

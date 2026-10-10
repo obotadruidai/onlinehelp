@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Accessing Druid Endpoints in Druid Hybrid Deployments"
 ---
 
 <a id="AccessingDruidEndpointsinDruidHybridDeployments"></a>
 
-# Accessing Druid Endpoints in Druid Hybrid Deployments
 
 > **NOTE:**  Druid Endpoints are available in Druid Connector Host version 1.52 or above. If you want to integrate Druid with third party applications that are installed on premise, you need to install Druid Connector Host version 1.52 or above on premise so that your application can communicate with Druid.
 

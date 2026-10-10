@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Conversation Diagnostics Agent"
 ---
 
 <a id="ConversationDiagnosticsAgent"></a>
 
-# Conversation Diagnostics Agent
 
 The Conversation Diagnostics Agent analyzes past conversation logs in real time to help you troubleshoot execution failures, debug root causes, and coordinate direct fixes without manual log scanning.
 

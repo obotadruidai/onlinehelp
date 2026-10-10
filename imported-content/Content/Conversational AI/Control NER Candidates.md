@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Manipulating NER Candidates"
 ---
 
 <a id="ManipulatingNERCandidates"></a>
 
-# Manipulating NER Candidates
 
 You can manipulate entity candidates seamlessly, facilitating external database searches, and tailored flow authoring to meet specific contextual needs.
 

@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "CRUD Template"
 ---
 
 <a id="CRUDTemplate"></a>
 
-# CRUD Template
 
 > **NOTE:** This feature is available in DRUID 5.24 and higher and is available only on entity integrations.
 

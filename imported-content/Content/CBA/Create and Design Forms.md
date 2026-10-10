@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Create and Design Forms"
 ---
 
 <a id="CreateandDesignForms"></a>
 
-# Create and Design Forms
 
 Authors can define simple forms that only show specific entity record data, and complex forms that enable business users to manipulate the data (add new record details, attach files, etc.).
 

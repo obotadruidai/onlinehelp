@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Enterprise Connectors"
 ---
 
 <a id="EnterpriseConnectors"></a>
 
-# Enterprise Connectors
 
 Enterprise Connectors are the primary mechanism for enabling Druid AI Agents to communicate with external business applications, automation platforms, and databases. These connectors translate conversational inputs into structured data queries that your backend systems can understand, allowing agents to perform high-value business operations.
 

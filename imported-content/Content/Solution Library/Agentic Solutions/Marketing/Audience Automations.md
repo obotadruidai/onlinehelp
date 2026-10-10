@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Audience Automations"
 ---
 
 <a id="AudienceAutomations"></a>
 
-# Audience Automations
 
 The Audiences view and form provide automations to help you import audience members or reset member statuses efficiently.
 

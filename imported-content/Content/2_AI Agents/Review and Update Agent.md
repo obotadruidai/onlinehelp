@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Review & Update Agent"
 ---
 
 <a id="ReviewUpdateAgent"></a>
 
-# Review & Update Agent
 
 The Review & Update Agent modifies deployed AI Agents and upgrades legacy conversational structures.
 

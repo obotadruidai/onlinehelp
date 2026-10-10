@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Create Custom Voices"
 ---
 
 <a id="CreateCustomVoices"></a>
 
-# Create Custom Voices
 
 > **IMPORTANT!** Creating voices incurs additional costs governed by your ElevenLabs subscription pricing. Druid does not charge extra for voice generation.
 

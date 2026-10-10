@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Location"
 ---
 
 <a id="Location"></a>
 
-# Location
 
 With Location steps, Druid enables you to bring the real world to your users with maps by rendering a geographical location similar to Google Maps preview and configure your AI Agents to get and store user’s geographical location shared in the chat.
 

@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Galician Stop Words"
 ---
 
 <a id="GalicianStopWords"></a>
 
-# Galician Stop Words
 
 a
 

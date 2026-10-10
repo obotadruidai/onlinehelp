@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Custom Authentication"
 ---
 
 <a id="CustomAuthentication"></a>
 
-# Custom Authentication
 
 Most external REST APIs require authenticated requests to verify sender identity and validate data access permissions. The platform allows you to build custom authentication workflows to manage both static keys and complex, automated token lifecycles (such as OAuth2 and JWT).
 

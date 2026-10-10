@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Language Detection Flow"
 ---
 
 <a id="LanguageDetectionFlow"></a>
 
-# Language Detection Flow
 
 DRUID is capable of detecting any language change in the conversation prior triggering the **Intent not found** flow, covering the cases when the user types something in another language than the default language of the AI Agent. It does not include the cases when the user changes the conversation language using the snippet's Language option.
 

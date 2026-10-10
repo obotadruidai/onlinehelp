@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Define Form Fields and Layout"
 ---
 
 <a id="DefineFormFieldsandLayout"></a>
 
-# Define Form Fields and Layout
 
 You can design a form by defining its layout and selecting the data displayed in each section. A form consists of tabs, which contain sections, and both can be formatted with one or multiple columns.
 

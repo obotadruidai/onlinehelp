@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Create Marketing Campaigns"
 ---
 
 <a id="CreateMarketingCampaigns"></a>
 
-# Create Marketing Campaigns
 
 Marketing campaigns deliver promotional messages or advertisement notifications within active chat sessions following a configured period of user inactivity.
 

@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Trigger Events on Forms"
 ---
 
 <a id="TriggerEventsonForms"></a>
 
-# Trigger Events on Forms
 
 You can execute integrations, initiate flows, or perform custom automations based on specific event triggers—such as form load, record save, field changes, or tab transitions—by using the Code Editor.
 

@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Alert Flows"
 ---
 
 <a id="AlertFlows"></a>
 
-# Alert Flows
 
 Alert Flows enable you to trigger dialogues (flows) for specific users or conversations on a scheduled basis. Unlike external events sent to DRUID endpoints, alert flows are initiated directly by the DRUID conversational engine.
 

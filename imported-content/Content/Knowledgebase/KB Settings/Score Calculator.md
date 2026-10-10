@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Score Calculator"
 ---
 
 <a id="ScoreCalculator"></a>
 
-# Score Calculator
 
 The **Score Calculator** section allows you to configure multiple score calculation strategies for optimizing search results within the Knowledge Base (KB). These strategies define how search queries are processed using a combination of keyword (Text) search, semantic (Vector) search, and an optional reranker to refine the results.
 

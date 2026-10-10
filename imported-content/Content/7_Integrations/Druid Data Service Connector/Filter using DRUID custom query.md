@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Filter Data using Druid Custom Query"
 ---
 
 <a id="FilterDatausingDruidCustomQuery"></a>
 
-# Filter Data using Druid Custom Query
 
 The Druid Custom Query allows you to filter request data for Query entities and Query-related entity integration tasks. With this feature, you can retrieve and analyze data from entities beyond the request entity, without relying on the Query-related entity integration task. The Druid Custom Query supports a range of SQL statements, functions, operators, and clauses, as detailed below.
 

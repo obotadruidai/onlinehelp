@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Druid AI Platform Network Matrix"
 ---
 
 <a id="DruidAIPlatformNetworkMatrix"></a>
 
-# Druid AI Platform Network Matrix
 
 The table outlines the communication channels and protocols used between various components of the Druid AI Platform. It details the source and destination machines, the protocols and ports used, and the purpose of each connection.
 

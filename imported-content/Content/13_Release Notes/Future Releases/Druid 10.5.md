@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Druid 10.5"
 ---
 
 <a id="Druid105"></a>
 
-# Druid 10.5
 
 > **IMPORTANT!** This topic describes functionality planned for a future Druid release. The information is provided for informational purposes only and reflects Druid current product direction. Nothing in this section constitutes a binding commitment to deliver any feature or functionality in a specific release or timeframe. As the market and user needs evolve, Druid reserves the right to update the list of features to ensure the most impactful features are delivered.
 

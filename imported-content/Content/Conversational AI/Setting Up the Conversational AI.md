@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Setting Up the AI Agent Conversational AI"
 ---
 
 <a id="SettingUptheAIAgentConversationalAI"></a>
 
-# Setting Up the AI Agent Conversational AI
 
 To set up the AI Agent Conversational AI, select the AI Agent and from the **NLU** menu, click **Configurations**.The NLU Configuration page opens on the **General** tab.
 

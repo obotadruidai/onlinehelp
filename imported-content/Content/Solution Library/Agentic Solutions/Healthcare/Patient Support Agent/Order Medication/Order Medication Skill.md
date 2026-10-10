@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Order Medication Skill"
 ---
 
 <a id="OrderMedicationSkill"></a>
 
-# Order Medication Skill
 
 The **Order Medication Skill** is an intelligent clinical workflow layer built on top of the Healthcare Agentic Solution. It automates the complete prescription lifecycle — from initial creation, through ongoing changes, to patient-initiated repeat reorders — transforming prescription management into a guided, conversational experience for both medics and patients. By combining structured medication search, guided data collection, and automated provider review routing, the solution reduces administrative overhead while improving prescribing accuracy and patient self-service.
 

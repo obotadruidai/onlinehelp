@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "All Conversations History"
 ---
 
 <a id="AllConversationsHistory"></a>
 
-# All Conversations History
 
 On the Conversations History page, below the filtering area, click on the **Show all messages**.
 

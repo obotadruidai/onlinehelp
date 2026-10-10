@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Druid SIP"
 ---
 
 <a id="DruidSIP"></a>
 
-# Druid SIP
 
 Druid SIP is the telephony voice gateway for Druid Voice. It enables organizations to seamlessly connect AI agents to SIP-based VoIP infrastructure, allowing callers to interact with AI Agents through existing telephony environments without requiring changes to their current voice architecture.
 

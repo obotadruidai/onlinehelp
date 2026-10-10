@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Review Flow Changes"
 ---
 
 <a id="ReviewFlowChanges"></a>
 
-# Review Flow Changes
 
 You can review the changes made to a flow by using the Audit Trail feature that provides you with a comprehensive historical record of all changes made by authors to a flow.
 

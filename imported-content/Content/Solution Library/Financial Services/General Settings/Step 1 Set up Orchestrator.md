@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Step 1: Set up Orchestrator Victor\\_Attended Next Best Deal Process"
 ---
 
 <a id="Step1SetupOrchestratorVictorAttendedNextBestDealProcess"></a>
 
-# Step 1: Set up Orchestrator Victor\_Attended Next Best Deal Process
 
 Go to [https://cloud.uipath.com.](https://cloud.uipath.com.)
 

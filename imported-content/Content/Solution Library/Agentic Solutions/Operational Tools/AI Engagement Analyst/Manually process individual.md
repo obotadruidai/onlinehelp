@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Manually Process Individual Conversations"
 ---
 
 <a id="ManuallyProcessIndividualConversations"></a>
 
-# Manually Process Individual Conversations
 
 While the AI Analyst typically processes data automatically, you can manually trigger the analysis for a specific record if it has not yet been processed.
 

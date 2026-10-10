@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Translation Tool"
 ---
 
 <a id="TranslationTool"></a>
 
-# Translation Tool
 
 The Translation Tool enables translators and authors with the appropriate access permissions to easily translate AI Agent elements from a single, centralized space within the Druid Portal.
 

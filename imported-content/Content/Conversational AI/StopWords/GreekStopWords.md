@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Greek Stop Words"
 ---
 
 <a id="GreekStopWords"></a>
 
-# Greek Stop Words
 
 ένα
 

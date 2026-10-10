@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Prompt"
 ---
 
 <a id="Prompt"></a>
 
-# Prompt
 
 Use Prompt steps when you want the AI Agent to ask users for input and capture their responses in an entity or local variable.
 

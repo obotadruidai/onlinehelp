@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Change the Extracted Paragraphs View"
 ---
 
 <a id="ChangetheExtractedParagraphsView"></a>
 
-# Change the Extracted Paragraphs View
 
 The Extracted paragraphs page displays in a simplified single-panel tree view by default (Dialog view), offering a clean and flexible browsing experience.
 

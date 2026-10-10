@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "FAQ Procurement Operations"
 ---
 
 <a id="FAQProcurementOperations"></a>
 
-# FAQ Procurement Operations
 
 When talking about the procurement process, employees have lots of questions related to the stages of this process and its many procedures. This FAQ solution covers topics related to purchase requests, supplier selection process, auction, contracts signing and many more.
 

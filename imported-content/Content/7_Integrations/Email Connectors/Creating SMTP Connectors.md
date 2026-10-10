@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Creating SMTP Connectors"
 ---
 
 <a id="CreatingSMTPConnectors"></a>
 
-# Creating SMTP Connectors
 
 Druid allows you to integrate with Simple Mail Transfer Protocol (SMTP) server to send emails.
 

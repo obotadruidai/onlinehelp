@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Speech Resource Configuration"
 ---
 
 <a id="SpeechResourceConfiguration"></a>
 
-# Speech Resource Configuration
 
 The **Configurations** tab allows you to fine-tune how ElevenLabs speech resources operate. You can manage settings for both Text-to-Speech (TTS) and Speech-to-Text (STT) services using inline JSON editors.
 

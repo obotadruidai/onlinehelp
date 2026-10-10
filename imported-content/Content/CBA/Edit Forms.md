@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Edit Forms"
 ---
 
 <a id="EditForms"></a>
 
-# Edit Forms
 
 The following actions are available on forms in the Forms list: make default (a form that is not set as being default view), preview, clone, edit and delete.
 

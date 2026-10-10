@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Enable Chat in Forms"
 ---
 
 <a id="EnableChatinForms"></a>
 
-# Enable Chat in Forms
 
 Enable business users to interact with the AI Agent directly from a specific record. By clicking the Chat button, users can ask questions about the record or request the AI Agent to perform actions within the record context.
 

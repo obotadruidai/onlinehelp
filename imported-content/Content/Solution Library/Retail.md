@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Retail"
 ---
 
 <a id="Retail"></a>
 
-# Retail
 
 The Retail solution provides multiple conversational flows and integrations that simplifies the shopping experience and guides the visitors/customers through all the necessary steps in finding the perfect product, purchasing it, tracking an order, submitting a service request and many more activities that provide a smart way to scale an exceptional customer experience.
 

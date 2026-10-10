@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Delete Solutions"
 ---
 
 <a id="DeleteSolutions"></a>
 
-# Delete Solutions
 
 Deleting a solution removes from the system only the solution package and not the elements included in the solution. All the configuration elements remain associated with the original AI Agent and are available to be included in other solutions.
 

@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Monitor Campaign Performance"
 ---
 
 <a id="MonitorCampaignPerformance"></a>
 
-# Monitor Campaign Performance
 
 Each campaign activity status reflects the real-time state of a campaign activity as it progresses through the delivery and engagement lifecycle. Monitoring these statuses enables you to confirm successful delivery, track audience engagement, and quickly identify and troubleshoot any issues preventing a campaign activity from reaching its intended recipient. The table below describes each possible status value and the condition it represents.
 

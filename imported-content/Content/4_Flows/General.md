@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "General"
 ---
 
 <a id="General"></a>
 
-# General
 
 To access the flow step general parameters, in the Flow Step editor, click on the General section header. The section expands.
 

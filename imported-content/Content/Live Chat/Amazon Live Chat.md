@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Amazon Live Chat Integration"
 ---
 
 <a id="AmazonLiveChatIntegration"></a>
 
-# Amazon Live Chat Integration
 
 You can now integrate Amazon Connect with Druid to allow your customers chat with the AI Agent and get support from your Contact Center agents who are using Amazon Connect.
 

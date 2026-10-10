@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Serbian Stop Words"
 ---
 
 <a id="SerbianStopWords"></a>
 
-# Serbian Stop Words
 
 baš
 

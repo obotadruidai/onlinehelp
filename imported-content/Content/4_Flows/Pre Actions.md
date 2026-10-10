@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Pre Actions"
 ---
 
 <a id="PreActions"></a>
 
-# Pre Actions
 
 DRUID provides authors with two types of actions, as follows:
 

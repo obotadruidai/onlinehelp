@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Adding Intent Variations"
 ---
 
 <a id="AddingIntentVariations"></a>
 
-# Adding Intent Variations
 
 **Intent variations** also referred to as child intents or child flows, enhance the AI Agent context awareness by offering additional functionality within the conversation. They are secondary flows triggered by intent matching while the user is engaged in a primary (parent) flow or immediately after the completion of a parent flow. Use child intents to address slight variations on the same topic without disrupting the flow of conversation.
 

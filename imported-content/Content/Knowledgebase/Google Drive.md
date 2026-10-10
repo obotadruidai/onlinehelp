@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Google Drive Data Sources"
 ---
 
 <a id="GoogleDriveDataSources"></a>
 
-# Google Drive Data Sources
 
 A Google Drive data source enables you to securely and efficiently integrate documents stored in your Google Workspace into your Knowledge Base (KB). By incorporating Google Drive data sources, you can ensure your AI Agent responses are accurate and comprehensive, utilizing internal files, policies, or FAQs located on your cloud storage.
 

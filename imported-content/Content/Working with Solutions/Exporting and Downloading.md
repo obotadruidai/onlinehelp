@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Export Solutions"
 ---
 
 <a id="ExportSolutions"></a>
 
-# Export Solutions
 
 Before exporting a solution, you need to link all elements (integration entities, document templates, apps roles) that you need on destination (especially those which do not exist on destination, on the tenant or environment where you will import the solution); otherwise, the solution import will fail.
 

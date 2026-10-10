@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Custom Code"
 ---
 
 <a id="CustomCode"></a>
 
-# Custom Code
 
 The Custom Code integration task evolves the DRUID Connector into a business operations layer. Use it to implement business rules that always apply either to the flow engine, web views, forms, and external applications.
 

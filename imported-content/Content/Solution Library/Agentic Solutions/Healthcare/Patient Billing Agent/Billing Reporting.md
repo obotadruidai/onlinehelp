@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Billing Reporting"
 ---
 
 <a id="BillingReporting"></a>
 
-# Billing Reporting
 
 For medical staff
 

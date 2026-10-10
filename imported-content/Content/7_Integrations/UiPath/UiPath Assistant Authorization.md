@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "UiPath Assistant Authorization"
 ---
 
 <a id="UiPathAssistantAuthorization"></a>
 
-# UiPath Assistant Authorization
 
 The first interaction between the browser and the UiPath Assistant will trigger an authorization process:
 

@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Swedish Stop Words"
 ---
 
 <a id="SwedishStopWords"></a>
 
-# Swedish Stop Words
 
 aderton
 

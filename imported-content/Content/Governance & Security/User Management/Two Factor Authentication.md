@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Two-Factor Authentication Using an Authenticator App"
 ---
 
 <a id="TwoFactorAuthenticationUsinganAuthenticatorApp"></a>
 
-# Two-Factor Authentication Using an Authenticator App
 
 Two-Factor Authentication (2FA) adds an extra layer of security to your Druid accounts. By requiring a temporary, time-based verification code from a mobile authenticator app (such as Google Authenticator or Authy) alongside standard user credentials, 2FA protects sensitive data and prevents unauthorized tenant access.
 

@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Electronic Signature with Evrotrust"
 ---
 
 <a id="ElectronicSignaturewithEvrotrust"></a>
 
-# Electronic Signature with Evrotrust
 
 This solution enables electronic signing of documents by integrating Evrotrust and DigiTech Consult's REST API services. These services handle different aspects of the process:
 

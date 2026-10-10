@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "RingCentral"
 ---
 
 <a id="RingCentral"></a>
 
-# RingCentral
 
 RingCentral is a multi-channel integrator, which also offers live chat capabilities. DRUID enables you to create the AI Agent once, then integrate it with RingCentral to deploy it in your preferred channel.
 

@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Viber"
 ---
 
 <a id="Viber"></a>
 
-# Viber
 
 Druid authors can integrate AI Agents with Viber to allow their customers to start a conversation with the AI Agent in the Viber app.
 

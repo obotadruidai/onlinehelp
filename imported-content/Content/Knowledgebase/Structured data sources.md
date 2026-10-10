@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Structured Data Sources"
 ---
 
 <a id="StructuredDataSources"></a>
 
-# Structured Data Sources
 
 Structured data sources in Druid are organized formats from which the system can extract QnA pairs for the Knowledge Base. These sources include Excel and PDF files that adhere to specific formatting rules to ensure accurate data extraction:
 

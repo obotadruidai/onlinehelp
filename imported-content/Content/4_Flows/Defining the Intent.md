@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Defining the Intent"
 ---
 
 <a id="DefiningtheIntent"></a>
 
-# Defining the Intent
 
 An intent represents what the user wants to accomplish and is the trigger that starts a conversational flow. When creating a flow, you provide training phrases — examples of what users might say — so the AI Agent can recognize and match the user's intent.
 

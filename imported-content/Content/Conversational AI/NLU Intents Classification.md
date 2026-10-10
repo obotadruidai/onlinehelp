@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "NLU Intents Classification"
 ---
 
 <a id="NLUIntentsClassification"></a>
 
-# NLU Intents Classification
 
 Configure how the system identifies user intents based on input text. You can choose between multiple classification models, depending on your use case and accuracy requirements.
 

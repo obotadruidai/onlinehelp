@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Custom Data Sources"
 ---
 
 <a id="CustomDataSources"></a>
 
-# Custom Data Sources
 
 Custom data sources allow you to extract data from third-party systems that expose data via APIs. These sources support integration responses and help retrieve content when none of the standard DRUID data source types apply.
 

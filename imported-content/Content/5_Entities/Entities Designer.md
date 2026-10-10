@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Entity Designer"
 ---
 
 <a id="EntityDesigner"></a>
 
-# Entity Designer
 
 The Entity Designer serves as an intuitive companion, automatically structuring and presenting the best visualization of entity models to AI Agent authors, facilitating a deeper comprehension of the solution.
 

@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Patient Engagement Campaigns"
 ---
 
 <a id="PatientEngagementCampaigns"></a>
 
-# Patient Engagement Campaigns
 
 for campaign managers
 

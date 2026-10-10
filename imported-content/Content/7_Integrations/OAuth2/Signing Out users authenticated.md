@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Signing Out users authenticated using OAuth v2"
 ---
 
 <a id="SigningOutusersauthenticatedusingOAuthv2"></a>
 
-# Signing Out users authenticated using OAuth v2
 
 For users authenticated within the conversation using OAuth v2, you can log them out by making a custom configuration based on the Log out endpoint of the API service.
 

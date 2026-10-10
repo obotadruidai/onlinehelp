@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "WebChat Common Styling and Behavior (Bot framework v3)"
 ---
 
 <a id="WebChatCommonStylingandBehaviorBotframeworkv3"></a>
 
-# WebChat Common Styling and Behavior (Bot framework v3)
 
 When configuring the webchat widget, you can configure specific widget parameters. To do so, click the **Edit Parameters** button.
 

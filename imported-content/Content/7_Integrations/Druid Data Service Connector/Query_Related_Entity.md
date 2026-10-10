@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Query Related Entity"
 ---
 
 <a id="QueryRelatedEntity"></a>
 
-# Query Related Entity
 
 Queries the request entity's records and returns a collection. For example, there is a list of contracts for account John. To get the list of contracts for a 360 account form, use DRUID Data Service Query related entity task which uses a child-parent entity relationship (Contract - Account)
 

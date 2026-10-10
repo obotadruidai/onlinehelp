@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Compensation and Benefits"
 ---
 
 <a id="CompensationandBenefits"></a>
 
-# Compensation and Benefits
 
 This solution template provides a wide range of skills for HR Admins/Managers and employees:
 

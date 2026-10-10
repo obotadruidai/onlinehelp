@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Sakari SMS"
 ---
 
 <a id="SakariSMS"></a>
 
-# Sakari SMS
 
 Enable customers to start and conduct conversations with AI Agents through standard SMS text messaging via Sakari.
 

@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Retrieve Student Data From PeopleSoft"
 ---
 
 <a id="RetrieveStudentDataFromPeopleSoft"></a>
 
-# Retrieve Student Data From PeopleSoft
 
 The **PeopleSoft Integrations Skill** enables Druid AI Agents to retrieve student information directly from Oracle PeopleSoft Campus Solutions and make it available during conversations and business automations.
 

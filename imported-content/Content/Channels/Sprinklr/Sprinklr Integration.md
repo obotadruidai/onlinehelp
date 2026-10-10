@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Sprinklr"
 ---
 
 <a id="Sprinklr"></a>
 
-# Sprinklr
 
 Sprinklr is a customer service platform that lets you connect with your customers through AI Agents, live chat, and broadcasts on various channels. You can integrate AI Agents with Sprinklr to handle user requests within various channels.
 

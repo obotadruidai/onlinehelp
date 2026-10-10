@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "AI Agent Orchestration"
 ---
 
 <a id="AIAgentOrchestration"></a>
 
-# AI Agent Orchestration
 
 Orchestrate multiple specialized AI Agents through a single, intelligent conversation layer — powered by context-aware routing, seamless hand offs, and unified user experience.
 

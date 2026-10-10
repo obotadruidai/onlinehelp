@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Capturing DTMF Keypad Digits"
 ---
 
 <a id="CapturingDTMFKeypadDigits"></a>
 
-# Capturing DTMF Keypad Digits
 
 You can configure flow steps to capture a collection of digits the user presses at the phone's keypad, either within a specific time frame between digits, or a maximum number of digits or the digits pressed prior a specific digit set on the flow step.
 

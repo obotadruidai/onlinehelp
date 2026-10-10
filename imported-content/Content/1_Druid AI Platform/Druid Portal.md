@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Druid Portal"
 ---
 
 <a id="DruidPortal"></a>
 
-# Druid Portal
 
 The Druid Portal provides an intuitive and easy to use web user interface, the perfect workspace for authoring AI Agents, conversations, and integrations with other platforms and IT systems. It has been designed for AI Agent authoring, packaging many tools in simple environments.
 

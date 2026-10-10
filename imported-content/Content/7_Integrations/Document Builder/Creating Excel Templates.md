@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Creating Excel Templates"
 ---
 
 <a id="CreatingExcelTemplates"></a>
 
-# Creating Excel Templates
 
 The excel template contains the basic text that is the same in all of the generated documents and entity-sourced dynamic data that vary from one generated document to another.
 

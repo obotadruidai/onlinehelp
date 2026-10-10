@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Define Form Properties"
 ---
 
 <a id="DefineFormProperties"></a>
 
-# Define Form Properties
 
 To customize a form’s properties:
 

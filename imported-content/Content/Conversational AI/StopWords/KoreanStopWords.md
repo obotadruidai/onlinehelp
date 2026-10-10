@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Korean Stop Words"
 ---
 
 <a id="KoreanStopWords"></a>
 
-# Korean Stop Words
 
 !
 

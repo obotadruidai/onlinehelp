@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Agent"
 ---
 
 <a id="Agent"></a>
 
-# Agent
 
 The Agent step allows you to integrate advanced AI agent capabilities into your conversational flows. This step leverages an agentic framework, which enables the AI to reason, plan, and execute tasks by breaking down complex goals into smaller, manageable steps. Instead of rigidly following a predefined path, an agent can dynamically decide the best course of action, converse with the user to gather necessary information, and utilize various tools (functions) to achieve its objectives. This makes your AI Agent more adaptable and capable of handling complex, multi-turn interactions.
 

@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Running UiPath Attended Processes"
 ---
 
 <a id="RunningUiPathAttendedProcesses"></a>
 
-# Running UiPath Attended Processes
 
 Druid offers a simplified way to interact with your personal, locally installed UiPath robot.
 

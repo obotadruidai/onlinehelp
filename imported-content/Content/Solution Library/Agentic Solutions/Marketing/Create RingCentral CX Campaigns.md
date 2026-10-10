@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Create RingCentral CX Campaigns"
 ---
 
 <a id="CreateRingCentralCXCampaigns"></a>
 
-# Create RingCentral CX Campaigns
 
 Voice campaigns initiate outbound automated voice calls to deliver spoken notification messages or run interactive voice conversations.
 

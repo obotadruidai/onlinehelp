@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Mapping Input Fields in User Expressions"
 ---
 
 <a id="MappingInputFieldsinUserExpressions"></a>
 
-# Mapping Input Fields in User Expressions
 
 Expressions in input mapping fields are similar to flow training phrases; the difference is that the AI Agent uses them at a flow step level. Users chatting with a AI Agent can provide information in the form of expressions, not only exact-match responses. In order for AI Agents to extract information when the user answers with an expression, authors can define training phrases on flow steps of type Prompt to provide the AI Agent with alternative ways for capturing user input.
 

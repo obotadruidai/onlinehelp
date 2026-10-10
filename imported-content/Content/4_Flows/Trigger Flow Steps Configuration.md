@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Trigger Flow"
 ---
 
 <a id="TriggerFlow"></a>
 
-# Trigger Flow
 
 The Trigger Flow step allows a AI Agent to seamlessly redirect the conversation to another existing flow, making it a powerful tool for creating dynamic and interactive dialogues.
 

@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "UiPath Attended Process"
 ---
 
 <a id="UiPathAttendedProcess"></a>
 
-# UiPath Attended Process
 
 Interacting with your personal, locally installed UiPath robot is now easier than ever, thanks to the integration of Robot.JS framework in DRUID webchat resources.
 

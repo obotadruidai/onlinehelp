@@ -1,11 +1,8 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Housing"
 ---
 
 <a id="Housing"></a>
 
-# Housing
 
 Documentation will be available soon.

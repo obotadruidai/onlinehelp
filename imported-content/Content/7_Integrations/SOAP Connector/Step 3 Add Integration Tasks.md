@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Step 3. Add Integration Tasks"
 ---
 
 <a id="Step3AddIntegrationTasks"></a>
 
-# Step 3. Add Integration Tasks
 
 <a id="Prerequisite"></a>
 

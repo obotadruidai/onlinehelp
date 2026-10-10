@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Feedback Reactions in Web Chat"
 ---
 
 <a id="FeedbackReactionsinWebChat"></a>
 
-# Feedback Reactions in Web Chat
 
 Enable feedback options in web chat to capture user reactions to AI Agent responses. Users can provide positive or negative feedback using thumbs-up or thumbs-down emojis, helping you enhance AI Agent interactions and improve the user experience.
 

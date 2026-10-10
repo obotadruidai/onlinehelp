@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Preview and Validate Views"
 ---
 
 <a id="PreviewandValidateViews"></a>
 
-# Preview and Validate Views
 
 Authors can preview a view by clicking the **Preview** icon at the top of the View Diagram.
 

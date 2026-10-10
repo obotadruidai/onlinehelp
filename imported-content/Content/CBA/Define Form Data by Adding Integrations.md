@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Define Form Data by Adding Integrations"
 ---
 
 <a id="DefineFormDatabyAddingIntegrations"></a>
 
-# Define Form Data by Adding Integrations
 
 Integrations allow your form to display data from DRUID Data Services and external sources, ensuring users see accurate and up-to-date information. By configuring integrations, you can create, read, update, and delete entity records within the form.
 

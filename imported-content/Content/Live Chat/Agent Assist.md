@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Agent Assist"
 ---
 
 <a id="AgentAssist"></a>
 
-# Agent Assist
 
 Agent Assist helps helpdesk agents respond faster and more accurately by analyzing both written and real-time voice interactions. It can use large language models (LLMs) to understand client messages and suggest the most relevant replies from your Knowledge Base.
 

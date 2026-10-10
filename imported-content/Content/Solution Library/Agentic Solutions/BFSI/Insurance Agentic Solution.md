@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Insurance Agentic Solution"
 ---
 
 <a id="InsuranceAgenticSolution"></a>
 
-# Insurance Agentic Solution
 
 The **Insurance Agentic Solution** is an LLM-enabled business application designed to deliver a fully conversational customer experience for modern insurance providers. It transforms the traditional insurance journey—from policy discovery to claim reporting—into a natural, agent-led dialogue that utilizes OCR technology and real-time data processing to automate routine administrative tasks.
 

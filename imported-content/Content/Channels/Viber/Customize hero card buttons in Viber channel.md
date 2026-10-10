@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Customizing Hero Card Buttons for Viber Channel"
 ---
 
 <a id="CustomizingHeroCardButtonsforViberChannel"></a>
 
-# Customizing Hero Card Buttons for Viber Channel
 
 > **NOTE:** This feature is available in DRUID 5.3 and higher.
 

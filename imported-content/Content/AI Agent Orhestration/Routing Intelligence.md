@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Routing Intelligence & Context Preservation"
 ---
 
 <a id="RoutingIntelligenceContextPreservation"></a>
 
-# Routing Intelligence & Context Preservation
 
 Druid Conductor is the primary AI Agent the user always talks to — it knows when to call in a specialist and when to handle things itself.
 

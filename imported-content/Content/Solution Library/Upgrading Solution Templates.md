@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Upgrading Solution Templates"
 ---
 
 <a id="UpgradingSolutionTemplates"></a>
 
-# Upgrading Solution Templates
 
 Upgrading solution templates is similar to installing them.
 

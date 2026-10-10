@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Speech Resources Metrics and Usage Monitoring"
 ---
 
 <a id="SpeechResourcesMetricsandUsageMonitoring"></a>
 
-# Speech Resources Metrics and Usage Monitoring
 
 Druid provides real-time analytics and metric dashboards to track performance, usage volume, and response latencies across all speech services used in the Druid SIP channel. This allows administrators to monitor service level agreements (SLAs), detect latency bottlenecks, and audit resource consumption.
 

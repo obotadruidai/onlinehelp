@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Evaluate Words Used in Multiple Intents"
 ---
 
 <a id="EvaluateWordsUsedinMultipleIntents"></a>
 
-# Evaluate Words Used in Multiple Intents
 
 The Druid Portal enables you to see for each AI Agent an image composed of words used in the training model.
 

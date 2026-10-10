@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "AI Agent Informational Model"
 ---
 
 <a id="AIAgentInformationalModel"></a>
 
-# AI Agent Informational Model
 
 Druid AI employs a distinctive approach to structuring conversation context and integrating information from third-party systems, facilitated by robust data structures known as entities. These entities, designed as relational business objects, serve as the cognitive core of the AI Agent. They not only shape the AI Agent understanding but also enable training of the Natural Language Processing (NLP) model with specific data from clients' systems, ensuring the AI Agent converses fluently in the language of the company.
 

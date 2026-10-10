@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Ellucian Banner"
 ---
 
 <a id="EllucianBanner"></a>
 
-# Ellucian Banner
 
 Ellucian Banner is a comprehensive enterprise resource planning (ERP) platform designed specifically for higher education institutions. Integrating your AI agent with Banner allows students to interact with their academic and administrative data through a conversational interface.
 

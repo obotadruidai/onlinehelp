@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Generate Documents using Document Templates"
 ---
 
 <a id="GenerateDocumentsusingDocumentTemplates"></a>
 
-# Generate Documents using Document Templates
 
 You can generate Word, Excel or PDF files from document templates that contain entity-sourced dynamic data.
 

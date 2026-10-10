@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Workspace Designer"
 ---
 
 <a id="WorkspaceDesigner"></a>
 
-# Workspace Designer
 
 The Workspace Designer helps creating create and refining workspace components—including charts, forms, views, and dashboards—using natural language. It transforms your business requirements into workspace configurations, reducing manual design effort and accelerating workspace design.
 

@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Flow Steps"
 ---
 
 <a id="FlowSteps"></a>
 
-# Flow Steps
 
 Flow steps are the essential building blocks for creating flows and defining the logic of AI Agents. They enable you to design complex conversational experiences. Each flow step represents a specific action, decision point, or interaction within the flow, shaping how the conversation unfolds.
 

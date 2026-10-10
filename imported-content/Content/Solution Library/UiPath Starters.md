@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "UiPath Starters"
 ---
 
 <a id="UiPathStarters"></a>
 
-# UiPath Starters
 
 UiPath Unattended Process
 

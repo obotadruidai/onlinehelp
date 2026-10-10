@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Outbound Call Flow and Lead Experience"
 ---
 
 <a id="OutboundCallFlowandLeadExperience"></a>
 
-# Outbound Call Flow and Lead Experience
 
 When triggered, the outbound campaign initiates a voice call to each target audience member. The interaction follows a structured call flow based on lead validation and response:
 

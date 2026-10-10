@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Urdu Stop Words"
 ---
 
 <a id="UrduStopWords"></a>
 
-# Urdu Stop Words
 
 آئی
 

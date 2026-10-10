@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Automatically Allocating Clients to Agents"
 ---
 
 <a id="AutomaticallyAllocatingClientstoAgents"></a>
 
-# Automatically Allocating Clients to Agents
 
 Live Chat allows your helpdesk agents to accept client live chat requests automatically. Once a client initiates a live chat request, DRUID automatically connects them to an available helpdesk agent. Available agents are logged-in agents who did not reach the concurrent chat limit and did not request a break.
 

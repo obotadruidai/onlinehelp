@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Romanian Vehicle Identity Card"
 ---
 
 <a id="RomanianVehicleIdentityCard"></a>
 
-# Romanian Vehicle Identity Card
 
 The Druid API engine performs OCR and data extraction from Romanian car registration certificates.
 

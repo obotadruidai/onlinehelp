@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Import Solutions"
 ---
 
 <a id="ImportSolutions"></a>
 
-# Import Solutions
 
 > **IMPORTANT!** When you import a solution, please be aware that the elements in the solution will overwrite the AI Agent elements with the same name and SourceId.
 

@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Salesforce Sample API Calls"
 ---
 
 <a id="SalesforceSampleAPICalls"></a>
 
-# Salesforce Sample API Calls
 
 In DRUID, the Salesforce solution templates come by default with preconfigured integrations.
 

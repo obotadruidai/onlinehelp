@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Handling Input Mapping Exceptions"
 ---
 
 <a id="HandlingInputMappingExceptions"></a>
 
-# Handling Input Mapping Exceptions
 
 You can configure the way AI Agents handle exceptions on flow steps with input mapping where Druid validates the input data.
 

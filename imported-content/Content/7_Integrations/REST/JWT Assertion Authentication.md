@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "JWT Assertion Authentication"
 ---
 
 <a id="JWTAssertionAuthentication"></a>
 
-# JWT Assertion Authentication
 
 This section explains how to configure Druid to authenticate API calls using a JSON Web Token (JWT) assertion with Microsoft Identity Platform. This method is particularly useful when integrating with APIs that require JWT assertion authentication.
 

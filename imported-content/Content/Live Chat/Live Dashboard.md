@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Live Dashboard"
 ---
 
 <a id="LiveDashboard"></a>
 
-# Live Dashboard
 
 The Live Dashboard provides helpdesk managers with an overview on how helpdesk agents are performing at any given moment. It offers real-time metrics that help managers analyze the contact center queues performance and track their agents’ efficiency in real time.
 

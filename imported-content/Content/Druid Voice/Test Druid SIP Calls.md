@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Test Druid SIP Calls"
 ---
 
 <a id="TestDruidSIPCalls"></a>
 
-# Test Druid SIP Calls
 
 > **Info:** This feature is available starting with Druid 9.27.
 

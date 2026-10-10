@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "NLP Best Practices"
 ---
 
 <a id="NLPBestPractices"></a>
 
-# NLP Best Practices
 
 There are a few key points to keep in mind when creating your NLP model from scratch. Keep reading to learn the Dos and Don'ts of intent definition.
 

@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Russian Stop Words"
 ---
 
 <a id="RussianStopWords"></a>
 
-# Russian Stop Words
 
 а
 

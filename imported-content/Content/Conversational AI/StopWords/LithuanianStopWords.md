@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Lithuanian Stop Words"
 ---
 
 <a id="LithuanianStopWords"></a>
 
-# Lithuanian Stop Words
 
 abi
 

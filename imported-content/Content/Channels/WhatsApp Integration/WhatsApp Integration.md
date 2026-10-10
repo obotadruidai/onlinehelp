@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "WhatsApp Vonage"
 ---
 
 <a id="WhatsAppVonage"></a>
 
-# WhatsApp Vonage
 
 To make it easy for your consumers to make purchases and get answers to questions using WhatsApp, the messaging channel they already use every day, Druid authors can integrate AI Agents with WhatsApp. This way, customers will be able to start a conversation with your AI Agent in WhatsApp.
 

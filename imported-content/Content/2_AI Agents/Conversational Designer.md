@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Conversational Designer"
 ---
 
 <a id="ConversationalDesigner"></a>
 
-# Conversational Designer
 
 The Conversational Designer is the AI Authoring Agent responsible for understanding your business use case and drafting the underlying conversational flow skeleton. It builds the interactive capabilities and dialog flows required for user engagement and determines what data structures are needed to support the interaction.
 

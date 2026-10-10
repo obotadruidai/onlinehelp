@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Adding Item to BluePrism Queue"
 ---
 
 <a id="AddingItemtoBluePrismQueue"></a>
 
-# Adding Item to BluePrism Queue
 
 The role of this connector task is to create a new queue item in a UiPath Orchestrator Queue with data mapped from DRUID Entities.
 

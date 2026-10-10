@@ -1,11 +1,8 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Financial Aid"
 ---
 
 <a id="FinancialAid"></a>
 
-# Financial Aid
 
 Documentation will be available soon.

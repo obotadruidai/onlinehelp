@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Set Up Multi-AI Agent Orchestration"
 ---
 
 <a id="SetUpMultiAIAgentOrchestration"></a>
 
-# Set Up Multi-AI Agent Orchestration
 
 Configuring a Druid Conductor involves establishing a hierarchy between your primary conversational AI Agent and your specialized AI Agents.
 

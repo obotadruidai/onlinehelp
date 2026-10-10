@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "See Ticket Management in Action"
 ---
 
 <a id="SeeTicketManagementinAction"></a>
 
-# See Ticket Management in Action
 
 <a id="Openanewticket"></a>
 

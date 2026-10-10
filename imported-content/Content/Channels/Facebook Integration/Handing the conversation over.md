@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Handing the conversation over to FB Page Inbox or to another AI Agent"
 ---
 
 <a id="HandingtheconversationovertoFBPageInboxortoanotherAIAgent"></a>
 
-# Handing the conversation over to FB Page Inbox or to another AI Agent
 
 A botdeployed on Facebook will manage all conversations initiated through Facebook Messenger on the integrated Facebook Page.
 

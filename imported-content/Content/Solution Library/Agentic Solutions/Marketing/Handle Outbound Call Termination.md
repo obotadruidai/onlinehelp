@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Handle Outbound Call Termination"
 ---
 
 <a id="HandleOutboundCallTermination"></a>
 
-# Handle Outbound Call Termination
 
 The solution automatically records the outcome of each call, whether the conversation ends normally or the contacted person hangs up before the AI Agent completes the interaction.
 

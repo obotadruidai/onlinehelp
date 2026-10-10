@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Adding Technical Intents"
 ---
 
 <a id="AddingTechnicalIntents"></a>
 
-# Adding Technical Intents
 
 The Commands section in Flow Details lets you define technical utterances as exact-match commands instead of using them as NLP training phrases. This helps you manage structured or system-level inputs — such as **\_\_update\_db\_parameters\_\_** or **#CreateNewFlowFromBot** — without affecting the language model’s performance.
 

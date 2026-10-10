@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Agentic Flows"
 ---
 
 <a id="AgenticFlows"></a>
 
-# Agentic Flows
 
 Agentic flows represent a fundamental shift from linear conversational design to autonomous problem-solving. Unlike standard flows that follow a fixed path, agentic flows use an agentic framework powered by Large Language Models (LLMs) to reason, plan, and execute tasks dynamically.
 

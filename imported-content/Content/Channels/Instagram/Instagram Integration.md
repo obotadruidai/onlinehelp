@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Instagram"
 ---
 
 <a id="Instagram"></a>
 
-# Instagram
 
 Integrate your Druid AI Agent with Instagram via Facebook. This integration allows you to build an AI Agent once in the Druid Portal and seamlessly deploy it to handle customer interactions on Instagram.
 

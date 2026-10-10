@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Business Apps Releases"
 ---
 
 <a id="BusinessAppsReleases"></a>
 
-# Business Apps Releases
 
 <a id="FutureReleases"></a>
 

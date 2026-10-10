@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "German Stop Words"
 ---
 
 <a id="GermanStopWords"></a>
 
-# German Stop Words
 
 a
 

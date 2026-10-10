@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Manage Data Records"
 ---
 
 <a id="ManageDataRecords"></a>
 
-# Manage Data Records
 
 The Outbound Student Engagement solution is built on a structured data model that covers the full campaign lifecycle, from audience definition and campaign configuration through to activity tracking, interaction logging, and outcome storage. The entities below represent the core building blocks the solution uses to orchestrate and record all outbound engagement operations.
 

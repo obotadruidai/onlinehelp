@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Knowledge Base with ChatGPT"
 ---
 
 <a id="KnowledgeBasewithChatGPT"></a>
 
-# Knowledge Base with ChatGPT
 
 The solution combines the DRUID Knowledge Base and ChatGPT features to provide an amazing human like, knowledgeable conversation.
 

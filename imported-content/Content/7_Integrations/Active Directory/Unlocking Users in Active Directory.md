@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Unlocking Users in Active Directory"
 ---
 
 <a id="UnlockingUsersinActiveDirectory"></a>
 
-# Unlocking Users in Active Directory
 
 This section describes how to add and configure an AD integration task to unlock user(s) in Active Directory.
 

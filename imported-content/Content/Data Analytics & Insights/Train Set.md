@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Evaluate Train Phrases"
 ---
 
 <a id="EvaluateTrainPhrases"></a>
 
-# Evaluate Train Phrases
 
 The training model includes ALL training phrases defined on all flows associated with the respective AI Agent. The Train Set is the actual sample data used to train the AI Agent NLP model. The model uses the data to see and learn.
 

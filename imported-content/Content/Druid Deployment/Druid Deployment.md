@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Druid Deployment"
 ---
 
 <a id="DruidDeployment"></a>
 
-# Druid Deployment
 
 In the era of digital transformation, organizations are challenged to innovate faster while keeping their network, systems and applications available, scalable and secure. But faster innovation while meeting the requirements in terms of availability, scalability and security can be hard to achieve especially due to the budget and resources constrains.
 

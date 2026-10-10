@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "FAQ"
 ---
 
 <a id="FAQ"></a>
 
-# FAQ
 
 This solution template provides you with a list of Frequent Asked Questions from the financial services operations area. It covers around 10.000 common questions asked by customers, grouped in around 77 FAQ flows.
 

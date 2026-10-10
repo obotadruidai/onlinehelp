@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Start Druid Conversations via API"
 ---
 
 <a id="StartDruidConversationsviaAPI"></a>
 
-# Start Druid Conversations via API
 
 You can initiate a Druid conversation through the API `/api/Druid/{botId}/StartFlow`
 

@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "How to Set Up UiPath RobotJS"
 ---
 
 <a id="HowtoSetUpUiPathRobotJS"></a>
 
-# How to Set Up UiPath RobotJS
 
 No connector actions or internal actions are needed in order to run the UiPath attended process. All configurations are made within the Flow Designer.
 

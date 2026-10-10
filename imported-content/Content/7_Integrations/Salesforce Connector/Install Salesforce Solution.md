@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Install Salesforce Solution Templates"
 ---
 
 <a id="InstallSalesforceSolutionTemplates"></a>
 
-# Install Salesforce Solution Templates
 
 To install a Salesforce solution template, search for Salesforce solutions (you can use the filtering criteria), spot the desired Salesforce solution and click on it. Solution details appear.
 

@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "eSignature Namirial"
 ---
 
 <a id="eSignatureNamirial"></a>
 
-# eSignature Namirial
 
 eSignature Namirial is a solution that uses Namirial technology to provide your AI Agent with electronic signature capabilities. Use it if you want to showcase Druid-Namirial integration.
 

@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Step 1. Create AD App"
 ---
 
 <a id="Step1CreateADApp"></a>
 
-# Step 1. Create AD App
 
 Creating an AD app means defining your AD connection string for the AI Agent within the selected solution.
 

@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Welsh Stop Words"
 ---
 
 <a id="WelshStopWords"></a>
 
-# Welsh Stop Words
 
 yn
 

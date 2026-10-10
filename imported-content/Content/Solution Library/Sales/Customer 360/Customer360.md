@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Customer 360"
 ---
 
 <a id="Customer360"></a>
 
-# Customer 360
 
 This skill provides a smart way to scale exceptional sales representative experiences. It includes conversation flows that allow sales representatives to register new leads and clients into the database, search for a client, see and update client information.
 

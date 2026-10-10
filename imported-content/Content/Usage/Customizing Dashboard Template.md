@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Customizing Dashboard Template"
 ---
 
 <a id="CustomizingDashboardTemplate"></a>
 
-# Customizing Dashboard Template
 
 To edit the dashboard template, on the top-right corner of the Dashboard, tap on **Edit mode**.
 

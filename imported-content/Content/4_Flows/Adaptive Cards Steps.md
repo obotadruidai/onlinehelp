@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Adaptive Cards"
 ---
 
 <a id="AdaptiveCards"></a>
 
-# Adaptive Cards
 
 > **NOTE:** You can use Adaptive cards steps only if you have bot framework version 4 activated on your tenant.
 

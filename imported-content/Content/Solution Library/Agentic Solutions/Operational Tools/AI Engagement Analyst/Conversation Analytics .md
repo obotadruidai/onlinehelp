@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Conversation Analytics"
 ---
 
 <a id="ConversationAnalytics"></a>
 
-# Conversation Analytics
 
 The **Conversation Analytics** provides deep operational insight into user interaction performance, containment, friction, sentiment, and resolution metrics across your bot instances. Use this dashboard to analyze user sentiment, detect friction points, review conversational outcome distributions, and evaluate channel effectiveness.
 

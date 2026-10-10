@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Druid Data Service Installation"
 ---
 
 <a id="DruidDataServiceInstallation"></a>
 
-# Druid Data Service Installation
 
 Druid Data Service is Druid’s data storage used to persist entity records created and managed within the Druid AI Platform simplifying records authoring. authors can further use these records in NER training and in other different contexts.
 

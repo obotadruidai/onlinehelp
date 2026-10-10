@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Inactivity End Conversation Flow"
 ---
 
 <a id="InactivityEndConversationFlow"></a>
 
-# Inactivity End Conversation Flow
 
 The **Inactivity End Conversation Flow** helps manage conversations that are idle for a set period. You can define this timeout in the **Conversation timeout (min)** field, with a range of 0 to 1440 minutes. When the timeout period elapses, the selected **Inactivity End Conversation Flow** is triggered.
 

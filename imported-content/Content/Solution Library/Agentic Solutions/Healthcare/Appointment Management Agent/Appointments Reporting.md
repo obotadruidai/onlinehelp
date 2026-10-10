@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Appointments Reporting"
 ---
 
 <a id="AppointmentsReporting"></a>
 
-# Appointments Reporting
 
 For medical staff
 

@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Epic"
 ---
 
 <a id="Epic"></a>
 
-# Epic
 
 Epic on FHIR provides standards-based APIs that enable applications to securely access and exchange healthcare data and interact with functionality available in Epic. It uses FHIR (Fast Healthcare Interoperability Resources), an HL7 standard for exchanging healthcare information electronically.
 

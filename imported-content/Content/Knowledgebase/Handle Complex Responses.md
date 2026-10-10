@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Handle Complex Responses"
 ---
 
 <a id="HandleComplexResponses"></a>
 
-# Handle Complex Responses
 
 KB authors might identify that a question requires a more complex response, like getting information from an application or having multiple variants for the response. When you identify that a complex response is required to an existing simple question, follow these steps:
 

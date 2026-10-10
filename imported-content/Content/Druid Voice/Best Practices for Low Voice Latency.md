@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Best Practices for Low Voice Latency"
 ---
 
 <a id="BestPracticesforLowVoiceLatency"></a>
 
-# Best Practices for Low Voice Latency
 
 Voice latency represents the time between a user's spoken request and the moment the AI Agent response reaches the client side.
 

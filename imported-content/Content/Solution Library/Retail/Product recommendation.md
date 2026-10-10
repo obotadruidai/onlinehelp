@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Product Recommendation"
 ---
 
 <a id="ProductRecommendation"></a>
 
-# Product Recommendation
 
 This solution template enables you to bring your products closer to your audience! It comes with conversational flows that will guide the website visitor through the shopping process. The AI Agent understands the user's intent and displays a range of product options based on the visitor’s preferences.
 

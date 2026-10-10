@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "GPT Agent Template v2"
 ---
 
 <a id="GPTAgentTemplatev2"></a>
 
-# GPT Agent Template v2
 
 The GPT Agent Template v2 is an enhanced solution for building fully functional AI Agents using the new Agentic framework. It serves as a starting point for developing business Agents that handle user interactions efficiently.
 

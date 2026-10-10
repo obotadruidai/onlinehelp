@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Integrations Engineer"
 ---
 
 <a id="IntegrationsEngineer"></a>
 
-# Integrations Engineer
 
 The Integration Agent manages connections between Druid AI Agents and external systems.
 

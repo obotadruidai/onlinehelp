@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Debugging Integrations"
 ---
 
 <a id="DebuggingIntegrations"></a>
 
-# Debugging Integrations
 
 The Connector Audit Logs provide detailed, step-by-step information to help you debug integration failures and review successful runs.
 

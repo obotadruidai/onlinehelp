@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Changing the Agent Name Shown in the Chat"
 ---
 
 <a id="ChangingtheAgentNameShownintheChat"></a>
 
-# Changing the Agent Name Shown in the Chat
 
 By default, the agent's name shown in the chat is comprised by [[ChatUser]].FirstName and [[ChatUser]].LastName if the agent is not connecting from the Druid Portal or using Active Directory (AD) authentication.
 

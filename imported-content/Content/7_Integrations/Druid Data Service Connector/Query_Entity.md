@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Query Entity"
 ---
 
 <a id="QueryEntity"></a>
 
-# Query Entity
 
 Queries the request entity to get a collection of records from DRUID Data Services.
 

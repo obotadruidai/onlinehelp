@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "System Entity Fields"
 ---
 
 <a id="SystemEntityFields"></a>
 
-# System Entity Fields
 
 This section provides description of Druid system entity fields that are automatically filled in on entity / entity field creation and edit. These fields are used in Druid Data Service integrations and Workspaces. For entities created in Druid versions prior to 5.4, these fields appear after you upgrade the entity.
 

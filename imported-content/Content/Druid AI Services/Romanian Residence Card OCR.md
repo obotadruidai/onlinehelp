@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Romanian Residence Card OCR"
 ---
 
 <a id="RomanianResidenceCardOCR"></a>
 
-# Romanian Residence Card OCR
 
 The Druid API engine performs OCR and data extraction from Romanian residence cards.
 

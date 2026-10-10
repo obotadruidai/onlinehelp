@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Read Files with the Druid Connector Host"
 ---
 
 <a id="ReadFileswiththeDruidConnectorHost"></a>
 
-# Read Files with the Druid Connector Host
 
 The Read File integration task enables the DRUID Connector Host to read files from a specific local disk or network location accessible by the host machine and then deliver these files within conversations.
 

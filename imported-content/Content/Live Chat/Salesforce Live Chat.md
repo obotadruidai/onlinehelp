@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Salesforce Live Chat"
 ---
 
 <a id="SalesforceLiveChat"></a>
 
-# Salesforce Live Chat
 
 Salesforce Live Chat is a native Salesforce tool that enables customer service teams to communicate in real-time with their website users.
 

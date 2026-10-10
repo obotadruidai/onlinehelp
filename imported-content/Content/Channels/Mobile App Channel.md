@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Mobile App"
 ---
 
 <a id="MobileApp"></a>
 
-# Mobile App
 
 AI Agents can be deployed in mobile applications using the existing web channel (also called Direct Line) through a WebView implementation, which allows the display of web content (HTML, CSS, JavaScript).
 

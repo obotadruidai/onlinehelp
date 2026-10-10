@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "List Files with the Druid Connector Host"
 ---
 
 <a id="ListFileswiththeDruidConnectorHost"></a>
 
-# List Files with the Druid Connector Host
 
 The List Files integration task enables the Druid Connector Host to retrieve a list of files from a specific local disk or network location accessible by the host machine. This task is similar to the ls Linux command and is useful when you need to identify which files are available in a directory before reading or processing them.
 

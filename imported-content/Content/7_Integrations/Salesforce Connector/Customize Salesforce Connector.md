@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Customize Salesforce Connector App"
 ---
 
 <a id="CustomizeSalesforceConnectorApp"></a>
 
-# Customize Salesforce Connector App
 
 Select the Salesforce solution you imported and on the main menu, click **Apps** and click on the Salesforce app.
 

@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "UiPath Automation Hub Starter"
 ---
 
 <a id="UiPathAutomationHubStarter"></a>
 
-# UiPath Automation Hub Starter
 
 Use this solution if you want to showcase DRUID-UiPath AutomationHub integration. You can use it when the intent not recognized flow is triggered and recommend your employees to submit an idea for automation in the Automation Hub.
 

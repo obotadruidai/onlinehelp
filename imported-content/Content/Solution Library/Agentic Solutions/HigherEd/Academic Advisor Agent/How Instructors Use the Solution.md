@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "How Instructors Use the Solution"
 ---
 
 <a id="HowInstructorsUsetheSolution"></a>
 
-# How Instructors Use the Solution
 
 The Instructor workspace is dedicated to instructors, professors, lecturers, and teaching assistants. It enables them to add and manage the courses they teach across semesters, personalize course details (such as descriptions and prerequisites), and communicate with enrolled students by sending notifications directly from the workspace.
 

@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Raffle"
 ---
 
 <a id="Raffle"></a>
 
-# Raffle
 
 This solution helps with organizing a raffle by allowing participants to register only one time each and extracting one or multiple winners.
 

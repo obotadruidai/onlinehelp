@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "WebChat"
 ---
 
 <a id="WebChat"></a>
 
-# WebChat
 
 The WebChat channel is enabled by default in the Druid Portal. This allows you to quickly deploy your AI Agent to any web page using a pre-configured snippet.
 

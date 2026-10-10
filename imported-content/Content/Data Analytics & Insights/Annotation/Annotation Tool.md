@@ -1,14 +1,11 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Annotation Tool"
 ---
 
 <a id="microcontent1"></a>
 
 <a id="AnnotationTool"></a>
 
-# Annotation Tool
 
 DRUID Annotation Tool helps authors leverage the NLU model of their AI Agents based on real conversations with the users. This tool helps authors to use actual “real-life” AI Agent conversation as data source for improving the AI Agent NLU model, in a new single user-friendly interface.
 

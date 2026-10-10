@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Set Up the Solution"
 ---
 
 <a id="SetUptheSolution"></a>
 
-# Set Up the Solution
 
 This section will walk you through the steps to import and configure the solution to ensure a smooth setup and operation.
 

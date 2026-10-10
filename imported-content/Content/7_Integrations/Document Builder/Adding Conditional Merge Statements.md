@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Adding Conditional Merge Statements into Template"
 ---
 
 <a id="AddingConditionalMergeStatementsintoTemplate"></a>
 
-# Adding Conditional Merge Statements into Template
 
 To include document sections or specific field values depending on the value filled in the record, add conditional statements to the template by using IF THEN logic. Conditional statements are case and space sensitive.
 

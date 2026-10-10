@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Romanian Stop Words"
 ---
 
 <a id="RomanianStopWords"></a>
 
-# Romanian Stop Words
 
 -i
 

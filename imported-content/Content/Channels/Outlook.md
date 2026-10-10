@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Outlook"
 ---
 
 <a id="Outlook"></a>
 
-# Outlook
 
 You can configure your AI Agent to communicate with users via email. By configuring your AI Agent to access an email account, it receives a message when a new email arrives. This enables the AI Agent to use email as a channel for responding to user inquiries. In response to a user's email message, the AI Agent could send an email reply.
 

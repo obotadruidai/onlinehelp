@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Set up UiPath Data Service Process"
 ---
 
 <a id="SetupUiPathDataServiceProcess"></a>
 
-# Set up UiPath Data Service Process
 
 <a id="Prerequisite"></a>
 

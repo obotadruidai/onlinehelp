@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Authenticate Conversations with SSO Teams"
 ---
 
 <a id="AuthenticateConversationswithSSOTeams"></a>
 
-# Authenticate Conversations with SSO Teams
 
 > **NOTE:**  This functionality is available in DRUID version 1.60 or higher.
 

@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Post Actions"
 ---
 
 <a id="PostActions"></a>
 
-# Post Actions
 
 The Post actions defined on a flow step will be executed after the flow step is completely executed.
 

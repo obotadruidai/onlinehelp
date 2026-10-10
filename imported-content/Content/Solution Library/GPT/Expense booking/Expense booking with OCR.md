@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Expense Booking with OCR"
 ---
 
 <a id="ExpenseBookingwithOCR"></a>
 
-# Expense Booking with OCR
 
 This solution empowers users to upload documents, such as invoice receipts, directly into a conversation. The AI Agent processes these documents using Optical Character Recognition (OCR) to extract key information, which is then securely stored for easy access and future use.
 

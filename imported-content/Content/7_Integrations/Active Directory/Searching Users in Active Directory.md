@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Searching Users in Active Directory"
 ---
 
 <a id="SearchingUsersinActiveDirectory"></a>
 
-# Searching Users in Active Directory
 
 This section describes how to add and configure an AD integration task to search user(s) in Active Directory.
 

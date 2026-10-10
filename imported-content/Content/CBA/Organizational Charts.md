@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Organizational Charts"
 ---
 
 <a id="OrganizationalCharts"></a>
 
-# Organizational Charts
 
 Organizational charts display data in a hierarchical tree structure, typically reading from top to bottom. They represent parent-child relationships, helping visualize the hierarchy within an organization.
 

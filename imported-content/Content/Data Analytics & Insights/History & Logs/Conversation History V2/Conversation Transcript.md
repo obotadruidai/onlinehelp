@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Conversation Transcript"
 ---
 
 <a id="ConversationTranscript"></a>
 
-# Conversation Transcript
 
 To see the full conversation transcript for a specific conversation, in the list of activities grouped by conversations, either click on the desired row or click the **View full activity** icon (![](../../../Resources/Images/Conversation%20History%20v2/Activities%20grouped%20by%20conversations.png)) corresponding to the desired conversation.
 

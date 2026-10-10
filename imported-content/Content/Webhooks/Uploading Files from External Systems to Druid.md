@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Uploading Files from External Systems to Druid"
 ---
 
 <a id="UploadingFilesfromExternalSystemstoDruid"></a>
 
-# Uploading Files from External Systems to Druid
 
 The `/GenericIntegrationFileTransfer` endpoint allows you to documents from an external system (such as a CRM or ERP) directly to the Druid AI Platform. While it has parameters similar to the standard `/GenericIntegration` endpoint, it is specifically designed to handle binary data via multipart form-data.
 

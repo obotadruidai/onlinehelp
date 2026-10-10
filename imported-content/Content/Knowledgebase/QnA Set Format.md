@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "QnA Set Format"
 ---
 
 <a id="QnASetFormat"></a>
 
-# QnA Set Format
 
 The QnA set file has a specific format. In order for the upload to be successful you have to either fill in the flows train set template or update the existing flows train set file following the supported upload format.
 

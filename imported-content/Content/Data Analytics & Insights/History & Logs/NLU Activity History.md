@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "NLU Activity History"
 ---
 
 <a id="NLUActivityHistory"></a>
 
-# NLU Activity History
 
 The NLU Activity History feature provides you with insights on how the NLP engine was used in a conversation: how much the NLP engine was used and the NLP scores. Analyzing the NLU Activity History helps you identify the messages with a low NLP score and add the user messages as flow training phrases on the flows where the score was low. This enables you to further fine-tune the AI Agent ML model.
 

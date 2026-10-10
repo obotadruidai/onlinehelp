@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Fields Rendering on Views and Forms"
 ---
 
 <a id="FieldsRenderingonViewsandForms"></a>
 
-# Fields Rendering on Views and Forms
 
 This sections describes how the different types of fields are rendered on views and forms.
 

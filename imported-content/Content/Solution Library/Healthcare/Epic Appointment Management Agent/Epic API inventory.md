@@ -1,12 +1,10 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Epic API inventory"
 ---
 
 <a id="EpicAPIinventory"></a>
 
-# <a id="_Epic_API_inventory"></a>Epic API inventory
+<a id="_Epic_API_inventory"></a>
 
 The table below lists the Epic FHIR APIs used by the agent to retrieve patient data, check appointments, and book new appointments.
 

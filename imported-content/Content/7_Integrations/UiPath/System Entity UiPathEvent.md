@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "System Entity: [[UiPathEvent]]"
 ---
 
 <a id="SystemEntityUiPathEvent"></a>
 
-# System Entity: [[UiPathEvent]]
 
 The **[[UiPathEvent]]** system entity maps in the backend specific information sent by the Orchestrator to DRUID. It maps two types of information:
 

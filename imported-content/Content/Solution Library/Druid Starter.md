@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Druid Starter"
 ---
 
 <a id="DruidStarter"></a>
 
-# Druid Starter
 
 Each AI Agent should have it!
 

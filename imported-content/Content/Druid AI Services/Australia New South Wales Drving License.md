@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Australia New South Wales Driving License"
 ---
 
 <a id="AustraliaNewSouthWalesDrivingLicense"></a>
 
-# Australia New South Wales Driving License
 
 The Druid API engine supports OCR and data extraction for driving licenses issued by Australia New South Wales.
 

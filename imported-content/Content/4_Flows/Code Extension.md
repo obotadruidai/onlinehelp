@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Code Extension"
 ---
 
 <a id="CodeExtension"></a>
 
-# Code Extension
 
 Sometimes the conversational flow steps behavior needs to align to more complex business rules that cannot be implemented at design time using the graphical Flow Designer. For example, a hero step should present different buttons with options for each specific user role and conditions. It is very difficult to address dozens of combinations by using the Flow Designer.
 

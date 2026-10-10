@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Clarabridge Integration"
 ---
 
 <a id="ClarabridgeIntegration"></a>
 
-# Clarabridge Integration
 
 Clarabridge is a contact center, which acts like a proxy between DRUID and Sunshine routing the conversations between the two parties.
 

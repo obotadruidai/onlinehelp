@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Getting Records from a Collection (table)"
 ---
 
 <a id="GettingRecordsfromaCollectiontable"></a>
 
-# Getting Records from a Collection (table)
 
 If you want to add more detailed information in your Word template, create a table that will return records from a collection:
 

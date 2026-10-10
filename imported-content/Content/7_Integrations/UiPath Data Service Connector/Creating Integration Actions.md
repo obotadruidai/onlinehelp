@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Creating Integration Actions"
 ---
 
 <a id="CreatingIntegrationActions"></a>
 
-# Creating Integration Actions
 
 Connector Action (Integration) only represents a host for a group of one or more integration tasks. The UiPath Data Service integration is defined at task level, not at action (integration) level.
 

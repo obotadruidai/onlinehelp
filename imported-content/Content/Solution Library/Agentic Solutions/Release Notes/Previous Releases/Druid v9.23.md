@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Druid v9.23"
 ---
 
 <a id="Druidv923"></a>
 
-# Druid v9.23
 
 | Druid Cloud US  \*.us.Druidplatform.com | Druid Cloud Australia  \*au.Druidplatform.com | Druid Cloud West-Europe (PROD)  \*.Druidplatform.com |
 | --- | --- | --- |

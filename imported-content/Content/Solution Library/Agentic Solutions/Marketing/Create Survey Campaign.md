@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Create Survey Campaign"
 ---
 
 <a id="CreateSurveyCampaign"></a>
 
-# Create Survey Campaign
 
 Survey campaigns gather user feedback, sentiment, and structured responses across preferred interaction channels.
 

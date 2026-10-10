@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Governance & Security"
 ---
 
 <a id="GovernanceSecurity"></a>
 
-# Governance & Security
 
 The Druid AI Platform provides a comprehensive governance framework designed to ensure that AI Agent deployments are secure, compliant, and transparent. Rather than treating security as a post-deployment layer, Druid embeds governance directly into the platform architecture. This ensures that every interaction—from the initial user prompt to the final system action—adheres to enterprise safety standards and regulatory requirements.
 

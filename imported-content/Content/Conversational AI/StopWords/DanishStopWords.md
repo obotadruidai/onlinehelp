@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Danish Stop Words"
 ---
 
 <a id="DanishStopWords"></a>
 
-# Danish Stop Words
 
 af
 

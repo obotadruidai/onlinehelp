@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "UiPath Query Entity"
 ---
 
 <a id="UiPathQueryEntity"></a>
 
-# UiPath Query Entity
 
 Queries the request entity's records. If you want to get a collection of records from an entity list field, you should use [UiPath Query Related Entity](UiPath%20Query%20Related%20Entity.md) instead.
 

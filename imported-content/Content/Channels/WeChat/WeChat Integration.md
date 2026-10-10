@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "WeChat"
 ---
 
 <a id="WeChat"></a>
 
-# WeChat
 
 WeChat is a widely used messaging application. It’s also the only messaging app used by citizens of China.
 

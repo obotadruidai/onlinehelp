@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Putting Users in the \"Requires Password Reset\" State in Active Directory"
 ---
 
 <a id="PuttingUsersintheRequiresPasswordResetStateinActiveDirectory"></a>
 
-# Putting Users in the "Requires Password Reset" State in Active Directory
 
 This section describes how to add and configure an AD integration task to put users in the state "requires password reset" in Active Directory. Upon the next login, users will be prompted to set a new password.
 

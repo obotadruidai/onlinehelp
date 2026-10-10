@@ -1,12 +1,10 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Email Body"
 ---
 
 <a id="EmailBody"></a>
 
-# <a id="_Email_Body"></a>Email Body
+<a id="_Email_Body"></a>
 
 This section provides an example of how an HTML email body looks like for a Druid Email connector versus the normal HTML email body.
 

@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "How to Set Up the UiPath Integration"
 ---
 
 <a id="HowtoSetUptheUiPathIntegration"></a>
 
-# How to Set Up the UiPath Integration
 
 Using the Flow Designer, you can easily set up this UiPath integration by adding a flow step of type UiPath and configuring it as best suits you needs. You can either create a new flow or add a new step to an existing flow.
 

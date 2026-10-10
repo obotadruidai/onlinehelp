@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Authoring Time Translation"
 ---
 
 <a id="AuthoringTimeTranslation"></a>
 
-# Authoring Time Translation
 
 Authoring Time Translation provides a cost-effective solution for building multi-language AI Agents that require 24/7 activity. This feature uses machine translation services to translate specific elements of the AI Agent flow into additional languages during the authoring phase.
 

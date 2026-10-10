@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "AI Authoring Agents"
 ---
 
 <a id="AIAuthoringAgents"></a>
 
-# AI Authoring Agents
 
 AI Authoring Agents enable authors to quickly build agentic skills within their AI Agents. They automatically create the complete skill package: the conversational flows, entity data models, and orchestrated Druid Data Service integrations. The result is a fully configured, functional agentic skill that enables the AI Agent to both interact naturally with users and operate autonomously to achieve outcomes based on user intent — eliminating the need for additional manual configuration.
 

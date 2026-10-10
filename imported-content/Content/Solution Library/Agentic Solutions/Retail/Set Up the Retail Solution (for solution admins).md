@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Set Up the Retail Solution (for solution admins)"
 ---
 
 <a id="SetUptheRetailSolutionforsolutionadmins"></a>
 
-# Set Up the Retail Solution (for solution admins)
 
 This section will walk you through the steps to import and configure the solution to ensure a smooth setup and operation.
 

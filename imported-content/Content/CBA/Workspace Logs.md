@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Workspace Logs"
 ---
 
 <a id="WorkspaceLogs"></a>
 
-# Workspace Logs
 
 Workspace logs enables authors to understand the workspace integration errors and be in the position to quickly edit and fix the errors.
 

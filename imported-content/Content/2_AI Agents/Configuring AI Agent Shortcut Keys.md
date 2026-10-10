@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Configuring AI Agent Shortcut Keys"
 ---
 
 <a id="ConfiguringAIAgentShortcutKeys"></a>
 
-# Configuring AI Agent Shortcut Keys
 
 Shortcut keys (also known as quick replies) allow users to quickly send predefined messages, streamlining conversation flow. When a user clicks a shortcut key, its label is automatically inserted as a user message. These shortcut keys are displayed in the chat interface after clicking the Menu icon.
 

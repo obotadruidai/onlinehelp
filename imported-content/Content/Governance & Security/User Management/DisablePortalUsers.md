@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Disable Portal Users"
 ---
 
 <a id="DisablePortalUsers"></a>
 
-# Disable Portal Users
 
 To enhance security and maintain an audit trail, Portal users cannot be permanently deleted. Instead, you can disable (inactivate) users. Inactive users cannot access the Portal, but their history and activity remain available for auditing and reporting purposes.
 

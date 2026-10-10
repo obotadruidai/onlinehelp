@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Future Releases"
 ---
 
 <a id="FutureReleases"></a>
 
-# Future Releases
 
 The Business Apps roadmap presents the upcoming release timeline for vertical-specific applications and agentic skills across Q4 2026 and 2027. This visual guide highlights planned solutions for key sectors—such as Healthcare, Higher Education, Insurance, Retail, IT Helpdesk, Sales & Marketing, and HR—allowing your team to track upcoming feature rollouts and align your deployment strategy with specialized industry needs.
 

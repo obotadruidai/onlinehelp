@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Data Sources"
 ---
 
 <a id="DataSources"></a>
 
-# Data Sources
 
 Druid allows you to aggregate knowledge from multiple enterprise silos to enable Retrieval-Augmented Generation (RAG). Depending on your data architecture and format, you can configure three types of data sources:
 

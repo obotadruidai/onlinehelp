@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Recruitment"
 ---
 
 <a id="Recruitment"></a>
 
-# Recruitment
 
 This solution template provides onboarding skills for HR Admins and new employes, as follows:
 

@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Druid Generic Chat"
 ---
 
 <a id="DruidGenericChat"></a>
 
-# Druid Generic Chat
 
 The **Druid Generic Chat** channel provides a REST API-based integration that connects your proprietary web chat interface directly to the Druid Conversational Engine.
 

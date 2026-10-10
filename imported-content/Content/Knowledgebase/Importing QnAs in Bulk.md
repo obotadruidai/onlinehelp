@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Importing QnAs in Bulk"
 ---
 
 <a id="ImportingQnAsinBulk"></a>
 
-# Importing QnAs in Bulk
 
 This feature works with collections of QnA sets, using template-based import/export of the QnA sets from/to the current solution in Excel file format.
 

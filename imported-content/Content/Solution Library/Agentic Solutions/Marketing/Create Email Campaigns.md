@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Create Email Campaigns"
 ---
 
 <a id="CreateEmailCampaigns"></a>
 
-# Create Email Campaigns
 
 Email campaigns send rich or plain-text notification messages directly to contact email addresses.
 

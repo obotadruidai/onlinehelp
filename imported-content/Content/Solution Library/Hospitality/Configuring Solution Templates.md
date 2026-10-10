@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Configuring the Solution Template"
 ---
 
 <a id="ConfiguringtheSolutionTemplate"></a>
 
-# Configuring the Solution Template
 
 To configure the solution template, follow these steps:
 

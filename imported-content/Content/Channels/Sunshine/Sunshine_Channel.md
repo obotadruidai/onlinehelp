@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Zendesk Sunshine"
 ---
 
 <a id="ZendeskSunshine"></a>
 
-# Zendesk Sunshine
 
 You can deploy AI Agents across any Zendesk Sunshine-supported channels, offering greater flexibility to empower your clients and users to engage with you effectively.
 

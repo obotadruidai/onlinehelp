@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Using NER with Index Entities (DRUID versions prior to 5.15)"
 ---
 
 <a id="UsingNERwithIndexEntitiesDRUIDversionspriorto515"></a>
 
-# Using NER with Index Entities (DRUID versions prior to 5.15)
 
 Index entities are entities, which are trained for Natural Language Processing. Use them when you want to validate user input with a list of values predefined for your specific situation.
 

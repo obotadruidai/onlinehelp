@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Tamil Stop Words"
 ---
 
 <a id="TamilStopWords"></a>
 
-# Tamil Stop Words
 
 ஒரு
 

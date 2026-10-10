@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Customer Service"
 ---
 
 <a id="CustomerService"></a>
 
-# Customer Service
 
 This solution template provides a smart way to scale exceptional customer experiences. It includes conversation flows for submitting online complaints by asking the relevant details about the incident, automatically routing the customer to a human operator based on predefined rules, allowing the customers to easily fill in a service request or a product return form, etc.
 

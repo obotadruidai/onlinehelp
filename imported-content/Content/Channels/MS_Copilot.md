@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "MS Copilot"
 ---
 
 <a id="MSCopilot"></a>
 
-# MS Copilot
 
 The Druid AI Platform platform serves as the foundation for adapting Microsoft Copilot to your organization’s specific needs, enabling the development and deployment of intelligent agents across your enterprise.
 

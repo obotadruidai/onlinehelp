@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Merge PDF Files Stored in an Entity List"
 ---
 
 <a id="MergePDFFilesStoredinanEntityList"></a>
 
-# Merge PDF Files Stored in an Entity List
 
 > **NOTE:** This feature is available in DRUID 5.25 and higher.
 

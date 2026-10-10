@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Using Connector Local Variables"
 ---
 
 <a id="UsingConnectorLocalVariables"></a>
 
-# Using Connector Local Variables
 
 Connector local variables are variables you can use from the integration context between the integration tasks.
 These variables are of type string.

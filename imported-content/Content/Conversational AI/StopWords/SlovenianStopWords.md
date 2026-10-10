@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Slovenian Stop Words"
 ---
 
 <a id="SlovenianStopWords"></a>
 
-# Slovenian Stop Words
 
 a
 

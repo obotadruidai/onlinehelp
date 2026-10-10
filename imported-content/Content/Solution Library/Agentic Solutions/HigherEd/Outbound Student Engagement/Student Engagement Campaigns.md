@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Student Engagement Campaigns"
 ---
 
 <a id="StudentEngagementCampaigns"></a>
 
-# Student Engagement Campaigns
 
 for campaign managers
 

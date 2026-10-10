@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Czech Stop Words"
 ---
 
 <a id="CzechStopWords"></a>
 
-# Czech Stop Words
 
 bude
 

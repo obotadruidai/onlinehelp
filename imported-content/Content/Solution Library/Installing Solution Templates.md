@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Installing Solution Templates"
 ---
 
 <a id="InstallingSolutionTemplates"></a>
 
-# Installing Solution Templates
 
 To install a new solution template, spot the desired solution (you can use the filtering criteria) and click on it. Solution details appear. The **Description** tab provides you with details on the default and additional languages and a brief description of the solution template.
 

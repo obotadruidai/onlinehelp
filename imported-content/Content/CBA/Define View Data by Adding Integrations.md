@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Define View Data by Adding Integrations"
 ---
 
 <a id="DefineViewDatabyAddingIntegrations"></a>
 
-# Define View Data by Adding Integrations
 
 After defining your view, the next step is to fetch the entity data that will populate the view. This is done by adding integrations with external data sources. By defining these integrations, you can ensure that the view is populated with the appropriate entity records, allowing you to display dynamic, real-time data from both DRUID Data Services and external sources.
 

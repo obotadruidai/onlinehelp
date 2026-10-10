@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Adding Description for Hero Card Buttons"
 ---
 
 <a id="AddingDescriptionforHeroCardButtons"></a>
 
-# Adding Description for Hero Card Buttons
 
 You can add description for hero card buttons. To do that on the hero step, go to Metadata section, tap on **Advanced Editing** and in the JSON field, for each button in the "buttons" array add the **channelData** object and set the "description" property.
 

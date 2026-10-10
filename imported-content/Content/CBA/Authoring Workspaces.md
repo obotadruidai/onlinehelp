@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Authoring Workspaces"
 ---
 
 <a id="AuthoringWorkspaces"></a>
 
-# Authoring Workspaces
 
 Workspaces in the Druid Portal are dedicated digital environments where business users can engage with AI Agents through chat or voice interactions. They also provide access to centralized data from various sources via DRUID integrations.
 

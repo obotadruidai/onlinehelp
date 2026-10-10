@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Chinese (Traditional) Stop Words"
 ---
 
 <a id="ChineseTraditionalStopWords"></a>
 
-# Chinese (Traditional) Stop Words
 
 打開天窗說亮話
 

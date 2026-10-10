@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Add Entity"
 ---
 
 <a id="AddEntity"></a>
 
-# Add Entity
 
 Use the Add Entity integration task to create a new entity record in DRUID Data Service using data stored in conversations.
 

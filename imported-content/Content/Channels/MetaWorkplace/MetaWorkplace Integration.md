@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Workplace"
 ---
 
 <a id="Workplace"></a>
 
-# Workplace
 
 The Druid Portal allows you to create the AI Agent once and deploy it on Workplace by Meta.
 

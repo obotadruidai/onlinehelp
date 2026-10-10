@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Authenticate Druid Portal Users"
 ---
 
 <a id="AuthenticateDruidPortalUsers"></a>
 
-# Authenticate Druid Portal Users
 
 If you're using the web chat from within the Druid Portal, you can authenticate your conversation. When you first open the web chat, your conversation is anonymous.
 

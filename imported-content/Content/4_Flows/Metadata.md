@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Metadata"
 ---
 
 <a id="Metadata"></a>
 
-# Metadata
 
 To access the flow step metadata, in the Flow Step editor, click on the Metadata section header. The section expands. The settings available in this section depend on the [flow step type](Flow%20Steps.md).
 

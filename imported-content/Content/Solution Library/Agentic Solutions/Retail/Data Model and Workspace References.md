@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Data Model and Workspace References"
 ---
 
 <a id="DataModelandWorkspaceReferences"></a>
 
-# Data Model and Workspace References
 
 The Retail Agentic Solution organizes its data across three workspaces, each managing a distinct set of entities.
 

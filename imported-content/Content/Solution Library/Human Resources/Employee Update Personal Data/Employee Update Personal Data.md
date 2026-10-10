@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Employee Update Personal Data"
 ---
 
 <a id="EmployeeUpdatePersonalData"></a>
 
-# Employee Update Personal Data
 
 The HR AI Agent reads the information regarding current employee (integrated with the database of accounts). After the information is read, the data is shown to the user for data validation. If the user says the data is incorrect the AI Agent will ask what data needs to be modified.
 

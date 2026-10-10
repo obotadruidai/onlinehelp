@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Online Appointment"
 ---
 
 <a id="OnlineAppointment"></a>
 
-# Online Appointment
 
 Using AI Agents in healthcare you can have a 35% increase in patient satisfaction, thanks to quick response time and personalized engagement.
 

@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Google Chat"
 ---
 
 <a id="GoogleChat"></a>
 
-# Google Chat
 
 Connect your Druid AI Agent directly to Google Workspace through Google Chat. This integration enables automated conversation workflows, direct messaging, and group space interactions within your organization's Google Chat environment using a single configuration.
 

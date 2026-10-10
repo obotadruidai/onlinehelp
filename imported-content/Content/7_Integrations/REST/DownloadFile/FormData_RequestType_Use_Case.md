@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Use Case for using Form Data Request Type"
 ---
 
 <a id="UseCaseforusingFormDataRequestType"></a>
 
-# Use Case for using Form Data Request Type
 
 If you want to send multiple files to an endpoint, which concatenates them into a single file, you can use the **FormData** request type.
 

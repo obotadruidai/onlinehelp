@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Slack"
 ---
 
 <a id="Slack"></a>
 
-# Slack
 
 Integrating your AI Agent with Slack enables users to interact with your agent directly within their daily Slack channels, groups, and direct messages. By deploying your AI Agent to Slack, you can automate workspace workflows, answer user queries, and streamline team communication—all built once in the Druid Portal and deployed seamlessly.
 

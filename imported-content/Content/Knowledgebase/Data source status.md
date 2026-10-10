@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Data Source Status and Bulk Actions"
 ---
 
 <a id="DataSourceStatusandBulkActions"></a>
 
-# Data Source Status and Bulk Actions
 
 Druid offers intuitive data source statuses and bulk actions based on the data source type and status.
 

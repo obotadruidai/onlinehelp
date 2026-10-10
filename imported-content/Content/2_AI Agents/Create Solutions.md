@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Create Solutions"
 ---
 
 <a id="CreateSolutions"></a>
 
-# Create Solutions
 
 A solution acts as a portable container that encompasses all necessary components—including flows, data entities, and system integrations—allowing for seamless movement between different environments and tenants.
 

@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Triggering the Callback Flow"
 ---
 
 <a id="TriggeringtheCallbackFlow"></a>
 
-# Triggering the Callback Flow
 
 An UiPath process can call the AI Agent at any point during the process (either for intermediary status updates or for process end notification), by using the “Trigger Conversation” UiPath custom activity which has been developed to start a AI Agent conversation.
 

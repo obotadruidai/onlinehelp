@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Delete Snapshot"
 ---
 
 <a id="DeleteSnapshot"></a>
 
-# Delete Snapshot
 
 > **NOTE:** Once you delete a solution snapshot, you cannot restore it.
 

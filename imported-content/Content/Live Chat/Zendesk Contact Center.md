@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Zendesk Live Chat"
 ---
 
 <a id="ZendeskLiveChat"></a>
 
-# Zendesk Live Chat
 
 You can connect your AI Agent with Zendesk Contact Center to provide seamless support. This integration allows your customers to interact with a AI Agent and, if needed, get redirected to a live Zendesk agent. You can use either Zendesk widgets or DRUID channels (such as the DRUID web snippet).
 

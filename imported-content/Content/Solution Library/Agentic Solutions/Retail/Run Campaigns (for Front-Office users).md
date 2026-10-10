@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Create and Run Campaigns (for Front-Office users)"
 ---
 
 <a id="CreateandRunCampaignsforFrontOfficeusers"></a>
 
-# Create and Run Campaigns (for Front-Office users)
 
 Use campaigns to notify customers that products in their wish list are currently discounted. Before you can run a campaign, you must first create it.
 

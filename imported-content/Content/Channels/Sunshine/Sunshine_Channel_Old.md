@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Sunshine (Old Sunshine Conversations apps)"
 ---
 
 <a id="SunshineOldSunshineConversationsapps"></a>
 
-# Sunshine (Old Sunshine Conversations apps)
 
 The Druid Portal allows you to create the AI Agent once and deploy it to Sunshine Conversations apps in the WhatsApp channel.
 

@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Install Druid Connector Host"
 ---
 
 <a id="InstallDruidConnectorHost"></a>
 
-# Install Druid Connector Host
 
 > **IMPORTANT!**
 >

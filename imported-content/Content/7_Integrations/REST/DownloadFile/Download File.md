@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Download File"
 ---
 
 <a id="DownloadFile"></a>
 
-# Download File
 
 The Download File task downloads files from REST API endpoints. This REST connector task enables authors to map a file on the response.
 

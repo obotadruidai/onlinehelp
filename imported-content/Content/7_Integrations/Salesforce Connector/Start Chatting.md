@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Start Chatting"
 ---
 
 <a id="StartChatting"></a>
 
-# Start Chatting
 
 Start chatting with the AI Agent. For example, say something like “show me all leads”.
 

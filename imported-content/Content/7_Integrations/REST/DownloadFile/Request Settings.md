@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Request Settings"
 ---
 
 <a id="RequestSettings"></a>
 
-# Request Settings
 
 Click the **Request** tab and set the request details.
 

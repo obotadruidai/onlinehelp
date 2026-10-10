@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Set up the solution"
 ---
 
 <a id="Setupthesolution"></a>
 
-# Set up the solution
 
 For solution admins
 

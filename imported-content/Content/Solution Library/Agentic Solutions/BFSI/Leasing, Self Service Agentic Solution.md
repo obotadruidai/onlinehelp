@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Leasing, Self Service Agentic Solution"
 ---
 
 <a id="LeasingSelfServiceAgenticSolution"></a>
 
-# Leasing, Self Service Agentic Solution
 
 **Leasing, Self Service Agentic Solution** is a fully agentic business application built on DRUID technology and powered by LLM. It offers a smooth, conversational experience for managing leasing operations. Users can interact naturally with the assistant to generate documents, review invoices and partner details, make payments, and handle more complex tasks like early terminations or partial reimbursements.
 

@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Real-time Machine Translation in Live Chat"
 ---
 
 <a id="RealtimeMachineTranslationinLiveChat"></a>
 
-# Real-time Machine Translation in Live Chat
 
 Use real-time machine translation to enable seamless multilingual communication between clients and agents during live chat sessions.
 

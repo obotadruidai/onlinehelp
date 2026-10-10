@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Read Excel File"
 ---
 
 <a id="ReadExcelFile"></a>
 
-# Read Excel File
 
 The Read Excel File integration task allows you to easily read data from an Excel file and then import or update it in the DRUID Data Service or a third-party system.
 

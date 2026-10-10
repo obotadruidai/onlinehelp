@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Loan Request"
 ---
 
 <a id="LoanRequest"></a>
 
-# Loan Request
 
 This solution template provides you with the basic configuration to be used in financial services for loan requests.
 

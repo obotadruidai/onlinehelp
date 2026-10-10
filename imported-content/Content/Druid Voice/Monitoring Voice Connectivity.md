@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Monitoring Voice Connectivity"
 ---
 
 <a id="MonitoringVoiceConnectivity"></a>
 
-# Monitoring Voice Connectivity
 
 Once you have completed the integration between the contact center and the Druid SIP server, you can monitor and validate the connection using the SIP Ladder. This tool provides a real-time visual representation of the SIP events exchanged during a voice session.
 

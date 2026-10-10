@@ -696,17 +696,39 @@ def page_description(soup: BeautifulSoup) -> str:
     return re.sub(r"\s+", " ", content).strip()
 
 
+def yaml_quote(text: str) -> str:
+    return '"' + text.replace("\\", "\\\\").replace('"', '\\"') + '"'
+
+
+def strip_leading_h1(body: str) -> tuple[str, str]:
+    """Drop the first page heading. GitBook shows that title on its own."""
+    lines = body.splitlines()
+    title = ""
+    out: list[str] = []
+    removed = False
+    for line in lines:
+        if not removed and re.match(r"^#\s+\S", line) and not line.startswith("##"):
+            raw = re.sub(r"^#\s+", "", line).strip()
+            for anchor in re.findall(r'<a id="[^"]+"></a>', raw):
+                out.append(anchor)
+            title = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", "", raw)).strip()
+            removed = True
+            continue
+        out.append(line)
+    text = "\n".join(out).strip()
+    if text:
+        text += "\n"
+    return text, title
+
+
 def compose_page(markdown: str, title: str, description: str) -> str:
-    body = markdown.lstrip()
-    if not re.search(r"(?m)^#\s+\S", body):
-        body = f"# {title}\n\n{body}"
-    # GitBook already shows the page title. Hide that chrome so the heading in the body is the only one.
-    lines = ["---", "layout:", "  title:", "    visible: false"]
+    body, found = strip_leading_h1(markdown.lstrip())
+    page_title = found or re.sub(r"\s+", " ", title).strip() or "Untitled"
+    lines = ["---", f"title: {yaml_quote(page_title)}"]
     if description:
-        escaped = description.replace("\\", "\\\\").replace('"', '\\"')
-        lines.append(f'description: "{escaped}"')
+        lines.append(f"description: {yaml_quote(description)}")
     lines.append("---")
-    body = "\n".join(lines) + "\n\n" + body
+    body = "\n".join(lines) + "\n\n" + body.lstrip("\n")
     if not body.endswith("\n"):
         body += "\n"
     return body

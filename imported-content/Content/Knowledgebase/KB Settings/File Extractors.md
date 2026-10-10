@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "File Extractors"
 ---
 
 <a id="FileExtractors"></a>
 
-# File Extractors
 
 File extractors are Druid-specific tools that pull raw content out of uploaded files before the Knowledge Base (KB) engine indexes it. For each supported file type, you choose:
 

@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Voice Call Terminate Flow"
 ---
 
 <a id="VoiceCallTerminateFlow"></a>
 
-# Voice Call Terminate Flow
 
 The **Voice Call Terminate Flow** is triggered when a telephony voice call ends. You can use it to update call statuses in external systems, such as a CRM or ticketing platform, or to perform post-call automations (e.g., send follow-up messages, update records, log events).
 

@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "SOAP Connector"
 ---
 
 <a id="SOAPConnector"></a>
 
-# SOAP Connector
 
 The Druid AI Platform enables you to easily connect to any enterprise application through any SOAP APIs.
 

@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Generative Endpoints"
 ---
 
 <a id="GenerativeEndpoints"></a>
 
-# Generative Endpoints
 
 Generative Endpoints define the language model connections used by the Knowledge Base for AI-powered interactions. Each endpoint specifies the model provider, model configuration, and token limits that govern how the Knowledge Base generates responses.
 

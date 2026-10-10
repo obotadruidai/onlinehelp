@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Track Business KPIs"
 ---
 
 <a id="TrackBusinessKPIs"></a>
 
-# Track Business KPIs
 
 Custom dashboards give you a flexible, centralized space to visualize the data that matters most to your role — whether that's service desk performance, task monitoring, or business outcomes like cost savings and resolution rates.
 

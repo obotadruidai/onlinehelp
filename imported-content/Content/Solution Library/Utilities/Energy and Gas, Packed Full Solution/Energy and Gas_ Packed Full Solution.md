@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Energy and Gas, Packed Full Solution"
 ---
 
 <a id="EnergyandGasPackedFullSolution"></a>
 
-# Energy and Gas, Packed Full Solution
 
 This solution template provides a smart way to scale exceptional customer experiences. It includes conversation flows for submitting online complaints by asking the relevant details about the incident, update customer contract, see invoice details, transmit self-read index and more.
 

@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Car Rental"
 ---
 
 <a id="CarRental"></a>
 
-# Car Rental
 
 This solution template provides a wide range of skills for prospects and clients:
 

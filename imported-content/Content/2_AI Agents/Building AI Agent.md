@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Building AI Agents"
 ---
 
 <a id="BuildingAIAgents"></a>
 
-# Building AI Agents
 
 AI Agents empower employees, customers, and partners to communicate seamlessly with your business and enterprise systems. Leveraging cutting-edge technologies and design principles, these AI Agents deliver an intuitive user experience across all business functions, tasks, and devices. By providing efficient assistance, they reduce user operation time, enhance data quality, and lower overall costs.
 

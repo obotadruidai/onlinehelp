@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Network Shared Drive Data Sources"
 ---
 
 <a id="NetworkSharedDriveDataSources"></a>
 
-# Network Shared Drive Data Sources
 
 A Network Shared Drive data source enables you to enrich your KB with internal documents, policies, or FAQs, improving the accuracy and comprehensiveness of your AI Agent responses. By incorporating Network Shared Drive data sources, you will extract paragraphs from Excel, Word, and PDF files stored on your network.
 

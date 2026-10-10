@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "General Settings"
 ---
 
 <a id="GeneralSettings"></a>
 
-# General Settings
 
 After you click to create an SQL task, the Edit Connector Task page appears by default on the **General** tab.
 

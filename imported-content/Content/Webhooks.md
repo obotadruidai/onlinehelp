@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Webhooks"
 ---
 
 <a id="Webhooks"></a>
 
-# Webhooks
 
 > **NOTE:** This feature is available in DRUID 7.7 and higher.
 

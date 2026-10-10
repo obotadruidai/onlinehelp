@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Inactivity Cancel Conversation Flow"
 ---
 
 <a id="InactivityCancelConversationFlow"></a>
 
-# Inactivity Cancel Conversation Flow
 
 The **Inactivity Cancel Conversation Flow** allows you to customize the actions taken when a conversation is automatically canceled due to user inactivity.
 

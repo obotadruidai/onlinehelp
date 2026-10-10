@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Google LLM"
 ---
 
 <a id="GoogleLLM"></a>
 
-# Google LLM
 
 The GoogleLLM Connector allows you to authenticate directly to Google Vertex AI using your own Google service account. This secure connection eliminates the need for the DRUID Service Gateway and credential sharing, enabling you to leverage your Google resources, for powering conversational responses with Google's Large Language Models (LLMs) in Knowledge Base (KB) generative endpoints and CNN.
 

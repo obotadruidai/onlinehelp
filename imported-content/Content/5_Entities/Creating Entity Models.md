@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Creating Entity Models"
 ---
 
 <a id="CreatingEntityModels"></a>
 
-# Creating Entity Models
 
 An entity model serves as the relational data structure for your AI Agent. It defines how the agent collects, stores, and interacts with business data—acting as the agent’s "memory" during a conversation.
 

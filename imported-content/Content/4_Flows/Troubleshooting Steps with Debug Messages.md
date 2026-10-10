@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Troubleshooting Steps with Debug Messages"
 ---
 
 <a id="TroubleshootingStepswithDebugMessages"></a>
 
-# Troubleshooting Steps with Debug Messages
 
 When specific flow steps are not executed as expected or a conversation follows an unexpected path, you can use debug messages to gain valuable insights into the execution process. They help trace the conversation’s progression step by step.
 

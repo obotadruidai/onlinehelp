@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Recommend Automations on Forms"
 ---
 
 <a id="RecommendAutomationsonForms"></a>
 
-# Recommend Automations on Forms
 
 Empower your business users to seamlessly trigger conversational flows and integrations directly from forms by providing a curated set of recommended automations—shortcuts or links to specific flows or integrations—tailored to the context of the form(s).
 

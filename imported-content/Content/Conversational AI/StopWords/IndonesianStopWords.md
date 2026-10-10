@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Indonesian Stop Words"
 ---
 
 <a id="IndonesianStopWords"></a>
 
-# Indonesian Stop Words
 
 ada
 

@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Advanced Settings JSON"
 ---
 
 <a id="AdvancedSettingsJSON"></a>
 
-# Advanced Settings JSON
 
 The Advanced Settings JSON allows you to configure advanced Knowledge Base (KB) settings.
 

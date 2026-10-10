@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "ElevenLabs Voices"
 ---
 
 <a id="ElevenLabsVoices"></a>
 
-# ElevenLabs Voices
 
 You can explore and create ElevenLabs voices directly in the Druid Portal to easily manage your ElevenLabs speech resources.
 

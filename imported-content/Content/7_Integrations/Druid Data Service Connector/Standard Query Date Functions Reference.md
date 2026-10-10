@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Standard Query Date Functions Reference"
 ---
 
 <a id="StandardQueryDateFunctionsReference"></a>
 
-# Standard Query Date Functions Reference
 
 When filtering data using standard queries in Druid Data Service Connector tasks (such as Query Entity, Query Related Entity, or Update Entity), you can leverage built-in date and datetime filtering functions. These operators evaluate records relative to the execution time or calendar periods.
 

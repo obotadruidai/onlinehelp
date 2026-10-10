@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "UiPath Upload File to Entity"
 ---
 
 <a id="UiPathUploadFiletoEntity"></a>
 
-# UiPath Upload File to Entity
 
 Uploads a file from Druid to the specified field of an existing Data Service entity record.
 

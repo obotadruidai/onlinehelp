@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Reports"
 ---
 
 <a id="Reports"></a>
 
-# Reports
 
 This solution template allows you to generate advanced reports in PDF, MS Word or Excel format by simply asking the AI Agent, eliminating the tedious tasks of searching for information in various enterprise repositories and applications. Fuel faster and better business decisions with on-the-fly actionable insights and gain unmatched time-to-market that will put your company one step ahead the competition.
 

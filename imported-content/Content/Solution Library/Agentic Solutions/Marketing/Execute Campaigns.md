@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Execute Campaigns"
 ---
 
 <a id="ExecuteCampaigns"></a>
 
-# Execute Campaigns
 
 Executing a campaign involves two distinct steps:
 

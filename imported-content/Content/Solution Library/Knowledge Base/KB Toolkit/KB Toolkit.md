@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "KB Toolkit"
 ---
 
 <a id="KBToolkit"></a>
 
-# KB Toolkit
 
 The KB Toolkit solution template equips you with essential tools to effectively manage KB Metadata and generate missing questions for unstructured data sources. It also provides comprehensive test tools enhancing your knowledge management processes. You can import test cases from Excel, create test plans and iterations, and compare results effortlessly. Additionally, you have the capability to download test results for further analysis using Excel.
 

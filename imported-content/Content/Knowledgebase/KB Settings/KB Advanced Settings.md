@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "KB Advanced Settings"
 ---
 
 <a id="KBAdvancedSettings"></a>
 
-# KB Advanced Settings
 
 The KB Advanced Settings let advanced authors fine-tune how the Knowledge Base engine processes, indexes, and retrieves content. These settings go beyond the defaults and give you control over AI model integrations, content extraction behavior, search algorithms, and low-level configuration — helping you optimize KB accuracy and performance for your specific use case.
 

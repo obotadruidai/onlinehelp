@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Using Flex Messages for LINE Channel"
 ---
 
 <a id="UsingFlexMessagesforLINEChannel"></a>
 
-# Using Flex Messages for LINE Channel
 
 LINE Chat Bot API allows sending flex message, to provide the user with a set of predefined actions.
 

@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Marathi Stop Words"
 ---
 
 <a id="MarathiStopWords"></a>
 
-# Marathi Stop Words
 
 अधिक
 

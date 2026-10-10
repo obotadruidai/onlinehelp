@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Vonage SMS"
 ---
 
 <a id="VonageSMS"></a>
 
-# Vonage SMS
 
 Vonage SMS is a messaging service provided by Vonage, a global communication platform. It allows businesses to send and receive SMS (Short Message Service) messages to and from their customers. Vonage SMS is often used for notifications, two-factor authentication (2FA), customer support, marketing campaigns, and other forms of business communication.
 

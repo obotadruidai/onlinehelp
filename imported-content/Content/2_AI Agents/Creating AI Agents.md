@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Creating AI Agents"
 ---
 
 <a id="CreatingAIAgents"></a>
 
-# Creating AI Agents
 
 Welcome to the process of building your first AI Agent! This guide provides the essential, step-by-step instructions needed to go from an initial setup to a fully published conversational AI Agent with foundational conversational flows.
 

@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Conversation History"
 ---
 
 <a id="ConversationHistory"></a>
 
-# Conversation History
 
 Druid Conductor's Conversation History lets you trace the full journey of any conversation — including which orchestrated AI Agent responded to each message. Messages handled by an orchestrated AI Agent display its name.
 

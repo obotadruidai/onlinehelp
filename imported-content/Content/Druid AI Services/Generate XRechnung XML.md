@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Generate XRechnung XML"
 ---
 
 <a id="GenerateXRechnungXML"></a>
 
-# Generate XRechnung XML
 
 The generate-xrechnung-xml endpoint allows you to generate an XRechnung-compliant XML invoice based on the provided invoice details. XRechnung is a structured electronic invoicing format that adheres to European e-invoicing standards (EN 16931) and is widely used for business transactions, especially with public sector entities in Germany.
 

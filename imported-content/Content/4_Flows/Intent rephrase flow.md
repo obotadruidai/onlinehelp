@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Intent Rephrase Flow"
 ---
 
 <a id="IntentRephraseFlow"></a>
 
-# Intent Rephrase Flow
 
 The Intent rephrase flow empowers authors to refine user intent using external services like GPT, enhancing the effectiveness of AI Agent interactions. By configuring this feature, authors can streamline the process of optimizing user intent for their AI Agent models.
 

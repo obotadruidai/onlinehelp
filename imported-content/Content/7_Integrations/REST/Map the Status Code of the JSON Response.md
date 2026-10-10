@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Map the Status Code of the JSON Response"
 ---
 
 <a id="MaptheStatusCodeoftheJSONResponse"></a>
 
-# Map the Status Code of the JSON Response
 
 To store the status code of the response, follow these steps:
 

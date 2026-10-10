@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Entity Data Integration (CRUD Template)"
 ---
 
 <a id="EntityDataIntegrationCRUDTemplate"></a>
 
-# Entity Data Integration (CRUD Template)
 
 To seamlessly incorporate entity records from DRUID Data Services into conversational business applications, use the CRUD Template. This template simplifies the process of creating an entity web view of type "table" and a form with minimal configuration requirements:
 

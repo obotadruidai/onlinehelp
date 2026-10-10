@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Spanish Stop Words"
 ---
 
 <a id="SpanishStopWords"></a>
 
-# Spanish Stop Words
 
 ésa
 

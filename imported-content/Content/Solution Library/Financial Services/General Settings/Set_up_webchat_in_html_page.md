@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Setting Up the Web Chat in HTML Page"
 ---
 
 <a id="SettingUptheWebChatinHTMLPage"></a>
 
-# Setting Up the Web Chat in HTML Page
 
 This section provides you with a HTML page template (a .txt. file) that contains web chat. You can download it and easily configure it to include your AI Agent. You can use this HTML page to run the test scripts.
 

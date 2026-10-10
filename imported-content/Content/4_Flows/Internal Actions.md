@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Internal Actions"
 ---
 
 <a id="InternalActions"></a>
 
-# Internal Actions
 
 Internal Actions are pre-built functions within DRUID that you can leverage to enhance the capabilities of your AI Agent flows. These actions, available in the Action step type, can be seamlessly integrated as either Pre-Actions or Post-Actions, just like regular connector actions.
 

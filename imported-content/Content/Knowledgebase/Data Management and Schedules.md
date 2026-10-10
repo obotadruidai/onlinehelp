@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Data Management and Schedules"
 ---
 
 <a id="DataManagementandSchedules"></a>
 
-# Data Management and Schedules
 
 Connecting your data sources is only the first step; maintaining their freshness and monitoring their health ensures your AI Agent never serves stale or outdated information.
 

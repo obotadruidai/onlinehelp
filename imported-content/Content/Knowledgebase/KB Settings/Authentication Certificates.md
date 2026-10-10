@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Authentication Certificates"
 ---
 
 <a id="AuthenticationCertificates"></a>
 
-# Authentication Certificates
 
 Authentication Certificates lists Druid-generated certificates used to authenticate SharePoint Online data sources. This option is an alternative to a SharePoint client secret. Certificates are created here, downloaded, and uploaded to your Microsoft Entra app registration before you add or test a SharePoint data source.
 

@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Testing Settings"
 ---
 
 <a id="TestingSettings"></a>
 
-# Testing Settings
 
 The Druid AI Platform provides the possibility to test the configurations of the SQL Task directly from authoring portal (without the need to place your newly created connector action in a flow and test it within a AI Agent conversation).
 

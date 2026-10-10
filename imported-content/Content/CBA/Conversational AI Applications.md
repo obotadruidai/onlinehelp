@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Conversational AI Applications"
 ---
 
 <a id="ConversationalAIApplications"></a>
 
-# Conversational AI Applications
 
 Druid Conversational AI Applications extend AI Agents beyond chat interactions to support complex business processes. They integrate with enterprise systems, automate workflows, and provide business users with structured interfaces—such as web views and forms—within Workspaces.
 

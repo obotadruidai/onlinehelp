@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Loan Origination Workflow"
 ---
 
 <a id="LoanOriginationWorkflow"></a>
 
-# Loan Origination Workflow
 
 Druid integrates with UiPath robots, UiPath AI Center, UiPath Data Service, UiPath Action Center and UiPath Automation Hub to provide you with a completely automated Loan Origination workflow.
 

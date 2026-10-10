@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Enhancing KB Predictions"
 ---
 
 <a id="EnhancingKBPredictions"></a>
 
-# Enhancing KB Predictions
 
 To maximize accuracy and ensure your AI Agent returns the most relevant responses, you can fine-tune prediction behavior at multiple levels. While global Knowledge Base settings apply broadly across all data sources, configuring Advanced Settings at the data source or node/leaf level provides granular control over extractors and trainable elements.
 

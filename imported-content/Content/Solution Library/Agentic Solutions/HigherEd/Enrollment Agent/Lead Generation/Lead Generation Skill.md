@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Lead Generation Skill"
 ---
 
 <a id="LeadGenerationSkill"></a>
 
-# Lead Generation Skill
 
 The **Lead Generation Skill** helps higher education institutions shift from reactive lead handling to proactive engagement. By automating personalized outbound outreach at the top of the enrollment funnel, it enables admissions teams to qualify prospective student interest at scale without increasing headcount.
 

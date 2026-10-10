@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Packed Retail Solution"
 ---
 
 <a id="PackedRetailSolution"></a>
 
-# Packed Retail Solution
 
 This solution template provides conversation flows that guide the website visitors and customers through all the necessary steps to finding the perfect product, purchasing it, tracking an order, finding a specific product warranty, submitting a service request or a complain.
 

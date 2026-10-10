@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "HTML Settings"
 ---
 
 <a id="HTMLSettings"></a>
 
-# HTML Settings
 
 HTML Settings control how the Knowledge Base (KB) Engine crawls and extracts content from website data sources. Use them to exclude non-content page elements, skip unwanted links, and run scripts on dynamic pages before extraction.
 

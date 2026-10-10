@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Download Snapshot"
 ---
 
 <a id="DownloadSnapshot"></a>
 
-# Download Snapshot
 
 Once a solution snapshot is generated, you can download and then import it in another AI Agent or in a different tenant.
 

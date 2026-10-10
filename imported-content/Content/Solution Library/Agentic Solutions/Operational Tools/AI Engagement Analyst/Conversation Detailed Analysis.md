@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Conversation Detailed Analysis"
 ---
 
 <a id="ConversationDetailedAnalysis"></a>
 
-# Conversation Detailed Analysis
 
 You can review individually each conversation.
 

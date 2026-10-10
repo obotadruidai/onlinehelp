@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Using UiPath Integration Data"
 ---
 
 <a id="UsingUiPathIntegrationData"></a>
 
-# Using UiPath Integration Data
 
 Once an item is placed in a queue and its status is “New”, it is ready to be used by the UiPath process.
 

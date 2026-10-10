@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Forms"
 ---
 
 <a id="Forms"></a>
 
-# Forms
 
 Forms are user interface elements that enable authors and business users to interact with individual entity records in views.
 

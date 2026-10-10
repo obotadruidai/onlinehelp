@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Basic Authentication"
 ---
 
 <a id="BasicAuthentication"></a>
 
-# Basic Authentication
 
 Basic Authentication is an HTTP authentication method that verifies a client's identity by sending a username and password with each request. The credentials are combined, encoded using Base64, and included in the HTTP Authorization header.
 

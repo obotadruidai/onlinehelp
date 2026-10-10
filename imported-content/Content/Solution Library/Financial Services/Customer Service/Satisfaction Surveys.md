@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Satisfaction Surveys"
 ---
 
 <a id="SatisfactionSurveys"></a>
 
-# Satisfaction Surveys
 
 Customer satisfaction surveys can help your business increase productivity and profitability by evaluating your products and services' expectations of customers and their level of trust and loyalty to your business.
 

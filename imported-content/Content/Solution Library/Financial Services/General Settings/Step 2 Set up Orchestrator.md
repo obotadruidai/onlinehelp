@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Step 2: Set up Orchestrator Victor\\_Unattended Next Best Deal Process"
 ---
 
 <a id="Step2SetupOrchestratorVictorUnattendedNextBestDealProcess"></a>
 
-# Step 2: Set up Orchestrator Victor\_Unattended Next Best Deal Process
 
 Go to [https://cloud.uipath.com](https://cloud.uipath.com/) and log in to your orchestrator account.
 

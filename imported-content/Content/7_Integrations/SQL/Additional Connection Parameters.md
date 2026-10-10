@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Additional Connection Parameters"
 ---
 
 <a id="AdditionalConnectionParameters"></a>
 
-# Additional Connection Parameters
 
 To provide additional connection parameters, use the following syntax:
 

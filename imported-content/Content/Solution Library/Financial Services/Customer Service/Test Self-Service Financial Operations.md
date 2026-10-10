@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Test Self-Service Financial Operations"
 ---
 
 <a id="TestSelfServiceFinancialOperations"></a>
 
-# Test Self-Service Financial Operations
 
 <a id="Mycards"></a>
 

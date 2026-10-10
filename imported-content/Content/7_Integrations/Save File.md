@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Save Files with the Druid Connector Host"
 ---
 
 <a id="SaveFileswiththeDruidConnectorHost"></a>
 
-# Save Files with the Druid Connector Host
 
 The Save File integration task enables the DRUID Connector Host to save files uploaded by users in the chat to a specified local disk or network location accessible by the host machine.
 

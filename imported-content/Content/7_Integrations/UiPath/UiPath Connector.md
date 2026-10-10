@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "UiPath Connector"
 ---
 
 <a id="UiPathConnector"></a>
 
-# UiPath Connector
 
 DRUID - UiPath integration brings the RPA into your front office, allowing both customers and employees to benefit from the robot’s help. Streamline the customer and employee experience and help them fulfill their needs across the entire journey.
 

@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Create Workspaces"
 ---
 
 <a id="CreateWorkspaces"></a>
 
-# Create Workspaces
 
 > **NOTE:** Users with permissions to create and edit workspaces can create workspaces. For more information, see [Define Security Roles for Business Users](Define%20Security%20Roles%20for%20Business%20Users.md).
 

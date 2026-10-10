@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Generate Documents Using Dynamic Templates"
 ---
 
 <a id="GenerateDocumentsUsingDynamicTemplates"></a>
 
-# Generate Documents Using Dynamic Templates
 
 DRUID offers authors with a simplified way to design conversational flows for generating documents by using dynamic templates. This is particularly useful when you want to generate documents using specific templates for departments in your company or for companies within a group of companies.
 

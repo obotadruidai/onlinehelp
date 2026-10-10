@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Conversational Flows"
 ---
 
 <a id="ConversationalFlows"></a>
 
-# Conversational Flows
 
 Conversational flows define the configuration of dialogs between the end-user and the AI Agent on a specific topic (intent). When a user initiates a conversation (utterance), the AI Agent identifies the intent and directs the user to a specific dialog.
 

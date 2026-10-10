@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Microsoft Teams"
 ---
 
 <a id="MicrosoftTeams"></a>
 
-# Microsoft Teams
 
 This section describes how to deploy your AI Agent in a Microsoft Teams Team or in Microsoft Teams at organizational level.
 

@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Voice-to-Voice Live Conversations"
 ---
 
 <a id="VoicetoVoiceLiveConversations"></a>
 
-# Voice-to-Voice Live Conversations
 
 Live voice-to-voice conversations with real-time translation are available in Multichat when the Voice channel is enabled. This feature allows agents to communicate more efficiently by switching seamlessly between text and voice during live interactions.
 

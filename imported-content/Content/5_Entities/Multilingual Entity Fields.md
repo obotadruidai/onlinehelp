@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Multilingual Entity Fields"
 ---
 
 <a id="MultilingualEntityFields"></a>
 
-# Multilingual Entity Fields
 
 Druid simplifies the authoring process for NER management in multi-language AI Agents. Multilingual entity fields and NER enable AI Agents to align entity records (e.g., healthcare specialties, product names, city names, etc.) with the current chat user's language. These multilingual entity fields can be regarded as aliases for language-specific field clones.
 

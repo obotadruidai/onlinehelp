@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Deploy Cristina on Teams"
 ---
 
 <a id="DeployCristinaonTeams"></a>
 
-# Deploy Cristina on Teams
 
 You can deploy your Human Resources solution on Teams by following the instructions described in section [MS Teams Integration](../../../Channels/MS%20Teams/MS%20Teams%20Integration.md).
 

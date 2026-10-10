@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "TTS and STT Vendors"
 ---
 
 <a id="TTSandSTTVendors"></a>
 
-# TTS and STT Vendors
 
 Druid provides a flexible, speech provider agnostic architecture, allowing you to integrate with the industry's leading Text-to-Speech (TTS) and Speech-to-Text (STT) engines. This commitment to an open ecosystem ensures you can select the best-performing voice models for your specific language, region, or industry requirements.
 

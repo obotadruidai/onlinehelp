@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Enabling Managers to Disconnect Helpdesk Agents"
 ---
 
 <a id="EnablingManagerstoDisconnectHelpdeskAgents"></a>
 
-# Enabling Managers to Disconnect Helpdesk Agents
 
 In some situations, helpdesk managers may need to disconnect agents from queues—for example, when agents forget to sign out, remain connected after their shift ends, or when resources need to be quickly reallocated.
 

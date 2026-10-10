@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Natural Language Processing (NLP)"
 ---
 
 <a id="NaturalLanguageProcessingNLP"></a>
 
-# Natural Language Processing (NLP)
 
 Natural language processing (NLP) is a subfield of AI. It encompasses everything that relates to a machine understanding human input. To do that, Conversational AI uses many tools like: Natural Language Understanding, sentiment analysis, tokenization, and more.
 

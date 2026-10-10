@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Patient Support Agent"
 ---
 
 <a id="PatientSupportAgent"></a>
 
-# Patient Support Agent
 
 The **Patient Support Agent** is an AI Agent designed for healthcare providers, built on Druid technology. It replaces rigid, menu-driven patient portals with a natural, conversational experience powered by a large language model (LLM). Patients interact through a single AI Agent to manage prescription orders and securely access laboratory results—all without navigating complex interfaces or placing unnecessary calls to clinic staff.
 

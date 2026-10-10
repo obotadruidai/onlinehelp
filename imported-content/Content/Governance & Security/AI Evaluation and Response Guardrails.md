@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "AI Evaluation and Response Guardrails"
 ---
 
 <a id="AIEvaluationandResponseGuardrails"></a>
 
-# AI Evaluation and Response Guardrails
 
 Druid provides a comprehensive set of native guardrails to ensure AI Agent reliability and factual integrity. These controls govern how models interpret user intent and generate content, ensuring that every interaction remains within authorized business boundaries and adheres to enterprise safety standards.
 

@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Step 1. Create SOAP App"
 ---
 
 <a id="Step1CreateSOAPApp"></a>
 
-# Step 1.  Create SOAP App
 
 Creating a SOAP app means defining your SOAP connection string for the AI Agent within the selected solution.
 

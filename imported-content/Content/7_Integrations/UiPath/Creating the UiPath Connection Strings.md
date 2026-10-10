@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Creating the UiPath Connection Strings"
 ---
 
 <a id="CreatingtheUiPathConnectionStrings"></a>
 
-# Creating the UiPath Connection Strings
 
 The UiPath connector allows integration with the UiPath Orchestrator, to serve the DRUID UiPath Connector Action with the credentials needed to perform the required tasks. Thus, the UiPath Connector App only stores access credentials to the Orchestrator.
 

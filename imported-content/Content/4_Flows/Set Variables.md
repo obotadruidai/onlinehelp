@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Set Variables"
 ---
 
 <a id="SetVariables"></a>
 
-# Set Variables
 
 The Set Variables section allows you to put information into context by setting entities or local variables (prefixed with @) to specific values or to the result of specific functions. While entity fields hold values according to their defined data types, local variables are always treated as strings.
 

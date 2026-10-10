@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Human Resources"
 ---
 
 <a id="HumanResources"></a>
 
-# Human Resources
 
 Human Resources is an AI AI Agent which be used on top of existing applications and systems running within HR departments. This solution helps you automate any HR-related tasks - generating contracts, updating data, etc. and allows your team to focus on work that matters most.
 

@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Configuring AI Agent Advanced Settings"
 ---
 
 <a id="ConfiguringAIAgentAdvancedSettings"></a>
 
-# Configuring AI Agent Advanced Settings
 
 This section provides guidance on configuring advanced settings for your AI Agent to customize its behavior and functionality. All advanced settings are located on the AI Agent Details page.
 

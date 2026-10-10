@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Manipulate Data Without DRUID Entity Structures"
 ---
 
 <a id="ManipulateDataWithoutDRUIDEntityStructures"></a>
 
-# Manipulate Data Without DRUID Entity Structures
 
 With the DRUID Data Service and REST connectors, you can effortlessly store JSON arrays and objects from third-party systems. There's no need for the request entity to precisely match the structure of the external data, eliminating the necessity for intricate mappings within the integration. This stored data becomes readily accessible within the conversation context and on web forms.
 

@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "UiPath Delete File from Entity"
 ---
 
 <a id="UiPathDeleteFilefromEntity"></a>
 
-# UiPath Delete File from Entity
 
 Deletes the specified file from the specified field of an existing UiPath entity record.
 

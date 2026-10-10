@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Enforce Druid Portal Access via IP Whitelisting"
 ---
 
 <a id="EnforceDruidPortalAccessviaIPWhitelisting"></a>
 
-# Enforce Druid Portal Access via IP Whitelisting
 
 To enhance platform security, Druid Portal administrators can restrict access to the Druid Portal to specific IP addresses or network ranges (e.g., company headquarters or VPN gateways). This restriction applies to both standard user credential login and Single Sign-On (SSO). When enforcing Druid Portal via IP whitelisting access, any login attempt from an unauthorized IP address will result in an "Access Denied" error.
 

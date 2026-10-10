@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Kanban Views"
 ---
 
 <a id="KanbanViews"></a>
 
-# Kanban Views
 
 Kanban views provide a visual way to organize and manage records using cards, columns, and colors. This graphical representation helps teams stay focused on completing tasks before starting new ones, ensuring that top-priority work remains the focus and improving overall efficiency.
 

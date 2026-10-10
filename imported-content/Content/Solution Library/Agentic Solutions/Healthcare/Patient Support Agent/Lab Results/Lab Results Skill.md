@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Lab Results Skill"
 ---
 
 <a id="LabResultsSkill"></a>
 
-# Lab Results Skill
 
 The **Lab Results Skill** is an intelligent clinical workflow layer built on top of the Healthcare Agentic Solution. It automates the lab result lifecycle — from order creation by the medical provider, through patient self-service status checks, to escalation when a patient wants to discuss a result with their provider — transforming test result management into a guided, conversational experience for both medics and patients. By combining structured order creation, guided result presentation, and automated provider escalation routing, the solution reduces administrative overhead while improving patient self-service and keeping providers looped in when a patient needs more than a status update.
 

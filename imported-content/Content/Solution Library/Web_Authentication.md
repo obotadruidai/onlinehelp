@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Web Authentication"
 ---
 
 <a id="WebAuthentication"></a>
 
-# Web Authentication
 
 This solution template enables you to authenticate the users chatting for the first time with the AI Agent available in your public website.
 

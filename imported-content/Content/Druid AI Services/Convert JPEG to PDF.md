@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Convert JPEG to PDF"
 ---
 
 <a id="ConvertJPEGtoPDF"></a>
 
-# Convert JPEG to PDF
 
 Druid Vision provides flexible JPEG-to-PDF conversion through two specialized endpoints, each designed for different use cases:
 

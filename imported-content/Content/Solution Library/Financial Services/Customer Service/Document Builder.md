@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Document Builder"
 ---
 
 <a id="DocumentBuilder"></a>
 
-# Document Builder
 
 The solution comes with predefined financial document templates (payment schedule, account statement, letter of guarantee, etc.) that can be easily generated via the conversational flow based on the customer's needs.
 

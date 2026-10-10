@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Adding Users to a Group in Active Directory"
 ---
 
 <a id="AddingUserstoaGroupinActiveDirectory"></a>
 
-# Adding Users to a Group in Active Directory
 
 This section describes how to add and configure an AD integration task to add an existing user to a group in Active Directory.
 

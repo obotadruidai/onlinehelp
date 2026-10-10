@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Endpoint Logs"
 ---
 
 <a id="EndpointLogs"></a>
 
-# Endpoint Logs
 
 Endpoint Logs allows authors to evaluate the Start flow events from initial call up to conversation triggering.
 

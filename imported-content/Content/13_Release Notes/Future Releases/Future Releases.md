@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Future Releases"
 ---
 
 <a id="FutureReleases"></a>
 
-# Future Releases
 
 The Druid product roadmap outlines the strategic direction and upcoming feature timeline for the platform throughout 2026. This diagram highlights major capabilities planned for upcoming milestones, helping your organization anticipate new features and align your deployment strategy.
 

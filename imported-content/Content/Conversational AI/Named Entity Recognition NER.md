@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Named Entity Recognition (NER)"
 ---
 
 <a id="NamedEntityRecognitionNER"></a>
 
-# Named Entity Recognition (NER)
 
 Named Entity Recognition (NER) allows the AI Agent to extract entities directly from the user intent.
 

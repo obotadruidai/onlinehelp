@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Explainability and Utterances Annotation"
 ---
 
 <a id="ExplainabilityandUtterancesAnnotation"></a>
 
-# Explainability and Utterances Annotation
 
 Explainability is a language evaluation tool that addresses intent recognition and answers the question: “Why should authors trust the Druid machine learning model?” This tool helps authors get insights into the machine learning model to easily understand the reasons behind AI Agent behavior, figuring out when and why predictions occur. DRUID Explainability provides explanations on why the NLP model associated an utterance to a specific flow and allows authors to further fine-tune the NLP model by annotating utterances, creating a more trustworthy machine learning model.
 

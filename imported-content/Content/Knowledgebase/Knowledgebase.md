@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Knowledge Base"
 ---
 
 <a id="KnowledgeBase"></a>
 
-# Knowledge Base
 
 The Knowledge Base serves as the central intelligence hub for your AI ecosystem. It is the foundational layer where raw organizational data is transformed into structured, accessible information that powers your AI Agents. By bridging the gap between static documents and conversational interfaces, the Knowledge Base enables Retrieval-Augmented Generation (RAG) ensuring that every user interaction is grounded in your specific data.
 

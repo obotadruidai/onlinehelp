@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Data Anonymization Agentic Solution"
 ---
 
 <a id="DataAnonymizationAgenticSolution"></a>
 
-# Data Anonymization Agentic Solution
 
 **Data Anonymization Agentic Solution** is a fully agentic business application built entirely on DRUID technology. Powered by DRUID LLM Becus 1.0, this solution anonymizes sensitive user information before sending any requests to external LLM providers. By ensuring that Personally Identifiable Information (PII) is replaced with placeholders, it gives you full control over data privacy and security.
 

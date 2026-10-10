@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Trainable Elements"
 ---
 
 <a id="TrainableElements"></a>
 
-# Trainable Elements
 
 Trainable Elements define which parts of an article —question, title, short description, and/or answer— the KB Engine uses for predictions from unstructured data sources. These sources include structured documents added inside the data source.
 

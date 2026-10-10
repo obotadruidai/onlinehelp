@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Norwegian Nynorsk Stop Words"
 ---
 
 <a id="NorwegianNynorskStopWords"></a>
 
-# Norwegian Nynorsk Stop Words
 
 alle
 

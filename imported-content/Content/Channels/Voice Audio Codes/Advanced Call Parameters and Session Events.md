@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Advanced Call Parameters and Session Events"
 ---
 
 <a id="AdvancedCallParametersandSessionEvents"></a>
 
-# Advanced Call Parameters and Session Events
 
 Configure advanced backend communication between the Druid AI Agent and AudioCodes VoiceAI Connect using backchannel flow steps. This topic explains how to pass real-time events, modify activity parameters, and declare global session attributes via JSON objects to control overall call behavior, timeouts, and system actions.
 

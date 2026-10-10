@@ -1,12 +1,8 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Druid AI Documentation"
 ---
 
-# Druid AI Documentation
-
- [Get the Guide](<https://druiddocs.file.core.windows.net/docs-shares/Rebranded/DRUID User Guide_20261008.pdf?sv=2025-07-05&spr=https&st=2026-10-08T05%3A05%3A48Z&se=2030-10-09T05%3A05%3A00Z&sr=f&sp=r&sig=j7NybC03Eox%2B91xz%2FMGKA1u4zd3p7yn9Lvgm6thwOew%3D>)
+[Get the Guide](<https://druiddocs.file.core.windows.net/docs-shares/Rebranded/DRUID User Guide_20261008.pdf?sv=2025-07-05&spr=https&st=2026-10-08T05%3A05%3A48Z&se=2030-10-09T05%3A05%3A00Z&sr=f&sp=r&sig=j7NybC03Eox%2B91xz%2FMGKA1u4zd3p7yn9Lvgm6thwOew%3D>)
 
 Recent Highlights
 

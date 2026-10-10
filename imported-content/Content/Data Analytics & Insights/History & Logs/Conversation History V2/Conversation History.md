@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Conversation History"
 ---
 
 <a id="ConversationHistory"></a>
 
-# Conversation History
 
 The Conversation History section provides a comprehensive log of all interactions between users and AI Agents. This tool is essential for auditing conversations, troubleshooting flow logic, and gaining insights into user behavior.
 

@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Message"
 ---
 
 <a id="Message"></a>
 
-# Message
 
 Use Message steps to have the AI Agent respond to users with specific text.
 

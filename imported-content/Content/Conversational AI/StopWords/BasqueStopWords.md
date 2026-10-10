@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Basque Stop Words"
 ---
 
 <a id="BasqueStopWords"></a>
 
-# Basque Stop Words
 
 al
 

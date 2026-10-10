@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Claim Insurance"
 ---
 
 <a id="ClaimInsurance"></a>
 
-# Claim Insurance
 
 This solution templates enables your AI Agent to identify the intent of the user, searches for a valid policy and guides the user through the process of opening a claim file when an incident happens.
 

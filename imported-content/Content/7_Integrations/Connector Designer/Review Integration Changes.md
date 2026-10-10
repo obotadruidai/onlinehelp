@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Review Integration Changes"
 ---
 
 <a id="ReviewIntegrationChanges"></a>
 
-# Review Integration Changes
 
 You can review the changes made to an integration by using the Audit Trail feature that provides you with a comprehensive historical record of all changes made by authors to an inetgration.
 

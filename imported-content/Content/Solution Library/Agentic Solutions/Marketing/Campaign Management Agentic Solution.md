@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Campaign Management Agentic Solution"
 ---
 
 <a id="CampaignManagementAgenticSolution"></a>
 
-# Campaign Management Agentic Solution
 
 Campaign Management Agentic Solution is a powerful, AI-enabled application designed to help campaign managers create and run conversational surveys or interview campaigns. Users can define campaigns manually using simple text scripts or create them dynamically through a guided conversation. It supports multichannel deployment, allowing managers to engage with their audiences through SMS (Twilio), Web (Direct Line), Voice (Audiocodes), and RingCentral CX.
 

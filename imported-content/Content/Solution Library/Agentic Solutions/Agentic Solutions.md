@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Business Apps"
 ---
 
 <a id="BusinessApps"></a>
 
-# Business Apps
 
 Agentic Solutions combine Druid conversational AI and automation capabilities into ready-to-use business applications. They help you create intelligent, goal-oriented agents faster and with less manual setup.
 

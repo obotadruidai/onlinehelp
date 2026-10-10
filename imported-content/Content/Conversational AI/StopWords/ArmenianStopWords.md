@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Armenian Stop Words"
 ---
 
 <a id="ArmenianStopWords"></a>
 
-# Armenian Stop Words
 
 այդ
 

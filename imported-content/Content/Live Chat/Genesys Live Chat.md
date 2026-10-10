@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Genesys Live Chat"
 ---
 
 <a id="GenesysLiveChat"></a>
 
-# Genesys Live Chat
 
 You can integrate AI Agents with Genesys Contact Center to transfer AI Agent conversations to live agents on Genesys.
 

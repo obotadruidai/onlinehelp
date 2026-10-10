@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Targeted Outreach Agentic Solution"
 ---
 
 <a id="TargetedOutreachAgenticSolution"></a>
 
-# Targeted Outreach Agentic Solution
 
 The **Targeted Outreach Agentic Solution** is an extension of the [Campaign Management Agentic Solution](Campaign%20Management%20Agentic%20Solution.md), developed to allow campaign managers to send targeted promo / advertising content to the user chat sessions. The solution takes advantage of LLM integration to analyze the user discussions and deliver them the best matching marketing content. Furthermore the solution works both as an add-on to the existing Campaign Management App, sharing the same data model, or as a standalone application.
 

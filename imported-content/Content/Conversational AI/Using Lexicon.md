@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Using Lexicon"
 ---
 
 <a id="UsingLexicon"></a>
 
-# Using Lexicon
 
 Lexicon enables you to train entities for Natural Language Processing (index entities) and use NER with index entities to validate user input with a list of values predefined for your specific situation.
 

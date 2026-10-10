@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Druid-Hosted Full Cloud"
 ---
 
 <a id="DruidHostedFullCloud"></a>
 
-# Druid-Hosted Full Cloud
 
 All Druid solution components are hosted in Microsoft Azure and managed by Druid. With a Druid subscription, we mind the maintenance and updates while you focus on your business.
 

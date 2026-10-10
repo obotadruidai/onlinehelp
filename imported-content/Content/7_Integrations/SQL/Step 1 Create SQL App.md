@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Step 1. Create SQL App"
 ---
 
 <a id="Step1CreateSQLApp"></a>
 
-# Step 1.  Create SQL App
 
 Creating an SQL app means defining your SQL connection string for the AI Agent within the selected solution.
 

@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "ChatGPT"
 ---
 
 <a id="ChatGPT"></a>
 
-# ChatGPT
 
 DRUID technology is an AI and digital hub, which enables you to create end-to-end conversational business applications (conversational or traditional by using web views and forms in digital workspaces) powered by GPT technology.
 

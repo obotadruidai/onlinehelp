@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Vonage Voice"
 ---
 
 <a id="VonageVoice"></a>
 
-# Vonage Voice
 
 Vonage Voice is a cloud-based voice communication service provided by Vonage. It enables businesses to make and receive voice calls over the internet using Voice over IP (VoIP) technology.
 

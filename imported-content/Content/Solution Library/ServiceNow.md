@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "ServiceNow"
 ---
 
 <a id="ServiceNow"></a>
 
-# ServiceNow
 
 Use this solution if you want to showcase Druid-UiPath ServiceNow integration.
 

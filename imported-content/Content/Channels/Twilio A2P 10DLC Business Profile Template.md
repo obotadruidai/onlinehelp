@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "A2P 10DLC Business Profile Template"
 ---
 
 <a id="A2P10DLCBusinessProfileTemplate"></a>
 
-# A2P 10DLC Business Profile Template
 
 When integrating sAKARI with Campaign Manager, you must register for A2P 10DLC (Application-to-Person 10-Digit Long Code) messaging to send SMS campaigns to U.S. phone numbers. This registration is required by mobile carriers to reduce spam and ensure reliable message delivery.
 

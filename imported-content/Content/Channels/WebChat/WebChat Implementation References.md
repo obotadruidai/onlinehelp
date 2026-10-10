@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "WebChat Styling References"
 ---
 
 <a id="WebChatStylingReferences"></a>
 
-# WebChat Styling References
 
 This section provides design references for Druid webchat, showcasing examples of both Druid custom-made and client-tailored implementations.
 

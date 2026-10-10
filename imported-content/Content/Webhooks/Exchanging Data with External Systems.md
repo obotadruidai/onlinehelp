@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Exchanging Data with External Systems"
 ---
 
 <a id="ExchangingDatawithExternalSystems"></a>
 
-# Exchanging Data with External Systems
 
 The `/GenericIntegration` endpoint allows external webhooks to send requests to DRUID, triggering a connector integration to process the data. When a webhook call is received, Druid extracts key request details—such as query parameters, headers, and the request body—and stores them in predefined entity fields. The system then executes the specified integration and returns a response.
 

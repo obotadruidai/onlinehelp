@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Conversation Insights"
 ---
 
 <a id="ConversationInsights"></a>
 
-# Conversation Insights
 
 Chat Activities are conversation sessions. When a user starts chatting with the AI Agent, a chat activity is created. Then, a new chat activity is created if more than 60 mins of idle time passed from the last message in that conversation. A new chat activity is also created if the user and the AI Agent talk on a new channel.
 

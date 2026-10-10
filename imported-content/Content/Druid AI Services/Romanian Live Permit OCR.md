@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Romanian Living Permit OCR"
 ---
 
 <a id="RomanianLivingPermitOCR"></a>
 
-# Romanian Living Permit OCR
 
 The Druid API engine performs OCR and data extraction from Romanian living permits.
 

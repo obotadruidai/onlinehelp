@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Enforce Login with Single Sign On (for Druid Portal admins)"
 ---
 
 <a id="EnforceLoginwithSingleSignOnforDruidPortaladmins"></a>
 
-# Enforce Login with Single Sign On (for Druid Portal admins)
 
 By default, the login page allows users to sign in using either Single Sign On (SSO)—if enabled on the tenant—or standard user credentials (username and password).
 

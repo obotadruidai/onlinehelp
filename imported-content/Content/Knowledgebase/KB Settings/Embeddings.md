@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Embeddings"
 ---
 
 <a id="Embeddings"></a>
 
-# Embeddings
 
 The Embeddings section consolidates settings that control how the KB Engine prepares text for training and search. Here you configure which article fields are used for predictions, how text is normalized before embedding, and equivalent terms for keyword search (Synonym Sets).
 

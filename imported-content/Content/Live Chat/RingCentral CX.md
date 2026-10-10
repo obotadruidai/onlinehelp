@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "RingCentral CX"
 ---
 
 <a id="RingCentralCX"></a>
 
-# RingCentral CX
 
 You can allow your customers chat with the AI Agent and get support from your helpdesk agents who are using RingCentral CX.
 

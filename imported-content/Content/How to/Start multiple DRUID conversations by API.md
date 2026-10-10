@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "Start Multiple DRUID Conversations"
 ---
 
 <a id="StartMultipleDRUIDConversations"></a>
 
-# Start Multiple DRUID Conversations
 
 You can initiate multiple DRUID conversations simultaneously using the API endpoint `/api/Druid/{botId}/StartFlowBulk`. This feature is particularly useful when you need to start conversations with multiple users in a single API call.
 

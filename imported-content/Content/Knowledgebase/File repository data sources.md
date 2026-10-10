@@ -1,12 +1,9 @@
 ---
-layout:
-  title:
-    visible: false
+title: "File Repository Data Sources"
 ---
 
 <a id="FileRepositoryDataSources"></a>
 
-# File Repository Data Sources
 
 A File Repository data source empowers you to extract and index content directly from uploaded unstructured documents (such as Word, PDF, and TXT) and structured spreadsheets (Excel) to power AI Agent responses. It allows you to organize multiple documents into custom folder structures within the Knowledge Base.
 
