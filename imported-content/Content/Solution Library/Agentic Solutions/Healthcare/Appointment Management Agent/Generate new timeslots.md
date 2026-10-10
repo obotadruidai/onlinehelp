@@ -25,4 +25,6 @@ An interactive chat window will open to guide you through the timeslots creating
 
 ![](../../../../Resources/Images/Agentic%20Healthcare/generate%20timeslot.png)
 
-> **NOTE:** When new timeslots are generated, any overlapping timeslots are automatically deleted.
+{% hint style="info" %}
+**NOTE:** When new timeslots are generated, any overlapping timeslots are automatically deleted.
+{% endhint %}

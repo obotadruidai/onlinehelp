@@ -15,7 +15,9 @@ It consolidates as an all-in-one graphical tool, offering the following key adva
 
 The Entity Designer empowers authors with a comprehensive toolkit for managing and visualizing entity models, optimizing the AI Agent development process. It organizes all entities used for collecting user information, retrieving data, and transmitting data to other systems, categorized for ease of access. These entities are available at the tenant global level, ensuring versatility across various AI Agents. An entity may reference another entity, either a simple entity or a collection entity, fostering interconnectedness within the AI Agent informational model.
 
-> **NOTE:** You can accelerate your data structure design by using **AI Authoring Agents** instead of building manually. By launching the Data Modeler from the Page Help icon, you can describe your business requirements in natural language to automatically generate or adjust entity models. For more information, see the [AI Authoring Agents](../2_AI%20Agents/AI%20Authoring%20Agents.md#Create).
+{% hint style="info" %}
+**NOTE:** You can accelerate your data structure design by using **AI Authoring Agents** instead of building manually. By launching the Data Modeler from the Page Help icon, you can describe your business requirements in natural language to automatically generate or adjust entity models. For more information, see the [AI Authoring Agents](../2_AI%20Agents/AI%20Authoring%20Agents.md#Create).
+{% endhint %}
 
 <a id="AccessingEntityDesigner"></a>
 

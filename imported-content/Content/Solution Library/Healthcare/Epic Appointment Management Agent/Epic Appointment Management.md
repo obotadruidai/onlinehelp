@@ -8,7 +8,9 @@ title: "Epic Appointment Management Agent"
 
 This agent connects the Druid conversational AI experience directly to EPIC, giving patients real-time access to their information and appointments through natural conversation. Patients can check their existing bookings, find open appointment slots, and schedule new appointments — all without leaving the chat.
 
-> **Info:** This is a demo solution intended for demonstration purposes.
+{% hint style="info" %}
+**Info:** This is a demo solution intended for demonstration purposes.
+{% endhint %}
 
 <a id="KeyCapabilities"></a>
 

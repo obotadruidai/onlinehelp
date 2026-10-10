@@ -26,7 +26,9 @@ If you have questions about your DRUID tenant, please contact [support@Druidai.c
 ## Improvements
 
 - **WhatsApp channels - receiving audio messages**. The AI Agent now supports processing voice messages in WhatsApp channels by leveraging the native Voice (MS Cognitive Service) channel.  For more information, see [WhatsApp Meta Channel](../../Channels/WhatsApp%20Integration/WhatsAppMeta%20Integration.md) or [WhatsApp Vonage Channel](../../Channels/WhatsApp%20Integration/WhatsApp%20Integration.md).
-> **NOTE:** The AI Agent will respond to voice messages with text only.
+{% hint style="info" %}
+**NOTE:** The AI Agent will respond to voice messages with text only.
+{% endhint %}
 
 - **NLU Evaluation - Tenant timezone in Conversation History export**. The Conversation History export now converts Date UTC to the tenant's timezone (if set) for improved accuracy.
 

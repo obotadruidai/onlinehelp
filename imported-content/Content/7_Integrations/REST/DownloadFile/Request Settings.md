@@ -28,7 +28,9 @@ If your endpoint contains path parameters, represented through curly braces {par
 
 Use the Headers tab and table to add specific keys expected by the API in the Header section.
 
-> **NOTE:** Usually the API headers contain authorization parameters. For security reasons, the DRUID platform provides you with a custom authentication method in Apps settings, which If done properly automatically adds the security context on the headers of all the integration calls, even if not visible in the Druid AI Platform. Username, passwords or keys defined in Apps settings are encrypted. So, there is no need for you to add the security context here.
+{% hint style="info" %}
+**NOTE:** Usually the API headers contain authorization parameters. For security reasons, the DRUID platform provides you with a custom authentication method in Apps settings, which If done properly automatically adds the security context on the headers of all the integration calls, even if not visible in the Druid AI Platform. Username, passwords or keys defined in Apps settings are encrypted. So, there is no need for you to add the security context here.
+{% endhint %}
 
 <a id="MakerequestusingBody"></a>
 
@@ -46,10 +48,12 @@ DRUID version 1.59 and higher provides the Download File with full capabilities 
 
 ![](../../../Resources/Images/Download%20File/Request%20Settings_2.png)
 
-> **NOTE:**
->
-> - For DRUID version 1.58 and below, only **UseFieldMapping** type is available.
-> - Both **UseFormData** and **Binary** are powerful request types for the Download File integration task, as they enable authors sending files to retrieve files.
+{% hint style="info" %}
+**NOTE:**
+
+- For DRUID version 1.58 and below, only **UseFieldMapping** type is available.
+- Both **UseFormData** and **Binary** are powerful request types for the Download File integration task, as they enable authors sending files to retrieve files.
+{% endhint %}
 
 <a id="SetrequestusingFieldMapping"></a>
 
@@ -61,7 +65,9 @@ The DRUID Connector automatically generates a JSON based on the structure define
 
 Nested JSON objects can be build using Child Mapping the option. If you have a more complex data structure to send within the body, you can use field mapping on level one and child mapping to indent fields and make a nested JSON objects data structure.
 
-> **NOTE:**  Prior to using field mapping, make sure that you created the needed DRUID entities and fields. For more information about entities, see [Entities](../../../5_Entities/AI%20Agent%20Informational%20Model.md).
+{% hint style="info" %}
+**NOTE:**  Prior to using field mapping, make sure that you created the needed DRUID entities and fields. For more information about entities, see [Entities](../../../5_Entities/AI%20Agent%20Informational%20Model.md).
+{% endhint %}
 
 The Druid AI Platform enables you to do enhance fields mapping by using expressions. For information on how to use expressions in requests field mapping, see Using Expressions in Request mappings.
 

@@ -37,7 +37,9 @@ Image extraction is enabled by default. Images are stored in Druid storage and l
 
 To make text within images searchable in the Knowledge Base, set **Use OCR for pictures** to **true**. The extractor performs OCR on images found in the file, stores the image in Druid storage, and links it with a 30-minute authentication token. This link is embedded in the extracted article paragraph, allowing users to also view the image temporarily in chat.
 
-> **NOTE:** OCR for pictures is available starting with Druid 9.19 and is disabled by default.
+{% hint style="info" %}
+**NOTE:** OCR for pictures is available starting with Druid 9.19 and is disabled by default.
+{% endhint %}
 
 <a id="Powerpoint"></a>
 
@@ -57,7 +59,9 @@ Image extraction is enabled by default if the img tag is not excluded in the [HT
 
 To make text within images searchable in the Knowledge Base, set **Use OCR for pictures** to **true**. The extractor performs OCR on images found in the HTML code, stores the image in Druid storage, and links it with a 30-minute authentication token. This link is embedded in the extracted article paragraph, allowing users to also view the image temporarily in chat.
 
-> **NOTE:** OCR for pictures is available starting with Druid 9.19 and is disabled by default.
+{% hint style="info" %}
+**NOTE:** OCR for pictures is available starting with Druid 9.19 and is disabled by default.
+{% endhint %}
 
 <a id="PDF"></a>
 
@@ -109,7 +113,9 @@ Use structured JSON files to ingest content from third-party systems (such as Sa
 - File Repository
 - Custom
 
-> **NOTE:** For Custom data sources, the third-party tools must support REST APIs for data exchange. Prior to integration, all extracted content—regardless of original format (Word documents, Excel files, PDFs, or JSON)—must be mapped into a single structured JSON file format.
+{% hint style="info" %}
+**NOTE:** For Custom data sources, the third-party tools must support REST APIs for data exchange. Prior to integration, all extracted content—regardless of original format (Word documents, Excel files, PDFs, or JSON)—must be mapped into a single structured JSON file format.
+{% endhint %}
 
 The JSON file should follow this format:
 
@@ -149,7 +155,9 @@ The following table provides the description of each JSON property:
 
 Druid can ingest video files from SharePoint, Custom Data Sources, file repository, shared drive, and websites where the video is hosted directly (not embedded from YouTube, Vimeo, or similar platforms). The KB Agent discovers the file, converts it to audio, generates a transcript with ASR, then applies the selected **Extractor** and **Content Chunker** to build searchable KB content from that transcript.
 
-> **NOTE:** Video extraction requires the **Druid Knowledge Base Multimedia Extractor** tenant feature. Contact your Druid representative to activate it on your tenant.
+{% hint style="info" %}
+**NOTE:** Video extraction requires the **Druid Knowledge Base Multimedia Extractor** tenant feature. Contact your Druid representative to activate it on your tenant.
+{% endhint %}
 
 For more information, on how to extract data from video content, making it searchable and usable within your knowledge base, see [Extracting Data from Video Files](../Extract%20Data%20from%20Video%20Files.md).
 
@@ -161,4 +169,6 @@ Druid supports the **Standard** extractor for audio files. The KB Agent transcri
 
 Choose Content Chunker: **Basic** for fixed-size chunks, or **Llm** for context-aware chunking. You can override these settings at the data source, node, or leaf level, as with other file types.
 
-> **NOTE:** Audio extraction requires the **Druid Knowledge Base Multimedia Extractor** tenant feature (same as video). Contact your Druid representative to enable it.
+{% hint style="info" %}
+**NOTE:** Audio extraction requires the **Druid Knowledge Base Multimedia Extractor** tenant feature (same as video). Contact your Druid representative to enable it.
+{% endhint %}

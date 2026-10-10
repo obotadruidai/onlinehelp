@@ -39,7 +39,9 @@ In the right-side editor click on **Training Description & Phrases**. Druid grou
 
 This section provides detailed context to ensure accurate intent classification when using a LLM as the **Classification Model Type** (found under **NLU** > **Intents**).
 
-> **NOTE:** This section is editable only if the **Classification Model Type** is set to **LLM**.
+{% hint style="info" %}
+**NOTE:** This section is editable only if the **Classification Model Type** is set to **LLM**.
+{% endhint %}
 
 Enter a clear, descriptive summary of the intent for all supported languages.
 

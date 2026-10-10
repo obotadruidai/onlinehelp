@@ -7,7 +7,9 @@ title: "Mobile App"
 
 AI Agents can be deployed in mobile applications using the existing web channel (also called Direct Line) through a WebView implementation, which allows the display of web content (HTML, CSS, JavaScript).
 
-> **NOTE:** Druid does not currently offer a native Software Development Kit (SDK) for mobile app integration.
+{% hint style="info" %}
+**NOTE:** Druid does not currently offer a native Software Development Kit (SDK) for mobile app integration.
+{% endhint %}
 
 Optionally, push notifications can also be configured to notify users about chat related events like new unread messages.
 
@@ -84,7 +86,9 @@ If you want to build your own custom chat interface instead of using the WebChat
 
 These APIs are part of the same backend services used for Druid voice channels (including Speech-to-Text and Text-to-Speech). While they have primarily been used for custom voice integrations so far, they can be adapted to support custom-built conversation interfaces in mobile or web applications.
 
-> **NOTE:**  This integration path requires custom development effort and a deeper understanding of the Druid messaging layer. We recommend you to use this alternative only if the current integration does not meet your use case. Druid can provide technical guidance upon request.
+{% hint style="info" %}
+**NOTE:**  This integration path requires custom development effort and a deeper understanding of the Druid messaging layer. We recommend you to use this alternative only if the current integration does not meet your use case. Druid can provide technical guidance upon request.
+{% endhint %}
 
 <a id="Pushnotifications"></a>
 

@@ -17,7 +17,9 @@ The AI Agent automatically provisions the following ChatUser parameters in the c
 
 - ChatUser.UserId – holds the incoming phone number.
 
-> **IMPORTANT!** For solution demo purposes, the **ChatUser.MasterID** and **ChatUser.DomainUserName** parameters are configured to receive the user's email address. Make sure that you configure these parameters to receive the information associated with your systems and integrations.
+{% hint style="warning" %}
+**IMPORTANT!** For solution demo purposes, the **ChatUser.MasterID** and **ChatUser.DomainUserName** parameters are configured to receive the user's email address. Make sure that you configure these parameters to receive the information associated with your systems and integrations.
+{% endhint %}
 
 ## Related Topics
 

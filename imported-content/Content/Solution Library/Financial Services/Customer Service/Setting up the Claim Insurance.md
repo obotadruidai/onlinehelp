@@ -48,10 +48,12 @@ Select **Individual Events** as **Event Type**, select **Jobs** and from the lis
 - **Job completed**. A job has completed successfully. The event is linked to the UiPath child flow step **After Job Complete (Success)**.
 - **Job faulted**. A job has failed to finish execution (incl. app exceptions). The event is linked to the UiPath child flow step **After Job Complete (Error)**.
 
-> **NOTE:** >
->
-> - We recommend you to select only these two types of events, as at this moment, the Druid AI Platform will ignore all other events. In new Druid versions, we will add support for more orchestrator events.
-> - As the Orchestrator allows setting Webhooks on a tenant level, it will send all events on all processes existing in all folders on the tenant, including the ones that are not set up in Druid; however, Druid will ignore the events transmitted by the Orchestrator, which are not related to processes Druid started.
+{% hint style="info" %}
+**NOTE:** >
+
+- We recommend you to select only these two types of events, as at this moment, the Druid AI Platform will ignore all other events. In new Druid versions, we will add support for more orchestrator events.
+- As the Orchestrator allows setting Webhooks on a tenant level, it will send all events on all processes existing in all folders on the tenant, including the ones that are not set up in Druid; however, Druid will ignore the events transmitted by the Orchestrator, which are not related to processes Druid started.
+{% endhint %}
 
 Click the **UPDATE** button to save the Webhook configuration.
 
@@ -62,7 +64,9 @@ Now your UiPath setup is completed.
 ## Step 4: Set up Druid
 
 1. In Druid, go to Apps and create a new UiPath connection. For information on how to do that, see [Creating the UiPath Connection Strings](../../../7_Integrations/UiPath/Creating%20the%20UiPath%20Connection%20Strings.md).
-> **NOTE:** The user used to obtain the UiPath Connector App credentials must have permission to run jobs on the corresponding Orchestrator Folder.
+{% hint style="info" %}
+**NOTE:** The user used to obtain the UiPath Connector App credentials must have permission to run jobs on the corresponding Orchestrator Folder.
+{% endhint %}
 
 2. Go to integrations, on the connector action called **uipath-covid-claim-process**.
 3. Click on the process and choose your process just published in UiPath.

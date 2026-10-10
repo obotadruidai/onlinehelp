@@ -25,7 +25,9 @@ If you have questions about your Druid tenant, please contact [support@Druidai.c
 
 ![](../../Resources/Images/DRUID%209.19/ip%20whitelisting.png)
 
-> **NOTE:** For Druid Connector Host hybrid deployments, you **must** whitelist the IP address of the host machine to ensure uninterrupted service.
+{% hint style="info" %}
+**NOTE:** For Druid Connector Host hybrid deployments, you **must** whitelist the IP address of the host machine to ensure uninterrupted service.
+{% endhint %}
 
 For more information, see [Enforce Druid Portal Access via IP Whitelisting](../../Governance%20%26%20Security/User%20Management/Enforce%20Druid%20Portal%20Access%20via%20IP%20Whitelisting.md).
 
@@ -113,7 +115,9 @@ For more information, see [Talkdesk Live Chat](../../Live%20Chat/Talkdesk%20Live
 For more information, see [Step 3. Create conversation end webhook in RingCentral CX](../../Live%20Chat/RingCentral%20CX.md#Step).
 
 - **AI Agent - Default Language Protection**. To ensure the integrity of your AI Agent configuration, once an AI Agent initial configuration is saved, the default language becomes read-only. This restriction prevents accidental changes that could break existing flows, intent recognition, or language-specific entity configurations.
-> **Info:** Always verify the primary language of your AI Agent during the initial creation process. If a different default language is required for a new project, a new AI Agent must be created.
+{% hint style="info" %}
+**Info:** Always verify the primary language of your AI Agent during the initial creation process. If a different default language is required for a new project, a new AI Agent must be created.
+{% endhint %}
 
 - **Knowledge Base - Support for Google MIME Types in All Data Sources**. Starting with this release, the Knowledge Base supports Google MIME type files across all data sources. Previously, Google native files (such as Google Docs, Google Sheets, and Google Slides) required conversion before they could be processed in the Knowledge Base. Druid now automatically supports these file formats, allowing you to upload Google file types directly to any data source.
 - **KB File Extractors - OCR & Image Extraction**. We have introduced a new capability to convert visual content into searchable knowledge. For specific file types, authors can now enable OCR for pictures within the file extractor settings, **Use OCR for pictures** (Default: False).

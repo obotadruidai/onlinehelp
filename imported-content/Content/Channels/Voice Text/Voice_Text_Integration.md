@@ -9,7 +9,9 @@ The VoiceText Channel enables voice integration in Contact Centers, supporting s
 
 By default, VoiceText uses a synchronous request-response model: when a user message is sent to Druid, the system responds immediately with the full reply (or replies) in a single API response. This approach works well for simple conversations but may introduce delays when integrations or Proactive AI Agent messages are set on flow steps. To address this, Druid supports an asynchronous long polling mechanism that improves responsiveness during more complex interactions.
 
-> **NOTE:** For Voice Text with LLM Streaming, long polling must be enabled.
+{% hint style="info" %}
+**NOTE:** For Voice Text with LLM Streaming, long polling must be enabled.
+{% endhint %}
 
 The diagram below provides a high-level overview on how to integrate voice in Contact centers using external Voice AI Agents.
 
@@ -68,7 +70,9 @@ The figure below describes the detailed integration sequence.
    2. The Contact Center executes the transfer.
    3. Helpdesk agent and User are now talking directly.
 
-> **Info:** Whenever a channel timeout occurs (connection is dropped), the following message is logged in Conversation History "[Channel connection timed out]. The voice channel connection timeout threshold was reached. The previous AI Agent message may have also been dropped before reaching the client's conversation."
+{% hint style="info" %}
+**Info:** Whenever a channel timeout occurs (connection is dropped), the following message is logged in Conversation History "[Channel connection timed out]. The voice channel connection timeout threshold was reached. The previous AI Agent message may have also been dropped before reaching the client's conversation."
+{% endhint %}
 
 <a id="LongPollingmechanism"></a>
 
@@ -102,7 +106,9 @@ The steps below describe the detailed integration sequence:
 2. The CC sends this audio via SIP to the Voice AI Agent.
 3. The Voice AI Agent converts Speech to Text and sends the text user input to the DVA, calling the Druid API CreateActivity (`POST *.druidplatform.com/api/voicetext/{botId}/messages`).
 
-> **NOTE:** The Voice AI Agent DOES NOT wait for a synchronous response from this API call.
+{% hint style="info" %}
+**NOTE:** The Voice AI Agent DOES NOT wait for a synchronous response from this API call.
+{% endhint %}
 
 4. Contact Center Polling for AI Agent Responses:
 
@@ -255,7 +261,9 @@ The timeout parameter enables you to specify a duration in seconds for the syste
 }
 ```
 
-> **NOTE:** You should take the content from “speak”. In Druid Portal, you can fine-tune the text response for voice channel in the Voice section on your specific flow step(s). You can include SSML markups as recognized by your TTS service. By default, Druid uses [Microsoft schema](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/speech-synthesis-markup?tabs=csharp).
+{% hint style="info" %}
+**NOTE:** You should take the content from “speak”. In Druid Portal, you can fine-tune the text response for voice channel in the Voice section on your specific flow step(s). You can include SSML markups as recognized by your TTS service. By default, Druid uses [Microsoft schema](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/speech-synthesis-markup?tabs=csharp).
+{% endhint %}
 
 #### Responds with Event (transfer to human)
 
@@ -274,7 +282,9 @@ The timeout parameter enables you to specify a duration in seconds for the syste
  }
 ```
 
-> **NOTE:** To transfer calls to humans, in Druid Portal add a step of type Backchannel and name the step with your preferred keyword (e.g. “route-to-human”). In Input mapping on this step, set the Druid entity storing additional information (e.g., subject, queue name, etc.); provide the entity you agreed with the Contact Center. The response sent by Druid to the Voice AI Agent in JSON format will have in the “value” attribute the Druid entity provided in Input mapping.
+{% hint style="info" %}
+**NOTE:** To transfer calls to humans, in Druid Portal add a step of type Backchannel and name the step with your preferred keyword (e.g. “route-to-human”). In Input mapping on this step, set the Druid entity storing additional information (e.g., subject, queue name, etc.); provide the entity you agreed with the Contact Center. The response sent by Druid to the Voice AI Agent in JSON format will have in the “value” attribute the Druid entity provided in Input mapping.
+{% endhint %}
 
 <a id="GetMessagesLongPolling"></a>
 
@@ -320,4 +330,6 @@ Here, `[[Entity]].StringField` represents the field that stores the token obtain
 
 The response structure for `getMessages` is identical to the *Responds with Message* and *Responds with Event (transfer to human)* sections described for SendMessages API response, containing the AI Agent response or an event.
 
-> **NOTE:** The getMessages endpoint will return the next available message or event as soon as it's ready, or after a timeout period if no message is available. The Contact Center should continuously poll this endpoint until the conversation is officially closed.
+{% hint style="info" %}
+**NOTE:** The getMessages endpoint will return the next available message or event as soon as it's ready, or after a timeout period if no message is available. The Contact Center should continuously poll this endpoint until the conversation is officially closed.
+{% endhint %}

@@ -7,11 +7,13 @@ title: "Alert Flows"
 
 Alert Flows enable you to trigger dialogues (flows) for specific users or conversations on a scheduled basis. Unlike external events sent to DRUID endpoints, alert flows are initiated directly by the DRUID conversational engine.
 
-> **NOTE:** For backwards compatibility, alerts configured before version 8.6, have the “Configured before version 8.6” option enabled by default.
->
-> ![](../Resources/Images/Alerts/compatibility.png)
->
-> To use the new Alert functionality, disable this option and configure the schedule via the **Scheduling** tab on the flow configuration page.
+{% hint style="info" %}
+**NOTE:** For backwards compatibility, alerts configured before version 8.6, have the “Configured before version 8.6” option enabled by default.
+
+![](../Resources/Images/Alerts/compatibility.png)
+
+To use the new Alert functionality, disable this option and configure the schedule via the **Scheduling** tab on the flow configuration page.
+{% endhint %}
 
 <a id="CreateanAlertflow"></a>
 
@@ -43,13 +45,17 @@ The way you configure the alert scheduling depends on the type of alert you want
   - Triggering automation at specific times for specific users.
 - Send alerts to users identified through an external data source, dynamically filtered based on conditions. E.g., sending a "Happy Birthday" message to employees whose birthdays are today.
 
-> **NOTE:** Alerts are only sent to authenticated users who have interacted with the AI Agent at least once.
+{% hint style="info" %}
+**NOTE:** Alerts are only sent to authenticated users who have interacted with the AI Agent at least once.
+{% endhint %}
 
 <a id="Sendingalertsinautomatedworkflows"></a>
 
 ### Sending alerts in automated workflows
 
-> **NOTE:** This feature is available in DRUID 9.5 and higher.
+{% hint style="info" %}
+**NOTE:** This feature is available in DRUID 9.5 and higher.
+{% endhint %}
 
 To deliver alerts as part of an automated workflow, use the **Run As Job** option in the Subscribers section.
 
@@ -137,7 +143,9 @@ To modify an alert schedule:
 2. Make the necessary schedule updates.
 3. Re-enable **Is scheduler enabled** and save the flow.
 
-> **NOTE:**  Changes made while the scheduler is active will not take effect.
+{% hint style="info" %}
+**NOTE:**  Changes made while the scheduler is active will not take effect.
+{% endhint %}
 
 <a id="Alertflowsruntimeconsiderations"></a>
 

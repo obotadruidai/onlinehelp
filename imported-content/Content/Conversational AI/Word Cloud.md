@@ -66,7 +66,9 @@ After you edit the flow utterance, click the **Train Set** tab and click the **T
 
 ![](../Resources/Images/Evaluating%20Bot%20Training%20Model/train%20bot%20train%20set.png)
 
-> **Info:**  If you selected **Enable auto train** on the AI Agent (AI Agent details page, NLP section, there is no need to click the **Train** button.
+{% hint style="info" %}
+**Info:**  If you selected **Enable auto train** on the AI Agent (AI Agent details page, NLP section, there is no need to click the **Train** button.
+{% endhint %}
 
 ## Related Topics
 

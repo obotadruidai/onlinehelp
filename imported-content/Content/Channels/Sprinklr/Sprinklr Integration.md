@@ -71,7 +71,9 @@ You can now create a Sprinklr app.
 
 8. Reach out to Sprinklr support to activate your app.
 
-> **IMPORTANT!** Although the app status shows as Active in the Sprinklr Developer Portal, it is not actually active in your specific environment. To activate the app, you must contact Sprinklr Support and request activation for your environment.
+{% hint style="warning" %}
+**IMPORTANT!** Although the app status shows as Active in the Sprinklr Developer Portal, it is not actually active in your specific environment. To activate the app, you must contact Sprinklr Support and request activation for your environment.
+{% endhint %}
 
 Now configure the Sprinklr channel in the Druid Portal.
 
@@ -146,9 +148,13 @@ You have successfully completed the Sprinklr channel configuration.
 To save the conversation transcript and make it available for Sprinklr agents, on the flow that connects the client with the helpdesk agent, make the following settings:
 
 1. On the step where you call the internal action **ConnectToHelpdeskAgent**(Post Actions section), in the **Pre Actions** section, call the internal action **GetConversationTranscript**.
-> **IMPORTANT!**  When calling the **GetConversationTranscript** internal action on the same step where you call **ConnectToHelpdeskAgent**, make sure to call it in the PreActions section. Calling it in the PostActions section will not send the conversation transcript to agents.
+{% hint style="warning" %}
+**IMPORTANT!**  When calling the **GetConversationTranscript** internal action on the same step where you call **ConnectToHelpdeskAgent**, make sure to call it in the PreActions section. Calling it in the PostActions section will not send the conversation transcript to agents.
+{% endhint %}
 
-> **Info:**  You can call the **GetConversationTranscript** internal action on a previous step.
+{% hint style="info" %}
+**Info:**  You can call the **GetConversationTranscript** internal action on a previous step.
+{% endhint %}
 
 2. On the **ConnectToHelpdeskAgent** internal action add the following:
 
@@ -158,7 +164,9 @@ To save the conversation transcript and make it available for Sprinklr agents, o
 }
 ```
 
-> **Info:** You can send additional client information to Sprinklr Agents together with the conversation transcript. For more information, see [Send Contact Center Parameters](#Send_Contact_Center_Parameters).
+{% hint style="info" %}
+**Info:** You can send additional client information to Sprinklr Agents together with the conversation transcript. For more information, see [Send Contact Center Parameters](#Send_Contact_Center_Parameters).
+{% endhint %}
 
 3. Save the step.
 
@@ -170,9 +178,13 @@ To send Contact Center parameters to Sprinklr, on the **ConnectToHelpdeskAgent**
 
 You can populate Sprinklr parameters using values from [[ChatUser]],or any other defined Druid entity, as long as they are mapped to Sprinklr properties.
 
-> **Info:** Starting with Druid 9.29, you can also send additional custom Sprinklr parameters in the workflow payload mapped to [[QueryParams]] fields, provided these properties are defined as fields within the Query Params system entity.
+{% hint style="info" %}
+**Info:** Starting with Druid 9.29, you can also send additional custom Sprinklr parameters in the workflow payload mapped to [[QueryParams]] fields, provided these properties are defined as fields within the Query Params system entity.
+{% endhint %}
 
-> **NOTE:** The payload must follow a key-value format where both the key and value are strings. When using values from Druid conversation context (entities, local variables) as parameter values, ensure they are enclosed in double quotes ("") to maintain valid JSON formatting.
+{% hint style="info" %}
+**NOTE:** The payload must follow a key-value format where both the key and value are strings. When using values from Druid conversation context (entities, local variables) as parameter values, ensure they are enclosed in double quotes ("") to maintain valid JSON formatting.
+{% endhint %}
 
 **Example - Send Custom Contact Center parameters**
 

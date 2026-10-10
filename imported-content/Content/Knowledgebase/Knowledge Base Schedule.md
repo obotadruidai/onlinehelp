@@ -7,16 +7,22 @@ title: "Knowledge Base Schedule"
 
 The Knowledge Base Schedule allows authors to schedule crawling, extraction, and training actions at a data source level to occur automatically.
 
-> **NOTE:** The Schedule is available only for unstructured data sources. The KB Schedule is a tenant feature. If you want activate it on your tenant, reach out to [DRUID Support](<mailto:support@druidai.com?subject=Activate KB Schedule on my tenant>).
+{% hint style="info" %}
+**NOTE:** The Schedule is available only for unstructured data sources. The KB Schedule is a tenant feature. If you want activate it on your tenant, reach out to [DRUID Support](<mailto:support@druidai.com?subject=Activate KB Schedule on my tenant>).
+{% endhint %}
 
-> **IMPORTANT!** For hybrid deployments, you must upgrade the KB Agent.
+{% hint style="warning" %}
+**IMPORTANT!** For hybrid deployments, you must upgrade the KB Agent.
+{% endhint %}
 
 <a id="SetupaschedulefromtheKnowledgeBasepage"></a>
 
 ## Set up a schedule from the Knowledge Base page
 
 1. Go to the Knowledge Base and click the **Schedules** tab. The Schedules page displays all schedules set up for the different unstructured data sources.
-> **NOTE:**  You can set only one schedule per data source.
+{% hint style="info" %}
+**NOTE:**  You can set only one schedule per data source.
+{% endhint %}
 
 2. Click the **New Schedule** button. The New Schedule modal appears.
 3. Choose the desired unstructured data source.
@@ -31,7 +37,9 @@ By default, the schedule is disabled. Select the toggle next to the data source 
 
 ![](../Resources/Images/druid%209.7/kb%20level%20sched%20actions.png)
 
-> **NOTE:** For File Repository data sources, the only available actions you can schedule are Extract and Train. The Crawl action is disabled.
+{% hint style="info" %}
+**NOTE:** For File Repository data sources, the only available actions you can schedule are Extract and Train. The Crawl action is disabled.
+{% endhint %}
 
 When you toggle on Crawl and Extract, additional action-specific parameters become available.
 
@@ -42,7 +50,9 @@ You can toggle on the following action combinations:
 - Extract and Train
 - Each action individually (Crawl / Extract / Train)
 
-> **NOTE:** Toggling on any other action combination than the ones listed above will cause an error when you save the schedule.
+{% hint style="info" %}
+**NOTE:** Toggling on any other action combination than the ones listed above will cause an error when you save the schedule.
+{% endhint %}
 
 6. Select the **Start date**.
 7. By default, the **No end date** toggle is turned on, which means the scheduler runs indefinitely. If you want the scheduler to stop on a specific date, turn off the **No end date** toggle, and then select the desired **End date**.
@@ -70,7 +80,9 @@ The selected actions will be performed on the data source based on the schedule.
 
 ![](../Resources/Images/druid%209.7/toggle%20schedule%20actions.png)
 
-> **NOTE:** For File Repository data sources, the only available actions you can schedule are Extract and Train. The Crawl action is disabled.
+{% hint style="info" %}
+**NOTE:** For File Repository data sources, the only available actions you can schedule are Extract and Train. The Crawl action is disabled.
+{% endhint %}
 
 When you toggle on Crawl and Extract, additional action-specific parameters become available.
 
@@ -81,7 +93,9 @@ You can toggle on the following action combinations:
 - Extract and Train
 - Each action individually (Crawl / Extract / Train)
 
-> **NOTE:** Toggling on any other action combination than the ones listed above will cause an error when you save the schedule.
+{% hint style="info" %}
+**NOTE:** Toggling on any other action combination than the ones listed above will cause an error when you save the schedule.
+{% endhint %}
 
 4. Select the **Start date**.
 5. By default, the **No end date** toggle is turned on, which means the scheduler runs indefinitely. If you want the scheduler to stop on a specific date, turn off the **No end date** toggle, and then select the desired **End date**.

@@ -9,7 +9,9 @@ An entity model serves as the relational data structure for your AI Agent. It de
 
 To build an entity model, you will define individual entities, add specific fields, and establish relationships between them.
 
-> **NOTE:** Rather than building data models from scratch, you can leverage AI Authoring Agents. By launching the Data Modeler from the Page Help icon, you can describe your business requirements in natural language. The Data Modeler analyzes your existing schema and either creates from scratch or adjusts it as needed. For more information, see the [AI Authoring Agents](../2_AI%20Agents/AI%20Authoring%20Agents.md#Create).
+{% hint style="info" %}
+**NOTE:** Rather than building data models from scratch, you can leverage AI Authoring Agents. By launching the Data Modeler from the Page Help icon, you can describe your business requirements in natural language. The Data Modeler analyzes your existing schema and either creates from scratch or adjusts it as needed. For more information, see the [AI Authoring Agents](../2_AI%20Agents/AI%20Authoring%20Agents.md#Create).
+{% endhint %}
 
 <a id="AccessingtheEntityDesigner"></a>
 
@@ -22,7 +24,9 @@ To start building the informational model, you must first access the designer in
 
 ![](../Resources/Images/Entities/diagram.png)
 
-> **Info:** We recommend using Diagram View when creating a new model. This provides a visual map of your data architecture as you build it.
+{% hint style="info" %}
+**Info:** We recommend using Diagram View when creating a new model. This provides a visual map of your data architecture as you build it.
+{% endhint %}
 
 <a id="CreatingaNewEntity"></a>
 
@@ -46,7 +50,9 @@ The Create entity modal appears.
 - Is ASCII no diacritics.
 - Does not contain the following special characters: -, +, ., # and @.
 
-> **Info:** We recommend you to use PascalCaseNames (upper camel), no spaces. The Name starts with an uppercase, as do all additional words. Example: SalesOrder.
+{% hint style="info" %}
+**Info:** We recommend you to use PascalCaseNames (upper camel), no spaces. The Name starts with an uppercase, as do all additional words. Example: SalesOrder.
+{% endhint %}
 
 3. Specify a category to help organize your entities as the model grows.
 4. Click **Save** .

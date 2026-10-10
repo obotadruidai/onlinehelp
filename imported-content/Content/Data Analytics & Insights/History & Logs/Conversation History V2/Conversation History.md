@@ -77,13 +77,17 @@ The system will display the Conversation History filtered automatically for that
 
 You can extract conversation data for external analysis, reporting, or auditing by using the **Export Excel** button from both global and flow-level Conversation History.
 
-> **NOTE:** Starting with version 9.20, the ability to export data is restricted. To use the Export Excel feature, a Druid administrator must grant you the 'Export conversation history' permission.
+{% hint style="info" %}
+**NOTE:** Starting with version 9.20, the ability to export data is restricted. To use the Export Excel feature, a Druid administrator must grant you the 'Export conversation history' permission.
+{% endhint %}
 
 To export the conversation history:
 
 1. Use the filters to isolate the data you wish to extract.
 2. Click the **Export Excel** button located at the top right of the page.
-> **Info:** If the log file is big, it might take a couple of seconds for the log file to be ready for download.
+{% hint style="info" %}
+**Info:** If the log file is big, it might take a couple of seconds for the log file to be ready for download.
+{% endhint %}
 
 An Excel file containing the logs will be downloaded automatically to the default download folder on your PC.
 
@@ -101,7 +105,9 @@ The exported Excel file contains two sheets:
 
 ## Exporting interaction
 
-> **Info:** This feature is available starting with Druid 10.1.
+{% hint style="info" %}
+**Info:** This feature is available starting with Druid 10.1.
+{% endhint %}
 
 You have granular export controls on the conversation history when it is grouped by interaction. You can export the conversation history for a single interaction into an Excel file.
 

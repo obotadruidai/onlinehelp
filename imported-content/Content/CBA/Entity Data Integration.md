@@ -24,9 +24,13 @@ To add a web view and form that fetch entity data from DRUID Data Services, foll
 
 3. Once the integration tasks are added, click the **Publish** button on the entity integrations page.
 
-> **NOTE:** Failure to publish the entity integrations will prevent you from accessing the data.
+{% hint style="info" %}
+**NOTE:** Failure to publish the entity integrations will prevent you from accessing the data.
+{% endhint %}
 
-> **Info:** You can add the CRUD Template multiple times, if needed. However, DRUID only duplicates the integration tasks. The web view and form will be created only during the initial addition of the CRUD Template integration, provided the entity has no existing web views or forms defined.
+{% hint style="info" %}
+**Info:** You can add the CRUD Template multiple times, if needed. However, DRUID only duplicates the integration tasks. The web view and form will be created only during the initial addition of the CRUD Template integration, provided the entity has no existing web views or forms defined.
+{% endhint %}
 
 ## Related Topics
 

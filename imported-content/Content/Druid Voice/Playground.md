@@ -17,7 +17,9 @@ To test STT transcription, follow these steps:
 
 1. Preview your ElevenLabs STT resource and click the **Playground** tab.
 2. Choose the active STT transcription engine (such as Scribe v2) from the **Choose Model** dropdown.
-> **NOTE:** Only the Scribe v2 model is available.
+{% hint style="info" %}
+**NOTE:** Only the Scribe v2 model is available.
+{% endhint %}
 
 3. Provide audio input:
 

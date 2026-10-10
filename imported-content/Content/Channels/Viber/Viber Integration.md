@@ -7,7 +7,9 @@ title: "Viber"
 
 Druid authors can integrate AI Agents with Viber to allow their customers to start a conversation with the AI Agent in the Viber app.
 
-> **IMPORTANT!** The Welcome flow will be triggered at the user's first conversation with the AI Agent; the predict with the initial "user says" is dropped.
+{% hint style="warning" %}
+**IMPORTANT!** The Welcome flow will be triggered at the user's first conversation with the AI Agent; the predict with the initial "user says" is dropped.
+{% endhint %}
 
 <a id="Prerequisite"></a>
 
@@ -45,7 +47,9 @@ This section describes how to integrate your AI Agent with Viber.
 ![](../../Resources/Images/Viber%20Integration/create%20viber%20bot_2.png)
 
 5. Click **Create**. Your Viber bot account is created and the token associated to your Viber bot is generated.
-> **NOTE:** Copy the access token as you will need it in the Druid Portal.
+{% hint style="info" %}
+**NOTE:** Copy the access token as you will need it in the Druid Portal.
+{% endhint %}
 
 ![](../../Resources/Images/Viber%20Integration/account%20created.png)
 
@@ -112,7 +116,9 @@ After you successfully complete the Viber integration, you have to make the Vibe
 
 Your customers will open the Viber messaging app and scan the QR code to chat with your AI Agent.
 
-> **NOTE:** In DRUID 7.4 and higher, when a user initiates a conversation with the AI Agent, the Welcome flow will be automatically triggered. Regardless of the user's subscription status to the AI Agent channel, the welcome message will be promptly sent to the user, ensuring a seamless and engaging interaction experience.
+{% hint style="info" %}
+**NOTE:** In DRUID 7.4 and higher, when a user initiates a conversation with the AI Agent, the Welcome flow will be automatically triggered. Regardless of the user's subscription status to the AI Agent channel, the welcome message will be promptly sent to the user, ensuring a seamless and engaging interaction experience.
+{% endhint %}
 
 <a id="StartingspecificDruidFlowsviaViberDeepLinks"></a>
 
@@ -120,7 +126,9 @@ Your customers will open the Viber messaging app and scan the QR code to chat wi
 
 Viber DeepLinks are a powerful mechanism to launch your AI Agent and immediately trigger a specific Druid flow by providing the associated flow Intent. This key capability moves beyond the default behavior of simply triggering the Welcome flow when a user initiates a chat. By allowing you to create targeted entry points, DeepLinks are ideal for QR code campaigns, enabling you to generate custom codes that direct users to specific actions or flows within your AI Agent.
 
-> **NOTE:** Viber DeepLinks support is available in Druid version 9.9 and later.
+{% hint style="info" %}
+**NOTE:** Viber DeepLinks support is available in Druid version 9.9 and later.
+{% endhint %}
 
 <a id="DeepLinkFormat"></a>
 
@@ -143,4 +151,6 @@ The link format used to generate QR codes that trigger a specific flow is: `vibe
 4. Use a third-party QR code generator tool and input the complete DeepLink URL to create the scannable code.
 5. Make the QR Code available for your users.
 
-> **IMPORTANT!** DeepLinks are not directly accessible via a web browser. To start a specific DRUID flow via a Viber DeepLink, you must first use the DeepLink URL to generate a QR code, which users will scan. It requires the Viber application to be installed on the user's device to execute and launch the targeted Druid flow. If Viber is not installed, the link will fail or direct the user to an error message.
+{% hint style="warning" %}
+**IMPORTANT!** DeepLinks are not directly accessible via a web browser. To start a specific DRUID flow via a Viber DeepLink, you must first use the DeepLink URL to generate a QR code, which users will scan. It requires the Viber application to be installed on the user's device to execute and launch the targeted Druid flow. If Viber is not installed, the link will fail or direct the user to an error message.
+{% endhint %}

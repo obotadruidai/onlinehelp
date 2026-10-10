@@ -91,7 +91,9 @@ For more information, see [Explainability and Utterances Annotation](../../Gover
 
 ![](../../Resources/Images/druid%209.25/pdf%20extractors.png)
 
-> **Info:** Existing Knowledge Bases retain their current PDF extractor configuration. To view the updated extractor names in the PDF extractor drop-down, reset the Knowledge Base advanced settings.
+{% hint style="info" %}
+**Info:** Existing Knowledge Bases retain their current PDF extractor configuration. To view the updated extractor names in the PDF extractor drop-down, reset the Knowledge Base advanced settings.
+{% endhint %}
 
 - **Enhanced Advanced Data Editor for Charts**. To give authors more control and visibility when customizing charts, we have redesigned the advanced chart editor experience. The JSON field formerly known as the **Advanced Editor** has been renamed to the **Advanced data editor** and upgraded from a single JSON field to a dual-pane interface:
 

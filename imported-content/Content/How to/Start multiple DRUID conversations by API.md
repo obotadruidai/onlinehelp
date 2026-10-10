@@ -20,7 +20,9 @@ You can initiate multiple DRUID conversations simultaneously using the API endpo
 
 The StartFlowFlow API starts a DRUID flow multiple times and transmits any specified data within the conversation context through the request body.
 
-> **IMPORTANT!** The AI Agent triggers the flow on the specified channel only when the user has initiated a conversation with the AI Agent on that same channel.
+{% hint style="warning" %}
+**IMPORTANT!** The AI Agent triggers the flow on the specified channel only when the user has initiated a conversation with the AI Agent on that same channel.
+{% endhint %}
 
 <a id="Syntax"></a>
 
@@ -71,7 +73,9 @@ Remember to include the bearer token in the **Authorization** section of your re
 }
 ```
 
-> **NOTE:** The request limit is 10,000 items. This means you can initiate up to 10,000 DRUID conversations simultaneously using the API.
+{% hint style="info" %}
+**NOTE:** The request limit is 10,000 items. This means you can initiate up to 10,000 DRUID conversations simultaneously using the API.
+{% endhint %}
 
 | Parameter | Data Type | Mandatory | Description |
 | --- | --- | --- | --- |

@@ -42,7 +42,9 @@ The Integrations page appears.
 
 ![](../../Resources/Images/Sunshine/integrations.png)
 
-> **NOTE:** While Sunshine Conversations allows integrations with multiple applications, Druid currently supports only the integration via the WhatsApp channel.
+{% hint style="info" %}
+**NOTE:** While Sunshine Conversations allows integrations with multiple applications, Druid currently supports only the integration via the WhatsApp channel.
+{% endhint %}
 
 4. Click **WhatsApp**. The WhatsApp channel integration page appears.
 5. Click the **Connect** button.
@@ -53,7 +55,9 @@ The WhatsApp integration mode page appears.
 
 ![](../../Resources/Images/Sunshine/integration%20mode.png)
 
-> **Info:** If you want to activate the channel in a production environment, click the **Production** tab and follow the on-screen instructions.
+{% hint style="info" %}
+**Info:** If you want to activate the channel in a production environment, click the **Production** tab and follow the on-screen instructions.
+{% endhint %}
 
 6. Click **Activate Sandbox**. The Sandbox Settings appear on the page.
 
@@ -67,9 +71,11 @@ The WhatsApp integration mode page appears.
 
 ## Step 2: Enable Webhooks
 
-> **Info:** Before enabling a webhook in Sunshine, go to Druid Portal, select the AI Agent, go to the Sunshine channel and copy the **Webhook Inbound URL**, you will need it in Sunshine.
->
-> ![](../../Resources/Images/Sunshine/webhook%20inbound%20url.png)
+{% hint style="info" %}
+**Info:** Before enabling a webhook in Sunshine, go to Druid Portal, select the AI Agent, go to the Sunshine channel and copy the **Webhook Inbound URL**, you will need it in Sunshine.
+
+![](../../Resources/Images/Sunshine/webhook%20inbound%20url.png)
+{% endhint %}
 
 To enable the AI Agent webhook in Sunshine Conversations platform, follow these steps:
 

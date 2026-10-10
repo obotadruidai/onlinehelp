@@ -43,7 +43,9 @@ In Druid Portal:
 
 ##### 1.1. Configure the AI Agent
 
-> **NOTE:** Car Rental default language is set to EN-US and additional language is set to RO. If you want to add additional languages on Healthcare, make sure to add the language of choice as additional AI Agent language and add the according training phrases, synonyms and conditions.
+{% hint style="info" %}
+**NOTE:** Car Rental default language is set to EN-US and additional language is set to RO. If you want to add additional languages on Healthcare, make sure to add the language of choice as additional AI Agent language and add the according training phrases, synonyms and conditions.
+{% endhint %}
 
 To configure the AI Agent for Car Rental, you need to set special flows and configure the connection strings.
 
@@ -62,7 +64,9 @@ In production, you can configure these flows based on your needs.
 
 ##### 1.2. Set the Connection Strings (App) Details
 
-> **NOTE:** To run the Car Rental setup flow, you need to set up the SQL app.
+{% hint style="info" %}
+**NOTE:** To run the Car Rental setup flow, you need to set up the SQL app.
+{% endhint %}
 
 ###### Prerequisite
 
@@ -103,7 +107,9 @@ In the pop-up that appears, click the **Train** button.
 
 After a few seconds, the Status **Trained** should appear in the pop-up:
 
-> **NOTE:**  If the train status message does not appear, you might want to check you have properly configured the corresponding Druid app.
+{% hint style="info" %}
+**NOTE:**  If the train status message does not appear, you might want to check you have properly configured the corresponding Druid app.
+{% endhint %}
 
 After you successfully train the entities, click **Save** button.
 
@@ -115,16 +121,20 @@ Click the **Details** tab, and then click the NLP section header. The NLP area e
 
 ![](../../../Resources/Images/solution%20templates/Cristina/train%20bot.png)
 
-> **NOTE:**  It might take a few minutes for the NLP training to complete, so you might need to wait for Druid to finish training all AI Agent entities that have NLP enabled (NLP=true).
+{% hint style="info" %}
+**NOTE:**  It might take a few minutes for the NLP training to complete, so you might need to wait for Druid to finish training all AI Agent entities that have NLP enabled (NLP=true).
+{% endhint %}
 
 <a id="SeeCarRentalinAction"></a>
 
 ## See Car Rental in Action
 
-> **NOTE:** The AI Agent is trained in two languages: RO and EN. If you want to switch between languages, just type the following commends in the chat:
->
-> - “Romana te rog” if you want to switch from EN to RO.
-> - “English please” if you want to switch from RO to EN.
+{% hint style="info" %}
+**NOTE:** The AI Agent is trained in two languages: RO and EN. If you want to switch between languages, just type the following commends in the chat:
+
+- “Romana te rog” if you want to switch from EN to RO.
+- “English please” if you want to switch from RO to EN.
+{% endhint %}
 
 The list below provides you with an extensive list of things you can say to the AI Agent in either English or Romanian.
 

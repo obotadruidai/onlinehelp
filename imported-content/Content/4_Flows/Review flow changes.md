@@ -7,7 +7,9 @@ title: "Review Flow Changes"
 
 You can review the changes made to a flow by using the Audit Trail feature that provides you with a comprehensive historical record of all changes made by authors to a flow.
 
-> **NOTE:** The Audit trail is in technological preview in DRUID 7.3. In a future release, you will be able to roll back the flow to a previous version.
+{% hint style="info" %}
+**NOTE:** The Audit trail is in technological preview in DRUID 7.3. In a future release, you will be able to roll back the flow to a previous version.
+{% endhint %}
 
 To review the updates made to a flow, follow these steps:
 

@@ -29,13 +29,17 @@ Three providers are available:
 - **OpenAI**. Uses OpenAI's text embeddings. Requires entering the API key for your OpenAI account.
 - **Microsoft Azure**. Uses Azure OpenAI embeddings. Requires entering the Azure OpenAI embeddings endpoint, deployment name and the API key (Password) for your Azure OpenAI account. Endpoint format: https://{your-resource-name}.openai.azure.com/openai/deployments/{deployment-id}/embeddings?api-version={api-version}.
 
-> **NOTE:** Changing the Embeddings Provider requires a full retrain of all data sources.
+{% hint style="info" %}
+**NOTE:** Changing the Embeddings Provider requires a full retrain of all data sources.
+{% endhint %}
 
 <a id="EmbeddingsModel"></a>
 
 ### Embeddings Model
 
-> **Info:** Available only when **Embeddings Provider** is set to **Druid**.
+{% hint style="info" %}
+**Info:** Available only when **Embeddings Provider** is set to **Druid**.
+{% endhint %}
 
 An embeddings model transforms text into a vector of numbers (an embedding) that captures semantic meaning, enabling similarity comparisons during search. The following models are available:
 
@@ -47,7 +51,9 @@ An embeddings model transforms text into a vector of numbers (an embedding) that
 - **Multilingual – score correction**. Multilingual embeddings with score correction, enhancing precision of similarity scores across languages.
 - **Paraphrase**. Specializes in identifying semantically similar phrases regardless of wording differences. Processes up to 125 tokens per paragraph. All other models support up to 512 tokens per paragraph.
 
-> **NOTE:** Changing the Embeddings Model requires a full retrain of all data sources.
+{% hint style="info" %}
+**NOTE:** Changing the Embeddings Model requires a full retrain of all data sources.
+{% endhint %}
 
 <a id="Configurations"></a>
 
@@ -71,7 +77,9 @@ Optional. If selected, the AI Agent runs this flow before searching the Knowledg
 
 After the user sends a message, the AI Agent executes the **Intent Rephrase Flow** first, rephrases the utterance, and then uses the result — stored in **[[Intent]].Text** — to search the Knowledge Base.
 
-> **IMPORTANT!** The **Intent Rephrase Flow** runs only when the user sends input while the conversation is in idle mode. Once the user is inside a flow, the **Intent Rephrase Flow** no longer executes and the input is not altered.
+{% hint style="warning" %}
+**IMPORTANT!** The **Intent Rephrase Flow** runs only when the user sends input while the conversation is in idle mode. Once the user is inside a flow, the **Intent Rephrase Flow** no longer executes and the input is not altered.
+{% endhint %}
 
 <a id="UseKnowledgeBase"></a>
 
@@ -111,7 +119,9 @@ Behavior for existing AI Agents depends on whether **Min score threshold** and *
 - One value is set. **Use** AI Agent**NLU Thresholds** is disabled. The slider is editable for the parameter that has a value. The empty parameter continues to use the AI Agent NLU threshold.
 - Both values are set. **Use** AI Agent**NLU Thresholds** is disabled. Both slider handles are editable.
 
-> **NOTE:** If you re-enable **Use AI Agent NLU Thresholds** after manually setting threshold values, the custom values on the slider will be lost.
+{% hint style="info" %}
+**NOTE:** If you re-enable **Use AI Agent NLU Thresholds** after manually setting threshold values, the custom values on the slider will be lost.
+{% endhint %}
 
 To control how the KB evaluates and matches user input, disable **Use AI Agent NLU Thresholds** and adjust the **Min score threshold** and **Target match** score using the slider, ensuring that it aligns with your desired performance thresholds.
 
@@ -147,7 +157,9 @@ Recommended default: 20%
 
 The weight assigned to the reranker, which performs an additional analysis pass on the initial results to improve ranking quality. Set to 0% (or leave null in the Score Calculator) if you do not want to use the reranker.
 
-> **Info:** The values you set on the **Search Balance** slider are synchronized with the **Score Calculator** strategy in **Advanced Settings**. Any change in one is reflected in the other.
+{% hint style="info" %}
+**Info:** The values you set on the **Search Balance** slider are synchronized with the **Score Calculator** strategy in **Advanced Settings**. Any change in one is reflected in the other.
+{% endhint %}
 
 After configuring the General Settings, click **Save**.
 

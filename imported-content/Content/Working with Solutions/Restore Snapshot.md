@@ -5,7 +5,9 @@ title: "Restore Snapshot"
 <a id="RestoreSnapshot"></a>
 
 
-> **NOTE:** Restoring a solution snapshot overwrites the current elements included in the solution with the ones from the snapshot.
+{% hint style="info" %}
+**NOTE:** Restoring a solution snapshot overwrites the current elements included in the solution with the ones from the snapshot.
+{% endhint %}
 
 To restore a snapshot, follow these steps:
 

@@ -34,6 +34,8 @@ Using the Connector Designer, you can define the integration actions and tasks:
 
 You can add as many SQL connector actions as best suit your integration needs.
 
-> **NOTE:**  A Connector Action represents a set of one or more integration tasks, which run sequentially and use the same request and response entities.
+{% hint style="info" %}
+**NOTE:**  A Connector Action represents a set of one or more integration tasks, which run sequentially and use the same request and response entities.
+{% endhint %}
 
 You will define the AD query in the dedicated AD Integration task.

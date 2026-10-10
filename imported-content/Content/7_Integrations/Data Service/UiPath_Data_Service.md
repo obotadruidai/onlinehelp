@@ -80,13 +80,15 @@ The Confirm Export pop-up appears.
 
 DRUID downloads all entities existing on your tenant as a JSON file containing the entities metadata. The file is saved on your local machine in the default download folder.
 
-> **NOTE:** If you have mapped UiPath entities to existing DRUID entities, the JSON file will contain the schema of the UiPath entity and not the schema of the mapped DRUID entity.
->
-> For example, I have the UiPath entity, **CardStatus** mapped to DRUID entity, **CardStatus**.  The JSON file sill contain the schema of the UiPath entity (with fields: **ChoiceSetId** and **ChoiceSetName**).
->
-> ![](../../Resources/Images/UiPath%20Data/UiPath%20Data%20Service_4.png)
->
-> ![](../../Resources/Images/UiPath%20Data/UiPath%20Data%20Service_5.png)
+{% hint style="info" %}
+**NOTE:** If you have mapped UiPath entities to existing DRUID entities, the JSON file will contain the schema of the UiPath entity and not the schema of the mapped DRUID entity.
+
+For example, I have the UiPath entity, **CardStatus** mapped to DRUID entity, **CardStatus**.  The JSON file sill contain the schema of the UiPath entity (with fields: **ChoiceSetId** and **ChoiceSetName**).
+
+![](../../Resources/Images/UiPath%20Data/UiPath%20Data%20Service_4.png)
+
+![](../../Resources/Images/UiPath%20Data/UiPath%20Data%20Service_5.png)
+{% endhint %}
 
 You may import the file in your UiPath Data Service tenant with the click of a button. For information on how to import schema, see [UiPath documentation](mailto:https://docs.uipath.com/data-service/docs/schema-export-and-import).
 

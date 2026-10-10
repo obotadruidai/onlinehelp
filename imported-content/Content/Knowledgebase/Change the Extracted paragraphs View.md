@@ -17,4 +17,6 @@ Revert to the clean, single-panel view at any time by clicking the **View: Dialo
 
 ![](../Resources/Images/druid%209.26/split%20button.png)
 
-> **Info:** Your preferred layout is preserved while navigating between Knowledge Base data sources during the current browser session.
+{% hint style="info" %}
+**Info:** Your preferred layout is preserved while navigating between Knowledge Base data sources during the current browser session.
+{% endhint %}

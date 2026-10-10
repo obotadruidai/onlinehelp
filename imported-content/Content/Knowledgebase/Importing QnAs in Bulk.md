@@ -7,7 +7,9 @@ title: "Importing QnAs in Bulk"
 
 This feature works with collections of QnA sets, using template-based import/export of the QnA sets from/to the current solution in Excel file format.
 
-> **IMPORTANT!**  The upload process will **REPLACE** the matching QnAs for this AI Agent and solution with those in the excel file. The other non-matching QnAs will not be affected by the upload. Make sure that you download a copy of the existing train set before processing. To do so, click the **Download** button and click **DownloadTrainSet**. Based on your browser settings, the file is either automatically saved to your default Download folder or you need to save it.
+{% hint style="warning" %}
+**IMPORTANT!**  The upload process will **REPLACE** the matching QnAs for this AI Agent and solution with those in the excel file. The other non-matching QnAs will not be affected by the upload. Make sure that you download a copy of the existing train set before processing. To do so, click the **Download** button and click **DownloadTrainSet**. Based on your browser settings, the file is either automatically saved to your default Download folder or you need to save it.
+{% endhint %}
 
 You can import a new set of KB articles or update the existing one.
 
@@ -37,7 +39,9 @@ Example:
 
 When the import is successful, you can close the pop-up.
 
-> **NOTE:** After the import, you need to train the AI Agent.
+{% hint style="info" %}
+**NOTE:** After the import, you need to train the AI Agent.
+{% endhint %}
 
 <a id="UpdatingexistingsetofQnAs"></a>
 
@@ -65,4 +69,6 @@ Example:
 
 9. Click **Ok** and retry.
 
-> **NOTE:** After the import, you need to train the AI Agent.
+{% hint style="info" %}
+**NOTE:** After the import, you need to train the AI Agent.
+{% endhint %}

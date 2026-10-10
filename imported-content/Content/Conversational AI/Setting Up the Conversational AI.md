@@ -18,7 +18,9 @@ Click the Providers section header. Based on the model you want to use, from the
 
 Click the **Save** button.
 
-> **NOTE:** The settings in the NLP Configurations page will overwrite the settings done on the AI Agent details page.
+{% hint style="info" %}
+**NOTE:** The settings in the NLP Configurations page will overwrite the settings done on the AI Agent details page.
+{% endhint %}
 
 <a id="UsingtheDRUIDNLP"></a>
 
@@ -57,7 +59,9 @@ If you want to add NLP experimental parameters, tap on **Add experimental parame
 
 Test the NLP model. Write the phrase you want to test (the intent), then click on **Test** and choose the corresponding language. The Conversational AI will return the matching flow (as it would do during a conversation), together with the matching score for that intent. It is a feedback tool for improving the NLP model.
 
-> **NOTE:** The testing functionality only works for trained models!
+{% hint style="info" %}
+**NOTE:** The testing functionality only works for trained models!
+{% endhint %}
 
 Train the NLP model by clicking the **Train** button The training model includes ALL training phrases defined on ALL flows associated with the respective AI Agent.
 
@@ -119,13 +123,17 @@ Sentiment analysis is done based on the provided positive and negative keywords.
 
 In the NLU Configurations page, click the **Sentiment** tab. Enter positive and negative words per AI Agent language and click the **Save** button to save the settings.
 
-> **Info:** The current sentiment analysis feature is an intermediary version. Semantic NLU sentiment analysis will be available soon.
+{% hint style="info" %}
+**Info:** The current sentiment analysis feature is an intermediary version. Semantic NLU sentiment analysis will be available soon.
+{% endhint %}
 
 #### Enable language detection
 
 DRUID is capable of detecting any language change in the conversation prior triggering the **Intent not found** flow, covering the cases when the user types something in another language than the default language of the AI Agent. It does not include the cases when the user changes the conversation language using the snippet's Language option.
 
-> **NOTE:** The user can change the current language in conversation in either the idle state, or inside a flow. In the second situation, the current flow gets canceled.
+{% hint style="info" %}
+**NOTE:** The user can change the current language in conversation in either the idle state, or inside a flow. In the second situation, the current flow gets canceled.
+{% endhint %}
 
 To enable language detection, do the following steps:
 
@@ -134,7 +142,9 @@ To enable language detection, do the following steps:
 2. Click on the **Language Detection** tab.
 3. Tap on **Language Detection**. The **Threshold** field becomes editable.
 4. In the **Threshold** field, enter a value (we recommend setting the threshold to 90). Whenever the threshold is reached, the selected **Language Changed Flow** will be triggered.
-> **NOTE:** Only the texts that are detected in another language with a probability greater than the threshold will be taken into consideration.
+{% hint style="info" %}
+**NOTE:** Only the texts that are detected in another language with a probability greater than the threshold will be taken into consideration.
+{% endhint %}
 
 ![](../Resources/Images/NLU/language%20detection.png)
 

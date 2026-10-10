@@ -7,7 +7,9 @@ title: "Advanced Settings JSON"
 
 The Advanced Settings JSON allows you to configure advanced Knowledge Base (KB) settings.
 
-> **IMPORTANT!**  Incorrectly modifying the JSON structure may cause extraction failures during runtime. To prevent issues, avoid making structural changes.
+{% hint style="warning" %}
+**IMPORTANT!**  Incorrectly modifying the JSON structure may cause extraction failures during runtime. To prevent issues, avoid making structural changes.
+{% endhint %}
 
 This field is particularly useful for adding new elements to collections, making them available in the Advanced Settings UI. You can use it to:
 
@@ -17,4 +19,6 @@ This field is particularly useful for adding new elements to collections, making
 
 For experienced users, additional parameters can be adjusted to fine-tune KB behavior. However, changes should be made carefully to avoid disrupting functionality.
 
-> **NOTE:** This action is irreversible and will impact all customized generative endpoints settings and credentials.
+{% hint style="info" %}
+**NOTE:** This action is irreversible and will impact all customized generative endpoints settings and credentials.
+{% endhint %}

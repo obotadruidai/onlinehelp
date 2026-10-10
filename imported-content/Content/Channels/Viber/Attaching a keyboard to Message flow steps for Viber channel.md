@@ -5,7 +5,9 @@ title: "Attaching a keyboard to Message Steps for Viber Channel"
 <a id="AttachingakeyboardtoMessageStepsforViberChannel"></a>
 
 
-> **NOTE:** This feature is available in DRUID 5.3 and higher.
+{% hint style="info" %}
+**NOTE:** This feature is available in DRUID 5.3 and higher.
+{% endhint %}
 
 Viber Chat Bot API allows sending a custom keyboard with each message, to supply the user with a set of predefined replies or actions.
 
@@ -15,7 +17,9 @@ While [Viber documentation](https://developers.viber.com/docs/tools/keyboards/) 
 
 First, in Notepad++ or another text file tool, design the keyboard by defining the "keyboard" object.
 
-> **NOTE:** Set keyboard parameters to static values as setting up keyboard parameters to values stored in DRUID entity fields is not working.
+{% hint style="info" %}
+**NOTE:** Set keyboard parameters to static values as setting up keyboard parameters to values stored in DRUID entity fields is not working.
+{% endhint %}
 
 **"keyboard" object example**
 

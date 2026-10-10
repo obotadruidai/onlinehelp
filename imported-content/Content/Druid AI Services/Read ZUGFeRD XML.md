@@ -7,7 +7,9 @@ title: "Read ZUGFeRD XML"
 
 The Read ZUGFeRD XML endpoint allows users to extract structured invoice data from a ZUGFeRD-compliant XML document. This endpoint processes the provided XML file and returns key invoice details, such as invoice number, buyer and seller information, payment references, and itemized trade line data. It helps automate invoice handling and integration into financial or ERP systems.
 
-> **NOTE:**  This feature is available in DRUID 8.9 and higher. To use this Druid Vision service, you must have at least one Identity Vision API service enabled for your tenant. If not, please contact [Druid Tech Support](<mailto:support@druidai.com?subject=Request: Activate Druid Vision service IdentityCard>).
+{% hint style="info" %}
+**NOTE:**  This feature is available in DRUID 8.9 and higher. To use this Druid Vision service, you must have at least one Identity Vision API service enabled for your tenant. If not, please contact [Druid Tech Support](<mailto:support@druidai.com?subject=Request: Activate Druid Vision service IdentityCard>).
+{% endhint %}
 
 <a id="Request"></a>
 

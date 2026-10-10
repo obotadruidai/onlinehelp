@@ -32,13 +32,19 @@ If your endpoint contains path parameters, represented through curly braces {par
 
 Use the Headers tab and table to add specific keys expected by the API in the Header section, typically to provide additional metadata about the operation you are performing.
 
-> **NOTE:** Usually the API headers contain authorization parameters. For security reasons, the DRUID platform provides you with a custom authentication method in Apps settings, which If done properly automatically adds the security context on the headers of all the integration calls, even if not visible in the Druid AI Platform. Username, passwords or keys defined in Apps settings are encrypted. So, there is no need for you to add the security context here.
+{% hint style="info" %}
+**NOTE:** Usually the API headers contain authorization parameters. For security reasons, the DRUID platform provides you with a custom authentication method in Apps settings, which If done properly automatically adds the security context on the headers of all the integration calls, even if not visible in the Druid AI Platform. Username, passwords or keys defined in Apps settings are encrypted. So, there is no need for you to add the security context here.
+{% endhint %}
 
-> **NOTE:** If your integration task uses an OAuth2 app, then in the Header of the request, the request will inherit the header key(s) configured on the Sign in action that was set on the OAuth2 app. The Header, however, can be modified for each integration, specifically. An example is shown in the figure below.
->
-> ![](../../Resources/Images/Oauth%202_FINAL/Configuring%20OAuth%20v2%20Authorization_17.png)
+{% hint style="info" %}
+**NOTE:** If your integration task uses an OAuth2 app, then in the Header of the request, the request will inherit the header key(s) configured on the Sign in action that was set on the OAuth2 app. The Header, however, can be modified for each integration, specifically. An example is shown in the figure below.
 
-> **Info:** If you're using Postman to test a third-party API and you're looking at Postman requests and responses to accommodate DRUID integrations, make sure that you ignore the headers Postman automatically generates based on your request selections and settings, e.g., Host, User-Agent, Accept, Accept-Encoding and Connection.
+![](../../Resources/Images/Oauth%202_FINAL/Configuring%20OAuth%20v2%20Authorization_17.png)
+{% endhint %}
+
+{% hint style="info" %}
+**Info:** If you're using Postman to test a third-party API and you're looking at Postman requests and responses to accommodate DRUID integrations, make sure that you ignore the headers Postman automatically generates based on your request selections and settings, e.g., Host, User-Agent, Accept, Accept-Encoding and Connection.
+{% endhint %}
 
 <a id="MakerequestusingBody"></a>
 
@@ -77,7 +83,9 @@ By default, the Druid AI Platform generates a flat JSON object with the fields y
 
 If you have a object in object data structure to send within the body (Body tab), you can use field mapping on level one and child mapping to indent fields and make a nested JSON objects data structure.
 
-> **NOTE:** Prior to using field mapping, make sure that you created the needed DRUID entities and fields and the relationships between the entities. If the request data is has an object in object data structure, your DRUID entities should reflect the structure of all objects (parent object and subsequent child objects). In this regard, make sure that you properly create DRUID entities and their relationships. For more information about entities, see [Entities](../../5_Entities/AI%20Agent%20Informational%20Model.md).
+{% hint style="info" %}
+**NOTE:** Prior to using field mapping, make sure that you created the needed DRUID entities and fields and the relationships between the entities. If the request data is has an object in object data structure, your DRUID entities should reflect the structure of all objects (parent object and subsequent child objects). In this regard, make sure that you properly create DRUID entities and their relationships. For more information about entities, see [Entities](../../5_Entities/AI%20Agent%20Informational%20Model.md).
+{% endhint %}
 
 If your REST API endpoint expects data as collection, you have to set your request as a collection, as follows:
 
@@ -157,13 +165,17 @@ If you’ve properly set the data structure in DRUID (DRUID entities, their fiel
 
 1. Map the fields of the root (level 0) object (in our example, [[Offer]]).
 2. On the row where you map a field of type entity list, in the column DruidChildMappingCode, enter a unique identifier for the child mapping (child object mapping).
-> **NOTE:**  Use a unique identifier for the child object on the parent object; otherwise, the integration task publishing will fail.
->
-> ![](../../Resources/Images/How%20to%20map/How%20to%20map%20fields%20for%20object_4.png)
+{% hint style="info" %}
+**NOTE:**  Use a unique identifier for the child object on the parent object; otherwise, the integration task publishing will fail.
 
-> **NOTE:** To send a decimal value, enclose it in square brackets (e.g., [2.1]).
->
-> ![](../../Resources/Images/DRUID%208.15/decimal%20value.png)
+![](../../Resources/Images/How%20to%20map/How%20to%20map%20fields%20for%20object_4.png)
+{% endhint %}
+
+{% hint style="info" %}
+**NOTE:** To send a decimal value, enclose it in square brackets (e.g., [2.1]).
+
+![](../../Resources/Images/DRUID%208.15/decimal%20value.png)
+{% endhint %}
 
 3. Click the ![](../../Resources/Images/How%20to%20map/How%20to%20map%20fields%20for%20object_5.png) button.
 4. In the **NameOfChildMapping** field, enter the unique identifier you provided when mapping its parent object (in our case, “child1)”.
@@ -201,7 +213,9 @@ Select **CustomCode** when you need to construct a request JSON payload dynamica
 
 Rather than maintaining a separate Custom Code task prior to the REST request, you can script the payload logic directly within the REST request code editor. Write JavaScript code to construct the required JSON object, convert it to a string on the request entity, and assign it to **RestContext.RequestBody**.
 
-> **Info:** Custom Code is available on REST requests starting with Druid 9.28.
+{% hint style="info" %}
+**Info:** Custom Code is available on REST requests starting with Druid 9.28.
+{% endhint %}
 
 <a id="Example"></a>
 
@@ -293,7 +307,9 @@ To configure a cookie for a REST call:
 
 ![](../../Resources/Images/rest/map%20cookie.png)
 
-> **Info:** The domain name for the cookie is automatically pulled from the request’s Base URL.
+{% hint style="info" %}
+**Info:** The domain name for the cookie is automatically pulled from the request’s Base URL.
+{% endhint %}
 
 ## Related Topics
 

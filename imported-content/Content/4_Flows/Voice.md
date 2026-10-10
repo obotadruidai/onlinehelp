@@ -20,7 +20,9 @@ The **Speak message** fields fully support Speech Synthesis Markup Language (SSM
 
 By leveraging SSML, you can control aspects of speech synthesis such as pitch, pronunciation, speaking rate, volume, and conversational styles (e.g., cheerful, empathetic).
 
-> **Info:** SMML support is available starting with Druid 9.25.
+{% hint style="info" %}
+**Info:** SMML support is available starting with Druid 9.25.
+{% endhint %}
 
 When writing SSML inside a **Speak message** field, you must wrap your text in the standard `<speak>` root element and define the appropriate namespace attributes required by your provider.
 
@@ -72,7 +74,9 @@ If supported by your Azure Neural Voice profile, use the `<mstts:express-as>` ta
 </speak>
 ```
 
-> **NOTE:** Ensure that the `xml:lang` attribute and the `<voice name="...">` tag explicitly match the voice profile and region configured in your channel's Text-to-Speech settings. For an exhaustive breakdown of supported voice tags, styles, and advanced synthesis configurations, refer to the [Microsoft Azure SSML Documentation](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/speech-synthesis-markup).
+{% hint style="info" %}
+**NOTE:** Ensure that the `xml:lang` attribute and the `<voice name="...">` tag explicitly match the voice profile and region configured in your channel's Text-to-Speech settings. For an exhaustive breakdown of supported voice tags, styles, and advanced synthesis configurations, refer to the [Microsoft Azure SSML Documentation](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/speech-synthesis-markup).
+{% endhint %}
 
 ## Related Topics
 

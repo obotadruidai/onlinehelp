@@ -44,7 +44,9 @@ You can manage NLU data externally by using the **Export** and **Import** button
 
 ![](../Resources/Images/Evaluating%20Bot%20Training%20Model/export%20buttons.png)
 
-> **NOTE:** Starting with Druid version 9.20, access to the export/import features is governed by specific access permissions. To use these tools, your administrator must grant you the 'Export conversation history' permission.
+{% hint style="info" %}
+**NOTE:** Starting with Druid version 9.20, access to the export/import features is governed by specific access permissions. To use these tools, your administrator must grant you the 'Export conversation history' permission.
+{% endhint %}
 
 <a id="ExportingConversationHistory"></a>
 

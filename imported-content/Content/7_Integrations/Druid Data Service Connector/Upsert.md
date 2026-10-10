@@ -9,7 +9,9 @@ The Upsert Entity integration task combines the functionality of both the Update
 
 Based on the identifying key(s), if a record already exists, it will be updated with new values; if not, a new record will be inserted.
 
-> **NOTE:** This integration task is available in DRUID 7.7 and higher.
+{% hint style="info" %}
+**NOTE:** This integration task is available in DRUID 7.7 and higher.
+{% endhint %}
 
 The Edit Connector Task page appears by default on the **General** tab. Provide a brief relevant description of the task. Optionally, include a comment for internal reference.
 
@@ -22,10 +24,14 @@ The Edit Connector Task page appears by default on the **General** tab. Provid
 Click the **Request** tab and configure the request:
 
 1. Select the integration context. To perform the integration task within the context of the Request entity set on the connector action leave the **Scope** field set to **Global**. If performing the task on a context different from the global context set on the connector action, select Local. From the **Request entity** field, choose the desired entity.
-> **Info:**  Using **Local** scope allows direct queries within the connector action, eliminating the need for additional queries in the Flow Designer to build a larger context.
+{% hint style="info" %}
+**Info:**  Using **Local** scope allows direct queries within the connector action, eliminating the need for additional queries in the Flow Designer to build a larger context.
+{% endhint %}
 
 2. Choose the list you want to update from the **Batch execution entity list** field.
-> **NOTE:** Starting with Druid 9.17, **Upsert** is also supported for single records — when no **Batch execution entity list** is selected, Druid checks the database against the individual records in the request entity using the defined common key (**Common entity field**), updating existing records or inserting new ones as needed.
+{% hint style="info" %}
+**NOTE:** Starting with Druid 9.17, **Upsert** is also supported for single records — when no **Batch execution entity list** is selected, Druid checks the database against the individual records in the request entity using the defined common key (**Common entity field**), updating existing records or inserting new ones as needed.
+{% endhint %}
 
 3. From the **Common entity field** field, select the identifying key used to search if records exist in the database or within the third-party tool.
 4. Choose the entity fields to be mapped on the request. To map all entity fields existing on the request entity, tap on **Map All Fields**. To map only specific entity fields in the request, tap off **Map All Fields** and select the desired entity fields.
@@ -100,6 +106,8 @@ Use the connector task on desired flow step(s) or conversational business applic
 
 ## Test the integration task
 
-> **NOTE:** In order to test the Update entity task, you first need to test the Add entity task and from the **TestResult** copy the value of the entity record **Id**.
+{% hint style="info" %}
+**NOTE:** In order to test the Update entity task, you first need to test the Add entity task and from the **TestResult** copy the value of the entity record **Id**.
+{% endhint %}
 
 To test the Update entity integration task, click the **Test** tab. In the RequestEntity, provide the **Id** of the entity record you copied from the TestResult of the Add entity task and click the **Test** button (![](../../Resources/Images/Druid%20Data%20Service%20Connector/Add%20Entity_8.png)).

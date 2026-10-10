@@ -61,9 +61,13 @@ After the channel's activation, the following fields are available in Druid:
 
 Once you have finalized the WebChat configuration, copy the code from the **WebChat snippet** field and embed it into the HTML of your website hosting the AI Agent. Ensure the script is placed within the appropriate tags of your HTML web page (**<head> </head>**and **<body> </body>** tags) to initialize the chat component.
 
-> **NOTE:** Do not change anything in the snippet, otherwise the webchat might not be properly embedded into the hosting page(s).
+{% hint style="info" %}
+**NOTE:** Do not change anything in the snippet, otherwise the webchat might not be properly embedded into the hosting page(s).
+{% endhint %}
 
-> **Info:** If you don’t see the changes on your website, you clear the cache or exit the incognito mode (if browsing in incognito mode).
+{% hint style="info" %}
+**Info:** If you don’t see the changes on your website, you clear the cache or exit the incognito mode (if browsing in incognito mode).
+{% endhint %}
 
 The default snippet contains:
 
@@ -79,9 +83,11 @@ The default snippet contains:
 
 ![](../../Resources/Images/WebChat/css%20screen%203.png)
 
-> **IMPORTANT!** If the default snippet does not display the 3 components make sure that you disable **Single-line initialization**.
->
-> ![](../../Resources/Images/WebChat/sinle%20line.png)
+{% hint style="warning" %}
+**IMPORTANT!** If the default snippet does not display the 3 components make sure that you disable **Single-line initialization**.
+
+![](../../Resources/Images/WebChat/sinle%20line.png)
+{% endhint %}
 
 ## Related Topics
 

@@ -9,7 +9,9 @@ WeChat is a widely used messaging application. It’s also the only messaging ap
 
 To make it easy for your consumers to make purchases and get answers to questions using WeChat, the messaging channel they already use every day, DRUID authors can integrate AI Agents with WeChat. This way, customers will be able to start a conversation with your AI Agent in WeChat.
 
-> **NOTE:** DRUID currently supports only image uploads from WeChat (no image downloads). The supported image formats are .jpg, .jpeg and .png.
+{% hint style="info" %}
+**NOTE:** DRUID currently supports only image uploads from WeChat (no image downloads). The supported image formats are .jpg, .jpeg and .png.
+{% endhint %}
 
 This section describes how to integrate your AI Agent with the WeChat channel.
 

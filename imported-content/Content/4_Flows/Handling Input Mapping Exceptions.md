@@ -17,9 +17,13 @@ Druid addresses four types of exceptions, which are treated independently at run
 - **Internal Action Error** – There is an internal action on the flow step that throws an exception or returns false.
 - **Exceeded number of input mapping attempts** – The number of input attempts was reached or file uploads with text from user input has failed.
 - **Uploaded file type not supported** – The user uploaded a file with extension other than the supported file extentions: .pdf, .png, .jpg, .jpeg, .doc, .docx, .xls, .xlsx, .odt, .ods, .tiff, .tif, .mp3, .mp4, .mkv, .webm, .txt, .json and .csv.
-> **NOTE:**  For mobile channels (e.g., MS Teams on mobile), when uploading an image in the chat, the image extension is automatically changed to .png. The antimalware check allows a mismatch between the file extension .png and the following file signatures: jpg, png, jpeg, tif, tiff and bmp.
+{% hint style="info" %}
+**NOTE:**  For mobile channels (e.g., MS Teams on mobile), when uploading an image in the chat, the image extension is automatically changed to .png. The antimalware check allows a mismatch between the file extension .png and the following file signatures: jpg, png, jpeg, tif, tiff and bmp.
+{% endhint %}
 
-> **IMPORTANT!** Set Variable error will NOT raise an exception; they will remain “silent” errors allowing the flow to continue its defined execution, but logging the errors in Conversation History.
+{% hint style="warning" %}
+**IMPORTANT!** Set Variable error will NOT raise an exception; they will remain “silent” errors allowing the flow to continue its defined execution, but logging the errors in Conversation History.
+{% endhint %}
 
 <a id="Howitworks"></a>
 
@@ -37,7 +41,9 @@ On a flow step with input mapping or file upload steps, you can set the number o
 
 ![](../Resources/Images/Exception%20handling%20in%20Flow%20Steps/Exception%20Handling%20on%20Flow_3.png)
 
-> **IMPORTANT!** For flow steps with input mapping and exception handler active, when none of the Exception child steps conditions is met, DRUID will trigger the special flow ExceptionFlowId set on the AI Agent (AI Agent Details > Special Flows).
+{% hint style="warning" %}
+**IMPORTANT!** For flow steps with input mapping and exception handler active, when none of the Exception child steps conditions is met, DRUID will trigger the special flow ExceptionFlowId set on the AI Agent (AI Agent Details > Special Flows).
+{% endhint %}
 
 <a id="Howtohandleexceptionsonflowstepswithinputmapping"></a>
 

@@ -20,7 +20,9 @@ You can initiate a Druid conversation through the API `/api/Druid/{botId}/StartF
 
 The StartFlow API starts a DRUID flow and transmits any specified data within the conversation context through the request body.
 
-> **IMPORTANT!** The AI Agent triggers the flow on the specified channel only when the user has initiated a conversation with the AI Agent on that same channel.
+{% hint style="warning" %}
+**IMPORTANT!** The AI Agent triggers the flow on the specified channel only when the user has initiated a conversation with the AI Agent on that same channel.
+{% endhint %}
 
 <a id="Syntax"></a>
 
@@ -42,9 +44,11 @@ Remember to include the bearer token in the **Authorization** section of your re
 
 ![](../Resources/Images/startflow/authorization.png)
 
-> **Info:** For DRUID version prior to 7.7, get the token corresponding to the 'Druid.Endpoints' from **Administration** > **Druid Services**.
->
-> ![](../Resources/Images/druid%207.7/druid%20serv%20endpoint.png)
+{% hint style="info" %}
+**Info:** For DRUID version prior to 7.7, get the token corresponding to the 'Druid.Endpoints' from **Administration** > **Druid Services**.
+
+![](../Resources/Images/druid%207.7/druid%20serv%20endpoint.png)
+{% endhint %}
 
 <a id="RequestBody"></a>
 

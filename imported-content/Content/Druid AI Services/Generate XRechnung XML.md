@@ -9,7 +9,9 @@ The generate-xrechnung-xml endpoint allows you to generate an XRechnung-complian
 
 This API converts the invoice details, including buyer, seller, tax information, and trade line items, into a valid Cross Industry Invoice XML document. The generated XML file follows the XRechnung format, ensuring compliance with regulatory requirements and facilitating automated invoice processing.
 
-> **NOTE:**  This feature is available in DRUID 8.9 and higher. To use this Druid Vision service, you must have at least one Identity Vision API service enabled for your tenant. If not, please contact [Druid Tech Support](<mailto:support@druidai.com?subject=Request: Activate Druid Vision service IdentityCard>).
+{% hint style="info" %}
+**NOTE:**  This feature is available in DRUID 8.9 and higher. To use this Druid Vision service, you must have at least one Identity Vision API service enabled for your tenant. If not, please contact [Druid Tech Support](<mailto:support@druidai.com?subject=Request: Activate Druid Vision service IdentityCard>).
+{% endhint %}
 
 <a id="Request"></a>
 

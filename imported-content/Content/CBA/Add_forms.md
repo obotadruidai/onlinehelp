@@ -9,7 +9,9 @@ Forms allow you to display and manipulate entity record data. Authors can create
 
 The first form you create for an entity is automatically set as the default form. You can change the default form at any time. The default form will be used when creating or editing entity records.
 
-> **Info:** To automatically generate a form that retrieves data from DRUID Data Services, use the CRUD Template. Applying the CRUD Template to entity integrations automatically creates a default view and form, preconfigured with the necessary integrations. For more details, see [CRUD Template](Entity%20Data%20Integration.md).
+{% hint style="info" %}
+**Info:** To automatically generate a form that retrieves data from DRUID Data Services, use the CRUD Template. Applying the CRUD Template to entity integrations automatically creates a default view and form, preconfigured with the necessary integrations. For more details, see [CRUD Template](Entity%20Data%20Integration.md).
+{% endhint %}
 
 Follow these steps to create a form for an entity:
 

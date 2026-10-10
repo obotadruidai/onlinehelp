@@ -53,7 +53,9 @@ Go to the Solutions Library, search for solution **Knowledge Base with GPT** and
 
 ### Step 2. Set up your Openai API Key
 
-> **NOTE:**  Charges apply to your Openai account according to the [Openai pricing policy](https://openai.com/pricing).
+{% hint style="info" %}
+**NOTE:**  Charges apply to your Openai account according to the [Openai pricing policy](https://openai.com/pricing).
+{% endhint %}
 
 1. Go to [Openai](https://platform.openai.com/account/api-keys), log in and on the **User** menu, click **API Keys**.
 2. In the API keys page, click the **Create new secret key** button.

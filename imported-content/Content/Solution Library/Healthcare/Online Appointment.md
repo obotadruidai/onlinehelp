@@ -37,7 +37,9 @@ In Druid Portal:
 
 #### <a id="Step_1:_Configure_bot"></a>Step 1: Configure the AI Agent
 
-> **NOTE:** Healthcare default language is set to EN-US and additional language is set to RO. If you want to add additional languages on Healthcare, make sure to add the language of choice as additional AI Agent language and add the according training phrases, synonyms and conditions.
+{% hint style="info" %}
+**NOTE:** Healthcare default language is set to EN-US and additional language is set to RO. If you want to add additional languages on Healthcare, make sure to add the language of choice as additional AI Agent language and add the according training phrases, synonyms and conditions.
+{% endhint %}
 
 To configure the AI Agent for Healthcare, you need to set special flows and configure the connection strings.
 
@@ -61,7 +63,9 @@ Victor provides you with a wide range of apps for integration with various syste
 | [Apps\_Healthcare](#SQL-DB_Configuration) | SQL | Your Database. | Connects Druid to your DB. | Yes |
 | [send\_email](#UiPathDruidsoft1_Configuration) | Email | Your SMTP / SendGrid server | After appointment validation, an email with all the information is sent to the user | No |
 
-> **NOTE:** To run the Retail setup flow, you only need to set up the SQL app.
+{% hint style="info" %}
+**NOTE:** To run the Retail setup flow, you only need to set up the SQL app.
+{% endhint %}
 
 For information on how to set the connection strings, click on the configuration section specific to the app you want to set:
 
@@ -116,7 +120,9 @@ In the pop-up that appears, click the **Train** button.
 
 After a few seconds, the Status **Trained** should appear in the pop-up:
 
-> **NOTE:**  If the train status message does not appear, you might want to check you have properly configured the corresponding Druid app.
+{% hint style="info" %}
+**NOTE:**  If the train status message does not appear, you might want to check you have properly configured the corresponding Druid app.
+{% endhint %}
 
 After you successfully train the entities, click **Save** button.
 
@@ -128,4 +134,6 @@ Click the **Details** tab, and then click the NLP section header. The NLP area e
 
 ![](../../Resources/Images/solution%20templates/Cristina/train%20bot.png)
 
-> **NOTE:**  It might take a few minutes for the NLP training to complete, so you might need to wait for Druid to finish training all AI Agent entities that have NLP enabled (NLP=true).
+{% hint style="info" %}
+**NOTE:**  It might take a few minutes for the NLP training to complete, so you might need to wait for Druid to finish training all AI Agent entities that have NLP enabled (NLP=true).
+{% endhint %}

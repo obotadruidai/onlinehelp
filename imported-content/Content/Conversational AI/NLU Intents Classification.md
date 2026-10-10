@@ -7,7 +7,9 @@ title: "NLU Intents Classification"
 
 Configure how the system identifies user intents based on input text. You can choose between multiple classification models, depending on your use case and accuracy requirements.
 
-> **NOTE:** Starting with Druid 9.20, the configuration for intent classification has been moved to a dedicated interface for better accessibility and management. This replaces the previous method of configuring the **NLU.NER.Classification.ModelType** parameter within the **Thresholds and parameters** section.
+{% hint style="info" %}
+**NOTE:** Starting with Druid 9.20, the configuration for intent classification has been moved to a dedicated interface for better accessibility and management. This replaces the previous method of configuring the **NLU.NER.Classification.ModelType** parameter within the **Thresholds and parameters** section.
+{% endhint %}
 
 <a id="AccessingIntentClassificationSettings"></a>
 
@@ -27,13 +29,19 @@ The **Model Type** dropdown allows you to choose the underlying engine for class
 
 - **Non Semantic** - A standard model that does not consider the semantic meaning of words. It uses traditional keyword and pattern matching.
 - **Semantic** - Uses a pre-trained Transformers model that understands word meaning in context. This model offers higher accuracy and is ideal for large datasets. For more information, see Natural Language Understanding.
-> **NOTE:** All training data must be typos free and must be written with the proper diacritics; otherwise, flow matching might be done erroneously.
+{% hint style="info" %}
+**NOTE:** All training data must be typos free and must be written with the proper diacritics; otherwise, flow matching might be done erroneously.
+{% endhint %}
 
-> **IMPORTANT!** For Druid on premise deployments, semantic-based classification is not available by default and it requires a special environment configuration including infrastructure upgrade to GPU processors. For more information, reach out to [DRUID Support](<mailto:support@druidai.com?subject=Use Semantic classification in on premise deployment>).
+{% hint style="warning" %}
+**IMPORTANT!** For Druid on premise deployments, semantic-based classification is not available by default and it requires a special environment configuration including infrastructure upgrade to GPU processors. For more information, reach out to [DRUID Support](<mailto:support@druidai.com?subject=Use Semantic classification in on premise deployment>).
+{% endhint %}
 
 - **Semantic Torch** - An advanced semantic model optimized for specific NLP performance requirements.
 - **LLM** - Leverages Large Language Models for high-accuracy intent recognition.
-> **NOTE:**  NLU intents classification with LLM currently does not support Named Entity Recognition (NER).
+{% hint style="info" %}
+**NOTE:**  NLU intents classification with LLM currently does not support Named Entity Recognition (NER).
+{% endhint %}
 
 After you select the model, click the save icon next to the dropdown.
 
@@ -69,7 +77,9 @@ Instead of relying solely on manual rules, the LLM determines the correct user i
 
 - Flow Name
 - Description LLM (the technical instructions and context provided for the model)
-> **NOTE:** In Druid versions prior to 9.18, the LLM used the **Description** field (now renamed to **Display Name**) for intent classification. To ensure a seamless transition and maintain classification logic, Druid 9.18 automatically migrated the existing content from the legacy Description field into the new **Description LLM** section.
+{% hint style="info" %}
+**NOTE:** In Druid versions prior to 9.18, the LLM used the **Description** field (now renamed to **Display Name**) for intent classification. To ensure a seamless transition and maintain classification logic, Druid 9.18 automatically migrated the existing content from the legacy Description field into the new **Description LLM** section.
+{% endhint %}
 
 - Training Phrases (the sample utterances mapped to the flow)
 
@@ -106,7 +116,9 @@ If you want to use Druid-dedicated LLM resources, contact your sales representat
 
 ## In Druid 9.11 to Druid 9.19
 
-> **NOTE:** Before you start, make sure you have an LLM resource set up in the Druid Portal. For more information, see [Create LLM Resources](../Governance%20%26%20Security/LLM%20Resource%20Management%20and%20Governance.md).
+{% hint style="info" %}
+**NOTE:** Before you start, make sure you have an LLM resource set up in the Druid Portal. For more information, see [Create LLM Resources](../Governance%20%26%20Security/LLM%20Resource%20Management%20and%20Governance.md).
+{% endhint %}
 
 To configure NLU intents classification with LLM, follow these steps:
 
@@ -137,12 +149,16 @@ The NLU Intents Classification with LLM expands.
 
 ![](../Resources/Images/Conv%20AI/nluw%20iytth%20llm.png)
 
-> **Info:** For other providers, the platform defaults to the standard completion settings compatible with those models.
+{% hint style="info" %}
+**Info:** For other providers, the platform defaults to the standard completion settings compatible with those models.
+{% endhint %}
 
 7. Select **Use Knowledge Base Results** to allow the LLM to use Knowledge Base data for intent classification. When enabled, the system queries the Knowledge Base with the user message and provides the results to the LLM to help identify the most relevant intent.
 8. Select **Disable Ssl Validation** when you configure your own LLM resource and the endpoint uses a self-signed certificate.
 9. For both prompts, click the **Set default** button. The default Druid prompts will be automatically filled in.
-> **Info:** Since this feature is in technology preview, you can experiment with the prompts, provided their **JSON structure remains unchanged**. In an upcoming release, the prompts will become non-editable.
+{% hint style="info" %}
+**Info:** Since this feature is in technology preview, you can experiment with the prompts, provided their **JSON structure remains unchanged**. In an upcoming release, the prompts will become non-editable.
+{% endhint %}
 
 10. Click **Save** to apply the NLU configuration.
 11. Train the AI Agent.
@@ -167,14 +183,20 @@ Click the link that appears in the message below the NLP parameters. The NLU Int
 7. Provide the secret key generated in your generative account.
 8. Specify the generative model name.
 9. If you selected **Google** as **Client Type**, enter the **Location** of the location for a Vertex AI and your Google **Project Id**.
-> **NOTE:** Google Vertex AI is available in DRUID 8.13 and higher.
+{% hint style="info" %}
+**NOTE:** Google Vertex AI is available in DRUID 8.13 and higher.
+{% endhint %}
 
 10. For both prompts, click the **Set default** button. The default DRUID prompts will be automatically filled in.
-> **Info:** Since this feature is in technology preview, you can experiment with the prompts, provided their **JSON structure remains unchanged**. In an upcoming release, the prompts will become non-editable.
+{% hint style="info" %}
+**Info:** Since this feature is in technology preview, you can experiment with the prompts, provided their **JSON structure remains unchanged**. In an upcoming release, the prompts will become non-editable.
+{% endhint %}
 
 11. Click **Save** to apply the NLU configuration.
 12. Train the AI Agent.
 
 Once configured, the model uses the two prompts to classify user intents automatically.
 
-> **IMPORTANT!** When using NLU intents classification with LLM, it’s important to separate natural language training phrases from technical commands. To avoid introducing noise into intent detection, move any technical training phrases—such as exact keywords, system triggers, or command-like inputs — into the Commands section of the respective flow. These phrases will then be matched exactly, without affecting the NLP model's understanding of user intent. Commands are available in DRUID 8.14 and higher.
+{% hint style="warning" %}
+**IMPORTANT!** When using NLU intents classification with LLM, it’s important to separate natural language training phrases from technical commands. To avoid introducing noise into intent detection, move any technical training phrases—such as exact keywords, system triggers, or command-like inputs — into the Commands section of the respective flow. These phrases will then be matched exactly, without affecting the NLP model's understanding of user intent. Commands are available in DRUID 8.14 and higher.
+{% endhint %}

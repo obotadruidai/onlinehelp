@@ -175,7 +175,9 @@ The Hangout Chat API is enabled and the Overview page appears.
 
 ### Step 7. Talk to your AI Agent
 
-> **NOTE:** When a user initiates a conversation with the AI Agent, the Welcome flow will be automatically triggered. Regardless of the user's subscription status to the AI Agent channel, the welcome message will be promptly sent to the user, ensuring a seamless and engaging interaction experience.
+{% hint style="info" %}
+**NOTE:** When a user initiates a conversation with the AI Agent, the Welcome flow will be automatically triggered. Regardless of the user's subscription status to the AI Agent channel, the welcome message will be promptly sent to the user, ensuring a seamless and engaging interaction experience.
+{% endhint %}
 
 You have two options to talk to your AI Agent:
 

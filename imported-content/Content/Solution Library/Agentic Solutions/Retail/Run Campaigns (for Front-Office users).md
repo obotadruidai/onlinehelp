@@ -55,7 +55,9 @@ To create a campaign, follow these steps:
 
 ## Run a campaign
 
-> **NOTE:** Running a campaign sends a notification to all customers who have at least one campaign product in their wish list. Ensure the campaign is marked as active and that all dates are correct before running it.
+{% hint style="info" %}
+**NOTE:** Running a campaign sends a notification to all customers who have at least one campaign product in their wish list. Ensure the campaign is marked as active and that all dates are correct before running it.
+{% endhint %}
 
 Follow these steps to run an existing campaign:
 

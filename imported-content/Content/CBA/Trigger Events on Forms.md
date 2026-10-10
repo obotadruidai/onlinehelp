@@ -9,7 +9,9 @@ You can execute integrations, initiate flows, or perform custom automations base
 
 This functionality allows you to inject custom JavaScript logic directly into form events. This enhances interactivity and automates complex business processes, eliminating the dependency on the Custom Code integration task for form automations.
 
-> **NOTE:** Triggering events on forms without using the standard automations dropdown is available starting with Druid 9.20.
+{% hint style="info" %}
+**NOTE:** Triggering events on forms without using the standard automations dropdown is available starting with Druid 9.20.
+{% endhint %}
 
 <a id="UseCases"></a>
 
@@ -173,11 +175,15 @@ To edit, delete and enable/disable automations defined on a form, in the form Ev
 
 ### <a id="Filter"></a>Filter and update automations on forms
 
-> **NOTE:** This feature is available in Druid 9.13 and higher.
+{% hint style="info" %}
+**NOTE:** This feature is available in Druid 9.13 and higher.
+{% endhint %}
 
 The list of automations defined for a form is automatically available within the Code Editor context. Authors can dynamically control automation visibility on forms and modify specific automation properties using the `context.tools.updateAutomation(automation.id, updatedAutomation)` method combined with standard JavaScript logic.
 
-> **IMPORTANT!** The **automation.id** property is read-only and cannot be modified.
+{% hint style="warning" %}
+**IMPORTANT!** The **automation.id** property is read-only and cannot be modified.
+{% endhint %}
 
 #### Use Cases
 

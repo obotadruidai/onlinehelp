@@ -17,7 +17,9 @@ The Appointments dashboard provides a comprehensive overview of all scheduled ap
 
 ![](../../../../Resources/Images/appointment%20management%20agent/appt%20dashboard.png)
 
-> **Info:** Any chart segment or slice is interactive — clicking on it drills down to the list of records that match the selected item.
+{% hint style="info" %}
+**Info:** Any chart segment or slice is interactive — clicking on it drills down to the list of records that match the selected item.
+{% endhint %}
 
 <a id="ByStatusChart"></a>
 

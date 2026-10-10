@@ -25,7 +25,9 @@ This skill provides a smart way to scale exceptional sales representative experi
 
 ## Configure the skill template
 
-> **NOTE:** Customer 360 default language is set to EN-US and additional language is set to RO. If you want to add additional languages on Customer 360, make sure to add the language of choice as additional AI Agent language and add the according training phrases, synonyms and conditions.
+{% hint style="info" %}
+**NOTE:** Customer 360 default language is set to EN-US and additional language is set to RO. If you want to add additional languages on Customer 360, make sure to add the language of choice as additional AI Agent language and add the according training phrases, synonyms and conditions.
+{% endhint %}
 
 To configure the AI Agent for Customer 360, in Druid Portal:
 
@@ -67,9 +69,11 @@ Make the following settings:
 
 Click **Save and Close**.
 
-> **IMPORTANT!** In order for the AI Agent integration with the apps to be up and running, you need to publish the connector actions. To do so, from the main menu, click **Integrations** and click the **Publish** button.
->
-> ![](../../../Resources/Images/Customer%20360/Customer%20360_1.png)
+{% hint style="warning" %}
+**IMPORTANT!** In order for the AI Agent integration with the apps to be up and running, you need to publish the connector actions. To do so, from the main menu, click **Integrations** and click the **Publish** button.
+
+![](../../../Resources/Images/Customer%20360/Customer%20360_1.png)
+{% endhint %}
 
 <a id="Step3RunSetupFlow"></a>
 
@@ -83,7 +87,9 @@ Click **Done**. If the SQL connection strings are properly set, Customer 360 set
 
 ### Step 4. Select AI Agent Framework Version 4 on the AI Agent
 
-> **IMPORTANT!** If bot framework version 4 is not available on your tenant, please contact [Druid Support](<mailto:support@druidai.com?subject=Activate bot framework v4 on my tenant>) to activate it.
+{% hint style="warning" %}
+**IMPORTANT!** If bot framework version 4 is not available on your tenant, please contact [Druid Support](<mailto:support@druidai.com?subject=Activate bot framework v4 on my tenant>) to activate it.
+{% endhint %}
 
 To allow the AI Agent display the Adaptive Card steps, go to the AI Agent details, click on the General section and from the **Bot Framework Version** field, select **v4**.
 
@@ -97,16 +103,20 @@ Save the AI Agent.
 
 Click the **Details** tab, and then click the NLP section header. The NLP area expands. Scroll down to the Train area and click the **Train** button.
 
-> **NOTE:**  It might take a few minutes for the NLP training to complete, so you might need to wait for Druid to finish training the AI Agent.
+{% hint style="info" %}
+**NOTE:**  It might take a few minutes for the NLP training to complete, so you might need to wait for Druid to finish training the AI Agent.
+{% endhint %}
 
 <a id="SeetheAIAgentinaction"></a>
 
 ## See the AI Agent in action
 
-> **NOTE:** The AI Agent is trained in two languages: RO and EN. If you want to switch between languages, just type the following commands in the snippet:
->
-> - “Romana te rog” if you want to switch from EN to RO.
-> - “English please” if you want to switch from RO to EN.
+{% hint style="info" %}
+**NOTE:** The AI Agent is trained in two languages: RO and EN. If you want to switch between languages, just type the following commands in the snippet:
+
+- “Romana te rog” if you want to switch from EN to RO.
+- “English please” if you want to switch from RO to EN.
+{% endhint %}
 
 | Functionality | Intents (EN) | Intents (RO) |
 | --- | --- | --- |

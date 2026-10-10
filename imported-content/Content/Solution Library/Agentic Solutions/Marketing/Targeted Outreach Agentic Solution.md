@@ -68,7 +68,9 @@ To configure the app connection, follow these steps:
 
 ![](../../../Resources/Images/Agentic%20Campaign%20Management%20v2/Agentic%20Campaign%20Management_4.png)
 
-> **NOTE:** If the DRUID-LLM resource does not appear, contact your sales representative to activate DRUID-dedicated resources for one of the following providers on your tenant: Azure OpenAI, Mistral, or Google.
+{% hint style="info" %}
+**NOTE:** If the DRUID-LLM resource does not appear, contact your sales representative to activate DRUID-dedicated resources for one of the following providers on your tenant: Azure OpenAI, Mistral, or Google.
+{% endhint %}
 
 3. Go to **Solution Contents** > **Apps** and select the **DRUID-LLM** app.
 

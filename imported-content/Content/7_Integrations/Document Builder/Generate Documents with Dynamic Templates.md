@@ -87,7 +87,9 @@ When configuring the integration task, tap on **Use Dynamic Template Name** and 
 
 In the **Dynamic File Name** field, specify the file name of the generated document either hard coded as string (e.g., "Invoice April") or as a value from the context: an entity field (e.g., [[Employee]].Name) or a local variable.
 
-> **NOTE:** If the **Dynamic File Name** field is empty, DRUID will use the template file name as file name of the generated document. This field is available in DRUID 5.14 and higher.
+{% hint style="info" %}
+**NOTE:** If the **Dynamic File Name** field is empty, DRUID will use the template file name as file name of the generated document. This field is available in DRUID 5.14 and higher.
+{% endhint %}
 
 Configure the integration task to store the generated document in a specific entity field (a field of type file created on the request entity) by providing the field name in the **ProjectResultToEntityPath** field on the integration task.
 

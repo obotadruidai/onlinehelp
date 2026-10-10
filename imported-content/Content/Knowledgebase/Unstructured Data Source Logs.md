@@ -7,7 +7,9 @@ title: "Unstructured Data Source Logs"
 
 This section explains how to access the logs for an unstructured data source in Druid. These logs provide valuable insights into the status of crawling, data extraction and data source training, allowing you to ensure your Knowledge Base is populated with high-quality content.
 
-> **NOTE:** The logs are available only for unstructured data sources: website, File repository, SharePoint, Google Drive and network shared drive.
+{% hint style="info" %}
+**NOTE:** The logs are available only for unstructured data sources: website, File repository, SharePoint, Google Drive and network shared drive.
+{% endhint %}
 
 <a id="Accessunstructureddatasourcelogs"></a>
 

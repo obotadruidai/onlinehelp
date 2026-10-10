@@ -14,7 +14,9 @@ You can use the Security Assertion Markup Language (SAML) protocol to authentica
 The SAML protocol allows secure exchange of authentication information between your identity provider and Druid. Here’s a simplified flow:
 
 1. A user clicks a login link in the web chat.
-> **Info:** The login link can be accessed from any Druid-supported channel that can open a web browser.
+{% hint style="info" %}
+**Info:** The login link can be accessed from any Druid-supported channel that can open a web browser.
+{% endhint %}
 
 2. Druid redirects the user to your IDP's authentication endpoint.
 3. The IDP authenticates the user and generates a SAML response.
@@ -68,13 +70,15 @@ To create a sign in with SAML integration, follow these steps:
    The Edit Connector Action page appears on the **General** tab.
 5. Enter a **Description** and from the **Connection Code** drop-down, select the new **SAML app** app you created.
 6. Click on the **Request** tab. The integration Request is responsible for adjusting the SAMLRequest that Druid sends to the IdP. By default, the request is generated, compressed, and URL-encoded, but not signed. If you have advanced XML knowledge, you can customize the XML in the request as needed.
-> **NOTE:** To sign the SAML AuthnRequest that Druid sends to your IdP with a certificate, add the following line to the Request custom code after the AuthnRequest is generated:
->
-> **Sign SAML AuthnRequests**
->
-> ```
-> requestEntity.SamlSsoRequestUrl = App.SignSAMLRequest(requestEntity.SamlSsoRequestUrl, requestId);
-> ```
+{% hint style="info" %}
+**NOTE:** To sign the SAML AuthnRequest that Druid sends to your IdP with a certificate, add the following line to the Request custom code after the AuthnRequest is generated:
+
+**Sign SAML AuthnRequests**
+
+```
+requestEntity.SamlSsoRequestUrl = App.SignSAMLRequest(requestEntity.SamlSsoRequestUrl, requestId);
+```
+{% endhint %}
 
 7. Click on the **Response** tab. The integration Response is responsible for extracting metadata from the SAMLResponse received from the IdP and passing the required information to Druid entities.
 
@@ -115,7 +119,9 @@ At runtime, when the user clicks the link in the chat, Druid redirects them to a
 
 ![](../../Resources/Images/SAML%20AUTH/login%20page.png)
 
-> **NOTE:** The authentication session is valid for 120 seconds from the moment the sign-in link is generated. If the user does not complete the authentication within this window, the Flow Engine will automatically trigger the SSO Timeout exception. This ensures the conversation does not remain in a deadlocked state if the user abandons the process.
+{% hint style="info" %}
+**NOTE:** The authentication session is valid for 120 seconds from the moment the sign-in link is generated. If the user does not complete the authentication within this window, the Flow Engine will automatically trigger the SSO Timeout exception. This ensures the conversation does not remain in a deadlocked state if the user abandons the process.
+{% endhint %}
 
 After the SAML SSO Sign In step, continue with Druid-specific authentication using internal actions such as **SaveIdentifiedUser** and **SaveAuthenticatedUser**. You can configure these either in the next step of the flow or in the PostActions section of the SAML SSO Sign In step.
 
@@ -123,7 +129,9 @@ After the SAML SSO Sign In step, continue with Druid-specific authentication usi
 
 ## Authentication Timeout Management
 
-> **NOTE:** This feature is available in Druid 9.20 and higher.
+{% hint style="info" %}
+**NOTE:** This feature is available in Druid 9.20 and higher.
+{% endhint %}
 
 To prevent the conversation from becoming unresponsive if a user does not complete the sign-in process, the Flow Engine includes an automated timeout mechanism. This ensures the flow does not remain blocked until the user manually selects **Cancel**.
 

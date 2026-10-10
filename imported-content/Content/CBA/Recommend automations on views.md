@@ -44,7 +44,9 @@ Action buttons and icons at the top of views and forms let users trigger recomme
 
 ![](../Resources/Images/druid%208.11/user%20action.png)
 
-> **NOTE:** This feature is available in DRUID 8.11 onwards.
+{% hint style="info" %}
+**NOTE:** This feature is available in DRUID 8.11 onwards.
+{% endhint %}
 
 When creating a new recommended automation or editing an existing one, follow these steps to make it available as a button or icon in the view:
 

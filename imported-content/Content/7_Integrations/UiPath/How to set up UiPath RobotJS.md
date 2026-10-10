@@ -75,8 +75,14 @@ To load a process from Orchestrator on your local machine, follow these steps:
    ![](../../Resources/Images/Running%20UiPath%20Attended%20Processes/How%20to%20set%20up%20UiPath%20RobotJS_5.png)
 5. At the top-right corner of the right editor, click the **Save** icon (![](../../Resources/Images/Running%20UiPath%20Attended%20Processes/How%20to%20set%20up%20UiPath%20RobotJS_3.png)) to save the step configuration.
 
-> **NOTE:** This conversation will be initiated to the same AI Agent user which triggered the UiPath process.
+{% hint style="info" %}
+**NOTE:** This conversation will be initiated to the same AI Agent user which triggered the UiPath process.
+{% endhint %}
 
-> **NOTE:** DRUID stores in the system entity **[[UiPathEvent]]**, the following process related information: EventType, JobId, ErrorMessage, StartTime and EndTime.
+{% hint style="info" %}
+**NOTE:** DRUID stores in the system entity **[[UiPathEvent]]**, the following process related information: EventType, JobId, ErrorMessage, StartTime and EndTime.
+{% endhint %}
 
-> **IMPORTANT!** At first process run, make sure that you [authorize the UiPath Assistant](UiPath%20Assistant%20Authorization.md).
+{% hint style="warning" %}
+**IMPORTANT!** At first process run, make sure that you [authorize the UiPath Assistant](UiPath%20Assistant%20Authorization.md).
+{% endhint %}

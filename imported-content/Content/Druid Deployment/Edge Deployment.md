@@ -19,7 +19,9 @@ Druid supports edge deployment through its containerized, **Kubernetes-based arc
 
 Edge deployments can operate fully standalone or as part of a hybrid architecture, where selected services integrate with centralized cloud components while sensitive data and inference remain local.
 
-> **NOTE:** Edge deployment refers to customer-managed, localized infrastructure deployments (including private data centers and regulated environments) using the same Druid AI Platform architecture as on-premises and hybrid deployments. Edge deployments may operate in restricted or disconnected network environments, subject to customer security policies.
+{% hint style="info" %}
+**NOTE:** Edge deployment refers to customer-managed, localized infrastructure deployments (including private data centers and regulated environments) using the same Druid AI Platform architecture as on-premises and hybrid deployments. Edge deployments may operate in restricted or disconnected network environments, subject to customer security policies.
+{% endhint %}
 
 <a id="KeyCapabilitiesandUseCases"></a>
 

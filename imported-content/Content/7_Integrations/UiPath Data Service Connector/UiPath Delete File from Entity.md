@@ -7,7 +7,9 @@ title: "UiPath Delete File from Entity"
 
 Deletes the specified file from the specified field of an existing UiPath entity record.
 
-> **IMPORTANT!**  Before defining the integration task, make sure that you have mapped the UiPath Data Service entity to the Druid request entity; otherwise, you won’t be able to set the integration task.
+{% hint style="warning" %}
+**IMPORTANT!**  Before defining the integration task, make sure that you have mapped the UiPath Data Service entity to the Druid request entity; otherwise, you won’t be able to set the integration task.
+{% endhint %}
 
 <a id="GeneralSettings"></a>
 

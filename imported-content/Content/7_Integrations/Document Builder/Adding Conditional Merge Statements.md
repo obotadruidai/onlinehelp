@@ -18,7 +18,9 @@ The Field page appears.
 
 3. From the Field names, select **If**.
 4. In the **Field code**, enter the IF statement.
-> **NOTE:** When writing the statement always use double quote marks for expressions, TrueText and FalseText.
+{% hint style="info" %}
+**NOTE:** When writing the statement always use double quote marks for expressions, TrueText and FalseText.
+{% endhint %}
 
 Example:
 

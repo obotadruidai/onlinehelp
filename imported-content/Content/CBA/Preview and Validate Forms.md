@@ -13,7 +13,9 @@ The preview opens in a new browser tab, allowing you to check how the form will 
 
 ![](../Resources/Images/CBA/preview%20form.png)
 
-> **Info:** If no records exist at the time of preview or if integrations have not been configured in the Read Data section, some fields on the form might be empty or the preview might render null data in preview mode.
+{% hint style="info" %}
+**Info:** If no records exist at the time of preview or if integrations have not been configured in the Read Data section, some fields on the form might be empty or the preview might render null data in preview mode.
+{% endhint %}
 
 To refine the preview, authors can filter the form and display only the fields hidden on mobile devices by tapping **Fields on Mobile** at the top-right corner of the page, then clicking **Refresh**.
 

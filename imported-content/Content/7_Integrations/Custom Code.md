@@ -150,7 +150,9 @@ const requestEntity = Context.GetRequestEntity();
 Context.SetRequestEntity(requestEntity);
 ```
 
-> **NOTE:**  The entity you update using custom code is shared within the connector action context. This means that the order in which this task is executed is the one for any connector integration task (e.g. REST) and the context of the response entity is kept between integration tasks and you can use it on subsequent tasks (on the connector action).
+{% hint style="info" %}
+**NOTE:**  The entity you update using custom code is shared within the connector action context. This means that the order in which this task is executed is the one for any connector integration task (e.g. REST) and the context of the response entity is kept between integration tasks and you can use it on subsequent tasks (on the connector action).
+{% endhint %}
 
 Use DRUID custom functions `EntityFactory.CreateCollection("entity name")` and `EntityFactory.CreateEntityByName("entity name")` to create entity objects.
 
@@ -299,7 +301,9 @@ Context.CompleteAction();
 
 This method introduces a delay before executing a task. You can specify a wait time of up to 5000 ms (5 seconds). The Wait() method can be called a maximum of 3 times per task.
 
-> **NOTE:** This feature is available in DRUID 8.1 and later.
+{% hint style="info" %}
+**NOTE:** This feature is available in DRUID 8.1 and later.
+{% endhint %}
 
 **Example**
 
@@ -317,7 +321,9 @@ In this example, the Wait() method pauses execution twice, first for 2000 ms (2 
 
 ## Entity
 
-> **NOTE:** You can refer to entities and entity collections by name in the Custom Code editor. If you use the Entity explorer when creating an entity or entity collection, remove the brackets “[[ ]]”.
+{% hint style="info" %}
+**NOTE:** You can refer to entities and entity collections by name in the Custom Code editor. If you use the Entity explorer when creating an entity or entity collection, remove the brackets “[[ ]]”.
+{% endhint %}
 
 ## Create entity
 
@@ -386,7 +392,9 @@ In the provided template, if the request entity list is null (not initialized), 
 
 This function creates a clone of an entity to ensure that any modifications to the clone do not affect the original entity. This is useful when you need to work with multiple instances of an entity while preserving the integrity of the original data.
 
-> **NOTE:** This function is available in DRUID 8.7 and higher.
+{% hint style="info" %}
+**NOTE:** This function is available in DRUID 8.7 and higher.
+{% endhint %}
 
 **Clone entity Template**
 
@@ -438,7 +446,9 @@ This method converts the given entity into a JSON-formatted string. This is usef
 EntityUtils.Stringify(ENTITYNAME);
 ```
 
-> **NOTE:** Do not use the brackets “[[ ]]” when providing the entity name.
+{% hint style="info" %}
+**NOTE:** Do not use the brackets “[[ ]]” when providing the entity name.
+{% endhint %}
 
 **Example**
 
@@ -482,8 +492,10 @@ The `EntityUtils.Stringify(requestEntity);` method will return:
 
 This method retrieves the value of a local variable within the current connector integration. It allows you to access and use variables that are defined during the execution of the connector action. This method is useful for referencing values stored in the context for use in your custom logic.
 
-> **NOTE:** You can use connector local variables from the integration context between the integration tasks
-> using the following format: `var` `variableName``= Context.GetContextVariable("``variableName``");`. For more information, see [Using Connector Local Variables](Use_connector_local_variables.md).
+{% hint style="info" %}
+**NOTE:** You can use connector local variables from the integration context between the integration tasks
+using the following format: `var` `variableName``= Context.GetContextVariable("``variableName``");`. For more information, see [Using Connector Local Variables](Use_connector_local_variables.md).
+{% endhint %}
 
 **Get Context variable - Template**
 
@@ -565,7 +577,9 @@ GetLocalScopeEntityCollection("ENTITYNAME");
 
 Encrypts the request body or only specific request data using the AES256CBC algorithm.
 
-> **NOTE:** Encrypt the request body or only specific request data before executing REST integrations tasks.
+{% hint style="info" %}
+**NOTE:** Encrypt the request body or only specific request data before executing REST integrations tasks.
+{% endhint %}
 
 **Template**
 
@@ -596,7 +610,9 @@ Where:
 
 Decrypts the encrypted request body or only specific request data using the AES256CBC algorithm.
 
-> **NOTE:** Decrypt the request body or only specific request data after executing REST integrations tasks.
+{% hint style="info" %}
+**NOTE:** Decrypt the request body or only specific request data after executing REST integrations tasks.
+{% endhint %}
 
 **Template**
 
@@ -607,7 +623,9 @@ EncryptionUtils.AES256CBC.Decrypt(plainText,key);
 Where:
 
 - **plainText** is the encrypted string that includes the Initialization Vector (IV) at the beginning, followed by the actual encrypted payload.
-> **NOTE:** The IV is embedded at the beginning of the **plainText** parameter. You don't need to provide the IV separately. The decryption method automatically extracts it and uses it during decryption.
+{% hint style="info" %}
+**NOTE:** The IV is embedded at the beginning of the **plainText** parameter. You don't need to provide the IV separately. The decryption method automatically extracts it and uses it during decryption.
+{% endhint %}
 
 - **key** is the encryption/decryption key retrieved from the Variables section in the connector app.
 
@@ -628,9 +646,11 @@ Where:
 
 The JWT custom code template simplifies generating and encrypting JWTs for secure client authentication involving a double JWT exchange.
 
-> **Info:** All default claims (except for the private ones) adhere to the standard format, eliminating the need for you to perform any format transformations.
->
-> ![](../Resources/Images/Custom%20Code/default%20claims.png)
+{% hint style="info" %}
+**Info:** All default claims (except for the private ones) adhere to the standard format, eliminating the need for you to perform any format transformations.
+
+![](../Resources/Images/Custom%20Code/default%20claims.png)
+{% endhint %}
 
 **JWT Template**
 
@@ -681,7 +701,9 @@ Context.LogRequestTask(jwt);
 
 ![](../Resources/Images/Custom%20Code/kwt%20example.png)
 
-> **Info:** In DRUID 7.9 and higher, the Custom Code feature includes the CryptoJS library, enabling you to utilize JavaScript implementations of standard and secure cryptographic algorithms. In DRUID 7.10 onwards, the CryptoJS library also supports the SHA1 encryption algorithm.
+{% hint style="info" %}
+**Info:** In DRUID 7.9 and higher, the Custom Code feature includes the CryptoJS library, enabling you to utilize JavaScript implementations of standard and secure cryptographic algorithms. In DRUID 7.10 onwards, the CryptoJS library also supports the SHA1 encryption algorithm.
+{% endhint %}
 
 **Example: HMAC SHA1 algorithm**
 
@@ -813,13 +835,17 @@ Replace placeholders: Fill in the following placeholders within the template:
 - secret key: The secret key used to sign the token (required for decryption).
 - Specify decryption algorithm in `EncryptionUtils.JWT.DecryptJWT(token, secret, "<decryption algorithm>")`. DRUID currently supports three algorithms for JWT decryption: HS256, HS512 and RS256. Choose the appropriate algorithm based on the token's encryption method.
 
-> **NOTE:** The RS256 decryption algorithm is available in DRUID 8.5 and higher.
+{% hint style="info" %}
+**NOTE:** The RS256 decryption algorithm is available in DRUID 8.5 and higher.
+{% endhint %}
 
 <a id="Encoding"></a>
 
 ## Encoding
 
-> **NOTE:** These methods are available in DRUID 9.1 and higher.
+{% hint style="info" %}
+**NOTE:** These methods are available in DRUID 9.1 and higher.
+{% endhint %}
 
 <a id="microcontent2"></a>
 
@@ -854,7 +880,9 @@ Context.LogRequestTask(encoded);
 
 Decodes a Base64-encoded string back into its original format.
 
-> **NOTE:** Only use this method to decode values that were previously encoded using Base64.
+{% hint style="info" %}
+**NOTE:** Only use this method to decode values that were previously encoded using Base64.
+{% endhint %}
 
 **Syntax**
 
@@ -884,9 +912,11 @@ Context.LogRequestTask(decodedText);
 ## Map XML string to Entity Fields
 
 - Facilitates the mapping of XML strings to DRUID entity fields. This is particularly useful when REST API responses contain a complex or unstructured XML format that cannot be directly mapped to DRUID entities.
-> **NOTE:** You should store the received XML as string in a DRUID entity field in the REST Response, then use the Custom Code integration task and this template to map the desired XML data to DRUID entity fields.
->
-> ![](../Resources/Images/druid%207.14/rest%20text.png)
+{% hint style="info" %}
+**NOTE:** You should store the received XML as string in a DRUID entity field in the REST Response, then use the Custom Code integration task and this template to map the desired XML data to DRUID entity fields.
+
+![](../Resources/Images/druid%207.14/rest%20text.png)
+{% endhint %}
 
 **Map XML string to Entity Fields - Template**
 
@@ -1006,7 +1036,9 @@ Context.SetRequestEntity(result);
 
 ## Read XML from file
 
-> **NOTE:** This feature is available in DRUID 8.5 and higher.
+{% hint style="info" %}
+**NOTE:** This feature is available in DRUID 8.5 and higher.
+{% endhint %}
 
 The `FileUtils.ReadXMLFromFile(filename)` method allows you to read the content of an XML file and save it as a string in a DRUID entity field. The filename parameter corresponds to the entity field that stores the content of an XML file uploaded by the user during the chat. Below is an example script demonstrating how to use this method:
 
@@ -1032,7 +1064,9 @@ After making your updates, you can generate an updated XML file using the method
 
 ## Write XML to file
 
-> **NOTE:** This feature is available in DRUID 8.5 and higher.
+{% hint style="info" %}
+**NOTE:** This feature is available in DRUID 8.5 and higher.
+{% endhint %}
 
 The `FileUtils.WriteXMLToFile(XMLContent: string, fileName: string)` method allows you to generate an XML file from a string and save it for further use.
 
@@ -1057,7 +1091,9 @@ This method is particularly useful for generating and providing an XML file to t
 
 ## Read Txt from file
 
-> **NOTE:** This feature is available in DRUID 8.8 and higher.
+{% hint style="info" %}
+**NOTE:** This feature is available in DRUID 8.8 and higher.
+{% endhint %}
 
 The `FileUtils.ReadTxtFromFile(filename)` method enables you to read the content of a TXT file and store it as a string in a DRUID entity field. The filename parameter refers to the entity field where the content of the TXT file, uploaded by the user during the chat, will be saved.
 
@@ -1079,7 +1115,9 @@ Below is an example script demonstrating how to use this method:
 
 ## Write Txt to file
 
-> **NOTE:** This feature is available in DRUID 8.8 and higher.
+{% hint style="info" %}
+**NOTE:** This feature is available in DRUID 8.8 and higher.
+{% endhint %}
 
 The `FileUtils.WriteTxtToFile(txtContent, fileName)` method allows you to create a TXT file from a string and save it for future use. This provides an easy way to generate and manage text files dynamically within DRUID.
 
@@ -1102,7 +1140,9 @@ This method is particularly useful for generating and providing a txt file to th
 
 ## Read JSON from file
 
-> **NOTE:** This feature is available in DRUID 8.8 and higher.
+{% hint style="info" %}
+**NOTE:** This feature is available in DRUID 8.8 and higher.
+{% endhint %}
 
 The `FileUtils.ReadJSONFromFile(filename)` method enables you to read the content of a JSON file and store it as a string in a DRUID entity field. The filename parameter refers to the entity field where the content of the json file, uploaded by the user during the chat, will be saved.
 
@@ -1124,7 +1164,9 @@ Below is an example script demonstrating how to use this method:
 
 ## Write JSON to file
 
-> **NOTE:** This feature is available in DRUID 8.8 and higher.
+{% hint style="info" %}
+**NOTE:** This feature is available in DRUID 8.8 and higher.
+{% endhint %}
 
 The `FileUtils.WriteJSONToFile(jsonContent, fileName)` method allows you to generate a JSON file from a JSON object (converted to a string) and save it for further use.
 
@@ -1157,7 +1199,9 @@ The JavaScript `toLocaleString()` method is not supported in the Custom Code. To
 
 This method lets you convert a Date object into a formatted string that matches your desired display style.
 
-> **NOTE:** This method is available in DRUID 9.1 and higher.
+{% hint style="info" %}
+**NOTE:** This method is available in DRUID 9.1 and higher.
+{% endhint %}
 
 **Example**
 
@@ -1172,7 +1216,9 @@ let formattedDate = DateTimeUtils.StringifyDate(date, "MMMM d, yyyy");
 Context.LogRequestTask(formattedDate);
 ```
 
-> **NOTE:**  The method does not auto-detect the user's locale. For internationalization, you need to manually format dates based on the target audience’s preferences.
+{% hint style="info" %}
+**NOTE:**  The method does not auto-detect the user's locale. For internationalization, you need to manually format dates based on the target audience’s preferences.
+{% endhint %}
 
 <a id="DataManipulation"></a>
 
@@ -1184,7 +1230,9 @@ Context.LogRequestTask(formattedDate);
 
 The `Set()` object allows you to store unique values of any type. Use it when you need to filter duplicate data from an entity collection or a list of values.
 
-> **NOTE:** The Set() object is available in Druid 9.17 and higher.
+{% hint style="info" %}
+**NOTE:** The Set() object is available in Druid 9.17 and higher.
+{% endhint %}
 
 **Syntax**
 

@@ -46,7 +46,9 @@ You need to edit the widget based on the selected widget type. The next section 
 
 ## Editing widgets
 
-> **Info:**  You will use the widget editing to customize new widgets or edit the details of a Druid predefined widget provided by the Dashboard template or a custom widget you defined.
+{% hint style="info" %}
+**Info:**  You will use the widget editing to customize new widgets or edit the details of a Druid predefined widget provided by the Dashboard template or a custom widget you defined.
+{% endhint %}
 
 To edit a widget, click the settings icon corresponding to the desired widget.
 
@@ -58,7 +60,9 @@ The widget Settings page appears. The page content is different based on the wid
 - Chart Widgets – show in a chart the KPI values over time (time series KPIs) or the KPI values as simple elements.
 - Table Widgets – show KPI values in a table.
 
-> **NOTE:**  You can show time series KPIs only in widgets of type **Chart** or **Table**.
+{% hint style="info" %}
+**NOTE:**  You can show time series KPIs only in widgets of type **Chart** or **Table**.
+{% endhint %}
 
 <a id="EditKPIwidgets"></a>
 
@@ -66,7 +70,9 @@ The widget Settings page appears. The page content is different based on the wid
 
 In the Settings page, select the desired metric (**Metric Name**), the KPI (**Metric Display Name**) and the **Trend Chart**, that is, the way you want to view KPI data on the widget (**Daily/Weekly/Monthly**).
 
-> **NOTE:** The KPIs available in the **Metric Display Name** field depend on the metric selected in the **Metric Name** field.
+{% hint style="info" %}
+**NOTE:** The KPIs available in the **Metric Display Name** field depend on the metric selected in the **Metric Name** field.
+{% endhint %}
 
 ![](../Resources/Images/Dashboard/Customizing%20Dashboard%20Template_10.png)
 
@@ -99,7 +105,9 @@ To customize a chart widget, in the widget Settings page:
 4. From the **Show** field select how you want Druid to show the KPI values on the dashboard: as **elements** or **time series**.
 5. From the **Elements** field, select the KPI elements you want to show on the chart.
 
-> **Info:**  On a chart widget set to show time series, the time is shown on the X axis while the KPI values is shown on the Y axis. For chart widgets set to show elements, the elements are shown on the X axis, while the KPI values are shown on the Y axis.
+{% hint style="info" %}
+**Info:**  On a chart widget set to show time series, the time is shown on the X axis while the KPI values is shown on the Y axis. For chart widgets set to show elements, the elements are shown on the X axis, while the KPI values are shown on the Y axis.
+{% endhint %}
 
 ![](../Resources/Images/Dashboard/Customizing%20Dashboard%20Template_13.png)
 
@@ -204,7 +212,9 @@ The new page name is saved.
 
 ## Deleting Dashboard Pages
 
-> **IMPORTANT!** This action cannot be undone. Make sure that you really want to delete the current dashboard page.
+{% hint style="warning" %}
+**IMPORTANT!** This action cannot be undone. Make sure that you really want to delete the current dashboard page.
+{% endhint %}
 
 To delete the current dashboard page, click the **Delete page** button ( ![](../Resources/Images/Dashboard/Customizing%20Dashboard%20Template_4.png)) from the toolbar. A confirmation dialog appears.
 
@@ -224,4 +234,6 @@ A pop appears asking you to confirm the action.
 
 Click **Yes**.
 
-> **NOTE:**  Restoring to default a page you added to the dashboard, will remove it from the dashboard.
+{% hint style="info" %}
+**NOTE:**  Restoring to default a page you added to the dashboard, will remove it from the dashboard.
+{% endhint %}

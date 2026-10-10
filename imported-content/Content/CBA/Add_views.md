@@ -9,7 +9,9 @@ At authoring time, you can create multiple views for an entity, but only one can
 
 ![](../Resources/Images/CBA/default%20view.png)
 
-> **Info:** To automatically generate a view that retrieves data from DRUID Data Services, use the CRUD Template. Applying the CRUD Template to entity integrations automatically creates a default view and form, preconfigured with the necessary integrations. For more details, see  [CRUD Template](Entity%20Data%20Integration.md).
+{% hint style="info" %}
+**Info:** To automatically generate a view that retrieves data from DRUID Data Services, use the CRUD Template. Applying the CRUD Template to entity integrations automatically creates a default view and form, preconfigured with the necessary integrations. For more details, see  [CRUD Template](Entity%20Data%20Integration.md).
+{% endhint %}
 
 Follow these steps to add a view to an entity:
 

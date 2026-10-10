@@ -7,7 +7,9 @@ title: "Talkdesk Live Chat"
 
 Integrating Talkdesk as a live chat provider allows your AI Agent to handle initial customer inquiries and, when necessary, transfer the conversation to a human agent within the Talkdesk contact center. This integration ensures that agents have access to chat transcripts and customer context, enabling a more personalized and efficient support experience.
 
-> **NOTE:** Talkdesk Live Chat integration is available in Druid version 9.13 and higher.
+{% hint style="info" %}
+**NOTE:** Talkdesk Live Chat integration is available in Druid version 9.13 and higher.
+{% endhint %}
 
 <a id="Prerequisites"></a>
 
@@ -109,7 +111,9 @@ To create a custom integration, perform the following steps in Talkdesk:
 
 ![](../Resources/Images/Talkdesk/actions.png)
 
-> **NOTE:** These actions are Lifecycle Events available in Digital Connect. Make sure to use the exact action names listed above.
+{% hint style="info" %}
+**NOTE:** These actions are Lifecycle Events available in Digital Connect. Make sure to use the exact action names listed above.
+{% endhint %}
 
 <a id="EnableFileTransferforExistingTalkdeskIntegrations"></a>
 
@@ -131,9 +135,13 @@ If you integrated Talkdesk Live Chat in a version prior to Druid 9.19, you must 
 To save the conversation transcript and make it available for Talkdesk agents, on the flow that connects the client with the agent, make the following settings:
 
 1. On the step where you call the internal action **ConnectToHelpdeskAgent**(Post Actions section), in the **Pre Actions** section, call the internal action **GetConversationTranscript**.
-> **IMPORTANT!**  When calling the **GetConversationTranscript** internal action on the same step where you call **ConnectToHelpdeskAgent**, make sure to call it in the PreActions section. Calling it in the PostActions section will not send the conversation transcript to agents.
+{% hint style="warning" %}
+**IMPORTANT!**  When calling the **GetConversationTranscript** internal action on the same step where you call **ConnectToHelpdeskAgent**, make sure to call it in the PreActions section. Calling it in the PostActions section will not send the conversation transcript to agents.
+{% endhint %}
 
-> **Info:**  You can call the **GetConversationTranscript** internal action on a previous step.
+{% hint style="info" %}
+**Info:**  You can call the **GetConversationTranscript** internal action on a previous step.
+{% endhint %}
 
 2. On the **ConnectToHelpdeskAgent** internal action add the following:
 
@@ -143,7 +151,9 @@ To save the conversation transcript and make it available for Talkdesk agents, o
 }
 ```
 
-> **Info:** You can send additional client information to Talkdesk Agents together with the conversation transcript. For more information, see [Send Contact Center Parameters](#Send_Contact_Center_Parameters).
+{% hint style="info" %}
+**Info:** You can send additional client information to Talkdesk Agents together with the conversation transcript. For more information, see [Send Contact Center Parameters](#Send_Contact_Center_Parameters).
+{% endhint %}
 
 3. Save the step.
 
@@ -160,7 +170,9 @@ The table below lists the Contact Center parameters authors can send to Talkdesk
 
 To send Contact Center parameters to Talkdesk, on the **ConnectToHelpdeskAgent** internal action, provide the desired parameters inside the `ContactCenterParameters` object in JSON format.
 
-> **NOTE:** The payload must follow a key-value format where both the key and value are strings. When using values from DRUID conversation context (entities, local variables) as parameter values, ensure they are enclosed in double quotes ("") to maintain valid JSON formatting.
+{% hint style="info" %}
+**NOTE:** The payload must follow a key-value format where both the key and value are strings. When using values from DRUID conversation context (entities, local variables) as parameter values, ensure they are enclosed in double quotes ("") to maintain valid JSON formatting.
+{% endhint %}
 
 **Example - Send Contact Center parameters**
 

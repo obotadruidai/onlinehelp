@@ -9,7 +9,9 @@ Deployment Dates
 
 The table below lists the deployment date of DRUID v8.11 across DRUID Clouds. To view the DRUID Releases Calendar, see [Druid AI Releases](../Druid%20AI%20Releases.md).
 
-> **NOTE:** **We’re rolling out version 8.11 in PROD-US ahead of schedule!** Originally set for March 13, the deployment will now happen on March 3 (morning, EET). This is a one-time exception to get the latest features out sooner—everything in the release remains the same.
+{% hint style="info" %}
+**NOTE:** **We’re rolling out version 8.11 in PROD-US ahead of schedule!** Originally set for March 13, the deployment will now happen on March 3 (morning, EET). This is a one-time exception to get the latest features out sooner—everything in the release remains the same.
+{% endhint %}
 
 **Recommended!** This release includes features that require upgrade of your DRUID Connector Host:
 
@@ -32,7 +34,9 @@ If you have questions about your DRUID tenant, please contact [support@Druidai.c
 For more information, see [External Webhook Call Handling in DRUID](../../Webhooks/Exchanging%20Data%20with%20External%20Systems.md).
 
 - **Debug Messages in Flow Steps**. You can now use Debug Messages to troubleshoot and optimize flow steps without affecting live conversations. This feature allows you to track the execution of specific steps, understand unexpected flow paths, and gain insights into conversation context using the Conversation Trace tool. Since debug messages are never visible to end users, you can safely use them in production to diagnose and resolve issues efficiently.
-> **NOTE:** For hybrid DRUID deployments, this feature requires you to upgrade your DRUID Connector Host to version 8.11 or later.
+{% hint style="info" %}
+**NOTE:** For hybrid DRUID deployments, this feature requires you to upgrade your DRUID Connector Host to version 8.11 or later.
+{% endhint %}
 
 ![](../../Resources/Images/druid%208.11/debug%20message.png)
 

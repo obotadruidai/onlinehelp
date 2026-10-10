@@ -48,9 +48,13 @@ To add and set up a Backchannel Event step that triggers a JavaScript function:
 - **Step message**: Remove the default message and leave it empty. Backchannel Event steps are used to trigger functions, not display messages in the chat.
 
 5. If you want to pass information to the backchannel event, select the relevant entity in the **Input mapping** field.
-> **IMPORTANT!** This step is not related to receiving back information in the same entity.
+{% hint style="warning" %}
+**IMPORTANT!** This step is not related to receiving back information in the same entity.
+{% endhint %}
 
-> **NOTE:** This step is mandatory as the AI Agent requires this information to load the function. If no specific information needs to be passed, select any entity.
+{% hint style="info" %}
+**NOTE:** This step is mandatory as the AI Agent requires this information to load the function. If no specific information needs to be passed, select any entity.
+{% endhint %}
 
 6. Click **Save** to save the settings.
 

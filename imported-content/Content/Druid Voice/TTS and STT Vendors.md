@@ -25,7 +25,9 @@ The following table outlines the supported voice service providers for Druid SIP
 | Mistral AI (Voxtral speech model) | yes | yes | yes | yes |
 | Munsit\* | yes | yes | yes | yes |
 
-> **Info:** Support for Munsit speech services is available starting with Druid 9.31.
+{% hint style="info" %}
+**Info:** Support for Munsit speech services is available starting with Druid 9.31.
+{% endhint %}
 
 <a id="SpeechSynthesisMarkupLanguageSSMLSupport"></a>
 

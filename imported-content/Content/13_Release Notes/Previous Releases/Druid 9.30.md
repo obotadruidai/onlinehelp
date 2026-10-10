@@ -48,7 +48,9 @@ If you have questions about your Druid tenant, please contact [support@druidai.c
 
 ![](../../Resources/Images/WebChat/Light%20Theme%20-%20%20Informative%20Message.png) ![](../../Resources/Images/WebChat/Dark%20Theme%20-%20Informative%20Message.png)
 
-> **Info:** Enabling agentic reasoning requires setting up specific parameters in the webchat customization.  For more information, see [Agentic Reasoning and Messaging](../../Channels/WebChat/WebChat_Common_Styling_and_Behavior_v4.md#Agentic).
+{% hint style="info" %}
+**Info:** Enabling agentic reasoning requires setting up specific parameters in the webchat customization.  For more information, see [Agentic Reasoning and Messaging](../../Channels/WebChat/WebChat_Common_Styling_and_Behavior_v4.md#Agentic).
+{% endhint %}
 
 - **Druid Voice – Speech-to-Speech (Technology Preview)**. Druid Voice Speech-to-Speech delivers a real-time, low-latency vocal interaction experience with response times under one second. Built for fluid, natural conversations, this technology preview introduces advanced capabilities designed for high-performance voice interactions:
   - **Flexible Speech Provider Selection**. Choose between **Druid** or **Google Gemini Live API** speech services depending on business needs.
@@ -58,7 +60,9 @@ If you have questions about your Druid tenant, please contact [support@druidai.c
   - **Multilingual Capabilities**. Fully supports [78 languages](https://ai.google.dev/gemini-api/docs/live-api/live-translate#supported-languages).
 
   Experience the speed yourself! [Speak with Nova](https://cmgbh04.na1.hubspotlinks.com/Ctc/W1+113/cMGbh04/VWWmxx3kkms3W57rNFQ6YrRjWW2L--MX5Tqv9jN2SX2503qn9qW95jsWP6lZ3nNW7X8bvk2wZpfnW3KlWj82BwbdxN8f8dhyWL-q0W8pClq36c2V7LW5pJtZF4gxZ6GW5lfLWm5sR657W27WBhC8vPdRxW1HdZ4g7x9gm3W79HNtG6M4GhJW2mV5jr79cylwW65_24z25JRVDW3Ctjdy7f_LZqW41Fln05VbmD2W35Rf_58B5dKhW8dHf1x7CR4mYW3JctPt1CnxzWW2FW1D-82y0GPW7vBmBr2MwsNqVLSLS544mRHrW68Y0Nd10rLLxW2RhWm_2zgQP_W2ccCV338Tyy9W3QFXyd84y8qhW8WTqZW5vFrRGW32rGVp7MyP5MW1Xs3g91S6MszW9cwRx62f973LW815THL3sgWjRW7J_syz5DZhXkW70jHL65BFlnnf1-yzJF04), our healthcare demo AI Agent, and feel sub-second voice interactions in action.
-> **Info:** If you want to activate it on your tenant, reach out to your Druid sales representative.
+{% hint style="info" %}
+**Info:** If you want to activate it on your tenant, reach out to your Druid sales representative.
+{% endhint %}
 
 - **Troubleshooting and Debugging with AI**. AI-assisted troubleshooting and debugging is now available within Conversation Transcript, Conversation Trace, and Flow Trace! The AI Authoring Agent automatically analyzes your system logs to provide immediate insights into runtime errors, dialog bottlenecks, and logic gaps. Beyond just identifying problems, the agent can suggest actions you should take to fix the errors, significantly reducing manual debugging effort and accelerating your authoring workflow.
 
@@ -67,7 +71,9 @@ If you have questions about your Druid tenant, please contact [support@druidai.c
 For more information, see [Conversation Diagnostics Agent](../../2_AI%20Agents/Conversation%20Diagnostics%20Agent.md).
 
 - **Becus 2 - Druid built-in LLM**. We are thrilled to announce Becus 2, the latest evolution of Druid native, built-in Large Language Model, reaching General Availability! Delivering frontier-class performance on par with GPT, Gemini, and Claude, Becus 2 introduces advanced reasoning and complex coding capabilities directly into the platform. This allows AI Agents to independently tackle multi-step logic and generate configurations autonomously, providing high-tier processing power while seamlessly maintaining enterprise data security and privacy.
-> **NOTE:** Becus 2 is available in US environments. It will be available in EU environments starting with Druid 9.33.
+{% hint style="info" %}
+**NOTE:** Becus 2 is available in US environments. It will be available in EU environments starting with Druid 9.33.
+{% endhint %}
 
 <a id="Improvements"></a>
 

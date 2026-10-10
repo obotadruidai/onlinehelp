@@ -104,7 +104,9 @@ The service account is created.
 
 5. The private key file is automatically downloaded to your computer (default Downloads folder).
 
-> **Info:** You will need this file content when creating the Google Drive data source in Druid.
+{% hint style="info" %}
+**Info:** You will need this file content when creating the Google Drive data source in Druid.
+{% endhint %}
 
 <a id="Step3SharetheGoogleDrivefoldersyouwanttocrawl"></a>
 
@@ -162,7 +164,9 @@ Click the **Crawl** button. In the Start Crawling Parameters modal, define the c
 
 Click **Start**.
 
-> **Info:** Based on the crawling policy set, it might take up to a few minutes for the crawling to complete. You might want to refresh from time to time to see when the action has completed.
+{% hint style="info" %}
+**Info:** Based on the crawling policy set, it might take up to a few minutes for the crawling to complete. You might want to refresh from time to time to see when the action has completed.
+{% endhint %}
 
 By default all nodes are excluded from scrapping. To crawl specific nodes, hover the mouse over the desired node in the tree, click Actions menu (the dots) and select **Crawl Path**.
 

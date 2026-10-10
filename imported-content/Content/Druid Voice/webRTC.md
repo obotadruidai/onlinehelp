@@ -9,13 +9,17 @@ The webRTC channel enables natural, bi-directional voice interactions directly w
 
 Unlike client-side voice-assisted chat interactions, which only provide local speech-to-text dictation comparable to a mobile voice keyboard, Druid webRTC provides real-time spoken conversations using the complete Druid voice technology stack. Audio responses are delivered via server-side Text-to-Speech (TTS).
 
-> **Info:** Druid webRTC channel is available starting with Druid 10.1.
+{% hint style="info" %}
+**Info:** Druid webRTC channel is available starting with Druid 10.1.
+{% endhint %}
 
 ![](../Resources/Images/WebChat%20Voice/webRTC.png)
 
 To provide users with Druid’s high-quality voice experience, authors configure the webRTC inside the Druid Portal and deploy the AI Agent using the standard webchat snippet code.
 
-> **NOTE:** Before enabling the webRTC, configuration of [Druid SIP Connectivity](Configure%20Druid%20SIP%20Connectivity.md) is required.
+{% hint style="info" %}
+**NOTE:** Before enabling the webRTC, configuration of [Druid SIP Connectivity](Configure%20Druid%20SIP%20Connectivity.md) is required.
+{% endhint %}
 
 <a id="ConfigurewebRTC"></a>
 
@@ -33,13 +37,15 @@ To enable and configure voice interactions:
 The voice customization panel appears.
 
 5. In the voice customization panel, customize the [styling and behavior parameters](#webRTC) for webRTC according to your requirements.
-> **Info:** While multiple parameters are available for customization, pay special attention to these settings:
->
-> - **Start in Voice Mode (useVoiceChat)**. Enables voice-only deployments. When selected, the AI Agent launches directly in voice mode, disabling initial text typing.
-> - **Show Switch to Webchat Button (voiceSwitchToChatButtonEnabled)**. Enables hybrid voice and text experiences, allowing users to switch from voice to text messages.
-> - **Return to Webchat on Call End/Close (voiceSnippetToChatOnClose)**. When selected, closing the voice interface or ending a call automatically returns the user to the standard typing web chat.
->
-> ![](../Resources/Images/WebChat%20Voice/params.png)
+{% hint style="info" %}
+**Info:** While multiple parameters are available for customization, pay special attention to these settings:
+
+- **Start in Voice Mode (useVoiceChat)**. Enables voice-only deployments. When selected, the AI Agent launches directly in voice mode, disabling initial text typing.
+- **Show Switch to Webchat Button (voiceSwitchToChatButtonEnabled)**. Enables hybrid voice and text experiences, allowing users to switch from voice to text messages.
+- **Return to Webchat on Call End/Close (voiceSnippetToChatOnClose)**. When selected, closing the voice interface or ending a call automatically returns the user to the standard typing web chat.
+
+![](../Resources/Images/WebChat%20Voice/params.png)
+{% endhint %}
 
 6. Save the modal, then save the AI Agent configuration.
 

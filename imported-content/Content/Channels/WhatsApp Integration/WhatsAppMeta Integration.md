@@ -9,9 +9,13 @@ To make it easy for your consumers to make purchases and get answers to question
 
 The Druid AI Platform provides the WhatsApp channel via Meta integration (direct integration).
 
-> **NOTE:** The Welcome flow will be triggered at the user's first conversation with the AI Agent; the predict with the initial "user says" is dropped.
+{% hint style="info" %}
+**NOTE:** The Welcome flow will be triggered at the user's first conversation with the AI Agent; the predict with the initial "user says" is dropped.
+{% endhint %}
 
-> **IMPORTANT!** Effective October 1, 2026, Meta is updating its WhatsApp Business Platform billing model. Outbound non-template "service" messages sent by an AI Agent or live agent inside the 24-hour customer service window are subject to Meta's per-message utility rates after a monthly allowance of 1,000 free messages per business phone number. This affects Meta message delivery charges, while Druid platform functionality and licensing remain unchanged. For details, see [WhatsApp Pricing](https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing).
+{% hint style="warning" %}
+**IMPORTANT!** Effective October 1, 2026, Meta is updating its WhatsApp Business Platform billing model. Outbound non-template "service" messages sent by an AI Agent or live agent inside the 24-hour customer service window are subject to Meta's per-message utility rates after a monthly allowance of 1,000 free messages per business phone number. This affects Meta message delivery charges, while Druid platform functionality and licensing remain unchanged. For details, see [WhatsApp Pricing](https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing).
+{% endhint %}
 
 <a id="Prerequisites"></a>
 
@@ -36,7 +40,9 @@ To integrate an AI Agent with WhatsApp via Facebook, follow these steps:
 
 ### Step 1. Create a Facebook app
 
-> **NOTE:** The Meta UI may appear slightly different depending on which version you are using.
+{% hint style="info" %}
+**NOTE:** The Meta UI may appear slightly different depending on which version you are using.
+{% endhint %}
 
 1. In your browser, navigate to [Facebook for Developers](https://developers.facebook.com/) and log in.
 2. On the toolbar, click **My Apps**. Your Apps page appears.
@@ -113,10 +119,14 @@ The Customize use case overview appears. The **Integrate with API** option is se
 
 8. In the confirmation pop-up, click **Got it**. The temporary token has been generated. You can now send a test message .
 9. Select your test phone number in the **From** field. (Unless you have registered other phone numbers, this will be the only phone number in **From**).
-> **NOTE:** When you’re ready to use your app for a production use case, you need to use your own phone number to send messages to your users.
+{% hint style="info" %}
+**NOTE:** When you’re ready to use your app for a production use case, you need to use your own phone number to send messages to your users.
+{% endhint %}
 
 10. Enter the phone number you would like to message in the **To** field. Ensure the number is correct, and that you want to add it to your list of 5 possible message recipients — as you add phone numbers, follow the prompts on the screen to verify you have access to them. Once this number has been added, it cannot be removed from your list.
-> **NOTE:** This limitation is only for WhatsApp-provided test phone numbers. Real phone numbers that you register do not have a limit on the number of recipients.
+{% hint style="info" %}
+**NOTE:** This limitation is only for WhatsApp-provided test phone numbers. Real phone numbers that you register do not have a limit on the number of recipients.
+{% endhint %}
 
 11. Once you enter a recipient phone number, the code sample on the page will be updated to demonstrate an API call that sends a test message to that number.
 12. Select the **Message** template you want to send as test and click **Send message** . Alternatively, copy the code sample provided and run it in a terminal or Postman.
@@ -125,15 +135,19 @@ The Customize use case overview appears. The **Integrate with API** option is se
 
 13. Check the destination device to confirm message receipt.
 
-> **Info:** If the message does not arrive, click **Check test webhooks** and check the log record for errors.
->
-> ![](../../Resources/Images/WhatsAppMeta/check%20log.png)
+{% hint style="info" %}
+**Info:** If the message does not arrive, click **Check test webhooks** and check the log record for errors.
+
+![](../../Resources/Images/WhatsAppMeta/check%20log.png)
+{% endhint %}
 
 <a id="Step3Generateapermanenttokenforyourapp"></a>
 
 ### <a id="Step_2"></a>Step 3. Generate a permanent token for your app
 
-> **NOTE:** To generate a permanent token for your app in Bussines Manager, you must create an admin user and grant full control to your app (asset). If you already have an admin account, you can skip steps 1 to 4.
+{% hint style="info" %}
+**NOTE:** To generate a permanent token for your app in Bussines Manager, you must create an admin user and grant full control to your app (asset). If you already have an admin account, you can skip steps 1 to 4.
+{% endhint %}
 
 Follow these steps to generate the permanent token:
 
@@ -186,7 +200,9 @@ The Generate token wizard appears.
 
 ![](../../Resources/Images/WhatsAppMeta/perm%20token.png)
 
-> **Info:** You can only share a token once. Each new system user requires a newly generated token.
+{% hint style="info" %}
+**Info:** You can only share a token once. Each new system user requires a newly generated token.
+{% endhint %}
 
 <a id="Step4ActivatetheWhatsAppchannelinDruidPortal"></a>
 
@@ -217,9 +233,11 @@ The channel configuration modal appears.
 7. Generate the **Webhook Verify Token** by clicking the **Generate** button. This is a one-time password used to enable the webhook. Copy the token, as you'll need it to configure the WhatsApp webhook.
 8. In the **WhatsApp API Host** field, enter the following value: **graph.facebook.com**.
 9. In the **WhatsApp API Version** field, enter the API version your Facebook app is using. Use the following format: vxx.x (e.g., **v26.0**).
-> **Info:** To find out the API version of your app, go to [Meta for Developers](https://developers.facebook.com/), log in, select your app and go to the **App settings** > **Advanced**. Check what the API version is.
->
-> ![](../../Resources/Images/WhatsAppMeta/getapi%20version.png)
+{% hint style="info" %}
+**Info:** To find out the API version of your app, go to [Meta for Developers](https://developers.facebook.com/), log in, select your app and go to the **App settings** > **Advanced**. Check what the API version is.
+
+![](../../Resources/Images/WhatsAppMeta/getapi%20version.png)
+{% endhint %}
 
 10. Copy the **Druid Callback Url**, you will need it to configure the Meta app webhook.
 
@@ -264,13 +282,19 @@ To send messages and other events from your AI Agent to WhatsApp, you must enabl
 
 Once you configure the webhooks, the integration of the AI Agent and WhatApp via Meta is complete.
 
-> **NOTE:** The Meta app is in **Development Mode** until you publish it. The plugin and API functionality will only work for admins, developers and testers.
+{% hint style="info" %}
+**NOTE:** The Meta app is in **Development Mode** until you publish it. The plugin and API functionality will only work for admins, developers and testers.
+{% endhint %}
 
 Submit the Meta app for review and after the review is successful, make the app public.
 
-> **NOTE:** When a user initiates a conversation with the AI Agent, the Welcome flow will be automatically triggered. Regardless of the user's subscription status to the AI Agent channel, the welcome message will be promptly sent to the user, ensuring a seamless and engaging interaction experience.
+{% hint style="info" %}
+**NOTE:** When a user initiates a conversation with the AI Agent, the Welcome flow will be automatically triggered. Regardless of the user's subscription status to the AI Agent channel, the welcome message will be promptly sent to the user, ensuring a seamless and engaging interaction experience.
+{% endhint %}
 
-> **NOTE:** If the same chat user sends messages to multiple phone numbers associated to the same AI Agent, different conversation IDs will be generated for each phone number. This ensures that each ChannelBotIdentifier corresponds to a unique ConversationId.
+{% hint style="info" %}
+**NOTE:** If the same chat user sends messages to multiple phone numbers associated to the same AI Agent, different conversation IDs will be generated for each phone number. This ensures that each ChannelBotIdentifier corresponds to a unique ConversationId.
+{% endhint %}
 
 <a id="AssociatemultiplephonenumberstothesameAIAgentoptional"></a>
 

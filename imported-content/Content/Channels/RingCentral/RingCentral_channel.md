@@ -188,7 +188,9 @@ When the agent is no longer in a conservation with the user, the **AI Agent** la
 
 ## Receiving and Processing Voice Messages
 
-> **NOTE:** Voice message support is available in DRUID 8.12 and higher.
+{% hint style="info" %}
+**NOTE:** Voice message support is available in DRUID 8.12 and higher.
+{% endhint %}
 
 DRUID supports audio messages only through Microsoft Cognitive Services and ElevenLabs. For Microsoft Cognitive Services, it supports all languages available in the Azure Speech Service. For a complete list of supported languages, refer to [Language and Voice Support for the Speech Service](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/language-support?tabs=tts#supported-languages).
 
@@ -215,7 +217,9 @@ To enable voice messages support, follow these steps:
 - For **Azure**, enter your MS Azure Speech API key and select the region.
 - For **ElevanLabs**, enter your API key.
 
-> **NOTE:** ElevenLabs is available as speech provider in DRUID 9.0 and higher.
+{% hint style="info" %}
+**NOTE:** ElevenLabs is available as speech provider in DRUID 9.0 and higher.
+{% endhint %}
 
 3. By default, the AI Agent replies with text. To have the AI Agent respond with voice, toggle on **Reply with voice messages**.
 4. In the table, click the plus icon. A row is added to the table.

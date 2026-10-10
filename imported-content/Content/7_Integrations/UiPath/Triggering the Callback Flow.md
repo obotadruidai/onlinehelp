@@ -39,9 +39,11 @@ The Trigger Conversation component performs the following functions:
 - Starts a certain DRUID Flow (as conversation) for a specific AI Agent user.
 - Transfers data from UiPath process variable to DRUID Entities, within the conversation context.
 
-> **IMPORTANT!** In case there is no data to be sent from the UiPath process to the DRUID Conversation, the DruidData file must contain an empty string:  “” .
->
-> ![](../../Resources/Images/Integrations/UiPath%20Druid%20Callback_1.png)
+{% hint style="warning" %}
+**IMPORTANT!** In case there is no data to be sent from the UiPath process to the DRUID Conversation, the DruidData file must contain an empty string:  “” .
+
+![](../../Resources/Images/Integrations/UiPath%20Druid%20Callback_1.png)
+{% endhint %}
 
 In order to use this component, in the **Trigger Conversation** activity set up the following parameters:
 

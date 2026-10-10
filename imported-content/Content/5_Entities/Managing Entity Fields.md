@@ -75,9 +75,11 @@ For more information, see [Multilingual Entity Fields](Multilingual%20Entity%20F
 
 ## Delete fields
 
-> **IMPORTANT!** Carefully review your AI Agent informational model before deleting fields, as the action is irreversible. Fields that are included in web views and forms are protected from deletion. Attempting to delete entity fields that are used in web views and forms will result in an error message.
->
-> ![](../Resources/Images/RELEASE%207.2/error%20field%20deletion.png)
+{% hint style="warning" %}
+**IMPORTANT!** Carefully review your AI Agent informational model before deleting fields, as the action is irreversible. Fields that are included in web views and forms are protected from deletion. Attempting to delete entity fields that are used in web views and forms will result in an error message.
+
+![](../Resources/Images/RELEASE%207.2/error%20field%20deletion.png)
+{% endhint %}
 
 To delete a field, click the **Delete** icon beside the field in list view. In diagram or tree view, the deletion occurs automatically.
 

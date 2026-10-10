@@ -7,7 +7,9 @@ title: "Workspace Logs"
 
 Workspace logs enables authors to understand the workspace integration errors and be in the position to quickly edit and fix the errors.
 
-> **NOTE:**  Workspace Logs is available in DRUID 5.15 and higher.
+{% hint style="info" %}
+**NOTE:**  Workspace Logs is available in DRUID 5.15 and higher.
+{% endhint %}
 
 <a id="Viewworkspacelogs"></a>
 
@@ -51,7 +53,9 @@ You have two options to troubleshoot the integrations that have failed:
 
 ### Drill-down into the connector integration
 
-> **NOTE:** This feature is available in DRUID 7.6 and higher.
+{% hint style="info" %}
+**NOTE:** This feature is available in DRUID 7.6 and higher.
+{% endhint %}
 
 To access detailed information about a connector integration in the Integration log, simply click on the desired connector task name.
 

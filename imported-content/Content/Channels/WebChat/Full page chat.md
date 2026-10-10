@@ -7,7 +7,9 @@ title: "Full Page Chat"
 
 ![](../../Resources/Images/WebChat/full%20page%20chat.png)
 
-> **NOTE:** In the HTML template below, make sure that your replace the following: <your Druid tenant>, <your AI Agent ID> and <your AI Agent base URL>.
+{% hint style="info" %}
+**NOTE:** In the HTML template below, make sure that your replace the following: <your Druid tenant>, <your AI Agent ID> and <your AI Agent base URL>.
+{% endhint %}
 
 **HTML Template**
 

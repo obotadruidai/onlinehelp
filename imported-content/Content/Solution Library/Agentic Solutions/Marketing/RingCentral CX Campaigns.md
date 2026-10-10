@@ -9,7 +9,9 @@ RingCentral CX campaigns are automated outbound calling campaigns built on the D
 
 During the call, the AI Agent can verify the contact’s identity, execute requested actions, or transfer the call to a live agent when necessary. All call outcomes are automatically saved in the Druid Data Service and displayed in campaign reports, allowing teams to review results without manual calling.
 
-> **Info:** A ready-to-use example, the OB – Missed Recalls campaign, is included in the business app and is referenced throughout this section as an example.
+{% hint style="info" %}
+**Info:** A ready-to-use example, the OB – Missed Recalls campaign, is included in the business app and is referenced throughout this section as an example.
+{% endhint %}
 
 <a id="HowItWorks"></a>
 

@@ -47,7 +47,9 @@ If another intent change occurs within a child flow
 
 Creating child intents is similar to creating flows; the only difference is that the conversation within a child intent should be minimal to address a simple task inside the main conversation context (in the context of the parent flow).
 
-> **NOTE:**  You can create child intents only from the Flow Diagram.
+{% hint style="info" %}
+**NOTE:**  You can create child intents only from the Flow Diagram.
+{% endhint %}
 
 To create a child intent:
 
@@ -60,15 +62,19 @@ By default, the child intent name follows this naming convention: Child <number>
 
 ![](../Resources/Images/Child%20intents/Child%20Intents_3.png)
 
-> **Info:** You can test the training phrases from authoring time by entering a phrase in the NLP child model section, clicking the **Test** button and selecting the language.
->
-> ![Image](../Resources/Images/Child%20intents/Child%20Intents_4.png)
->
-> The NLP child model section is also available on the parent flow step and you can test child intent(s) of the parent flow.
+{% hint style="info" %}
+**Info:** You can test the training phrases from authoring time by entering a phrase in the NLP child model section, clicking the **Test** button and selecting the language.
+
+![Image](../Resources/Images/Child%20intents/Child%20Intents_4.png)
+
+The NLP child model section is also available on the parent flow step and you can test child intent(s) of the parent flow.
+{% endhint %}
 
 4. In the child intent node, click the drop-down arrow to expand it.
 5. Define the child intent dialog following the procedure for defining dialogs. For more information, see [Defining the Dialog](Defining%20the%20Dialog.md).
-> **NOTE:** The conversation within a child intent should be minimal; therefore, design the child intent to respond to a single task.
+{% hint style="info" %}
+**NOTE:** The conversation within a child intent should be minimal; therefore, design the child intent to respond to a single task.
+{% endhint %}
 
 ![](../Resources/Images/Child%20intents/Child%20Intents_5.png)
 
@@ -88,7 +94,9 @@ The Flows list enables you to easily spot the parent and child flows, as follows
 
 ![](../Resources/Images/Flows/child%20intents%20and%20parents.png)
 
-> **Info:** On the parent flow, you can disable intent switch on steps prior to the one that will trigger child intents, to keep the user in the dialog without switching the intent.
+{% hint style="info" %}
+**Info:** On the parent flow, you can disable intent switch on steps prior to the one that will trigger child intents, to keep the user in the dialog without switching the intent.
+{% endhint %}
 
 <a id="ExampleBookingareservation"></a>
 
@@ -127,12 +135,16 @@ Repeat the procedure below as many times as parent flows you want to have an ide
 
 authors who have existing flows that better fit into the child intents functionality (e.g., small talk that occurs inside a flow), can transform them into child intents.
 
-> **IMPORTANT!**  Child intents provide additional context awareness (inside a parent flow). We do not recommend you to transform a large, complex parent flow into a child intent as this would introduce complexity and might break the dialog design.
+{% hint style="warning" %}
+**IMPORTANT!**  Child intents provide additional context awareness (inside a parent flow). We do not recommend you to transform a large, complex parent flow into a child intent as this would introduce complexity and might break the dialog design.
+{% endhint %}
 
 All existing and newly created flows automatically have the **Parent flow** field set to none.
 
 To transform a flow into a child intent, from the **Parent flow** field, select the desired parent flow and save the changes. The current flow becomes child intent for the selected parent flow.
 
-> **IMPORTANT!** Any modification on the child flow’s utterance(s), or any transformation of a child flow into a parent flow, or viceversa, requires the AI Agent to be re-trained! The train action creates both AI Agent model and child model(s).
+{% hint style="warning" %}
+**IMPORTANT!** Any modification on the child flow’s utterance(s), or any transformation of a child flow into a parent flow, or viceversa, requires the AI Agent to be re-trained! The train action creates both AI Agent model and child model(s).
+{% endhint %}
 
 By leveraging child intents effectively, authors can enhance conversational dynamics and streamline flow management across various dialog scenarios.

@@ -15,7 +15,9 @@ Agent Assist analyzes real-time voice interactions and suggests AI-powered respo
 
 ![](../../Resources/Images/Agent%20Assist/Recommending%20Responses%20to.png)
 
-> **NOTE:** This feature requires Agent Assist setup to store AudioCodes helpdesk conversations in Conversation History.
+{% hint style="info" %}
+**NOTE:** This feature requires Agent Assist setup to store AudioCodes helpdesk conversations in Conversation History.
+{% endhint %}
 
 When a client-AI Agent conversation is transferred to a helpdesk agent, Agent Assist activates automatically—if the Agent Assist special flow is configured. It processes each message in real time as follows:
 
@@ -52,7 +54,9 @@ You can remove this integration and configure an integration with the third-part
 
 After setup, Agent Assist will automatically suggest responses, helping agents provide faster and more accurate support.
 
-> **Info:** Agent Assist supports machine translation. Enable and configure the desired machine translation services on the AI Agent. For more information, see [Real-time Machine Translation in Live Chat](../../Live%20Chat/Real-time%20Machine%20Translation%20in%20Live%20Chat.md).
+{% hint style="info" %}
+**Info:** Agent Assist supports machine translation. Enable and configure the desired machine translation services on the AI Agent. For more information, see [Real-time Machine Translation in Live Chat](../../Live%20Chat/Real-time%20Machine%20Translation%20in%20Live%20Chat.md).
+{% endhint %}
 
 <a id="StoreAudioCodesHelpdeskConversationsinConversationHistory"></a>
 
@@ -94,7 +98,9 @@ The **Edit routing rule** page appears.
 
 ![](../../Resources/Images/Voice%20Audio%20Codes%20Channel/select%20assist%20bot%20in%20route.png)
 
-> **NOTE:** Following the Live Hub 2.19 upgrade, Agent Assist behavior after a call transfer is no longer carried over automatically from the initial call routing rule. The default setting is now disabled. If you want Agent Assist to continue functioning after a call transfer, you must explicitly configure the same Assist Bot on the relevant Transfer routing rule within the AudioCodes Live Hub.
+{% hint style="info" %}
+**NOTE:** Following the Live Hub 2.19 upgrade, Agent Assist behavior after a call transfer is no longer carried over automatically from the initial call routing rule. The default setting is now disabled. If you want Agent Assist to continue functioning after a call transfer, you must explicitly configure the same Assist Bot on the relevant Transfer routing rule within the AudioCodes Live Hub.
+{% endhint %}
 
 Agent Assist is now successfully set up, enabling the logging of AudioCodes agent-user interactions in the Conversation History.
 
@@ -114,7 +120,9 @@ In outbound call scenarios, the call direction is reversed compared to inbound c
 
 This reversal affects how Agent Assist processes the conversation transcript. The system must correctly identify which messages originate from the client and which come from the agent to provide accurate response suggestions.
 
-> **NOTE:** Agent Assist support for outbound calls is available only in DRUID version 9.9 and later.
+{% hint style="info" %}
+**NOTE:** Agent Assist support for outbound calls is available only in DRUID version 9.9 and later.
+{% endhint %}
 
 <a id="Prerequisites"></a>
 
@@ -141,7 +149,9 @@ For detailed steps on setting up outbound call routing, see the [AudioCodes Live
 
 ## <a id="Handling"></a>Handle Outbound Call Voicemail Detection (AudioCodes Live Hub)
 
-> **NOTE:** This feature is available in Druid 9.23 and higher.
+{% hint style="info" %}
+**NOTE:** This feature is available in Druid 9.23 and higher.
+{% endhint %}
 
 This feature allows outbound Live Hub call campaigns to detect when a client voicemail or answering machine answers the call, enabling the AI Agent to deliver a properly timed message after the voicemail greeting ends.
 
@@ -181,4 +191,6 @@ When a voicemail machine is detected, the system automatically sets a query para
 - **Condition to check**: [[QueryParams]].VoiceMailAnswer == true
 - **Behavior**: Route the conversation to a dedicated path designed for leaving a voicemail message. This path executes after the voicemail greeting ends and the AI agent begins speaking.
 
-> **NOTE:**  Due to the response speed of certain voicemail providers, the initial welcome flow may trigger after the voicemail message starts. This behavior is expected and cannot be prevented.
+{% hint style="info" %}
+**NOTE:**  Due to the response speed of certain voicemail providers, the initial welcome flow may trigger after the voicemail message starts. This behavior is expected and cannot be prevented.
+{% endhint %}

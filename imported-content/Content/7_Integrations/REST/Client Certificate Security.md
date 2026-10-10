@@ -12,7 +12,9 @@ Install that security certificate on the machine where the Druid Connector Host 
 You have three options to store the security certificate:
 
 - Current User – install the certificate on the current user in Windows > User Certificates.
-> **NOTE:** You need to install the certificate on the same system user under which the Druid Connector Host Service is running; otherwise Druid and your apps will not be able to communicate.
+{% hint style="info" %}
+**NOTE:** You need to install the certificate on the same system user under which the Druid Connector Host Service is running; otherwise Druid and your apps will not be able to communicate.
+{% endhint %}
 
 - Local Machine – install the certificate on the machine in Windows > Computer certificates.
 - Local Folder – store the security certificate in a shared location on the machine.

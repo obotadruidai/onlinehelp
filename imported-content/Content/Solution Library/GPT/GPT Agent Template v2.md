@@ -53,7 +53,9 @@ Go to solution Apps and configure the **gpt-agent** connections with your the Ba
 
 ![](../../Resources/Images/Solutions%20Library/agent%20template/key.png)
 
-> **Info:** You can use any other LLM that supports tools/function calling.
+{% hint style="info" %}
+**Info:** You can use any other LLM that supports tools/function calling.
+{% endhint %}
 
 After you configure the connections, click **Publish**.
 

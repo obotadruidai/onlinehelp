@@ -46,7 +46,9 @@ If you have questions about your Druid tenant, please contact [support@druidai.c
   For more information, see [Map REST Response using Custom Code](<https://docs.druidai.com/docs/Content/7_Integrations/REST/Map%20REST%20Response%20using%20Custom%20Code.htm>).
 
 - **Knowledge Base - Enhanced answer relevance with Search Priority**. You can now weight KB data sources (Low, Normal (default), High) to control search retrieval behavior in vector search. This ensures critical documents (like official procedures or urgent updates) take precedence over general background materials, delivering more accurate, reliable responses to end users.
-> **Info:** **Search Priority** can be set on initial data source creation or updated at any time in the **Details** tab.
+{% hint style="info" %}
+**Info:** **Search Priority** can be set on initial data source creation or updated at any time in the **Details** tab.
+{% endhint %}
 
 - **Channels - custom channel alias & display settings**. You can now configure business-friendly display names, custom descriptions, and icons for your communication channels in the Druid Portal.
 

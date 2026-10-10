@@ -12,7 +12,9 @@ This solution template provides you with an [UiPath attended process](../7_Integ
 - Acme. Open a new account here [https://acme-test.uipath.com/login](https://acme-test.uipath.com/login).
 - SAP. Having an SAP subscription is optional.
 - Druid tenant. By default, Druid opens the tenant [https://buildabotcitizen01.community.Druidplatform.com](https://buildabotcitizen01.community.druidplatform.com/).
-> **Info:** We recommend you to set up your own Druid tenant.
+{% hint style="info" %}
+**Info:** We recommend you to set up your own Druid tenant.
+{% endhint %}
 
 <a id="Settingupthesolution"></a>
 

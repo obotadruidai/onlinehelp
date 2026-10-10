@@ -5,7 +5,9 @@ title: "Trigger Events from the Web Page Hosting the AI Agent"
 <a id="TriggerEventsfromtheWebPageHostingtheAIAgent"></a>
 
 
-> **NOTE:** Events are sent only if the AI Agent is initialized—meaning the AI Agent is open and the connection is established.
+{% hint style="info" %}
+**NOTE:** Events are sent only if the AI Agent is initialized—meaning the AI Agent is open and the connection is established.
+{% endhint %}
 
 <a id="Triggeraconversationalflow"></a>
 
@@ -13,10 +15,12 @@ title: "Trigger Events from the Web Page Hosting the AI Agent"
 
 You can programmatically trigger a specific conversational flow from the web page hosting the AI Agent, with or without context data (entity data set in the web page), using the `sendEvent()` function.
 
-> **NOTE:**
->
-> - Triggering a conversational flow from the web page interrupts the current flow execution. If you only want to update the conversation context, see [Update the Conversation Context](#Update_the_Conversation_Context) instead.
-> - When triggering a flow with context data, the entity values from the web page will overwrite the current conversation context.
+{% hint style="info" %}
+**NOTE:**
+
+- Triggering a conversational flow from the web page interrupts the current flow execution. If you only want to update the conversation context, see [Update the Conversation Context](#Update_the_Conversation_Context) instead.
+- When triggering a flow with context data, the entity values from the web page will overwrite the current conversation context.
+{% endhint %}
 
 <a id="EventSyntaxTriggeraflowwithoutupdatingtheconversationcontext"></a>
 
@@ -85,9 +89,13 @@ window.example1 = () => {
 
 You can update the conversation context without interrupting the current flow execution by using the `sendEvent()` function with a special utterance: **"UpdateConversationContext"**.
 
-> **NOTE:** The entity data sent from the web page will overwrite the existing conversation context.
+{% hint style="info" %}
+**NOTE:** The entity data sent from the web page will overwrite the existing conversation context.
+{% endhint %}
 
-> **IMPORTANT!** Ensure that no flow in Druid has the training phrase "UpdateConversationContext" to avoid conflicts.
+{% hint style="warning" %}
+**IMPORTANT!** Ensure that no flow in Druid has the training phrase "UpdateConversationContext" to avoid conflicts.
+{% endhint %}
 
 **Syntax - Update conversation context**
 

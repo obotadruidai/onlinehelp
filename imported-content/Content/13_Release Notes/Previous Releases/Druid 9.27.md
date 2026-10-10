@@ -42,7 +42,9 @@ By removing the need for external voice gateways and generic models, Druid Voice
 
 ![](../../Resources/Images/druid%209.27/test%20call%20window.png)
 
-> **Info:** The test call completely disregards the configured Sip FQDN, IP whitelisting, and connection type settings. Because the tool bypasses these network constraints, you only need to configure your speech services before starting. Once your speech services are defined, you are ready to test the call!
+{% hint style="info" %}
+**Info:** The test call completely disregards the configured Sip FQDN, IP whitelisting, and connection type settings. Because the tool bypasses these network constraints, you only need to configure your speech services before starting. Once your speech services are defined, you are ready to test the call!
+{% endhint %}
 
 Test calls do not vanish once you hang up. Every interaction is automatically recorded so you can review the interaction details later.
 

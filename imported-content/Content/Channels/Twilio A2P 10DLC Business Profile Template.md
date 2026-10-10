@@ -19,7 +19,9 @@ Before completing the template, review the requirements below to make sure the i
 
 Your **Privacy Policy** and **Terms & Conditions** must be available through valid, publicly accessible URLs. The pages must not require users or Sakari reviewers to log in.
 
-> **IMPORTANT!** The **Privacy Policy URL** and **Terms & Conditions URL** must be valid, live, and publicly accessible (not password-protected or login-gated). Registrations submitted without compliant links will be rejected by Sakari and mobile carriers.
+{% hint style="warning" %}
+**IMPORTANT!** The **Privacy Policy URL** and **Terms & Conditions URL** must be valid, live, and publicly accessible (not password-protected or login-gated). Registrations submitted without compliant links will be rejected by Sakari and mobile carriers.
+{% endhint %}
 
 <a id="PrivacyPolicy"></a>
 
@@ -75,7 +77,9 @@ After a recipient opts out, do not send additional messages unless the recipient
 
 ## Download and complete the template
 
-> **Info:** You do not need to complete this template if you perform the A2P 10DLC registration directly with Sakari.
+{% hint style="info" %}
+**Info:** You do not need to complete this template if you perform the A2P 10DLC registration directly with Sakari.
+{% endhint %}
 
 If you want the Druid team to perform the A2P 10DLC registration on your behalf, download and complete the A2P 10DLC Business Profile template.
 
@@ -90,6 +94,8 @@ The template collects the information required for registration, including:
 - Privacy Policy URL.
 - Terms & Conditions URL.
 
-> **Info:** The template contains fictional information and is provided for guidance only. Replace all example information with details that accurately describe your business, campaign, and consent process before sending the template to the Druid team.
+{% hint style="info" %}
+**Info:** The template contains fictional information and is provided for guidance only. Replace all example information with details that accurately describe your business, campaign, and consent process before sending the template to the Druid team.
+{% endhint %}
 
 Once we receive the completed template, the Druid team can proceed with the A2P 10DLC registration in Sakari.

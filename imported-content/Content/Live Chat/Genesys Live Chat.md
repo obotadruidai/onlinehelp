@@ -7,7 +7,9 @@ title: "Genesys Live Chat"
 
 You can integrate AI Agents with Genesys Contact Center to transfer AI Agent conversations to live agents on Genesys.
 
-> **NOTE:**  AI Agents can currently integrate with Genesys Live Chat only for on-premises Genesys installations. It is available in DRUID 7.17 and higher.
+{% hint style="info" %}
+**NOTE:**  AI Agents can currently integrate with Genesys Live Chat only for on-premises Genesys installations. It is available in DRUID 7.17 and higher.
+{% endhint %}
 
 You can integrate AI Agents with Genesys Contact Center using either the DRUID Cloud or the DRUID Connector Host.
 
@@ -26,7 +28,9 @@ The Genesys Server accepts incoming requests only from the DRUID Conversational 
 ### Prerequisites
 
 - Create a service for the chat media in Genesys Mobile Engagement for DRUID integration. In GMS Configuration, add a new service under the chat configuration section. For example, you might name the service webchat. For more information, see [Genesys Mobile Engagement documentation](https://docs.genesys.com/Documentation/GMS/8.5.2/Deployment/ConfiguringDigitalChannels).
-> **Info:** Write down the service name, you’ll need the service name in DRUID later.
+{% hint style="info" %}
+**Info:** Write down the service name, you’ll need the service name in DRUID later.
+{% endhint %}
 
 - Grant access for DRUID server, to the Genesys Mobile Service Chat API Version 2 (DRUID is not compatible with other Chat API versions), by whitelist the IP of the DRUID egress generic service corresponding to the DRUID Cloud environment you're using:
 
@@ -100,9 +104,13 @@ To integrate Genesys Live Chat with AI Agents via the DRUID Connector Host, foll
 To ensure agents receive the conversation transcript from the AI Agent before engaging in live chat, follow these steps:
 
 1. On the step where you call the **ConnectToHelpdeskAgent** internal action, in the Pre Actions section, call the **GetConversationTranscript** internal action.
-> **IMPORTANT!** Ensure **GetConversationTranscript** is called in the Pre Actions section. Calling it in the Post Actions section will not send the transcript to agents.
+{% hint style="warning" %}
+**IMPORTANT!** Ensure **GetConversationTranscript** is called in the Pre Actions section. Calling it in the Post Actions section will not send the transcript to agents.
+{% endhint %}
 
-> **Info:** You can also call GetConversationTranscript in a previous step.
+{% hint style="info" %}
+**Info:** You can also call GetConversationTranscript in a previous step.
+{% endhint %}
 
 2. On the **ConnectToHelpdeskAgent** internal action, add the following:
 
@@ -112,7 +120,9 @@ To ensure agents receive the conversation transcript from the AI Agent before en
 }
 ```
 
-> **Info:** You can also send additional client information to Genesys agents. For more information, see [Sending Contact Center Parameters](#_Sending_Contact_Center).
+{% hint style="info" %}
+**Info:** You can also send additional client information to Genesys agents. For more information, see [Sending Contact Center Parameters](#_Sending_Contact_Center).
+{% endhint %}
 
 3. Save the step.
 
@@ -138,7 +148,9 @@ You can also send other parameters as long as they match the names in Genesys.
 
 On the **ConnectToHelpdeskAgent** internal action, provide the desired parameters inside the ContactCenterParameters object in JSON format.
 
-> **NOTE:** Make sure to provide the parameters values as strings, when using values from DRUID conversation context (entities, local variables), using "", otherwise, the JSON object is invalid.
+{% hint style="info" %}
+**NOTE:** Make sure to provide the parameters values as strings, when using values from DRUID conversation context (entities, local variables), using "", otherwise, the JSON object is invalid.
+{% endhint %}
 
 **Example - Send Contact Center parameters**
 

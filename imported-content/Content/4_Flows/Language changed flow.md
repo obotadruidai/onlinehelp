@@ -7,7 +7,9 @@ title: "Language Detection Flow"
 
 DRUID is capable of detecting any language change in the conversation prior triggering the **Intent not found** flow, covering the cases when the user types something in another language than the default language of the AI Agent. It does not include the cases when the user changes the conversation language using the snippet's Language option.
 
-> **NOTE:** The user can change the current language in conversation in either the idle state, or inside a flow. In the second situation, the current flow gets canceled.
+{% hint style="info" %}
+**NOTE:** The user can change the current language in conversation in either the idle state, or inside a flow. In the second situation, the current flow gets canceled.
+{% endhint %}
 
 The Language Detection flow enables authors to address situations when DRUID detects a language change in the conversation.
 
@@ -81,18 +83,22 @@ To enable language detection, on the AI Agent Details make the following setting
    If you imported the **Language detection flow** solution template, from the **Language Changed flow** field, select **Language change**.
 2. Tap on **Language detection**. The **Threshold** field becomes editable.
 3. In the **Threshold** field, enter a value (we recommend setting the threshold to 90). Whenever the threshold is reached, the selected **Language Changed Flow** will be triggered.
-> **NOTE:** Only the texts that are detected in another language with a probability higher than the threshold will be taken into consideration.
+{% hint style="info" %}
+**NOTE:** Only the texts that are detected in another language with a probability higher than the threshold will be taken into consideration.
+{% endhint %}
 
 ![](../Resources/Images/Bot%20Advanced%20Settings/detect%20language.png)
 
 4. Save the AI Agent.
 
-> **IMPORTANT!**
-> The Language Detected flow is triggered only if the following conditions are met simultaneously:
->
-> - **[[ChatUser]].DetectedLanguage** is different than the **[[ChatUser]].Language**.
-> - **[[ChatUser]].DetectedLanguage.Score** is higher than the value of the **NLP.Language.Detection.Threshold** parameter.
-> - The last language change detection was more than 15 minutes ago. The last language change detection for the same new language identified, was more than 15 mins ago (E.g., the current language is German and AI Agent detects English; the user doesn’t want to switch to English because he/she only used a universal word like “laptop” or “mouse”; therefore, next time the AI Agent will identify a language change intent to English and current language is still German, it will not trigger the Language Changed special flow again).
+{% hint style="warning" %}
+**IMPORTANT!**
+The Language Detected flow is triggered only if the following conditions are met simultaneously:
+
+- **[[ChatUser]].DetectedLanguage** is different than the **[[ChatUser]].Language**.
+- **[[ChatUser]].DetectedLanguage.Score** is higher than the value of the **NLP.Language.Detection.Threshold** parameter.
+- The last language change detection was more than 15 minutes ago. The last language change detection for the same new language identified, was more than 15 mins ago (E.g., the current language is German and AI Agent detects English; the user doesn’t want to switch to English because he/she only used a universal word like “laptop” or “mouse”; therefore, next time the AI Agent will identify a language change intent to English and current language is still German, it will not trigger the Language Changed special flow again).
+{% endhint %}
 
 <a id="DebuggingwhytheLanguagechangedflowwasnottriggered"></a>
 

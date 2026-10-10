@@ -7,10 +7,12 @@ title: "Romanian Driver License OCR"
 
 The Druid API engine performs OCR and data extraction from Romanian driver licenses.
 
-> **NOTE:**
->
-> - In order to use this Druid Vision service, contact [Druid Tech Support](<mailto:support@druidai.com?subject=Request: Activate Druid Vision service RO_DriverLicense>).
-> - For any APIs that are used for testing purposes and not in a production environment, Druid CANNOT be held responsible for the security of the processed data under the General Data Protection Regulation (GDPR). We highly recommend you to use sample data and documents for all APIs in testing environments.
+{% hint style="info" %}
+**NOTE:**
+
+- In order to use this Druid Vision service, contact [Druid Tech Support](<mailto:support@druidai.com?subject=Request: Activate Druid Vision service RO_DriverLicense>).
+- For any APIs that are used for testing purposes and not in a production environment, Druid CANNOT be held responsible for the security of the processed data under the General Data Protection Regulation (GDPR). We highly recommend you to use sample data and documents for all APIs in testing environments.
+{% endhint %}
 
 <a id="Request"></a>
 

@@ -39,7 +39,9 @@ A warning message below the data source predict area indicates that train is req
 
 ![](../../Resources/Images/Druid%208.6/warning.png)
 
-> **NOTE:**  After re-training a data source, elements marked for deletion within that specific source will be permanently removed. To delete elements marked for deletion across multiple data sources, you must train the entire KB.
+{% hint style="info" %}
+**NOTE:**  After re-training a data source, elements marked for deletion within that specific source will be permanently removed. To delete elements marked for deletion across multiple data sources, you must train the entire KB.
+{% endhint %}
 
 - **Start multiple conversations**. You can now initiate multiple DRUID conversations simultaneously using the `/api/Druid/{botId}/StartFlowBulk` API endpoint. This is especially useful for starting conversations with multiple users in a single API call.
 

@@ -7,7 +7,9 @@ title: "LLM Response Validation"
 
 Ensure your LLM-powered AI Agents provide accurate and reliable information by setting up a flow that allows human agents to review and validate all LLM-generated responses before they reach users.
 
-> **NOTE:**  This feature requires Multi-chat configuration.
+{% hint style="info" %}
+**NOTE:**  This feature requires Multi-chat configuration.
+{% endhint %}
 
 <a id="Howitworks"></a>
 
@@ -15,7 +17,9 @@ Ensure your LLM-powered AI Agents provide accurate and reliable information by s
 
 When an LLM-generated response requires human validation, the system places it in the Waiting queue. A human agent reviews the response, makes any necessary corrections, and approves it before it’s sent to the user. This process ensures users receive accurate information without noticing human involvement.
 
-> **NOTE:** LLM responses needing validation are never part of a live chat session; they remain in the Waiting queue, even during agent review.
+{% hint style="info" %}
+**NOTE:** LLM responses needing validation are never part of a live chat session; they remain in the Waiting queue, even during agent review.
+{% endhint %}
 
 <a id="EnablehumanreviewforLLMresponses"></a>
 
@@ -110,4 +114,6 @@ The following fields provide detailed tracking of agent activities, offering a m
 | BotResponseValidationPickUp | DateTime | Captures when the agent initiated a live session with the user by clicking **Pickup** in the LLM response. |
 | BotResponseValidationSave | DateTime | Captures when the agent approves an LLM response or saves and closes an edited response. The value is stored after the agent completes the task. |
 
-> **Info:** These timestamps are also available within the conversation context when the **MaxWaitTimeForAgentResponse** timeout is reached.
+{% hint style="info" %}
+**Info:** These timestamps are also available within the conversation context when the **MaxWaitTimeForAgentResponse** timeout is reached.
+{% endhint %}

@@ -7,9 +7,13 @@ title: "Define View Data by Adding Integrations"
 
 After defining your view, the next step is to fetch the entity data that will populate the view. This is done by adding integrations with external data sources. By defining these integrations, you can ensure that the view is populated with the appropriate entity records, allowing you to display dynamic, real-time data from both DRUID Data Services and external sources.
 
-> **NOTE:** To fetch the correct data, the entity you’re creating views for must be set as the Response Entity in the integration task, with the **Is Response Collection** option selected in the **Response** tab.
+{% hint style="info" %}
+**NOTE:** To fetch the correct data, the entity you’re creating views for must be set as the Response Entity in the integration task, with the **Is Response Collection** option selected in the **Response** tab.
+{% endhint %}
 
-> **Info:** For quick integration with Druid Data Services, you can use the CRUD Template in the entity integrations. While you can add the CRUD Template multiple times, note that DRUID only duplicates the integration tasks. For more information, see CRUD Template.
+{% hint style="info" %}
+**Info:** For quick integration with Druid Data Services, you can use the CRUD Template in the entity integrations. While you can add the CRUD Template multiple times, note that DRUID only duplicates the integration tasks. For more information, see CRUD Template.
+{% endhint %}
 
 To define the view data follow these steps:
 
@@ -34,7 +38,9 @@ To define the view data follow these steps:
 ![](../Resources/Images/CBA/define%20integration%20action.png)
 
 2. Save the integration action by clicking the **Save** icon (![](../Resources/Images/CBA/save%20view%20icon.png)) at the top-right corner of the editor.
-> **IMPORTANT!**  You can add only one connector action in the Read Data section and multiple integration tasks to aggregate data coming from various data sources.
+{% hint style="warning" %}
+**IMPORTANT!**  You can add only one connector action in the Read Data section and multiple integration tasks to aggregate data coming from various data sources.
+{% endhint %}
 
 3. Add integration tasks. Click on the **Add task** icon and select the desired integration task from the list where the current entity is Response entity and **Is Response Collection** is selected.
 
@@ -51,9 +57,11 @@ You must publish new integrations after adding them to apply the changes.
 
 ![](../Resources/Images/CBA/delete%20data.png)
 
-> **NOTE:**  If no integration is selected, the Delete icon will not be shown in the view, and users won’t be able to delete records.
->
-> ![](../Resources/Images/CBA/delete%20records.png)
+{% hint style="info" %}
+**NOTE:**  If no integration is selected, the Delete icon will not be shown in the view, and users won’t be able to delete records.
+
+![](../Resources/Images/CBA/delete%20records.png)
+{% endhint %}
 
 Once you’ve set up the integrations, preview the view to check how the data is displayed and make any further adjustments as needed.
 

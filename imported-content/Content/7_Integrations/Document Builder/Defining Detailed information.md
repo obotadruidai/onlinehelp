@@ -28,9 +28,13 @@ You can map both parent and child properties of the same collection on the same 
 
 **%**EntityName**.**EntityFieldOfTypeEntityList**.**ReferencedEntityFieldofTypeEntityList**.**ScalarField - for scalar field in a collection within another collection.
 
-> **NOTE:** To generate a nicely ordered excel table, only use cascaded collection (collection in collection); using two collections on the same row in a document template will generate a table that is hard to read.
+{% hint style="info" %}
+**NOTE:** To generate a nicely ordered excel table, only use cascaded collection (collection in collection); using two collections on the same row in a document template will generate a table that is hard to read.
+{% endhint %}
 
-> **Info:** You can use [arguments](#Arguments) to further customize the worksheet.
+{% hint style="info" %}
+**Info:** You can use [arguments](#Arguments) to further customize the worksheet.
+{% endhint %}
 
 Example: Generate a report with the list of persons and their street (taken from the person's address)
 
@@ -44,11 +48,15 @@ In the first table row, below the table header, we invoke the desired **Name** a
 
 ![](../../Resources/Images/Document%20Builder/mapping%20parent%20and%20child.png)
 
-> **Info:** The generated document will contain as many rows as records are in the collection (in this case in the [[Persons]] collection).
+{% hint style="info" %}
+**Info:** The generated document will contain as many rows as records are in the collection (in this case in the [[Persons]] collection).
+{% endhint %}
 
 **Nested Fields inside Entity-type Fields**
 
-> **Info:** This feature is available starting with Druid 9.27.
+{% hint style="info" %}
+**Info:** This feature is available starting with Druid 9.27.
+{% endhint %}
 
 To pull properties from a related entity directly, without having to use a Set Variable flow step to flat-map them first:
 
@@ -80,7 +88,9 @@ This argument merges the cells in the column for each object set while filling i
 
 **%EntityName.EntityFieldOfTypeEntityList.ReferencedEntityFieldofTypeEntityList**;merge
 
-> **Info:** When getting data from a cascaded collection, to ensure that you get a nice output we recommend you not to use **merge** on the last level scalar fields from the collection (in the last column of your table) unless you really want to merge that data.
+{% hint style="info" %}
+**Info:** When getting data from a cascaded collection, to ensure that you get a nice output we recommend you not to use **merge** on the last level scalar fields from the collection (in the last column of your table) unless you really want to merge that data.
+{% endhint %}
 
 #### Example
 

@@ -34,7 +34,9 @@ For more information, see [Network Shared Drive Data Sources](../../Knowledgebas
 - meta.llama3-8b-instruct-v1:0
 - meta.llama3-70b-instruct-v1:0
 
-> **NOTE:** To use AWS Bedrock LLM, please contact your DRUID representative to activate the LLM resource on your tenant.
+{% hint style="info" %}
+**NOTE:** To use AWS Bedrock LLM, please contact your DRUID representative to activate the LLM resource on your tenant.
+{% endhint %}
 
 - **Knowledge Base – Enhanced scraping for dynamic websites**. You can now provide Playwright-compatible scripts for website data sources with dynamically rendered content. This ensures that dynamically rendered content (including elements that require user interaction to be displayed) is captured during the scraping process, improving Knowledge Base completeness and reliability. While this option is also available at the KB level, we recommend configuring the script individually for each website data source to ensure complete content retrieval.
 

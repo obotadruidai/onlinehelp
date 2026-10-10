@@ -92,13 +92,17 @@ The installation wizard opens. Select **Data Service**.
 
 ![](../../Resources/Images/Druid%20Data%20Service%20Installation/DS%20install.png)
 
-> **NOTE:** Selecting both options will install the Data Service and the Connector Host on the same machine.
+{% hint style="info" %}
+**NOTE:** Selecting both options will install the Data Service and the Connector Host on the same machine.
+{% endhint %}
 
 Click **Next**.
 
 Select **Install a new Data Service instance**.
 
-> **Info:**  Using the Druid Connector Host installer, you can also upgrade or uninstall versions of Druid Data Service installed using the installer.
+{% hint style="info" %}
+**Info:**  Using the Druid Connector Host installer, you can also upgrade or uninstall versions of Druid Data Service installed using the installer.
+{% endhint %}
 
 Click **Next**.
 
@@ -138,9 +142,13 @@ Druid screens all existing entities across all AI Agents on your tenant and dete
 
 ![](../../Resources/Images/Druid%20Data%20Service/second%20pop%20up.png)
 
-> **IMPORTANT!** The upgrade is irreversible; so before upgrading, we strongly recommend you to check the new system entity field types and review your existing configurations to make sure that they are not affected by these changes.
+{% hint style="warning" %}
+**IMPORTANT!** The upgrade is irreversible; so before upgrading, we strongly recommend you to check the new system entity field types and review your existing configurations to make sure that they are not affected by these changes.
+{% endhint %}
 
-> **NOTE:** The upgrade is mandatory if you want to use this entity with Druid Data Service and workspaces. If you do not upgrade an entity, you have Data Service active on your AI Agent and you try adding a Druid Data Service Integration task on the entity, you will get an error message.
+{% hint style="info" %}
+**NOTE:** The upgrade is mandatory if you want to use this entity with Druid Data Service and workspaces. If you do not upgrade an entity, you have Data Service active on your AI Agent and you try adding a Druid Data Service Integration task on the entity, you will get an error message.
+{% endhint %}
 
 The following Druid system fields are automatically populated on entity and entity field creation; therefore, a specific field type is required by Druid.
 
@@ -157,7 +165,9 @@ Click the **Overwrite entity fields** button at the bottom of the pop-up to over
 
 At the top-right corner of the page, click the **Save all** button.
 
-> **IMPORTANT!**  Make sure that you click **Save all**; otherwise, enabling Druid Data Service and overwriting the entity fields will have no effect.
+{% hint style="warning" %}
+**IMPORTANT!**  Make sure that you click **Save all**; otherwise, enabling Druid Data Service and overwriting the entity fields will have no effect.
+{% endhint %}
 
 Use [Druid Data Service Connector](../Druid%20Data%20Service%20Connector/Druid_Data_%20Service_Connector.md) to manage entity records within the conversational flows.
 
@@ -167,11 +177,13 @@ Use [Druid Data Service Connector](../Druid%20Data%20Service%20Connector/Druid_D
 
 By default, MongoDB is installed without any secured access. This section describes how to set up security for your MongoDB installation.
 
-> **NOTE:** If your MongoDB instance is hosted on a different machine than the one running Druid Data Service, you must open the MongoDB port by running the following command in an elevated command prompt of your MongoDB Windows Server machine:
->
-> ```
-> netsh advfirewall firewall add rule name="Open mongod port 27017" dir=in action=allow protocol=TCP localport=27017
-> ```
+{% hint style="info" %}
+**NOTE:** If your MongoDB instance is hosted on a different machine than the one running Druid Data Service, you must open the MongoDB port by running the following command in an elevated command prompt of your MongoDB Windows Server machine:
+
+```
+netsh advfirewall firewall add rule name="Open mongod port 27017" dir=in action=allow protocol=TCP localport=27017
+```
+{% endhint %}
 
 To configure security in MongoDB you can use [mongosh](https://www.mongodb.com/docs/mongodb-shell/install) or [compass](https://www.mongodb.com/docs/compass/master/install/).
 
@@ -190,7 +202,9 @@ This section describes how to configure security in MongoDB using the compass to
 ![](../../Resources/Images/Mongo/Mongo_2.png)
 
 4. Create the user by typing the text below and replacing `{{MONGOADMIN}}` and `{{MONGOPASS}}` with the MongoDB credentials (user and password).
-> **NOTE:** For credentials, use only alphanumeric characters.
+{% hint style="info" %}
+**NOTE:** For credentials, use only alphanumeric characters.
+{% endhint %}
 
 ```
 db.createUser(
@@ -218,7 +232,9 @@ port: 27017
 bindIp: 127.0.0.1,{{HOST-NAME}}
 ```
 
-> **NOTE:** Change `{{HOST-NAME}}` with the name of the Windows computer which runs the MongoDB service.
+{% hint style="info" %}
+**NOTE:** Change `{{HOST-NAME}}` with the name of the Windows computer which runs the MongoDB service.
+{% endhint %}
 
 7. Restart the MongoDB service.
 

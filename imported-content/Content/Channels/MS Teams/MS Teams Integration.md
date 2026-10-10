@@ -23,12 +23,16 @@ Before configuring the MS Teams channel, ensure you have:
 - A MS Teams account.
 - Microsoft Bot Framework enabled on your tenant (for Druid hybrid and cloud deployments).
 
-> **IMPORTANT!**
->
-> - For **DRUID hybrid and cloud deployments**, the MS Teams channel requires the Microsoft Bot Framework. You can configure the channel only if the Bot Framework is enabled on your tenant. If the channel configuration is unavailable – the Post Office is set to BotService (AI Agent Details → General) – contact Druid Support to enable the Microsoft Bot Framework on your tenant.
-> - MS Teams channel integration is not available for Druid on-premise deployments.
+{% hint style="warning" %}
+**IMPORTANT!**
 
-> **Info:** The MS Teams channel supports sensitive data input. For more information, see [Prompt Steps](../../4_Flows/Prompt%20Steps%20Configuration.md).
+- For **DRUID hybrid and cloud deployments**, the MS Teams channel requires the Microsoft Bot Framework. You can configure the channel only if the Bot Framework is enabled on your tenant. If the channel configuration is unavailable – the Post Office is set to BotService (AI Agent Details → General) – contact Druid Support to enable the Microsoft Bot Framework on your tenant.
+- MS Teams channel integration is not available for Druid on-premise deployments.
+{% endhint %}
+
+{% hint style="info" %}
+**Info:** The MS Teams channel supports sensitive data input. For more information, see [Prompt Steps](../../4_Flows/Prompt%20Steps%20Configuration.md).
+{% endhint %}
 
 <a id="DeployyourAIAgentinMSTeams"></a>
 
@@ -108,9 +112,11 @@ In the **Microsoft Partner ID** field, enter the **DRUID MPN** (the one generate
 8. Click **Save**.
 9. From the **Configure** menu, click **App features** and on the right pane, click **Bot**.
 10. Tap on **Enter a Bot ID** and in the field below enter the Microsoft Application ID associated to your AI Agent (the one generated in Druid after the channel activation).
-> **Info:** Copy and Paste the Microsoft Application Id from the Teams channel configuration from the Druid Portal.
->
-> ![](../../Resources/Images/MS%20Teams/nota.png)
+{% hint style="info" %}
+**Info:** Copy and Paste the Microsoft Application Id from the Teams channel configuration from the Druid Portal.
+
+![](../../Resources/Images/MS%20Teams/nota.png)
+{% endhint %}
 
 11. Select the capabilities and scopes your AI Agent will need: **Upload and download files**, scopes **Personal** and **Team**.
 
@@ -155,13 +161,17 @@ When the app validation completes successfully, you can publish the app to your 
 
 #### Step 4. Install the AI Agent in a team in MS Teams
 
-> **NOTE:** You must be the owner of the MS Team in order to install the AI Agent.
+{% hint style="info" %}
+**NOTE:** You must be the owner of the MS Team in order to install the AI Agent.
+{% endhint %}
 
-> **IMPORTANT!**
->
-> The AI Agent installation in MS Teams is done progressively (not instantly); so it might take up to 48 hours for the installation to complete depending on how many MS Team members you have.
->
-> During the AI Agent installation, the AI Agent appears to your Team members on the left menu and sends them the welcome message set on the AI Agent. If you want to prevent the AI Agent from sending the welcome message until its installation in MS Teams completes, temporarily disable the **Welcome flow** (in Druid Portal, go to the AI Agent details, section **Dialogue management** and leave the **Welcome flow** field empty).
+{% hint style="warning" %}
+**IMPORTANT!**
+
+The AI Agent installation in MS Teams is done progressively (not instantly); so it might take up to 48 hours for the installation to complete depending on how many MS Team members you have.
+
+During the AI Agent installation, the AI Agent appears to your Team members on the left menu and sends them the welcome message set on the AI Agent. If you want to prevent the AI Agent from sending the welcome message until its installation in MS Teams completes, temporarily disable the **Welcome flow** (in Druid Portal, go to the AI Agent details, section **Dialogue management** and leave the **Welcome flow** field empty).
+{% endhint %}
 
 To integrate the AI Agent in a MS team, in MS teams, from the left menu, click **Teams**. Right click on a team that you created and select **Manage team**.
 

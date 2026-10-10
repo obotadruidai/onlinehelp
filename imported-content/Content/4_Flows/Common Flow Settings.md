@@ -26,4 +26,6 @@ The diagram below describes the execution order on a flow step.
 
 ![](../Resources/Images/Flows/flow%20step%20execution.png)
 
-> **IMPORTANT!** If you’re using same entities to capture data on all or some of the step sections, they will be overwritten during the step execution as described in the diagram above. For example, if you set an entity value in the Set Variable section and you use the same entity for input mapping in the General section, the value set in the Set Variable section will be overwritten by what the user says.
+{% hint style="warning" %}
+**IMPORTANT!** If you’re using same entities to capture data on all or some of the step sections, they will be overwritten during the step execution as described in the diagram above. For example, if you set an entity value in the Set Variable section and you use the same entity for input mapping in the General section, the value set in the Set Variable section will be overwritten by what the user says.
+{% endhint %}

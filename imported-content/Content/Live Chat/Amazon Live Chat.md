@@ -68,7 +68,9 @@ You can use the [AWS Policy Generator](https://awspolicygen.s3.amazonaws.com/pol
 
 ![](../Resources/Images/Live%20Chat/Amazon%20Live%20Chat/access%20key.png)
 
-> **NOTE:** If you lose or forget your secret key, you cannot retrieve it. Instead, create a new access key and make the old key inactive. You can have a maximum of two access keys (active or inactive) at a time.
+{% hint style="info" %}
+**NOTE:** If you lose or forget your secret key, you cannot retrieve it. Instead, create a new access key and make the old key inactive. You can have a maximum of two access keys (active or inactive) at a time.
+{% endhint %}
 
 <a id="Step2GetAmazonConnectInstanceIDandFlowID"></a>
 
@@ -113,7 +115,9 @@ On the dedicated step, in the PreActions section, call the internal action **Con
 
 ![](../Resources/Images/Live%20Chat/Amazon%20Live%20Chat/flow%20steo%20config.png)
 
-> **NOTE:** If you do not set the two variables **[[ChatUser]].Name** and **[[ChatUser]].HelpdeskSubject**, the AI Agent will fail placing the customer in the Amazon Connect live chat. Please note that in figure above, the [[HelpdeskClient]] entity in the right hand side of the SetVariables section are used only as an example - you can set any values in **[[ChatUser]].Name** and **[[ChatUser]].Subject**, as per your specific flow configuration.
+{% hint style="info" %}
+**NOTE:** If you do not set the two variables **[[ChatUser]].Name** and **[[ChatUser]].HelpdeskSubject**, the AI Agent will fail placing the customer in the Amazon Connect live chat. Please note that in figure above, the [[HelpdeskClient]] entity in the right hand side of the SetVariables section are used only as an example - you can set any values in **[[ChatUser]].Name** and **[[ChatUser]].Subject**, as per your specific flow configuration.
+{% endhint %}
 
 <a id="SendtheconversationtranscripttoAmazonLiveChatAgents"></a>
 
@@ -124,9 +128,13 @@ Most contact centers want their helpdesk agents to get the transcript of the con
 To save the conversation transcript and make it available for Amazon Live Chat agents, on the flow that connects the client with the agent, make the following settings:
 
 1. On the step where you call the internal action **ConnectToHelpdeskAgent**(Post Actions section), in the **Pre Actions** section, call the internal action **GetConversationTranscript**.
-> **IMPORTANT!**  When calling the **GetConversationTranscript** internal action on the same step where you call **ConnectToHelpdeskAgent**, make sure to call it in the PreActions section. Calling it in the PostActions section will not send the conversation transcript to agents.
+{% hint style="warning" %}
+**IMPORTANT!**  When calling the **GetConversationTranscript** internal action on the same step where you call **ConnectToHelpdeskAgent**, make sure to call it in the PreActions section. Calling it in the PostActions section will not send the conversation transcript to agents.
+{% endhint %}
 
-> **Info:**  You can call the **GetConversationTranscript** internal action on a previous step.
+{% hint style="info" %}
+**Info:**  You can call the **GetConversationTranscript** internal action on a previous step.
+{% endhint %}
 
 2. On the **ConnectToHelpdeskAgent** internal action add the following:
 
@@ -136,7 +144,9 @@ To save the conversation transcript and make it available for Amazon Live Chat a
 }
 ```
 
-> **Info:** You can send additional client information to Amazon Live Chat Agents together with the conversation transcript. For more information, see [Send Contact Center Parameters](#Send_Contact_Center_Parameters).
+{% hint style="info" %}
+**Info:** You can send additional client information to Amazon Live Chat Agents together with the conversation transcript. For more information, see [Send Contact Center Parameters](#Send_Contact_Center_Parameters).
+{% endhint %}
 
 3. Save the step.
 
@@ -144,7 +154,9 @@ To save the conversation transcript and make it available for Amazon Live Chat a
 
 ## <a id="Enable"></a>Enable real-time queue position retrieval from Amazon Connect
 
-> **NOTE:** This feature is available starting with DRUID version 9.12. It also requires the AWS user dedicated to the Amazon Connect–Druid integration to be granted an IAM policy with **GetContactMetrics** permissions. For more information about this policy, see [Step 1](#Step_1%3A).
+{% hint style="info" %}
+**NOTE:** This feature is available starting with DRUID version 9.12. It also requires the AWS user dedicated to the Amazon Connect–Druid integration to be granted an IAM policy with **GetContactMetrics** permissions. For more information about this policy, see [Step 1](#Step_1%3A).
+{% endhint %}
 
 To include a waiting user’s real-time position from the Amazon Live Chat queue in the Druid conversation context, set the **PositionInQueueSetByCC** parameter to **true** in the **ConnectToHelpdeskAgent** internal action.
 
@@ -172,7 +184,9 @@ The table below lists the Contact Center parameters authors can send to Amazon L
 
 To send Contact Center parameters to Amazon Live Chat, on the **ConnectToHelpdeskAgent** internal action, provide the desired parameters inside the `ContactCenterParameters` object in JSON format.
 
-> **NOTE:** The payload must follow a key-value format where both the key and value are strings. When using values from DRUID conversation context (entities, local variables) as parameter values, ensure they are enclosed in double quotes ("") to maintain valid JSON formatting.
+{% hint style="info" %}
+**NOTE:** The payload must follow a key-value format where both the key and value are strings. When using values from DRUID conversation context (entities, local variables) as parameter values, ensure they are enclosed in double quotes ("") to maintain valid JSON formatting.
+{% endhint %}
 
 **Example - Send Contact Center parameters**
 

@@ -5,7 +5,9 @@ title: "Loading UiPath Entity Schema and Mapping Fields"
 <a id="LoadingUiPathEntitySchemaandMappingFields"></a>
 
 
-> **Info:**  Druid shows by default the mapped fields only. To view the full UiPath entity schema, tap off **Show mapped fields only**, click **Actions** and select **Refresh UiPath Schema**.
+{% hint style="info" %}
+**Info:**  Druid shows by default the mapped fields only. To view the full UiPath entity schema, tap off **Show mapped fields only**, click **Actions** and select **Refresh UiPath Schema**.
+{% endhint %}
 
 From the **Actions** drop-down, click **Refresh UiPath Schema**.
 
@@ -25,7 +27,9 @@ Click the **Save** icon (![](../../Resources/Images/UiPath%20Data%20Service%20Co
 
 Click the **Expand** icon (![](../../Resources/Images/UiPath%20Data%20Service%20Connector/Loading%20UiPath%20Entity%20Schema_5_21x18.png)) displayed in front of the UiPath entity. All UiPath entity fields are listed. You can map the desired fields to Druid fields by clicking in the Druid column and selecting the desired field, then clicking the **Save** icon (![](../../Resources/Images/UiPath%20Data%20Service%20Connector/Loading%20UiPath%20Entity%20Schema_3.png)) displayed inline.
 
-> **NOTE:** You can map UiPath fields to specific Druid fields based on their type. For more information, see [Fields Type Mapping](#Fields_Type_Mapping).
+{% hint style="info" %}
+**NOTE:** You can map UiPath fields to specific Druid fields based on their type. For more information, see [Fields Type Mapping](#Fields_Type_Mapping).
+{% endhint %}
 
 ![](../../Resources/Images/UiPath%20Data%20Service%20Connector/Loading%20UiPath%20Entity%20Schema_6.png)
 

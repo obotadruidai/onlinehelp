@@ -33,7 +33,9 @@ Experience the speed yourself! [Speak with Nova](https://cmgbh04.na1.hubspotlink
 
 - **Centralized Speech Resource Management and Governance**.
   You can now centrally define, configure, and manage speech resources (STT and TTS) at the tenant level under Administration > Speech Resources. This central repository simplifies vendor setup and security governance, allowing speech resources to be reused seamlessly across Druid Voice channels without redundant configuration.
-> **Info:** Centralized speech resource management is currently supported for the Druid SIP channel. Support for the Webchat channel will be introduced in an upcoming release.
+{% hint style="info" %}
+**Info:** Centralized speech resource management is currently supported for the Druid SIP channel. Support for the Webchat channel will be introduced in an upcoming release.
+{% endhint %}
 
 ![](../../Resources/Images/Speech%20resources/speech%20resources.png)
 
@@ -52,7 +54,9 @@ For more information, see [Speech Resource Management and Governance](../../Drui
 ![](../../Resources/Images/druid%209.31/metadata%20integrations.png)
 
 ![](../../Resources/Images/druid%209.31/add%20kb%20metadata.png)- **Custom Data Source Support**. You can now define KB metadata programmatically within the Custom Code task of custom data source extraction integrations (`responseEntity.Node.Context.Metadata`).
-> **NOTE:** To support a seamless transition, data source tree elements (roots, nodes, and leaves) will display two tabs through version 10.1: **Metadata** (legacy experience) and **Metadata (New)** , allowing you to validate the new setup alongside existing configurations.
+{% hint style="info" %}
+**NOTE:** To support a seamless transition, data source tree elements (roots, nodes, and leaves) will display two tabs through version 10.1: **Metadata** (legacy experience) and **Metadata (New)** , allowing you to validate the new setup alongside existing configurations.
+{% endhint %}
 
 For more information, see [KB Metadata](../../Knowledgebase/KB%20Metadata.md).
 

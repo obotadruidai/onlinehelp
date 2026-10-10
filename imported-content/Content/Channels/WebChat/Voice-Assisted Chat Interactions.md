@@ -52,13 +52,17 @@ The channel configuration modal opens.
 3. At the top of the modal, click the tab for the speech provider you wish to configure.
 4. Configure the desired speech providers following the instructions in the subsequent sections.
 
-> **Info:** To integrate a preferred speech provider not listed below, reach out to your Druid representative.
+{% hint style="info" %}
+**Info:** To integrate a preferred speech provider not listed below, reach out to your Druid representative.
+{% endhint %}
 
 #### Setting up Druid-native speech
 
 To use voice interactions with Druid-native speech services, you need the API key from your Druid representative.
 
-> **NOTE:** Druid-native STT/TTS is available in technology preview in Druid 9.20.
+{% hint style="info" %}
+**NOTE:** Druid-native STT/TTS is available in technology preview in Druid 9.20.
+{% endhint %}
 
 Setup procedure:
 
@@ -80,11 +84,15 @@ Add the desired voice per AI Agent language as you prefer.
 
 #### Setting up Microsoft Cognitive Services
 
-> **IMPORTANT!**  To use voice interactions with MS Cognitive Services in production environments, contact your Druid representative for the necessary keys.
+{% hint style="warning" %}
+**IMPORTANT!**  To use voice interactions with MS Cognitive Services in production environments, contact your Druid representative for the necessary keys.
+{% endhint %}
 
 1. In the channel configuration modal, click the **Microsoft Cognitive Services** tab.
 2. Provide the **Key** and **Region** provided by Druid Support Team in the voice activation email.
-> **Info:** For demo purposes, you can request a test key to [Druid Tech Support](mailto:support@druidai.com?subject=Voiceactivation%20-%20send%20me%20a%20test%20key).
+{% hint style="info" %}
+**Info:** For demo purposes, you can request a test key to [Druid Tech Support](mailto:support@druidai.com?subject=Voiceactivation%20-%20send%20me%20a%20test%20key).
+{% endhint %}
 
 3. Map the languages your AI Agent supports to specific voices in the configuration table.
 
@@ -97,7 +105,9 @@ Add the desired voice per AI Agent language as you prefer.
 
 #### Setting up Deepgram
 
-> **IMPORTANT!**  You can use Deepgram as voice provider for Webchat in DRUID 9.1 and higher for Speech-To-Text (STT) only.
+{% hint style="warning" %}
+**IMPORTANT!**  You can use Deepgram as voice provider for Webchat in DRUID 9.1 and higher for Speech-To-Text (STT) only.
+{% endhint %}
 
 ##### Prerequisites
 
@@ -114,7 +124,9 @@ Add the desired voice per AI Agent language as you prefer.
 3. From the **Model** dropdown, select the specific Deepgram model the AI Agent will use to respond.
 4. Click the **Save** icon displayed inline.
 
-> **Info:** For Druid versions prior to 9.6, provide the Deepgram model (e.g., nova-2-medical). See [Deepgram documentation](https://developers.deepgram.com/docs/models-languages-overview) for the complete list of models available.
+{% hint style="info" %}
+**Info:** For Druid versions prior to 9.6, provide the Deepgram model (e.g., nova-2-medical). See [Deepgram documentation](https://developers.deepgram.com/docs/models-languages-overview) for the complete list of models available.
+{% endhint %}
 
 4. Save the configuration.
 
@@ -122,7 +134,9 @@ Add the desired voice per AI Agent language as you prefer.
 
 Druid supports ElevenLabs as a high-quality Text-to-Speech (TTS) and Speech-To-Text (STT) provider, enabling your AI Agent to communicate using specialized synthetic voices and custom voice clones.
 
-> **NOTE:**  ElevenLabs is available as TTS provider starting with Druid 9.15 and as STT provider starting with Druid 9.18.
+{% hint style="info" %}
+**NOTE:**  ElevenLabs is available as TTS provider starting with Druid 9.15 and as STT provider starting with Druid 9.18.
+{% endhint %}
 
 ##### Prerequisites
 
@@ -168,7 +182,9 @@ The selected region determines which ElevenLabs API endpoint is used by the Web 
 
 You can use Soniox as a Speech-To-Text (STT) provider for your AI Agent voice interactions. Its models natively support multiple languages and automatic language detection.
 
-> **NOTE:** Soniox is available as a STT provider starting with Druid 9.19.
+{% hint style="info" %}
+**NOTE:** Soniox is available as a STT provider starting with Druid 9.19.
+{% endhint %}
 
 ##### Prerequisites
 
@@ -186,7 +202,9 @@ You can use Soniox as a Speech-To-Text (STT) provider for your AI Agent voice in
 
 Speechmatics is a speech-to-text provider available in the Voice Channel. It enables real-time and batch transcription using advanced automatic speech recognition (ASR) technology. It supports multiple languages and delivers accurate results across different accents and audio conditions, making it suitable for voice interactions and transcription scenarios.
 
-> **NOTE:** Speechmatics is available as a STT provider starting with Druid 9.20.
+{% hint style="info" %}
+**NOTE:** Speechmatics is available as a STT provider starting with Druid 9.20.
+{% endhint %}
 
 ##### Prerequisites
 
@@ -210,7 +228,9 @@ Save the dictionary entry and add as many as you want.
 
 ![](../../Resources/Images/druid%209.24/speechmatics%20dictionary.png)
 
-> **Info:** Custom dictionary is available starting with Druid version 9.24.
+{% hint style="info" %}
+**Info:** Custom dictionary is available starting with Druid version 9.24.
+{% endhint %}
 
 4. Save the configuration and close the modal.
 
@@ -222,7 +242,9 @@ Once the speech provider details are entered, you must explicitly activate them 
 
 1. In the WebChat configuration modal, click the **General** tab and scroll-down at the bottom of the modal.
 2. Select the primary **Speech-to-Text Provider**. If you select a provider other than Azure, you should also select a **Fallback Speech-to-Text Provider**. The fallback speech provider will be used automatically if primary speech provider does not support the user’s language.
-> **Info:** If Deepgram is set as the primary STT provider and Azure/ElevenLabs as fallback, and the user selects a language unsupported by Deepgram, the system falls back to Azure/ElevenLabs. Once the user changes the language back to one that Deepgram supports, the system will automatically switch back to Deepgram (the primary provider) for the remainder of the session.
+{% hint style="info" %}
+**Info:** If Deepgram is set as the primary STT provider and Azure/ElevenLabs as fallback, and the user selects a language unsupported by Deepgram, the system falls back to Azure/ElevenLabs. Once the user changes the language back to one that Deepgram supports, the system will automatically switch back to Deepgram (the primary provider) for the remainder of the session.
+{% endhint %}
 
 3. Select the primary **Text-to-Speech Provider**. If you selected ElevenLabs or Druid, you should also select the **Fallback Text-to-Speech Provider**. The fallback provider will be used automatically if the primary one does not support the user’s language.
 

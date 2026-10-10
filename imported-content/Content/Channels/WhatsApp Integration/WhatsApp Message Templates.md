@@ -5,7 +5,9 @@ title: "WhatsApp Message Templates"
 <a id="WhatsAppMessageTemplates"></a>
 
 
-> **IMPORTANT!** If a customer messages the AI Agent via the WhatsApp channel, the AI Agent has 24 hours to respond to the customer with a free-form message. After this period, the message sent by the AI Agent has to be a template type message.
+{% hint style="warning" %}
+**IMPORTANT!** If a customer messages the AI Agent via the WhatsApp channel, the AI Agent has 24 hours to respond to the customer with a free-form message. After this period, the message sent by the AI Agent has to be a template type message.
+{% endhint %}
 
 **Prerequisites**:
 
@@ -31,6 +33,8 @@ The table below provides some message template examples.
 
 The Namespace and Name are unique identifiers for the WhatsApp message templates.
 
-> **NOTE:** Only templates created in your own namespace will work. Using a template with a namespace outside of your own will return an error.
+{% hint style="info" %}
+**NOTE:** Only templates created in your own namespace will work. Using a template with a namespace outside of your own will return an error.
+{% endhint %}
 
 For information on how to create WhatsApp message templates, see [Facebook Developer Documentation](https://developers.facebook.com/docs/whatsapp/message-templates/creation).

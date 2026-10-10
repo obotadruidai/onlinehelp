@@ -19,7 +19,9 @@ Similar to the Train Set, if there are parent flows with child intents, you can 
 
 The Test module of the DRUID Evaluation tool works with bulk sets of test phrases, using template based import / export of test phrases in Excel file format.
 
-> **IMPORTANT!** Bulk Import from excel file will REPLACE existing test set for that AI Agent and the language code! The import does not affect other languages on the same AI Agent.
+{% hint style="warning" %}
+**IMPORTANT!** Bulk Import from excel file will REPLACE existing test set for that AI Agent and the language code! The import does not affect other languages on the same AI Agent.
+{% endhint %}
 
 <a id="Prerequisites"></a>
 
@@ -32,9 +34,13 @@ The Test module of the DRUID Evaluation tool works with bulk sets of test phrase
 
 - In column B (Utterances) fill in the test phrases.
 - In column C (Expected Intent Name) fill in the name of DRUID Flow which the respective test phrase is expected to match.
-> **IMPORTANT!**  The name provided in column C must be identical with the expected flow name, otherwise the corresponding phrase will not be uploaded.
+{% hint style="warning" %}
+**IMPORTANT!**  The name provided in column C must be identical with the expected flow name, otherwise the corresponding phrase will not be uploaded.
+{% endhint %}
 
-> **NOTE:** Leaving a C cell empty means that the corresponding test phrase in column B is not expected to match any of the flows defined on the AI Agent, for the chosen language.
+{% hint style="info" %}
+**NOTE:** Leaving a C cell empty means that the corresponding test phrase in column B is not expected to match any of the flows defined on the AI Agent, for the chosen language.
+{% endhint %}
 
 To import your test set from an excel file, click the **Test Set** button and then click **Upload**.
 

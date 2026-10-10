@@ -7,7 +7,9 @@ title: "How to Set Up the UiPath Integration"
 
 Using the Flow Designer, you can easily set up this UiPath integration by adding a flow step of type UiPath and configuring it as best suits you needs. You can either create a new flow or add a new step to an existing flow.
 
-> **Info:** You can also use classic DRUID Designers to create / edit the flow, connector action and integration task.
+{% hint style="info" %}
+**Info:** You can also use classic DRUID Designers to create / edit the flow, connector action and integration task.
+{% endhint %}
 
 <a id="Step1AddUiPathflowstep"></a>
 
@@ -51,7 +53,9 @@ This conversation can be initiated either to the same AI Agent user which starte
 
 ## Step 2: Add connector action
 
-> **NOTE:** If you added the **Start unattended process** integration from the Flow Palette or a new UiPath step with Technology **Automation: unattended** and **Automatically add unattended integration to this step (after Save)** tap on, the step automatically contains a connector action named <your flow name>-<step name>. Click on it and skip step 1 and step 2 below.
+{% hint style="info" %}
+**NOTE:** If you added the **Start unattended process** integration from the Flow Palette or a new UiPath step with Technology **Automation: unattended** and **Automatically add unattended integration to this step (after Save)** tap on, the step automatically contains a connector action named <your flow name>-<step name>. Click on it and skip step 1 and step 2 below.
+{% endhint %}
 
 1. Click on the flow step of type UiPath. Click on the Post Actions section header. The section expands.
 2. Click the **Add new** button (![](../../Resources/Images/Starting%20UiPath%20Unattended%20Processes/How%20to%20set%20up%20the%20UiPath%20Integration_2.png)).
@@ -61,7 +65,9 @@ This conversation can be initiated either to the same AI Agent user which starte
 ![](../../Resources/Images/UiPath%20Connector/edit%20connector%20action.png)
 
 4. Optionally, from the **Icon** field, select the icon that best describes the integration. It helps you easily identify the integration action in the list of integrations. If no icon is selected, DRUID default icon per selected app type will be shown in the apps list.
-> **NOTE:** The **Icon** field is available in DRUID 1.71 and higher.
+{% hint style="info" %}
+**NOTE:** The **Icon** field is available in DRUID 1.71 and higher.
+{% endhint %}
 
 5. To save the configuration, at the top-right corner of the right-editor, click the **Save** icon (![](../../Resources/Images/Starting%20UiPath%20Unattended%20Processes/How%20to%20set%20up%20the%20UiPath%20Integration_5.png)).
 
@@ -69,9 +75,13 @@ This conversation can be initiated either to the same AI Agent user which starte
 
 ## Step 3: Add integration task
 
-> **IMPORTANT!** You cannot add more than one connector action with a “Start UiPath Unattended Process” integration task.
+{% hint style="warning" %}
+**IMPORTANT!** You cannot add more than one connector action with a “Start UiPath Unattended Process” integration task.
+{% endhint %}
 
-> **NOTE:** If you added the **Start unattended process** integration from the Flow Palette or a new UiPath step with Technology **Automation: unattended** and tap on **Automatically add unattended integration to this step (after Save)**, the step automatically contains a task named "StartUiPathUnattendedJob". Click on it and skip step 1 and step 2 below.
+{% hint style="info" %}
+**NOTE:** If you added the **Start unattended process** integration from the Flow Palette or a new UiPath step with Technology **Automation: unattended** and tap on **Automatically add unattended integration to this step (after Save)**, the step automatically contains a task named "StartUiPathUnattendedJob". Click on it and skip step 1 and step 2 below.
+{% endhint %}
 
 1. In the Post Actions section, below the connector action, click the **Add task** icon (![](../../Resources/Images/Starting%20UiPath%20Unattended%20Processes/How%20to%20set%20up%20the%20UiPath%20Integration_6.png)).
    A drop-down appears.
@@ -90,7 +100,9 @@ Unlike other UiPath integrations, the Start UiPath Unattended Process integratio
 5. The **Process** field lists all active processes in the Orchestrator folder associated to the connector app (connector app specified in the ConnectorCode field). Select the desired process you want to start.
 6. Select the **Job priority** to control which job has precedence over other competing jobs. A job can have one of the following priorities: **Normal**, **Low** and **High**.
 7. Select the **Job type**. Note that the list of job types is the one provided by the Orchestrator based on the user allocated in the Orchestrator for the DRUID integration and the configuration of your tenant, robots and folders.
-> **NOTE:** This field appears only if you’re connected to an Orchestrator modern folder.
+{% hint style="info" %}
+**NOTE:** This field appears only if you’re connected to an Orchestrator modern folder.
+{% endhint %}
 
 8. The **Execution target** options depend on the type of Orchestrator folder is associated to the UiPath connector app, as follows:
 
@@ -117,21 +129,29 @@ Unlike other UiPath integrations, the Start UiPath Unattended Process integratio
 ![](../../Resources/Images/Starting%20UiPath%20Unattended%20Processes/How%20to%20set%20up%20the%20UiPath%20Integration_12.png)
 
 10. Map the Process input parameters to DRUID entity fields.
-> **NOTE:**  Starting with DRUID version 1.47, you can transfer complex data such as data collections (Entity List), unique set of data (Entity) or the entire content of a DRUID entity between DRUID and UiPath. For information on how to map complex data, see [Transferring Complex Data Type through the Start Unattended Job Integration](Transferring%20Complex%20Data.md).
+{% hint style="info" %}
+**NOTE:**  Starting with DRUID version 1.47, you can transfer complex data such as data collections (Entity List), unique set of data (Entity) or the entire content of a DRUID entity between DRUID and UiPath. For information on how to map complex data, see [Transferring Complex Data Type through the Start Unattended Job Integration](Transferring%20Complex%20Data.md).
+{% endhint %}
 
 ![](../../Resources/Images/Starting%20UiPath%20Unattended%20Processes/How%20to%20set%20up%20the%20UiPath%20Integration_13.png)
 
 11. Click the **Response** tab and click the **Load arguments** button. The process output arguments are loaded and appear in the Process output arguments table.
 12. Map the Process output parameters to DRUID entity fields.
-> **NOTE:**  Starting with DRUID version 1.47, you can transfer complex data such as data collections (Entity List), unique set of data (Entity) or the entire content of a DRUID entity between DRUID and UiPath. For information on how to map complex data, see [Transferring Complex Data Type through the Start Unattended Job Integration](Transferring%20Complex%20Data.md).
+{% hint style="info" %}
+**NOTE:**  Starting with DRUID version 1.47, you can transfer complex data such as data collections (Entity List), unique set of data (Entity) or the entire content of a DRUID entity between DRUID and UiPath. For information on how to map complex data, see [Transferring Complex Data Type through the Start Unattended Job Integration](Transferring%20Complex%20Data.md).
+{% endhint %}
 
-> **NOTE:**  Input and Output arguments table cannot be edited; therefore, no argument can be added or deleted, you can only use the arguments definition of the UiPath process itself.
+{% hint style="info" %}
+**NOTE:**  Input and Output arguments table cannot be edited; therefore, no argument can be added or deleted, you can only use the arguments definition of the UiPath process itself.
+{% endhint %}
 
 ![](../../Resources/Images/Starting%20UiPath%20Unattended%20Processes/How%20to%20set%20up%20the%20UiPath%20Integration_14.png)
 
 13. To save the integration task, at the top-right corner of the right-editor, click the **Save** icon (![](../../Resources/Images/Starting%20UiPath%20Unattended%20Processes/How%20to%20set%20up%20the%20UiPath%20Integration_5.png)).
 
-> **Info:** Write-down or save to a document the values provided in the fields **DRUID Endpoint URL** and **DRUID Endpoint Secret**, as you will need them later. You can also get these details from the connector app page.
+{% hint style="info" %}
+**Info:** Write-down or save to a document the values provided in the fields **DRUID Endpoint URL** and **DRUID Endpoint Secret**, as you will need them later. You can also get these details from the connector app page.
+{% endhint %}
 
 <a id="Step4Publishtheintegrations"></a>
 
@@ -160,10 +180,12 @@ Where:
 
 ![](../../Resources/Images/Integrations/endpoint%20druid.png)
 
-> **NOTE:**
->
-> - Only DRUID Connector Host version 1.52 or above exposes a local endpoint to receive calls from the on premise UiPath Orchestrator.
-> - Make sure that UiPath Orchestrator has access to DRUID Connector Host machine, on port 5008.
+{% hint style="info" %}
+**NOTE:**
+
+- Only DRUID Connector Host version 1.52 or above exposes a local endpoint to receive calls from the on premise UiPath Orchestrator.
+- Make sure that UiPath Orchestrator has access to DRUID Connector Host machine, on port 5008.
+{% endhint %}
 
 Tick **Enabled**.
 
@@ -172,10 +194,12 @@ Select **Individual Events** as **Event Type**, select **Jobs** and from the lis
 - **Job completed**. A job has completed successfully. The event is linked to the UiPath child flow step **After Job Complete (Success)**.
 - **Job faulted**. A job has failed to finish execution (incl. app exceptions). The event is linked to the UiPath child flow step **After Job Complete (Error)**.
 
-> **NOTE:**
->
-> - We recommend you to select only these two types of events, as at this moment, the Druid AI Platform will ignore all other events. In new DRUID versions, we will add support for more orchestrator events.
-> - As the Orchestrator allows setting Webhooks on a tenant level, it will send all events on all processes existing in all folders on the tenant, including the ones that are not set up in DRUID; however, DRUID will ignore the events transmitted by the Orchestrator, which are not related to processes DRUID started.
+{% hint style="info" %}
+**NOTE:**
+
+- We recommend you to select only these two types of events, as at this moment, the Druid AI Platform will ignore all other events. In new DRUID versions, we will add support for more orchestrator events.
+- As the Orchestrator allows setting Webhooks on a tenant level, it will send all events on all processes existing in all folders on the tenant, including the ones that are not set up in DRUID; however, DRUID will ignore the events transmitted by the Orchestrator, which are not related to processes DRUID started.
+{% endhint %}
 
 Click the **UPDATE** button to save the Webhook configuration.
 

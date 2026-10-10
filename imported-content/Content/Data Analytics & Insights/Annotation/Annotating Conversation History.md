@@ -23,11 +23,15 @@ For information on the annotation actions, see [Annotation actions](#_Annotation
 
 To annotate messages in bulk, select all or specific messages from the table and from the top of the table click the button corresponding to the action you want to perform on the selected messages.
 
-> **Info:** Prior to annotating messages in bulk, you might find it useful to filter the messages by accuracy type clicking the appropriate bar on the Confidence buckets.
+{% hint style="info" %}
+**Info:** Prior to annotating messages in bulk, you might find it useful to filter the messages by accuracy type clicking the appropriate bar on the Confidence buckets.
+{% endhint %}
 
 ![](../../Resources/Images/Annotation%20Tool/Annotating%20Conversation%20History_2.png)
 
-> **NOTE:** You cannot perform the annotation action of type Add to in bulk if the messages belong to different flows; the **Add to** buttons are non-clickable.
+{% hint style="info" %}
+**NOTE:** You cannot perform the annotation action of type Add to in bulk if the messages belong to different flows; the **Add to** buttons are non-clickable.
+{% endhint %}
 
 ![](../../Resources/Images/Annotation%20Tool/Annotating%20Conversation%20History_3.png)
 
@@ -37,7 +41,9 @@ The tool provides the authors with three types of actions: Add to sets, Change s
 
 ## <a id="_Annotation_actions"></a>Annotation actions
 
-> **Info:** In DRUID version 1.52 or higher, the icon ![](../../Resources/Images/Annotation%20Tool/icon.png) marks the messages on which an annotation action was performed.
+{% hint style="info" %}
+**Info:** In DRUID version 1.52 or higher, the icon ![](../../Resources/Images/Annotation%20Tool/icon.png) marks the messages on which an annotation action was performed.
+{% endhint %}
 
 The table below lists the annotation actions available, their description and the new message status.
 
@@ -52,7 +58,9 @@ The table below lists the annotation actions available, their description and th
 | Change Status to Out of scope | Marks the message as being out of scope for the current solution.  **NOTE:** This status is available for DRUID version 1.52 or higher. | Out of scope |
 | Annotate | Add comment or select the desired expected flow for that message(s).  **NOTE:** This action is available for DRUID version 1.52 or higher. | If you annotate a phrase into a flow the model should have matched in the first place, the phrase status changes to **False Match**.  **NOTE:** This status is available in DRUID 5.5 and higher. |
 
-> **NOTE:** For DRUID version 1.52 or higher, the Annotation Tool provides you with the possibility to view the conversation history the message is part of (click the ![](../../Resources/Images/Annotation%20Tool/Annotating%20Conversation%20History.png) icon displayed at the right side of the message and select **ViewConversation**) and gain valuable insights that might help you properly annotate messages (change status, add comments, select expected flow).
+{% hint style="info" %}
+**NOTE:** For DRUID version 1.52 or higher, the Annotation Tool provides you with the possibility to view the conversation history the message is part of (click the ![](../../Resources/Images/Annotation%20Tool/Annotating%20Conversation%20History.png) icon displayed at the right side of the message and select **ViewConversation**) and gain valuable insights that might help you properly annotate messages (change status, add comments, select expected flow).
+{% endhint %}
 
 <a id="AddingcommentsandselectingexpectedflowsAnnotateaction"></a>
 
@@ -60,7 +68,9 @@ The table below lists the annotation actions available, their description and th
 
 The Annotation Tool allows authors to add comments to specific messages or select the desired expected flow for that message. This is particularly useful for messages with status Draft and Out of Scope.
 
-> **NOTE:**  This feature is available in DRUID version 1.52 or higher.
+{% hint style="info" %}
+**NOTE:**  This feature is available in DRUID version 1.52 or higher.
+{% endhint %}
 
 To add a comment to a message or select an expected flow for a specific message, click the ![](../../Resources/Images/Annotation%20Tool/Annotating%20Conversation%20History.png) icon displayed at the right side of the message and select the **Annotate** action.
 

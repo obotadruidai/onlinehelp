@@ -11,7 +11,9 @@ You can design a form by defining its layout and selecting the data displayed in
 
 ## Design the Form Layout
 
-> **Info:** Before designing a form, plan how you want to structure the data for better usability.
+{% hint style="info" %}
+**Info:** Before designing a form, plan how you want to structure the data for better usability.
+{% endhint %}
 
 To design form layout:
 
@@ -60,7 +62,9 @@ To populate sections with data, add fields from the current entity or related en
 - By default, fields display in one column and one row, are editable, and appear on both desktop and mobile.
 - You can reorder sections within a tab using drag-and-drop.
 
-> **Info:** Once you add a field to a section, it appears grayed out in the field selector. If you click a field in the Form Diagram, it highlights in green in the selector.
+{% hint style="info" %}
+**Info:** Once you add a field to a section, it appears grayed out in the field selector. If you click a field in the Form Diagram, it highlights in green in the selector.
+{% endhint %}
 
 <a id="ConfigureFieldProperties"></a>
 
@@ -83,6 +87,8 @@ Click a field in the Form Diagram, then in the right editor, configure its prope
 
 To ensure proper layout and formatting, preview the form to see how different field types appear at runtime.
 
-> **Info:** You can design forms to allow business users to chat with the AI Agent within the context of the current entity record and trigger specific conversational flows from a set of recommended automations available on the entity form. For details on enabling these features, see [Enable chat in forms](Enable%20chat%20in%20forms.md) and [Recommend automations on forms](Recommend%20automations%20on%20forms.md).
+{% hint style="info" %}
+**Info:** You can design forms to allow business users to chat with the AI Agent within the context of the current entity record and trigger specific conversational flows from a set of recommended automations available on the entity form. For details on enabling these features, see [Enable chat in forms](Enable%20chat%20in%20forms.md) and [Recommend automations on forms](Recommend%20automations%20on%20forms.md).
+{% endhint %}
 
 After defining the columns, you can populate the form with data by adding integrations.

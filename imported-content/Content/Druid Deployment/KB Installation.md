@@ -9,7 +9,9 @@ The DRUID Knowledge Base operates as a Windows Service utilized by the DRUID con
 
 To facilitate data extraction from on-premises resources, such as network shared drives or SharePoint servers, we strongly recommended to install the Knowledge Base directly on your premises. This ensures that all data remains securely stored within your local network environment.
 
-> **IMPORTANT!** To use the DRUID Knowledge Base in hybrid mode (on-premises), you must switch the tenant to hybrid deployment by installing the DRUID Connector Host version 7.5 or higher on-premises.
+{% hint style="warning" %}
+**IMPORTANT!** To use the DRUID Knowledge Base in hybrid mode (on-premises), you must switch the tenant to hybrid deployment by installing the DRUID Connector Host version 7.5 or higher on-premises.
+{% endhint %}
 
 <a id="HowItWorks"></a>
 
@@ -34,7 +36,9 @@ Before proceeding with the KB Agent installation, ensure the following prerequis
 - DRUID Data Service version 7.5 or higher installation, if leveraging conversational business applications on MongoDB data.
 - MongoDB installation. If Data Service is installed, the same MongoDB instance can be used for both DRUID Data Service and the KB Agent. By default, MongoDB is installed without any secured access, which means that the database can be viewed or modified by anyone who has network access to the machine running the MongoDB service. To set up security for your MongoDB installation, see [Configure secured access to your MongoDB database](#Configure_secured_access_to_your_MongoDB_database)
 - Elasticsearch installation. To set up Elasticsearch as a service on Windows, follow the steps outlined in [the official Elasticsearch documentation](https://www.elastic.co/guide/en/elasticsearch/reference/8.13/zip-windows.html#windows-service), section 'Install and run Elasticsearch as a service on Windows'. After installation, reset the password for the default Elasticsearch user, 'elastic,' and make sure to note it down, as you'll require it to configure the KB Agent. If you prefer, you can also create additional Elasticsearch users with elevated privileges to configure the KB agent.
-> **NOTE:** Elastic Search can be installed on the same machine where MongoDB and the SQL Conversation History database reside, while keeping the Druid components on a separate server (Connector, Data Service, KB Agent).
+{% hint style="info" %}
+**NOTE:** Elastic Search can be installed on the same machine where MongoDB and the SQL Conversation History database reside, while keeping the Druid components on a separate server (Connector, Data Service, KB Agent).
+{% endhint %}
 
 - In the Druid Portal, you have a dedicated user with "Druid Backend API" permissions to authenticate connections to your tenant.
 - Ensure that communication between the KB Agent and the Druid Connector Host is enabled through the [gRPC protocol](https://grpc.io/docs/what-is-grpc/introduction/).
@@ -149,7 +153,9 @@ Click **Next**.
 
 Select **Install a new Knowledge Base instance** and click **Next** twice.
 
-> **Info:**  Using the DRUID KB installer, you can also upgrade or uninstall versions of DRUID Knowledge Base.
+{% hint style="info" %}
+**Info:**  Using the DRUID KB installer, you can also upgrade or uninstall versions of DRUID Knowledge Base.
+{% endhint %}
 
 Click **Next**.
 
@@ -186,9 +192,13 @@ Click **Next**, then click **Start**.
 
 After the KB installation completes, click **Exit** then go to the Druid Portal
 
-> **Info:** The KB installer installs the KB Agent along with a Pandoc runtime, which is a resource utilized by the KB Agent for universal document conversion.
+{% hint style="info" %}
+**Info:** The KB installer installs the KB Agent along with a Pandoc runtime, which is a resource utilized by the KB Agent for universal document conversion.
+{% endhint %}
 
-> **NOTE:** To enable communication between the KB Agent and the Connector Host, you need to configure the KB parameters using the Connector Host installer.
+{% hint style="info" %}
+**NOTE:** To enable communication between the KB Agent and the Connector Host, you need to configure the KB parameters using the Connector Host installer.
+{% endhint %}
 
 <a id="Step5UpgradetheConnectorHosttomatchtheversionofyourKBAgent"></a>
 
@@ -230,7 +240,9 @@ You can monitor the progress of the AI Agents' training.
 
 Wait until DRUID completes training all AI Agents.
 
-> **Info:** In DRUID 7.7 and higher, if errors occur during the training of all the AI Agents, they will be displayed in the UI, providing you with sufficient details to troubleshoot them.
+{% hint style="info" %}
+**Info:** In DRUID 7.7 and higher, if errors occur during the training of all the AI Agents, they will be displayed in the UI, providing you with sufficient details to troubleshoot them.
+{% endhint %}
 
 <a id="Step9SwitchtheKBtohybridmode"></a>
 
@@ -262,7 +274,9 @@ You have the option to switch from KB hybrid mode to the KB Cloud Engine by clic
 
 ![](../Resources/Images/KB%20installer/SWITCH%20TO%20CLOUD.png)
 
-> **IMPORTANT!** Switching from KB hybrid to the KB Cloud Engine will not migrate the KB data stored on-premises and requires training the KB.
+{% hint style="warning" %}
+**IMPORTANT!** Switching from KB hybrid to the KB Cloud Engine will not migrate the KB data stored on-premises and requires training the KB.
+{% endhint %}
 
 <a id="ConfiguresecuredaccesstoyourMongoDBdatabase"></a>
 
@@ -270,11 +284,13 @@ You have the option to switch from KB hybrid mode to the KB Cloud Engine by clic
 
 If you have already installed and configured MongoDB for the DRUID Data Service, you can skip this configuration.
 
-> **NOTE:** If your MongoDB instance is hosted on a different machine than the one running DRUID Knowledge Base, you must open the MongoDB port by running the following command in an elevated command prompt of your MongoDB Windows Server machine:
->
-> ```
-> netsh advfirewall firewall add rule name="Open mongod port 27017" dir=in action=allow protocol=TCP localport=27017
-> ```
+{% hint style="info" %}
+**NOTE:** If your MongoDB instance is hosted on a different machine than the one running DRUID Knowledge Base, you must open the MongoDB port by running the following command in an elevated command prompt of your MongoDB Windows Server machine:
+
+```
+netsh advfirewall firewall add rule name="Open mongod port 27017" dir=in action=allow protocol=TCP localport=27017
+```
+{% endhint %}
 
 To configure security in MongoDB you can use [mongosh](https://www.mongodb.com/docs/mongodb-shell/install) or [compass](https://www.mongodb.com/docs/compass/master/install/).
 
@@ -293,7 +309,9 @@ This section describes how to configure security in MongoDB using the compass to
 ![](../Resources/Images/Mongo/Mongo_2.png)
 
 4. Create the user by typing the text below and replacing `{{MONGOADMIN}}` and `{{MONGOPASS}}` with the MongoDB credentials (user and password).
-> **NOTE:** For credentials, use only alphanumeric characters.
+{% hint style="info" %}
+**NOTE:** For credentials, use only alphanumeric characters.
+{% endhint %}
 
 ```
 db.createUser(
@@ -322,7 +340,9 @@ net:
   bindIp: 127.0.0.1, {{HOST-NAME}}
 ```
 
-> **NOTE:** Change `{{HOST-NAME}}` with the name of the Windows computer which runs the MongoDB service.
+{% hint style="info" %}
+**NOTE:** Change `{{HOST-NAME}}` with the name of the Windows computer which runs the MongoDB service.
+{% endhint %}
 
 7. Restart the MongoDB service.
 

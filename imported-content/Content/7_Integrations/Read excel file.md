@@ -13,7 +13,9 @@ How to use it:
 2. **Read data**: The AI Agent reads the data from the first sheet of the file using the Read Excel File integration.
 3. **Import / update data**: The data is imported or updated in the target system based on your requirements using other integrations.
 
-> **NOTE:**  This integration task reads data only from the first sheet of the Excel file.
+{% hint style="info" %}
+**NOTE:**  This integration task reads data only from the first sheet of the Excel file.
+{% endhint %}
 
 This section describes how to use the Read Excel file integration.
 
@@ -44,7 +46,9 @@ Use the Connector Designer or Flow Designer to define integration actions and ta
 
 4. Save the settings and stay on page to add tasks.
 
-> **NOTE:**  A Connector Action represents a set of one or more integration tasks, which run sequentially and use the same request and response entities.
+{% hint style="info" %}
+**NOTE:**  A Connector Action represents a set of one or more integration tasks, which run sequentially and use the same request and response entities.
+{% endhint %}
 
 <a id="Step2AddandconfiguretheReadExcelfileintegration"></a>
 
@@ -95,7 +99,9 @@ Mapping fields depends on what you selected in the **Use header row** field.
 
 If the Excel file contains a header row, map column names to DRUID entity fields. If not, map column identifiers (A, B, C, etc.) to DRUID entity fields.![](../Resources/Images/Read%20Excel%20File/Read%20Excel%20File_5.png)
 
-> **Info:** Add as many integrations as needed based on what you want to do with the data from the file.
+{% hint style="info" %}
+**Info:** Add as many integrations as needed based on what you want to do with the data from the file.
+{% endhint %}
 
 <a id="Publishtheintegration"></a>
 

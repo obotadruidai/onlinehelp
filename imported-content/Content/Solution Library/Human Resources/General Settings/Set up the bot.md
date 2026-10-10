@@ -15,7 +15,9 @@ In Druid Portal:
 
 ## <a id="Step_1:_Configure_bot"></a>Step 1: Configure the AI Agent
 
-> **NOTE:** Human Resources default language is set to EN-US and additional language is set to RO. If you want to add additional languages on Human Resources, make sure to add the language of choice as additional AI Agent language and add the according training phrases, synonyms and conditions.
+{% hint style="info" %}
+**NOTE:** Human Resources default language is set to EN-US and additional language is set to RO. If you want to add additional languages on Human Resources, make sure to add the language of choice as additional AI Agent language and add the according training phrases, synonyms and conditions.
+{% endhint %}
 
 To configure the AI Agent for Human Resources, you need to set Special Flows and configure the connection strings.
 
@@ -48,7 +50,9 @@ Human Resources provides you with a wide range of apps for integration with vari
 | [Cristina OCR CALL](#Cristina_OCR_Call_Configuration) | REST | Druid AI Services | Performs OCR and data extraction from Romanian Identity Cards and Australian driving licenses. | Yes |
 | [SendGrid-Cristina](#SendGrid-Cristina_Configuration) | SendGrid | Your SMTP Server | Sends emails | No. (only if you need to send emails) |
 
-> **NOTE:** To run the Human Resources setup flow, you only need to set up the **Druid\_Apps\_Cristina** app.
+{% hint style="info" %}
+**NOTE:** To run the Human Resources setup flow, you only need to set up the **Druid\_Apps\_Cristina** app.
+{% endhint %}
 
 For information on how to set the connection strings, click on the configuration section specific to the app you want to set:
 
@@ -92,7 +96,9 @@ If you use the on premise Orchestrator, fill in the following fields: **Url**, *
 
 If you are using the Cloud Orchestrator, fill-in the following fields with the values you have wrote down in the prerequisites: **UserKey**, **Account Logical Name**, **Tenant Logical Name** and **ClientId**.
 
-> **IMPORTANT!** To have Druid read all the folders from your UiPath Orchestrator, after you provide the UiPath connection strings to the UiPath Cloud Orchestrator, click the **Get UiPath folders** button.
+{% hint style="warning" %}
+**IMPORTANT!** To have Druid read all the folders from your UiPath Orchestrator, after you provide the UiPath connection strings to the UiPath Cloud Orchestrator, click the **Get UiPath folders** button.
+{% endhint %}
 
 For more information on how to configure the UiPath connector, see [Triggering an Unattended Process](../../../7_Integrations/UiPath/Running%20Unattended%20Process%20using%20Orchestrator%20Queues.md) or [Creating the UiPath Connection Strings](../../../7_Integrations/UiPath/Creating%20the%20UiPath%20Connection%20Strings.md).
 
@@ -113,7 +119,9 @@ This section describes the connection strings required if you are using Druid AI
 
 - In order to use the Druid AI Services, you need the URL and access token of the instance on which the Druid OCR is running. To get the URL and access token, contact [Druid Tech Support](<mailto:support@druidai.com?subject=I need access to Druid AI Services>).
 
-> **NOTE:** Druid Tech Support generates the access token per tenant and environment.
+{% hint style="info" %}
+**NOTE:** Druid Tech Support generates the access token per tenant and environment.
+{% endhint %}
 
 To configure the REST connector to Druid AI Services, which performs OCR of Romanian identity cards, from Human Resources Apps, click **Cristina OCR CALL**. The Edit Connector page appears.
 
@@ -143,7 +151,9 @@ In the **ApiKey** field, enter the API Key received from your email service prov
 
 Click **Save and Close**.
 
-> **IMPORTANT!** In order for the AI Agent integration with the apps to be up and running, you need to publish the connector actions. To do so, from the main menu, click **Integrations** and click the **Publish** button.
+{% hint style="warning" %}
+**IMPORTANT!** In order for the AI Agent integration with the apps to be up and running, you need to publish the connector actions. To do so, from the main menu, click **Integrations** and click the **Publish** button.
+{% endhint %}
 
 <a id="Step2SetUpDruidUsers"></a>
 
@@ -156,7 +166,9 @@ For production environments, you need to make sure that in the Druid Portal you 
 - For all employees involved in the HR recruitment process, create Druid users and assign them the **HR Admin** role.
 - For website candidates looking to apply for a job, create Druid users and assign them the **Candidate** role.
 
-> **NOTE:** To view all Druid users, in the Druid Portal, from the main menu click **Administration** > **Users** and in the Users page, tick the **ShowChatUsers** check box.
+{% hint style="info" %}
+**NOTE:** To view all Druid users, in the Druid Portal, from the main menu click **Administration** > **Users** and in the Users page, tick the **ShowChatUsers** check box.
+{% endhint %}
 
 For Druid demo and community environments, assign all roles to your user.
 

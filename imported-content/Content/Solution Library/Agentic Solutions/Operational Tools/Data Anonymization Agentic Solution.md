@@ -105,7 +105,9 @@ The anonymization feature is disabled by default. To enable it, follow these ste
 
 4. Click the **Save & close** icon at the top-right corner of the page top save and exit the form.
 
-> **NOTE:** This is the only step required to activate anonymization after apps are provisioned.
+{% hint style="info" %}
+**NOTE:** This is the only step required to activate anonymization after apps are provisioned.
+{% endhint %}
 
 <a id="Step5ConfigureNLUIntentsClassificationwithLLM"></a>
 

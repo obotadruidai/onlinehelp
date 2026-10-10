@@ -47,7 +47,9 @@ If a KB article is found, the system triggers the KB Agent. The KB Agent evaluat
 
 ### Path 3: No resource found or multiple resources found (Fallback Path)
 
-> **IMPORTANT!** The core logic of this solution relies on a critical underlying mechanic: at the exact moment a prediction occurs, both matching flows and KB articles must be found simultaneously. The **intent\_not\_recognized** function is only invoked when both resources are detected. Once invoked, it routes the data to the KB Agent v4 flow, which applies the evaluation logic below to decide the final execution path.
+{% hint style="warning" %}
+**IMPORTANT!** The core logic of this solution relies on a critical underlying mechanic: at the exact moment a prediction occurs, both matching flows and KB articles must be found simultaneously. The **intent\_not\_recognized** function is only invoked when both resources are detected. Once invoked, it routes the data to the KB Agent v4 flow, which applies the evaluation logic below to decide the final execution path.
+{% endhint %}
 
 If the system finds no clear match, or if multiple KB and flow candidates are detected, it triggers the Intent not recognized flow. This flow checks whether multiple intents were detected.
 

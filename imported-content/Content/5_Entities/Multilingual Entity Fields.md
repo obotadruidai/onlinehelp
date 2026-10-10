@@ -7,7 +7,9 @@ title: "Multilingual Entity Fields"
 
 Druid simplifies the authoring process for NER management in multi-language AI Agents. Multilingual entity fields and NER enable AI Agents to align entity records (e.g., healthcare specialties, product names, city names, etc.) with the current chat user's language. These multilingual entity fields can be regarded as aliases for language-specific field clones.
 
-> **NOTE:** This feature is available for entity fields of type **String.**
+{% hint style="info" %}
+**NOTE:** This feature is available for entity fields of type **String.**
+{% endhint %}
 
 <a id="Setmultilingualentityfields"></a>
 
@@ -17,7 +19,9 @@ To designate an entity field as multilingual, simply enable the **Holds multilan
 
 ![](../Resources/Images/Entities/hols%20multi%20records.png)
 
-> **IMPORTANT!** You cannot set an entity field to be multilingual if it holds sensitive data (where **Holds Sensitive Data** is enabled).
+{% hint style="warning" %}
+**IMPORTANT!** You cannot set an entity field to be multilingual if it holds sensitive data (where **Holds Sensitive Data** is enabled).
+{% endhint %}
 
 Upon saving the entity field, Druid automatically generates associated field clones to store language-specific values for all tenant AI Agent languages. These clones follow a naming convention of <fieldname>\_<LanguageCode>  and are not visible in Entity Designer. Druid utilizes these clone fields to match entity records aligned with the current chat user's language.
 

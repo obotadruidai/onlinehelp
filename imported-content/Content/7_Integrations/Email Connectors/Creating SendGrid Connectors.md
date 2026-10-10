@@ -75,7 +75,9 @@ Using the solution’s Connector Designer, you can define the integration action
 
 You can add as many connector actions as best suit your integration needs.
 
-> **NOTE:** A Connector Action represents a set of one or more integration tasks, which run sequentially and use the same request and response entities.
+{% hint style="info" %}
+**NOTE:** A Connector Action represents a set of one or more integration tasks, which run sequentially and use the same request and response entities.
+{% endhint %}
 
 <a id="Step3AddIntegrationTasks"></a>
 
@@ -114,7 +116,9 @@ On your flow, add a step for sending emails and configure it as follows:
 
 If you want to add attachment to the email and you uploaded file to a previous step, you also need to add the variable [[Email]].Attachment and in the value field, type the name of the file to be sent as email attachment. E.g., [[Email]].Attachment1 = [[Employee]].File.
 
-> **Info:** If you want to attach more than one email attachment, you can do so by adding more variable [[Email]].Attachment1, [[Email]].Attachment2, etc.
+{% hint style="info" %}
+**Info:** If you want to attach more than one email attachment, you can do so by adding more variable [[Email]].Attachment1, [[Email]].Attachment2, etc.
+{% endhint %}
 
 2. Click the **PreActions**/**PostActions** section header and select the integration action you created for sending emails via the SMTP server.
 

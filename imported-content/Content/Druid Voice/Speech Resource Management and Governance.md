@@ -7,7 +7,9 @@ title: "Speech Resource Management and Governance"
 
 Druid Speech Resource Management enables system administrators to centrally configure, govern, and manage Speech-to-Text (STT) and Text-to-Speech (TTS) integration services across the platform. Rather than binding speech services directly within individual channel configurations, speech resources can be defined at the tenant level under **Administration** and reused across Druid Voice channels.
 
-> **Info:** This feature is available starting with Druid version 9.31. Centralized speech resource management is currently supported for the Druid SIP channel.
+{% hint style="info" %}
+**Info:** This feature is available starting with Druid version 9.31. Centralized speech resource management is currently supported for the Druid SIP channel.
+{% endhint %}
 
 ![](../Resources/Images/Speech%20resources/speech%20resources.png)
 
@@ -50,7 +52,9 @@ To establish a governed connection to a speech provider, follow these steps:
 - **TTS**: Text-to-Speech (Voice Synthesis).
 - **STT\_TTS**: Combined Speech-to-Text and Text-to-Speech capability.
 
-> **IMPORTANT!** For the ElevenLabs provider, you cannot create a single resource record with the **STT\_TTS** resource type because ElevenLabs requires different Model ID parameters for Speech-to-Text versus Text-to-Speech services. You must add dedicated, separate ElevenLabs resources for TTS and STT respectively.
+{% hint style="warning" %}
+**IMPORTANT!** For the ElevenLabs provider, you cannot create a single resource record with the **STT\_TTS** resource type because ElevenLabs requires different Model ID parameters for Speech-to-Text versus Text-to-Speech services. You must add dedicated, separate ElevenLabs resources for TTS and STT respectively.
+{% endhint %}
 
 3. **API Url**: Type or paste the web address endpoint provided by your vendor. For some providers, this field is automatically filled in.
 4. **Disable Ssl Validation**: Keep this set to **No**. Only change this to **Yes** if explicitly instructed by your internal IT support team.

@@ -30,7 +30,9 @@ To configure the AI Agent for FAQ Car Rental, in Druid Portal, you need to:
 
 ### Step 1: Configure the AI Agent
 
-> **NOTE:** FAQ Car Rental default language is set to EN-US and additional language is set to RO. If you want to add additional languages on Healthcare, make sure to add the language of choice as additional AI Agent language and add the according training phrases, synonyms and conditions.
+{% hint style="info" %}
+**NOTE:** FAQ Car Rental default language is set to EN-US and additional language is set to RO. If you want to add additional languages on Healthcare, make sure to add the language of choice as additional AI Agent language and add the according training phrases, synonyms and conditions.
+{% endhint %}
 
 To configure the AI Agent for FAQ Car Rental, you need to set special flows.
 
@@ -55,16 +57,20 @@ Click the **Details** tab, and then click the NLP section header. The NLP area e
 
 ![](../../../Resources/Images/solution%20templates/Cristina/train%20bot.png)
 
-> **NOTE:**  It might take a few minutes for the NLP training to complete, so you might need to wait for Druid to finish training all AI Agent entities that have NLP enabled (NLP=true).
+{% hint style="info" %}
+**NOTE:**  It might take a few minutes for the NLP training to complete, so you might need to wait for Druid to finish training all AI Agent entities that have NLP enabled (NLP=true).
+{% endhint %}
 
 <a id="SeeFAQCarRentalinAction"></a>
 
 ## See FAQ Car Rental in Action
 
-> **NOTE:** The AI Agent is trained in two languages: RO and EN. If you want to switch between languages, just type the following commends in the chat:
->
-> - “Romana te rog” if you want to switch from EN to RO.
-> - “English please” if you want to switch from RO to EN.
+{% hint style="info" %}
+**NOTE:** The AI Agent is trained in two languages: RO and EN. If you want to switch between languages, just type the following commends in the chat:
+
+- “Romana te rog” if you want to switch from EN to RO.
+- “English please” if you want to switch from RO to EN.
+{% endhint %}
 
 The list below provides you with an extensive list of things you can say to the AI Agent in either English or Romanian.
 

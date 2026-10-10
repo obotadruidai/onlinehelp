@@ -108,9 +108,11 @@ When the channel is active, the following fields are available in Druid:
 
 ![](../Resources/Images/Infobip/notif%20profile.png)
 
-> **NOTE:** Druid currently supports basic authentication for WhatsApp via Infobip.
->
-> ![](../Resources/Images/Infobip/basic%20auth.png)
+{% hint style="info" %}
+**NOTE:** Druid currently supports basic authentication for WhatsApp via Infobip.
+
+![](../Resources/Images/Infobip/basic%20auth.png)
+{% endhint %}
 
 7. Click **SAVE**. The notification profile is created.
 

@@ -27,7 +27,9 @@ To see the additional connection parameters you can use in Druid, click the link
 
 The table below provides you with the list of additional connection parameters you can use when connecting to an SQL Server.
 
-> **Info:** Use the table as a reference to ensure that you have included every property applicable to your specific situation. Some parameters have several equivalents. For those, each variant is specified on its own line separated with "-or-".
+{% hint style="info" %}
+**Info:** Use the table as a reference to ensure that you have included every property applicable to your specific situation. Some parameters have several equivalents. For those, each variant is specified on its own line separated with "-or-".
+{% endhint %}
 
 | Connection Parameter | Description |
 | --- | --- |
@@ -95,7 +97,9 @@ The table below provides you with the list of additional connection parameters y
 
 Configure secure communication between Druid and IBM DB2 using SSL / TLS parameters.
 
-> **IMPORTANT!** Always use a single certificate file (preferably the root issuing CA for certificate renewal resilience, or the leaf certificate as a fallback). Do not concatenate a full certificate chain into SSLServerCertificate. If you experience connection issues on SSL-only ports, verify that **Authentication** mode settings match server requirements.
+{% hint style="warning" %}
+**IMPORTANT!** Always use a single certificate file (preferably the root issuing CA for certificate renewal resilience, or the leaf certificate as a fallback). Do not concatenate a full certificate chain into SSLServerCertificate. If you experience connection issues on SSL-only ports, verify that **Authentication** mode settings match server requirements.
+{% endhint %}
 
 | Connection Parameter | Description |
 | --- | --- |
@@ -111,7 +115,9 @@ Configure secure communication between Druid and IBM DB2 using SSL / TLS paramet
 Follow these steps to extract and prepare the server certificate for connection configuration:
 
 1. **Extract Certificate Text**. Copy a single -----BEGIN CERTIFICATE----- to -----END CERTIFICATE----- block.
-> **NOTE:** Select the root or issuing CA (the final certificate in the chain) instead of the leaf certificate to prevent connection breaks during routine certificate renewals.
+{% hint style="info" %}
+**NOTE:** Select the root or issuing CA (the final certificate in the chain) instead of the leaf certificate to prevent connection breaks during routine certificate renewals.
+{% endhint %}
 
 2. **Save File**. Save the copied content directly into a plain text file using a **.pem** extension (no format conversion is required as the source output is standard PEM/Base64 format).
 3. **Validate Certificate**. Run the following command to verify certificate integrity:
@@ -164,13 +170,15 @@ When deploying Druid on Red Hat OpenShift or Kubernetes, consider the following 
 | Authentication | Specifies the authentication mechanism used to validate credentials with the Db2 server (for example, SERVER, SERVER\_ENCRYPT, CLIENT, or KERBEROS). |
 | Instance | Specifies the targeted Db2 server instance name, which is required by certain authentication modes to establish valid context. |
 
-> **NOTE:** **Common SSL Connection Pitfall**: The standard plaintext port (e.g., 50000) and the dedicated SSL port (e.g., 50001) often use different server-side **AUTHENTICATION** settings. If authentication fails only after enabling SSL, verify the server configuration for the SSL listener using:
->
-> ```
-> db2 get dbm cfg | grep -i AUTHENTICATION
-> ```
->
-> Set the matching authentication parameter (typically **SERVER\_ENCRYPT**) in the DB2 connection configuration.
+{% hint style="info" %}
+**NOTE:** **Common SSL Connection Pitfall**: The standard plaintext port (e.g., 50000) and the dedicated SSL port (e.g., 50001) often use different server-side **AUTHENTICATION** settings. If authentication fails only after enabling SSL, verify the server configuration for the SSL listener using:
+
+```
+db2 get dbm cfg | grep -i AUTHENTICATION
+```
+
+Set the matching authentication parameter (typically **SERVER\_ENCRYPT**) in the DB2 connection configuration.
+{% endhint %}
 
 <a id="ClientIdentificationMonitoring"></a>
 

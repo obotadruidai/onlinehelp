@@ -109,7 +109,9 @@ Confirm that Email Cases view and admin records are created.
 
 ### Step 8. Configure LLM Model Connectors
 
-> **NOTE:** This is a mandatory step to link the LLM models to their respective integration connectors.
+{% hint style="info" %}
+**NOTE:** This is a mandatory step to link the LLM models to their respective integration connectors.
+{% endhint %}
 
 Navigate to **Integrations** to find the provisioned connectors for Druid Becus and GPT-4o mini.
 

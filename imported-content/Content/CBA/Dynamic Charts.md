@@ -33,7 +33,9 @@ Create the integration designated for gathering data for the chart. In the Reque
 
 ![](../Resources/Images/Charts/dynamic%20chart%20integration.png)
 
-> **NOTE:** Rather than building dynamic charts from scratch, you can leverage AI Authoring Agents. By launching the Workspace Designer from the Page Help icon, you can describe your chart requirements in natural language to automatically create charts following the Workspace Designer guidance in the chat. For more information, see [AI Authoring Agents](../2_AI%20Agents/AI%20Authoring%20Agents.md#Create3). If you want to manually create a chart, follow the subsequent steps described below.
+{% hint style="info" %}
+**NOTE:** Rather than building dynamic charts from scratch, you can leverage AI Authoring Agents. By launching the Workspace Designer from the Page Help icon, you can describe your chart requirements in natural language to automatically create charts following the Workspace Designer guidance in the chat. For more information, see [AI Authoring Agents](../2_AI%20Agents/AI%20Authoring%20Agents.md#Create3). If you want to manually create a chart, follow the subsequent steps described below.
+{% endhint %}
 
 <a id="Step2Createthechart"></a>
 
@@ -99,7 +101,9 @@ To define data for a pie chart, follow these steps:
 
 The Filters section allows you to narrow down the data displayed in the chart by applying specific condition rules on entity fields, similar to filtering data service integration responses.
 
-> **Info:** Filters on dynamic charts are available starting with Druid 9.31.
+{% hint style="info" %}
+**Info:** Filters on dynamic charts are available starting with Druid 9.31.
+{% endhint %}
 
 To add a filter:
 
@@ -141,7 +145,9 @@ Ensure that your entity contains a field that stores colors.
 
 ### Create dynamic charts with two X-axes
 
-> **NOTE:** Rather than building dynamic charts from scratch, you can leverage AI Authoring Agents. By launching the Workspace Designer from the Page Help icon, you can describe your chart requirements in natural language to automatically create the chart following the Workspace Designer guidance in the chat. For more information, see [AI Authoring Agents](../2_AI%20Agents/AI%20Authoring%20Agents.md#Create3).
+{% hint style="info" %}
+**NOTE:** Rather than building dynamic charts from scratch, you can leverage AI Authoring Agents. By launching the Workspace Designer from the Page Help icon, you can describe your chart requirements in natural language to automatically create the chart following the Workspace Designer guidance in the chat. For more information, see [AI Authoring Agents](../2_AI%20Agents/AI%20Authoring%20Agents.md#Create3).
+{% endhint %}
 
 To create a dynamic bar chart with two axes, create a dynamic chart of type bar following the procedure described above. In addition, click the **Plus** icon next to the X axis. Another X-axis section appears that allows you to select the field and function for grouping the data for the second X-axis.
 
@@ -157,9 +163,11 @@ You can apply multiple sorting based on the number of X-axes as you have.
 
 ![](../Resources/Images/Charts/sort%20by%20multiple%20axes.png)
 
-> **Info:** Starting with Druid 9.27, when grouping your chart's X-axis by a field of type Entity, you can sort the data by any field of the related entity.
->
-> ![](../Resources/Images/druid%209.27/sort%20by.png)
+{% hint style="info" %}
+**Info:** Starting with Druid 9.27, when grouping your chart's X-axis by a field of type Entity, you can sort the data by any field of the related entity.
+
+![](../Resources/Images/druid%209.27/sort%20by.png)
+{% endhint %}
 
 *Example:* A chart displaying the number of cases per status per month.
 

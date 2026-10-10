@@ -13,7 +13,9 @@ This section provides you with the procedure for configuring Live Chat with mult
 
 ## Step 1: Add agents
 
-> **NOTE:** Before defining agents, first add agents as users (**Administration** > **Users**) and assign them the Helpdesk Agent security role. For future reporting purposes, if you need specific managers to oversee agents' activity, make sure to add them as well (**Administration** > **Users**) and assign them the Manager security role.
+{% hint style="info" %}
+**NOTE:** Before defining agents, first add agents as users (**Administration** > **Users**) and assign them the Helpdesk Agent security role. For future reporting purposes, if you need specific managers to oversee agents' activity, make sure to add them as well (**Administration** > **Users**) and assign them the Manager security role.
+{% endhint %}
 
 To add an agent, follow these steps:
 
@@ -27,19 +29,25 @@ To add an agent, follow these steps:
 
 ![](../Resources/Images/Live%20Chat/agents%20list.png)
 
-> **Info:**  You can set a custom working schedule for every agent. For more information, see [Automatically Logging Out Helpdesk Agents](Automatically%20Logging%20Out.md).
+{% hint style="info" %}
+**Info:**  You can set a custom working schedule for every agent. For more information, see [Automatically Logging Out Helpdesk Agents](Automatically%20Logging%20Out.md).
+{% endhint %}
 
 Following the procedure above, add as many agents as you need.
 
 Once you add all agents, you can start add queues and assign agents to queues to accommodate your support department structure.
 
-> **Info:** You can assign an agent to multiple queues. Based on your use case, you can also create individual queues for agents if you want to provide them with the possibility to transfer live chat to specific agents.
+{% hint style="info" %}
+**Info:** You can assign an agent to multiple queues. Based on your use case, you can also create individual queues for agents if you want to provide them with the possibility to transfer live chat to specific agents.
+{% endhint %}
 
 <a id="Step2Definequeuesandassignagents"></a>
 
 ## Step 2: Define queues and assign agents
 
-> **Info:** If you don't define queues, all agents will be automatically assigned to the global queue.
+{% hint style="info" %}
+**Info:** If you don't define queues, all agents will be automatically assigned to the global queue.
+{% endhint %}
 
 1. On the main menu, click **Live Chat Queues**. The Queues list page appears.
 2. At the top-right corner of the page, click the **Create new queue** button. The Create new queue page appears.
@@ -48,35 +56,47 @@ Once you add all agents, you can start add queues and assign agents to queues to
 
 ![](../Resources/Images/Live%20Chat/create%20new%20queue.png)
 
-> **NOTE:** By default, **Send sound notifications** is enabled, which means that the browser sends sound notifications when the agent web page is not in focus (agent navigates to another tab / browser). If you do not want to send sound notifications to agents, disable it. For agents who are members of several queues, if at least one queue has this option enabled, then that agent will receive notifications. This setting is available in DRUID 1.73 and higher.
+{% hint style="info" %}
+**NOTE:** By default, **Send sound notifications** is enabled, which means that the browser sends sound notifications when the agent web page is not in focus (agent navigates to another tab / browser). If you do not want to send sound notifications to agents, disable it. For agents who are members of several queues, if at least one queue has this option enabled, then that agent will receive notifications. This setting is available in DRUID 1.73 and higher.
+{% endhint %}
 
-> **NOTE:** You have three options for sending sound notifications:
->
-> - **Never** - sound notifications are disabled, no sound notifications are sent to agents.
-> - **Only when out of focus** - the browser sends sound notifications when the agent web page is not in focus (agent navigates to another tab / browser).
-> - **Always** - the browser always sends sound notifications when users send messages in the chat, regardless if the agent web page is in focus or not.
->
-> ![](../Resources/Images/Live%20Chat/sound%20notif.png)
+{% hint style="info" %}
+**NOTE:** You have three options for sending sound notifications:
+
+- **Never** - sound notifications are disabled, no sound notifications are sent to agents.
+- **Only when out of focus** - the browser sends sound notifications when the agent web page is not in focus (agent navigates to another tab / browser).
+- **Always** - the browser always sends sound notifications when users send messages in the chat, regardless if the agent web page is in focus or not.
+
+![](../Resources/Images/Live%20Chat/sound%20notif.png)
+{% endhint %}
 
 5. By default, agents in a queue can handle maximum 5 active sessions in parallel (handle 5 live chat sessions at the same time). To change the maximum number of active sessions agents assigned to that queue can handle, from the **Max number of active sessions** drop-down, select a value between **1** and **5**.
 
 ![](../Resources/Images/Live%20Chat/max%20sessions.png)
 
-> **NOTE:**
->
-> If **Max number of active sessions** is set on both AI Agent level and queue level, DRUID takes into consideration the minimum value when automatically allocating clients to agents. If an agent is allocated to multiple queues with different maximum active sessions set, DRUID takes into consideration the smallest value of them.
->
-> Example: Queue A has the **Max number of active sessions** set to 2 and Queue B has the **Max number of active sessions** set to 3. The **Max number of active sessions** on the AI Agent level is set to 4. If an agent is allocated to both Queue A and Queue B, the agent will be automatically allocated maximum 2 sessions in parallel for both queues; for Queue B having the possibility to manually take 2 more clients (to reach the maximum number of active sessions set on Queue B).
+{% hint style="info" %}
+**NOTE:**
 
-> **IMPORTANT!** For agent pages installed on your infrastructure, you need to upgrade the agent page to version 5.10 or higher.
+If **Max number of active sessions** is set on both AI Agent level and queue level, DRUID takes into consideration the minimum value when automatically allocating clients to agents. If an agent is allocated to multiple queues with different maximum active sessions set, DRUID takes into consideration the smallest value of them.
+
+Example: Queue A has the **Max number of active sessions** set to 2 and Queue B has the **Max number of active sessions** set to 3. The **Max number of active sessions** on the AI Agent level is set to 4. If an agent is allocated to both Queue A and Queue B, the agent will be automatically allocated maximum 2 sessions in parallel for both queues; for Queue B having the possibility to manually take 2 more clients (to reach the maximum number of active sessions set on Queue B).
+{% endhint %}
+
+{% hint style="warning" %}
+**IMPORTANT!** For agent pages installed on your infrastructure, you need to upgrade the agent page to version 5.10 or higher.
+{% endhint %}
 
 6. Select the **Display Connect Button at Queue Level** option to enable agents to connect to the oldest client waiting in any queue, regardless of the order in which the clients joined or their priority. This is especially useful when agents are assigned to multiple active queues.
 
 ![](../Resources/Images/Alerts/connect%20live%20chat.png)
 
-> **NOTE:** This parameter s available in DRUID 8.7 and higher.
+{% hint style="info" %}
+**NOTE:** This parameter s available in DRUID 8.7 and higher.
+{% endhint %}
 
-> **Info:** When a client is transferred to another agent or queue, they are moved to the end of the new queue. However, to provide agents with the option to connect to transferred clients regardless their position in the queue, go to the transfer flow and add the following parameter to the **TransferHelpdeskCall** internal action: `"DisplayConnectButton": true`. The Connect button will appear next to the transferred client, signaling their priority status due to prior waiting time in another queue.
+{% hint style="info" %}
+**Info:** When a client is transferred to another agent or queue, they are moved to the end of the new queue. However, to provide agents with the option to connect to transferred clients regardless their position in the queue, go to the transfer flow and add the following parameter to the **TransferHelpdeskCall** internal action: `"DisplayConnectButton": true`. The Connect button will appear next to the transferred client, signaling their priority status due to prior waiting time in another queue.
+{% endhint %}
 
 7. Click the **Save** button. The queue is added to the Queues list and the Edit queue page appears on the **General** tab.
 
@@ -102,7 +122,9 @@ Following the procedure above, create as many queues as you need and assign agen
 
 ![](../Resources/Images/Live%20Chat/queues%20list.png)
 
-> **Info:** For DRUID version 1.62 and higher, you can set the working schedule of a queue and apply it to all /some agents assigned to the queue. For more information, see [Automatically Logging Out Helpdesk Agents](Automatically%20Logging%20Out.md).
+{% hint style="info" %}
+**Info:** For DRUID version 1.62 and higher, you can set the working schedule of a queue and apply it to all /some agents assigned to the queue. For more information, see [Automatically Logging Out Helpdesk Agents](Automatically%20Logging%20Out.md).
+{% endhint %}
 
 <a id="Step3Putclientstoaspecificwaitingqueue"></a>
 
@@ -110,7 +132,9 @@ Following the procedure above, create as many queues as you need and assign agen
 
 If you want to place live chat calls to a specific waiting queue, you can do so by editing the **live-chat-connect-to-agent** flow. Add an action step and in the Pre / PostActions section, add the internal action **ConnectToHelpdeskAgent** and enter the queue code (not the queue name).
 
-> **Info:** In DRUID 5.10 and higher, you can prevent users from sending files when in a live chat session with an agent by setting **[[ChatUser]].BlockFileUpload** to "true". If **Hide Upload Button** (hideUploadButton) is set on the AI Agent (BF4 parameters, **Hide Upload Button** is checked), that overwrites the value of **[[ChatUser]].BlockFileUpload**, which means that file upload is not available on the AI Agent.
+{% hint style="info" %}
+**Info:** In DRUID 5.10 and higher, you can prevent users from sending files when in a live chat session with an agent by setting **[[ChatUser]].BlockFileUpload** to "true". If **Hide Upload Button** (hideUploadButton) is set on the AI Agent (BF4 parameters, **Hide Upload Button** is checked), that overwrites the value of **[[ChatUser]].BlockFileUpload**, which means that file upload is not available on the AI Agent.
+{% endhint %}
 
 <a id="Automaticallyallocateclientstoagents"></a>
 
@@ -129,7 +153,9 @@ For example:
 }
 ```
 
-> **Info:** For backwards compatibility, you can put clients in a specific waiting queue by specifying the queue code either from a DRUID entity field ( [[<Entity>]].<QueueCodefield>), or a DRUID local variable (@queue\_code) or directly as a string (e.g., "Loans").
+{% hint style="info" %}
+**Info:** For backwards compatibility, you can put clients in a specific waiting queue by specifying the queue code either from a DRUID entity field ( [[<Entity>]].<QueueCodefield>), or a DRUID local variable (@queue\_code) or directly as a string (e.g., "Loans").
+{% endhint %}
 
 <a id="Placeclientsinthequeuebasedontheselectedpriority"></a>
 
@@ -273,7 +299,9 @@ If you're using Live Chat DRUID Starter, as last step on the agent side, the AI 
 
 To properly log all activities of a live chat session, we recommend you to update the **live-chat-agent-disconnect** flow (**LiveChatAgentDisconnected** special flow) by adding as last step a step of type **Action** which in the PreActions or PostActions section calls the internal action **EndLiveConversation**.
 
-> **NOTE:** Remove the **DisableChat** BackChannel step if it exists from former configurations. Its functionality has been replaced by the **EndLiveConversation** internal action.
+{% hint style="info" %}
+**NOTE:** Remove the **DisableChat** BackChannel step if it exists from former configurations. Its functionality has been replaced by the **EndLiveConversation** internal action.
+{% endhint %}
 
 ![](../Resources/Images/Live%20Chat/live%20chat%20disconnect.png)
 
@@ -283,7 +311,9 @@ To properly log all activities of a live chat session, we recommend you to updat
 
 ## Step 6. Enable Agents to take a break
 
-> **NOTE:** The Break feature is available for DRUID version 1.51 or above.
+{% hint style="info" %}
+**NOTE:** The Break feature is available for DRUID version 1.51 or above.
+{% endhint %}
 
 To enable the Break functionality, you need to upgrade the Live Chat Advanced solution template (Solutions Library). For information about upgrading solution templates, see [Upgrading Solution Templates](../Solution%20Library/Upgrading%20Solution%20Templates.md).
 
@@ -291,13 +321,17 @@ After the solution upgrade, make sure that the following four flows exist on the
 
 ![](../Resources/Images/Live%20Chat/break%20flows.png)
 
-> **IMPORTANT!** Do not change the utterance of these four flows; otherwise, the Break functionality will not work.
+{% hint style="warning" %}
+**IMPORTANT!** Do not change the utterance of these four flows; otherwise, the Break functionality will not work.
+{% endhint %}
 
 <a id="Step7SettheLiveChatPauseKeywordinAIAgentadditionallanguages"></a>
 
 ## Step 7. Set the LiveChatPauseKeyword in AI Agent additional languages
 
-> **NOTE:** In DRUID versions prior 5.6, the LiveChatPauseKeyword is set by default to Romanian (ro).
+{% hint style="info" %}
+**NOTE:** In DRUID versions prior 5.6, the LiveChatPauseKeyword is set by default to Romanian (ro).
+{% endhint %}
 
 In DRUID 5.6 and higher, you can set the LiveChatPauseKeyword in all AI Agent additional languages.
 

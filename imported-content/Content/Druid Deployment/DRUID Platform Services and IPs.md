@@ -9,13 +9,17 @@ In the context of the Druid AI Platform (Cloud and Hybrid Druid deployments), eg
 
 Although we know the specific names of various Azure storage accounts, we prefer to use generic names since they might change in the future due to upgrades or other reasons.
 
-> **NOTE:** For hybrid deployments, you should allow outbound calls to IP addresses specific per Cloud environment.
+{% hint style="info" %}
+**NOTE:** For hybrid deployments, you should allow outbound calls to IP addresses specific per Cloud environment.
+{% endhint %}
 
 <a id="Communityenvironment"></a>
 
 ## Community environment
 
-> **NOTE:** For community environments, using the Connector Host in Druid hybrid deployments is only permitted in special situations with Druid team approval. Please contact [DRUID Support](<mailto:support@druidai.com?subject=Hybrid deployment - community environment>) for assistance.
+{% hint style="info" %}
+**NOTE:** For community environments, using the Connector Host in Druid hybrid deployments is only permitted in special situations with Druid team approval. Please contact [DRUID Support](<mailto:support@druidai.com?subject=Hybrid deployment - community environment>) for assistance.
+{% endhint %}
 
 | Service | Description | IP | Name | Port |
 | --- | --- | --- | --- | --- |

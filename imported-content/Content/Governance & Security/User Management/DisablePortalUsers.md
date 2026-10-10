@@ -7,7 +7,9 @@ title: "Disable Portal Users"
 
 To enhance security and maintain an audit trail, Portal users cannot be permanently deleted. Instead, you can disable (inactivate) users. Inactive users cannot access the Portal, but their history and activity remain available for auditing and reporting purposes.
 
-> **Info:** In DRUID versions prior to 9.5, you can permanently delete Portal users, but we recommend disabling them instead to preserve user history and associated data.
+{% hint style="info" %}
+**Info:** In DRUID versions prior to 9.5, you can permanently delete Portal users, but we recommend disabling them instead to preserve user history and associated data.
+{% endhint %}
 
 To disable a Portal user, follow these steps:
 
@@ -26,7 +28,9 @@ To inactivate multiple users at once, select them from the list and click the **
 
 ![](../../Resources/Images/Authoring%20User%20Management/inactivate%20multiple%20users.png)
 
-> **NOTE:**
->
-> - Inactive users remain listed in the Portal but cannot log in or perform any actions.
-> - All data and activity associated with inactive users are preserved for compliance and auditing.
+{% hint style="info" %}
+**NOTE:**
+
+- Inactive users remain listed in the Portal but cannot log in or perform any actions.
+- All data and activity associated with inactive users are preserved for compliance and auditing.
+{% endhint %}

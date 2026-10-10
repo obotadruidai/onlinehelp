@@ -45,7 +45,9 @@ The default connections are preconfigured using tenant credentials.
 | --- | --- | --- |
 | DRUID.LLM.gpt4.1 | Used for conversation analysis and metric extraction | Provisioned by Druid |
 
-> **Info:** You may replace these with custom LLM connections if required.
+{% hint style="info" %}
+**Info:** You may replace these with custom LLM connections if required.
+{% endhint %}
 
 4. Click **Publish** to make the apps available.
 

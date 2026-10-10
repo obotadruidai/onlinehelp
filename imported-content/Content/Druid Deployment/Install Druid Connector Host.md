@@ -5,9 +5,11 @@ title: "Install Druid Connector Host"
 <a id="InstallDruidConnectorHost"></a>
 
 
-> **IMPORTANT!**
->
-> - To install / upgrade / uninstall Druid Connector use the installer. You won’t be able to install / upgrade / uninstall it using the old installation procedure due to ASP.NET Core Runtime and .NET Runtime upgrade to version 5.x.
+{% hint style="warning" %}
+**IMPORTANT!**
+
+- To install / upgrade / uninstall Druid Connector use the installer. You won’t be able to install / upgrade / uninstall it using the old installation procedure due to ASP.NET Core Runtime and .NET Runtime upgrade to version 5.x.
+{% endhint %}
 
 Druid Connector Host installer enables you to easily install, upgrade or uninstall Druid Connector in Druid hybrid deployments by following some basic prerequisites and steps and go through an installation wizard.
 
@@ -33,14 +35,18 @@ In a future release, we’ll make the installer even more user friendly allowing
 ![](../Resources/Images/Install%20Druid%20Connector%20Host/Install%20Druid%20Connector%20Host_2.png)
 
 - Outbound calls to specific IP addresses specific to your DRUID environment. For detailed information, see [DRUID Platform Services and IPs](DRUID%20Platform%20Services%20and%20IPs.md).
-> **NOTE:** Messages transferred between Druid Connector Host and Azure Service Base are synchronized at UTC time zone. By default, Windows machines are aligned with UTC official time. If you manually changed the UTC time on the machine where you install the Druid Connector Host, there will be connection problems with Azure Service Bus.
+{% hint style="info" %}
+**NOTE:** Messages transferred between Druid Connector Host and Azure Service Base are synchronized at UTC time zone. By default, Windows machines are aligned with UTC official time. If you manually changed the UTC time on the machine where you install the Druid Connector Host, there will be connection problems with Azure Service Bus.
+{% endhint %}
 
 <a id="Step1DownloadDruidConnectorHostInstaller"></a>
 
 ## Step 1: Download Druid Connector Host Installer
 
 1. Access the machine where you will host the Druid Connector.
-> **NOTE:** On this machine you need permissions to register a Windows Service.
+{% hint style="info" %}
+**NOTE:** On this machine you need permissions to register a Windows Service.
+{% endhint %}
 
 2. Access the Druid Portal using an admin account and from the left menu select **All Settings** > **Download Binaries**. The **Connector and Data Service** tab appears by default.
 3. Download the latest version.
@@ -65,7 +71,9 @@ Druid Connector Host installation wizard opens. Follow the installation wizard o
 
 ![](../Resources/Images/Install%20Druid%20Connector%20Host/CNN%20HOST%20READ%20ONLY.png)
 
-> **NOTE:** Selecting both options will install the Data Service and the Connector Host on the same machine.
+{% hint style="info" %}
+**NOTE:** Selecting both options will install the Data Service and the Connector Host on the same machine.
+{% endhint %}
 
 Click **Next**.
 
@@ -73,7 +81,9 @@ Leave selected the option to **Install a new Connector Host instance**.
 
 ![](../Resources/Images/Install%20Druid%20Connector%20Host/Install%20Druid%20Connector%20Host_12.png)
 
-> **Info:**  Using Druid Connector Host installer, you can also upgrade or uninstall versions of Druid Connector Host installed using the installer.
+{% hint style="info" %}
+**Info:**  Using Druid Connector Host installer, you can also upgrade or uninstall versions of Druid Connector Host installed using the installer.
+{% endhint %}
 
 Click **Next**.
 
@@ -85,9 +95,11 @@ The Installation parameters wizard page appears. The parameters are divided acro
 
 Provide the installation parameters described below in this section.
 
-> **Info:** You can import the installation parameters by clicking the **Import settings** button and uploading the configuration file. This is particularly useful when you have encrypted credentials or using an encryption certificate, or when you want to install the latest Connector Host version on another machine using the installation parameters from an old installation.
->
-> ![](../Resources/Images/Install%20Druid%20Connector%20Host/Install%20Druid%20Connector%20Host_15.png)
+{% hint style="info" %}
+**Info:** You can import the installation parameters by clicking the **Import settings** button and uploading the configuration file. This is particularly useful when you have encrypted credentials or using an encryption certificate, or when you want to install the latest Connector Host version on another machine using the installation parameters from an old installation.
+
+![](../Resources/Images/Install%20Druid%20Connector%20Host/Install%20Druid%20Connector%20Host_15.png)
+{% endhint %}
 
 <a id="ConnectorHostParameters"></a>
 

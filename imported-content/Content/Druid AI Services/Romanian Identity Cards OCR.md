@@ -7,10 +7,12 @@ title: "Romanian Identity Cards OCR"
 
 The Druid API engine supports OCR and data extraction for Romanian identity cards.
 
-> **NOTE:**
->
-> - In order to use this Druid Vision service, contact [Druid Tech Support](<mailto:support@druidai.com?subject=Request: Activate Druid Vision service JAM_VotersId>).
-> - For any APIs that are used for testing purposes and not in a production environment, Druid CANNOT be held responsible for the security of the processed data under the General Data Protection Regulation (GDPR). We highly recommend you to use sample data and documents for all APIs in testing environments.
+{% hint style="info" %}
+**NOTE:**
+
+- In order to use this Druid Vision service, contact [Druid Tech Support](<mailto:support@druidai.com?subject=Request: Activate Druid Vision service JAM_VotersId>).
+- For any APIs that are used for testing purposes and not in a production environment, Druid CANNOT be held responsible for the security of the processed data under the General Data Protection Regulation (GDPR). We highly recommend you to use sample data and documents for all APIs in testing environments.
+{% endhint %}
 
 <a id="Request"></a>
 

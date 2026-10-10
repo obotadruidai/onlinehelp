@@ -5,15 +5,19 @@ title: "Email"
 <a id="Email"></a>
 
 
-> **IMPORTANT!** The Email channel is deprecated starting with Druid 9.11. If you already have it configured from an earlier version, it will continue to work. However, you won’t be able to create new configurations in later versions. Use the [Outlook channel](../Outlook.md) instead.
+{% hint style="warning" %}
+**IMPORTANT!** The Email channel is deprecated starting with Druid 9.11. If you already have it configured from an earlier version, it will continue to work. However, you won’t be able to create new configurations in later versions. Use the [Outlook channel](../Outlook.md) instead.
+{% endhint %}
 
 You can configure your AI Agent to communicate with users via email through the Bot Framework. By configuring your AI Agent to access an email account, it receives a message when a new email arrives. This enables the AI Agent to use email as a channel for responding to user inquiries, such as sending an email reply to a user message.
 
-> **NOTE:**
->
-> - The Email channel works with Office 365 only. Other email services are not currently supported.
-> - This channel is available in DRUID version 7.0 and higher and only in cloud and hybrid DRUID deployments. You cannot activate the channel in DRUID on-premise deployments.
-> - The Email channel only supports message steps. Rich content flow steps (such as hero cards or choice steps) are not supported.
+{% hint style="info" %}
+**NOTE:**
+
+- The Email channel works with Office 365 only. Other email services are not currently supported.
+- This channel is available in DRUID version 7.0 and higher and only in cloud and hybrid DRUID deployments. You cannot activate the channel in DRUID on-premise deployments.
+- The Email channel only supports message steps. Rich content flow steps (such as hero cards or choice steps) are not supported.
+{% endhint %}
 
 <a id="Prerequisites"></a>
 
@@ -43,10 +47,14 @@ The channel configuration modal appears.
 
 ![](../../Resources/Images/Email%20channel/email%20field.png)
 
-> **IMPORTANT!** Do not enter your own personal email account, as every message sent to that email account will be forwarded to the AI Agent. This can result in the AI Agent inappropriately sending a response to a sender. For this reason, AI Agents should only use dedicated M365 email accounts.
+{% hint style="warning" %}
+**IMPORTANT!** Do not enter your own personal email account, as every message sent to that email account will be forwarded to the AI Agent. This can result in the AI Agent inappropriately sending a response to a sender. For this reason, AI Agents should only use dedicated M365 email accounts.
+{% endhint %}
 
 5. The 'Sign in to your account' pop-up opens.
-> **NOTE:**  If the pop-up does not open, check that your browser is not blocking pop-ups. Always allow pop-ups and redirects from the Druid AI Platform.
+{% hint style="info" %}
+**NOTE:**  If the pop-up does not open, check that your browser is not blocking pop-ups. Always allow pop-ups and redirects from the Druid AI Platform.
+{% endhint %}
 
 6. Sign in with the dedicated M365 email account.
 

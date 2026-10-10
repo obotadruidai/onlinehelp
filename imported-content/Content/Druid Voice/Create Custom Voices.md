@@ -5,7 +5,9 @@ title: "Create Custom Voices"
 <a id="CreateCustomVoices"></a>
 
 
-> **IMPORTANT!** Creating voices incurs additional costs governed by your ElevenLabs subscription pricing. Druid does not charge extra for voice generation.
+{% hint style="warning" %}
+**IMPORTANT!** Creating voices incurs additional costs governed by your ElevenLabs subscription pricing. Druid does not charge extra for voice generation.
+{% endhint %}
 
 To create a custom voice, click the **Create Voice** button at the top-right corner of the page.
 
@@ -43,7 +45,9 @@ To create a new voice using Voice Design:
 
 - Adjust the **Loudness** and **Guidance Scale** sliders to set the desired output volume and adherence level.
 - Customize preview text. By default, preview text is automatically generated. If you want to use your own text for preview, turn off the **Generate Preview Text** toggle and enter your own custom text to test the voice.
-> **Info:**  For optimal results, use long and relevant preview text.
+{% hint style="info" %}
+**Info:**  For optimal results, use long and relevant preview text.
+{% endhint %}
 
 ![](../Resources/Images/ElevenLabs%20Voices/Creating%20Custom%20Voices_2.png)
 
@@ -61,7 +65,9 @@ The Voice Design page appears. You can preview the selected voice here.
 7. Enter a unique **Name** for the voice.
 8. Provide a brief **Description** of the voice profile using a minimum of 20 characters.
 9. You can also set additional parameters.
-> **Info:** We recommend you select the **Gender** as well. This makes it easier to find the voice later when filtering created voices by gender.
+{% hint style="info" %}
+**Info:** We recommend you select the **Gender** as well. This makes it easier to find the voice later when filtering created voices by gender.
+{% endhint %}
 
 ![](../Resources/Images/ElevenLabs%20Voices/Creating%20Custom%20Voices_5.png)
 
@@ -90,7 +96,9 @@ To create a voice with Voice Clone:
 6. Enter a unique **Name** for the voice.
 7. Enter a **Description** of at least 20 characters.
 8. You can also set additional parameters.
-> **Info:** We recommend you select the **Language** and **Gender**. This makes it easier to find the voice later when filtering created voices by language or gender.
+{% hint style="info" %}
+**Info:** We recommend you select the **Language** and **Gender**. This makes it easier to find the voice later when filtering created voices by language or gender.
+{% endhint %}
 
 9. Select the checkbox to confirm that you hold all necessary rights and consents to clone the voice sample, and that you agree to abide by the service's terms, policies, and privacy guidelines.
 
@@ -131,7 +139,9 @@ The Voice Remix page appears. You can preview the voice.
 9. Enter a unique **Name** for the voice.
 10. Enter a **Description** of at least 20 characters.
 11. You can also set additional parameters.
-> **Info:** We recommend you select the **Gender** as well. This makes it easier to find the voice later when filtering created voices by gender.
+{% hint style="info" %}
+**Info:** We recommend you select the **Gender** as well. This makes it easier to find the voice later when filtering created voices by gender.
+{% endhint %}
 
 ![](../Resources/Images/ElevenLabs%20Voices/Creating%20Custom%20Voices_12.png)
 

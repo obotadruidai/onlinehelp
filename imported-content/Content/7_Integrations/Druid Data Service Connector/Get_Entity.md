@@ -31,7 +31,9 @@ To bring a collection of records, select the desired 'Entity List' type field an
 
 ![](../../Resources/Images/druid%205.29/getentity.png)
 
-> **NOTE:** Mapping all fields ignores the 'Entity List' type fields.
+{% hint style="info" %}
+**NOTE:** Mapping all fields ignores the 'Entity List' type fields.
+{% endhint %}
 
 To map all entity scalar fields and 'Entity' type existing on the request entity, tap on **Map All Fields**.
 
@@ -48,9 +50,11 @@ Click the **Save** button to save the integration task and remain on the page 
 
 ## Test the integration task
 
-> **NOTE:** In order to test the Get entity task, you first need to test the Add entity task and from the **TestResult** copy the value of the entity record **Id**.
->
-> ![](../../Resources/Images/Druid%20Data%20Service%20Connector/Get%20Entity_4.png)
+{% hint style="info" %}
+**NOTE:** In order to test the Get entity task, you first need to test the Add entity task and from the **TestResult** copy the value of the entity record **Id**.
+
+![](../../Resources/Images/Druid%20Data%20Service%20Connector/Get%20Entity_4.png)
+{% endhint %}
 
 To test the Get entity integration task, click the Test tab. In the **RequestEntity**, provide the **Id** of the entity record you copied from the TestResult of the Add entity task and click the **Test** button (![](../../Resources/Images/Druid%20Data%20Service%20Connector/Add%20Entity_8.png)).
 

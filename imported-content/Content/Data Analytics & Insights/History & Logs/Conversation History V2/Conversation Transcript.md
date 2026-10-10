@@ -26,7 +26,9 @@ The conversation transcript provides you with powerful tools to:
 - View analytics of a specific flow or flow step.
 - Debug messages in the flow diagram per flow.
 
-> **Info:** To quickly identify the AI Agent decision-making process, track silent actions, and troubleshoot issues more effectively, use [Conversation Trace](Conversation%20Trace.md).
+{% hint style="info" %}
+**Info:** To quickly identify the AI Agent decision-making process, track silent actions, and troubleshoot issues more effectively, use [Conversation Trace](Conversation%20Trace.md).
+{% endhint %}
 
 <a id="Debuggingmessagedetailsandintegrationlogperflowsteps"></a>
 
@@ -70,9 +72,13 @@ In the flow step editor, the conversation transcript of the specific chat activi
 
 ![](../../../Resources/Images/Conversation%20History%20v2/Activities%20grouped%20by%20conversations_13.png)
 
-> **Info:** The **Activity Id** and the **Correlation Id** are prefilled in and editable.
+{% hint style="info" %}
+**Info:** The **Activity Id** and the **Correlation Id** are prefilled in and editable.
+{% endhint %}
 
-> **NOTE:**  If you know the **Activity Id** and the **Correlation Id**, you can debug flows and flow steps directly in the Flow Diagram.
+{% hint style="info" %}
+**NOTE:**  If you know the **Activity Id** and the **Correlation Id**, you can debug flows and flow steps directly in the Flow Diagram.
+{% endhint %}
 
 By default, the conversation transcript has a focus on the chat activity transcript of the flow step where the selected message was sent.
 

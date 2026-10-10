@@ -35,7 +35,9 @@ To trigger an unattended process, follow these steps:
 
 Create two flows as follows: the **request flow** which will be triggered when chatting with the user and the **Callback flow** which will be triggered by the UiPath robot on process completion. At this point create the flows without defining the dialogs. For information on how to create a flow, see Creating a Flow.
 
-> **Info:** Write down the ID of the Callback flow, you will need to provide it at Step 2 and Step 6.
+{% hint style="info" %}
+**Info:** Write down the ID of the Callback flow, you will need to provide it at Step 2 and Step 6.
+{% endhint %}
 
 <a id="Step2Createtherequiredentities"></a>
 
@@ -43,7 +45,9 @@ Create two flows as follows: the **request flow** which will be triggered when c
 
 Create the Request and Response entities. Define the AI Agent informational model by adding the business custom fields for both entities.
 
-> **IMPORTANT!** For the Callback flow to be triggered, make sure to add a field named **FlowId** to the Response Entity. This field will store the ID of the Callback flow.
+{% hint style="warning" %}
+**IMPORTANT!** For the Callback flow to be triggered, make sure to add a field named **FlowId** to the Response Entity. This field will store the ID of the Callback flow.
+{% endhint %}
 
 For information on how to create entities, see [Creating Entities](../../5_Entities/Managing%20Entities.md).
 

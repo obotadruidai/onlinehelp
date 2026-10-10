@@ -5,7 +5,9 @@ title: "Druid 10.3"
 <a id="Druid103"></a>
 
 
-> **IMPORTANT!** This topic describes functionality planned for a future Druid release. The information is provided for informational purposes only and reflects Druid current product direction. Nothing in this section constitutes a binding commitment to deliver any feature or functionality in a specific release or timeframe. As the market and user needs evolve, Druid reserves the right to update the list of features to ensure the most impactful features are delivered.
+{% hint style="warning" %}
+**IMPORTANT!** This topic describes functionality planned for a future Druid release. The information is provided for informational purposes only and reflects Druid current product direction. Nothing in this section constitutes a binding commitment to deliver any feature or functionality in a specific release or timeframe. As the market and user needs evolve, Druid reserves the right to update the list of features to ensure the most impactful features are delivered.
+{% endhint %}
 
 <a id="Healthcare"></a>
 

@@ -9,7 +9,9 @@ Epic on FHIR provides standards-based APIs that enable applications to securely 
 
 The Epic Integration enables Druid AI Agents to connect to Epic through these APIs using REST API calls. Depending on the Epic APIs enabled for the integration, AI Agents can access Epic resources and perform healthcare-related operations, such as retrieving information or supporting appointment-related processes.
 
-> **Info:** Epic integration is available starting with Druid 9.29.
+{% hint style="info" %}
+**Info:** Epic integration is available starting with Druid 9.29.
+{% endhint %}
 
 <a id="Prerequisites"></a>
 
@@ -22,7 +24,9 @@ Before configuring the integration:
 
 ![](../../Resources/Images/Epic%20Integration/Epic%20Integration.png)
 
-> **IMPORTANT!** Druid can make API calls only to the Epic endpoints that you enable for the application in Epic. For information about creating and configuring applications in Epic, see [Documentation - Epic on FHIR](https://fhir.epic.com/Documentation?docId=epiconfhirrequestprocess).
+{% hint style="warning" %}
+**IMPORTANT!** Druid can make API calls only to the Epic endpoints that you enable for the application in Epic. For information about creating and configuring applications in Epic, see [Documentation - Epic on FHIR](https://fhir.epic.com/Documentation?docId=epiconfhirrequestprocess).
+{% endhint %}
 
 <a id="Epicintegrationprocedure"></a>
 
@@ -76,7 +80,9 @@ After saving the Epic app, generate the key information required to establish th
 - **Save & Ready for Sandbox**
 - **Save & Ready for Production**
 
-> **IMPORTANT!** After saving the application in Epic, allow up to 30 minutes for the application to become ready before making API calls from Druid.
+{% hint style="warning" %}
+**IMPORTANT!** After saving the application in Epic, allow up to 30 minutes for the application to become ready before making API calls from Druid.
+{% endhint %}
 
 <a id="Step3CreateRESTIntegrationsforEpic"></a>
 

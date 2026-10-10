@@ -7,7 +7,9 @@ title: "Dynamic Search Priority at Conversation Time"
 
 While you can configure default search priorities at the data source level, you can also override these priorities dynamically at runtime during a live conversation.
 
-> **Info:** This feature is available starting with Druid 10.1.
+{% hint style="info" %}
+**Info:** This feature is available starting with Druid 10.1.
+{% endhint %}
 
 To adjust search priorities dynamically:
 
@@ -25,7 +27,9 @@ To adjust search priorities dynamically:
 
 4. Save the step.
 
-> **IMPORTANT!**
->
-> - **Case Sensitivity**. While search priorities (e.g., "low", "high") are case-insensitive, data source names are case-sensitive. Ensure you match the exact capitalization of your data source names.
-> - **Conversation Reset**. Runtime weight overrides apply only to the active session. Upon conversation reset, the system automatically reverts to the default priorities configured at the data source level.
+{% hint style="warning" %}
+**IMPORTANT!**
+
+- **Case Sensitivity**. While search priorities (e.g., "low", "high") are case-insensitive, data source names are case-sensitive. Ensure you match the exact capitalization of your data source names.
+- **Conversation Reset**. Runtime weight overrides apply only to the active session. Upon conversation reset, the system automatically reverts to the default priorities configured at the data source level.
+{% endhint %}

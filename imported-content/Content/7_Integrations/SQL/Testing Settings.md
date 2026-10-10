@@ -69,7 +69,9 @@ If the test is successful, you will see data in **ResponseEntity** tab (here you
 
 You can also check the **Request Task** tab, to see the SQL statement (with values) for this particular test.
 
-> **NOTE:** For SQL connector tasks, the response task will not return any values in the user interface.
+{% hint style="info" %}
+**NOTE:** For SQL connector tasks, the response task will not return any values in the user interface.
+{% endhint %}
 
 ![](../../Resources/Images/SQL%20Connector/Testing%20Settings_1.png)
 

@@ -12,7 +12,9 @@ If a GET request returns an XML response with a complex or unstructured format t
 
 ![](../../Resources/Images/rest/xml%20response.png)
 
-> **Info:** The XML object will be stringified and saved in the specified DRUID field.
+{% hint style="info" %}
+**Info:** The XML object will be stringified and saved in the specified DRUID field.
+{% endhint %}
 
 3. Save the REST integration.
 4. Create a Custom Code integration after the REST integration to process the XML string.

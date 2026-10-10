@@ -7,7 +7,9 @@ title: "Webex"
 
 Druid Portal allows you to create the AI Agent once and deploy it in Webex.
 
-> **NOTE:** The Webex channel does not support Hero, Choice, Thumbnail and Location steps, but supports Adaptive Cards v2. Do not use Adaptive cards v3 as they will not be rendered in Webex.
+{% hint style="info" %}
+**NOTE:** The Webex channel does not support Hero, Choice, Thumbnail and Location steps, but supports Adaptive Cards v2. Do not use Adaptive cards v3 as they will not be rendered in Webex.
+{% endhint %}
 
 <a id="Prerequisites"></a>
 
@@ -23,7 +25,9 @@ Druid Portal allows you to create the AI Agent once and deploy it in Webex.
 | Outbound | webexapis.com |
 | Inbound | DRUID.BotApp |
 
-> **IMPORTANT!**  The Webex channel does not support file download. If you upload a file, the message containing the file is not rendered on Webex.
+{% hint style="warning" %}
+**IMPORTANT!**  The Webex channel does not support file download. If you upload a file, the message containing the file is not rendered on Webex.
+{% endhint %}
 
 To integrate a DRUID AI Agent with Webex, follow these steps:
 
@@ -49,7 +53,9 @@ To integrate a DRUID AI Agent with Webex, follow these steps:
 
 ![](../../Resources/Images/Webex/copy%20token.png)
 
-> **Info:**  If you misplace the access token, you can always generate a new one by finding the bot in My Webex Apps and clicking **Regenerate Access Token** from the edit page.
+{% hint style="info" %}
+**Info:**  If you misplace the access token, you can always generate a new one by finding the bot in My Webex Apps and clicking **Regenerate Access Token** from the edit page.
+{% endhint %}
 
 <a id="Step2ActivateWebexchannelinDRUID"></a>
 

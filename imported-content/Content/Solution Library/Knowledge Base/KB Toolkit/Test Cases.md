@@ -31,9 +31,11 @@ To create a QnA test case, follow these steps:
 
 4. Click **Save** to save the test case.
 
-> **Info:** You can execute a single test case by clicking the **Automations** icon and selecting **Run KB Test Case**. You can also group multiple test cases in a test plan to easily test them in bulk. For more information see, [Create Test Plans](Create%20Test%20Plans.md).
->
-> ![](../../../Resources/Images/KB%20Toolkit/run%20single%20test%20case.png)
+{% hint style="info" %}
+**Info:** You can execute a single test case by clicking the **Automations** icon and selecting **Run KB Test Case**. You can also group multiple test cases in a test plan to easily test them in bulk. For more information see, [Create Test Plans](Create%20Test%20Plans.md).
+
+![](../../../Resources/Images/KB%20Toolkit/run%20single%20test%20case.png)
+{% endhint %}
 
 <a id="ImportQnAtestcasesfromanExcelfile"></a>
 
@@ -49,7 +51,9 @@ To import QnA test cases from an excel file, follow these steps:
 
 ![](../../../Resources/Images/KB%20Toolkit/choose%20type.png)
 
-> **NOTE:** If you choose to download the test cases template with data, note that the file will include only the QnA test cases. Advanced test cases will be excluded.
+{% hint style="info" %}
+**NOTE:** If you choose to download the test cases template with data, note that the file will include only the QnA test cases. Advanced test cases will be excluded.
+{% endhint %}
 
 3. Click on the download link provided in the chat to download the template on your computer.
 
@@ -199,10 +203,14 @@ To update test cases definition in bulk, follow these steps:
 2. Click on the download link provided in the chat to download the file on your computer.
 3. Close the Chat window.
 4. Open the test cases file and make the desired changes, then save the file.
-> **Info:** Keep only the test cases you want to update in the Excel file, ensuring the test case **Id** is included. If the Id is missing, new test cases will be created instead of updating the existing ones.
-> ![](../../../Resources/Images/KB%20Toolkit/update%20tests.png)
+{% hint style="info" %}
+**Info:** Keep only the test cases you want to update in the Excel file, ensuring the test case **Id** is included. If the Id is missing, new test cases will be created instead of updating the existing ones.
+![](../../../Resources/Images/KB%20Toolkit/update%20tests.png)
+{% endhint %}
 
-> **Info:**
+{% hint style="info" %}
+**Info:**
+{% endhint %}
 
 5. In the Test Case page, from the **Automations** drop-down, select **Import Test Cases**. The Chat window opens.
 6. In the Chat window that opens, click the **Upload File** icon. Browse for the test cases file and select it. Once the import is complete, you’ll see a notification in the chat showing how many test cases were successfully imported.

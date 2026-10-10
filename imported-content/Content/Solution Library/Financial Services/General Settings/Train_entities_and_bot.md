@@ -21,7 +21,9 @@ After a few seconds, the following train status message should appear in the pop
 
 ![](../../../Resources/Images/solution%20templates/Victor/trained%20entity.png)
 
-> **NOTE:**  If the train status message does not appear, you might want to check you have properly configured the corresponding Druid app.
+{% hint style="info" %}
+**NOTE:**  If the train status message does not appear, you might want to check you have properly configured the corresponding Druid app.
+{% endhint %}
 
 After you successfully train the entities, click **Save** button.
 
@@ -35,4 +37,6 @@ Click the **Details** tab, and then click the NLP section header. The NLP area e
 
 ![](../../../Resources/Images/solution%20templates/Cristina/train%20bot.png)
 
-> **NOTE:**  It might take a few minutes for the NLP training to complete, so you might need to wait for Druid to finish training all AI Agent entities that have NLP enabled (NLP=true).
+{% hint style="info" %}
+**NOTE:**  It might take a few minutes for the NLP training to complete, so you might need to wait for Druid to finish training all AI Agent entities that have NLP enabled (NLP=true).
+{% endhint %}

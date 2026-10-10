@@ -5,7 +5,9 @@ title: "Create Workspaces"
 <a id="CreateWorkspaces"></a>
 
 
-> **NOTE:** Users with permissions to create and edit workspaces can create workspaces. For more information, see [Define Security Roles for Business Users](Define%20Security%20Roles%20for%20Business%20Users.md).
+{% hint style="info" %}
+**NOTE:** Users with permissions to create and edit workspaces can create workspaces. For more information, see [Define Security Roles for Business Users](Define%20Security%20Roles%20for%20Business%20Users.md).
+{% endhint %}
 
 This section provides the procedure for creating workspaces as a AI Agent author. The steps might be slightly different based on the security role assigned to your user.
 

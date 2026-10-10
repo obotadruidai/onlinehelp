@@ -40,7 +40,9 @@ Create a data source from structured Excel and PDF files by using the internal a
 | MinThreshold | The minimum acceptable score for content extraction. |
 | TargetThreshold | The desired score threshold for content extraction. This threshold determines the level of confidence required for the extracted content to be considered relevant and accurate. |
 
-> **NOTE:** After adding the data source, you must train the KB. To do so, use the internal action **KBTrain**.
+{% hint style="info" %}
+**NOTE:** After adding the data source, you must train the KB. To do so, use the internal action **KBTrain**.
+{% endhint %}
 
 <a id="CreatedatasourcesfromSharePointOnline"></a>
 
@@ -95,7 +97,9 @@ Extract question and answer pairs from Excel, Word, and PDF documents within a S
 | TargetThreshold | The desired score threshold for content extraction. This threshold determines the level of confidence required for the extracted content to be considered relevant and accurate. |
 | DisableCertificate | Set to "False" to authenticate using a SharePoint client secret instead of a DRUID-generated certificate. |
 
-> **NOTE:** After adding the data source, you must train the KB. To do so, use the internal action **KBTrain**.
+{% hint style="info" %}
+**NOTE:** After adding the data source, you must train the KB. To do so, use the internal action **KBTrain**.
+{% endhint %}
 
 <a id="CreatedatasourcesfromSharePoint2019"></a>
 
@@ -260,7 +264,9 @@ Each data source type has unique settings you can adjust to keep your knowledge 
 | DisableCertificatValidation | SharePoint online | Set to "true" to authenticate using a SharePoint client secret instead of a DRUID-generated certificate. |
 | Port | Shared drive (FTP/SFTP) | The host name of the FTP/SFTP server. |
 
-> **NOTE:** After editing a data source, you must train the KB. To do so, use the internal action **KBTrain**.
+{% hint style="info" %}
+**NOTE:** After editing a data source, you must train the KB. To do so, use the internal action **KBTrain**.
+{% endhint %}
 
 <a id="TraintheKB"></a>
 

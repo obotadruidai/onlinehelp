@@ -101,6 +101,8 @@ Here you can:
 
 - Enable patient automatic routing to the Reorder Agent.
 - In the **Default Email** field, enter the sender email address used to send notifications. Enter the email address that will appear as the sender when the system emails patients.
-> **IMPORTANT!** This mandatory field determines the display sender address when emailing patients. Notification emails will fail until a sender address is configured.
+{% hint style="warning" %}
+**IMPORTANT!** This mandatory field determines the display sender address when emailing patients. Notification emails will fail until a sender address is configured.
+{% endhint %}
 
 - Specify the Druid Web Chat URL by entering the Website URL of the landing page where the Druid Web Chat is hosted. The system includes this link in payment confirmation emails, allowing patients to access the chat and confirm their payments. If you leave this field empty, the system sends the email as a reminder only, without the payment confirmation option. For information about embedding the Druid Web Chat into your website, see [Deploy the WebChat Snippet](../../../../../Channels/WebChat/WebChat.md#Deploy).

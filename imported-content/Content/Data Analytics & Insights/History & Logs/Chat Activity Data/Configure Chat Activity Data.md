@@ -22,7 +22,9 @@ Example:
 ![](../../../Resources/Images/Chat%20Activity%20History/post%20action.png)
 
 3. (Optional) All chat activities end automatically after 60 minutes of inactivity. If you want to allow the AI Agent to decide when to end a chat activity based on the conversation context (e.g., when the client says "good bye"), on the flow step of choice, add the InternalAction **CloseActivity**.
-> **NOTE:** Any conversation initiated after a CloseActivity event will generate a new Chat Activity (session).
+{% hint style="info" %}
+**NOTE:** Any conversation initiated after a CloseActivity event will generate a new Chat Activity (session).
+{% endhint %}
 
 ![](../../../Resources/Images/Chat%20Activity%20History/close%20activ%20post%20action.png)
 

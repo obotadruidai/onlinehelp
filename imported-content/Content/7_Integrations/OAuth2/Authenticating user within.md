@@ -23,13 +23,17 @@ To enable user sign-in using OAuth 2.0, follow these steps:
 
 ![](../../Resources/Images/Oauth%202_FINAL/Authenticating%20user%20within_6.png)
 
-> **NOTE:** For Druid versions earlier than 8.15, enter the sign-in link in the **Step message** field using the following format: **[[ChatUser]].OauthAccessURL**. For example: "Sign in to Google using this link: [[ChatUser]].OauthAccessURL"
+{% hint style="info" %}
+**NOTE:** For Druid versions earlier than 8.15, enter the sign-in link in the **Step message** field using the following format: **[[ChatUser]].OauthAccessURL**. For example: "Sign in to Google using this link: [[ChatUser]].OauthAccessURL"
+{% endhint %}
 
 5. In the Metadata section, tap on **Block user input**. By default, the sign-in step is rendered as a hero card.
 6. Configure the hero card with the following buttons:
 
 - **Sign In** - Set the value to: **[[ChatUser]].OauthAccessURL**.
-> **IMPORTANT!** After you save the step, you need to configure the **Sign In** button to open the URL, otherwise, at runtime, the user will not be redirected to the sign in page. For more information, see[Configuring hero card buttons to open URLs](../../4_Flows/Hero%20Steps%20Configuration.md#Configur).
+{% hint style="warning" %}
+**IMPORTANT!** After you save the step, you need to configure the **Sign In** button to open the URL, otherwise, at runtime, the user will not be redirected to the sign in page. For more information, see[Configuring hero card buttons to open URLs](../../4_Flows/Hero%20Steps%20Configuration.md#Configur).
+{% endhint %}
 
 - **Cancel** - Set the value to: **cancel**.
 
@@ -39,11 +43,15 @@ To enable user sign-in using OAuth 2.0, follow these steps:
 
 Continue designing your flow with actions the assistant should perform on user’s behalf after getting user’s authorization.
 
-> **NOTE:**  You can use the authorization URL in any other application and channel; this is why you might need to white list the domain of this application (the domain of the Redirect URL set on the OAuth2 app).
+{% hint style="info" %}
+**NOTE:**  You can use the authorization URL in any other application and channel; this is why you might need to white list the domain of this application (the domain of the Redirect URL set on the OAuth2 app).
+{% endhint %}
 
 When the **OAuth 2.0 Sign in** step runs, the user's identity metadata will be stored in the [[ChatUser]] entity. This mapping is based on the response configuration in the **Get User Identity** connector action.
 
-> **IMPORTANT!** The SSO Sign step DOES NOT automatically authenticate the user in the conversation!
+{% hint style="warning" %}
+**IMPORTANT!** The SSO Sign step DOES NOT automatically authenticate the user in the conversation!
+{% endhint %}
 
 After this step, continue with Druid-specific authentication using actions such as: **SaveIdentifiedUser** and **SaveAuthenticatedUser**. These can be configured either in the next step of the flow or in the PostActions section of the SSO Sign In step.
 
@@ -51,7 +59,9 @@ At runtime, when the user clicks the Sign in button/link, Druid redirects the us
 
 ![](../../Resources/Images/Oauth%202_FINAL/Configuring%20OAuth%20v2%20Authorization_21.png)
 
-> **NOTE:** The authentication session is valid for 120 seconds from the moment the sign-in link is generated. If the user does not complete the authentication within this window, the Flow Engine will automatically trigger the SSO Timeout exception. This ensures the conversation does not remain in a deadlocked state if the user abandons the process.
+{% hint style="info" %}
+**NOTE:** The authentication session is valid for 120 seconds from the moment the sign-in link is generated. If the user does not complete the authentication within this window, the Flow Engine will automatically trigger the SSO Timeout exception. This ensures the conversation does not remain in a deadlocked state if the user abandons the process.
+{% endhint %}
 
 After the user confirms the authorization, the first special action in the OAuth App is automatically invoked and the authorization process completes, meaning that the access token will be saved in the conversation context and used on any integration which consumes that specific OAuth App. The AI Agent will further perform the actions on user’s behalf as set in the conversational flow.
 
@@ -59,7 +69,9 @@ After the user confirms the authorization, the first special action in the OAuth
 
 ## Authentication Timeout Management
 
-> **NOTE:** This feature is available in Druid 9.20 and higher.
+{% hint style="info" %}
+**NOTE:** This feature is available in Druid 9.20 and higher.
+{% endhint %}
 
 To prevent the conversation from becoming unresponsive if a user does not complete the sign-in process, the Flow Engine includes an automated timeout mechanism. This ensures the flow does not remain blocked until the user manually selects **Cancel**.
 

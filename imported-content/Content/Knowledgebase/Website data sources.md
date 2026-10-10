@@ -7,7 +7,9 @@ title: "Website Data Sources"
 
 Website data sources, classified as unstructured data sources, allow you to extract and index content directly from web pages to power your AI Agent responses. By crawling public or authenticated websites, the system parses the HTML content, breaks it down into semantic paragraphs, and vectorizes it for Retrieval-Augmented Generation (RAG).
 
-> **NOTE:** During website crawling, the system automatically discovers and extracts text from web pages and dynamic web formats—supporting file extensions such as .shtml, .asp, .aspx, and .jsp—as well as standard linked document files (including PDF, DOCX, and TXT). If your website hosts direct video files, the system can transcribe and index their audio track. For limits, transcription processes, and prerequisites, see [Extracting Data from Video Files](Extract%20Data%20from%20Video%20Files.md). Video extraction is only supported for files hosted directly on your domain and cannot extract embedded media from third-party platforms like YouTube or Vimeo.
+{% hint style="info" %}
+**NOTE:** During website crawling, the system automatically discovers and extracts text from web pages and dynamic web formats—supporting file extensions such as .shtml, .asp, .aspx, and .jsp—as well as standard linked document files (including PDF, DOCX, and TXT). If your website hosts direct video files, the system can transcribe and index their audio track. For limits, transcription processes, and prerequisites, see [Extracting Data from Video Files](Extract%20Data%20from%20Video%20Files.md). Video extraction is only supported for files hosted directly on your domain and cannot extract embedded media from third-party platforms like YouTube or Vimeo.
+{% endhint %}
 
 By default, the extractor excludes content from a standard set of HTML elements (such as headers or footers) to ensure data quality. You can customize this behavior and manage how web content is processed by navigating to **Knowledge Base Settings** > **Advanced** > **HTML Settings.** For more information, see [HTML Settings](KB%20Settings/HTML%20Settings.md).
 
@@ -25,14 +27,20 @@ To begin, follow the step-by-step instructions in [Data Source Creation](Data%20
 
 1. From the **Type** dropdown, select **Website**.
 2. Leave the **Crawl using HTTP requests** option selected if you want Druid to retrieve data directly from your servers using HTTP requests. This method works best for websites that don’t rely on JavaScript to display content.
-> **NOTE:** If your website uses scripts to render content (for example, drop-down menus, tabs, or other dynamic elements), clear the **Crawl using HTTP requests** option. You can then configure the data source details by providing the JavaScript needed to render the HTML content.
+{% hint style="info" %}
+**NOTE:** If your website uses scripts to render content (for example, drop-down menus, tabs, or other dynamic elements), clear the **Crawl using HTTP requests** option. You can then configure the data source details by providing the JavaScript needed to render the HTML content.
+{% endhint %}
 
 3. To crawl a password-protected website, disable the **Crawl using HTTP requests** option, then provide your credentials and authentication page URL (**Login url**) in the designated fields. Alternatively, you can enter this information later in the data source Details tab.
-> **NOTE:** Password-protected website crawling is available in technology preview starting with Druid 9.16.
+{% hint style="info" %}
+**NOTE:** Password-protected website crawling is available in technology preview starting with Druid 9.16.
+{% endhint %}
 
 4. Select **Include subdomains** if you want the Knowledge Base Engine to also retrieve data from subdomains of the provided URL.
 5. In the **URL** field, enter the website URL starting with *https://*. E.g. *https://druidai.com*.
-> **NOTE:** Druid supports data sources in the languages set for the AI Agent. These data sources will be used conversationally, matching the conversation language. An exception is made when an internal action is used; in this case, the KB Agent will predict in the data source set in internal action parameters, and that data source will be used regardless of its own language.
+{% hint style="info" %}
+**NOTE:** Druid supports data sources in the languages set for the AI Agent. These data sources will be used conversationally, matching the conversation language. An exception is made when an internal action is used; in this case, the KB Agent will predict in the data source set in internal action parameters, and that data source will be used regardless of its own language.
+{% endhint %}
 
 6. Click **Create** to save the data source.
 
@@ -55,11 +63,15 @@ If your website renders content dynamically, you can provide a custom script to 
 
 This script runs directly in the headless browser after the page loads, ensuring all interactive elements (like expanding accordions or tab menus) are fully expanded and visible before Druid extracts the text.
 
-> **Info:** If you do not have advanced JavaScript experience, you can use an AI tool to generate a Playwright-compatible JavaScript snippet designed to expand collapsible elements on your target URL.
+{% hint style="info" %}
+**Info:** If you do not have advanced JavaScript experience, you can use an AI tool to generate a Playwright-compatible JavaScript snippet designed to expand collapsible elements on your target URL.
+{% endhint %}
 
 3. Save your changes.
 
-> **IMPORTANT!** Before crawling the data source, click the **Details** tab and make sure that **Crawl using HTTP requests** is clear.
+{% hint style="warning" %}
+**IMPORTANT!** Before crawling the data source, click the **Details** tab and make sure that **Crawl using HTTP requests** is clear.
+{% endhint %}
 
 #### Crawling Password-Protected Websites
 
@@ -79,18 +91,20 @@ If your website data source contains content that is rendered dynamically (for e
 
 ### Step 3. Execute the Website Crawl
 
-> **IMPORTANT!** If your website blocks web crawling, you must whitelist the Druid crawl agents. To do this, update your **robots.txt** file in your website’s root directory and allow access for the following Druid crawl agents:
-> **Elastic-Crawler** and **druidai-kb**.
->
-> ```
-> User-agent: Elastic-Crawler  
-> Allow: 
-> Sitemap: <your website or web page goes here - e.g., https://www.druidai.com>
->
-> User-agent: druidai-kb  
-> Allow: 
-> Sitemap: <your website or web page goes here>
-> ```
+{% hint style="warning" %}
+**IMPORTANT!** If your website blocks web crawling, you must whitelist the Druid crawl agents. To do this, update your **robots.txt** file in your website’s root directory and allow access for the following Druid crawl agents:
+**Elastic-Crawler** and **druidai-kb**.
+
+```
+User-agent: Elastic-Crawler  
+Allow: 
+Sitemap: <your website or web page goes here - e.g., https://www.druidai.com>
+
+User-agent: druidai-kb  
+Allow: 
+Sitemap: <your website or web page goes here>
+```
+{% endhint %}
 
 To crawl the website, click Crawl at the top-right corner of the page. In the **Start Crawling Parameters** modal, define the crawling parameters outlined below:
 
@@ -104,15 +118,21 @@ To crawl the website, click Crawl at the top-right corner of the page. In the **
 
 ![](../Resources/Images/KB/crawl%20params.png)
 
-> **Info:** Based on the crawling parameters, it might take up to a few minutes for the crawling to complete.
+{% hint style="info" %}
+**Info:** Based on the crawling parameters, it might take up to a few minutes for the crawling to complete.
+{% endhint %}
 
 As the crawler visits the link provided in the URL field, it will identify all the hyperlinks in the retrieved web pages and will add them to the list of URLs to visit.
 
 ![](../Resources/Images/KB/list%20of%20urls.png)
 
-> **NOTE:** If the URL provided when creating the data source redirects during crawling, the data source URL and all associated element URLs (nodes, pages) will be automatically updated to the redirected URL.
+{% hint style="info" %}
+**NOTE:** If the URL provided when creating the data source redirects during crawling, the data source URL and all associated element URLs (nodes, pages) will be automatically updated to the redirected URL.
+{% endhint %}
 
-> **Info:** If the website includes links to other domains (different from the one specified in the website data source URL), those domains won’t be crawled automatically. To include them, add a new data source for each external domain you want to crawl. For more information, see [Crawl External Domains](#Crawl_External_Domains).
+{% hint style="info" %}
+**Info:** If the website includes links to other domains (different from the one specified in the website data source URL), those domains won’t be crawled automatically. To include them, add a new data source for each external domain you want to crawl. For more information, see [Crawl External Domains](#Crawl_External_Domains).
+{% endhint %}
 
 Once crawling is complete, the discovered site pages are loaded into the data source index in a simplified single-panel tree view by default, making it easier to browse.
 
@@ -159,7 +179,9 @@ To extract the raw text content from the indexed pages, click **Extract** at the
 
 ![](../Resources/Images/KB/extract.png)
 
-> **NOTE:** The extraction might take a few seconds, depending on the number of links included in the scrapping.
+{% hint style="info" %}
+**NOTE:** The extraction might take a few seconds, depending on the number of links included in the scrapping.
+{% endhint %}
 
 <a id="Step6Trainthedatasource"></a>
 
@@ -189,7 +211,9 @@ To add a new website data source for an external domain:
 
 Once saved, this new data source will be created, and you can then initiate the crawling process for it independently.
 
-> **NOTE:** Links to external domains like Social Media (e.g., Facebook, LinkedIn, etc.) and phone numbers are excluded from the External links section.
+{% hint style="info" %}
+**NOTE:** Links to external domains like Social Media (e.g., Facebook, LinkedIn, etc.) and phone numbers are excluded from the External links section.
+{% endhint %}
 
 <a id="Troubleshootmissingcrawledlinks"></a>
 

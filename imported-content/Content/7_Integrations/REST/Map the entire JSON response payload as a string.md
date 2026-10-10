@@ -21,7 +21,9 @@ To save the entire response payload as a string, follow these steps:
 6. Click the **Save** icon next to the mapping line.
 7. Save the integration task.
 
-> **Info:** The entire response payload object will be stringified and saved in the specified DRUID field.
+{% hint style="info" %}
+**Info:** The entire response payload object will be stringified and saved in the specified DRUID field.
+{% endhint %}
 
 Example: Full JSON response payload as string mapping
 

@@ -20,7 +20,9 @@ The entities transport data via integrations. Druid packages the data as request
 ## Prerequisites
 
 - You have access to an SQL database, using SQL Server Authentication (user and password).
-> **NOTE:**  “Windows Authentication” is available in DRUID version 5.11 and higher.
+{% hint style="info" %}
+**NOTE:**  “Windows Authentication” is available in DRUID version 5.11 and higher.
+{% endhint %}
 
 - Create the Druid entities that will store data from your SQL Database.
 

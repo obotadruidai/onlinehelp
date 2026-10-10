@@ -17,12 +17,16 @@ Follow these steps to define a dialog using the Flow Designer:
 
 1. Access the Flow Palette and select the desired flow step type from the appropriate category.
 2. Drag the selected flow step type into the working area to add it as the first step.
-> **NOTE:** The Flow Designer automatically designates the first added step as the initial step (marked with START).
->
-> ![](../Resources/Images/Flow%20Graphical%20Designer/first%20step.png)
+{% hint style="info" %}
+**NOTE:** The Flow Designer automatically designates the first added step as the initial step (marked with START).
+
+![](../Resources/Images/Flow%20Graphical%20Designer/first%20step.png)
+{% endhint %}
 
 3. Customize the flow step based on your requirements using the Flow Step Editor. To configure the flow step, click on it and on the **Actions** menu, click the settings icon (![](../Resources/Images/Flow%20Graphical%20Designer/settings.png)). In the Flow Step Editor make the desired flow step configuration. For information on how to configure flow steps, see [Generic Flow Step Configuration Settings](Common%20Flow%20Settings.md) and [Flow Step Types](Flow%20Steps.md).
-> **Info:** Alternatively, use the Flow Designer in list view or the Flow Diagram to add new steps.
+{% hint style="info" %}
+**Info:** Alternatively, use the Flow Designer in list view or the Flow Diagram to add new steps.
+{% endhint %}
 
 <a id="Step2Addsubsequentflowsteps"></a>
 
@@ -30,7 +34,9 @@ Follow these steps to define a dialog using the Flow Designer:
 
 For complex AI Agent designs requiring multiple steps and nested structures, add subsequent flow steps.
 
-> **NOTE:** Flow steps should address singular tasks to maintain conversation clarity.
+{% hint style="info" %}
+**NOTE:** Flow steps should address singular tasks to maintain conversation clarity.
+{% endhint %}
 
 You can add steps using two primary methods:
 

@@ -110,7 +110,9 @@ Click **Publish** to make the apps available.
 3. Scroll down and turn on the **Use Knowledge Base** toggle.
 4. Save the AI Agent.
 
-> **Info:** As part of the Live Chat setup, make sure the Live Chat special flows are configured correctly. For more information, see [Setting up Live Chat](../../../Live%20Chat/Setting%20up%20the%20Live%20Chat%20Starter.md).
+{% hint style="info" %}
+**Info:** As part of the Live Chat setup, make sure the Live Chat special flows are configured correctly. For more information, see [Setting up Live Chat](../../../Live%20Chat/Setting%20up%20the%20Live%20Chat%20Starter.md).
+{% endhint %}
 
 <a id="Step4PreparethestandardanswerKnowledgeBase"></a>
 

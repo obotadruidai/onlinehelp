@@ -11,7 +11,9 @@ ZUGFeRD (Zentraler User Guide des Forums elektronische Rechnung Deutschland) is 
 
 This endpoint converts structured invoice information into a ZUGFeRD XML format, ensuring compliance with industry standards. It is useful for businesses that need to generate electronic invoices in the ZUGFeRD format for automated processing and integration with financial systems.
 
-> **NOTE:**  This feature is available in DRUID 8.9 and higher. To use this Druid Vision service, you must have at least one Identity Vision API service enabled for your tenant. If not, please contact [Druid Tech Support](<mailto:support@druidai.com?subject=Request: Activate Druid Vision service IdentityCard>).
+{% hint style="info" %}
+**NOTE:**  This feature is available in DRUID 8.9 and higher. To use this Druid Vision service, you must have at least one Identity Vision API service enabled for your tenant. If not, please contact [Druid Tech Support](<mailto:support@druidai.com?subject=Request: Activate Druid Vision service IdentityCard>).
+{% endhint %}
 
 <a id="Request"></a>
 

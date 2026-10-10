@@ -10,7 +10,9 @@ Web views and forms display the links to download the respective files.
 
 ![](../Resources/Images/CBA/choose%20filebutton.png)
 
-> **NOTE:** DRUID is not a File repository; it only handles the files in transit. DRUID captures files from the user (via chat and web views and forms) and passes them to integrations that further store the files file and responds back with the links. Example: Azure Blob storage, Azure File storage, SharePoint, other Document Management System.
+{% hint style="info" %}
+**NOTE:** DRUID is not a File repository; it only handles the files in transit. DRUID captures files from the user (via chat and web views and forms) and passes them to integrations that further store the files file and responds back with the links. Example: Azure Blob storage, Azure File storage, SharePoint, other Document Management System.
+{% endhint %}
 
 If you add a field of type File on a view or form, the integrations you add on the view / form require the following special configuration:
 

@@ -7,7 +7,9 @@ title: "Google LLM"
 
 The GoogleLLM Connector allows you to authenticate directly to Google Vertex AI using your own Google service account. This secure connection eliminates the need for the DRUID Service Gateway and credential sharing, enabling you to leverage your Google resources, for powering conversational responses with Google's Large Language Models (LLMs) in Knowledge Base (KB) generative endpoints and CNN.
 
-> **NOTE:** The GoogleLLM Connector is available in DRUID version 8.17 and later. For hybrid and on-premises deployments, you must upgrade the DRUID Connector Host to version 8.17 or later.
+{% hint style="info" %}
+**NOTE:** The GoogleLLM Connector is available in DRUID version 8.17 and later. For hybrid and on-premises deployments, you must upgrade the DRUID Connector Host to version 8.17 or later.
+{% endhint %}
 
 <a id="Prerequisites"></a>
 

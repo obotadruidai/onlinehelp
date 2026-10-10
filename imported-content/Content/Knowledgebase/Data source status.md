@@ -66,7 +66,9 @@ The available bulk actions depend on:
 
 The sections below provides an overview of bulk actions you can perform based on the above mentioned criteria.
 
-> **NOTE:** When an action is in progress (Crawling, Extracting, Training), all bulk actions are disabled (including the actions available at node level).
+{% hint style="info" %}
+**NOTE:** When an action is in progress (Crawling, Extracting, Training), all bulk actions are disabled (including the actions available at node level).
+{% endhint %}
 
 <a id="Filerepository1"></a>
 

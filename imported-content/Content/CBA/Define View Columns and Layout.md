@@ -53,7 +53,9 @@ The View Designer consists of the following elements:
 
    ![](../Resources/Images/CBA/column%20settings.png)
 
-> **Info:**  In order to nicely render fields on views by properly setting the fields’ layout, you might want to check [how the different fields are rendered on the views and forms](Fields%20rendering%20on%20views%20and%20forms.md) at usage time.
+{% hint style="info" %}
+**Info:**  In order to nicely render fields on views by properly setting the fields’ layout, you might want to check [how the different fields are rendered on the views and forms](Fields%20rendering%20on%20views%20and%20forms.md) at usage time.
+{% endhint %}
 
 5. Click the **Save** icon at the top-right corner of the editor to apply the changes.
 6. To ensure proper layout and formatting, preview the view to see how different field types appear at runtime.

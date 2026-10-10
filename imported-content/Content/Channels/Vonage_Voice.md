@@ -90,7 +90,9 @@ To enable your AI Agent to escalate a call to a live agent, follow these steps:
 
 3. Ensure that the entity you provided in Input mapping contains a string field named **transferTarget**.
 4. In the SetVariables section of the **transfer** backchannel step, set [[entity]].**transferTarget** to the specific value provided by your Vonage contact center administrator.
-> **NOTE:** The format of **transferTarget** may vary depending on your Vonage contact center integration.
+{% hint style="info" %}
+**NOTE:** The format of **transferTarget** may vary depending on your Vonage contact center integration.
+{% endhint %}
 
 For demo purposes, you can set [[entity]].**transferTarget** to a phone number associated with an agent.
 
@@ -130,7 +132,9 @@ This section explains how to configure DRUID to forward inbound calls received o
 
 When a call is received on your configured Vonage virtual number, DRUID can redirect the call to any SIP-compatible system. This includes VoIP phones, Private Branch Exchanges (PBXs), or dedicated SIP servers.
 
-> **NOTE:** This feature is available in DRUID 9.1 and higher.
+{% hint style="info" %}
+**NOTE:** This feature is available in DRUID 9.1 and higher.
+{% endhint %}
 
 To set up call forwarding, follow these steps:
 
@@ -139,12 +143,16 @@ To set up call forwarding, follow these steps:
 
 - IP Address: username@IP\_ADDRESS (e.g., 123@201.354.123.456)
 - Domain: username@domain.com (e.g., 1234@sipdomain.com)
-> **NOTE:** If you're unsure of your SIP URI, please consult your internal VoIP or PBX administrator, your SIP service provider, or refer to your SIP gateway's configuration interface.
+{% hint style="info" %}
+**NOTE:** If you're unsure of your SIP URI, please consult your internal VoIP or PBX administrator, your SIP service provider, or refer to your SIP gateway's configuration interface.
+{% endhint %}
 
 ![](../Resources/Images/druid%209.1/sip.png)
 
 3. Click **Save** to apply your changes.
 
-> **IMPORTANT!**  For successful call delivery, it is crucial that your receiving SIP endpoint is configured to accept incoming calls from the Druid forwarding URL. Copy the **Forward URL** and providing it to your VoIP/PBX administrator or SIP service provider. They will need to allow incoming calls from this specific Druid Forward URL on your SIP system.
->
-> ![](../Resources/Images/druid%209.1/FORARD%20URL.png)
+{% hint style="warning" %}
+**IMPORTANT!**  For successful call delivery, it is crucial that your receiving SIP endpoint is configured to accept incoming calls from the Druid forwarding URL. Copy the **Forward URL** and providing it to your VoIP/PBX administrator or SIP service provider. They will need to allow incoming calls from this specific Druid Forward URL on your SIP system.
+
+![](../Resources/Images/druid%209.1/FORARD%20URL.png)
+{% endhint %}

@@ -67,11 +67,15 @@ The chat window appears. Follow the guidance in the chat.
 
 ![](../../../../Resources/Images/HigherEd_Agentic_Advisor/compose%20email.png)
 
-> **Info:** The instructor name, course name, and course code are automatically included in the email footer. You do not need to add them manually.
+{% hint style="info" %}
+**Info:** The instructor name, course name, and course code are automatically included in the email footer. You do not need to add them manually.
+{% endhint %}
 
 6. Send the notification.
 
-> **IMPORTANT!** You cannot send class notifications for a course without enrolled students. Attempting to do so will result in an error due to a lack of recipients.
+{% hint style="warning" %}
+**IMPORTANT!** You cannot send class notifications for a course without enrolled students. Attempting to do so will result in an error due to a lack of recipients.
+{% endhint %}
 
 You can also send a notification to all students enrolled to a course from the Instructor Course form.
 
@@ -93,7 +97,9 @@ The chat window appears. Follow the guidance in the chat.
 
 4. Enter the name of the enrolled student who will receive the notification.
 5. Compose the notification (subject and body).
-> **Info:** The instructor name, course name, and course code are automatically included in the email footer. You do not need to add them manually.
+{% hint style="info" %}
+**Info:** The instructor name, course name, and course code are automatically included in the email footer. You do not need to add them manually.
+{% endhint %}
 
 6. Send the notification.
 

@@ -33,7 +33,9 @@ Follow these steps to enable LLM response streaming in your agentic flow:
 - **Responses** Recommended for Azure OpenAI models. This is the preferred API for Azure OpenAI models, enabling better performance and more intelligent interactions.
 - **Chat Completions (Legacy)**: Use this for backward compatibility with existing configurations. Note that this endpoint is now considered legacy.
 
-> **Info:** For other providers, the platform defaults to the standard completion settings compatible with those models.
+{% hint style="info" %}
+**Info:** For other providers, the platform defaults to the standard completion settings compatible with those models.
+{% endhint %}
 
 ![](../Resources/Images/Flows/LLM%20STREAMER.png)
 
@@ -101,7 +103,9 @@ Controls the depth and duration of extended internal reasoning (thinking tokens)
 - **high**. Allocates maximum reasoning tokens for deep analysis or complex tool/data transformations. Response times will be slower due to extended thinking depth.
 - **none**. Completely turns off internal chain-of-thought reasoning, treating the request as standard non-reasoning generation.
 
-> **NOTE:** A value other than "none" must be set in order for reasoning capabilities to take effect.
+{% hint style="info" %}
+**NOTE:** A value other than "none" must be set in order for reasoning capabilities to take effect.
+{% endhint %}
 
 #### reasoningSummary
 
@@ -119,4 +123,6 @@ Determines whether the model's internal reasoning process (thinking steps) is se
 - **false** (default). Internal reasoning steps are not sent as informative messages during the voice interaction.
 - **true**. Streams the model's active thinking process as temporary, real-time status updates (informative messages). This provides real-time operational feedback to keep the interaction responsive while waiting for the model to finish generating the final synthesized response.
 
-> **Info:** This parameter is supported starting with Druid 9.31 only for specific LLM models that offer native reasoning functionality (such as GPT-5, Becus 2, and Claude 4).
+{% hint style="info" %}
+**Info:** This parameter is supported starting with Druid 9.31 only for specific LLM models that offer native reasoning functionality (such as GPT-5, Becus 2, and Claude 4).
+{% endhint %}

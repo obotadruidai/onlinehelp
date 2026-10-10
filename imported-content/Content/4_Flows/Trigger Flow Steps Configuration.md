@@ -18,9 +18,11 @@ To add and configure a Trigger Flow step, follow these steps:
 - **Step Message**: If needed, you can enter a message that the AI Agent will display when this step is reached. However, for Trigger Flow steps, it’s common to leave this field empty, depending on the desired behavior.
 
 5. Click on the Metadata section header and from the Subflow field, select the flow you want to trigger.
-> **NOTE:** You can use 'Trigger flow' steps within parent flows to programmatically initiate child intents.
->
-> ![](../Resources/Images/druid%207.14/trigger%20flow.png)
+{% hint style="info" %}
+**NOTE:** You can use 'Trigger flow' steps within parent flows to programmatically initiate child intents.
+
+![](../Resources/Images/druid%207.14/trigger%20flow.png)
+{% endhint %}
 
 6. Click the Save button to save the flow step configuration.
 
@@ -36,6 +38,8 @@ If you need to return to the previous flow after the Trigger Flow step is execut
 ![](../Resources/Images/Flows/PREVIOUS%20FLOW.png)
 
 - Input Mapping with Flow ID. You can manually input the ID of the previous flow or use a local variable that stores this ID.
-> **IMPORTANT!**  We DO NOT this method because the flow IDs might change during solution imports, which could cause errors in your conversational flows.
+{% hint style="warning" %}
+**IMPORTANT!**  We DO NOT this method because the flow IDs might change during solution imports, which could cause errors in your conversational flows.
+{% endhint %}
 
 By following these steps, you can effectively use the Trigger Flow step to optimize and streamline your AI Agent's conversational flows, creating a smoother and more engaging user experience.

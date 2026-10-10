@@ -13,7 +13,9 @@ You can disable flows individually or in bulk.
 
 ## Disable flows in bulk
 
-> **Info:** This feature is available starting with Druid 9.29.
+{% hint style="info" %}
+**Info:** This feature is available starting with Druid 9.29.
+{% endhint %}
 
 To disable flows in bulk:
 
@@ -27,9 +29,11 @@ To disable flows in bulk:
 
 The Disabled badge will appear below the floe name in the Flows page to indicate its inactive status.
 
-> **Info:** To reactivate a disabled flow at any time, select the flow and in the flow configuration panel, uncheck **Is disabled**. Starting with Druid 10.0, you can enable in bulk disabled flows.
->
-> ![](../Resources/Images/Flows/enable%20in%20bulk.png)
+{% hint style="info" %}
+**Info:** To reactivate a disabled flow at any time, select the flow and in the flow configuration panel, uncheck **Is disabled**. Starting with Druid 10.0, you can enable in bulk disabled flows.
+
+![](../Resources/Images/Flows/enable%20in%20bulk.png)
+{% endhint %}
 
 <a id="Disablinganindividualflow"></a>
 

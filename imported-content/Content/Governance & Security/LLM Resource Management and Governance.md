@@ -42,7 +42,9 @@ This helps reduce the risk of hitting provider throttling limits, such as “Too
 
 No additional configuration is required. You continue to use a single integration token , while the Druid Service Gateway automatically distributes requests across the available backend connections.
 
-> **Info:** For best results, ensure that all pooled connections use accounts with similar capacity limits.
+{% hint style="info" %}
+**Info:** For best results, ensure that all pooled connections use accounts with similar capacity limits.
+{% endhint %}
 
 <a id="SupportedVendorsandRequirements"></a>
 
@@ -60,9 +62,11 @@ Each AI vendor requires specific information to connect successfully. Use this q
 | Google Vertex AI | Key File Content | projectid, location |
 | AWS Bedrock | Access Secret | accessKeyId, region |
 
-> **Info:** If you are using a Druid LLM resource (a model provided by Druid), you can find the necessary API Url and token in the Druid Portal under **Administration** > **Druid Services**.
->
-> ![](../Resources/Images/LLM/llm%20resource%20copy.png)
+{% hint style="info" %}
+**Info:** If you are using a Druid LLM resource (a model provided by Druid), you can find the necessary API Url and token in the Druid Portal under **Administration** > **Druid Services**.
+
+![](../Resources/Images/LLM/llm%20resource%20copy.png)
+{% endhint %}
 
 <a id="PrerequisitesforusingOAuthforAzureOpenAIresources"></a>
 

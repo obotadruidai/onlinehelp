@@ -81,9 +81,11 @@ After you configure the connections, click Publish.
 
 This automation provisions the default app settings.
 
-> **NOTE:** The provisioning form enables dynamic credential management. Once the provisioning automation completes the initial test setup, replace the default credentials to finalize the configuration. Modifying the email, WebChatURL, AudioCodes Id, and WhatsApp number directly within this form ensures changes apply across the entire application.
->
-> ![](../../../Resources/Images/Campaign%20Management/Set%20Up%20the%20Solution_6.png)
+{% hint style="info" %}
+**NOTE:** The provisioning form enables dynamic credential management. Once the provisioning automation completes the initial test setup, replace the default credentials to finalize the configuration. Modifying the email, WebChatURL, AudioCodes Id, and WhatsApp number directly within this form ensures changes apply across the entire application.
+
+![](../../../Resources/Images/Campaign%20Management/Set%20Up%20the%20Solution_6.png)
+{% endhint %}
 
 <a id="Step5VerifyDemoData"></a>
 
@@ -123,7 +125,9 @@ To create an audience filter, follow these steps:
 3. Enter the audience filter details:
 
 - **Name** - Enter the unique internal name for this filter record. This value must exactly match the schema name of the existing field on the Contact entity that the filter is based on.
-> **NOTE:** The match is case-sensitive and must include the same capitalization, spacing, and underscores. If the names don’t match, the Audience Filter integration will fail because the dynamic audience generator won’t be able to correctly query and filter Contact records.
+{% hint style="info" %}
+**NOTE:** The match is case-sensitive and must include the same capitalization, spacing, and underscores. If the names don’t match, the Audience Filter integration will fail because the dynamic audience generator won’t be able to correctly query and filter Contact records.
+{% endhint %}
 
 - **Display Name** - The user-friendly name of the filter.
 - **Description** - A short, clear summary of the filter's purpose and criteria. This helps you easily identify the specific function or rules of the filter at a glance in the main AudienceFilter view.

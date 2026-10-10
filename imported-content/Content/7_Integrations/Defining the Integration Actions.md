@@ -34,7 +34,9 @@ To configure an integration, flow these steps:
 
 ## Step 1: Create connector action
 
-> **NOTE:** All actions are unique per AI Agent and / or solution.
+{% hint style="info" %}
+**NOTE:** All actions are unique per AI Agent and / or solution.
+{% endhint %}
 
 To create a connector action, at the top-right corner of the page, click the Create Connector Action button. The Edit Connector Action page appears by default on the Connector general tab.
 
@@ -62,7 +64,9 @@ Now you can add integration tasks to your connector action.
 
 ## Step 2: Add integration tasks
 
-> **IMPORTANT!** A connector action can be comprised of multiple tasks of different types only if they use the same request and response entities.
+{% hint style="warning" %}
+**IMPORTANT!** A connector action can be comprised of multiple tasks of different types only if they use the same request and response entities.
+{% endhint %}
 
 To add a task, in the Edit Connector Action page, click the Connector steps tab. The page lists all tasks added on the action.
 
@@ -70,7 +74,9 @@ At the top-right corner of the page, click Create Task and from the drop-down se
 
 Based on the type of task you select, you have to configure specific settings (that is, the content of the task configuration page differs based on the task type). For more information on task specific settings, see subsequent sections.
 
-> **IMPORTANT!** To avoid long execution time for an integration with many tasks, the maximum sum of all timeouts configured on an integration is 250 seconds. Whenever this maximum is reached, the execution of the currently running integration task is interrupted and any subsequent integration tasks are no longer executed.
+{% hint style="warning" %}
+**IMPORTANT!** To avoid long execution time for an integration with many tasks, the maximum sum of all timeouts configured on an integration is 250 seconds. Whenever this maximum is reached, the execution of the currently running integration task is interrupted and any subsequent integration tasks are no longer executed.
+{% endhint %}
 
 <a id="Step3Publishconnectoractions"></a>
 

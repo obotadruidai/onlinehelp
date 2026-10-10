@@ -61,11 +61,13 @@ If you want to authenticate with OAuth when creating your ServiceNow data source
 
 14. Click the **Submit** button.
 
-> **Info:** As a best practice, create a dedicated integration user for each external client, e.g. “oauth\_integration\_druid”, give it only the roles **rest\_service** (Internal Integration User) and **web\_service\_admin** (Web service access only), and select it as your **OAuth Application User**.
->
-> ![](../Resources/Images/ServiceNow%20kb/druid%20user.png)
->
-> ![](../Resources/Images/ServiceNow%20kb/user%20roles.png)
+{% hint style="info" %}
+**Info:** As a best practice, create a dedicated integration user for each external client, e.g. “oauth\_integration\_druid”, give it only the roles **rest\_service** (Internal Integration User) and **web\_service\_admin** (Web service access only), and select it as your **OAuth Application User**.
+
+![](../Resources/Images/ServiceNow%20kb/druid%20user.png)
+
+![](../Resources/Images/ServiceNow%20kb/user%20roles.png)
+{% endhint %}
 
 <a id="Step2Createthedatasource"></a>
 
@@ -111,7 +113,9 @@ If left empty, content will be downloaded from the view endpoint for each articl
 
 7. In the **Discovery batch size** field, change the number of items extracted per page if needed.
 8. In the **Content JSON paths** field, specify the JSON paths to extract content from the response when querying the content table. Example: result.text, result.kb\_question, result.kb\_answer.
-> **Info:** If not specified, the entire content will be used.
+{% hint style="info" %}
+**Info:** If not specified, the entire content will be used.
+{% endhint %}
 
 9. Click **Create**.
 

@@ -13,7 +13,9 @@ To mitigate the risk of DDoS attacks, credential theft, and unauthorized access 
 
 ![](../../Resources/Images/Enforce%20login%20with%20Single%20Sign%20On/Single%20Sign%20On%20Login%20Enforcement_1.png)
 
-> **NOTE:** This feature is available in Druid 9.18 and higher.
+{% hint style="info" %}
+**NOTE:** This feature is available in Druid 9.18 and higher.
+{% endhint %}
 
 <a id="EnforceSSOLogin"></a>
 
@@ -28,7 +30,9 @@ To enforce SSO login:
 ![](../../Resources/Images/Enforce%20login%20with%20Single%20Sign%20On/Single%20Sign%20On%20Login%20Enforcement_2.png)
 
 4. Save this key in a secure vault for admin access only.
-> **IMPORTANT!** If something goes wrong with the SSO login (downtime with the SSO provider, etc.) you want to provide the users with the option to login with user credentials. In order to do that, you will need the **Login key**.
+{% hint style="warning" %}
+**IMPORTANT!** If something goes wrong with the SSO login (downtime with the SSO provider, etc.) you want to provide the users with the option to login with user credentials. In order to do that, you will need the **Login key**.
+{% endhint %}
 
 5. Click the **Save all** button at the top right corner of the page.
 

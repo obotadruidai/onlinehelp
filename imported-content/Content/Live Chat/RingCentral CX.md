@@ -33,7 +33,9 @@ The following steps outline how to establish a connection between Druid and Ring
 
 ![](../Resources/Images/RingCentralCX/WEBHOOK%20COPY.png)
 
-> **NOTE:** The **Webhook verification token** is available starting with Druid 9.19.
+{% hint style="info" %}
+**NOTE:** The **Webhook verification token** is available starting with Druid 9.19.
+{% endhint %}
 
 <a id="Step2CreateaRingCXDigitalChannelSDK"></a>
 
@@ -57,7 +59,9 @@ Use the following specific parameters for the Druid integration:
 
 By default, RingCentral CX does not notify Druid when a conversation ends. Instead, the session remains active until it reaches the **Live chat conversation idle timeout mins** threshold.
 
-> **NOTE:** Conversation end support is available starting with Druid 9.19.
+{% hint style="info" %}
+**NOTE:** Conversation end support is available starting with Druid 9.19.
+{% endhint %}
 
 To notify Druid immediately when a live chat ends, log in to RingCentral CX Engage Digital, navigate to **Dev Tools** > **Webhooks**, and create a webhook with the following details:
 
@@ -110,9 +114,13 @@ To connect a user to a live agent, add a dedicated step to your conversation flo
 Most contact centers require agents to see the history of the interaction between the customer and the AI Agent.
 
 1. **Capture the Transcript**: On the same flow step where you call **ConnectToHelpdeskAgent**, you must first call the internal action **GetConversationTranscript**.
-> **IMPORTANT!**  You must call **GetConversationTranscript** in the PreActions section. If called in PostActions, the transcript will not be sent.
+{% hint style="warning" %}
+**IMPORTANT!**  You must call **GetConversationTranscript** in the PreActions section. If called in PostActions, the transcript will not be sent.
+{% endhint %}
 
-> **Info:**  You can call the **GetConversationTranscript** internal action on a previous step.
+{% hint style="info" %}
+**Info:**  You can call the **GetConversationTranscript** internal action on a previous step.
+{% endhint %}
 
 2. **Configure the Transfer**: In the **ConnectToHelpdeskAgent** internal action settings, settings, add the following JSON configuration:
 

@@ -13,7 +13,9 @@ The AI Agent uses the metrics defined by the solution admin to perform evaluatio
 
 To access the Conversation Analytics, on the **Analytics - Conversation Toolkit** workspace menu, click **Conversation Analytics**.
 
-> **Info:** By default, the Analytics Conversations view displays data from the past 7 days. To analyze trends or specific events outside of this window, apply a time range filter to the dashboard.
+{% hint style="info" %}
+**Info:** By default, the Analytics Conversations view displays data from the past 7 days. To analyze trends or specific events outside of this window, apply a time range filter to the dashboard.
+{% endhint %}
 
 <a id="InsightsDashboard"></a>
 
@@ -200,7 +202,9 @@ The **Conversations by Hour / Time-of-Day** stacked bar chart provides session v
 
 This bar chart provides conversation durations (in minutes) for successful appointment booking interactions, by appointment action type (such as scheduling or rescheduling), grouped per communication channel.
 
-> **Info:** While the business application provides this for the healthcare industry, if you do not need it, remove it from the dashboard.
+{% hint style="info" %}
+**Info:** While the business application provides this for the healthcare industry, if you do not need it, remove it from the dashboard.
+{% endhint %}
 
 ![](../../../../Resources/Images/AI%20Engagement%20Analyst/tiem%20to%20book.png)
 
@@ -210,7 +214,9 @@ This bar chart provides conversation durations (in minutes) for successful appoi
 
 The Outcomes Dashboard provides a multi-dimensional view of how conversations ended, combining outcome distribution, resolution quality, user intent, and friction signals into four coordinated charts. Together, they let you understand not just what users came for, but how well those needs were met and where experience issues are concentrated.
 
-> **Info:** By default, each chart displays a limited set of records. To view the complete list of outcomes, expand any chart to full-screen mode.
+{% hint style="info" %}
+**Info:** By default, each chart displays a limited set of records. To view the complete list of outcomes, expand any chart to full-screen mode.
+{% endhint %}
 
 Outcomes are organized by Business Areas (e.g., Account Management, Leasing, or Insurance) and can range from broad categories to highly specific interaction results. This classification is essential for measuring performance across different departments and identifying where requests are frequently unresolved or escalated.
 
@@ -218,7 +224,9 @@ Outcomes are organized by Business Areas (e.g., Account Management, Leasing, or 
 
 The solution includes as number of default Outcomes and you can customize with your specific.
 
-> **NOTE:** You can map the Outcomes with the Activity Outcome in your Contact Center System or CRM. See [Step 3. Import default settings](Set%20Up%20the%20Solution.md#Step) in the Admin section.
+{% hint style="info" %}
+**NOTE:** You can map the Outcomes with the Activity Outcome in your Contact Center System or CRM. See [Step 3. Import default settings](Set%20Up%20the%20Solution.md#Step) in the Admin section.
+{% endhint %}
 
 <a id="OutcomeChart1"></a>
 
@@ -371,7 +379,9 @@ The **Friction Dashboard** provides a unified view of conversational obstacles a
 
 ![](../../../../Resources/Images/AI%20Engagement%20Analyst/friction%20dashboard.png)
 
-> **Info:** The Friction Dashboard is populated only when the **Friction Intent** is enabled by the solution administrator and the AI Analyzer has processed conversations. If automatic generation is enabled, new friction intent values may appear over time as conversations are analyzed.
+{% hint style="info" %}
+**Info:** The Friction Dashboard is populated only when the **Friction Intent** is enabled by the solution administrator and the AI Analyzer has processed conversations. If automatic generation is enabled, new friction intent values may appear over time as conversations are analyzed.
+{% endhint %}
 
 <a id="FrictionChart1"></a>
 
@@ -397,7 +407,9 @@ The **Friction Top Intents** chart is a grouped bar chart that visualises the in
 
 ![](../../../../Resources/Images/AI%20Engagement%20Analyst/friction%20top%20intents_863x424.png)
 
-> **Info:** The Friction Top Intents chart is populated only when the Friction Intent Step is enabled by the solution administrator and the AI Analyzer has processed conversations. If automatic generation is enabled, new friction step values may appear over time as the AI Analyzer processes new conversations.
+{% hint style="info" %}
+**Info:** The Friction Top Intents chart is populated only when the Friction Intent Step is enabled by the solution administrator and the AI Analyzer has processed conversations. If automatic generation is enabled, new friction step values may appear over time as the AI Analyzer processes new conversations.
+{% endhint %}
 
 Use this chart to:
 
@@ -460,7 +472,9 @@ The Silent Conversations chart is a pie chart that shows the proportion of all s
 
 The relative size of eachslice gives you an immediate read on your overall engagement rate. A large Silent slice can indicate issues such as slow widget load times, unclear entry prompts, accidental widget opens, or users who visited out of curiosity but had no immediate need.
 
-> **Info:** Silent sessions are excluded from all other dashboards (Insights, Outcomes, Resolutions, and Friction) because there is no conversation content for the AI Analyst to evaluate. Volume figures on those dashboards reflect Engaged sessions only.
+{% hint style="info" %}
+**Info:** Silent sessions are excluded from all other dashboards (Insights, Outcomes, Resolutions, and Friction) because there is no conversation content for the AI Analyst to evaluate. Volume figures on those dashboards reflect Engaged sessions only.
+{% endhint %}
 
 Click either segment to open a filtered list of sessions in that category. Reviewing individual silent sessions can help confirm whether they share common characteristics, such as originating from a specific channel, time of day, or user segment.
 
@@ -476,4 +490,6 @@ Use this chart to understand conversation depth and engagement patterns across y
 - A gradual long tail — A typical healthy distribution. Most conversations resolve within a moderate number of turns, with progressively fewer conversations requiring many exchanges.
 - Unexpected spikes at higher turn counts — A cluster of conversations requiring a large number of turns may indicate a dialogue loop, a difficult-to-resolve intent, or an area where the AI Agent consistently fails to understand the user on the first attempt. Cross-reference with the Friction Dashboard to investigate further.
 
-> **Info:**  Combine the **User Turns chart** with the **Friction Dashboard** to determine whether high-turn conversations are correlated with specific friction intents or steps. A high average turn count in conversations that also show High Friction is a strong signal for dialogue redesign.
+{% hint style="info" %}
+**Info:**  Combine the **User Turns chart** with the **Friction Dashboard** to determine whether high-turn conversations are correlated with specific friction intents or steps. A high average turn count in conversations that also show High Friction is a strong signal for dialogue redesign.
+{% endhint %}

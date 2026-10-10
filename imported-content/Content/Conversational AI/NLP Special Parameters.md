@@ -15,13 +15,17 @@ If you want to add NLP experimental parameters, tap on **Add experimental parame
 
 Test the NLP model. Write the phrase you want to test (the intent), then click on **Test** and choose the corresponding language. The Conversational AI will return the matching flow (as it would do during a conversation), together with the matching score for that intent. It is a feedback tool for improving the NLP model.
 
-> **NOTE:** The testing functionality only works for trained models!
+{% hint style="info" %}
+**NOTE:** The testing functionality only works for trained models!
+{% endhint %}
 
 Train the NLP model by clicking the **Train** button The training model includes ALL training phrases defined on ALL flows associated with the respective AI Agent.
 
 ![](../Resources/Images/NLU/train%20model.png)
 
-> **Info:** You can edit or delete a parameter by clicking the Edit / Remove icon displayed inline.
+{% hint style="info" %}
+**Info:** You can edit or delete a parameter by clicking the Edit / Remove icon displayed inline.
+{% endhint %}
 
 After adding or changing a NLP parameter, click the **Save** button at the bottom of the page to save the parameters, then click the **Train** button to train the ML model using the newly added / updated parameter.
 

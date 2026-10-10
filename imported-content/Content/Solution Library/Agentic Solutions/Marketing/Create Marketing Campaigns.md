@@ -25,7 +25,9 @@ Verify that target contact phone numbers and campaign audience filters are alrea
 3. Add the campaign **Name** select the campaign **Status** as **Active**.
 4. From **Campaign Type** dropdown, select **Marketing**.
 5. Enter a **Description** and select the **Start** and **End date**.
-> **NOTE:** The **Description** is important for the LLM Agent to match an active campaign to the user interests, based on the questions that she asked in the chat.
+{% hint style="info" %}
+**NOTE:** The **Description** is important for the LLM Agent to match an active campaign to the user interests, based on the questions that she asked in the chat.
+{% endhint %}
 
 ![](../../../Resources/Images/Campaign%20Management/Build%20Campaigns_33.png)
 

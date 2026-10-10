@@ -53,9 +53,11 @@ A chat window appears on the right-hand side of the screen, providing you with t
 
 ![](../../../Resources/Images/KB%20Toolkit/imported%20tests.png)
 
-> **Info:** To add a single test case, go to the Test Cases section and click the Add New Record button. In the **TestCase** field, select the desired test case from the list, then click **Save & Close**.
->
-> ![](../../../Resources/Images/KB%20Toolkit/Testcase%20select.png)
+{% hint style="info" %}
+**Info:** To add a single test case, go to the Test Cases section and click the Add New Record button. In the **TestCase** field, select the desired test case from the list, then click **Save & Close**.
+
+![](../../../Resources/Images/KB%20Toolkit/Testcase%20select.png)
+{% endhint %}
 
 9. After you finish adding the desired test cases to the test plan, click **Save & close** to save the test plan and exit the configuration page.
 

@@ -7,7 +7,9 @@ title: "Standard API Authentication"
 
 Use this guide if the target API uses a static, long-lived bearer token, API secret, username key, or organization header. For these services, you can skip complex login workflows and directly add permanent credentials to outbound requests.
 
-> **Info:** If the target API tokens expire periodically and require a dedicated login endpoint call to refresh them, stop here and see the [Advanced Dynamic Authentication](Advanced%20Dynamic%20Authentication.md).
+{% hint style="info" %}
+**Info:** If the target API tokens expire periodically and require a dedicated login endpoint call to refresh them, stop here and see the [Advanced Dynamic Authentication](Advanced%20Dynamic%20Authentication.md).
+{% endhint %}
 
 <a id="Definetheauthorizationtemplate"></a>
 

@@ -15,7 +15,9 @@ OpenID Connect is an identity layer (a middleware) that sits on top of OAuth 2 a
 
 By using OpenID Connect authentication on your Druid tenant you ensure that all your AD users logging into the Druid Portal with their AD credentials are automatically provisioned in Druid at their first login.
 
-> **NOTE:** In Druid 9.8 and higher, when users authenticate via OpenID Connect SSO, Druid automatically handles account provisioning and updates. If an SSO user's email matches an existing manually-created portal account, the system merges them intelligently—updating user properties and roles from the identity provider while preserving critical identifiers like the masterId. This ensures seamless integration between your existing user base and SSO authentication without creating duplicate accounts.
+{% hint style="info" %}
+**NOTE:** In Druid 9.8 and higher, when users authenticate via OpenID Connect SSO, Druid automatically handles account provisioning and updates. If an SSO user's email matches an existing manually-created portal account, the system merges them intelligently—updating user properties and roles from the identity provider while preserving critical identifiers like the masterId. This ensures seamless integration between your existing user base and SSO authentication without creating duplicate accounts.
+{% endhint %}
 
 The figure below provides an overview of how Druid Portal authentication with OpenID Connect works.
 
@@ -27,7 +29,9 @@ This section is for Druid Portal administrators in charge of managing Portal use
 
 ## Step 1. Set up roles for automatically provisioned users
 
-> **IMPORTANT!**  All AD users provisioned in Druid Portal through OpenID Connect will be automatically assigned with the roles set as **Default**. You can map Druid roles to AD groups / roles, so that when provisioning users from a specific AD group they will be assigned with the Druid roles mapped for that AD group.
+{% hint style="warning" %}
+**IMPORTANT!**  All AD users provisioned in Druid Portal through OpenID Connect will be automatically assigned with the roles set as **Default**. You can map Druid roles to AD groups / roles, so that when provisioning users from a specific AD group they will be assigned with the Druid roles mapped for that AD group.
+{% endhint %}
 
 To set up default role(s) to be assigned to automatically provisioned users, from the **Administration** menu, click **Roles**. Edit the desired role(s) by selecting **Default**.
 
@@ -75,7 +79,9 @@ By default, the label of the authentication with OpenId Provider on the login pa
 
 In the **Email for new user authentication** field, enter the email address of your admin(s) who will be in charge of managing user roles and privileges. Every time a new user is automatically provisioned in Druid Portal, the admin will get an email notification and can review that user’s privileges based on business need to know.
 
-> **Info:** If you have more than one Portal administrator and you want them all to be notified when new users are provisioned in Druid, enter their email addresses separated by comma with no spaces.
+{% hint style="info" %}
+**Info:** If you have more than one Portal administrator and you want them all to be notified when new users are provisioned in Druid, enter their email addresses separated by comma with no spaces.
+{% endhint %}
 
 From the **Response Type** field, select the authorization processing flow to be used. You can use one of the two authentication paths for authentication with OpenID Connect based on how you configured your OpenID Connect:
 
@@ -128,13 +134,17 @@ In the Claims Mapping table, map the claims returned by the Active Directory aut
 - DRUID claim values are case-sensitive.
 - By default, two claims are preset (user ID / unique\_name and the claims schema).
 
-> **IMPORTANT!** You cannot currently map two claim keys to the same claim value.
+{% hint style="warning" %}
+**IMPORTANT!** You cannot currently map two claim keys to the same claim value.
+{% endhint %}
 
 <a id="Step3ProvisionusersfromActiveDirectoryOptional"></a>
 
 ## Step 3. Provision users from Active Directory (Optional)
 
-> **NOTE:** Provisioning users from Active Directory is available in DRUID 5.11 and higher.
+{% hint style="info" %}
+**NOTE:** Provisioning users from Active Directory is available in DRUID 5.11 and higher.
+{% endhint %}
 
 <a id="Prerequisites"></a>
 
@@ -156,7 +166,9 @@ In Microsoft Azure AD configuration page, under the **Manage** menu, click **Tok
 
 ![](../../Resources/Images/Authoring%20User%20Management/GROUP%20ID.png)
 
-> **NOTE:**  To get Azure AD groups in DRUID, in the Druid Portal you need to select **id\_token** (implicit flow) from the **Response type** field.
+{% hint style="info" %}
+**NOTE:**  To get Azure AD groups in DRUID, in the Druid Portal you need to select **id\_token** (implicit flow) from the **Response type** field.
+{% endhint %}
 
 - For Azure hybrid AD, for all token properties (ID, Access, SAML), select **sAMAccountName**.
 
@@ -194,7 +206,9 @@ A new user provisioned in DRUID will be assigned with the reunion of associated 
 
 If the user is member of an AD group for which there is no DRUID role mapped, at provisioning, the user will be assigned the role(s) set as **Default**, if there are any defined; otherwise the user will be provisioned without any role associated and the administrator will have to manually assign a DRUID role for that user.
 
-> **IMPORTANT!** The mapping of the AD groups to DRUID security roles is validated and updated at every user login and it is updated based on the changes done in Active Directory, if any. For example, if in Active Directory a user has been moved from an AD group to another one, when the user logs in DRUID, the mapping of the AD groups to DRUID security roles is validated and the user will be assigned with the DRUID role(s)mapped for the new AD group the user is member of (if any).
+{% hint style="warning" %}
+**IMPORTANT!** The mapping of the AD groups to DRUID security roles is validated and updated at every user login and it is updated based on the changes done in Active Directory, if any. For example, if in Active Directory a user has been moved from an AD group to another one, when the user logs in DRUID, the mapping of the AD groups to DRUID security roles is validated and the user will be assigned with the DRUID role(s)mapped for the new AD group the user is member of (if any).
+{% endhint %}
 
 <a id="Step4Allowuserregistrationandactivatenewaccounts"></a>
 
@@ -206,7 +220,9 @@ By default, new users are inactive and unable to log in until their DRUID admini
 
 To activate new self-registered users, select **New registered users are active by default**.
 
-> **Info:** If your company policies requires using a captcha on user registration and / or at log in, you can use security image question (captcha).
+{% hint style="info" %}
+**Info:** If your company policies requires using a captcha on user registration and / or at log in, you can use security image question (captcha).
+{% endhint %}
 
 ![](../../Resources/Images/Authoring%20User%20Management/form%20registration.png)
 

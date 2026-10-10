@@ -7,7 +7,9 @@ title: "UiPath Upload File to Entity"
 
 Uploads a file from Druid to the specified field of an existing Data Service entity record.
 
-> **IMPORTANT!** Before defining the integration task, make sure that you have mapped the UiPath Data Service entity to the Druid request entity; otherwise, you won’t be able to set the integration task response.
+{% hint style="warning" %}
+**IMPORTANT!** Before defining the integration task, make sure that you have mapped the UiPath Data Service entity to the Druid request entity; otherwise, you won’t be able to set the integration task response.
+{% endhint %}
 
 <a id="GeneralSettings"></a>
 
@@ -34,6 +36,8 @@ From the **UiPath** field, select the name of the File type field where the reco
 
 ![](../../Resources/Images/UiPath%20Data%20Service%20Connector/UiPath%20Download%20File%20from_1.png)
 
-> **NOTE:** The UiPath Data Service API does not currently support multiple file uploads per API call. However, Druid allows you to map multiple file uploads and when the integration task is executed, Druid will run multiple API calls based on the number of rows in the mapping table, allowing multiple file uploads.
+{% hint style="info" %}
+**NOTE:** The UiPath Data Service API does not currently support multiple file uploads per API call. However, Druid allows you to map multiple file uploads and when the integration task is executed, Druid will run multiple API calls based on the number of rows in the mapping table, allowing multiple file uploads.
+{% endhint %}
 
 Click the **Save** button to save the integration task and remain on the page or the **Save & Close** button to save and return to Connector Steps.

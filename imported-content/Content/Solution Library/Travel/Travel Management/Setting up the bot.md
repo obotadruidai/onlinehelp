@@ -15,7 +15,9 @@ For information on how to install the solution, see [Installing Solution Templat
 
 ## Step 2. Configure the AI Agent
 
-> **NOTE:** Travel, Travel Management default language is set to EN-US and additional language is set to RO. If you want to add additional languages on this solution, make sure to add the language of choice as additional AI Agent language and add the according training phrases, synonyms and conditions.
+{% hint style="info" %}
+**NOTE:** Travel, Travel Management default language is set to EN-US and additional language is set to RO. If you want to add additional languages on this solution, make sure to add the language of choice as additional AI Agent language and add the according training phrases, synonyms and conditions.
+{% endhint %}
 
 To configure the AI Agent for Travel, Travel Management, you need to set Special Flows and configure the connection strings.
 
@@ -42,7 +44,9 @@ Bot framework version 4 allows you to use adaptive cards in the conversational f
 - End current conversation and initiate a new chat.
 - Change the chat language in any of the AI Agent languages.
 
-> **IMPORTANT!** Bot framework v4 is a tenant feature, so in order to activate it, get in touch with [Druid Support](<mailto:support@druidai.com?subject=Activate Bot Framework version 4>).
+{% hint style="warning" %}
+**IMPORTANT!** Bot framework v4 is a tenant feature, so in order to activate it, get in touch with [Druid Support](<mailto:support@druidai.com?subject=Activate Bot Framework version 4>).
+{% endhint %}
 
 If you want your AI Agent to use framework v4, in the AI Agent details page, **General** tab, from the **Bot Framework Version** drop-down, select **v4**.
 
@@ -59,7 +63,9 @@ Travel, Travel Management provides you with a wide range of apps for integration
 | [Namirial](#Namirial_Configuration) | REST | eSign from Namirial | Allows the electronic signature of digital travel documents | No |
 | [SendGrid](#SendGrid_Configuration) | SendGrid | Your SMTP Server | Sends emails | No. (only if you need to send emails) |
 
-> **NOTE:** To run the Travel Management setup flow, you only need to set up the **SQL-DB-TRAVEL** app.
+{% hint style="info" %}
+**NOTE:** To run the Travel Management setup flow, you only need to set up the **SQL-DB-TRAVEL** app.
+{% endhint %}
 
 For information on how to set the connection strings, click on the configuration section specific to the app you want to set:
 
@@ -98,7 +104,9 @@ This section describes the connection strings required if you are using Druid AI
 
 - In order to use the Druid AI Services, you need the URL and access token of the instance on which the Druid OCR is running. To get the URL and access token, contact [Druid Tech Support](<mailto:support@druidai.com?subject=I need access to Druid AI Services>).
 
-> **NOTE:** Druid Tech Support generates the access token per tenant and environment.
+{% hint style="info" %}
+**NOTE:** Druid Tech Support generates the access token per tenant and environment.
+{% endhint %}
 
 To configure the REST connector to Druid AI Services, which performs OCR of Romanian identity cards, from Travel Management Apps, click **OCR Identity Card**. The Edit Connector page appears.
 
@@ -145,7 +153,9 @@ In the **ApiKey** field, enter the API Key received from your email service prov
 
 Click **Save and Close**.
 
-> **IMPORTANT!** In order for the AI Agent integration with the apps to be up and running, you need to publish the connector actions. To do so, from the main menu, click **Integrations** and click the **Publish** button.
+{% hint style="warning" %}
+**IMPORTANT!** In order for the AI Agent integration with the apps to be up and running, you need to publish the connector actions. To do so, from the main menu, click **Integrations** and click the **Publish** button.
+{% endhint %}
 
 <a id="Step3RunSetupFlow"></a>
 
@@ -163,4 +173,6 @@ You can now train the AI Agent.
 
 In the AI Agent details page, click the NLP section header. The NLP area expands. Scroll down to the Train area and click the **Train** button.
 
-> **NOTE:**  It might take a few minutes for the NLP training to complete, so you might need to wait for Druid to finish training all AI Agent entities that have NLP enabled (NLP=true).
+{% hint style="info" %}
+**NOTE:**  It might take a few minutes for the NLP training to complete, so you might need to wait for Druid to finish training all AI Agent entities that have NLP enabled (NLP=true).
+{% endhint %}

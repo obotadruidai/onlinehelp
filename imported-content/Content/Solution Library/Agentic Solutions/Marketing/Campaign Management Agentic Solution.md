@@ -19,7 +19,9 @@ The Campaign Management Agentic Solution delivers end-to-end functionality to op
 
 - **Intelligent Campaign Creation & Authoring**. Easily build campaigns either manually via text scripts or dynamically through a conversational wizard where agents guide you through setup, audience filtering, and script/content creation.
 - **RingCentral CX Campaigns**. Run automated outbound calling campaigns integrated with RingCentral CX using voice AI Agents that call contacts on behalf of the business to complete goals like scheduling appointments, sending reminders, or collecting information. These agents can verify contact identities, execute requested actions, transfer calls to live agents when needed, and automatically log outcomes into backend reports.
-> **Info:** To run RingCentral CX Campaigns requires business app upgrade to version 10.1. or higher.
+{% hint style="info" %}
+**Info:** To run RingCentral CX Campaigns requires business app upgrade to version 10.1. or higher.
+{% endhint %}
 
 - **Multichannel Deployment & Execution**. Run outreach and survey flows smoothly across multiple communication channels—including SMS (Twilio), Web (Direct Line), Voice (Audiocodes), and RingCentral CX—meeting your audience on their preferred platform.
 - **Multilingual AI-Powered Surveys**. Leverage intelligent LLM agents to execute personalized conversation and interview flows in any language, intelligently following user responses and saving structured results back to the system.

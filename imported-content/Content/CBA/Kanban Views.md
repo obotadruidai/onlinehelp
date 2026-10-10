@@ -73,7 +73,9 @@ To configure a column:
 
 4. Click the Save icon (![](../Resources/Images/CBA/save%20view%20icon.png)) to apply the settings.
 
-> **Info:** You can rearrange the columns by dragging and dropping them in the desired order. To remove a column, select it and press **Delete** on your keyboard.
+{% hint style="info" %}
+**Info:** You can rearrange the columns by dragging and dropping them in the desired order. To remove a column, select it and press **Delete** on your keyboard.
+{% endhint %}
 
 <a id="Step4Defineviewdatabyaddingintegrations"></a>
 
@@ -81,7 +83,9 @@ To configure a column:
 
 To configure the data sources for your Kanban view, follow the instructions in [Define View Data by Adding Integrations](Define%20View%20Data%20by%20Adding%20Integrations.md), with one additional step. In the **Update Data** section, define or select the desired integration based on how you want authors and business users to update records in the view, then save the integration(s).
 
-> **Info:**  If you leave the Update Data section empty, business users and authors will not be able to update records in the Kanban view.
+{% hint style="info" %}
+**Info:**  If you leave the Update Data section empty, business users and authors will not be able to update records in the Kanban view.
+{% endhint %}
 
 You can now preview the Kanban view and make further adjustments if needed.
 
@@ -93,7 +97,9 @@ You can now preview the Kanban view and make further adjustments if needed.
 
 ### Update records
 
-> **NOTE:** You can update records in a Kanban view only if the **Update Data** integration is defined for the view and you have Edit privileges for the records.
+{% hint style="info" %}
+**NOTE:** You can update records in a Kanban view only if the **Update Data** integration is defined for the view and you have Edit privileges for the records.
+{% endhint %}
 
 You can perform the following actions:
 
@@ -108,7 +114,9 @@ The record details displays in the default form set on the current entity and no
 
 ### Delete records
 
-> **NOTE:** You can update records in a Kanban view only if the **Delete Data** integration has been defined on the view and you have Edit privileges to records.
+{% hint style="info" %}
+**NOTE:** You can update records in a Kanban view only if the **Delete Data** integration has been defined on the view and you have Edit privileges to records.
+{% endhint %}
 
 You have two options to delete a record from a Kanban view:
 

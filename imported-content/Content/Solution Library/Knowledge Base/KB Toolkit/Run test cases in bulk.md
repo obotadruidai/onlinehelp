@@ -56,7 +56,9 @@ The **Summary** tab displays the AI Agent accuracy. You get an overview of the t
 
 ![](../../../Resources/Images/KB%20Toolkit/test%20run%20summary.png)
 
-> **Info:** Aim for an accuracy rate of 90% or higher.
+{% hint style="info" %}
+**Info:** Aim for an accuracy rate of 90% or higher.
+{% endhint %}
 
 To find out more information about a failed test that helps you improve the KB, click on the **Reviews Complete** tab, then click on a failed test.
 

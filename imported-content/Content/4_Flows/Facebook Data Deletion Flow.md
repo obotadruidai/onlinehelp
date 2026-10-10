@@ -11,7 +11,9 @@ When Facebook sends a Data Deletion Callback request, Druid automatically trigge
 
 The flow runs automatically for the Facebook user identified in the callback request.
 
-> **IMPORTANT!** The **Facebook Data Deletion Flow** is event-driven. It runs only when Facebook sends a Data Deletion Callback request for a specific user. Druid does not perform scheduled or bulk deletion of Facebook users.
+{% hint style="warning" %}
+**IMPORTANT!** The **Facebook Data Deletion Flow** is event-driven. It runs only when Facebook sends a Data Deletion Callback request for a specific user. Druid does not perform scheduled or bulk deletion of Facebook users.
+{% endhint %}
 
 <a id="SettingUptheDataDeletionFlow"></a>
 

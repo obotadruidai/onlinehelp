@@ -29,7 +29,9 @@ The variable must be preceded by “@” character, when mentioned in the SQL st
 
 In order to properly fill in the **Druid entity field name** field, type “[[“, in the ****Druid entity field name**** field, choose the Request entity from the drop-down, type “.” after the closing brackets ]] and choose the correct entity field from the new drop-down that appears. Click the Save icon displayed inline.
 
-> **NOTE:**  **[[ChatUser]]** entity is always available to all Connector Tasks. Therefore, you can map data both from your Request Entity and from [[ChatUser]], in the same mapping table.
+{% hint style="info" %}
+**NOTE:**  **[[ChatUser]]** entity is always available to all Connector Tasks. Therefore, you can map data both from your Request Entity and from [[ChatUser]], in the same mapping table.
+{% endhint %}
 
 Click the **Save** button. Now you need to [set up the response](Response%20Settings.md) as well.
 
@@ -37,7 +39,9 @@ Click the **Save** button. Now you need to [set up the response](Response%20Sett
 
 ## Inserting tables into an Oracle database
 
-> **NOTE:** This feature is available in DRUID 7.9 and higher.
+{% hint style="info" %}
+**NOTE:** This feature is available in DRUID 7.9 and higher.
+{% endhint %}
 
 To insert files into an Oracle database, use the following SQL statement making sure to replace ' <table name>' with the name of your Oracle table:
 

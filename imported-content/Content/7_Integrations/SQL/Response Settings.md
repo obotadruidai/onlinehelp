@@ -23,11 +23,15 @@ Once you’ve set up the request settings, you need to set up the response as we
 
 Add a new line in the mapping table. In the **Connector field name** column, write the name of the field from the SQL DB.
 
-> **NOTE:**  You MUST name all the columns returned by the SQL statement in order for the connector to map their values. Use column name aliases, where needed.
+{% hint style="info" %}
+**NOTE:**  You MUST name all the columns returned by the SQL statement in order for the connector to map their values. Use column name aliases, where needed.
+{% endhint %}
 
 For example, `select getdate()` will return a date value, without a column name – in this case, the Druid connector cannot map the date value. Use `select getdate() as CurrentDate` to map "CurrentDate" in **Connector field name**.
 
-> **NOTE:** In DRUID 5.14 and higher, you can specify keys (**Connector field name**) in the following native scripts: Latin, Greek, Hebrew, Simplified Chinese, Traditional Chinese, Japanese, Hindi and Arabic.
+{% hint style="info" %}
+**NOTE:** In DRUID 5.14 and higher, you can specify keys (**Connector field name**) in the following native scripts: Latin, Greek, Hebrew, Simplified Chinese, Traditional Chinese, Japanese, Hindi and Arabic.
+{% endhint %}
 
 From the **Connector field source type**, select the source type of the DB field:
 
@@ -55,6 +59,8 @@ Now the connector action is ready to be [Published](https://documentation.commun
 ### Consume values from an entity that is global at the integration (connector action) level within an integration task with local scope
 
 - There may be scenarios where the response entity is both local and global, and it possesses distinct memory slots. You have the capability to retrieve values from a globally scoped entity at the integration (connector action) level within an integration task that has local scope.
-> **NOTE:** This feature is available in DRUID 5.31 and higher and requires DRUID Connector Host upgrade.
+{% hint style="info" %}
+**NOTE:** This feature is available in DRUID 5.31 and higher and requires DRUID Connector Host upgrade.
+{% endhint %}
 
 For instance, consider a campaign scenario where an integration task with local scope is employed to create a new campaign sharing the same category as the campaign from the global entity. In the add/create integration task, referencing the [[Campaign]] with local scope, you can assign a new name and date while maintaining the category from the global entity's Campaign. To achieve this, map the relevant DRUID entity fields on the Response, assuming they exist: [[Campaign]].Name, [[Campaign]].CreationOn, and [[Campaign]]\_Global.Category.

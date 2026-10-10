@@ -21,4 +21,6 @@ This section provides description of all columns in the flows train set file.
 | Security | no | If provided, at import it will overwrite the name(s) of the security roles set as “Used by” on the flow. If it is empty at import, no changes are applied on the security settings. If you to want to provide multiple roles, enter comma-separated roles names. Example: Admin,User. **NOTE:** This field is mandatory only for row type Intent. |
 | Follow-up Flow Name | no | If provided, at import type, the first step of the intent will be created / updated into trigger “Flow” type, and the referenced flow is set based on the provided follow-up flow name. |
 
-> **IMPORTANT!** Providing values for "Response" column will **REPLACE** the Message in the first step of the flow. Providing values for the "Follow-up Flow Name" will set the first step as **TRIGGER FLOW**. If you don't want to update the Flow response, make sure that you clean the "Response" and "Follow-up Flow Name" columns in the Excel file before importing it.
+{% hint style="warning" %}
+**IMPORTANT!** Providing values for "Response" column will **REPLACE** the Message in the first step of the flow. Providing values for the "Follow-up Flow Name" will set the first step as **TRIGGER FLOW**. If you don't want to update the Flow response, make sure that you clean the "Response" and "Follow-up Flow Name" columns in the Excel file before importing it.
+{% endhint %}

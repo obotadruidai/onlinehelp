@@ -55,7 +55,9 @@ If running Druid on-premises, ensure your firewall permits traffic to and from t
 
 ## Connect an AI Agent to Facebook
 
-> **NOTE:** The Facebook UI may appear slightly different depending on which version you are using.
+{% hint style="info" %}
+**NOTE:** The Facebook UI may appear slightly different depending on which version you are using.
+{% endhint %}
 
 To connect an AI Agent with Facebook Messenger, follow these steps:
 
@@ -94,7 +96,9 @@ The Create an app wizard appears.
 
 ![](../../Resources/Images/FB%20integration/app%20overview.png)
 
-> **Info:** For security reasons, you might be required to re-enter your Facebook password.
+{% hint style="info" %}
+**Info:** For security reasons, you might be required to re-enter your Facebook password.
+{% endhint %}
 
 12. After the app creation process completes, the App Dashboard appears.
 
@@ -234,7 +238,9 @@ The channel configuration modal appears.
 
 ![](../../Resources/Images/FB%20integration/FB/active%20FB%20%20channel.png)
 
-> **Info:** If you host the AI Agent (via Facebook app) in multiple Facebook pages, click **+Add page** and enter the Page ID and access token for any subsequent Facebook pages.
+{% hint style="info" %}
+**Info:** If you host the AI Agent (via Facebook app) in multiple Facebook pages, click **+Add page** and enter the Page ID and access token for any subsequent Facebook pages.
+{% endhint %}
 
 5. Copy the **Callback URL** and **Verify Token** and save them in a safe location as you will need them to configure the Facebook app webhooks.
 
@@ -291,7 +297,9 @@ In order to send messages and other events from your AI Agent to Facebook Messen
 
 The integration between the AI Agent and the Facebook Page is complete.
 
-> **NOTE:** The Facebook app is in **Development Mode** until you publish it. The plugin and API functionality will only work for admins, developers and testers.
+{% hint style="info" %}
+**NOTE:** The Facebook app is in **Development Mode** until you publish it. The plugin and API functionality will only work for admins, developers and testers.
+{% endhint %}
 
 <a id="Step8FortestingpurposesaddTesterroleOptional"></a>
 
@@ -299,7 +307,9 @@ The integration between the AI Agent and the Facebook Page is complete.
 
 While your Facebook app is in Development roles, you can test the integration directly in Instagram only by using an account who has been granted the Tester role.
 
-> **Info:** For testing purposes, an account other than the admin account is required to interact with the channel and chat with the AI Agent.
+{% hint style="info" %}
+**Info:** For testing purposes, an account other than the admin account is required to interact with the channel and chat with the AI Agent.
+{% endhint %}
 
 Before testing the integration from Instagram, assign the Instagram Tester role to a Facebook test account:
 
@@ -348,7 +358,9 @@ You can now test the Facebook integration.
 2. Search for your the Facebook page.
 3. Send a direct message.
 
-> **Info:** If the **Message** button does not appear on the Page, the Page administrators have disabled incoming messages from the public.
+{% hint style="info" %}
+**Info:** If the **Message** button does not appear on the Page, the Page administrators have disabled incoming messages from the public.
+{% endhint %}
 
 The AI Agent will reply with the message set on the **Welcome flow**.
 
@@ -382,7 +394,9 @@ For further details and direct guidance from Meta, refer to these official resou
 
 Complete your Facebook app review, make the app public and publish the Facebook Page.
 
-> **NOTE:** When a user initiates a conversation with the AI Agent, the Welcome flow will be automatically triggered. Regardless of the user's subscription status to the AI Agent channel, the welcome message will be promptly sent to the user, ensuring a seamless and engaging interaction experience.
+{% hint style="info" %}
+**NOTE:** When a user initiates a conversation with the AI Agent, the Welcome flow will be automatically triggered. Regardless of the user's subscription status to the AI Agent channel, the welcome message will be promptly sent to the user, ensuring a seamless and engaging interaction experience.
+{% endhint %}
 
 <a id="HandleFacebookDataDeletionRequests"></a>
 

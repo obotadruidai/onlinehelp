@@ -33,7 +33,9 @@ If you have questions about your DRUID tenant, please contact [support@Druidai.c
 
 ![](../../Resources/Images/druid%208.13/schedules.png)
 
-> **NOTE:** The KB Schedule is a tenant feature. If you want activate it on your tenant, reach out to [DRUID Support](<mailto:support@druidai.com?subject=Activate KB Schedule on my tenant>).
+{% hint style="info" %}
+**NOTE:** The KB Schedule is a tenant feature. If you want activate it on your tenant, reach out to [DRUID Support](<mailto:support@druidai.com?subject=Activate KB Schedule on my tenant>).
+{% endhint %}
 
 For more information, see [Knowledge Base Schedule](../../Knowledgebase/Knowledge%20Base%20Schedule.md).
 
@@ -138,7 +140,9 @@ When **Support voice messages** is enabled, the AI Agent replies with text by de
 ![](../../Resources/Images/druid%208.13/alerts.png)
 
 - **KB Advanced Settings - Enhanced Generative Endpoint Configuration**. This release introduces a more flexible way to manage generative endpoints within KB Advanced Settings. You can now specify whether to utilize DRUID's dedicated resources for Large Language Models (LLMs) or configure custom endpoints to suit your specific needs. This change provides greater control over your generative AI integrations while maintaining backward compatibility.
-> **NOTE:** To ensure clarity, all generative endpoints created prior to DRUID version 8.13 have been labeled as "Obsolete." Rest assured, these older endpoints remain fully functional and will continue to operate as configured in your existing setups
+{% hint style="info" %}
+**NOTE:** To ensure clarity, all generative endpoints created prior to DRUID version 8.13 have been labeled as "Obsolete." Rest assured, these older endpoints remain fully functional and will continue to operate as configured in your existing setups
+{% endhint %}
 
 ![](../../Resources/Images/druid%208.13/generative%20endpoints.png)
 

@@ -95,7 +95,9 @@ The default settings include a predefined set of values and records. You can ext
 
 The default settings include provider timeslots for the next two weeks.
 
-> **IMPORTANT!** Timeslots represent the actual availability of a provider at a specific facility. These are the bookable units used during patient appointment scheduling. Because timeslots are generated for a limited period (two weeks), you must **generate new timeslots regularly**. If all existing timeslots are in the past, patients won’t be able to schedule future appointments. For information on how to generate new timeslots, see [Generate New Timeslots](Generate%20new%20timeslots.md).
+{% hint style="warning" %}
+**IMPORTANT!** Timeslots represent the actual availability of a provider at a specific facility. These are the bookable units used during patient appointment scheduling. Because timeslots are generated for a limited period (two weeks), you must **generate new timeslots regularly**. If all existing timeslots are in the past, patients won’t be able to schedule future appointments. For information on how to generate new timeslots, see [Generate New Timeslots](Generate%20new%20timeslots.md).
+{% endhint %}
 
 <a id="Step6Customizethepatientexperience"></a>
 
@@ -112,7 +114,9 @@ Here you can:
   In the General section of the form, turn on the **Enable Medical Guidance** toggle.
 - Enter the number of days before the appointment when the system should send the automated confirmation email to the patient (set the value in the **Days Before Confirmation Message Is Sent** field).
 - In the **Default Email** field, enter the sender email address used to send notifications. Enter the email address that will appear as the sender when the system emails patients.
-> **IMPORTANT!** This mandatory field determines the display sender address when emailing patients. Notification emails will fail until a sender address is configured.
+{% hint style="warning" %}
+**IMPORTANT!** This mandatory field determines the display sender address when emailing patients. Notification emails will fail until a sender address is configured.
+{% endhint %}
 
 - Enable patients to auto-confirm their appointment.
   Enter the URL of the landing page where the Druid Webchat is hosted. The system uses this link in confirmation emails so patients can confirm their appointment. If you leave this field empty, the email is sent as a reminder only and does not include the confirmation option. For information on how to embed Druid web chat within your website, [Deploy the WebChat Snippet](../../../../Channels/WebChat/WebChat.md#Deploy).

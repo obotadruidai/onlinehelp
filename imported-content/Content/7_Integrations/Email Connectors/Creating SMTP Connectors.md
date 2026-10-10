@@ -7,7 +7,9 @@ title: "Creating SMTP Connectors"
 
 Druid allows you to integrate with Simple Mail Transfer Protocol (SMTP) server to send emails.
 
-> **NOTE:** For hybrid and on-premise Druid deployments, your network administrator needs to grant the SMTP connector access to your SMTP server.
+{% hint style="info" %}
+**NOTE:** For hybrid and on-premise Druid deployments, your network administrator needs to grant the SMTP connector access to your SMTP server.
+{% endhint %}
 
 This section describes the procedure for creating SMTP connectors.
 
@@ -70,7 +72,9 @@ Using the solution’s Connector Designer, you can define the integration action
 
 You can add as many connector actions as best suit your integration needs.
 
-> **NOTE:** A Connector Action represents a set of one or more integration tasks, which run sequentially and use the same request and response entities.
+{% hint style="info" %}
+**NOTE:** A Connector Action represents a set of one or more integration tasks, which run sequentially and use the same request and response entities.
+{% endhint %}
 
 <a id="Step3AddIntegrationTasks"></a>
 
@@ -92,7 +96,9 @@ You can add as many connector actions as best suit your integration needs.
 
 ![](../../Resources/Images/druid%209.27/smtp%20headers.png)
 
-> **Info:** Sending custom headers is available starting with Druid 9.27.
+{% hint style="info" %}
+**Info:** Sending custom headers is available starting with Druid 9.27.
+{% endhint %}
 
 4. Click the **Save** button.
 
@@ -116,7 +122,9 @@ On your flow, add a step for sending emails and configure it as follows:
    | [[Email]].Body | The email content. If you want to include HTML in the email body, you can do so by escaping the double quotation mark (“”) and replacing it with backslash (\). For an example, see [Email Body](Email%20Body.md#_Email_Body). |
 
    If you want to add attachment to the email and you uploaded the file to a previous step, you also need to add the variable **[[Email]].Attachment** and in the value field and type the name of the file to send as email attachment. E.g., [[Email]].Attachment1 = [[Employee]].File.
-> **Info:** If you want to attach more than one email attachment, you can do so by adding more variable [[Email]].Attachment1, [[Email]].Attachment2, etc.
+{% hint style="info" %}
+**Info:** If you want to attach more than one email attachment, you can do so by adding more variable [[Email]].Attachment1, [[Email]].Attachment2, etc.
+{% endhint %}
 
 2. Click the **PreActions**/**PostActions** section header and select the integration action you created for sending emails via the SMTP server.
 

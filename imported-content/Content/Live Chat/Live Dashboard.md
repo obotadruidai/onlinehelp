@@ -67,7 +67,9 @@ You need to edit the widget based on the selected widget type. The next section 
 
 ### Configuring widgets
 
-> **Info:** You will use the widget editing to configure new widgets or edit the initial empty widgets available on the Live Chat dashboard page or custom defined widgets.
+{% hint style="info" %}
+**Info:** You will use the widget editing to configure new widgets or edit the initial empty widgets available on the Live Chat dashboard page or custom defined widgets.
+{% endhint %}
 
 To edit a widget, click the settings icon corresponding to the desired widget.
 
@@ -151,7 +153,9 @@ The new page name is saved.
 
 ### Deleting Dashboard Pages
 
-> **IMPORTANT!** This action cannot be undone. Make sure that you really want to delete the current dashboard page.
+{% hint style="warning" %}
+**IMPORTANT!** This action cannot be undone. Make sure that you really want to delete the current dashboard page.
+{% endhint %}
 
 To delete the current dashboard page, click the **Delete page** button ( ![](../Resources/Images/Live%20Dashboard_0.2/Live%20Dashboard_5.png)) from the toolbar. A confirmation dialog appears.
 
@@ -165,4 +169,6 @@ You can restore a customized dashboard page back to the dashboard template p
 
 A pop appears asking you to confirm the action. Click **Yes**.
 
-> **NOTE:** Restoring to default a page you added to the dashboard, will remove it from the dashboard.
+{% hint style="info" %}
+**NOTE:** Restoring to default a page you added to the dashboard, will remove it from the dashboard.
+{% endhint %}

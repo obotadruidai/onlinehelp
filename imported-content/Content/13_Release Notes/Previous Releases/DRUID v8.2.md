@@ -58,7 +58,9 @@ For more information, see [Network shared drive data sources](../../Knowledgebas
 
 ![](../../Resources/Images/druid%208.2/file%20size.png)
 
-> **NOTE:** There is a maximum file size limit of 20 MB for downloading original files in DRUID
+{% hint style="info" %}
+**NOTE:** There is a maximum file size limit of 20 MB for downloading original files in DRUID
+{% endhint %}
 
 - **Data source actions available at the tree element level**. During processes like crawling, extracting, and training, you can perform a limited set of actions specific to the data source type.
 

@@ -33,7 +33,9 @@ Based on the information provided by the user, search for the user in linked app
 
 Call the internal action **SaveIdentifiedUser** to match existing profile or provision the user as authenticated user in the Druid AI Platform.
 
-> **IMPORTANT!** **DO NOT** use the internal action **SaveIdentifiedUser** to change an authenticated user to another one (e.g., switch the current conversation from Jane to John).
+{% hint style="warning" %}
+**IMPORTANT!** **DO NOT** use the internal action **SaveIdentifiedUser** to change an authenticated user to another one (e.g., switch the current conversation from Jane to John).
+{% endhint %}
 
 ![](../../Resources/Images/Authoring%20User%20Management/saveidentifieduser.png)
 
@@ -65,7 +67,9 @@ The system applies the following criteria for matching the user profile:
 
 Call the internal action **SaveAuthenticatedUser** to set the current conversation as authenticated.
 
-> **NOTE:** The messages in chat will be sent by the new [[ChatUser]].FirstName of the recently authenticated user. If you want to change the user's name in the chat snippet to a specific name, you can further use a backchannel step and configure it based on your use case. For more information about backchannel event steps and the two use cases available, see [Backchannel Event Steps (Bot Framework v4)](../../4_Flows/Backchannel%20Event%20Steps%20%28Bot%20Framework%20v4%29.md).
+{% hint style="info" %}
+**NOTE:** The messages in chat will be sent by the new [[ChatUser]].FirstName of the recently authenticated user. If you want to change the user's name in the chat snippet to a specific name, you can further use a backchannel step and configure it based on your use case. For more information about backchannel event steps and the two use cases available, see [Backchannel Event Steps (Bot Framework v4)](../../4_Flows/Backchannel%20Event%20Steps%20%28Bot%20Framework%20v4%29.md).
+{% endhint %}
 
 For the web channels using the Druid webchat snippet, you can also add a second step of type Back Channel to change the user name listed in the conversation.
 
@@ -111,7 +115,9 @@ There are various ways in which the user can be sent to the authentication flow.
 
 ## ChatUser information automatically available in the conversation context
 
-> **NOTE:** A user can initiate conversations with an AI Agent from different messaging channels (MS Teams, Facebook, WhatsApp, etc.). For each user (authenticated of not), the used channels can be managed in User configuration page / **Channels** tab.
+{% hint style="info" %}
+**NOTE:** A user can initiate conversations with an AI Agent from different messaging channels (MS Teams, Facebook, WhatsApp, etc.). For each user (authenticated of not), the used channels can be managed in User configuration page / **Channels** tab.
+{% endhint %}
 
 The AI Agent automatically provisions a set of ChatUser parameters in the conversation context. The ChatUser information available within the conversation context is specific per channel, as follows:
 

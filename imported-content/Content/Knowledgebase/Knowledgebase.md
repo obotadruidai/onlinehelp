@@ -62,7 +62,9 @@ When managing your Knowledge Base, you can choose between Train and Retrain acti
 - **Train** - This option trains only the data sources that require training (e.g., newly added or updated sources that haven’t been trained yet). It's the default option when you're adding new content or making updates that trigger a training need.
 - **Retrain** - Use this option to retrain all already-trained data sources and train once any that require training. This is especially useful after making changes to the Knowledge Base’s general settings (e.g., Embeddings model, Embeddings provider, or Search inside answers).
 
-> **NOTE:** The **Retrain** feature applies only to unstructured data sources.
+{% hint style="info" %}
+**NOTE:** The **Retrain** feature applies only to unstructured data sources.
+{% endhint %}
 
 At the data source level, you can retrain an individual source after modifying its Trainable Elements, even if its training status doesn’t change. You also have the option to **Retrain all data sources** directly from a data source.
 

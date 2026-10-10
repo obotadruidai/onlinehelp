@@ -27,7 +27,9 @@ To view the explanation and matching metrics of an utterance:
 
 ## <a id="Explaina"></a>Explainability at Druid Conductor Level
 
-> **Info:** The Explain functionality is extended to the Druid Conductor level starting with Druid 9.25.
+{% hint style="info" %}
+**Info:** The Explain functionality is extended to the Druid Conductor level starting with Druid 9.25.
+{% endhint %}
 
 The Druid Conductor Explainability provides a centralized overview of all predictions performed across the Druid Conductor and its orchestrated AI Agents.
 
@@ -35,7 +37,9 @@ When reviewing data inside the Druid Conductor evaluation, the **Explain** tab b
 
 ![](../Resources/Images/Annotation%20Tool/conductor%20explain.png)
 
-> **NOTE:** At the Druid Conductor level, the annotation tool is completely unavailable. While you can review prediction logs, and LLM reasoning steps across all orchestrated AI Agents from the Conductor workspace, you cannot tag, fix, or annotate utterances directly from this centralized view. To annotate an utterance, you must navigate to the specific orchestrated AI Agent where that model is managed.
+{% hint style="info" %}
+**NOTE:** At the Druid Conductor level, the annotation tool is completely unavailable. While you can review prediction logs, and LLM reasoning steps across all orchestrated AI Agents from the Conductor workspace, you cannot tag, fix, or annotate utterances directly from this centralized view. To annotate an utterance, you must navigate to the specific orchestrated AI Agent where that model is managed.
+{% endhint %}
 
 <a id="ExplainabilityofOrchestratedAIAgents"></a>
 
@@ -81,7 +85,9 @@ The page displays the utterances and training phrases on each top matched flow, 
 
 ![](../Resources/Images/Annotation%20Tool/explain%20annotate.png)
 
-> **Info:**  The color scheme is used only to differentiate the words within the training phrase.
+{% hint style="info" %}
+**Info:**  The color scheme is used only to differentiate the words within the training phrase.
+{% endhint %}
 
 You can correct training phrases or you can delete them as best suits your needs to create a trustworthy model.
 
@@ -97,11 +103,15 @@ To update a specific word, hover the mouse over the phrase where you want to mak
 
 The phrase becomes editable. Change the word as best suits your needs and click the **Save** icon also displayed inline.
 
-> **NOTE:**  The color scheme does not apply to draft content. The color scheme applies only after compiling the training (after you train the AI Agent NLP model).
+{% hint style="info" %}
+**NOTE:**  The color scheme does not apply to draft content. The color scheme applies only after compiling the training (after you train the AI Agent NLP model).
+{% endhint %}
 
 Save the modal. In order for the draft content to take effect, you need to train the AI Agent. Go to **NLU** > **Configurations** and click **Train**.
 
-> **NOTE:**  If you click the **Explain** tab again without training the AI Agent, the Explain statistics will show the previous stats. If you try to annotate a corrected utterance, an error message appears informing you that you have to retrain the AI Agent.
+{% hint style="info" %}
+**NOTE:**  If you click the **Explain** tab again without training the AI Agent, the Explain statistics will show the previous stats. If you try to annotate a corrected utterance, an error message appears informing you that you have to retrain the AI Agent.
+{% endhint %}
 
 <a id="Deletingtrainingphrases"></a>
 

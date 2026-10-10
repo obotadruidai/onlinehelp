@@ -7,7 +7,9 @@ title: "UiPath Data Service Connector"
 
 UiPath Data Service integration enables authors to create AI Agent informational model in sync with their data model from the UiPath Data Service.
 
-> **IMPORTANT!** The integration is a tenant feature available on request. If you want to integrate with UiPath Data Service, get in touch with [Druid Support.](mailto:support@druidai.com?subject=UiPath%20Data%20Service%20on%20Tenant)
+{% hint style="warning" %}
+**IMPORTANT!** The integration is a tenant feature available on request. If you want to integrate with UiPath Data Service, get in touch with [Druid Support.](mailto:support@druidai.com?subject=UiPath%20Data%20Service%20on%20Tenant)
+{% endhint %}
 
 <a id="Step1InDruidcreateUiPathDataServiceconnectorapp"></a>
 
@@ -25,11 +27,15 @@ In the **Code** field, enter a name for the UiPath connector.
 
 In the **Execution Timeout** field, enter the maximum number of seconds a request is allowed to execute. By default, the timeout for all connector integrations is 60 seconds. This setting will apply to all connector tasks which use this app.
 
-> **NOTE:**  This field is available for Druid version 1.60 or higher and requires Connector Host upgrade.
+{% hint style="info" %}
+**NOTE:**  This field is available for Druid version 1.60 or higher and requires Connector Host upgrade.
+{% endhint %}
 
 If you want to encrypt the data on the connector, from the **Encryption Type** drop-down, select **AESCGM**.
 
-> **NOTE:**  This feature is available in Druid version 1.61 or higher.
+{% hint style="info" %}
+**NOTE:**  This feature is available in Druid version 1.61 or higher.
+{% endhint %}
 
 **Encryption Type** enables data encryption on the connector using the AES CGM encryption algorithm and allows authors to encrypt specific data before sending it to external UiPath Orchestrator or RPA unattended robots, by using the Encrypt Data integration task as first task in the desired connector action.
 

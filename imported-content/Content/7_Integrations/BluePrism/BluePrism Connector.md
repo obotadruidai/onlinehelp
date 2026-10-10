@@ -5,7 +5,9 @@ title: "BluePrism Connector"
 <a id="BluePrismConnector"></a>
 
 
-> **NOTE:** The Blue Prism Connector is available in DRUID 1.58 and higher.
+{% hint style="info" %}
+**NOTE:** The Blue Prism Connector is available in DRUID 1.58 and higher.
+{% endhint %}
 
 DRUID provides you with the full power of native Robotic Process Automation (RPA) integration, enabling you to automate complicated, end-to-end procedures. Integrating with RPA from BluePrism you can streamline the customer and employee experience and help them fulfill their needs across the entire journey.
 

@@ -9,7 +9,9 @@ AI Agents built on the Druid AI Platform can seamlessly handle conversations in 
 
 This functionality eliminates the need for manual translation of AI Agent content and conversation flows, saving effort when your agent encounters user queries in languages other than its default. You author the agent in one language (e.g., English), and the machine translation service automatically translates user input, messages, and even buttons in real time.
 
-> **Info:** Machine translation services generate additional costs. Contact the [Druid Support Team](mailto:support@druidai.com) for more information.
+{% hint style="info" %}
+**Info:** Machine translation services generate additional costs. Contact the [Druid Support Team](mailto:support@druidai.com) for more information.
+{% endhint %}
 
 <a id="TranslationOptionsConversationTimevsAuthoringTime"></a>
 
@@ -31,7 +33,9 @@ Understanding the two primary translation options can help you manage costs and 
 | Customize message(s) translation | No | Yes |
 | Voice AI Agents using machine translation | Yes | Yes |
 
-> **Info:** Using Authoring Time Translation is typically more cost-effective for AI Agents with high traffic in specific languages. The translated content is stored, and the AI Agent uses its internal Natural Language Processing (NLP) for those languages instead of calling an external translation service for every message.
+{% hint style="info" %}
+**Info:** Using Authoring Time Translation is typically more cost-effective for AI Agents with high traffic in specific languages. The translated content is stored, and the AI Agent uses its internal Natural Language Processing (NLP) for those languages instead of calling an external translation service for every message.
+{% endhint %}
 
 <a id="SetupmachinetranslationontheAIAgent"></a>
 
@@ -55,7 +59,9 @@ To enable and configure a translation provider:
 
 ## <a id="Use"></a>Use LLM machine translation
 
-> **IMPORTANT!** LLM machine translation is available **only for conversation time translation**.
+{% hint style="warning" %}
+**IMPORTANT!** LLM machine translation is available **only for conversation time translation**.
+{% endhint %}
 
 Before you start, make sure you have an LLM resource set up in the Druid Portal. For more information, see [Create LLM Resources](../Governance%20%26%20Security/LLM%20Resource%20Management%20and%20Governance.md).
 
@@ -81,10 +87,14 @@ To use LLM machine translation, follow these steps:
 
 ![](../Resources/Images/Bots/machien%20translation.png)
 
-> **Info:** For other providers, the platform defaults to the standard completion settings compatible with those models.
+{% hint style="info" %}
+**Info:** For other providers, the platform defaults to the standard completion settings compatible with those models.
+{% endhint %}
 
 5. For both prompts, click the **Set default** button. The default Druid prompts will be automatically filled in.
-> **Info:** You can experiment with the prompts, provided their **JSON structure remains unchanged**. In an upcoming release, the prompts will become non-editable.
+{% hint style="info" %}
+**Info:** You can experiment with the prompts, provided their **JSON structure remains unchanged**. In an upcoming release, the prompts will become non-editable.
+{% endhint %}
 
 6. Click **Save**.
 
@@ -109,7 +119,9 @@ Provide the following details:
 
 Custom dictionaries enhance translation accuracy by providing user-defined translations for specific terminology, ensuring consistency with your branding.
 
-> **NOTE:** Custom dictionaries are available in DRUID 8.16 and higher.
+{% hint style="info" %}
+**NOTE:** Custom dictionaries are available in DRUID 8.16 and higher.
+{% endhint %}
 
 In your Azure Translator project, publish the models associated with your custom dictionaries. See the [Microsoft Custom Translator Quickstart](https://learn.microsoft.com/en-us/azure/ai-services/translator/custom-translator/quickstart) guide for instructions.
 
@@ -169,7 +181,9 @@ If you use Azure Translator services in an on-premise container:
 
 Authoring time translation uses the cloud-based Document Translation feature of Azure Translator. On-premise installations do not support this feature.
 
-> **IMPORTANT!** Authoring time translation does not currently support the Azure Translator installed on premise; you should use the cloud Azure Translator service.
+{% hint style="warning" %}
+**IMPORTANT!** Authoring time translation does not currently support the Azure Translator installed on premise; you should use the cloud Azure Translator service.
+{% endhint %}
 
 #### Hybrid Deployment (Cloud Service)
 
@@ -221,7 +235,9 @@ Use this option if you need to use dedicated Azure Blob Storage containers for f
 - Your target container has designated **write** and **list** access.
 - Your delete container has designated **read**, **delete** and **list** access.
 
-> **NOTE:** When you generate the Shared Access Signature (SAS) tokens for your containers, copy the URIs as you will need them in the Druid Portal.
+{% hint style="info" %}
+**NOTE:** When you generate the Shared Access Signature (SAS) tokens for your containers, copy the URIs as you will need them in the Druid Portal.
+{% endhint %}
 
 - Allow outbound calls from Druid to the Document Translation endpoint and to Azure Blob Storage URIs.
 
@@ -262,7 +278,9 @@ Use this option if you need to use dedicated Azure Blob Storage containers for f
 
 The eTranslation provider gives your AI Agent a specialized, high-quality translation service for real-time, domain-specific communication.
 
-> **NOTE:** The eTranslation provider is available in DRUID 9.3 and higher, and is intended only for conversation time translation.
+{% hint style="info" %}
+**NOTE:** The eTranslation provider is available in DRUID 9.3 and higher, and is intended only for conversation time translation.
+{% endhint %}
 
 <a id="Prerequisites"></a>
 
@@ -299,10 +317,12 @@ The eTranslation provider gives your AI Agent a specialized, high-quality transl
 
 Language change detection equips Druid with the ability to detect when a user starts speaking a language different from the AI Agent default language. This ensures seamless, multilingual communication and occurs before the **Intent not found flow** is triggered.
 
-> **NOTE:**
->
-> - Users can change the current language while the AI Agent is idle or within a flow. If the language changes inside an active flow, the flow is canceled.
-> - This feature does not apply to cases where users manually change the conversation language using a snippet's **Language** option.
+{% hint style="info" %}
+**NOTE:**
+
+- Users can change the current language while the AI Agent is idle or within a flow. If the language changes inside an active flow, the flow is canceled.
+- This feature does not apply to cases where users manually change the conversation language using a snippet's **Language** option.
+{% endhint %}
 
 <a id="Prerequisites1"></a>
 
@@ -324,7 +344,9 @@ Follow these steps to set up language detection:
 3. Click the **Languages** section header.
 4. Turn on the **Language detection** toggle. The **Threshold** field becomes editable.
 5. In the **Threshold** field, set a value (a threshold of 90 is recommended).
-> **NOTE:** Only the texts that are detected in another language with a probability greater than the threshold will be taken into consideration.
+{% hint style="info" %}
+**NOTE:** Only the texts that are detected in another language with a probability greater than the threshold will be taken into consideration.
+{% endhint %}
 
 ![](../Resources/Images/Bot%20Advanced%20Settings/detect%20language.png)
 
@@ -340,7 +362,9 @@ The selected **Language changed flow** triggers only when all the following cond
 - The detected language confidence score (**[[ChatUser]].DetectedLanguage.Score**) is higher than the threshold set in the **NLP.Language.Detection.Threshold** parameter.
 - The same new language has not been identified as a language change trigger in the last 15 minutes. This prevents continuous re-triggering due to brief or non-committal uses of foreign words.
 
-> **Info:** Use the user says feature to test the **Predicted language** and **Confidence** score. This is useful for debugging to ensure accurate language detection and flow triggering.
+{% hint style="info" %}
+**Info:** Use the user says feature to test the **Predicted language** and **Confidence** score. This is useful for debugging to ensure accurate language detection and flow triggering.
+{% endhint %}
 
 ## Related Topics
 

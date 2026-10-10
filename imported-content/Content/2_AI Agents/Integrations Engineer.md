@@ -7,7 +7,9 @@ title: "Integrations Engineer"
 
 The Integration Agent manages connections between Druid AI Agents and external systems.
 
-> **NOTE:** Currently available for Druid Data Service integrations, with third-party tools and enterprise systems planned for future releases.
+{% hint style="info" %}
+**NOTE:** Currently available for Druid Data Service integrations, with third-party tools and enterprise systems planned for future releases.
+{% endhint %}
 
 <a id="KeyCapabilities"></a>
 

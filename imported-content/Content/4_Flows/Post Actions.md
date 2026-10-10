@@ -20,7 +20,9 @@ To view the PostActions section on a flow step, in the Flow Step editor, click o
 
 ## Adding external actions on the flow step
 
-> **NOTE:** If you are viewing the flow steps in list view, before adding external actions on a step, you first need to define the action(s) using the Connector Designer. For more information, see [Integrations](../7_Integrations/Enterprise%20Connectors.md). If you're using the diagram view, you can define the action directly within the desired flow step.
+{% hint style="info" %}
+**NOTE:** If you are viewing the flow steps in list view, before adding external actions on a step, you first need to define the action(s) using the Connector Designer. For more information, see [Integrations](../7_Integrations/Enterprise%20Connectors.md). If you're using the diagram view, you can define the action directly within the desired flow step.
+{% endhint %}
 
 To add an existing external action on a step using flow steps in diagram view, double-click on the flow step and in the PostActions section, search in integrations and select an existing external action.
 

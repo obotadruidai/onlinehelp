@@ -9,7 +9,9 @@ When specific flow steps are not executed as expected or a conversation follows 
 
 By leveraging debug messages, you can efficiently troubleshoot and optimize flow steps while maintaining the conversation quality in production environments.
 
-> **NOTE:** For hybrid Druid deployments, this feature requires you to upgrade your DRUID Connector Host to version 8.11 or later.
+{% hint style="info" %}
+**NOTE:** For hybrid Druid deployments, this feature requires you to upgrade your DRUID Connector Host to version 8.11 or later.
+{% endhint %}
 
 <a id="BenefitsofDebugMessages"></a>
 

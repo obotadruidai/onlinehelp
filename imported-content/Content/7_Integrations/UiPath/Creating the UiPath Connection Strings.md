@@ -25,15 +25,21 @@ In the **Code** field, enter a name for the UiPath connector.
 
 Optionally, from the **Icon** field, select the icon that best describes the app. It helps you easily identify the app in the list of apps. If no icon is selected, DRUID default icon per selected app type will be shown in the apps list.
 
-> **NOTE:** The **Icon** field is available in DRUID 1.71 and higher.
+{% hint style="info" %}
+**NOTE:** The **Icon** field is available in DRUID 1.71 and higher.
+{% endhint %}
 
 In the **Execution Timeout** field, enter the maximum number of seconds a request is allowed to execute. By default, the timeout for all connector integrations is 60 seconds. This setting will apply to all connector tasks which use this app.
 
-> **NOTE:**  This field is available for DRUID version 1.60 or higher and requires Connector Host upgrade.
+{% hint style="info" %}
+**NOTE:**  This field is available for DRUID version 1.60 or higher and requires Connector Host upgrade.
+{% endhint %}
 
 If you want to encrypt the data on the connector, from the **Encryption Type** drop-down, select **AESCGM**.
 
-> **NOTE:**  This feature is available in DRUID version 1.61 or higher.
+{% hint style="info" %}
+**NOTE:**  This feature is available in DRUID version 1.61 or higher.
+{% endhint %}
 
 **Encryption Type** enables data encryption on the connector using the AES CGM encryption algorithm and allows authors to encrypt specific data before sending it to external UiPath Orchestrator or RPA unattended robots, by using the Encrypt Data integration task as first task in the desired connector action.
 
@@ -65,7 +71,9 @@ Based on the selected **SecurityType**, set up the following parameters:
 
 ## For CloudOrchestrator (API Access)
 
-> **NOTE:** It is available for backwards compatibility. This functionality will be deprecated in Orchestrator version 21.10. Please use the new OAuth feature to register 3rd party applications and in DRUID select **Cloud Orchestrator (External Applications)**.
+{% hint style="info" %}
+**NOTE:** It is available for backwards compatibility. This functionality will be deprecated in Orchestrator version 21.10. Please use the new OAuth feature to register 3rd party applications and in DRUID select **Cloud Orchestrator (External Applications)**.
+{% endhint %}
 
 | Parameter | Description |
 | --- | --- |
@@ -94,7 +102,9 @@ In order to use this security type, you need to new OAuth feature to register 3r
 4. Click the **Add Scopes** button. The scopes editor appears on the right side.
 5. From the **Resources** drop-down, select the **Orchestrator API Access**.
 6. Click the **Application Scope(s)** tab and select the following scopes: **OR.Folders.Read**, **OR.Robots.Read**, **OR.Machines.Read**, **OR.Execution.Read**, **OR.Jobs** and **OR.Queues**.
-> **IMPORTANT!** Make sure that you're on the **Application Scope(s)** tab and not the **User Scope(s**) tab. If when saving the settings you get an error message that the **Redirect URL** field is mandatory, than you did not click the **Application Scope(s)** tab.
+{% hint style="warning" %}
+**IMPORTANT!** Make sure that you're on the **Application Scope(s)** tab and not the **User Scope(s**) tab. If when saving the settings you get an error message that the **Redirect URL** field is mandatory, than you did not click the **Application Scope(s)** tab.
+{% endhint %}
 
 ![](../../Resources/Images/Integrations/edit%20resources.png)
 
@@ -121,7 +131,9 @@ After saving the configurations, you can test the connectivity to the targeted U
 
 ![](../../Resources/Images/Integrations/Creating%20Druid%20Connectors_3.png)
 
-> **Info:** It might take a while to test the connectivity to the targeted UiPath Orchestrator service. so please wait until the connection is tested.
+{% hint style="info" %}
+**Info:** It might take a while to test the connectivity to the targeted UiPath Orchestrator service. so please wait until the connection is tested.
+{% endhint %}
 
 ## Related Topics
 

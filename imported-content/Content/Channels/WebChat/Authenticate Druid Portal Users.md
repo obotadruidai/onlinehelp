@@ -9,7 +9,9 @@ If you're using the web chat from within the Druid Portal, you can authenticate 
 
 ![](../../Resources/Images/portal%20user%20login/anonymous%20conv.png)
 
-> **IMPORTANT!** This authentication feature is only available when you access the web chat directly from the Druid Portal.
+{% hint style="warning" %}
+**IMPORTANT!** This authentication feature is only available when you access the web chat directly from the Druid Portal.
+{% endhint %}
 
 To log in, click the **Login** icon in the web chat header.
 

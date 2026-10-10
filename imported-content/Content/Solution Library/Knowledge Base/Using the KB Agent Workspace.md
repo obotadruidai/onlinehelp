@@ -41,7 +41,9 @@ The available reports (views and charts) let you review individual interactions,
 
 ![](../../Resources/Images/Knowledge%20Base%20with%20GPT/intent%20tab.png)
 
-> **Info:** The **Intent** area (views and charts) is typically the first place to investigate when troubleshooting routing issues.
+{% hint style="info" %}
+**Info:** The **Intent** area (views and charts) is typically the first place to investigate when troubleshooting routing issues.
+{% endhint %}
 
 <a id="Feedback"></a>
 
@@ -61,7 +63,9 @@ Click the tabs to navigate feedback-related insights.
 
 ![](../../Resources/Images/Knowledge%20Base%20with%20GPT/feedback%20tab.png)
 
-> **Info:** Consistently positive feedback usually indicates that users are receiving accurate answers and that your KB Agent effectively covers the supported scenarios.
+{% hint style="info" %}
+**Info:** Consistently positive feedback usually indicates that users are receiving accurate answers and that your KB Agent effectively covers the supported scenarios.
+{% endhint %}
 
 <a id="KBAgent"></a>
 
@@ -79,7 +83,9 @@ Use this section to:
 
 ![](../../Resources/Images/Knowledge%20Base%20with%20GPT/kb%20agent.png)
 
-> **Info:** Navigate through KB Agent tabs to see the specific overall insights. Use **KB Agent** insights together with the **Intent** and **Feedback** areas to continuously improve your solution.
+{% hint style="info" %}
+**Info:** Navigate through KB Agent tabs to see the specific overall insights. Use **KB Agent** insights together with the **Intent** and **Feedback** areas to continuously improve your solution.
+{% endhint %}
 
 <a id="MonitortheAIAgentPerformance"></a>
 

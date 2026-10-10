@@ -39,7 +39,9 @@ Wait until the import status shows as “Success”.
 
 The **Knowledgebase with GPT V4 – Custom** solution allows you to tailor the Knowledge Base flows to meet your bot’s specific needs.
 
-> **NOTE:** **Best practice**: Instead of modifying the solution flows directly, clone the existing flows and create custom versions based on them. This ensures that your changes are preserved and prevents conflicts during future solution upgrades.
+{% hint style="info" %}
+**NOTE:** **Best practice**: Instead of modifying the solution flows directly, clone the existing flows and create custom versions based on them. This ensures that your changes are preserved and prevents conflicts during future solution upgrades.
+{% endhint %}
 
 <a id="Step3SetupthebotandKBspecialflows"></a>
 
@@ -141,7 +143,9 @@ To enable feedback reactions in the web chat, follow these steps:
 6. Click the **Save** button at the top right-corner of the pop-up.
 7. Save the AI Agent.
 
-> **Info:** The ratings are aggregated in the [KB Agent Workspace](Using%20the%20KB%20Agent%20Workspace.md), where you can monitor user satisfaction (**Feedback** and **KB Agent** > **Feedback**), evaluate AI Agent performance and accuracy and identify routing issues.
+{% hint style="info" %}
+**Info:** The ratings are aggregated in the [KB Agent Workspace](Using%20the%20KB%20Agent%20Workspace.md), where you can monitor user satisfaction (**Feedback** and **KB Agent** > **Feedback**), evaluate AI Agent performance and accuracy and identify routing issues.
+{% endhint %}
 
 <a id="Step6CustomizeAIAgentResponsesUsingVariables"></a>
 
@@ -149,19 +153,23 @@ To enable feedback reactions in the web chat, follow these steps:
 
 The **Knowledgebase with GPT V4 – Custom** solution allows you to tailor the Knowledge Base flows to meet your AI Agent specific needs.
 
-> **Info:** **Best practice**: Instead of modifying the solution flows directly, clone the existing flows and create custom versions based on them. This ensures that your changes are preserved and prevents conflicts during future solution upgrades.
+{% hint style="info" %}
+**Info:** **Best practice**: Instead of modifying the solution flows directly, clone the existing flows and create custom versions based on them. This ensures that your changes are preserved and prevents conflicts during future solution upgrades.
+{% endhint %}
 
-> **NOTE:** We recommend only the customization of the **Identity** part of the prompt, which contains two parts: one for the **KB V4 Agent** and one for the askOpenAi Agent. To access the prompt, in the flow **Knowledge-Base-response-flow-agent V4 - custom**, in the **Identity** step, click to open the **GPT-Identity-custom** flow.
->
-> ![](../../Resources/Images/Flows/view%20identity%20flow.png)
->
-> On the **GPT Prompts** step, click on the Code Extension icon and the edit icon in Editor.
->
-> ![](../../Resources/Images/Flows/code%20extension_prompts.png)
->
-> Locate the two parts of the Identity prompt and customize them as suits your needs.
->
-> ![](../../Resources/Images/Flows/GPT%20PROMPTS.png)
+{% hint style="info" %}
+**NOTE:** We recommend only the customization of the **Identity** part of the prompt, which contains two parts: one for the **KB V4 Agent** and one for the askOpenAi Agent. To access the prompt, in the flow **Knowledge-Base-response-flow-agent V4 - custom**, in the **Identity** step, click to open the **GPT-Identity-custom** flow.
+
+![](../../Resources/Images/Flows/view%20identity%20flow.png)
+
+On the **GPT Prompts** step, click on the Code Extension icon and the edit icon in Editor.
+
+![](../../Resources/Images/Flows/code%20extension_prompts.png)
+
+Locate the two parts of the Identity prompt and customize them as suits your needs.
+
+![](../../Resources/Images/Flows/GPT%20PROMPTS.png)
+{% endhint %}
 
 To customize how the AI Agent responds, navigate to the **Instructions** step in the flow **Knowledge-Base-response-flow-agent V4 - custom** and adjust the variables described in the table below.
 

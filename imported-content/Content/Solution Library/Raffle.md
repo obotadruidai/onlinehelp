@@ -82,7 +82,9 @@ To start the index from 0, before the event begins, go to **Contestants workspac
 
 To separate the functionality, deploy the AI Agent on a custom web page where the users can register. Since they only have the “user” role, they will not have access to admin flows.
 
-> **NOTE:** The admin functionality is performed in the Contestants workspace. Ensure that you have both the admin and raffle admin roles assigned.
+{% hint style="info" %}
+**NOTE:** The admin functionality is performed in the Contestants workspace. Ensure that you have both the admin and raffle admin roles assigned.
+{% endhint %}
 
 <a id="SeetheAIAgentinaction"></a>
 

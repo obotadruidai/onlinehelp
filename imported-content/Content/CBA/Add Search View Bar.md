@@ -34,7 +34,9 @@ In the **Details** field, enter the text that will appear when users hover over 
 
 ![](../Resources/Images/CBA/search%20view%20details.png)
 
-> **Info:** We recommend providing relevant information about what users can search for.
+{% hint style="info" %}
+**Info:** We recommend providing relevant information about what users can search for.
+{% endhint %}
 
 <a id="Step3Definetheviewcolumns"></a>
 
@@ -48,7 +50,9 @@ Add the entity fields that users should be able to search by. For example, if us
 
 ## Step 4. Define search view data through integrations
 
-> **NOTE:** Before creating a Query Entity integration for quick search, add the **SearchText** field of type String to the entity.
+{% hint style="info" %}
+**NOTE:** Before creating a Query Entity integration for quick search, add the **SearchText** field of type String to the entity.
+{% endhint %}
 
 Create a Query Entity integration and configure the filtering as follows:
 
@@ -67,4 +71,6 @@ In the **Delete Data** section, select the appropriate integration to handle rec
 
 ![](../Resources/Images/CBA/quick%20search%20integrations.png)
 
-> **Info:** If you leave the **Delete Data** section empty (i.e., no integration selected), users will not be able to delete records from the Quick Search view, and the **Delete** icon will not appear.
+{% hint style="info" %}
+**Info:** If you leave the **Delete Data** section empty (i.e., no integration selected), users will not be able to delete records from the Quick Search view, and the **Delete** icon will not appear.
+{% endhint %}

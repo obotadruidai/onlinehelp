@@ -9,7 +9,9 @@ Druid Data Service is Druid data storage used to persist Druid entity records cr
 
 This section describes how to enable Druid Data Service in a cloud deployment. If you want to use Druid Data Service in a hybrid deployment, you need to install it. For information on how to install Druid Data Service, see [Druid Data Service Installation](Druid%20Data%20Service%20Installation.md).
 
-> **NOTE:**  Druid Data Service is available across all AI Agents on your tenant.
+{% hint style="info" %}
+**NOTE:**  Druid Data Service is available across all AI Agents on your tenant.
+{% endhint %}
 
 <a id="ReviewandupgradeDruidDataService"></a>
 
@@ -21,9 +23,13 @@ Druid screens all existing entities across all AI Agents on your tenant and dete
 
 ![](../../Resources/Images/Druid%20Data%20Service/second%20pop%20up.png)
 
-> **IMPORTANT!** The upgrade is irreversible; so before upgrading, we strongly recommend you to check the new system entity field types and review your existing configurations to make sure that they are not affected by these changes.
+{% hint style="warning" %}
+**IMPORTANT!** The upgrade is irreversible; so before upgrading, we strongly recommend you to check the new system entity field types and review your existing configurations to make sure that they are not affected by these changes.
+{% endhint %}
 
-> **NOTE:** The upgrade is mandatory if you want to use this entity with Druid Data Service and workspaces. If you do not upgrade an entity, you have Data Service active on your AI Agent and you try adding a Druid Data Service Integration task on the entity, you will get an error message.
+{% hint style="info" %}
+**NOTE:** The upgrade is mandatory if you want to use this entity with Druid Data Service and workspaces. If you do not upgrade an entity, you have Data Service active on your AI Agent and you try adding a Druid Data Service Integration task on the entity, you will get an error message.
+{% endhint %}
 
 The following Druid system fields are automatically populated on entity and entity field creation; therefore, a specific field type is required by Druid.
 
@@ -40,7 +46,9 @@ Click the **Overwrite entity fields** button at the bottom of the pop-up to over
 
 At the top-right corner of the page, click the **Save all** button.
 
-> **IMPORTANT!**  Make sure that you click **Save all**; otherwise, enabling Druid Data Service and overwriting the entity fields will have no effect.
+{% hint style="warning" %}
+**IMPORTANT!**  Make sure that you click **Save all**; otherwise, enabling Druid Data Service and overwriting the entity fields will have no effect.
+{% endhint %}
 
 Use [Druid Data Service Connector](../Druid%20Data%20Service%20Connector/Druid_Data_%20Service_Connector.md) to manage entity records within the conversational flows.
 

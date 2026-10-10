@@ -74,7 +74,9 @@ In the AI Agent configuration page, click the **Details** tab, and then click th
 
 ![](../Resources/Images/solution%20templates/Cristina/train%20bot.png)
 
-> **NOTE:**  It might take a few minutes for the NLP training to complete, so you might need to wait for Druid to finish training all AI Agent entities that have NLP enabled (NLP=true).
+{% hint style="info" %}
+**NOTE:**  It might take a few minutes for the NLP training to complete, so you might need to wait for Druid to finish training all AI Agent entities that have NLP enabled (NLP=true).
+{% endhint %}
 
 When **StatusUpdateCallbackURL** is filled in, via the Druid internal action **SaveNamirialCallBackContext** the information regarding the envelope signing is sent back to Druid via the status url and the appropriate flow is triggered.
 
@@ -86,7 +88,9 @@ Right now with the solution template, the call back is responding on the **eSign
 
 If you want to use the eSignature Namirial integration in anonymous conversations, go to the flow **send-document-for-esignature**, and on the last step, **save-namirial-callback-context**, set the **[[NamirialEnvelope]].TargetMasterUserId** to null.
 
-> **IMPORTANT!** This feature is available for Druid version 1.47 or above.
+{% hint style="warning" %}
+**IMPORTANT!** This feature is available for Druid version 1.47 or above.
+{% endhint %}
 
 ![](../Resources/Images/Druid%201.47/namirial.png)
 

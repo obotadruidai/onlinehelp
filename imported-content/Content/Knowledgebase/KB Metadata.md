@@ -21,7 +21,9 @@ To use the KB metadata, follow these steps:
 
 ### Step 1: Import the KB Toolkit solution (Versions Prior to 9.31)
 
-> **NOTE:** Starting with Druid version 9.31, importing the KB Toolkit solution is no longer required. Proceed directly to Step 2.
+{% hint style="info" %}
+**NOTE:** Starting with Druid version 9.31, importing the KB Toolkit solution is no longer required. Proceed directly to Step 2.
+{% endhint %}
 
 For Druidversions prior to 9.31:
 
@@ -37,11 +39,15 @@ In the variable table, set the password, userNameOrEmailAddress, tenant\_name an
 
 ![](../Resources/Images/Enhance%20KB%20Answers%20with%20KB%20Metadata/Enhance%20KB%20Answers%20with%20KB_1.png)
 
-> **IMPORTANT!**  Provide the credentials (username / email and password) of a Portal user who has full access privileges to the KB API endpoint; otherwise, the KB Metadata will not be available.
+{% hint style="warning" %}
+**IMPORTANT!**  Provide the credentials (username / email and password) of a Portal user who has full access privileges to the KB API endpoint; otherwise, the KB Metadata will not be available.
+{% endhint %}
 
-> **NOTE:** Do not alter the integrations on the [[KBMetadata]] entity, otherwise, the metadata records will not be available.
->
-> ![](../Resources/Images/Enhance%20KB%20Answers%20with%20KB%20Metadata/Enhance%20KB%20Answers%20with%20KB_2.png)
+{% hint style="info" %}
+**NOTE:** Do not alter the integrations on the [[KBMetadata]] entity, otherwise, the metadata records will not be available.
+
+![](../Resources/Images/Enhance%20KB%20Answers%20with%20KB%20Metadata/Enhance%20KB%20Answers%20with%20KB_2.png)
+{% endhint %}
 
 <a id="Step2Establishnomenclature"></a>
 
@@ -72,9 +78,13 @@ The legacy **Metadata** tab remains available to allow validation against the ne
 
 4. Click **+ Add new**. A new Metadata section appears on the page.
 5. Select the metadata field you want to use and select value.
-> **Info:** If you want to add string metadata, select **Tag** and enter a value (e.g., "car loan").
+{% hint style="info" %}
+**Info:** If you want to add string metadata, select **Tag** and enter a value (e.g., "car loan").
+{% endhint %}
 
-> **NOTE:** Tags are case sensitive, so ensure consistent usage across data source elements and sources to prevent inconsistencies. Leave this field empty if you are using nomenclatures.
+{% hint style="info" %}
+**NOTE:** Tags are case sensitive, so ensure consistent usage across data source elements and sources to prevent inconsistencies. Leave this field empty if you are using nomenclatures.
+{% endhint %}
 
 ![](../Resources/Images/druid%209.31/add%20kb%20metadata.png)
 
@@ -82,9 +92,13 @@ The legacy **Metadata** tab remains available to allow validation against the ne
 
 You can add multiple metadata records to the same data source, node, or leaf based on your business needs. For example: If you want specific content within a data source to be taken into consideration based on different client type and product type, add multiple metadata records.
 
-> **Info:** A label displayed in the data source tree structure indicates if the data source element has associated metadata and excluded metadata. If you hover over the metadata label, you can see the number of metadata records associated with the metadata.
+{% hint style="info" %}
+**Info:** A label displayed in the data source tree structure indicates if the data source element has associated metadata and excluded metadata. If you hover over the metadata label, you can see the number of metadata records associated with the metadata.
+{% endhint %}
 
-> **IMPORTANT!** Train the KB; otherwise, the metadata will be disregarded at predict time. If multiple KB metadata records are applied to a node, the KB engine uses the **OR** operator between the defined metadata values during prediction time.
+{% hint style="warning" %}
+**IMPORTANT!** Train the KB; otherwise, the metadata will be disregarded at predict time. If multiple KB metadata records are applied to a node, the KB engine uses the **OR** operator between the defined metadata values during prediction time.
+{% endhint %}
 
 <a id="Step3BAddKBmetadataforcustomdatasources"></a>
 
@@ -124,7 +138,9 @@ You can set complex metadata filters within the conversation context by setting 
 
 ![](../Resources/Images/KnowledgeBase_0.2/kb%20query%20object.png)
 
-> **Info:** You can use the following operators when defining metadata filters in Code extension: AND, OR, =, >, <, >=, <=, !=, EXISTS.
+{% hint style="info" %}
+**Info:** You can use the following operators when defining metadata filters in Code extension: AND, OR, =, >, <, >=, <=, !=, EXISTS.
+{% endhint %}
 
 **Example**
 
@@ -157,10 +173,12 @@ You can set complex metadata filters within the conversation context by setting 
 )()
 ```
 
-> **NOTE:**
->
-> - The **name** property must contain the field name (for example, DocType or ProcessType), without the **[[KBMetadata]]** prefix.
-> - The **value** property must contain the actual metadata value (for example, 'Lease contract' or 'Risk assessment').
-> - This configuration ensures that the prediction is made only on data sources or nodes that contain the specified metadata values.
+{% hint style="info" %}
+**NOTE:**
+
+- The **name** property must contain the field name (for example, DocType or ProcessType), without the **[[KBMetadata]]** prefix.
+- The **value** property must contain the actual metadata value (for example, 'Lease contract' or 'Risk assessment').
+- This configuration ensures that the prediction is made only on data sources or nodes that contain the specified metadata values.
+{% endhint %}
 
 3. Ensure consistent updating of metadata filters throughout the conversation as needed. The metadata filters set in the flow are stored in the conversation context. If you want to widen or narrow the knowledge base search scope, add or remove metadata filters at different points in the conversation.

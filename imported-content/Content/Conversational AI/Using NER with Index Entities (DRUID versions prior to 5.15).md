@@ -27,11 +27,13 @@ When creating the connector action, make sure to select your entity as both the 
 
 As you are using the integration tasks only to read data from the external data source, do not provide any input arguments on the request. In the response, map the field from the data source to the DRUID entity field. You will index your entity by the field you map here.
 
-> **NOTE:** For DRUID version 1.74 and higher, if you are using NER on multi-language AI Agents and you expect language specific values from the external database, make sure that on the Response you map the language specific values (returned from DB fields) to DRUID language-specific field clones.
->
-> Example:
->
-> ![](../Resources/Images/Flows/response%20ner%20multi.png)
+{% hint style="info" %}
+**NOTE:** For DRUID version 1.74 and higher, if you are using NER on multi-language AI Agents and you expect language specific values from the external database, make sure that on the Response you map the language specific values (returned from DB fields) to DRUID language-specific field clones.
+
+Example:
+
+![](../Resources/Images/Flows/response%20ner%20multi.png)
+{% endhint %}
 
 For more information on how to connect to external data sources, see [Integrations](../7_Integrations/Enterprise%20Connectors.md).
 
@@ -95,7 +97,9 @@ To schedule the training of the entity index, follow these steps:
 
 ## Step 3. Use indexed values on flows
 
-> **NOTE:** To use the indexed values on flows in DRUID version prior 5.0, you need to include the entity in an umbrella entity, an entity which has a field of type Entity referencing the indexed entity. On flows, in Input mapping and in flow Training Phrases, use the field of your umbrella entity which references the indexed entity.
+{% hint style="info" %}
+**NOTE:** To use the indexed values on flows in DRUID version prior 5.0, you need to include the entity in an umbrella entity, an entity which has a field of type Entity referencing the indexed entity. On flows, in Input mapping and in flow Training Phrases, use the field of your umbrella entity which references the indexed entity.
+{% endhint %}
 
 Once you added all the needed entities to your AI Agent, select solution and on the main menu click **Flows**. Select a flow and go to the Flow Editor page, click the **Training Phrases** section and add a complete training phrase (including sample value for the indexed entity to be extracted).
 
@@ -115,13 +119,17 @@ Click the **Save** button. The pop-up closes and the sample value is highlighted
 
 ![](../Resources/Images/Druid%205.12/sample%20word.png)
 
-> **NOTE:** Using sample values in training phrases is available in DRUID 5.12 and higher. This feature is backwards compatible, the training phrases with NER on flows and flow steps remain unchanged; however, we recommend you to update the training phrases with NER to provide sample values.
->
-> ![](../Resources/Images/Druid%205.12/backwards%20compatible.png)
+{% hint style="info" %}
+**NOTE:** Using sample values in training phrases is available in DRUID 5.12 and higher. This feature is backwards compatible, the training phrases with NER on flows and flow steps remain unchanged; however, we recommend you to update the training phrases with NER to provide sample values.
+
+![](../Resources/Images/Druid%205.12/backwards%20compatible.png)
+{% endhint %}
 
 You can also use the indexed entity on flow steps with input mapping (when you want to do input mapping with NER) and for intent recognition.
 
-> **Info:** In Druid version 1.74 and higher, if your entity field holds multilanguage records, specify the main entity field (that is, the multilingual entity field) in your training phrases and the Flow Engine will extract the language specific value to the appropriate field clone based on the [[ChatUser]].Language.
+{% hint style="info" %}
+**Info:** In Druid version 1.74 and higher, if your entity field holds multilanguage records, specify the main entity field (that is, the multilingual entity field) in your training phrases and the Flow Engine will extract the language specific value to the appropriate field clone based on the [[ChatUser]].Language.
+{% endhint %}
 
 After the ML model is trained, you can test a phrase with values for the intended entities (either in AI Agent Designer / Details or in the Flows section). The DRUID ML engine will identify the correct intent and extract the values from the indexed entity.
 

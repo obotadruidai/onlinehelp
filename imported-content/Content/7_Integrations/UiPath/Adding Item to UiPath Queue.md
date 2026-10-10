@@ -90,7 +90,9 @@ In order to properly fill in the **Druid Entity** field, type “[[“, in the �
 
 You can add as many fields as you need to send to the Orchestrator queue item.
 
-> **NOTE:** Make sure that you add the **FlowId** field, otherwise the robot will not be able to [trigger the Callback flow](Triggering%20the%20Callback%20Flow.md).
+{% hint style="info" %}
+**NOTE:** Make sure that you add the **FlowId** field, otherwise the robot will not be able to [trigger the Callback flow](Triggering%20the%20Callback%20Flow.md).
+{% endhint %}
 
 Click the **Save** button to save the fields mapping.
 

@@ -7,7 +7,9 @@ title: "Mapping Input Fields in User Expressions"
 
 Expressions in input mapping fields are similar to flow training phrases; the difference is that the AI Agent uses them at a flow step level. Users chatting with a AI Agent can provide information in the form of expressions, not only exact-match responses. In order for AI Agents to extract information when the user answers with an expression, authors can define training phrases on flow steps of type Prompt to provide the AI Agent with alternative ways for capturing user input.
 
-> **NOTE:**  This feature is only available in Druid version 1.73 and higher and only on flow steps of type Prompt.
+{% hint style="info" %}
+**NOTE:**  This feature is only available in Druid version 1.73 and higher and only on flow steps of type Prompt.
+{% endhint %}
 
 To map input fields in user expressions on Prompt steps, click the Training Phrases section and add variations of what the user might answer in the chat. Each training phrase on the step should contain the entity provided on the step in the **Input Mapping** field (General section).
 

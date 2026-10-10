@@ -5,7 +5,9 @@ title: "AI Agent Authoring Privileges via RBAC Policy"
 <a id="AIAgentAuthoringPrivilegesviaRBACPolicy"></a>
 
 
-> **NOTE:** RBAC functionality is not available by default, we activate it on request. To activate it, get in touch with [Druid Tech Support](<mailto:support@druidai.com?subject=Activate RBAC for my tenant>).
+{% hint style="info" %}
+**NOTE:** RBAC functionality is not available by default, we activate it on request. To activate it, get in touch with [Druid Tech Support](<mailto:support@druidai.com?subject=Activate RBAC for my tenant>).
+{% endhint %}
 
 Using Role-based Access Control (RBAC) policies you can grant authors access privileges to specific elements on AI Agent level: AI Agent Security, AI Agent Settings, Connector Action, Connector List, Conversation History, Document Template, Entity, Flow or Live Chat Settings.
 
@@ -24,7 +26,9 @@ To grant authors specific privileges for a specific AI Agent:
 
 ![](../../Resources/Images/Authoring%20User%20Management/create%20policy.png)
 
-> **Info:**  You can create multiple RBAC policies on the same AI Agent to accommodate different access permissions for different authors based on your needs. To do so, click the **Create new policy** button. A new policy section appears below the policy(es) you created. You can set different permissions for another security role.
+{% hint style="info" %}
+**Info:**  You can create multiple RBAC policies on the same AI Agent to accommodate different access permissions for different authors based on your needs. To do so, click the **Create new policy** button. A new policy section appears below the policy(es) you created. You can set different permissions for another security role.
+{% endhint %}
 
 To remove an RBAC policy, click the delete icon below the security role dropdown.
 

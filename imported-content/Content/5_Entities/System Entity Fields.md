@@ -29,10 +29,14 @@ A pop-up appears, listing all new system entity fields relevant to the current e
 
 ![](../Resources/Images/Entities/listed%20fields.png)
 
-> **IMPORTANT!** It's crucial to note that this upgrade process is irreversible. Therefore, before proceeding with the upgrade, we strongly recommend reviewing the new system entity field types and assessing your existing configurations to ensure they are not adversely affected by these changes.
+{% hint style="warning" %}
+**IMPORTANT!** It's crucial to note that this upgrade process is irreversible. Therefore, before proceeding with the upgrade, we strongly recommend reviewing the new system entity field types and assessing your existing configurations to ensure they are not adversely affected by these changes.
+{% endhint %}
 
-> **NOTE:** The upgrade is mandatory if you intend to utilize this entity with Druid Data Service and Workspaces. Failure to upgrade the entity may result in errors when attempting to add a Druid Data Service Integration task to the entity if Druid Data Service is active on your AI Agent.
->
-> ![](../Resources/Images/Entities/error%20message%20in%20integration%20task.png)
+{% hint style="info" %}
+**NOTE:** The upgrade is mandatory if you intend to utilize this entity with Druid Data Service and Workspaces. Failure to upgrade the entity may result in errors when attempting to add a Druid Data Service Integration task to the entity if Druid Data Service is active on your AI Agent.
+
+![](../Resources/Images/Entities/error%20message%20in%20integration%20task.png)
+{% endhint %}
 
 3. Once you have reviewed the implications and are ready to proceed, click the **Upgrade** button to complete the process.

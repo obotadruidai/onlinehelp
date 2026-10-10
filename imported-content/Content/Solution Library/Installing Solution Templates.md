@@ -17,7 +17,9 @@ If none of the languages on the destination AI Agent exist in the solution packa
 
 ![](../Resources/Images/Solutions%20Library/no%20language.png)
 
-> **Info:** On import, Druid will write the messages in the selected languages making it easy for you to translate in the specific languages later.
+{% hint style="info" %}
+**Info:** On import, Druid will write the messages in the selected languages making it easy for you to translate in the specific languages later.
+{% endhint %}
 
 Check the content of the solution template by clicking the **Components** tab.
 
@@ -31,8 +33,10 @@ To see details about a specific element, click on it (e.g., Flows). The list of 
 
 ![](../Resources/Images/Solutions%20Library/flows.png)
 
-> **IMPORTANT!** All elements which will be overwritten by solution import are marked with the **Warning** label. Solution import (elements overwriting) cannot be reverted, so we strongly recommend you to install solutions on a dev/sandbox environment.
->
-> ![](../Resources/Images/Solutions%20Library/warnings.png)
+{% hint style="warning" %}
+**IMPORTANT!** All elements which will be overwritten by solution import are marked with the **Warning** label. Solution import (elements overwriting) cannot be reverted, so we strongly recommend you to install solutions on a dev/sandbox environment.
+
+![](../Resources/Images/Solutions%20Library/warnings.png)
+{% endhint %}
 
 To install the selected solution, click the **Import solution** (![](../Resources/Images/Solutions%20Library/import%20sol.png)) button. The selected solution will be imported to the current AI Agent. When the import has successfully completed, a notification is displayed at the bottom-right corner of the page.

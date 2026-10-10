@@ -22,7 +22,9 @@ Medical staff and doctors should perform the following steps only when a patient
 
 ![](../../../../Resources/Images/Patient%20Billing%20Agent/complete%20appointment.png)
 
-> **Info:** If the button is inactive, reach out to your admin as they need to enable the Billing module.
+{% hint style="info" %}
+**Info:** If the button is inactive, reach out to your admin as they need to enable the Billing module.
+{% endhint %}
 
 5. The Chat window opens on the right to inform that the appointment was successfully completed and the payment order has been generated.
 

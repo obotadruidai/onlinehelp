@@ -11,7 +11,9 @@ By default, all story reactions are ignored by Druid, and the AI Agent does not 
 
 When configured, Druid captures reaction events sent by social media channels and passes the reaction value (e.g., heart, applause, fire) to the AI Agent within **[[Intent]].Text**, allowing it to process or respond to user reactions accordingly.
 
-> **Info:** This special flow is available starting with Druid 9.26.
+{% hint style="info" %}
+**Info:** This special flow is available starting with Druid 9.26.
+{% endhint %}
 
 <a id="ChannelCompatibility"></a>
 
@@ -19,7 +21,9 @@ When configured, Druid captures reaction events sent by social media channels an
 
 - **Instagram**: Supported for story reactions.
 
-> **Info:** Facebook story reactions are currently **not supported** because Facebook does not send event notifications for story reactions.
+{% hint style="info" %}
+**Info:** Facebook story reactions are currently **not supported** because Facebook does not send event notifications for story reactions.
+{% endhint %}
 
 <a id="CreateandconfiguretheSocialmediareactionsflow"></a>
 

@@ -12,7 +12,9 @@ This tool serves a dual purpose within the Druid AI Platform:
 - For **AI Governance**: It acts as the primary evidence chain, providing the transparency required to audit how decisions were made, how data was handled, and how hallucination prevention guardrails were applied.
 - For **Data Analytics & Insights**: It serves as a high-precision optimization tool, allowing administrators to identify latency, troubleshoot flow logic, and refine AI Agent accuracy based on real-world execution data.
 
-> **NOTE:** Note: This feature is available in Druid 7.17 and higher and requires a Connector Host upgrade.
+{% hint style="info" %}
+**NOTE:** Note: This feature is available in Druid 7.17 and higher and requires a Connector Host upgrade.
+{% endhint %}
 
 <a id="BenefitsofConversationTrace"></a>
 
@@ -24,7 +26,9 @@ This tool serves a dual purpose within the Druid AI Platform:
 - **Performance Debugging**: Access detailed timestamps for every flow step to identify bottlenecks and reduce response time gaps.
 - **Seamless Optimization**: Transition directly from a trace log to the Flow designer to make real-time adjustments to AI Agentt behavior.
 
-> **NOTE:** Conversation Trace is not real-time. Data appears in the trace after a processing delay of approximately 20 seconds to 1 minute, depending on your environment.
+{% hint style="info" %}
+**NOTE:** Conversation Trace is not real-time. Data appears in the trace after a processing delay of approximately 20 seconds to 1 minute, depending on your environment.
+{% endhint %}
 
 ![](../../../Resources/Images/Conversation%20History%20v2/conv%20trace.png)
 

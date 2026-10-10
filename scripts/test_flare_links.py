@@ -15,6 +15,7 @@ from flare_html_to_gitbook import (  # noqa: E402
     compose_page,
     prepare_topic,
     render_markdown,
+    restyle_callouts,
     rewrite_url,
 )
 
@@ -196,6 +197,41 @@ class ConvertTests(unittest.TestCase):
         self.assertIn('description: "Flow engine actions."', page)
         self.assertIn('title: "Internal Actions"', page)
         self.assertNotIn("\n# Internal Actions\n", page)
+
+
+class CalloutTests(unittest.TestCase):
+    def test_labeled_notes_become_hint_cards(self) -> None:
+        page = restyle_callouts(
+            "\n".join(
+                [
+                    "Intro.",
+                    "",
+                    "> **NOTE:** Keep the snippet unchanged.",
+                    "",
+                    "> **Info:** Clear the cache.",
+                    ">",
+                    "> ![](cache.png)",
+                    "",
+                    "> **IMPORTANT!** This cannot be undone.",
+                    "",
+                    "```",
+                    "> **NOTE:** inside a fence",
+                    "```",
+                    "",
+                    "> A plain quotation stays a quotation.",
+                    "",
+                    "   > **NOTE:** nested in a list stays quoted.",
+                    "",
+                ]
+            )
+            + "\n"
+        )
+        self.assertIn('{% hint style="info" %}\n**NOTE:** Keep the snippet unchanged.\n{% endhint %}', page)
+        self.assertIn('{% hint style="info" %}\n**Info:** Clear the cache.\n\n![](cache.png)\n{% endhint %}', page)
+        self.assertIn('{% hint style="warning" %}\n**IMPORTANT!** This cannot be undone.\n{% endhint %}', page)
+        self.assertIn("> **NOTE:** inside a fence", page)
+        self.assertIn("> A plain quotation stays a quotation.", page)
+        self.assertIn("   > **NOTE:** nested in a list stays quoted.", page)
 
 
 if __name__ == "__main__":

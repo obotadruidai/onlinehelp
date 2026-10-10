@@ -22,7 +22,9 @@ If you have questions about your DRUID tenant, please contact [support@Druidai.c
 ## Improvements
 
 - **Agent Assist – Trigger the Voice Call Terminate Flow in assistant conversations**. You can now configure the **Voice Call Terminate Flow** to also trigger in the assistant conversation — the internal conversation between the helpdesk agent and the assistant AI Agent — when Agent Assist is enabled.
-> **NOTE:** To avoid running the same actions twice, update your flow to include a branch condition that checks if `IsCommandChannel = true` and define logic specific to the assistant conversation.
+{% hint style="info" %}
+**NOTE:** To avoid running the same actions twice, update your flow to include a branch condition that checks if `IsCommandChannel = true` and define logic specific to the assistant conversation.
+{% endhint %}
 
 For more information, see [Voice Call Terminate Flow](../../4_Flows/Voice%20Call%20Terminate%20Flow.md).
 

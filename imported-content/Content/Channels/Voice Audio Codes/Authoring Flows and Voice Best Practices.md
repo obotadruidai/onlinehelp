@@ -7,7 +7,9 @@ title: "Authoring Flows and Voice Best Practices"
 
 Druid provides authors with a simple way to configure flows for Voice channel by providing the Speak message in the Voice section on flow steps.
 
-> **NOTE:** In the Voice channel, the **Speak message** has priority over the step message.
+{% hint style="info" %}
+**NOTE:** In the Voice channel, the **Speak message** has priority over the step message.
+{% endhint %}
 
 <a id="BestPractices"></a>
 
@@ -34,7 +36,9 @@ In **Input mapping** on the **transfer** backchannel flow step, provide the enti
 
 Make sure that the entity you provide in **Input mapping** contains fields named exactly as the parameters expected by VoiceAI Connect for the transfer event. For the complete list of transfer event parameters, see [VoiceAI Connect documentation](<https://techdocs.audiocodes.com/livehub/#LiveHub/byoc_Call Transfer.htm%23Trigger20call20transfer>).
 
-> **NOTE:** Druid system entity fields storing the name of a SIP header (Name) will be automatically converted to lowercase (name) when sent over to VoiceAI Connect.
+{% hint style="info" %}
+**NOTE:** Druid system entity fields storing the name of a SIP header (Name) will be automatically converted to lowercase (name) when sent over to VoiceAI Connect.
+{% endhint %}
 
 ![](../../Resources/Images/Voice%20Audio%20Codes%20Channel/transfer%20entity%20params%201.png)
 
@@ -44,7 +48,9 @@ In the **SetVariables** section of the respective **transfer** backchannel step,
 
 ![](../../Resources/Images/Voice%20Audio%20Codes%20Channel/transfer%20set%20variables.png)
 
-> **Info:** When using the **Transfer** backchannel step, a "Connected with agent" event is now recorded in the Conversation History at the moment the transfer request is sent. This provides a clear audit trail of the routing action initiated by the AI Agent, as the contact center does not return a separate confirmation once an agent connects.
+{% hint style="info" %}
+**Info:** When using the **Transfer** backchannel step, a "Connected with agent" event is now recorded in the Conversation History at the moment the transfer request is sent. This provides a clear audit trail of the routing action initiated by the AI Agent, as the contact center does not return a separate confirmation once an agent connects.
+{% endhint %}
 
 <a id="Disconnectingthecall"></a>
 
@@ -60,7 +66,9 @@ To add the disconnect reason and additional SIP headers, on the **hangup** backc
 
 Make sure that the entity you provide in **Input mapping** contains fields named exactly as the parameters expected by VoiceAI Connect. For the complete list of hangup event parameters, see [VoiceAI Connect documentation](https://techdocs.audiocodes.com/voice-ai-connect/Default.htm#VAIG_Combined/hangup.htm?Highlight=HANGUP).
 
-> **NOTE:** Druid system entity fields storing the name of a SIP header (Name) will be automatically converted to lowercase (name) when sent over to VoiceAI Connect.
+{% hint style="info" %}
+**NOTE:** Druid system entity fields storing the name of a SIP header (Name) will be automatically converted to lowercase (name) when sent over to VoiceAI Connect.
+{% endhint %}
 
 ![](../../Resources/Images/Voice%20Audio%20Codes%20Channel/Voice%20Audio%20Codes%20Channel_6.png)
 
@@ -82,7 +90,9 @@ When the call disconnects, the following data is logged in the conversation cont
 
 ## Automatic Conversation Ended Event
 
-> **Info:** This feature is available starting with Druid 9.27.
+{% hint style="info" %}
+**Info:** This feature is available starting with Druid 9.27.
+{% endhint %}
 
 To ensure easy identification of call duration, the AudioCodes channel automatically saves the ActivityEnd event in the [[ChatActivityData]] to mark a conversation as completed in the system (End Time). This closure is triggered automatically by any of the following events:
 

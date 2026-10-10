@@ -9,7 +9,9 @@ DRUID allows you to deploy the Druid Connector Host in a high availability (HA) 
 
 For this setup, all Connector Host instances must connect to the same shared Conversation History Database and shared network drive for file storage. These components must be accessible to all virtual machines (VMs) where the Connector Hosts are installed.
 
-> **NOTE:** DRUID provides high availability only for the Connector Host instances. It does not offer high availability for the shared Conversation History Database or the shared network drive for file storage. To ensure HA for these components, you can implement specific non-DRUID mechanisms.
+{% hint style="info" %}
+**NOTE:** DRUID provides high availability only for the Connector Host instances. It does not offer high availability for the shared Conversation History Database or the shared network drive for file storage. To ensure HA for these components, you can implement specific non-DRUID mechanisms.
+{% endhint %}
 
 ![](../Resources/Images/Deployment/high%20availability%20scenario.png)
 
@@ -21,7 +23,9 @@ To install Connector Host in the high availability scenario, follow these steps:
 
 Install the Druid Connector Host on multiple machines following the installation procedure.
 
-> **NOTE:** For the high availability setup, all Connector Host instances must connect to the same shared Conversation History Database and to the same shared network drive for file storage. These components must be accessible to all virtual machines (VMs) where the Connector Hosts are installed.
+{% hint style="info" %}
+**NOTE:** For the high availability setup, all Connector Host instances must connect to the same shared Conversation History Database and to the same shared network drive for file storage. These components must be accessible to all virtual machines (VMs) where the Connector Hosts are installed.
+{% endhint %}
 
 Make sure that on *Step 4: Configure the Druid Connector Host* described in the installation procedure, you configure for all connector hosts the connection to the same shared network file storage and to the same shared Conversation History DB as described below.
 
@@ -40,7 +44,9 @@ For each Connector Host instance, in the Conversation History DB section, enter 
 
 Start the Windows Service for each connector instance, as you would do for the a single instance set-up.
 
-> **IMPORTANT!** Each instance generates a self signature based on the machine name (where it is installed), the user name (under which it runs) and the folder location (where the connector resources are installed). It is mandatory that the self signature is unique for each of the connector instances; therefore, at least one of the 3 values must be different for each instance. If you cannot change the machine name and the user name cannot be changed, we recommend you to use an unique folder name for each installation.
+{% hint style="warning" %}
+**IMPORTANT!** Each instance generates a self signature based on the machine name (where it is installed), the user name (under which it runs) and the folder location (where the connector resources are installed). It is mandatory that the self signature is unique for each of the connector instances; therefore, at least one of the 3 values must be different for each instance. If you cannot change the machine name and the user name cannot be changed, we recommend you to use an unique folder name for each installation.
+{% endhint %}
 
 To check that all instances are running and that they have an unique signature, in the Druid Portal, from the **All Settings** menu, click > **Connector Heartbeat**. The Connector Heartbeat page appears by default on the DownloadBinaries tab. Click the **Instances** tab. In the Instances table, you should have as many entries as the number of running instances and **LocalId** should be unique for each instance.
 

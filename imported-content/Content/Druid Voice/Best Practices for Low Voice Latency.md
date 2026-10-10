@@ -11,7 +11,9 @@ Latency for voice AI Agent should always be measured end-to-end from the caller'
 
 When designing Druid voice AI Agents, managing this latency is critical since voice interactions require much faster response times than text-based chat. Below is the optimized guide for the DRUID online help, tailored specifically for voice AI agents.
 
-> **Info:** In Druid, we consider an end-to-end response time of **3 seconds** or less to be low voice latency.
+{% hint style="info" %}
+**Info:** In Druid, we consider an end-to-end response time of **3 seconds** or less to be low voice latency.
+{% endhint %}
 
 When designing Druid voice AI Agents, managing this latency is critical since voice interactions require much faster response times than text-based chat. Below are best practices tailored specifically for voice AI Agents.
 
@@ -65,7 +67,9 @@ Deploy the pre-configured [Knowledgebase with GPT V4](../Solution%20Library/Know
 
 ![](../Resources/Images/Druid%20Voice/custom%20kb.png)
 
-> **Info:** Contact Druid Solutions Support if you experience any issues while using this solution. Full support for this solution is included with your standard Druid AI Platform support contract.
+{% hint style="info" %}
+**Info:** Contact Druid Solutions Support if you experience any issues while using this solution. Full support for this solution is included with your standard Druid AI Platform support contract.
+{% endhint %}
 
 <a id="UseLLMBasedIntentRecognitionwithDruidBecus"></a>
 
@@ -93,9 +97,11 @@ The main advantage of LLM streaming is that the AI Agent can start returning the
 
 LLM Streamer is especially recommended for intent rephrasing, Knowledge Base responses, agent reasoning, and tool-calling workflows. Even when used with function calls, its proximity to the Druid conversational engine helps reduce latency and improve the overall responsiveness of the voice experience.
 
-> **NOTE:** When configuring the **LLMStreamer** internal action, select **Responses** as the **API Type**. The **Chat Completions (Legacy)** option is maintained for backward compatibility and should only be used with implementations that depend on the legacy API.
->
-> ![](../Resources/Images/Druid%20Voice/RESPONSES%20API%20TYPE.png)
+{% hint style="info" %}
+**NOTE:** When configuring the **LLMStreamer** internal action, select **Responses** as the **API Type**. The **Chat Completions (Legacy)** option is maintained for backward compatibility and should only be used with implementations that depend on the legacy API.
+
+![](../Resources/Images/Druid%20Voice/RESPONSES%20API%20TYPE.png)
+{% endhint %}
 
 For configuration instructions, see [Use LLM Response Streaming for Voice Interactions](../4_Flows/Use%20LLM%20Response%20Streaming%20for%20Voice%20Interactions.md).
 
@@ -153,7 +159,9 @@ Well-structured content improves retrieval accuracy and reduces the need to proc
 
 Different embedding models can produce different retrieval results, so testing multiple embedding options may help improve relevance. For more information, see [Embeddings](../Knowledgebase/KB%20Settings/Embeddings.md).
 
-> **Info:** Druid embedding models are optimized for low-latency retrieval scenarios. While actual performance depends on factors such as article size, index size, and retrieval complexity, embedding-related processing typically takes between 10 and 30 milliseconds.
+{% hint style="info" %}
+**Info:** Druid embedding models are optimized for low-latency retrieval scenarios. While actual performance depends on factors such as article size, index size, and retrieval complexity, embedding-related processing typically takes between 10 and 30 milliseconds.
+{% endhint %}
 
 Where applicable, use the Synonyms Dictionary to enhance retrieval accuracy. For more information, see [KB Dictionary](../Knowledgebase/KB%20Settings/Synonyms%20Dictionary.md).
 
@@ -177,7 +185,9 @@ This recommendation applies to providers such as:
 - Amazon Transcribe
 - Other STT/TTS services
 
-> **NOTE:** Speech-to-Text (STT) processing typically has a greater impact on overall voice latency than Text-to-Speech (TTS). To minimize response times, prioritize deploying STT resources in the same geographic region as your Druid environment.
+{% hint style="info" %}
+**NOTE:** Speech-to-Text (STT) processing typically has a greater impact on overall voice latency than Text-to-Speech (TTS). To minimize response times, prioritize deploying STT resources in the same geographic region as your Druid environment.
+{% endhint %}
 
 The following table shows the recommended Azure Speech region for each Druid Cloud environment.
 

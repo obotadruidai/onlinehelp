@@ -7,10 +7,12 @@ title: "Location"
 
 With Location steps, Druid enables you to bring the real world to your users with maps by rendering a geographical location similar to Google Maps preview and configure your AI Agents to get and store user’s geographical location shared in the chat.
 
-> **IMPORTANT!** The Location flow step is available for the following channels:
->
-> - RingCentral (Available starting with Druid 9.19)
-> - WhatsApp (Only for Vonage API version V1)
+{% hint style="warning" %}
+**IMPORTANT!** The Location flow step is available for the following channels:
+
+- RingCentral (Available starting with Druid 9.19)
+- WhatsApp (Only for Vonage API version V1)
+{% endhint %}
 
 <a id="Usecases"></a>
 

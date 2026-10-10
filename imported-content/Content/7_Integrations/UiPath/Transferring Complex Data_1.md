@@ -24,7 +24,9 @@ To map UiPath arguments to DRUID Relational Entity Model, use the following refe
 | Entity | JObject |
 |  | Dictionary |
 
-> **NOTE:** You need to create the DRUID Relational Entity Model before mapping the UiPath process arguments. The name of the DRUID entity fields in a collection must match the name of columns or properties from the UiPath DataTable, jArray, jObject or Dictionary arguments.
+{% hint style="info" %}
+**NOTE:** You need to create the DRUID Relational Entity Model before mapping the UiPath process arguments. The name of the DRUID entity fields in a collection must match the name of columns or properties from the UiPath DataTable, jArray, jObject or Dictionary arguments.
+{% endhint %}
 
 To better understand how to map complex data type, let’s consider the following example: we want to send DRUID flat and complex data type to a UiPath attended process. We have an entity called UiPathCollection with the following entity relational model:
 
@@ -59,7 +61,9 @@ Mapping examples
 
 Additionally, if authors prefer to send the entire content of a DRUID entity, to / from a single UiPath argument, then that entity should simply be mapped without any fields.
 
-> **NOTE:** When sending the entire content of a DRUID entity, you have to map it to an UiPath argument of type jObject.
+{% hint style="info" %}
+**NOTE:** When sending the entire content of a DRUID entity, you have to map it to an UiPath argument of type jObject.
+{% endhint %}
 
 ![](../../Resources/Images/Transferring%20Complex%20Data%20Type%20through%20the%20Start%20Attended%20Job%20Integration/Transferring%20Complex%20Data_1_3.png)
 

@@ -5,7 +5,9 @@ title: "Delete Snapshot"
 <a id="DeleteSnapshot"></a>
 
 
-> **NOTE:** Once you delete a solution snapshot, you cannot restore it.
+{% hint style="info" %}
+**NOTE:** Once you delete a solution snapshot, you cannot restore it.
+{% endhint %}
 
 To delete a solution snapshot, in the solution configuration page, click the Solution Snapshots section header. The section expands.
 

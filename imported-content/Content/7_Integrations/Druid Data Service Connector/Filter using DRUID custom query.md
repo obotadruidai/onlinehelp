@@ -17,7 +17,9 @@ The Druid Custom Query allows you to filter request data for Query entities and 
 
 The `SELECT` statement is used to select data from a database table.
 
-> **IMPORTANT!** Using the unqualified `*` to select all fields from an entity is not supported. Instead, specify the names of the entity fields you want to select, separating them with commas.
+{% hint style="warning" %}
+**IMPORTANT!** Using the unqualified `*` to select all fields from an entity is not supported. Instead, specify the names of the entity fields you want to select, separating them with commas.
+{% endhint %}
 
 **Syntax**
 
@@ -53,11 +55,13 @@ Where:
 - `AS` is optional. Whether you specify the `AS` keyword or not has no impact on the alias.
 - `alias_name` is the temporary name to assign to the entity field.
 
-> **NOTE:**
->
-> - If the `alias_name` contains spaces, you must enclose the `alias_name` in quotes.
-> - It is acceptable to use spaces when you are aliasing a column name.
-> - The `alias_name` is only valid within the scope of the SQL statement.
+{% hint style="info" %}
+**NOTE:**
+
+- If the `alias_name` contains spaces, you must enclose the `alias_name` in quotes.
+- It is acceptable to use spaces when you are aliasing a column name.
+- The `alias_name` is only valid within the scope of the SQL statement.
+{% endhint %}
 
 **Example 1**
 
@@ -95,11 +99,13 @@ Where:
 - `AS` is optional. Whether you specify the `AS` keyword or not has no impact on the alias.
 - `alias_name` is the temporary name to assign to the entity.
 
-> **NOTE:**
->
-> - If the `alias_name` contains spaces, you must enclose the `alias_name` in quotes.
-> - It is not generally good practice to use spaces when you are aliasing a table name.
-> - The `alias_name` is only valid within the scope of the SQL statement.
+{% hint style="info" %}
+**NOTE:**
+
+- If the `alias_name` contains spaces, you must enclose the `alias_name` in quotes.
+- It is not generally good practice to use spaces when you are aliasing a table name.
+- The `alias_name` is only valid within the scope of the SQL statement.
+{% endhint %}
 
 In the examples below, we omit AS when aliasing a table name.
 
@@ -121,7 +127,9 @@ In this example, we've created an alias for the Products entity called **p**.Wit
 
 You can use table aliases in conjunction with the `GROUP BY` clause to aggregate data effectively.
 
-> **NOTE:** Always use table aliases in the `GROUP BY` clause to match the aliases in the `SELECT` statement, ensuring clarity and avoiding errors in complex queries.
+{% hint style="info" %}
+**NOTE:** Always use table aliases in the `GROUP BY` clause to match the aliases in the `SELECT` statement, ensuring clarity and avoiding errors in complex queries.
+{% endhint %}
 
 **Example**
 
@@ -161,7 +169,9 @@ FROM entity
 WHERE condition
 ```
 
-> **NOTE:** When filtering by a system entity field, use the syntax '@FieldName' in the WHERE clause. Map the variable name to the DRUID system entity field without the @ symbol. For reference, see the example below.
+{% hint style="info" %}
+**NOTE:** When filtering by a system entity field, use the syntax '@FieldName' in the WHERE clause. Map the variable name to the DRUID system entity field without the @ symbol. For reference, see the example below.
+{% endhint %}
 
 The following query retrieves test case details from the [[KBTestCase]] entity, filtering records based on the AI Agent ID. It converts the @BotId variable into a unique identifier type before applying the filter. The results are sorted in descending order by the CreatedOn field.
 
@@ -208,7 +218,9 @@ FROM entity
 ORDER BY field_1, field_2, ... ASC|DESC
 ```
 
-> **NOTE:** The `ORDER BY` keyword sorts the records in ascending order by default.
+{% hint style="info" %}
+**NOTE:** The `ORDER BY` keyword sorts the records in ascending order by default.
+{% endhint %}
 
 Example:
 
@@ -416,7 +428,9 @@ SELECT COUNT(*)
 FROM entity
 ```
 
-> **NOTE:** `COUNT(field)` is not supported in Druid; therefore, you cannot exclude NULL values when counting records. Only `COUNT(*)` can be used, which includes all records.
+{% hint style="info" %}
+**NOTE:** `COUNT(field)` is not supported in Druid; therefore, you cannot exclude NULL values when counting records. Only `COUNT(*)` can be used, which includes all records.
+{% endhint %}
 
 The following query retrieves the number of products in each category from the Products entity.
 
@@ -565,9 +579,13 @@ Even though Druid doesn’t support `RIGHT JOIN`, this approach using `LEFT JOIN
 
 Combines the results of two or more `SELECT` queries into a single result set. By default, **UNION** eliminates duplicate rows, ensuring that the result contains only unique records.
 
-> **NOTE:** This operator is available in DRUID 8.9 and higher.
+{% hint style="info" %}
+**NOTE:** This operator is available in DRUID 8.9 and higher.
+{% endhint %}
 
-> **Info:** If you want to keep all records, including duplicates, use `UNION ALL` instead.
+{% hint style="info" %}
+**Info:** If you want to keep all records, including duplicates, use `UNION ALL` instead.
+{% endhint %}
 
 *Example*:
 
@@ -588,7 +606,9 @@ FROM Revenue t
 
 Combines the results of two or more `SELECT` queries into a single result set, including duplicates. Unlike `UNION`, which removes duplicates, `UNION ALL` retains all records from the combined queries, even if they are identical.
 
-> **NOTE:** This operator is available in DRUID 8.9 and higher.
+{% hint style="info" %}
+**NOTE:** This operator is available in DRUID 8.9 and higher.
+{% endhint %}
 
 *Example*:
 
@@ -615,7 +635,9 @@ Returns only the rows that are common between two `SELECT` queries. In other wor
 
 INTERSECT removes duplicates by default, so if a record appears multiple times in both queries, it will only appear once in the result.
 
-> **NOTE:** This operator is available in DRUID 8.9 and higher.
+{% hint style="info" %}
+**NOTE:** This operator is available in DRUID 8.9 and higher.
+{% endhint %}
 
 Example:
 
@@ -640,7 +662,9 @@ The result contains only the records that are common in both entities [[Customer
 
 Returns the records from the first `SELECT` query that do not exist in the second `SELECT` query. Essentially, it retrieves the difference between the two result sets, excluding any duplicate rows by default.
 
-> **NOTE:** This operator is available in DRUID 8.9 and higher.
+{% hint style="info" %}
+**NOTE:** This operator is available in DRUID 8.9 and higher.
+{% endhint %}
 
 Example:
 
@@ -661,7 +685,9 @@ FROM Contractors;
 
 Expressions allow you to perform calculations or operations on fields, literals, and constants. These expressions are often combined with operators to manipulate the data within your queries.
 
-> **Info:** You can also use expressions in the `WHERE` clause to filter results.
+{% hint style="info" %}
+**Info:** You can also use expressions in the `WHERE` clause to filter results.
+{% endhint %}
 
 ## Arithmetic Operators
 
@@ -672,11 +698,13 @@ Druid supports basic arithmetic operators for mathematical calculations:
 - \*: Multiplication
 - /: Division
 
-> **NOTE:**
->
-> - The arithmetic operators are used for arithmetic calculations when both fields are numeric data types (e.g., int, float, decimal).
-> - If any of expression fields contains NULL values, the result of the addition will be NULL unless handled explicitly with functions like `COALESCE` or `ISNULL`.
-> - The expression can be used in the `SELECT` clause to create a new column in the result set that holds the result.
+{% hint style="info" %}
+**NOTE:**
+
+- The arithmetic operators are used for arithmetic calculations when both fields are numeric data types (e.g., int, float, decimal).
+- If any of expression fields contains NULL values, the result of the addition will be NULL unless handled explicitly with functions like `COALESCE` or `ISNULL`.
+- The expression can be used in the `SELECT` clause to create a new column in the result set that holds the result.
+{% endhint %}
 
 This example multiplies Price by Quantity to calculate the total cost of an order:
 
@@ -691,11 +719,13 @@ FROM Orders
 
 Literals are fixed values used directly in statements. They can be of various data types, including strings, numbers and date and time.
 
-> **NOTE:**
->
-> - **String Literals**: Use single quotes to enclose string values. Double quotes are not used for strings.
-> - **Numeric Literals**: Write numbers directly without quotes.
-> - **Date and Time Literals**: Use single quotes to enclose date and time values.
+{% hint style="info" %}
+**NOTE:**
+
+- **String Literals**: Use single quotes to enclose string values. Double quotes are not used for strings.
+- **Numeric Literals**: Write numbers directly without quotes.
+- **Date and Time Literals**: Use single quotes to enclose date and time values.
+{% endhint %}
 
 This expression adds 10 to the Price field for each record, creating a new calculated field NewPrice.
 
@@ -714,7 +744,9 @@ FROM Products
 
 ## ROUND
 
-> **Info:** This function is available starting with Druid 9.30.
+{% hint style="info" %}
+**Info:** This function is available starting with Druid 9.30.
+{% endhint %}
 
 Rounds a numeric value or calculation to a specified number of decimal places. `ROUND()` can be used on numeric expressions, as well as wrapped around aggregate functions (such as `AVG`, `SUM`, `MIN`, `MAX`, or `COUNT`).
 
@@ -747,7 +779,9 @@ ORDER BY [item].[Name] ASC;
 
 String functions are used to manipulate and process text (string) data. These functions help format, extract, replace, and analyze string values.
 
-> **NOTE:** The string functions are supported in DRUID 7.2 and higher.
+{% hint style="info" %}
+**NOTE:** The string functions are supported in DRUID 7.2 and higher.
+{% endhint %}
 
 <a id="LEFT"></a>
 
@@ -1031,7 +1065,9 @@ The query returns orders from the current month and year.
 
 Calculates the number of specified time units that have elapsed between a starting date/time expression and an ending date/time expression. This function is useful for determining durations, calculating age, measuring time differences, or filtering records based on time intervals.
 
-> **NOTE:** This function is available in Druid 9.11 and higher.
+{% hint style="info" %}
+**NOTE:** This function is available in Druid 9.11 and higher.
+{% endhint %}
 
 **Syntax**
 
@@ -1096,7 +1132,9 @@ In the example above:
 
 Returns the current date and time in UTC. Unlike traditional SQL's GETDATE() which returns server local time, this function always returns UTC time with the 'Z' timezone indicator.
 
-> **NOTE:** This function is available in Druid 9.10 and higher.
+{% hint style="info" %}
+**NOTE:** This function is available in Druid 9.10 and higher.
+{% endhint %}
 
 **Syntax**
 
@@ -1127,7 +1165,9 @@ ORDER BY OrderDate DESC
 
 Returns the current date in UTC with the time component set to midnight (00:00:00). This function is useful for date-only comparisons without considering the time of day.
 
-> **NOTE:** This function is available in Druid 9.10 and higher.
+{% hint style="info" %}
+**NOTE:** This function is available in Druid 9.10 and higher.
+{% endhint %}
 
 **Syntax**
 
@@ -1270,7 +1310,9 @@ Example output:
 
 ![](../../Resources/Images/Druid%20Data%20Service%20Connector/integert%20example.png)
 
-> **NOTE:** Converting to **int** removes any decimal portion—it does not round, it just truncates.
+{% hint style="info" %}
+**NOTE:** Converting to **int** removes any decimal portion—it does not round, it just truncates.
+{% endhint %}
 
 **Convert to FLOAT example**
 
@@ -1333,10 +1375,12 @@ FROM Account a;
 | 121 | "%Y-%m-%d %H:%M:%S.%L" | "YYYY-MM-DD HH:MM:SS.mmm" |
 | 130 | "%d %b %Y %H:%M:%S:%L" | "dd mon yyyy hh:mi:ss:mmm(AM/PM)" |
 
-> **NOTE:**
->
-> - DRUID Data Services pattern is currently missing 2-digit years.
-> - %b or Month as 3 letter in DRUID Data Services pattern is after FormatId **7** (130, 114, 6).
+{% hint style="info" %}
+**NOTE:**
+
+- DRUID Data Services pattern is currently missing 2-digit years.
+- %b or Month as 3 letter in DRUID Data Services pattern is after FormatId **7** (130, 114, 6).
+{% endhint %}
 
 <a id="Recordslimitingclauses"></a>
 
@@ -1348,7 +1392,9 @@ FROM Account a;
 
 Skips a specified number of records before returning results. Used in combination with `FETCH NEXT`, limits the number of records returned after the offset.
 
-> **NOTE:** This clause is available in DRUID 8.3 and higher.
+{% hint style="info" %}
+**NOTE:** This clause is available in DRUID 8.3 and higher.
+{% endhint %}
 
 **Example**
 
@@ -1373,7 +1419,9 @@ In this example:
 
 Limits the result set to a specified number of rows. However, without proper ordering, the results can appear in an arbitrary order. To ensure a predictable and meaningful result, it is always recommended to use the `TOP` clause in combination with `ORDER BY`.
 
-> **NOTE:**  This function is supported in DRUID 7.2 and higher.
+{% hint style="info" %}
+**NOTE:**  This function is supported in DRUID 7.2 and higher.
+{% endhint %}
 
 **Syntax**
 
@@ -1397,9 +1445,13 @@ ORDER BY FirstName
 
 When working with large data volumes, using the `GROUP BY` clause correctly is essential for both accurate results and good query performance. Aggregating data by specific groupings, especially when joining related entity fields, allows you to combine data from multiple entities while ensuring correct aggregation across joined entities. Incorrect grouping can lead to inaccurate results or inefficient queries.
 
-> **IMPORTANT!** Indexing is critical when working with large data sets. Make sure that entities and fields used in joins and aggregation are properly indexed. For more information, see [Add Data Service Indexes](../Data%20Service/Druid_Data_Service.md#Add).
+{% hint style="warning" %}
+**IMPORTANT!** Indexing is critical when working with large data sets. Make sure that entities and fields used in joins and aggregation are properly indexed. For more information, see [Add Data Service Indexes](../Data%20Service/Druid_Data_Service.md#Add).
+{% endhint %}
 
-> **NOTE:** Joining data from referenced entities is available starting with Druid 19.16.
+{% hint style="info" %}
+**NOTE:** Joining data from referenced entities is available starting with Druid 19.16.
+{% endhint %}
 
 <a id="Importantconsiderations"></a>
 

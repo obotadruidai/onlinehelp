@@ -11,7 +11,9 @@ By default, a chart does not group entity records information. You need to have 
 
 As a best practice, first get business entity records through an integration and then do an integration another entity to manipulate the business records from the previous integration. For instance, suppose you have a list of cases stored in the [[Case]] entity. If you wish to incorporate charts for this entity, you can create an additional entity named [[CaseReporting]]. This entity allows you to aggregate or group your data, such as calculating the number of cases per status (open, closed, pending
 
-> **Info:** You can use dynamic charts to perform data grouping directly from the user interface. With dynamic charts, there is no longer a need for additional integration to group the data.
+{% hint style="info" %}
+**Info:** You can use dynamic charts to perform data grouping directly from the user interface. With dynamic charts, there is no longer a need for additional integration to group the data.
+{% endhint %}
 
 <a id="CreateCharts"></a>
 
@@ -19,7 +21,9 @@ As a best practice, first get business entity records through an integration and
 
 At authoring time, the authors can define multiple charts for an entity. In a future release, charts defined at the entity level can be also added as elements to forms.
 
-> **NOTE:** Rather than building charts from scratch, you can leverage AI Authoring Agents. By launching the Workspace Designer from the Page Help icon, you can describe your chart requirements in natural language to automatically create the chart following the Workspace Designer guidance in the chat. For more information, see [AI Authoring Agents](../2_AI%20Agents/AI%20Authoring%20Agents.md#Create3).
+{% hint style="info" %}
+**NOTE:** Rather than building charts from scratch, you can leverage AI Authoring Agents. By launching the Workspace Designer from the Page Help icon, you can describe your chart requirements in natural language to automatically create the chart following the Workspace Designer guidance in the chat. For more information, see [AI Authoring Agents](../2_AI%20Agents/AI%20Authoring%20Agents.md#Create3).
+{% endhint %}
 
 To create a chart, follow these steps:
 
@@ -44,7 +48,9 @@ To create a chart, follow these steps:
 - **Pie** - A pie chart doesn’t give business users a way to quickly and accurately compare information. Pie charts make sense to show a parts-to-whole relationship for data broken-down into categories.
 - **Doughnut** - Similar to a Pie chart, this visualization displays a parts-to-whole relationship but with a hollow center. This design offers a modern aesthetic and improves readability by focusing the user's eye on the length of the outer arcs rather than the central angles. It is ideal for dashboards where you want to emphasize a total value or provide a cleaner, more contemporary look. This type of charts is available starting with Druid 9.21.
 
-> **NOTE:** Even if in Druid platform at this moment, only the selected chart types are available as drop-down selection you can use the advanced editor, **Custom query** to add also other chart types. For more information on chart types you can configure using the editor, see [Chart.js samples and documentation](https://www.chartjs.org/docs/latest/samples/information.html). You can copy chart configuration code from Chart.js samples and paste the code in the Advanced data editor .
+{% hint style="info" %}
+**NOTE:** Even if in Druid platform at this moment, only the selected chart types are available as drop-down selection you can use the advanced editor, **Custom query** to add also other chart types. For more information on chart types you can configure using the editor, see [Chart.js samples and documentation](https://www.chartjs.org/docs/latest/samples/information.html). You can copy chart configuration code from Chart.js samples and paste the code in the Advanced data editor .
+{% endhint %}
 
 6. Click the **Save** button.
 
@@ -127,7 +133,9 @@ The following actions are available on charts in the Charts list: make default (
 
 ![](../Resources/Images/Charts/Charts_12.png)
 
-> **NOTE:** You can leverage the Workspace Designer AI Authoring Agent to modify existing charts using natural language. From the chart configuration page, click **Author with AI**, describe the changes you want to make, and let the Workspace Designer update the chart configuration through guided chat interactions. For more information, see [AI Authoring Agents](../2_AI%20Agents/AI%20Authoring%20Agents.md#Fine-tun).
+{% hint style="info" %}
+**NOTE:** You can leverage the Workspace Designer AI Authoring Agent to modify existing charts using natural language. From the chart configuration page, click **Author with AI**, describe the changes you want to make, and let the Workspace Designer update the chart configuration through guided chat interactions. For more information, see [AI Authoring Agents](../2_AI%20Agents/AI%20Authoring%20Agents.md#Fine-tun).
+{% endhint %}
 
 You can edit a chart by changing: the chart properties (name, display name and details), the chart layout and the chart data.
 

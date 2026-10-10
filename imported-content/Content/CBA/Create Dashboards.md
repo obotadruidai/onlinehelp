@@ -79,7 +79,9 @@ Enable the **Disable record editing** toggle to prevent users from modifying rec
 
 ![](../Resources/Images/CBA/table%20widget.png)
 
-> **Info:** The **Disable record editing** toggle is available starting with Druid 9.27.
+{% hint style="info" %}
+**Info:** The **Disable record editing** toggle is available starting with Druid 9.27.
+{% endhint %}
 
 Click **Save**to close the modal. Click the **Save** button from the dashboard toolbar to save the widget on the dashboard page.
 
@@ -129,7 +131,9 @@ To rename the current dashboard page, click the **Rename page** button (![](../R
 
 ## Deleting Dashboard Pages
 
-> **IMPORTANT!** This action cannot be undone. Make sure that you really want to delete the current dashboard page.
+{% hint style="warning" %}
+**IMPORTANT!** This action cannot be undone. Make sure that you really want to delete the current dashboard page.
+{% endhint %}
 
 To delete the current dashboard page, click the **Delete page** button ( ![](../Resources/Images/Dashboard/Customizing%20Dashboard%20Template_4.png)) from the toolbar. A confirmation dialog appears.
 

@@ -67,7 +67,9 @@ For more information, see [Outlook Channel](../../Channels/Outlook.md).
 These updates help you quickly identify when your AI Agent model needs retraining after changes or imports.
 
 - **KB - Video Transcript Extraction for Shared Drive and File Repository**. Video transcript extraction is now supported for Shared Drive and File Repository data sources.
-> **NOTE:** In the File Repository data sources, you can upload video files with a maximum file size of 20 MB.
+{% hint style="info" %}
+**NOTE:** In the File Repository data sources, you can upload video files with a maximum file size of 20 MB.
+{% endhint %}
 
 For more information, see [Extracting Data from Video Files](../../Knowledgebase/Extract%20Data%20from%20Video%20Files.md).
 

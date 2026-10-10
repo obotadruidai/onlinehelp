@@ -9,8 +9,10 @@ Deployment Dates
 
 The table below lists the deployment date of DRUID v8.10 across DRUID Clouds. To view the DRUID Releases Calendar, see [Druid AI Releases](../Druid%20AI%20Releases.md).
 
-> **NOTE:** **We’re rolling out version 8.11 in PROD-US ahead of schedule!** Originally set for March 13, the deployment will now happen on **March 3** (morning, EET).
-> Since we only deploy even-numbered versions in PROD environments, this release also includes all features and fixes from version 8.10. This is a one-time exception to get the latest updates out sooner—everything in the release remains the same.
+{% hint style="info" %}
+**NOTE:** **We’re rolling out version 8.11 in PROD-US ahead of schedule!** Originally set for March 13, the deployment will now happen on **March 3** (morning, EET).
+Since we only deploy even-numbered versions in PROD environments, this release also includes all features and fixes from version 8.10. This is a one-time exception to get the latest updates out sooner—everything in the release remains the same.
+{% endhint %}
 
 | Druid Cloud Community  \*.community.Druidplatform.com | Druid Cloud US  \*.us.Druidplatform.com | Druid Cloud Australia  \*au.Druidplatform.com | Druid Cloud West-Europe (PROD)  \*.Druidplatform.com |
 | --- | --- | --- | --- |
@@ -36,7 +38,9 @@ Built into the Flow Predict Engine, this model automatically learns from flow in
 
 For information on how to configure it, see section [NLU Intents Classification with LLM](../../Conversational%20AI/NLU%20Intents%20Classification.md).
 
-> **NOTE:** This model currently does not support Named Entity Recognition (NER).
+{% hint style="info" %}
+**NOTE:** This model currently does not support Named Entity Recognition (NER).
+{% endhint %}
 
 <a id="Improvements"></a>
 

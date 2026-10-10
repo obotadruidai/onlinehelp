@@ -47,14 +47,16 @@ Example:
 
 ![](../../Resources/Images/Document%20Builder/Creating%20Word%20Document%20Templates.png)
 
-> **NOTE:**
->
-> - The **TableStart** and **TableEnd** merge fields (tags) will not appear in the output document.
-> - Always edit an existing merge field in a document by right clicking on it and clicking **Edit Field…**.
->
-> ![](../../Resources/Images/Document%20Builder/Creating%20Word%20Document%20Templates_1.png)
->
-> The Field page appears and you can make the desired changes.
->
-> - Any formatting you do in the Word template (including merged fields/data) is kept in the output document. To format merge fields, you need to format including the enclosing merge field characters (**<< >>**).
-> - If you want to include flat information in the template Header or Footer, you can do so by using merge fields as well.
+{% hint style="info" %}
+**NOTE:**
+
+- The **TableStart** and **TableEnd** merge fields (tags) will not appear in the output document.
+- Always edit an existing merge field in a document by right clicking on it and clicking **Edit Field…**.
+
+![](../../Resources/Images/Document%20Builder/Creating%20Word%20Document%20Templates_1.png)
+
+The Field page appears and you can make the desired changes.
+
+- Any formatting you do in the Word template (including merged fields/data) is kept in the output document. To format merge fields, you need to format including the enclosing merge field characters (**<< >>**).
+- If you want to include flat information in the template Header or Footer, you can do so by using merge fields as well.
+{% endhint %}

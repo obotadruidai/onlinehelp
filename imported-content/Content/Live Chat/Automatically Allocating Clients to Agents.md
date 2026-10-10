@@ -28,7 +28,9 @@ To configure the maximum number of chat conversations above which DRUID platform
 
 ![](../Resources/Images/Live%20Chat/disbled%20max%20alloc.png)
 
-> **NOTE:** Setting the maximum number of sessions for automatic allocation on a queue level is available in DRUID 5.17 and higher. For backwards compatibility, if you have AI Agents with multiple queues defined and automatic allocation was set on the AI Agent, the **Has automatic allocation** setting displays in the AI Agent details and it is disabled and non-editable. You have to set up the **Max number of sessions for automatic allocation** per queue.
+{% hint style="info" %}
+**NOTE:** Setting the maximum number of sessions for automatic allocation on a queue level is available in DRUID 5.17 and higher. For backwards compatibility, if you have AI Agents with multiple queues defined and automatic allocation was set on the AI Agent, the **Has automatic allocation** setting displays in the AI Agent details and it is disabled and non-editable. You have to set up the **Max number of sessions for automatic allocation** per queue.
+{% endhint %}
 
 Set the **Max number of sessions for automatic allocation** per queue.
 
@@ -40,9 +42,13 @@ After you set the **Max number of sessions for automatic allocation** for a queu
 
 If the **Max number of sessions for automatic allocation** is set on queues, DRUID takes into consideration the minimum value of the setting on queue level when automatically allocating clients to agents.
 
-> **NOTE:** The maximum concurrent chat supported for one agent is 5. You can modify this limit only in external agent pages.
+{% hint style="info" %}
+**NOTE:** The maximum concurrent chat supported for one agent is 5. You can modify this limit only in external agent pages.
+{% endhint %}
 
-> **IMPORTANT!** If **Max number of active sessions** is set on both AI Agent level and queue level, DRUID takes into consideration the minimum value when automatically allocating clients to agents. If an agent is allocated to multiple queues with different maximum active sessions set, DRUID takes into consideration the smallest value of them. E.g., Queue A has the **Max number of active sessions** set to 2 and Queue B has the **Max number of active sessions** set to 3. The **Max number of active sessions** on the AI Agent level is set to 4. If an agent is allocated to both Queue A and Queue 2, the agent will be automatically allocated maximum 2 sessions in parallel for both queues; for Queue B having the possibility to manually take 2 more clients (to reach the maximum number of active sessions set on Queue B).
+{% hint style="warning" %}
+**IMPORTANT!** If **Max number of active sessions** is set on both AI Agent level and queue level, DRUID takes into consideration the minimum value when automatically allocating clients to agents. If an agent is allocated to multiple queues with different maximum active sessions set, DRUID takes into consideration the smallest value of them. E.g., Queue A has the **Max number of active sessions** set to 2 and Queue B has the **Max number of active sessions** set to 3. The **Max number of active sessions** on the AI Agent level is set to 4. If an agent is allocated to both Queue A and Queue 2, the agent will be automatically allocated maximum 2 sessions in parallel for both queues; for Queue B having the possibility to manually take 2 more clients (to reach the maximum number of active sessions set on Queue B).
+{% endhint %}
 
 If you want to place live chat calls to a specific waiting queue and automatically allocate clients to agents, you can do so by editing the **live-chat-connect-to-agent** flow. Add an action step and in the Pre / PostActions section, add the internal action **ConnectToHelpdeskAgent**, enter the queue code (not the queue name) and add the following additional parameter: `"AutomaticAllocation" : true` (in JSON format).
 
@@ -59,7 +65,9 @@ For example:
 
 ![](../Resources/Images/Live%20Chat/concurrent%20limit%20auto.png)
 
-> **NOTE:** For backwards compatibility, you can put clients in a specific waiting queue by specifying the queue code either from a DRUID entity field ( [[<Entity>]].<QueueCodefield>), or a DRUID local variable (@queue\_code) or directly as a string (e.g., "Loans").
+{% hint style="info" %}
+**NOTE:** For backwards compatibility, you can put clients in a specific waiting queue by specifying the queue code either from a DRUID entity field ( [[<Entity>]].<QueueCodefield>), or a DRUID local variable (@queue\_code) or directly as a string (e.g., "Loans").
+{% endhint %}
 
 When transferring clients to another queue, you can automatically allocate clients to agents. To do so, add the following additional parameter to internal action **TransferHelpdeskCall**: `"AutomaticAllocation" : true` (in JSON format)
 
@@ -76,7 +84,9 @@ For example:
 
 ![](../Resources/Images/Live%20Chat/transfer%20allocation.png)
 
-> **NOTE:** For backwards compatibility, you can transfer clients to a queue by specifying the queue code either from a DRUID entity field ( [[<Entity>]].<QueueCodefield>), or a DRUID local variable (@queue\_code) or directly as a string (e.g., "Loans").
+{% hint style="info" %}
+**NOTE:** For backwards compatibility, you can transfer clients to a queue by specifying the queue code either from a DRUID entity field ( [[<Entity>]].<QueueCodefield>), or a DRUID local variable (@queue\_code) or directly as a string (e.g., "Loans").
+{% endhint %}
 
 <a id="ChatAllocationRules"></a>
 
@@ -90,9 +100,13 @@ DRUID will automatically allocate clients entering in a waiting queue to an agen
   - Allocate client to an agent based on the time of the last connection with a client in ascending order.
 - If all agents are busy (have reach out the concurrent chat limit), during break or have requested a break, the client remains in the waiting queue and will be allocated to the first available agent.
 
-> **IMPORTANT!** If there are clients waiting in the queue and the working hours of that queue is reached out (clients waiting in the queue outside working hours), DRUID will stop automatically allocating clients to agents in that queue giving the agents the option to choose if they want to take further live chat calls outside the working hours.
+{% hint style="warning" %}
+**IMPORTANT!** If there are clients waiting in the queue and the working hours of that queue is reached out (clients waiting in the queue outside working hours), DRUID will stop automatically allocating clients to agents in that queue giving the agents the option to choose if they want to take further live chat calls outside the working hours.
+{% endhint %}
 
-> **NOTE:** For Multichat, DRUID searches available agents defined on the specific queue where the client was initially placed. DRUID will not automatically transfer the client to another queue.
+{% hint style="info" %}
+**NOTE:** For Multichat, DRUID searches available agents defined on the specific queue where the client was initially placed. DRUID will not automatically transfer the client to another queue.
+{% endhint %}
 
 ![](../Resources/Images/Live%20Chat/allocating%20agents.png)
 

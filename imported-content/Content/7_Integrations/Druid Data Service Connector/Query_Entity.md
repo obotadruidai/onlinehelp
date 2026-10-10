@@ -95,25 +95,33 @@ By default, all records are ordered ascending by the Id field. You can sort the 
 
 Click the **Response** tab. By default, the integration task output will be saved in the global context, that is, the Response entity set on the connector action. If you want to save the response in an entity different from the global one set on the connector action, than from the **Scope** field, select **Local** and from the **Response entity** field, select the desired entity.
 
-> **NOTE:** For Query Entity tasks with custom query filtering requests, you can now save the response in the **Local** scope using an entity different from the request entity.
->
-> ![](../../Resources/Images/Druid%20Data%20Service%20Connector/differ%20response%20entity.png)
+{% hint style="info" %}
+**NOTE:** For Query Entity tasks with custom query filtering requests, you can now save the response in the **Local** scope using an entity different from the request entity.
+
+![](../../Resources/Images/Druid%20Data%20Service%20Connector/differ%20response%20entity.png)
+{% endhint %}
 
 Druid displays the entity schema tree mapping (the request entity and its child fields) in a single table with nested rows based on the **Expansion level** set on the request (pagination section).
 
 The entity fields list includes 'Entity List' type fields. This optimizes performance by enabling the retrieval of data related to the root (response) entity within the Get entity integration without the need for multiple Query related entity integration tasks.
 
-> **NOTE:**  To leverage this feature, an upgrade of the DRUID Connector Host to version 5.29 or higher is required.
+{% hint style="info" %}
+**NOTE:**  To leverage this feature, an upgrade of the DRUID Connector Host to version 5.29 or higher is required.
+{% endhint %}
 
 You can select specific fields to bring, simplifying processes such as fetching all activities for a campaign and obtaining specific details for each activity.
 
 To bring a collection of records, select the desired 'Entity List' type field and from the corresponding drop-down, select the foreign key that is the field from the base entity of the collection (e.g., CampaignActivity) that refers the response entity (e.g., Campaign).
 
-> **IMPORTANT!** Be careful of the payload size when manually mapping 'Entity List' type fields in Query entity, as it retrieves all records, including child records.
+{% hint style="warning" %}
+**IMPORTANT!** Be careful of the payload size when manually mapping 'Entity List' type fields in Query entity, as it retrieves all records, including child records.
+{% endhint %}
 
 ![](../../Resources/Images/druid%205.29/getentity.png)
 
-> **NOTE:** Mapping all fields ignores the 'Entity List' type fields.
+{% hint style="info" %}
+**NOTE:** Mapping all fields ignores the 'Entity List' type fields.
+{% endhint %}
 
 To map all entity scalar fields and "Entity" type existing on the request entity, tap on **Map All Fields**.
 

@@ -9,9 +9,13 @@ The Connector Designer enables authors to create complex automations. It allows 
 
 ![](../../Resources/Images/CNN%20Designer/designer%20overview.png)
 
-> **NOTE:** The Connector Designer is available in technology preview in DRUID 5.12 and higher.
+{% hint style="info" %}
+**NOTE:** The Connector Designer is available in technology preview in DRUID 5.12 and higher.
+{% endhint %}
 
-> **IMPORTANT!** If you define a complex automation using the Connector Designer, do any subsequent changes using the Connector Designer; otherwise, the automation will break.
+{% hint style="warning" %}
+**IMPORTANT!** If you define a complex automation using the Connector Designer, do any subsequent changes using the Connector Designer; otherwise, the automation will break.
+{% endhint %}
 
 <a id="AccesstheConnectorDesigner"></a>
 

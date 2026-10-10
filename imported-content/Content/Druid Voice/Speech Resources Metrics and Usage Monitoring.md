@@ -7,7 +7,9 @@ title: "Speech Resources Metrics and Usage Monitoring"
 
 Druid provides real-time analytics and metric dashboards to track performance, usage volume, and response latencies across all speech services used in the Druid SIP channel. This allows administrators to monitor service level agreements (SLAs), detect latency bottlenecks, and audit resource consumption.
 
-> **Info:** Speech resource metrics are available starting with Druid version 9.31.
+{% hint style="info" %}
+**Info:** Speech resource metrics are available starting with Druid version 9.31.
+{% endhint %}
 
 <a id="Accessspeechresourcemetrics"></a>
 
@@ -23,7 +25,9 @@ You can inspect speech resource metrics through two primary views:
 
 ![](../Resources/Images/Speech%20resources/record%20metrics.png)
 
-> **Info:** Starting with Druid 10.1, after previewing your ElevenLabs resources, click the Metrics tab to view resource usage.
+{% hint style="info" %}
+**Info:** Starting with Druid 10.1, after previewing your ElevenLabs resources, click the Metrics tab to view resource usage.
+{% endhint %}
 
 At the top of the Metrics dashboard, you can customize the displayed dataset:
 

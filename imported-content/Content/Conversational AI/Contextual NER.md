@@ -9,7 +9,9 @@ The Druid AI Platform allows authors to configure AI Agents so that they also pe
 
 Contextual NER means that the value found in the indexed train set also needs to be part of a certain context (an entity list).
 
-> **NOTE:** Contextual NER is available only for non-deterministic entity recognition.
+{% hint style="info" %}
+**NOTE:** Contextual NER is available only for non-deterministic entity recognition.
+{% endhint %}
 
 <a id="Example"></a>
 
@@ -29,11 +31,13 @@ By mentioning **[[Country]].Cities** in the **Contextual NER** field of the same
 
 In our example, as Melbourne has two records in the main indexed entity ([[City]]), the two values will not be shown to users. The values will be instead, it will be filtered by [[Country]].Cities where there is only one record for Melbourne, and therefore, Melbourne from the USA will be set in [[Holiday]].City.
 
-> **NOTE:**
->
-> - Contextual NER can be used either in an Input mapping field (within a flow), or directly from the intent (when setting up a flow utterance). In the second case, the value(s) extracted from the intent will be filtered with the list set in the first flow step where that entity is set in the Input mapping and **Contextual NER** is activated.
-> - The entities mentioned in the Input Mapping and Contextual NER fields MUST refer the same base entity. In the example above, both [[Holiday]].City and [[County]].Cities refer to the [[City]] entity.
-> - Intersection of the two collections is performed on all common fields which are not null. [[City]] can be trained as indexed entity with values in the [[City]].Name, [[City]].Country and [[City]].State fields, whereas [[Country]].Cities can only have values in the State field ([[Country]].Cities.State). Therefore, the filtering will be performed only on values from the State field of each entity.
+{% hint style="info" %}
+**NOTE:**
+
+- Contextual NER can be used either in an Input mapping field (within a flow), or directly from the intent (when setting up a flow utterance). In the second case, the value(s) extracted from the intent will be filtered with the list set in the first flow step where that entity is set in the Input mapping and **Contextual NER** is activated.
+- The entities mentioned in the Input Mapping and Contextual NER fields MUST refer the same base entity. In the example above, both [[Holiday]].City and [[County]].Cities refer to the [[City]] entity.
+- Intersection of the two collections is performed on all common fields which are not null. [[City]] can be trained as indexed entity with values in the [[City]].Name, [[City]].Country and [[City]].State fields, whereas [[Country]].Cities can only have values in the State field ([[Country]].Cities.State). Therefore, the filtering will be performed only on values from the State field of each entity.
+{% endhint %}
 
 ## Related Topics
 

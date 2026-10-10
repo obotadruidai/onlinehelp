@@ -21,7 +21,9 @@ A date range filter and a Filter button are available in the upper-right corner 
 
 The Open Balance dashboard shows the total amounts that have been invoiced but not yet paid, covering all medical services. It includes both generated invoices (issued and awaiting payment) and overdue invoices (past their due date). This dashboard gives your billing team a real-time snapshot of outstanding receivables, enabling proactive follow-up and cash-flow planning.
 
-> **NOTE:** The Open Balance data is not affected by the date range filter applied to the dashboard. It always reflects the complete current outstanding balance across all periods.
+{% hint style="info" %}
+**NOTE:** The Open Balance data is not affected by the date range filter applied to the dashboard. It always reflects the complete current outstanding balance across all periods.
+{% endhint %}
 
 ### ![](../../../../Resources/Images/Patient%20Billing%20Agent/open%20balance.png)
 
@@ -74,7 +76,9 @@ Click any record to open the Invoice form, where you can send a payment reminder
 
 The Invoiced Amounts dashboard shows the total value of invoices issued across all medical services, aggregated by week within the period selected by the date range filter. It provides a time-series view of invoicing activity, helping you track billing volume trends and identify peak periods.
 
-> **Info:** When a selected dashboard timeframe covers the current week, the charts update dynamically in real-time. As new invoices are generated throughout the day and week, their amounts are instantly integrated into the visual trends. Click the **Refresh** button at any time to fetch the latest billing data.
+{% hint style="info" %}
+**Info:** When a selected dashboard timeframe covers the current week, the charts update dynamically in real-time. As new invoices are generated throughout the day and week, their amounts are instantly integrated into the visual trends. Click the **Refresh** button at any time to fetch the latest billing data.
+{% endhint %}
 
 <a id="1"></a>
 
@@ -170,7 +174,9 @@ The Unbilled Installments Per Week (USD) bar chart shows the total value of upco
 
 The chart extends across a multi-month horizon, enabling medium-term cash-flow planning and allowing you to proactively reach out to patients before their installment dates.
 
-> **NOTE:**  The Upcoming Installments data is not affected by the date range filter applied to the dashboard. It always displays the full projection of future unbilled installments, regardless of the period selected.
+{% hint style="info" %}
+**NOTE:**  The Upcoming Installments data is not affected by the date range filter applied to the dashboard. It always displays the full projection of future unbilled installments, regardless of the period selected.
+{% endhint %}
 
 ![](../../../../Resources/Images/Patient%20Billing%20Agent/upcoming.png)
 

@@ -5,11 +5,15 @@ title: "Adaptive Cards"
 <a id="AdaptiveCards"></a>
 
 
-> **NOTE:** You can use Adaptive cards steps only if you have bot framework version 4 activated on your tenant.
+{% hint style="info" %}
+**NOTE:** You can use Adaptive cards steps only if you have bot framework version 4 activated on your tenant.
+{% endhint %}
 
 Adaptive cards allows rich display of information in the chat. They are a great fit for AI Agents when you want to render rich text with graphics, provide buttons to allow people to interact with the chat, create interactive forms and collect input from users.
 
-> **Info:** Use adaptive cards steps to render information in rich format (including capturing user input); however if you want to allow users do multiple section, use hero and choice steps instead.
+{% hint style="info" %}
+**Info:** Use adaptive cards steps to render information in rich format (including capturing user input); however if you want to allow users do multiple section, use hero and choice steps instead.
+{% endhint %}
 
 In Druid you author a card once and have it render beautifully inside your own website (web channel) or Microsoft Teams app.
 
@@ -40,11 +44,15 @@ To add and configure an Action step:
 
 5. Click on the Metadata section header. The section expands.
 6. If you want to prevent users from clicking the card twice (or submit field values), tap on **Inactivate card after usage**.
-> **NOTE:** This option is available only on bot framework v4 and works only on DirectLine (web channel).
+{% hint style="info" %}
+**NOTE:** This option is available only on bot framework v4 and works only on DirectLine (web channel).
+{% endhint %}
 
 7. Click the **Adaptive card editor** button (![](../Resources/Images/Adaptive%20Cards%20Steps/Adaptive%20Cards%20Steps_3.png)).
 8. Design the adaptive card based on your needs. For information on how to use the editor, see [Adaptive Card Editor](#Adaptive_Card_Editor).
-> **Info:** Customize adaptive cards to suit specific contextual needs using the Code Extension feature. For further details, refer to [Manipulate adaptive cards based on context](#Manipulate_adaptive_cards_based_on_context).
+{% hint style="info" %}
+**Info:** Customize adaptive cards to suit specific contextual needs using the Code Extension feature. For further details, refer to [Manipulate adaptive cards based on context](#Manipulate_adaptive_cards_based_on_context).
+{% endhint %}
 
 9. Click the **Save** button at the top-right side of the editor to save the adaptive card. The editor closes.
 10. Click  **Save** to save the step configuration.
@@ -72,12 +80,14 @@ The editor consists of the following areas:
 
 ![Graphical user interface, text, application, email Description automatically generated](../Resources/Images/Adaptive%20Cards%20Steps/Adaptive%20Cards%20Steps_11.png)
 
-> **NOTE:**
->
-> - You can create only one adaptive card per step.
-> - An adaptive card can have only one container where you put the desired objects.
-> - You cannot set multiple selection in adaptive cards.
-> - You can prevent a specific element property on the adaptive card to be translated if SDL machine translation is enabled on the AI Agent. For more information, see [Prevent an element property from being translated at authoring time](#Prevent_object_properties_from_being_translated_at_authoring_time).
+{% hint style="info" %}
+**NOTE:**
+
+- You can create only one adaptive card per step.
+- An adaptive card can have only one container where you put the desired objects.
+- You cannot set multiple selection in adaptive cards.
+- You can prevent a specific element property on the adaptive card to be translated if SDL machine translation is enabled on the AI Agent. For more information, see [Prevent an element property from being translated at authoring time](#Prevent_object_properties_from_being_translated_at_authoring_time).
+{% endhint %}
 
 <a id="Preventelementpropertiesfrombeingtranslatedatruntime"></a>
 
@@ -108,7 +118,9 @@ Druid supports [Microsoft Adaptive Cards Template Language](https://docs.microso
 To render multiple items from a Druid collection on an adaptive card at runtime in the chat, follow these rules:
 
 - Bind the element's $data property to a Druid collection. The element will repeat once for each item in the collection.
-> **IMPORTANT!** The Druid collection cannot be a root collection — it must be a child of another collection (at any level except root). Use the following binding format: `${Parent.ChildCollection}`
+{% hint style="warning" %}
+**IMPORTANT!** The Druid collection cannot be a root collection — it must be a child of another collection (at any level except root). Use the following binding format: `${Parent.ChildCollection}`
+{% endhint %}
 
 - Binding expressions (${myProperty}) in property values are scoped to the individual item within the collection, so you can reference item-level properties directly.
 - If binding to a collection of strings, use ${$data} to access each individual string element — for example: `"text": "${$data}"`
@@ -148,7 +160,9 @@ When the user clicks the **Cancel** button, the AI Agent executes step cancel.
 
 ## <a id="Manipulate_adaptive_cards_based_on_context"></a>Manipulate adaptive cards based on context
 
-> **NOTE:** This feature is available in DRUID 7.4 and higher.
+{% hint style="info" %}
+**NOTE:** This feature is available in DRUID 7.4 and higher.
+{% endhint %}
 
 When customizing adaptive cards to suit specific contextual needs, the Code Extension feature offers a powerful solution. You can seamlessly manipulate adaptive cards, ensuring they adapt dynamically to changing contexts:
 
@@ -224,7 +238,9 @@ thisStep.Metadata.AdaptiveCard = thisStep.CreateAdaptiveCardObject(adaptiveStrin
 thisStepValidator.Validate(thisStep);
 ```
 
-> **NOTE:** Any prior configurations made using the Adaptive Card Editor will be overridden by the adaptive card defined through the Code Extension feature, ensuring consistent behavior aligned with your contextual requirements.
+{% hint style="info" %}
+**NOTE:** Any prior configurations made using the Adaptive Card Editor will be overridden by the adaptive card defined through the Code Extension feature, ensuring consistent behavior aligned with your contextual requirements.
+{% endhint %}
 
 ## Related Topics
 

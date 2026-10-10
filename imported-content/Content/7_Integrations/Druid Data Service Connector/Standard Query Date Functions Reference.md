@@ -7,7 +7,9 @@ title: "Standard Query Date Functions Reference"
 
 When filtering data using standard queries in Druid Data Service Connector tasks (such as Query Entity, Query Related Entity, or Update Entity), you can leverage built-in date and datetime filtering functions. These operators evaluate records relative to the execution time or calendar periods.
 
-> **Info:** For all dynamic interval operators (Next X and Last X), the calculation is inclusive of the current time block. If you specify a value of X, the filter scans the current period plus X - 1 periods ahead or behind.
+{% hint style="info" %}
+**Info:** For all dynamic interval operators (Next X and Last X), the calculation is inclusive of the current time block. If you specify a value of X, the filter scans the current period plus X - 1 periods ahead or behind.
+{% endhint %}
 
 | Function | Description | Supported Input Values |
 | --- | --- | --- |

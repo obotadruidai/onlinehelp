@@ -28,7 +28,9 @@ Druid SIP allows organizations to embed conversational AI directly into their vo
 
 Before configuring Druid Voice integrations or deploying voice capabilities across your environments, ensure that your firewall and network settings allow traffic to and from the Druid SIP Host application and the Media Server.
 
-> **IMPORTANT!** Whitelisting the Druid SIP Host IP addresses and ports is mandatory to establish proper SIP signaling and media stream connectivity.
+{% hint style="warning" %}
+**IMPORTANT!** Whitelisting the Druid SIP Host IP addresses and ports is mandatory to establish proper SIP signaling and media stream connectivity.
+{% endhint %}
 
 <a id="DruidSIPHostIPAddressesSIPSignaling"></a>
 

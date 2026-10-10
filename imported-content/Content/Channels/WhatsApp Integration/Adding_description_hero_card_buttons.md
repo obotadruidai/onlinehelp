@@ -7,7 +7,9 @@ title: "Adding Description for Hero Card Buttons"
 
 You can add description for hero card buttons. To do that on the hero step, go to Metadata section, tap on **Advanced Editing** and in the JSON field, for each button in the "buttons" array add the **channelData** object and set the "description" property.
 
-> **NOTE:** When rendering the hero card in WhatsApp, the buttons description is truncated to 72 characters; therefore, make sure that your buttons description is maximum 72 characters long.
+{% hint style="info" %}
+**NOTE:** When rendering the hero card in WhatsApp, the buttons description is truncated to 72 characters; therefore, make sure that your buttons description is maximum 72 characters long.
+{% endhint %}
 
 ```
 {

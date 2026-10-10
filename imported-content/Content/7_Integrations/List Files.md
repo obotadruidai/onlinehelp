@@ -7,7 +7,9 @@ title: "List Files with the Druid Connector Host"
 
 The List Files integration task enables the Druid Connector Host to retrieve a list of files from a specific local disk or network location accessible by the host machine. This task is similar to the ls Linux command and is useful when you need to identify which files are available in a directory before reading or processing them.
 
-> **NOTE:** This integration is available for Druid Connector Host version 9.13 and higher and is exclusively for hybrid and on-premises installations.
+{% hint style="info" %}
+**NOTE:** This integration is available for Druid Connector Host version 9.13 and higher and is exclusively for hybrid and on-premises installations.
+{% endhint %}
 
 <a id="AddandconfiguretheListFilesintegration"></a>
 
@@ -26,7 +28,9 @@ To set up the List Files integration, follow these steps:
 - **1**: Lists files and folders one level below the root.
 - **2**: Lists all files and folders within all levels under the root.
 
-> **NOTE:** The **Expansion level** available in Druid 9.14 and higher.
+{% hint style="info" %}
+**NOTE:** The **Expansion level** available in Druid 9.14 and higher.
+{% endhint %}
 
 7. (Optional) Enable **To JSON** to transform the list of files into a JArray format. When enabled, the response will be a JSON object that includes separate fields for files and folders if your path contains both.
 8. In the **Project Result To Entity Path** field, the explorer selector to select the entity field of type file where you want to save the results. For example, [[Document]].EntList.
@@ -34,7 +38,9 @@ To set up the List Files integration, follow these steps:
 ![](../Resources/Images/druid%209.13/listfiles.png)
 
 9. (Optional) You can filter the file list results to retrieve only specific files that match your criteria, sort the file list results based on specific properties, or paginate the file list results to retrieve files in smaller batches. For more information read the relevant section below.
-> **NOTE:** Filtering, sorting and pagination are available in Druid 9.14 and higher.
+{% hint style="info" %}
+**NOTE:** Filtering, sorting and pagination are available in Druid 9.14 and higher.
+{% endhint %}
 
 10. Save and close the integration.
 11. Publish the integration.
@@ -59,10 +65,12 @@ Click **Add Filter** icon to create a new filter condition. For each filter, con
 
 - **Value**: Enter the value to compare against.
 
-> **NOTE:**
->
-> - For **Created From** and **Created To** filters, on most Linux file systems, the true file creation time is not always stored. The filter may return the last metadata change time instead. Depending on the kernels and supported file systems, the file creation time may be shown when available.
-> - For File extension value, you can enter multiple extensions separated by commas. Extensions with or without a leading dot are both supported (for example: pdf, jpg, .png).
+{% hint style="info" %}
+**NOTE:**
+
+- For **Created From** and **Created To** filters, on most Linux file systems, the true file creation time is not always stored. The filter may return the last metadata change time instead. Depending on the kernels and supported file systems, the file creation time may be shown when available.
+- For File extension value, you can enter multiple extensions separated by commas. Extensions with or without a leading dot are both supported (for example: pdf, jpg, .png).
+{% endhint %}
 
 Add multiple filters as needed. All filters are applied using AND logic.
 

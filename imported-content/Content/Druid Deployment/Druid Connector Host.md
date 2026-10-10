@@ -7,7 +7,9 @@ title: "Druid Connector Host"
 
 In hybrid deployments, the AI Agents running in the Druid Cloud are integrated with on premise apps. The AI Agents and on premise apps communicate via the Druid Connector Host installed on your local servers, usually hosted in your DMZ zone.
 
-> **NOTE:** For trial and sandbox environments, there is no need to install the Druid Connector Host; the Cloud Connector Service will be used by default. After the trial period ends, if you're integrating with third-party systems which cannot be accessed via the Internet or if you want to store the AI Agent conversation history in your own DB, you need to install the Druid Connector Host.
+{% hint style="info" %}
+**NOTE:** For trial and sandbox environments, there is no need to install the Druid Connector Host; the Cloud Connector Service will be used by default. After the trial period ends, if you're integrating with third-party systems which cannot be accessed via the Internet or if you want to store the AI Agent conversation history in your own DB, you need to install the Druid Connector Host.
+{% endhint %}
 
 The Druid Connector performs the following types of connections:
 

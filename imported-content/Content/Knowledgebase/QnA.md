@@ -18,7 +18,9 @@ Business users do not need any AI Agent technology understanding.
 - Employee facing AI Agents maintained by HR (QnA about best practices, internal regulations, etc.)
 - Customer facing AI Agents maintained by Public Relations, Support Center, Marketing
 
-> **NOTE:**  To use the QnA, you need a Knowledgebase Author (KB Author) security role. If you don’t have one, get in touch with your Druid Portal administrator.
+{% hint style="info" %}
+**NOTE:**  To use the QnA, you need a Knowledgebase Author (KB Author) security role. If you don’t have one, get in touch with your Druid Portal administrator.
+{% endhint %}
 
 <a id="AccessingtheQnA"></a>
 

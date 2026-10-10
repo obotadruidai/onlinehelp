@@ -45,14 +45,18 @@ If you have questions about your Druid tenant, please contact [support@druidai.c
 
 ![](../../Resources/Images/druid%209.26/sip%20ip.png)
 
-> **Info:** If your telephony provider requires whitelisting IP subnets (such as CIDR blocks or specific IP ranges), please contact Druid Support for advanced security provisioning.
+{% hint style="info" %}
+**Info:** If your telephony provider requires whitelisting IP subnets (such as CIDR blocks or specific IP ranges), please contact Druid Support for advanced security provisioning.
+{% endhint %}
 
 - **Enhanced Visibility for File Upload Restrictions in Conversation Trace**. To simplify troubleshooting and provide clear visibility into runtime file validation, Druid now logs explicit system messages to the Conversation Trace whenever a file upload is rejected based on your [File Type Priority Logic](../../4_Flows/File%20Upload%20Steps%20Configuration.md#File).
 
 **Multi-file behavior**. The system logs a dedicated message for each unaccepted file. For example, if a user attempts to upload five files at once and three are rejected, three distinct validation messages will be logged in the Conversation Trace to help you pinpoint exactly which files failed and why.
 
 - **Social Media Channels - Support for story reaction handling**. Introduced the Social media reactions flow , enabling AI Agents to capture and process user reactions to Instagram stories. When enabled, the reaction value (such as applause or heart) is stored in **[[Intent]].Text** for custom handling; when disabled, story reactions are automatically ignored. For more information, see [Social Media Reactions Flow](../../4_Flows/Social%20media%20reactions%20flow.md).
-> **NOTE:** Facebook story reactions are not supported as Facebook does not generate reaction events.
+{% hint style="info" %}
+**NOTE:** Facebook story reactions are not supported as Facebook does not generate reaction events.
+{% endhint %}
 
 <a id="BugFixes"></a>
 

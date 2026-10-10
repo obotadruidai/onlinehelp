@@ -16,7 +16,9 @@ Structured data sources in Druid are organized formats from which the system can
 ### Structured Excel Files
 
 - Table Headers: The first row of your table must contain two columns with the exact headers in this order: "Questions" and "Answers."
-> **NOTE:** The platform accepts Excel files with table headers that include spaces (e.g., "Question" and "Answer"). It automatically trims these spaces to ensure accurate data extraction. Additionally, it supports Excel documents with multiple sheets, capturing the sheet name in the "sheetName" property for each extracted article.
+{% hint style="info" %}
+**NOTE:** The platform accepts Excel files with table headers that include spaces (e.g., "Question" and "Answer"). It automatically trims these spaces to ensure accurate data extraction. Additionally, it supports Excel documents with multiple sheets, capturing the sheet name in the "sheetName" property for each extracted article.
+{% endhint %}
 
 - Question Length: Each question should be limited to a maximum of 625 characters. Any content exceeding this limit will be truncated during upload.
 
@@ -27,7 +29,9 @@ Structured data sources in Druid are organized formats from which the system can
 - Question Formatting: All questions must be in bold text and end with a question mark ("?").
 - Question Length: As with Excel files, limit each question to a maximum of 625 characters to avoid truncation during upload.
 
-> **NOTE:** Uploading files that deviate from these formatting requirements may lead to inaccurate QnA extractions.
+{% hint style="info" %}
+**NOTE:** Uploading files that deviate from these formatting requirements may lead to inaccurate QnA extractions.
+{% endhint %}
 
 Unlike other data sources, structured data sources also allow you to manually add new QnA pairs.
 
@@ -41,9 +45,11 @@ To begin, follow the step-by-step instructions in [Data Source Creation](Data%20
 2. Click **Browse** to locate your data source file on your system, select the file and click **Open**.
 3. Click the **Create** button. The KB Engine starts to extract the data from the selected file.
 
-> **NOTE:**
->
-> The extraction might take a few seconds, depending on the file size. You might need to refresh the page several times until the data source status changes to "Requires training". Click the **Train** button at the top-left corner of the data source to ensure the updates are recognized by the Knowledge Base Engine.
+{% hint style="info" %}
+**NOTE:**
+
+The extraction might take a few seconds, depending on the file size. You might need to refresh the page several times until the data source status changes to "Requires training". Click the **Train** button at the top-left corner of the data source to ensure the updates are recognized by the Knowledge Base Engine.
+{% endhint %}
 
 To view the extracted QnA pairs within the data source, click on the data source.
 
@@ -56,9 +62,13 @@ We recommend you review the QnA pairs regularly to keep the articles relevant. Y
 - Promote them to QnA flows or child intents.
 - Delete outdated QnA pairs.
 
-> **IMPORTANT!** After updating QnA pairs, click the **Train** button at the top-left corner of the data source to ensure the Knowledge Base Engine recognizes the updates.
+{% hint style="warning" %}
+**IMPORTANT!** After updating QnA pairs, click the **Train** button at the top-left corner of the data source to ensure the Knowledge Base Engine recognizes the updates.
+{% endhint %}
 
-> **Info:** We recommend testing the data source performance and editing existing QnA pairs to enhance it.
+{% hint style="info" %}
+**Info:** We recommend testing the data source performance and editing existing QnA pairs to enhance it.
+{% endhint %}
 
 <a id="EditexistingQnApairs"></a>
 
@@ -72,7 +82,9 @@ To modify a QnA pair, follow these steps:
 2. Make your changes. In the edit window, update the question, answer, or both fields as needed.
 3. Click the **Save** button to confirm your changes.
 
-> **NOTE:**  After making any modifications to your QnA pairs, it's crucial to retrain your data source. This ensures the KB Engine recognizes these updates and provides accurate responses to user queries. Click the **Train** button at the top-left corner of the data source.
+{% hint style="info" %}
+**NOTE:**  After making any modifications to your QnA pairs, it's crucial to retrain your data source. This ensures the KB Engine recognizes these updates and provides accurate responses to user queries. Click the **Train** button at the top-left corner of the data source.
+{% endhint %}
 
 <a id="ManuallyaddnewQnApairs"></a>
 
@@ -86,7 +98,9 @@ To create a new QnA pair manually, follow these steps:
 2. Enter the question and answer. In the pop-up window, type the new question in the **Question** field and the corresponding answer in the **Answer** field.
 3. Click the **Save** button to finalize the creation of the new pair.
 
-> **NOTE:**  Don't forget to retrain your data source after adding new QnA pairs. Retraining guarantees the KB Engine recognizes these additions and provides consistent responses to user inquiries. Click the **Train** button at the top-left corner of the data source.
+{% hint style="info" %}
+**NOTE:**  Don't forget to retrain your data source after adding new QnA pairs. Retraining guarantees the KB Engine recognizes these additions and provides consistent responses to user inquiries. Click the **Train** button at the top-left corner of the data source.
+{% endhint %}
 
 <a id="ConvertQnApairstoflowsorchildintents"></a>
 
@@ -99,7 +113,9 @@ To create simple business conversations, you can promote specific QnA pairs from
 - Primary Question: The question in the QnA pair becomes the primary question, the first training phrase in the flow step.
 - Response Message: The answer from the QnA pair becomes the Message set in the QnA flow step.
 
-> **Info:** Add two or more similar questions when promoting a QnA pair to a QnA flow to create a comprehensive user intent for that flow.
+{% hint style="info" %}
+**Info:** Add two or more similar questions when promoting a QnA pair to a QnA flow to create a comprehensive user intent for that flow.
+{% endhint %}
 
 To use a QnA pair for additional context awareness within a parent flow, transform the QnA pair into a child intent.
 
@@ -135,7 +151,9 @@ To delete an article, hover the mouse over the desired article, click on the **A
 
 After marking an article for deletion, it will appear grayed out. This indicates it's flagged for removal but hasn't been permanently deleted yet. To undo the deletion, simply click the dots (![](../Resources/Images/dots.png)) next to the grayed-out article and select **Undo**.
 
-> **NOTE:** For your changes to take effect, you must train the data source after marking articles for deletion. Click the **Train** button at the top left corner of the data source. Once training is complete, the articles are permanently removed from the data source, and this action is irreversible.
+{% hint style="info" %}
+**NOTE:** For your changes to take effect, you must train the data source after marking articles for deletion. Click the **Train** button at the top left corner of the data source. Once training is complete, the articles are permanently removed from the data source, and this action is irreversible.
+{% endhint %}
 
 <a id="Comparesourcefilewithextractedarticles"></a>
 
@@ -161,15 +179,19 @@ Both Excel files contain two columns: Question and Answer. To compare the articl
 
 Druid allows you to replace all text articles from a data source in the Knowledge Base with articles from another data source.
 
-> **NOTE:** This process does not merge the articles; it completely replaces the original articles with those from the new data source.
+{% hint style="info" %}
+**NOTE:** This process does not merge the articles; it completely replaces the original articles with those from the new data source.
+{% endhint %}
 
 To replace a structured data source, follow these steps:
 
 1. In the Knowledge Base page, click on the desired structured data source.
 2. Click the **Details** tab.
 3. In the **Replace File** field, click **Browse**, then locate and select the new data source file.
-> **NOTE:**
-> You can only replace a data source with another data source of the same type as the original.
+{% hint style="info" %}
+**NOTE:**
+You can only replace a data source with another data source of the same type as the original.
+{% endhint %}
 
 4. Click the **Save** button to extract QnA pairs from the new data source. The new data source replaces the original one if no errors occurred.
 5. Click on the **QnA Pairs** tab and click the **Train** button at the top left corner of the page to train the data source.

@@ -47,11 +47,15 @@ Click the **Call Settings** tab and configure the following parameters:
 
 ### <a id="Map"></a>Map incoming SIP headers
 
-> **Info:** This feature is available starting with Druid 9.28.
+{% hint style="info" %}
+**Info:** This feature is available starting with Druid 9.28.
+{% endhint %}
 
 You can map custom or standard incoming SIP headers sent by your contact center or Session Border Controller (SBC) directly to fields within the Druid **[[QueryParams]]** entity. This allows you to extract caller contextual data (such as account IDs, priority flags, or custom session tokens) and pass it into flow logic during call setup.
 
-> **IMPORTANT!** Before mapping a SIP header, ensure that the corresponding target field is already created and defined inside the [[QueryParams]] entity structure.
+{% hint style="warning" %}
+**IMPORTANT!** Before mapping a SIP header, ensure that the corresponding target field is already created and defined inside the [[QueryParams]] entity structure.
+{% endhint %}
 
 To map incoming SIP headers:
 
@@ -85,7 +89,9 @@ In the Speech-to-Text (STT) section, configure the following settings:
 | Barge-in consecutive frames | The number of consecutive audio frames required to trigger a barge-in interruption. Adjusting this value allows you to balance the AI Agent responsiveness against the risk of false triggers from background noise.  **Default Value**: 3 frames **(during tech preview)**.  A lower frame count makes the AI Agent more sensitive to interruptions, while a higher frame count requires a longer, sustained sound to trigger a response.  Use the table below to estimate the impact of your frame count on the user experience:   | Audio Unit | Definition | Approximate Time Frame | Equivalent | | --- | --- | --- | --- | | Frame | Smallest packet of processed audio | 20ms | 1 frame | | Syllable | Linguistic unit of speech | 200ms | ~10 frames | | Word | Complete semantic unit | 500ms | ~25 frames | | No | 3 |
 
 3. If using **Druid** or **ElevenLabs**, turn on the **Use External VAD** toggle to use the STT provider's Voice Activity Detection (VAD) to identify when speech begins and ends.
-> **NOTE:** Keep **Use External VAD** disabled for Azure Speech Services as VAD is managed server-side.
+{% hint style="info" %}
+**NOTE:** Keep **Use External VAD** disabled for Azure Speech Services as VAD is managed server-side.
+{% endhint %}
 
 4. The **Language detection mode** controls when and how often the system analyzes the incoming audio to identify the spoken language. Select the desired option:
 
@@ -129,7 +135,9 @@ After the Druid SIP configuration activates, the system automatically provisions
 
 Configure your telephony provider to use the **SIP FQDN** as the primary routing domain. You can find this value in the Druid SIP Configuration modal.
 
-> **NOTE:** Druid supports SRTP media encryption automatically. If your contact center requires SRTP, Druid automatically negotiates it during the initial SIP handshake with your telephony system—no extra Druid channel configuration needed.
+{% hint style="info" %}
+**NOTE:** Druid supports SRTP media encryption automatically. If your contact center requires SRTP, Druid automatically negotiates it during the initial SIP handshake with your telephony system—no extra Druid channel configuration needed.
+{% endhint %}
 
 #### Testing with MicroSIP
 

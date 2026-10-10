@@ -59,7 +59,9 @@ To add a widget, click the **Add widget** button (![](../Resources/Images/Dashbo
 
 Select the desired widget type: Table (web view), Chart or Light widget and click **Save**.
 
-> **Info:** Use the **Light widget** type to display key metrics like totals, averages, and other unique values on the dashboard. This is similar to the KPIs shown on the **AI Agent Summary** > **Engagement** page.
+{% hint style="info" %}
+**Info:** Use the **Light widget** type to display key metrics like totals, averages, and other unique values on the dashboard. This is similar to the KPIs shown on the **AI Agent Summary** > **Engagement** page.
+{% endhint %}
 
 Click the settings icon corresponding to the widget. The widget Settings page appears.
 
@@ -77,7 +79,9 @@ To configure a Light widget to display a AI Agent KPI, go to the widget configur
 
 ![](../Resources/Images/druid%208.14/knpi%20in%20custom%20dash.png)
 
-> **IMPORTANT!** By default, custom dashboards display insights into all records created within the last week, without the option to filter data for a specific period. To enable data filtering in custom dashboards, follow a specific setup. For more information, see the subsequent sections.
+{% hint style="warning" %}
+**IMPORTANT!** By default, custom dashboards display insights into all records created within the last week, without the option to filter data for a specific period. To enable data filtering in custom dashboards, follow a specific setup. For more information, see the subsequent sections.
+{% endhint %}
 
 ![](../Resources/Images/Custom%20Dashboards/Custom%20Dashboards_10.png)
 
@@ -122,7 +126,9 @@ You can now filter records based on a specific period.
 
 ## Filtering data in dynamic charts
 
-> **NOTE:** This feature is available in DRUID 7.10 onwards.
+{% hint style="info" %}
+**NOTE:** This feature is available in DRUID 7.10 onwards.
+{% endhint %}
 
 To filter data in dynamic charts on the dashboard:
 
@@ -140,9 +146,13 @@ You can filter data within a specific period in dynamic charts on the dashboard.
 
 When the **Filter By** field is configured on a dynamic chart, performing a drill-down from that chart automatically displays records within the dashboard time interval currently selected, based on that specific field. No additional integrations are required to filter records in the drill-down view.
 
-> **NOTE:** In Druid version 9.17 and higher, drill-down views in dynamic charts are filtered by the dashboard time interval by default if the **Filter By** field is set on the chart.
+{% hint style="info" %}
+**NOTE:** In Druid version 9.17 and higher, drill-down views in dynamic charts are filtered by the dashboard time interval by default if the **Filter By** field is set on the chart.
+{% endhint %}
 
-> **IMPORTANT!** The drill-down and Filter By fields apply only to dynamic charts. If you are not using dynamic charts, these fields are disregarded. To apply drill-down view grouping, filtering, and the dashboard time interval to non-dynamic charts, you must update the code manually—either in the chart Advanced Editor or in the Custom Code, depending on how the chart was created.
+{% hint style="warning" %}
+**IMPORTANT!** The drill-down and Filter By fields apply only to dynamic charts. If you are not using dynamic charts, these fields are disregarded. To apply drill-down view grouping, filtering, and the dashboard time interval to non-dynamic charts, you must update the code manually—either in the chart Advanced Editor or in the Custom Code, depending on how the chart was created.
+{% endhint %}
 
 <a id="Deletingwidgets"></a>
 
@@ -172,7 +182,9 @@ To rename the current dashboard page, click the **Rename page** button (![](../R
 
 ## Deleting Dashboard Pages
 
-> **IMPORTANT!** This action cannot be undone. Make sure that you really want to delete the current dashboard page.
+{% hint style="warning" %}
+**IMPORTANT!** This action cannot be undone. Make sure that you really want to delete the current dashboard page.
+{% endhint %}
 
 To delete the current dashboard page, click the **Delete page** button ( ![](../Resources/Images/Dashboard/Customizing%20Dashboard%20Template_4.png)) from the toolbar. A confirmation dialog appears.
 

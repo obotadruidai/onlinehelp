@@ -5,7 +5,9 @@ title: "Webhooks"
 <a id="Webhooks"></a>
 
 
-> **NOTE:** This feature is available in DRUID 7.7 and higher.
+{% hint style="info" %}
+**NOTE:** This feature is available in DRUID 7.7 and higher.
+{% endhint %}
 
 Webhooks provide specifications for DRUID endpoints and enable you to generate a bearer token for authentication. To access webhooks, click **Webhooks** on the **Administration** menu. The **Endpoints** tab displays DRUID endpoints; click on an endpoint to view its structure.
 

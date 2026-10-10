@@ -25,7 +25,9 @@ The Druid Generic Chat channel supports two distinct communication mechanisms to
 
 In this mode, when a user sends a message through your proprietary chat UI, your backend client API forwards this input to Druid by calling the message delivery REST API (`/messages`). Your client API holds the HTTPS connection open with Druid while the Flow Engine processes the request. Once ready, all generated AI Agent replies are delivered back to your client API in the synchronous response payload, which then routes them back to the front-end interface.
 
-> **NOTE:** If a flow step triggers a slow external API or data operation, the client application must wait until the full processing cycle completes, which can lead to visible delays in the user experience.
+{% hint style="info" %}
+**NOTE:** If a flow step triggers a slow external API or data operation, the client application must wait until the full processing cycle completes, which can lead to visible delays in the user experience.
+{% endhint %}
 
 <a id="LongPollingMechanismAsynchronous"></a>
 
@@ -62,7 +64,9 @@ The following sequence outlines how your backend client API handles communicatio
 2. The web chat interface sends the user's messages to the client REST API .
 3. The client REST API sends the user input to the AI Agent, calling the Druid API Create Activity (`POST *.druidplatform.com/api/generic-chat/{botId}/messages`).
 
-> **NOTE:** The client REST API DOES NOT wait for a synchronous response from this API call.
+{% hint style="info" %}
+**NOTE:** The client REST API DOES NOT wait for a synchronous response from this API call.
+{% endhint %}
 
 4. Backend client API polling for AI Agent responses:
 
@@ -79,7 +83,9 @@ The following sequence outlines how your backend client API handles communicatio
 
 ## Channel Configuration
 
-> **NOTE:** For Druid on premise deployments, make sure that you provide inbound access from the following messaging endpoint: DRUID.BotApp.
+{% hint style="info" %}
+**NOTE:** For Druid on premise deployments, make sure that you provide inbound access from the following messaging endpoint: DRUID.BotApp.
+{% endhint %}
 
 The Druid Generic Chat channel is active by default in Druid.
 
@@ -260,7 +266,9 @@ Here, `[[Entity]].StringField` represents the field that stores the token obtain
 
 The response structure for `getMessages` is identical to the *Responds with Message* sections described for SendMessages API response, containing the AI Agent response or an event.
 
-> **NOTE:** The `getMessages` endpoint will return the next available message or event as soon as it's ready, or after a timeout period if no message is available. The client API should continuously poll this endpoint until the conversation is officially closed.
+{% hint style="info" %}
+**NOTE:** The `getMessages` endpoint will return the next available message or event as soon as it's ready, or after a timeout period if no message is available. The client API should continuously poll this endpoint until the conversation is officially closed.
+{% endhint %}
 
 <a id="Requestbodyexamples"></a>
 

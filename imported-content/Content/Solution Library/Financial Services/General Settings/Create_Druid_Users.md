@@ -31,6 +31,8 @@ For either demo or production environments, you need to make sure that in the Dr
 
 To demo My Tasks, assign all three roles to your user.
 
-> **NOTE:** To view all users created in Druid, tick the **ShowChatUsers** check box.
->
-> ![](../../../Resources/Images/solution%20templates/Victor/view%20chatusers.png)
+{% hint style="info" %}
+**NOTE:** To view all users created in Druid, tick the **ShowChatUsers** check box.
+
+![](../../../Resources/Images/solution%20templates/Victor/view%20chatusers.png)
+{% endhint %}

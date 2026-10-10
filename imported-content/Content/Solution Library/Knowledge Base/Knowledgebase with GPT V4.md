@@ -28,7 +28,9 @@ This solution is ideal for teams looking to:
 - **Sub-3-Second Latency**. Optimized and purpose-built to deliver sub-3-second responses for real-time conversational flows.
 - **Webchat Streaming Experience**. Rich formatted responses are now rendered dynamically within a single, continuous message for a smoother user experience.
 - **Voice AI Agent Support**. Full compatibility is now extended to both text and voice AI Agents, expanding applicability beyond traditional text-based interactions.
-> **NOTE:** When using the solution for a voice AI Agent, you must activate the [AudioCodes channel](../../Channels/Voice%20Audio%20Codes/Voice%20Audio%20Codes%20Channel.md).
+{% hint style="info" %}
+**NOTE:** When using the solution for a voice AI Agent, you must activate the [AudioCodes channel](../../Channels/Voice%20Audio%20Codes/Voice%20Audio%20Codes%20Channel.md).
+{% endhint %}
 
 <a id="Benefits"></a>
 
@@ -43,7 +45,9 @@ This solution is ideal for teams looking to:
 
 ## Key Features and Components
 
-> **IMPORTANT!** This information is for informational purposes only. DO NOT change the configurations.
+{% hint style="warning" %}
+**IMPORTANT!** This information is for informational purposes only. DO NOT change the configurations.
+{% endhint %}
 
 This solution introduces intelligent fallback handling, automated routing, and powerful analytics through the following core components:
 

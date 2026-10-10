@@ -8,10 +8,14 @@ title: "Transfer Calls"
 Druid SIP supports two methods for transferring active calls from the AI Agent to an external contact center or target IP address:
 
 - **Direct Routing to SIP Server / Telephony System (Bridge Transfer)**. Druid SIP routes the call directly to an external SIP server or telephony system using an outbound SIP INVITE, remaining in the call path as a bridge.
-> **Info:** This feature is available starting with Druid 10.0.
+{% hint style="info" %}
+**Info:** This feature is available starting with Druid 10.0.
+{% endhint %}
 
 - **Send Transfer Request to Voice Gateway (Blind Transfer)**. Druid SIP sends a SIP REFER request to the upstream Voice Gateway, instructing it to redirect the caller to the target SIP server and release Druid SIP from the call. This method supports passing custom User-to-User Information (UUI) headers.
-> **Info:** This feature is available starting with Druid 9.31.
+{% hint style="info" %}
+**Info:** This feature is available starting with Druid 9.31.
+{% endhint %}
 
 <a id="DirectRoutingtoSIPServerTelephonySystemBridgeTransfer"></a>
 
@@ -32,7 +36,9 @@ Use a Bridge Transfer when you need Druid SIP to establish a direct connection b
 5. **Bridged audio path**. Druid SIP bridges the audio path so the caller communicates directly with the target telephony system.
 6. **Automated controls paused**. Because the caller is connected to the target system, Druid SIP automatically suppresses bot-level controls (such as text-to-speech cancellation, barge-in, no-input filler, and keypad/DTMF collection buffers).
 
-> **IMPORTANT!** Bridge transfers automatically integrate with Agent Assist (similar to AudioCodes integration). This integration is enabled by default and cannot be disabled. Druid SIP continues observing the call in the background, streaming keypad inputs from both the caller and the target endpoint to the agent assist pipeline with an `isInput` flag (`true` for caller, `false` for destination).
+{% hint style="warning" %}
+**IMPORTANT!** Bridge transfers automatically integrate with Agent Assist (similar to AudioCodes integration). This integration is enabled by default and cannot be disabled. Druid SIP continues observing the call in the background, streaming keypad inputs from both the caller and the target endpoint to the agent assist pipeline with an `isInput` flag (`true` for caller, `false` for destination).
+{% endhint %}
 
 <a id="Prerequisites"></a>
 
@@ -101,7 +107,9 @@ To include UUI parameters in a call transfer, you must store them in a Druid ent
 
 ![](../Resources/Images/Speech%20resources/transfer%20step.png)
 
-> **NOTE:** Specifying the entity in the **Input mapping** field of the **transfer** backchannel event step is strictly required for Druid SIP to parse and append the stored UUI parameters to the transfer request.
+{% hint style="info" %}
+**NOTE:** Specifying the entity in the **Input mapping** field of the **transfer** backchannel event step is strictly required for Druid SIP to parse and append the stored UUI parameters to the transfer request.
+{% endhint %}
 
 5. Save the step.
 

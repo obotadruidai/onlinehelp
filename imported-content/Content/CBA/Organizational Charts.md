@@ -9,7 +9,9 @@ Organizational charts display data in a hierarchical tree structure, typically r
 
 ![](../Resources/Images/CBA/org%20charts.png)
 
-> **NOTE:** This feature is available in DRUID 7.17 and higher.
+{% hint style="info" %}
+**NOTE:** This feature is available in DRUID 7.17 and higher.
+{% endhint %}
 
 <a id="SettingUpanOrganizationalChart"></a>
 

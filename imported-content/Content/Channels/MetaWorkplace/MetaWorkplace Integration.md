@@ -26,7 +26,9 @@ To integrate a AI Agent with Workplace, follow these steps:
 
 ## Step 1: Create Workplace app and generate access token
 
-> **NOTE:** Only System Administrators of a Workplace community can create apps and generate access tokens in that community.
+{% hint style="info" %}
+**NOTE:** Only System Administrators of a Workplace community can create apps and generate access tokens in that community.
+{% endhint %}
 
 To create a Workplace app, follow these steps:
 
@@ -41,9 +43,11 @@ A pop-up opens.
 
 ![](../../Resources/Images/Workspace/create%20integration.png)
 
-> **Info:** The name you provide your custom integration will be visible to your community users chatting with the AI Agent.
->
-> ![](../../Resources/Images/Workspace/workplace%20chat.png)
+{% hint style="info" %}
+**Info:** The name you provide your custom integration will be visible to your community users chatting with the AI Agent.
+
+![](../../Resources/Images/Workspace/workplace%20chat.png)
+{% endhint %}
 
 The integration details page appears.
 

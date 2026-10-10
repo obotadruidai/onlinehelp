@@ -7,7 +7,9 @@ title: "Druid-Hosted Full Cloud"
 
 All Druid solution components are hosted in Microsoft Azure and managed by Druid. With a Druid subscription, we mind the maintenance and updates while you focus on your business.
 
-> **NOTE:** Integration with your local applications is possible only if the respective applications provide API through the Internet.
+{% hint style="info" %}
+**NOTE:** Integration with your local applications is possible only if the respective applications provide API through the Internet.
+{% endhint %}
 
 <a id="DeploymentArchitecture"></a>
 

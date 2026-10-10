@@ -7,7 +7,9 @@ title: "Voice-to-Voice Live Conversations"
 
 Live voice-to-voice conversations with real-time translation are available in Multichat when the Voice channel is enabled. This feature allows agents to communicate more efficiently by switching seamlessly between text and voice during live interactions.
 
-> **NOTE:** This feature is available in DRUID 8.11 onwards and ensures a smooth, natural communication experience, making live conversations more accessible and effective. In previous DRUID versions, voice-to-text was available only for chat users.
+{% hint style="info" %}
+**NOTE:** This feature is available in DRUID 8.11 onwards and ensures a smooth, natural communication experience, making live conversations more accessible and effective. In previous DRUID versions, voice-to-text was available only for chat users.
+{% endhint %}
 
 When the Voice channel is active in the AI Agent channels settings, a microphone icon appears in all live chat conversations, except for the main AI Agent interaction. Agents can use this icon to initiate voice-to-voice conversations directly within the chat.
 

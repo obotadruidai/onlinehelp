@@ -9,7 +9,9 @@ Custom data sources allow you to extract data from third-party systems that expo
 
 Custom data sources can include databases, where each table represents a node, and table content represents records (such as articles). You can also use them to extract data from systems like Confluence, Zendesk, and Salesforce Ticketing/KB.
 
-> **NOTE:** Druid supports video file extraction. For requirements, limitations, and how the extraction works, see [Extracting Data from Video Files](Extract%20Data%20from%20Video%20Files.md).
+{% hint style="info" %}
+**NOTE:** Druid supports video file extraction. For requirements, limitations, and how the extraction works, see [Extracting Data from Video Files](Extract%20Data%20from%20Video%20Files.md).
+{% endhint %}
 
 <a id="Howcustomdatasourceswork"></a>
 
@@ -72,7 +74,9 @@ To create a crawling integration:
 ![](../Resources/Images/Custom%20Data%20Sources_01/cnn%20action.png)
 
 2. Create an integration task for crawling. Add a custom code integration task and other integrations to accommodate your use case (REST, SQL, SOAP, etc.).
-> **NOTE:** The crawling integration must exclusively use the dedicated system entity **[[KBCustomDSDiscoverTask]]**; otherwise, it will not appear in the data source configuration panel.
+{% hint style="info" %}
+**NOTE:** The crawling integration must exclusively use the dedicated system entity **[[KBCustomDSDiscoverTask]]**; otherwise, it will not appear in the data source configuration panel.
+{% endhint %}
 
 3. Define the crawling logic.
 
@@ -155,7 +159,9 @@ To create a crawling integration:
 
 4. Save the integration and publish it.
 
-> **NOTE:** The crawling context is automatically sent between successive calls by the platform.
+{% hint style="info" %}
+**NOTE:** The crawling context is automatically sent between successive calls by the platform.
+{% endhint %}
 
 How this template script works:
 
@@ -179,13 +185,17 @@ To create an extraction integration:
 
    ![](../Resources/Images/Custom%20Data%20Sources_01/extraction.png)
 2. Add a REST integration task to retrieve content files from the third-party system.
-> **NOTE:** The extraction integration must exclusively use the dedicated system entity **[[KBCustomDSProcessNodeTask]]**; otherwise, it will not appear in the data source configuration panel.
+{% hint style="info" %}
+**NOTE:** The extraction integration must exclusively use the dedicated system entity **[[KBCustomDSProcessNodeTask]]**; otherwise, it will not appear in the data source configuration panel.
+{% endhint %}
 
 3. Save the response in **[[KBCustomDSProcessNodeTask]].**<field of type file>. Set **Project Result To Entity Path** to **[[KBCustomDSProcessNodeTask]].**<field of type file>.
 
 ![](../Resources/Images/Custom%20Data%20Sources_01/Custom%20Data%20Sources.png)
 
-> **Info:** The most efficient way to extract data from third-party systems, you can configure the extraction integration to construct JSON content as per the Druid structured JSON format. This allows structured content from external systems to be processed efficiently. Save the response in a JSON file. For details on the structure of the JSON file, see [JSON File Structure](#JSON_File_Structure).
+{% hint style="info" %}
+**Info:** The most efficient way to extract data from third-party systems, you can configure the extraction integration to construct JSON content as per the Druid structured JSON format. This allows structured content from external systems to be processed efficiently. Save the response in a JSON file. For details on the structure of the JSON file, see [JSON File Structure](#JSON_File_Structure).
+{% endhint %}
 
 4. Add a custom code task to extract the content from the previous response and store it inside FileContent in the corresponding KB node (file node).
 

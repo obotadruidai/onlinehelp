@@ -7,9 +7,13 @@ title: "Twilio SMS"
 
 Integrate Druid AI Agents with Twilio SMS to enable customers to start and conduct conversations with AI Agents through standard SMS text messaging.
 
-> **NOTE:** Twillio SMS channel integration is not available in Druid on premise deployments; you cannot activate the channel.
+{% hint style="info" %}
+**NOTE:** Twillio SMS channel integration is not available in Druid on premise deployments; you cannot activate the channel.
+{% endhint %}
 
-> **IMPORTANT!** During initial user interaction, the Welcome flow triggers automatically. The intent prediction for the first user message is bypassed to ensure a consistent onboarding message.
+{% hint style="warning" %}
+**IMPORTANT!** During initial user interaction, the Welcome flow triggers automatically. The intent prediction for the first user message is bypassed to ensure a consistent onboarding message.
+{% endhint %}
 
 <a id="Prerequisites"></a>
 
@@ -120,4 +124,6 @@ https://sms.botframework.com/api/sms
 
 5. Click **Save configuration**.
 
-> **NOTE:** When a user initiates a conversation with the AI Agent, the Welcome flow will be automatically triggered. Regardless of the user's subscription status to the AI Agent channel, the welcome message will be promptly sent to the user, ensuring a seamless and engaging interaction experience.
+{% hint style="info" %}
+**NOTE:** When a user initiates a conversation with the AI Agent, the Welcome flow will be automatically triggered. Regardless of the user's subscription status to the AI Agent channel, the welcome message will be promptly sent to the user, ensuring a seamless and engaging interaction experience.
+{% endhint %}

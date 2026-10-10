@@ -7,7 +7,9 @@ title: "Workspace Designer"
 
 The Workspace Designer helps creating create and refining workspace components—including charts, forms, views, and dashboards—using natural language. It transforms your business requirements into workspace configurations, reducing manual design effort and accelerating workspace design.
 
-> **NOTE:** The Workspace Designer currently supports chart authoring only. Support for additional workspace components, including forms, views, and dashboards, is planned for future releases.
+{% hint style="info" %}
+**NOTE:** The Workspace Designer currently supports chart authoring only. Support for additional workspace components, including forms, views, and dashboards, is planned for future releases.
+{% endhint %}
 
 <a id="ChartsAgent"></a>
 

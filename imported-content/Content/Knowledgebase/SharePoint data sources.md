@@ -7,7 +7,9 @@ title: "SharePoint Data Sources"
 
 You can add a SharePoint data source to the KB, enabling the extraction of paragraphs from Excel, Word, and PDF documents within SharePoint site libraries.
 
-> **NOTE:** Druid supports video file extraction. For requirements, limitations, and how the extraction works, see [Extracting Data from Video Files](Extract%20Data%20from%20Video%20Files.md).
+{% hint style="info" %}
+**NOTE:** Druid supports video file extraction. For requirements, limitations, and how the extraction works, see [Extracting Data from Video Files](Extract%20Data%20from%20Video%20Files.md).
+{% endhint %}
 
 <a id="GeneralPrerequisites"></a>
 
@@ -176,7 +178,9 @@ Replace the `{siteId}` with the value you copied at step 7.b for the **siteColle
 
 This section describes how to add a SharePoint data source and extract paragraphs from documents stored in SharePoint libraries.
 
-> **NOTE:** You can authenticate with SharePoint in two ways: using a SharePoint client secret or a Druid-generated certificate. If you want to authenticate with SharePoint by using a Druid-generated certificate, you should follow the procedure described in section [Authenticate with SharePoint by using a DRUID-generated certificate](#Authenticate_with_SharePoint_by_using_a_DRUID-generated_certificate) before adding the data source; otherwise, verifying the data source credentials at creation time will fail.
+{% hint style="info" %}
+**NOTE:** You can authenticate with SharePoint in two ways: using a SharePoint client secret or a Druid-generated certificate. If you want to authenticate with SharePoint by using a Druid-generated certificate, you should follow the procedure described in section [Authenticate with SharePoint by using a DRUID-generated certificate](#Authenticate_with_SharePoint_by_using_a_DRUID-generated_certificate) before adding the data source; otherwise, verifying the data source credentials at creation time will fail.
+{% endhint %}
 
 <a id="Step1Createthedatasource"></a>
 
@@ -211,7 +215,9 @@ To find the SharePoint Content Location (URL), follow these steps:
 
 The newly created certificate is automatically selected in the **Certificate** field.
 
-> **Info:** If you create the certificate during data source creation, testing the data source credentials immediately will fail because the certificate needs to be imported into Azure first. We recommend following the procedure described in section [Authenticate with SharePoint by using a DRUID-generated certificate](#Authenticate_with_SharePoint_by_using_a_DRUID-generated_certificate).
+{% hint style="info" %}
+**Info:** If you create the certificate during data source creation, testing the data source credentials immediately will fail because the certificate needs to be imported into Azure first. We recommend following the procedure described in section [Authenticate with SharePoint by using a DRUID-generated certificate](#Authenticate_with_SharePoint_by_using_a_DRUID-generated_certificate).
+{% endhint %}
 
 7. Optionally, set the **Min score threshold** and the **Target match score** for the data source. If not set, the thresholds from the Knowledge Base will apply.
 8. To verify the SharePoint credentials, click the **Test** button. If the check fails, check and review the SharePoint credentials to ensure they are correct. You can also verify the SharePoint credentials later by going to the **Details** tab of the SharePoint data source and clicking the **Test** button at the bottom of the page.
@@ -234,11 +240,15 @@ In the Start Crawling Parameters modal, define the crawling policy by setting th
 
 After you define the crawling policy, click **Start**.
 
-> **Info:** Based on the crawling policy set, it might take up to a few minutes for the crawling to complete. You might want to refresh from time to time to see when the action has completed.
+{% hint style="info" %}
+**Info:** Based on the crawling policy set, it might take up to a few minutes for the crawling to complete. You might want to refresh from time to time to see when the action has completed.
+{% endhint %}
 
 As the crawler visits the link provided in the **Content location (URL)** field, it will identify all the hyperlinks in the retrieved web pages and will add them to the list of URLs to visit.
 
-> **NOTE:** For SharePoint Online data sources, the crawler also identifies subsites and displays them as folders in the Data Source Tree Explorer.
+{% hint style="info" %}
+**NOTE:** For SharePoint Online data sources, the crawler also identifies subsites and displays them as folders in the Data Source Tree Explorer.
+{% endhint %}
 
 To crawl a specific node, hover the mouse over the desired node in the tree explorer, click the Actions menu (the dots) and select t **Crawl Path**.
 
@@ -252,7 +262,9 @@ To extract data from the SharePoint library, click the **Extract** button at the
 
 You can select the pages Druid will extract information from during the extraction process. To include in the scrapping specific pages, click the dots next to the desired file explorer element and select **Include**. Subsequently, you can exclude certain pages from scrapping by clicking the dots next to the desired file explorer element and select **Exclude**. The pages excluded from scrapping appear on the **Details** tab, in the **Exclude from scrapping** area.
 
-> **NOTE:** The extraction might take a few seconds, depending on the number of links included in the scrapping.
+{% hint style="info" %}
+**NOTE:** The extraction might take a few seconds, depending on the number of links included in the scrapping.
+{% endhint %}
 
 <a id="Step4Trainthedatasource"></a>
 

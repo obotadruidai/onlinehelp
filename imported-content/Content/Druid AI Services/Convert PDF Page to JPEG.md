@@ -7,9 +7,13 @@ title: "Convert PDF Page to JPEG"
 
 This Vision endpoint allows you to convert individual PDF pages into .jpeg format, enabling you to send images to GPT-4.o, which cannot perform OCR directly from PDF files.
 
-> **IMPORTANT!**  If you need to convert multiple PDF pages, you must make a separate API request for each page you want to convert.
+{% hint style="warning" %}
+**IMPORTANT!**  If you need to convert multiple PDF pages, you must make a separate API request for each page you want to convert.
+{% endhint %}
 
-> **NOTE:**  To use this Druid Vision service, you must have at least one Identity Vision API service enabled for your tenant. If not, please contact [Druid Tech Support](<mailto:support@druidai.com?subject=Request: Activate Druid Vision service IdentityCard>).
+{% hint style="info" %}
+**NOTE:**  To use this Druid Vision service, you must have at least one Identity Vision API service enabled for your tenant. If not, please contact [Druid Tech Support](<mailto:support@druidai.com?subject=Request: Activate Druid Vision service IdentityCard>).
+{% endhint %}
 
 <a id="Request"></a>
 

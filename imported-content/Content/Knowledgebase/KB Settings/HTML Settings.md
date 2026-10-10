@@ -77,7 +77,9 @@ Enter one pattern per line.
 
 Enter Playwright-compatible JavaScript that runs after the page loads and before extraction. The script can change the DOM so dynamically rendered content is visible to the crawler—for example, expanding accordions or tabs, clicking Load more, closing cookie banners, or waiting for API-driven content.
 
-> **NOTE:** This setting applies only to website data sources where **Crawl using HTTP** requests is disabled. If you have multiple website data sources, configure the script on each data source that needs it. For more information, see [Step 2. Configure Advanced Content Rendering (Optional)](../Website%20data%20sources.md#Step).
+{% hint style="info" %}
+**NOTE:** This setting applies only to website data sources where **Crawl using HTTP** requests is disabled. If you have multiple website data sources, configure the script on each data source that needs it. For more information, see [Step 2. Configure Advanced Content Rendering (Optional)](../Website%20data%20sources.md#Step).
+{% endhint %}
 
 Leave the field empty when pages are fully static and no interaction is required before scrape.
 
@@ -130,4 +132,6 @@ What the script does:
 
 4. **Waits for newly revealed content**. If any elements are successfully clicked, the script waits another 500 milliseconds for new content to render before crawling continues.
 
-> **IMPORTANT!** The matching rules are intentionally broad. Any button or link containing one of the specified words may be clicked, even if it is unrelated to revealing content. For a particular website, using more specific CSS selectors is safer and produces more predictable results.
+{% hint style="warning" %}
+**IMPORTANT!** The matching rules are intentionally broad. Any button or link containing one of the specified words may be clicked, even if it is unrelated to revealing content. For a particular website, using more specific CSS selectors is safer and produces more predictable results.
+{% endhint %}

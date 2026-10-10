@@ -7,7 +7,9 @@ title: "Save Files with the Druid Connector Host"
 
 The Save File integration task enables the DRUID Connector Host to save files uploaded by users in the chat to a specified local disk or network location accessible by the host machine.
 
-> **NOTE:** This integration is available for DRUID Connector Host version 9.0 and higher and is exclusively for hybrid and on-premises installations.
+{% hint style="info" %}
+**NOTE:** This integration is available for DRUID Connector Host version 9.0 and higher and is exclusively for hybrid and on-premises installations.
+{% endhint %}
 
 <a id="Prerequisites"></a>
 
@@ -52,7 +54,9 @@ To configure the Save File integration for saving a single file:
 
 4. Provide a short description for the task.
 5. In the **File Path** field, enter the destination path where you want to save the file (e.g., *C:\fd*). Do not use quotation marks.
-> **Info:** If you specify a folder and/or subfolder that doesn't exist (e.g., *C:\fd\b\d* where *b* and *d* are new), they will be created automatically, and the file will be saved at the specified location.
+{% hint style="info" %}
+**Info:** If you specify a folder and/or subfolder that doesn't exist (e.g., *C:\fd\b\d* where *b* and *d* are new), they will be created automatically, and the file will be saved at the specified location.
+{% endhint %}
 
 6. From the **File Entity** field, select the entity file-field that stores the file you want to save.
 7. **Optional**: The file is saved both to your specified path and to the connector's temporary file storage folder (configured during installation in the Document generator section, under the **File Storage Folder** parameter). To automatically remove the file from the connector's temporary storage after it's saved to your specified file path, tap on **Delete Initial File**. The connector file storage is regularly auto-cleared, but this option provides immediate removal.
@@ -78,7 +82,9 @@ To configure the Save File integration for saving multiple files:
 5. Tap on **Use File Batch Execution**.
 6. From the **File Batch Location** field, select the entity list of type file that stores the list of files you want to save.
 7. In the **File Path** field, enter the destination path where you want to save the files (e.g., *C:\fd*). Do not use quotation marks.
-> **Info:** If you specify a folder and/or subfolder that doesn't exist (e.g., *C:\fd\b\d* where *b* and *d* are new), they will be created automatically, and the file will be saved at the specified location.
+{% hint style="info" %}
+**Info:** If you specify a folder and/or subfolder that doesn't exist (e.g., *C:\fd\b\d* where *b* and *d* are new), they will be created automatically, and the file will be saved at the specified location.
+{% endhint %}
 
 8. **Optional**: The file is saved both to your specified path and to the connector's temporary file storage folder (configured during installation in the Document generator section, under the **File Storage Folder** parameter). To automatically remove the file from the connector's temporary storage after it's saved to your specified file path, tap on **Delete Initial File**. The connector file storage is regularly auto-cleared, but this option provides immediate removal.
 

@@ -15,4 +15,6 @@ With this connector app, your AI Agent can generate documents on the fly, as fol
 - Generate a PDF file from a document template (e.g., a contract) and merge it with other PDF files (e.g., appendices).
 - Merge PDF files stored in an entity list of files.
 
-> **NOTE:** The Druid AI Platform automatically provisions the **Document\_Generator** connector app, so no need to create it. It is by default available on all tenants and all AI Agents.
+{% hint style="info" %}
+**NOTE:** The Druid AI Platform automatically provisions the **Document\_Generator** connector app, so no need to create it. It is by default available on all tenants and all AI Agents.
+{% endhint %}

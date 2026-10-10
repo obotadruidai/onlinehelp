@@ -7,15 +7,21 @@ title: "Outlook"
 
 You can configure your AI Agent to communicate with users via email. By configuring your AI Agent to access an email account, it receives a message when a new email arrives. This enables the AI Agent to use email as a channel for responding to user inquiries. In response to a user's email message, the AI Agent could send an email reply.
 
-> **NOTE:**
->
-> - The Outlook channel works with Office 365 only. Other email services are not currently supported.
-> - This channel is available only in cloud and hybrid Druid deployments. You cannot activate the channel in Druid on-premise deployments.
-> - The Outlook channel only supports message steps. Rich content flow steps (such as hero cards or choice steps) are not supported.
+{% hint style="info" %}
+**NOTE:**
 
-> **Info:** The Outlook channel includes an email attachment antimalware scan. If an incoming email contains a corrupted or malicious file, the Flow Engine triggers the conversation using only the safe components (such as the email body and recipients). Details regarding the infected email and the malicious file names are logged in the Conversation History.
+- The Outlook channel works with Office 365 only. Other email services are not currently supported.
+- This channel is available only in cloud and hybrid Druid deployments. You cannot activate the channel in Druid on-premise deployments.
+- The Outlook channel only supports message steps. Rich content flow steps (such as hero cards or choice steps) are not supported.
+{% endhint %}
 
-> **IMPORTANT!** Unlike chat-based channels (such as WebChat or MS Teams), the Outlook channel does not persist conversation context. Each incoming email starts a new, independent conversation. While the AI Agent can reply to the sender or all recipients, it treats each email as a fresh interaction, regardless of whether it is part of an ongoing email thread.
+{% hint style="info" %}
+**Info:** The Outlook channel includes an email attachment antimalware scan. If an incoming email contains a corrupted or malicious file, the Flow Engine triggers the conversation using only the safe components (such as the email body and recipients). Details regarding the infected email and the malicious file names are logged in the Conversation History.
+{% endhint %}
+
+{% hint style="warning" %}
+**IMPORTANT!** Unlike chat-based channels (such as WebChat or MS Teams), the Outlook channel does not persist conversation context. Each incoming email starts a new, independent conversation. While the AI Agent can reply to the sender or all recipients, it treats each email as a fresh interaction, regardless of whether it is part of an ongoing email thread.
+{% endhint %}
 
 <a id="Prerequisites"></a>
 
@@ -31,9 +37,11 @@ Before you begin the integration process, ensure you have the following:
 
 - A dedicated user email account created in the Azure Portal for the AI Agent to use when sending and receiving emails.
   You can have multiple dedicated email accounts for the AI Agent.
-> **IMPORTANT!** The dedicated email account(s) must have a Microsoft 365 license assigned. Without a license, the Outlook channel will not activate — and no error message will be displayed, making this issue difficult to troubleshoot. License assignment cannot be done from the Azure Portal; it must be done from the [Microsoft 365 Admin Center](https://admin.cloud.microsoft/). For instructions on how to assign a license to a user, refer to the [Microsoft documentation](https://learn.microsoft.com/en-us/microsoft-365/admin/manage/assign-licenses-to-users?view=o365-worldwide) on assigning licenses to users.
->
-> ![](../Resources/Images/Outlook/user%20ms%20license.png)
+{% hint style="warning" %}
+**IMPORTANT!** The dedicated email account(s) must have a Microsoft 365 license assigned. Without a license, the Outlook channel will not activate — and no error message will be displayed, making this issue difficult to troubleshoot. License assignment cannot be done from the Azure Portal; it must be done from the [Microsoft 365 Admin Center](https://admin.cloud.microsoft/). For instructions on how to assign a license to a user, refer to the [Microsoft documentation](https://learn.microsoft.com/en-us/microsoft-365/admin/manage/assign-licenses-to-users?view=o365-worldwide) on assigning licenses to users.
+
+![](../Resources/Images/Outlook/user%20ms%20license.png)
+{% endhint %}
 
 <a id="ConfiguringtheOutlookchannel"></a>
 
@@ -127,12 +135,18 @@ For more information, see [Email Threading and Conversation Grouping](#Email_Thr
 | Inactivity end conversation flow | Select the flow triggered when prolonged inactivity occurs both inside a flow and in "idle" mode (outside any conversational flow). This can be used to automatically gather user feedback a certain time after a conversation has stalled, or to completely refresh and reset the conversation state. |
 | Conversation timeout (min) | Specifies the total number of minutes of global inactivity (covering both active flow states and idle states) the system waits before declaring the session completely timed out and triggering the Inactivity end conversation flow. |
 
-> **Info:** These channel-specific thresholds for conversation cancellation and termination are available starting with Druid 9.25.
+{% hint style="info" %}
+**Info:** These channel-specific thresholds for conversation cancellation and termination are available starting with Druid 9.25.
+{% endhint %}
 
 7. In the **Email address** field, enter the dedicated email account created in the Azure Portal for the AI Agent. If you want to add multiple email addresses for the AI Agent, click the **+** icon and enter the email address.
-> **IMPORTANT!** The email account(s) entered here must have a Microsoft 365 license assigned. If the license is missing, the channel will not activate, and no error message will be shown. License assignment is not available from the Azure Portal — it must be managed exclusively through the [Microsoft 365 Admin Center](https://admin.cloud.microsoft/). For instructions on how to assign a license to a user, refer to the [Microsoft documentation](https://learn.microsoft.com/en-us/microsoft-365/admin/manage/assign-licenses-to-users?view=o365-worldwide) on assigning licenses to users.
+{% hint style="warning" %}
+**IMPORTANT!** The email account(s) entered here must have a Microsoft 365 license assigned. If the license is missing, the channel will not activate, and no error message will be shown. License assignment is not available from the Azure Portal — it must be managed exclusively through the [Microsoft 365 Admin Center](https://admin.cloud.microsoft/). For instructions on how to assign a license to a user, refer to the [Microsoft documentation](https://learn.microsoft.com/en-us/microsoft-365/admin/manage/assign-licenses-to-users?view=o365-worldwide) on assigning licenses to users.
+{% endhint %}
 
-> **NOTE:** Do not enter your own personal email account, as every message sent to that email account will be forwarded to the AI Agent. This can result in the AI Agent inappropriately sending a response to a sender. For this reason, AI Agent should only use dedicated M365 email accounts.
+{% hint style="info" %}
+**NOTE:** Do not enter your own personal email account, as every message sent to that email account will be forwarded to the AI Agent. This can result in the AI Agent inappropriately sending a response to a sender. For this reason, AI Agent should only use dedicated M365 email accounts.
+{% endhint %}
 
 8. Click the **Publish** button. The channel activation might take up to 1 minute.
 
@@ -167,7 +181,9 @@ The **ForwardTo** field controls whether the AI Agent forwards the incoming emai
 
 To forward the email, populate **[[Email]].ForwardTo** with one or more destination email addresses. Separate multiple addresses with a semicolon (;) and no spaces.
 
-> **NOTE:** When the **[[Email]].ForwardTo** field is populated, forwarding takes priority over the **[[Email]].ReplyToAll** setting. The AI Agent forwards the message and does not generate a reply.
+{% hint style="info" %}
+**NOTE:** When the **[[Email]].ForwardTo** field is populated, forwarding takes priority over the **[[Email]].ReplyToAll** setting. The AI Agent forwards the message and does not generate a reply.
+{% endhint %}
 
 When the AI Agent forwards an email:
 
@@ -215,15 +231,19 @@ Use a `GET` request to retrieve the mail folder list in the root folder for the 
 | URL | https://graph.microsoft.com/v1.0/users/<AI Agent email address>/mailFolders |
 | Header | Authorization: Bearer token <access\_token> |
 
-> **NOTE:** You can also move emails to a hidden folder; however they are not listed by default in the response. To include hidden mail folders in the response, use the following URL in the request:
->
-> https://graph.microsoft.com/v1.0/users/<email address>/mailFolder/?includeHiddenFolders=true.
+{% hint style="info" %}
+**NOTE:** You can also move emails to a hidden folder; however they are not listed by default in the response. To include hidden mail folders in the response, use the following URL in the request:
+
+https://graph.microsoft.com/v1.0/users/<email address>/mailFolder/?includeHiddenFolders=true.
+{% endhint %}
 
 Copy the id of the folder where you want to move the email(s).
 
 ![](../Resources/Images/Outlook/get%20folder%20id.png)
 
-> **Info:** If a collection exceeds the default page size (10 items), the `@odata.nextLink` property is returned in the response to indicate more items are available and provide the request URL for the next page of items.
+{% hint style="info" %}
+**Info:** If a collection exceeds the default page size (10 items), the `@odata.nextLink` property is returned in the response to indicate more items are available and provide the request URL for the next page of items.
+{% endhint %}
 
 <a id="Step3MoveEmailtoFolder"></a>
 
@@ -271,7 +291,9 @@ You can use the returned JSON data in your integrations to accommodate your need
 
 ## <a id="Email_Threading_and_Conversation_Grouping"></a>Email Threading and Conversation Grouping
 
-> **Info:** This feature is available starting with Druid 9.27.
+{% hint style="info" %}
+**Info:** This feature is available starting with Druid 9.27.
+{% endhint %}
 
 To align with standard Microsoft Outlook behavior, the Druid Outlook channel intelligently analyzes incoming emails to determine whether they belong to an ongoing thread or represent a brand-new inquiry.
 

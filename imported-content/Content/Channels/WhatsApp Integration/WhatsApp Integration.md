@@ -9,7 +9,9 @@ To make it easy for your consumers to make purchases and get answers to question
 
 The Druid AI Platform provides the WhatsApp channel via the integration partner Vonage.
 
-> **NOTE:** The Welcome flow will be triggered at the user's first conversation with the AI Agent; the predict with the initial "user says" is dropped.
+{% hint style="info" %}
+**NOTE:** The Welcome flow will be triggered at the user's first conversation with the AI Agent; the predict with the initial "user says" is dropped.
+{% endhint %}
 
 This section describes how to connect your AI Agent with your Vonage account.
 
@@ -35,7 +37,9 @@ To integrate an AI Agent with your Vonage account, follow these steps:
 
 ### Step 1. Get authentication details
 
-> **NOTE:** If a JSON Web Token (JWT) was provided to you upon Vonage account creation, you will use it to authenticate your requests; skip this step.
+{% hint style="info" %}
+**NOTE:** If a JSON Web Token (JWT) was provided to you upon Vonage account creation, you will use it to authenticate your requests; skip this step.
+{% endhint %}
 
 #### Step 1.1. Log into your Vonage Dashboard
 
@@ -55,7 +59,9 @@ Write down or copy/paste in a document the API key and API secret, you will need
 
 #### <a id="Step_1.3."></a>Step 1.3. Generate JWT token for WhatsApp PROD environment using WhatsApp Messages API version v1
 
-> **IMPORTANT!** If you operate in a WhatsApp PROD environment using WhatsApp Messages API version v1, you must generate a JWT token for your Vonage application because authenticating using the API Key and secret is not working.
+{% hint style="warning" %}
+**IMPORTANT!** If you operate in a WhatsApp PROD environment using WhatsApp Messages API version v1, you must generate a JWT token for your Vonage application because authenticating using the API Key and secret is not working.
+{% endhint %}
 
 To generate a JWT token, follow these steps:
 
@@ -128,9 +134,13 @@ In the Vonage Dashboard, from the **TROUBLESHOOT & LEARN** menu, click **Message
 
 From the **Message API version** drop-down, select the desired version.
 
-> **NOTE:** Use the WhatsApp Messages API version v1 to render interactive messages. This way you provide a better end-user experience and streamline the interactions with your clients / users, which can lead to better engagement and response rates. Interactive messages provide users with a simplified way to make a selection from multiple options or from a menu.
+{% hint style="info" %}
+**NOTE:** Use the WhatsApp Messages API version v1 to render interactive messages. This way you provide a better end-user experience and streamline the interactions with your clients / users, which can lead to better engagement and response rates. Interactive messages provide users with a simplified way to make a selection from multiple options or from a menu.
+{% endhint %}
 
-> **IMPORTANT!** If you're changing the Message API Version for a AI Agent that has the WhatsApp Channel activated, you should provide the new **URL** in Druid channel configuration (see [Step 2](#Step_2.whatsapp)); otherwise, the AI Agent will NOT respond to users chatting in the WhatsApp channel.
+{% hint style="warning" %}
+**IMPORTANT!** If you're changing the Message API Version for a AI Agent that has the WhatsApp Channel activated, you should provide the new **URL** in Druid channel configuration (see [Step 2](#Step_2.whatsapp)); otherwise, the AI Agent will NOT respond to users chatting in the WhatsApp channel.
+{% endhint %}
 
 ![](../../Resources/Images/WhatsApp%20Integration/select%20message%20version.png)
 
@@ -144,7 +154,9 @@ You can now test the WhatsApp channel.
 
 ### Step 4. Associate multiple phone numbers to the same AI Agent (optional)
 
-> **NOTE:** AI Agent support for multiple phone numbers is available in DRUID 8.3 and higher.
+{% hint style="info" %}
+**NOTE:** AI Agent support for multiple phone numbers is available in DRUID 8.3 and higher.
+{% endhint %}
 
 Prerequisite: You need to have multiple accounts, each with an unique WhatsApp number. For more information on managing WhatsApp numbers, see [Vonage documentation](https://developer.vonage.com/en/messages/concepts/whatsapp?source=messages), section “WhatsApp Number Hosting”.
 
@@ -174,9 +186,13 @@ Follow the Web WhatsApp and send the passphrase message filled in automatically 
 
 You are now connected with your AI Agent in the WhatsApp channel.
 
-> **NOTE:** When a user initiates a conversation with the AI Agent, the Welcome flow will be automatically triggered. Regardless of the user's subscription status to the AI Agent channel, the welcome message will be promptly sent to the user, ensuring a seamless and engaging interaction experience.
+{% hint style="info" %}
+**NOTE:** When a user initiates a conversation with the AI Agent, the Welcome flow will be automatically triggered. Regardless of the user's subscription status to the AI Agent channel, the welcome message will be promptly sent to the user, ensuring a seamless and engaging interaction experience.
+{% endhint %}
 
-> **NOTE:** If the same chat user sends messages to multiple phone numbers associated to the same AI Agent, different conversation IDs will be generated for each phone number. This ensures that each ChannelBotIdentifier corresponds to a unique ConversationId.
+{% hint style="info" %}
+**NOTE:** If the same chat user sends messages to multiple phone numbers associated to the same AI Agent, different conversation IDs will be generated for each phone number. This ensures that each ChannelBotIdentifier corresponds to a unique ConversationId.
+{% endhint %}
 
 <a id="Receivingandprocessingvoicemessages"></a>
 

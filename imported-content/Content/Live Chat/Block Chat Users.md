@@ -27,11 +27,15 @@ By default, BlockIntervalMinutes (the blocking period) is **1440 minutes** (24 h
 
 ![](../Resources/Images/Live%20Chat/block%20internal%20action.png)
 
-> **NOTE:** Because blocking anonymous users is done within the conversational context, we recommend you to block anonymous users for a shorter period, or leave the **BlockIntervalMinutes** set to the default value that is 1440 minutes (24 hours).
+{% hint style="info" %}
+**NOTE:** Because blocking anonymous users is done within the conversational context, we recommend you to block anonymous users for a shorter period, or leave the **BlockIntervalMinutes** set to the default value that is 1440 minutes (24 hours).
+{% endhint %}
 
-> **Info:** You can also block authenticated users directly in the Druid Portal, (**Administration** menu > **Users**) in the edit user page. Click on the **Live Chat Blacklist** tab enter a reason for blocking the user, set the blocking interval in minutes (default is 1440 minutes) and click the **Block user** button, then click **Save**.
->
-> ![](../Resources/Images/Live%20Chat/block%20auth%20user.png)
+{% hint style="info" %}
+**Info:** You can also block authenticated users directly in the Druid Portal, (**Administration** menu > **Users**) in the edit user page. Click on the **Live Chat Blacklist** tab enter a reason for blocking the user, set the blocking interval in minutes (default is 1440 minutes) and click the **Block user** button, then click **Save**.
+
+![](../Resources/Images/Live%20Chat/block%20auth%20user.png)
+{% endhint %}
 
 If an authenticated user is blocked for Live Chat, the user is added to the Live Chat Blacklist. If in the **HelpdeskClient.IsBlockedForLiveChat** internal action, the parameter "SaveToChatActivityData" is set to **true**, the following information is stored in the [[ChatActivityData]] system entity:
 

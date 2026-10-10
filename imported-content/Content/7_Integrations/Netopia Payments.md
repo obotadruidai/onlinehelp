@@ -34,7 +34,9 @@ This section explains how to configure Netopia Payments in your conversational f
 
 1. Go to [Netopia Payments admin console](https://admin.netopia-payments.com/domains) and log in.
 2. To generate an API Key for a Sandbox environment, click **Sandbox** on the main menu.
-> **Info:** If you’re working in the **Live** environment, skip this step.
+{% hint style="info" %}
+**Info:** If you’re working in the **Live** environment, skip this step.
+{% endhint %}
 
 3. In the top-right corner, click on the profile icon and select **Security**.
 
@@ -63,14 +65,18 @@ The app configuration page appears.
 
 3. In the **Code** field, enter a unique name for your app.
 4. From the **NETOPIA Payment Environment** drop-down, select the environment type: **Sandbox** or **Live**.
-> **Info:** Start with the Sandbox environment to test and confirm your configuration. After successful testing, update the app with the POS Signature and API Key for the Live environment. These credentials are specific to each Netopia Payments environment.
+{% hint style="info" %}
+**Info:** Start with the Sandbox environment to test and confirm your configuration. After successful testing, update the app with the POS Signature and API Key for the Live environment. These credentials are specific to each Netopia Payments environment.
+{% endhint %}
 
 5. In the **API Key** field, enter the API key you generated at [Step 1](#Step_1).
 6. In the **POS Signature** field, enter the **Signature** generated for your POS in the Netopia Payments admin console. To get the Signature, follow these steps:
 
 1. Go to [Netopia Payments admin console](https://admin.netopia-payments.com/domains) and log in.
 2. To view POS details for the sandbox environment, click **Sandbox** on the main menu, then in the sandbox environment, click **Point of sale** on the main menu.
-> **Info:** If you’re working in the **Live** environment, skip this step.
+{% hint style="info" %}
+**Info:** If you’re working in the **Live** environment, skip this step.
+{% endhint %}
 
 3. Next to your e-commerce provider, click the **Actions** icon (⋮) and select **Technical settings**.
 
@@ -160,7 +166,9 @@ When testing the Netopia Payments integration in sandbox mode, please note the f
 
 The Netopia Payments integration provides the full transaction details into the conversation context —including issuer information, currency, and Netopia identifiers.
 
-> **NOTE:** In Druid versions prior to 9.18, only the status codes were available after the payment processing.
+{% hint style="info" %}
+**NOTE:** In Druid versions prior to 9.18, only the status codes were available after the payment processing.
+{% endhint %}
 
 When a payment is processed, Druid populates the **[[ConversationInfo]].Payment.Status** entity field with a JSON object containing the full response from Netopia.
 
@@ -277,7 +285,9 @@ The most common status codes are:
 
 For a complete list of status codes and error messages, refer to the [Netopia Errors & Statuses](https://doc.netopia-payments.com/docs/payment-api/v2.x/start/start-Error) documentation.
 
-> **NOTE:** The payment status can be accessed in your conversation flow using **[[ConversationInfo]].Payment.Status** in the last message.
+{% hint style="info" %}
+**NOTE:** The payment status can be accessed in your conversation flow using **[[ConversationInfo]].Payment.Status** in the last message.
+{% endhint %}
 
 <a id="TrackingPaymentHistory"></a>
 

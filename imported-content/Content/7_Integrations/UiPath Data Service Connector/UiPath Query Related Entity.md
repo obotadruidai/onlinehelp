@@ -7,10 +7,12 @@ title: "UiPath Query Related Entity"
 
 Queries the request entity's records and returns a collection.
 
-> **IMPORTANT!** Before defining the integration task, make sure that you have mapped the UiPath Data Service entity to the Druid request entity; otherwise, you won’t be able to set the integration task response:
->
-> - The response entity should have a field of type Entity list referencing the UiPath entity.
-> - The Druid entity mapped to a UiPath entity should have a field of type Entity referencing the entity in which you want to receive the response.
+{% hint style="warning" %}
+**IMPORTANT!** Before defining the integration task, make sure that you have mapped the UiPath Data Service entity to the Druid request entity; otherwise, you won’t be able to set the integration task response:
+
+- The response entity should have a field of type Entity list referencing the UiPath entity.
+- The Druid entity mapped to a UiPath entity should have a field of type Entity referencing the entity in which you want to receive the response.
+{% endhint %}
 
 <a id="GeneralSettings"></a>
 

@@ -37,7 +37,9 @@ The archive contains the following files:
 - get-salesforce-tickets – used to get the list of open tickets
 - close-salesforce-ticket – used to close a ticket in Salesforce
 
-> **NOTE:** The **get-salesforce-tickets** process is using Druid-UiPath integration via queues while the other processes are using the integration via webhooks.
+{% hint style="info" %}
+**NOTE:** The **get-salesforce-tickets** process is using Druid-UiPath integration via queues while the other processes are using the integration via webhooks.
+{% endhint %}
 
 Unzip the files, you will need them during the processes setup.
 
@@ -76,7 +78,9 @@ Add the following UiPath assets:
 
 #### Step 3.3. Publish the Salesforce Ticket UiPath Processes
 
-> **NOTE:** The UiPath setup for the UiPath processes **add-salesforce-ticket** and **close-salesforce-ticket** is done on the [Druid-Uipath integration via Webhooks](../7_Integrations/UiPath/Starting%20UiPath%20Unattended.md).
+{% hint style="info" %}
+**NOTE:** The UiPath setup for the UiPath processes **add-salesforce-ticket** and **close-salesforce-ticket** is done on the [Druid-Uipath integration via Webhooks](../7_Integrations/UiPath/Starting%20UiPath%20Unattended.md).
+{% endhint %}
 
 ##### 3.3.1 For each of the following UiPath Processes: add-salesforce-ticket and close-salesforce-ticket, follow these steps:
 
@@ -90,7 +94,9 @@ Add the following UiPath assets:
 
 ##### 3.3.2 Publish the get-salesforce-tickets process
 
-> **NOTE:** The UiPath setup for the **get-salesforce-tickets** process is done on the [Druid-Uipath integration via Orchestrator queues](../7_Integrations/UiPath/Running%20Unattended%20Process%20using%20Orchestrator%20Queues.md).
+{% hint style="info" %}
+**NOTE:** The UiPath setup for the **get-salesforce-tickets** process is done on the [Druid-Uipath integration via Orchestrator queues](../7_Integrations/UiPath/Running%20Unattended%20Process%20using%20Orchestrator%20Queues.md).
+{% endhint %}
 
 To publish this process, follow these steps:
 

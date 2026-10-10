@@ -7,7 +7,9 @@ title: "Authenticate Users in the Druid Webchat"
 
 When you want to seamlessly authenticate users in the Webchat hosted on your web page, it's crucial to follow the proper procedures to ensure security and efficiency. This section provides detailed options for transferring authentication context from your web page to the Druid Webchat snippet, enabling automatic authentication of conversations.
 
-> **NOTE:** Data transfer through **queryParams** must occur prior to the initial Druid Webchat initialization. Avoid transferring sensitive data in clear through queryParams to prevent security risks.
+{% hint style="info" %}
+**NOTE:** Data transfer through **queryParams** must occur prior to the initial Druid Webchat initialization. Avoid transferring sensitive data in clear through queryParams to prevent security risks.
+{% endhint %}
 
 <a id="Transferusermetadatausinganaccesstoken"></a>
 
@@ -45,16 +47,20 @@ Follow these steps to transfer user metadata using the Druid temporary storage:
 
 ### Step 1. Generate Client API Key in Druid Portal
 
-> **NOTE:** To generate a Client API Key, you must have one of the following:
->
-> - A Druid admin security role.
-> - A security role with permission to Edit AI Agent.
+{% hint style="info" %}
+**NOTE:** To generate a Client API Key, you must have one of the following:
+
+- A Druid admin security role.
+- A security role with permission to Edit AI Agent.
+{% endhint %}
 
 In the Druid Portal, navigate to your AI Agent details, expand the General section, and generate the Client API Key.
 
 ![](../../Resources/Images/WebChat/client%20api%20key.png)
 
-> **IMPORTANT!** Ensure the secure storage of this key in the backend server of the hosting page.
+{% hint style="warning" %}
+**IMPORTANT!** Ensure the secure storage of this key in the backend server of the hosting page.
+{% endhint %}
 
 <a id="Step2Configurewebhostingpage"></a>
 

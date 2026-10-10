@@ -643,7 +643,58 @@ def render_markdown(soup: BeautifulSoup, main: Tag) -> str:
     rendered = rendered.replace("\r\n", "\n")
     rendered = re.sub(r"[ \t]+\n", "\n", rendered)
     rendered = re.sub(r"\n{3,}", "\n\n", rendered).strip() + "\n"
-    return rendered
+    return restyle_callouts(rendered)
+
+
+_QUOTE_LINE = re.compile(r"^>([ \t]?)(.*)$")
+_CALLOUT_LABEL = re.compile(r"^\*\*(NOTE|INFO|IMPORTANT)\b", re.IGNORECASE)
+_FENCE_LINE = re.compile(r"^[ \t]*(```|~~~)")
+
+
+def restyle_callouts(markdown: str) -> str:
+    """Turn labeled Flare notes into GitBook hint callouts.
+
+    GitBook styles ``{% hint %}`` blocks as colored cards. Plain blockquotes
+    stay gray. NOTE and Info become info hints; IMPORTANT becomes a warning.
+    """
+    lines = markdown.splitlines()
+    out: list[str] = []
+    index = 0
+    in_fence = False
+    while index < len(lines):
+        line = lines[index]
+        if _FENCE_LINE.match(line):
+            in_fence = not in_fence
+            out.append(line)
+            index += 1
+            continue
+        if in_fence or not _QUOTE_LINE.match(line):
+            out.append(line)
+            index += 1
+            continue
+        end = index + 1
+        while end < len(lines) and _QUOTE_LINE.match(lines[end]):
+            end += 1
+        contents = [_QUOTE_LINE.match(raw).group(2) for raw in lines[index:end]]
+        first = next((item.strip() for item in contents if item.strip()), "")
+        label = _CALLOUT_LABEL.match(first)
+        if label is None:
+            out.extend(lines[index:end])
+            index = end
+            continue
+        style = "warning" if label.group(1).upper() == "IMPORTANT" else "info"
+        while contents and not contents[0].strip():
+            contents.pop(0)
+        while contents and not contents[-1].strip():
+            contents.pop()
+        out.append(f'{{% hint style="{style}" %}}')
+        out.extend(contents)
+        out.append("{% endhint %}")
+        index = end
+    text = "\n".join(out)
+    if markdown.endswith("\n") or not text:
+        text += "\n"
+    return text
 
 
 def apply_links(main: Tag, source_htm: str, corpus: Corpus) -> dict[str, list[str]]:

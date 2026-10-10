@@ -26,7 +26,9 @@ This section is for Druid Portal administrators in charge of managing Portal use
 
 ## Steps 1. Set up roles for automatically provisioned users
 
-> **IMPORTANT!**  All AD users provisioned in Druid Portal through LDAP will be automatically assigned with the roles set as **Default**.
+{% hint style="warning" %}
+**IMPORTANT!**  All AD users provisioned in Druid Portal through LDAP will be automatically assigned with the roles set as **Default**.
+{% endhint %}
 
 To set up default role(s) to be assigned to automatically provisioned users, from the **Administration** menu, click **Roles**. Edit the desired role(s) by selecting **Default**.
 
@@ -70,7 +72,9 @@ Click **Save all**, then click **Test** .
 
 ## Step 3. Provision users from Active Directory (Optional)
 
-> **NOTE:** Provisioning users from Active Directory is available in DRUID 8.3 and higher.
+{% hint style="info" %}
+**NOTE:** Provisioning users from Active Directory is available in DRUID 8.3 and higher.
+{% endhint %}
 
 <a id="Prerequisites1"></a>
 
@@ -128,7 +132,9 @@ A new user provisioned in DRUID will be assigned with the reunion of associated 
 
 If the user is member of an AD group for which there is no DRUID role mapped, at provisioning, the user will be assigned the role(s) set as **Default**, if there are any defined; otherwise the user will be provisioned without any role associated and the administrator will have to manually assign a DRUID role for that user.
 
-> **IMPORTANT!** The mapping of the AD groups to DRUID security roles is validated and updated at every user login and it is updated based on the changes done in Active Directory, if any. For example, if in Active Directory a user has been moved from an AD group to another one, when the user logs in DRUID, the mapping of the AD groups to DRUID security roles is validated and the user will be assigned with the DRUID role(s)mapped for the new AD group the user is member of (if any).
+{% hint style="warning" %}
+**IMPORTANT!** The mapping of the AD groups to DRUID security roles is validated and updated at every user login and it is updated based on the changes done in Active Directory, if any. For example, if in Active Directory a user has been moved from an AD group to another one, when the user logs in DRUID, the mapping of the AD groups to DRUID security roles is validated and the user will be assigned with the DRUID role(s)mapped for the new AD group the user is member of (if any).
+{% endhint %}
 
 <a id="Step4Allowuserregistrationandactivatenewaccounts"></a>
 
@@ -140,7 +146,9 @@ By default, new users are inactive and unable to log in until their DRUID admini
 
 To activate new self-registered users, select **New registered users are active by default**.
 
-> **Info:** If your company policies requires using a captcha on user registration and / or at log in, you can use security image question (captcha).
+{% hint style="info" %}
+**Info:** If your company policies requires using a captcha on user registration and / or at log in, you can use security image question (captcha).
+{% endhint %}
 
 ![](../../Resources/Images/Authoring%20User%20Management/form%20registration.png)
 

@@ -7,7 +7,9 @@ title: "Download File by REST API"
 
 The Download File integration enables you to use a REST API call to download a file from a third-party tool and store it directly in a DRUID entity.
 
-> **NOTE:** Downloading files by REST API allows you to manipulate only the file. If you get other file metadata from the third-party tools, you cannot map them in the response. To download a file and handle additional metadata, use REST integration and the `CREATEFILE(file)` DRUID-specific function.
+{% hint style="info" %}
+**NOTE:** Downloading files by REST API allows you to manipulate only the file. If you get other file metadata from the third-party tools, you cannot map them in the response. To download a file and handle additional metadata, use REST integration and the `CREATEFILE(file)` DRUID-specific function.
+{% endhint %}
 
 To add this integration task:
 

@@ -9,7 +9,9 @@ Vonage RCS (Rich Communication Services) is an advanced messaging channel provid
 
 Integrating AI Agents with Vonage RCS enables businesses to deliver engaging, conversational customer experiences directly within native mobile messaging applications, improving user interaction while maintaining secure communication workflows.
 
-> **Info:** This channel is available starting with Druid 9.28.
+{% hint style="info" %}
+**Info:** This channel is available starting with Druid 9.28.
+{% endhint %}
 
 <a id="Prerequisites"></a>
 

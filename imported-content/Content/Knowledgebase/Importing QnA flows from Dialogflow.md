@@ -9,7 +9,9 @@ DRUID QnA provides a streamlined way to import root level intents with no follow
 
 In DRUID, the QnA is a special type of conversational flow designed to simplify the business user experience when creating simple conversations. They are comprised of training phrases (primary and alternate questions) and a single step of type Message that delivers the response to the user (answer).
 
-> **IMPORTANT!**  DRUID does not import Dialogflow ES agent entities, parameters, triggers, etc., if you want to have the flows working similarly as in Dialogflow, additional configuration is required in DRUID.
+{% hint style="warning" %}
+**IMPORTANT!**  DRUID does not import Dialogflow ES agent entities, parameters, triggers, etc., if you want to have the flows working similarly as in Dialogflow, additional configuration is required in DRUID.
+{% endhint %}
 
 <a id="Prerequisites"></a>
 
@@ -59,17 +61,19 @@ If you meet all prerequisites, the QnAs will be imported successfully.
 
 ![](../Resources/Images/Importing%20QnA%20flows%20from%20DialogFlow%20ES/Importing%20QnA%20flows%20from%20Dialogflow_6.png)
 
-> **NOTE:**
->
-> - The root intents from dialog flow will be the DRUID’s QnAs primary questions while the intents training phrases will be DRUID alternate questions.
->
-> ![](../Resources/Images/Importing%20QnA%20flows%20from%20DialogFlow%20ES/Importing%20QnA%20flows%20from%20Dialogflow_7.png)
->
-> - If a Dialogflow intent has multiple responses and responses with multiple variants, DRUID will concatenate the 1st responses and ignore response variants.
->
-> ![](../Resources/Images/Importing%20QnA%20flows%20from%20DialogFlow%20ES/Importing%20QnA%20flows%20from%20Dialogflow_8.png)
->
-> - DRUID ignores entities, parameters, triggers, etc.
+{% hint style="info" %}
+**NOTE:**
+
+- The root intents from dialog flow will be the DRUID’s QnAs primary questions while the intents training phrases will be DRUID alternate questions.
+
+![](../Resources/Images/Importing%20QnA%20flows%20from%20DialogFlow%20ES/Importing%20QnA%20flows%20from%20Dialogflow_7.png)
+
+- If a Dialogflow intent has multiple responses and responses with multiple variants, DRUID will concatenate the 1st responses and ignore response variants.
+
+![](../Resources/Images/Importing%20QnA%20flows%20from%20DialogFlow%20ES/Importing%20QnA%20flows%20from%20Dialogflow_8.png)
+
+- DRUID ignores entities, parameters, triggers, etc.
+{% endhint %}
 
 <a id="Step3TraintheAIAgent"></a>
 
@@ -77,4 +81,6 @@ If you meet all prerequisites, the QnAs will be imported successfully.
 
 Go to the AI Agent settings. Click the **Details** tab, and then click the NLP section header. The NLP area expands. Scroll down to the Train area and click the **Train** button.
 
-> **NOTE:** It might take a few minutes for the NLP training to complete, so you might need to wait for DRUID to finish training all AI Agent entities that have NLP enabled (NLP=true).
+{% hint style="info" %}
+**NOTE:** It might take a few minutes for the NLP training to complete, so you might need to wait for DRUID to finish training all AI Agent entities that have NLP enabled (NLP=true).
+{% endhint %}

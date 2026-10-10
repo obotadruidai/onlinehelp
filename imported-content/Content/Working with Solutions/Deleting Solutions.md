@@ -17,10 +17,12 @@ A confirmation pop-up appears.
 
 Click **Yes** to confirm deletion. The Solutions page appears and you can see that the selected solution was removed from the system (it no longer displays in the list of solutions).
 
-> **NOTE:**
->
-> - A flow unlinked from the solution still remains at the AI Agent level.
-> - You can link a specific configuration element (flow, connector action, entity, document template, etc.) to multiple solutions at the same time. This means that the configuration element is part of multiple configurations; the element is not multiplied.
+{% hint style="info" %}
+**NOTE:**
+
+- A flow unlinked from the solution still remains at the AI Agent level.
+- You can link a specific configuration element (flow, connector action, entity, document template, etc.) to multiple solutions at the same time. This means that the configuration element is part of multiple configurations; the element is not multiplied.
+{% endhint %}
 
 You can edit the configuration elements at the AI Agent level.
 

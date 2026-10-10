@@ -15,8 +15,12 @@ For hero, choice and thumbnail steps, in DRUID 5.5 and higher you can customize 
   },
 ```
 
-> **Info:** Replace "custom button text" with the desired text to be shown on the button (put the text between " ").
+{% hint style="info" %}
+**Info:** Replace "custom button text" with the desired text to be shown on the button (put the text between " ").
+{% endhint %}
 
-> **NOTE:** The character limit for each button text is **20** for choice steps and **24** for hero and thumbnail steps.
+{% hint style="info" %}
+**NOTE:** The character limit for each button text is **20** for choice steps and **24** for hero and thumbnail steps.
+{% endhint %}
 
 ![](../../Resources/Images/WhatsAppMeta/advanced%20editing.png)

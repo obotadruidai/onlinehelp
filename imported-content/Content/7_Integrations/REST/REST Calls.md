@@ -9,7 +9,9 @@ Integration calls are API calls you configure to pass or request data from the D
 
 With the AI Agent data model and the DRUID REST app created, you can now start defining the integration actions and tasks.
 
-> **Info:** In DRUID 5.19 and higher, if you need to use pre-request/post-request scripts like in Postman, you can use the Custom Code task and place it before or after the REST task.
+{% hint style="info" %}
+**Info:** In DRUID 5.19 and higher, if you need to use pre-request/post-request scripts like in Postman, you can use the Custom Code task and place it before or after the REST task.
+{% endhint %}
 
 You have two options to define the integration actions and tasks:
 
@@ -42,4 +44,6 @@ When adding a REST task, you have to follow these steps:
 3. Map the response into the conversation context. For more information, see [Response Settings](Response%20Settings.md).
 4. Test the integration call. For more information, see [Testing Settings](Testing%20Settings.md).
 
-> **NOTE:**  If you need to send file(s) to an external API endpoint and retrieve a file, use the Download File Integration task and set a request of type **Form Data** or **Binary**. For more information on how to use it, see section [Download File](DownloadFile/Download%20File.md).
+{% hint style="info" %}
+**NOTE:**  If you need to send file(s) to an external API endpoint and retrieve a file, use the Download File Integration task and set a request of type **Form Data** or **Binary**. For more information on how to use it, see section [Download File](DownloadFile/Download%20File.md).
+{% endhint %}

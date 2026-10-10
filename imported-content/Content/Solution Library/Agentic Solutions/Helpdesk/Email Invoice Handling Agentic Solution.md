@@ -68,7 +68,9 @@ Scroll down and click **Save & Close**.
 
 ![](../../../Resources/Images/Solutions%20Library/druid%20llm.png)
 
-> **NOTE:** If the DRUID.LLM resource does not appear, contact your sales representative to activate DRUID-dedicated resources for one of the following providers on your tenant: Azure OpenAI, Mistral, or Google.
+{% hint style="info" %}
+**NOTE:** If the DRUID.LLM resource does not appear, contact your sales representative to activate DRUID-dedicated resources for one of the following providers on your tenant: Azure OpenAI, Mistral, or Google.
+{% endhint %}
 
 3. Go to Solution > Apps and select the **DRUID-LLM** app.
 4. In the **Base URL** field, paste the claims value you copied at step b.

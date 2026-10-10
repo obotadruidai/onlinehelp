@@ -31,7 +31,9 @@ To configure JWT Assertion authentication via Custom Code, set up the **Authenti
 
 Click the **Create Task** button and select **Custom Code**.
 
-> **NOTE:** You can chain multiple Custom Code tasks together if your token preprocessing or claims formatting logic requires it.
+{% hint style="info" %}
+**NOTE:** You can chain multiple Custom Code tasks together if your token preprocessing or claims formatting logic requires it.
+{% endhint %}
 
 In the code editor area, retrieve your securely stored certificate private key from your application variables.
 

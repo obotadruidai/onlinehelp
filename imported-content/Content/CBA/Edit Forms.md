@@ -22,4 +22,6 @@ When in Form Diagram, you can perform the following actions:
 - Edit a field of the current entity. Click on the field and at the top-right corner of the field, click the **Edit** icon. The Edit entity field page appears and you can edit the **Display name**, mask the field data if it captures user sensitive data or match entities records aligned with the business user language. For more information, see [Extensive Sensitive Data Manipulation](../Governance%20%26%20Security/Extensive%20Sensitive%20Data%20Manipulation.md) and [Multilingual Entity Fields](../5_Entities/Multilingual%20Entity%20Fields.md).
 - Delete fields from the current entity. Click on the field and at the top-right corner of the field, click the **Delete** icon. A warning message appears. Click **Yes** to confirm the field deletion.
 
-> **IMPORTANT!**  Deleting fields from the system cannot be undone; therefore, we recommend you to review the AI Agent informational model carefully before deletion.
+{% hint style="warning" %}
+**IMPORTANT!**  Deleting fields from the system cannot be undone; therefore, we recommend you to review the AI Agent informational model carefully before deletion.
+{% endhint %}

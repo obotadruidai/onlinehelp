@@ -39,4 +39,6 @@ To configure the execution schedule:
 ![](../../../../../Resources/Images/Lead%20Generation%20Skill/Execute%20Campaign_1.png)
 
 6. Define the preferred cadence.
-> **Info:** A weekly schedule during peak application periods is recommended.
+{% hint style="info" %}
+**Info:** A weekly schedule during peak application periods is recommended.
+{% endhint %}

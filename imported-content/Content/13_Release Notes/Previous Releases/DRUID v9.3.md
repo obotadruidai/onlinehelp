@@ -48,7 +48,9 @@ If you have questions about your DRUID tenant, please contact [support@Druidai.c
 ![](../../Resources/Images/druid%209.3/crawl%20path.png)
 
 - **Code Extension - Change to DebugMessage property**. The DebugMessage property has been moved from `thisStep.Metadata.DebugMessage` to `thisStep.DebugMessage` to ensure it is not stored in metadata. This change prevents debug messages from being saved in step metadata, reducing unnecessary data in the conversation state and improving performance when handling step data.
-> **NOTE:** While the old field `thisStep.Metadata.DebugMessage` is still accessible, setting it when `thisStep.DebugMessage` also has a value may produce unpredictable results.
+{% hint style="info" %}
+**NOTE:** While the old field `thisStep.Metadata.DebugMessage` is still accessible, setting it when `thisStep.DebugMessage` also has a value may produce unpredictable results.
+{% endhint %}
 
 - **Flow diagram – Preserve layout mode per flow**. Each flow now stores its own layout view preference ( Tree, or Layered Digraph). The selected view applies only to the current flow, allowing different flows to have different layouts. When you reopen a flow, it appears in the view you last selected for that flow. Changing the layout view for one flow no longer affects other flows.
 

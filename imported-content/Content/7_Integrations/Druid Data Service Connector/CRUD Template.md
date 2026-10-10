@@ -5,7 +5,9 @@ title: "CRUD Template"
 <a id="CRUDTemplate"></a>
 
 
-> **NOTE:** This feature is available in DRUID 5.24 and higher and is available only on entity integrations.
+{% hint style="info" %}
+**NOTE:** This feature is available in DRUID 5.24 and higher and is available only on entity integrations.
+{% endhint %}
 
 The CRUD Template enables you to easily create a web view and form that consume data from the DRUID Data Services. The view and form have minimum configuration:
 
@@ -23,6 +25,10 @@ From there, click the **Create task** button and select **DRUID Data Services** 
 
 ![](../../Resources/Images/Entities/curs%20template%20integrations.png)
 
-> **NOTE:** On the entity integrations page, click the **Publish** button to publish the entity integrations; otherwise, you will not be able to consume the data.
+{% hint style="info" %}
+**NOTE:** On the entity integrations page, click the **Publish** button to publish the entity integrations; otherwise, you will not be able to consume the data.
+{% endhint %}
 
-> **Info:** You can add the CRUD Template multiple times, but DRUID only duplicates the integration tasks. The web view and form will only be created the first time the CRUD Template integration is added if the entity has no web views or forms defined.
+{% hint style="info" %}
+**Info:** You can add the CRUD Template multiple times, but DRUID only duplicates the integration tasks. The web view and form will only be created the first time the CRUD Template integration is added if the entity has no web views or forms defined.
+{% endhint %}

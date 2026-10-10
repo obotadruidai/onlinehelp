@@ -13,7 +13,9 @@ For each entity, add the specific fields as described below.
 
 ![](../../../Resources/Images/Step%203_Set%20up%20Orchestrator%20Victor_Advanced%20Process_Data%20Service/Step%203%20Set%20up%20Orchestrator_1.png)
 
-> **NOTE:** For all fields type Text, set up the **Maximum Length** of 4000 characters.
+{% hint style="info" %}
+**NOTE:** For all fields type Text, set up the **Maximum Length** of 4000 characters.
+{% endhint %}
 
 <a id="Currency"></a>
 

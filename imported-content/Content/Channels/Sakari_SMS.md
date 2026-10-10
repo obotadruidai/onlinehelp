@@ -7,9 +7,13 @@ title: "Sakari SMS"
 
 Enable customers to start and conduct conversations with AI Agents through standard SMS text messaging via Sakari.
 
-> **NOTE:** The Sakari SMS channel is not available in Druid on premise deployments; you cannot activate the channel.
+{% hint style="info" %}
+**NOTE:** The Sakari SMS channel is not available in Druid on premise deployments; you cannot activate the channel.
+{% endhint %}
 
-> **IMPORTANT!** During initial user interaction, the Welcome flow triggers automatically. The intent prediction for the first user message is bypassed; the welcome message will be promptly sent to the user, ensuring a seamless and engaging interaction experience.
+{% hint style="warning" %}
+**IMPORTANT!** During initial user interaction, the Welcome flow triggers automatically. The intent prediction for the first user message is bypassed; the welcome message will be promptly sent to the user, ensuring a seamless and engaging interaction experience.
+{% endhint %}
 
 <a id="Prerequisites"></a>
 
@@ -18,7 +22,9 @@ Enable customers to start and conduct conversations with AI Agents through stand
 Before configuring the Sakari SMS channel, ensure the following requirements are met:
 
 - A paid Sakari account with an active sender (phone number) configured. For more information on how to add a sender, see the [Sakari Support Center](https://support.sakari.io/hc/en-us/articles/47404687327892-Add-Sender-Buy-Number).
-> **NOTE:** When integrating Sakari with Campaign Manager, you must register for A2P 10DLC (Application-to-Person 10-Digit Long Code) messaging to send SMS campaigns to U.S. phone numbers. This registration is required by mobile carriers to reduce spam and ensure reliable message delivery. You can complete the A2P 10DLC registration directly with Sakari. For more information, see [Sakari 10DLC registration](https://support.sakari.io/hc/en-us/articles/360056853072-10DLC-FAQ).
+{% hint style="info" %}
+**NOTE:** When integrating Sakari with Campaign Manager, you must register for A2P 10DLC (Application-to-Person 10-Digit Long Code) messaging to send SMS campaigns to U.S. phone numbers. This registration is required by mobile carriers to reduce spam and ensure reliable message delivery. You can complete the A2P 10DLC registration directly with Sakari. For more information, see [Sakari 10DLC registration](https://support.sakari.io/hc/en-us/articles/360056853072-10DLC-FAQ).
+{% endhint %}
 
 - An active, published AI Agent built within the Druid Portal.
 

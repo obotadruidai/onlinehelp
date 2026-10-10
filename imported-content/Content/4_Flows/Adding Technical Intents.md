@@ -33,7 +33,9 @@ To define a technical utterance as a command:
 5. Enter the exact phrase or command (e.g., **\_\_restart\_task\_\_** or **#RunReportNow**).
 6. Click **Save**.
 
-> **NOTE:** Commands are case-sensitive and must match user input exactly.
+{% hint style="info" %}
+**NOTE:** Commands are case-sensitive and must match user input exactly.
+{% endhint %}
 
 <a id="UpdateExistingFlows"></a>
 

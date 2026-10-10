@@ -5,7 +5,9 @@ title: "Accessing Druid Endpoints in Druid Hybrid Deployments"
 <a id="AccessingDruidEndpointsinDruidHybridDeployments"></a>
 
 
-> **NOTE:**  Druid Endpoints are available in Druid Connector Host version 1.52 or above. If you want to integrate Druid with third party applications that are installed on premise, you need to install Druid Connector Host version 1.52 or above on premise so that your application can communicate with Druid.
+{% hint style="info" %}
+**NOTE:**  Druid Endpoints are available in Druid Connector Host version 1.52 or above. If you want to integrate Druid with third party applications that are installed on premise, you need to install Druid Connector Host version 1.52 or above on premise so that your application can communicate with Druid.
+{% endhint %}
 
 This configuration should be used in the hybrid scenario only, when both the Druid Connector Host AND the integrating services (e.g., UiPath Orchestrator) are installed in on-premise infrastructure and can only communicate INSIDE the intranet.
 

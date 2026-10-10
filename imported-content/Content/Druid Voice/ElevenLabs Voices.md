@@ -14,7 +14,9 @@ For both ElevenLabs resources, STT and TTS, you can do the following in the Drui
 - Test voices and resource configurations before using them in speech resources.
 - View speech resource usage.
 
-> **Info:** ElevenLabs Voices are available starting with Druid 10.1.
+{% hint style="info" %}
+**Info:** ElevenLabs Voices are available starting with Druid 10.1.
+{% endhint %}
 
 <a id="AccessElevenLabsvoices"></a>
 
@@ -33,7 +35,9 @@ To access and manage ElevenLabs voice options in your portal workspace:
 
 When you preview ElevenLabs resources in the Druid Portal, the Voices displays by default with the **Explore** tab selected.
 
-> **IMPORTANT!** ElevenLabs Voice Library requires a paid ElevenLabs account tier and is not available for free tier users.
+{% hint style="warning" %}
+**IMPORTANT!** ElevenLabs Voice Library requires a paid ElevenLabs account tier and is not available for free tier users.
+{% endhint %}
 
 ![](../Resources/Images/ElevenLabs%20Voices/Voices%20Library.png)
 
@@ -43,7 +47,9 @@ The Voices page contains three primary tabs:
 - **Created**. Lists all custom voices you have generated within the Druid Portal.
 - **Saved**. Displays voices saved in your ElevenLabs account under My Voices, plus any voices saved from the **Explore** tab (in the Actions column).
 
-> **Info:** Voices saved and created directly within the Druid Portal automatically synchronize and appear in your ElevenLabs account under My Voices.
+{% hint style="info" %}
+**Info:** Voices saved and created directly within the Druid Portal automatically synchronize and appear in your ElevenLabs account under My Voices.
+{% endhint %}
 
 <a id="Filteringvoices"></a>
 

@@ -52,11 +52,13 @@ Where:
 
 ![](../Resources/Images/Webhooks/cnn%20id.png)
 
-> **NOTE:** By default, the response type is **application/json** in Druid 9.17 and higher. In previous versions, the default is text/plain. If the external service returns data in a format other than JSON (e.g., text/plain or xml), you must specify that format in the `responseContentType` parameter to ensure the integration processes the payload correctly.
->
-> **Request syntax**:
->
-> `POST https://<tenant_name>.druidplatform.com/api/Druid/<BotId>/<entityName>/<integrationId>/GenericIntegration?responseContentType=text/plain`
+{% hint style="info" %}
+**NOTE:** By default, the response type is **application/json** in Druid 9.17 and higher. In previous versions, the default is text/plain. If the external service returns data in a format other than JSON (e.g., text/plain or xml), you must specify that format in the `responseContentType` parameter to ensure the integration processes the payload correctly.
+
+**Request syntax**:
+
+`POST https://<tenant_name>.druidplatform.com/api/Druid/<BotId>/<entityName>/<integrationId>/GenericIntegration?responseContentType=text/plain`
+{% endhint %}
 
 <a id="Request"></a>
 
@@ -150,7 +152,9 @@ The following example sends an acknowledgment response instead of a data payload
 
 Asynchronous integration is used for long running jobs that are expected to take more than 5 minutes to execute. An async integration is ideal for tasks like a bulk SMS campaign where the external SMS provider does not allow sending messages in a single bulk request, requiring Druid to process the list and make sequential API calls over an extended period.
 
-> **NOTE:** Asynchronous Integrations are available in Druid 9.10 and higher.
+{% hint style="info" %}
+**NOTE:** Asynchronous Integrations are available in Druid 9.10 and higher.
+{% endhint %}
 
 Async integration uses a two-step process based on the long polling principle to prevent the webhook from timing out while waiting for the result: one to start the job and one or more to retrieve the final result.
 
@@ -168,11 +172,13 @@ The API call will immediately return a response containing an invocationId, conf
 
 ![](../Resources/Images/druid%209.10/invocation%20id.png)
 
-> **NOTE:** By default, the response type is **application/json**. If the external service returns data in a format other than JSON (e.g., text/plain or xml), you must specify that format in the `responseContentType` parameter to ensure the integration processes the payload correctly.
->
-> **Request syntax**:
->
-> `POST https://<tenant_name>.druidplatform.com/api/Druid/<BotId>/<entityName>/<integrationId>/GenericIntegration?Parameter1=value&Parameter2=value&asyncResponse=true&responseContentType=text/plain`
+{% hint style="info" %}
+**NOTE:** By default, the response type is **application/json**. If the external service returns data in a format other than JSON (e.g., text/plain or xml), you must specify that format in the `responseContentType` parameter to ensure the integration processes the payload correctly.
+
+**Request syntax**:
+
+`POST https://<tenant_name>.druidplatform.com/api/Druid/<BotId>/<entityName>/<integrationId>/GenericIntegration?Parameter1=value&Parameter2=value&asyncResponse=true&responseContentType=text/plain`
+{% endhint %}
 
 <a id="Step2RetrievetheIntegrationResponse"></a>
 

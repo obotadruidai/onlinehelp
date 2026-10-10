@@ -15,7 +15,9 @@ The matching score for a search result is determined using the following formula
 
 **Matching Score = (Text Score × Text Weight) + (Vector Score × Vector Weight) + (Reranker Score × Reranker Weight)**
 
-> **NOTE:** The sum of Text Weight, Vector Weight, and Reranker Weight must always equal 100.
+{% hint style="info" %}
+**NOTE:** The sum of Text Weight, Vector Weight, and Reranker Weight must always equal 100.
+{% endhint %}
 
 The Knowledge Base (KB) comes with a default score calculator strategy, which balances keyword (Text) search and semantic (Vector) search. If needed, you can customize it or add new score calculator strategies to better fit your use case.
 

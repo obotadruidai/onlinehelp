@@ -7,16 +7,20 @@ title: "Hybrid Deployment"
 
 In a hybrid deployment, you harness the capabilities of our Cloud conversational engine while utilizing one or more Druid-specific components to store all conversational data within your infrastructure.
 
-> **Info:** The hybrid deployment detailed below applies to both client-side and Druid-hosted environments for the Druid Connector Host and Druid Data Service.
+{% hint style="info" %}
+**Info:** The hybrid deployment detailed below applies to both client-side and Druid-hosted environments for the Druid Connector Host and Druid Data Service.
+{% endhint %}
 
-> **IMPORTANT!** **Druid Hybrid Deployment Requirements & Upgrade Notice**
->
-> To provide clients with a smooth data migration experience, the hybrid deployment requirement originally planned for version 10.1 has been rescheduled.
->
-> - Starting with version 10.3 / 10.5, Druid hybrid deployment requires installation of both the Connector Host and the Data Service.
-> - Updating the Connector Host to version 10.3 / 10.5 or higher requires a simultaneous upgrade of the Data Service to a compatible version.
->
-> Please ensure your technical team plans for both components when scheduling future environment upgrades.
+{% hint style="warning" %}
+**IMPORTANT!** **Druid Hybrid Deployment Requirements & Upgrade Notice**
+
+To provide clients with a smooth data migration experience, the hybrid deployment requirement originally planned for version 10.1 has been rescheduled.
+
+- Starting with version 10.3 / 10.5, Druid hybrid deployment requires installation of both the Connector Host and the Data Service.
+- Updating the Connector Host to version 10.3 / 10.5 or higher requires a simultaneous upgrade of the Data Service to a compatible version.
+
+Please ensure your technical team plans for both components when scheduling future environment upgrades.
+{% endhint %}
 
 <a id="DeploymentArchitecture"></a>
 
@@ -103,7 +107,9 @@ Conversation messages are saved into the Conversation History database, which is
 
 Messages flow between the AI Agent and end users across various communication channels.
 
-> **NOTE:**  In instances where sensitive data should not be shared within the conversation, the "Send Email" connector offers a solution. This connector enables the direct delivery of emails to users, bypassing the conversation interface.
+{% hint style="info" %}
+**NOTE:**  In instances where sensitive data should not be shared within the conversation, the "Send Email" connector offers a solution. This connector enables the direct delivery of emails to users, bypassing the conversation interface.
+{% endhint %}
 
 <a id="DruidComponents"></a>
 
@@ -145,7 +151,9 @@ The Druid AI Platform provides a robust set of authentication methods to ensure 
 - **User Authentication during Chat**: Users interacting with the AI Agent can be authenticated by asking specific questions and verifying the provided information with Druid backend systems. Authentication can also be extended to other channels such as Teams, Facebook, or WhatsApp when users initiate a conversation for the first time.
 - **Channel-specific Authentication**: AI Agents for internal use by employees typically utilize Active Directory integration, MS Teams, or Slack. For external users, including customers and partners, local Druid two-factor authentication is commonly employed.
 
-> **NOTE:** When employing Active Directory Integration with Teams, Slack, or Facebook, it's important to note that no passwords are stored within the Druid AI Platform. Instead, the authentication process is managed directly by the respective channels. The Druid AI Platform retains only the user ID (account name from AD, etc.) for identification and authorization purposes.
+{% hint style="info" %}
+**NOTE:** When employing Active Directory Integration with Teams, Slack, or Facebook, it's important to note that no passwords are stored within the Druid AI Platform. Instead, the authentication process is managed directly by the respective channels. The Druid AI Platform retains only the user ID (account name from AD, etc.) for identification and authorization purposes.
+{% endhint %}
 
 By storing only the necessary user information and delegating authentication responsibilities to trusted channels, the Druid platform ensures a secure and streamlined authentication experience for users across various communication channels.
 
@@ -173,7 +181,9 @@ The Druid platform manages two types of credentials to ensure secure access:
 
 Within the Druid Platform, local users are designated for Administrators, AI Agent Configurators, and End Users engaging with AI Agents via the Druid Portal (https://<tenant>.druidplatform.com).
 
-> **NOTE:** With Active Directory Integration, Teams, Slack, or Facebook, passwords are not stored within the Druid AI Platform. For instance, in scenarios like AI Agent HR, passwords are not retained.
+{% hint style="info" %}
+**NOTE:** With Active Directory Integration, Teams, Slack, or Facebook, passwords are not stored within the Druid AI Platform. For instance, in scenarios like AI Agent HR, passwords are not retained.
+{% endhint %}
 
 For Local Users, the Druid AI Platform securely stores hashed passwords in its internal database. It's important to clarify that these passwords are specific to the Druid platform and are distinct from Active Directory passwords or passwords used in other channels.
 

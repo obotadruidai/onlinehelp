@@ -19,7 +19,9 @@ With this integration, the Druid-enabled Copilot becomes the central conversatio
 
 ## How to get started
 
-> **NOTE:**  The MS Copilot channel is currently in technology preview. If you are interested in configuring it, please contact Druid Support for assistance.
+{% hint style="info" %}
+**NOTE:**  The MS Copilot channel is currently in technology preview. If you are interested in configuring it, please contact Druid Support for assistance.
+{% endhint %}
 
 <a id="EngagewithDruidbusinessAIAgents"></a>
 

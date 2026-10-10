@@ -9,7 +9,9 @@ Sometimes the conversational flow steps behavior needs to align to more complex 
 
 Code Extension is a powerful feature that enables you to make hard-coded adjustments to flow steps definition.
 
-> **IMPORTANT!** When hard-coding flow steps using Code Extension, you should respect the step definition from the Flow Designer and only make small adjustments. **DO NOT** use Code Extension to completely change the flow steps behavior; otherwise, the AI Agent diagram will no longer provide you with accurate information and you might get confused when analyzing the Conversation History and performing further debugging.
+{% hint style="warning" %}
+**IMPORTANT!** When hard-coding flow steps using Code Extension, you should respect the step definition from the Flow Designer and only make small adjustments. **DO NOT** use Code Extension to completely change the flow steps behavior; otherwise, the AI Agent diagram will no longer provide you with accurate information and you might get confused when analyzing the Conversation History and performing further debugging.
+{% endhint %}
 
 To hard-code a flow step, on the desired flow step, click the Code Extension section header, then click the **Edit** icon displayed next to the desired language (if there are AI Agent additional languages set on the AI Agent). The Code Extension editor appears.
 
@@ -19,9 +21,13 @@ The Code Extension provides you with a set of predefined code templates to help 
 
 To add a template, click the **Add default template** button ( ![](../Resources/Images/Setting%20conditions%20on%20steps/Setting%20Up%20Conditions%20on%20Steps_7.png)) and select the template that best suits your needs.
 
-> **NOTE:**  In the Code Extension editor, entities and entity collections are referenced by name; therefore, if you want to use the Entity explorer when creating an entity or entity collection, make sure that you remove the brackets “[[ ]]”.
+{% hint style="info" %}
+**NOTE:**  In the Code Extension editor, entities and entity collections are referenced by name; therefore, if you want to use the Entity explorer when creating an entity or entity collection, make sure that you remove the brackets “[[ ]]”.
+{% endhint %}
 
-> **IMPORTANT!** In the Code Extension editor, **always** append `thisStepValidator.Validate(thisStep);` at the end of your code. This ensures that the flow step code is validated before execution, helping to prevent errors and ensure smooth functionality.
+{% hint style="warning" %}
+**IMPORTANT!** In the Code Extension editor, **always** append `thisStepValidator.Validate(thisStep);` at the end of your code. This ensures that the flow step code is validated before execution, helping to prevent errors and ensure smooth functionality.
+{% endhint %}
 
 <a id="UsecasesforFlowstepcodeextensions"></a>
 
@@ -151,7 +157,9 @@ This example demonstrates using a Set object to filter out duplicate product IDs
 
 You can insert custom messages and debugging statements directly from within a flow step Code Extension. This allows you to track execution state, log variables, or record system milestones at a specific step in the flow execution path.
 
-> **Info:** This feature is available starting with Druid 9.23.
+{% hint style="info" %}
+**Info:** This feature is available starting with Druid 9.23.
+{% endhint %}
 
 The platform provides two dedicated methods on the `Context`object to log events:
 
@@ -173,14 +181,18 @@ Context.LogMessage("Your log message string");
 
 The ``Context.RaiseError()`` method programmatically generates a business exception from within a code execution context.
 
-> **Info:** This method is available starting with Druid 9.25.
+{% hint style="info" %}
+**Info:** This method is available starting with Druid 9.25.
+{% endhint %}
 
 When this method is executed, it immediately halts the current step execution and triggers the exception handling logic configured for the AI Agent. The error is routed dynamically based on your configuration:
 
 - **Step-level error handler**. If the current flow step has the [Error Handler](Handling%20Input%20Mapping%20Exceptions.md) configured, the conversation immediately follows that specific step-level exception path.
 - **Global Exception flow**. If no step-level handler is defined for the active step, the system falls back to the Exception special flow configured in the Dialogue management section of the AI Agent settings.
 
-> **NOTE:** If neither a step-level handler nor a global exception flow is configured, the conversation will stop when the exception is raised.
+{% hint style="info" %}
+**NOTE:** If neither a step-level handler nor a global exception flow is configured, the conversation will stop when the exception is raised.
+{% endhint %}
 
 **Syntax**
 
@@ -230,7 +242,9 @@ Context.LogDebugMessage("Your debug message string");
 
 ## <a id="Code"></a>Code Extension – Error Handling
 
-> **NOTE:** This feature is available in Druid 9.20 and higher.
+{% hint style="info" %}
+**NOTE:** This feature is available in Druid 9.20 and higher.
+{% endhint %}
 
 You can configure the behavior of the conversational engine when encountering an error during code extension execution. This setting controls whether the conversation continues or stops when an error is detected while executing the code provided in Code Extension on a flow step.
 
@@ -246,7 +260,9 @@ To configure error handling for Code Extension:
 
 For steps that have the **Error Handler** set, you can author how the error is handled in the conversation. Additionally, you can create a flow dedicated to error handling and select it from AI agent details > Dialogue management section, **Exception flow** drop-down.
 
-> **Info:** If no exception flow or step-level handler is defined, the conversation will stop when an exception is raised.
+{% hint style="info" %}
+**Info:** If no exception flow or step-level handler is defined, the conversation will stop when an exception is raised.
+{% endhint %}
 
 3. Save the configuration.
 

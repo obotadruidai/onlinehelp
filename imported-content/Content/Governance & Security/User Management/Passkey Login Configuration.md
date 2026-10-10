@@ -27,7 +27,9 @@ To allow your team to log in using passkeys, the tenant administrator must enabl
 
 If your tenant administrator has enabled this feature, you can configure your user profile to use a passkey for future logins.
 
-> **NOTE:** You must have a passkey manager installed on your device before starting this setup.
+{% hint style="info" %}
+**NOTE:** You must have a passkey manager installed on your device before starting this setup.
+{% endhint %}
 
 To set up your passkey:
 

@@ -75,4 +75,6 @@ To deliver activities automatically at a specific date and time:
 
 5. Configure the schedule.
 
-> **Info:**  Set flow execution to run daily every 1 hour for optimal delivery accuracy.
+{% hint style="info" %}
+**Info:**  Set flow execution to run daily every 1 hour for optimal delivery accuracy.
+{% endhint %}

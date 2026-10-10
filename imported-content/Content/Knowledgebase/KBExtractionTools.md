@@ -48,9 +48,13 @@ When extracting data from EML documents, the response JSON includes dedicated fi
 - **Subject** - The email subject line.
 - **Date** - The email timestamp (ISO 8601 format).
 
-> **NOTE:** The response JSON includes dedicated fields for email metadata.
+{% hint style="info" %}
+**NOTE:** The response JSON includes dedicated fields for email metadata.
+{% endhint %}
 
-> **IMPORTANT!** The Antimalware Check treats .eml files as archives to prevent unnecessary data loss. If an email contains a restricted or infected attachment, the system isolates and discards only that specific file while successfully extracting the email body and all other safe attachments. Every excluded element triggers a system warning message detailing the reason for exclusion. This replaces the behavior in previous releases, which resulted in EML document rejection for the entire file if a single attachment failed the scan.
+{% hint style="warning" %}
+**IMPORTANT!** The Antimalware Check treats .eml files as archives to prevent unnecessary data loss. If an email contains a restricted or infected attachment, the system isolates and discards only that specific file while successfully extracting the email body and all other safe attachments. Every excluded element triggers a system warning message detailing the reason for exclusion. This replaces the behavior in previous releases, which resulted in EML document rejection for the entire file if a single attachment failed the scan.
+{% endhint %}
 
 The full email content, including all metadata and the complete message body, is also saved in both the answer and content fields within the paragraphs array.
 

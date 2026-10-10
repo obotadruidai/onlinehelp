@@ -47,7 +47,9 @@ Add a new line in the mapping table. In the **Connector field name** column, wri
 
 In order to properly fill in the **Druid entity field name** field, type “[[“, choose the Request entity from the drop-down, type “.” after the closing brackets ]] and choose the correct entity field from the new drop-down that appears. Click the **Save** icon displayed inline.
 
-> **NOTE:**  [[ChatUser]] entity is always available to all Connector Tasks. Therefore, you can map data both from your Request Entity and from [[ChatUser]], in the same mapping table.
+{% hint style="info" %}
+**NOTE:**  [[ChatUser]] entity is always available to all Connector Tasks. Therefore, you can map data both from your Request Entity and from [[ChatUser]], in the same mapping table.
+{% endhint %}
 
 Save the configuration. Now you need to set up the response as well.
 

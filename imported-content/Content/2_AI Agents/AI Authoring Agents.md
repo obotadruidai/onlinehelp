@@ -15,7 +15,9 @@ AI Authoring Agents enable authors to quickly build agentic skills within their 
 - **Higher Accuracy**. Use built-in solution templates that incorporate platform best practices.
 - **Faster Solution Building**. Combining automations with solution adjustments allows configuration to be completed two times faster.
 
-> **IMPORTANT!** **Built-in Guardrail**: The virtual AI Authoring Agents team is designed to ask for confirmation before making changes or committing any transaction. This ensures you retain full control over your configuration at all times.
+{% hint style="warning" %}
+**IMPORTANT!** **Built-in Guardrail**: The virtual AI Authoring Agents team is designed to ask for confirmation before making changes or committing any transaction. This ensures you retain full control over your configuration at all times.
+{% endhint %}
 
 <a id="AIAuthoringAgentsTeam"></a>
 
@@ -56,7 +58,9 @@ Each AI Authoring Agent handles a specific part of the setup, testing, or manage
 - Reuses existing system connections and data structures unless explicit instructions specify creating new entities.
 - Executes configuration actions in sequential, traceable steps.
 - Hands off out-of-scope tasks (such as chart generation or testing) to designated AI Authoring Agents.
-> **Info:** **Automatic hand-offs** to other specialized authoring agents for out-of-domain requests occur only in **Community and Production environments**.
+{% hint style="info" %}
+**Info:** **Automatic hand-offs** to other specialized authoring agents for out-of-domain requests occur only in **Community and Production environments**.
+{% endhint %}
 
 <a id="Accessthevirtualteam"></a>
 

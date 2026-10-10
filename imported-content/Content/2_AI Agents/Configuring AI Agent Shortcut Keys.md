@@ -15,7 +15,9 @@ To set up shortcut keys for your AI Agent, follow these steps:
 2. Click the **Dialogue management** section header.
 3. Click the add icon below the **Context menu text** field.
 4. Enter the labels for the shortcut keys.
-> **NOTE:** Separate each label with a semicolon (;) and do not include any spaces. Consider using common queries like: **Order Status;Troubleshoot Login;View Invoice;Speak to Agent**.
+{% hint style="info" %}
+**NOTE:** Separate each label with a semicolon (;) and do not include any spaces. Consider using common queries like: **Order Status;Troubleshoot Login;View Invoice;Speak to Agent**.
+{% endhint %}
 
 ![](../Resources/Images/Bots/context%20field.png)
 

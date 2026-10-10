@@ -14,7 +14,9 @@ You can update data in DRUID based on actions taken in a third-party system usin
 - Reach out to [DRUID Support](<mailto:support@druidai.com?subject=Activate the Druid.WebView service for my tenant>) to activate the **Druid.WebView** service on your tenant and grant you the "read" and "write" claims for this service .
 - You have a Druid Portal user account with access rights to the AI Agent and solution on which you want to execute the connector action.
 - To execute a connector action from outside DRUID, you need to authorize the `PerformOperations` request using an access token. To get an access token, call the `ExternalAuthenticate` API. For information on how to get access token request, see [ExternalAuthenticate API](#ExternalAuthenticate_API).
-> **NOTE:** For higher security, the access token will only be valid for 30 minutes.
+{% hint style="info" %}
+**NOTE:** For higher security, the access token will only be valid for 30 minutes.
+{% endhint %}
 
 <a id="ExternalAuthenticateAPI"></a>
 

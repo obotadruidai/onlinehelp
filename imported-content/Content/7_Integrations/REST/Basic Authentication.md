@@ -11,7 +11,9 @@ When Basic Authentication is enabled in a REST App, Druid automatically includes
 
 Authorization: Basic <Base64 encoded username and password>
 
-> **Info:** Basic autehntication is available starting with Druid version 9.24.
+{% hint style="info" %}
+**Info:** Basic autehntication is available starting with Druid version 9.24.
+{% endhint %}
 
 <a id="ConfigureBasicAuthentication"></a>
 

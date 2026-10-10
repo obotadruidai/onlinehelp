@@ -6,7 +6,9 @@ title: "RingCentral CX Data Provisioning & Configuration"
 
 <a id="_RingCentral_CX_Data"></a>
 
-> **Info:** To run RingCentral CX Campaigns requires business app upgrade to version 10.1. or higher.
+{% hint style="info" %}
+**Info:** To run RingCentral CX Campaigns requires business app upgrade to version 10.1. or higher.
+{% endhint %}
 
 To provision RingCentral CX campaigns data:
 
@@ -18,7 +20,9 @@ To provision RingCentral CX campaigns data:
 ![](../../../Resources/Images/Ring%20central%20%2B%20excel%20export%20updates/RingCentral%20CX%20Data%20Provisioning_1.png)
 
 3. Switch the **Call Center System**. Click on the **Default** record, change the **Call Center System** field from **Druid Data Service** to **Ring Central** and save your changes.
-> **IMPORTANT!** Setting the call center system to RingCentral is mandatory so that the RingCentral CX agent can correctly load and map RingCentral CX dispositions.
+{% hint style="warning" %}
+**IMPORTANT!** Setting the call center system to RingCentral is mandatory so that the RingCentral CX agent can correctly load and map RingCentral CX dispositions.
+{% endhint %}
 
 ![](../../../Resources/Images/Ring%20central%20%2B%20excel%20export%20updates/RingCentral%20CX%20Data%20Provisioning_2.png)
 

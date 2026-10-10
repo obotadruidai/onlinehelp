@@ -9,7 +9,9 @@ For academic staff
 
 The Education workspace is designed for academic staff, registrars, and department managers. It provides operational access to student and instructor contact records, departmental structure, and the course catalog. Staff use this workspace to maintain accurate course, student, instructor and department data that the AI Agent relies on to respond to student requests.
 
-> **NOTE:**  Academic staff should use the solution only after the admins have imported the data of the accepted students and assigned instructors from the university systems.
+{% hint style="info" %}
+**NOTE:**  Academic staff should use the solution only after the admins have imported the data of the accepted students and assigned instructors from the university systems.
+{% endhint %}
 
 <a id="ReviewEnrolledStudents"></a>
 
@@ -25,9 +27,11 @@ To see the list of enrolled students, on the main menu of the Education workspac
 
 As academic staff, you can manage (create, update, or delete) student profiles.
 
-> **NOTE:** Whenever you create or update a student profile, always select **Student Details** from the drop-down menu in the top-left corner of the form.
->
-> ![](../../../../Resources/Images/HigherEd_Agentic_Advisor/dropdown%20contact.png)
+{% hint style="info" %}
+**NOTE:** Whenever you create or update a student profile, always select **Student Details** from the drop-down menu in the top-left corner of the form.
+
+![](../../../../Resources/Images/HigherEd_Agentic_Advisor/dropdown%20contact.png)
+{% endhint %}
 
 A student profile includes:
 
@@ -35,7 +39,9 @@ A student profile includes:
 
 ![](../../../../Resources/Images/HigherEd_Agentic_Advisor/How%20to%20use%20the%20solution%20for_1.png)
 
-> **NOTE:** When creating a new student profile, you must set the **Contact Type** to **Student**.
+{% hint style="info" %}
+**NOTE:** When creating a new student profile, you must set the **Contact Type** to **Student**.
+{% endhint %}
 
 - Student information
 
@@ -63,9 +69,11 @@ To see the list of instructors, on the main menu of the Education workspace, cli
 
 As academic staff, you can manage (create, update, or delete) instructor profiles.
 
-> **NOTE:** Whenever you create or update an instructor profile, always select **Instructor Details** from the drop-down menu in the top-left corner of the form.
->
-> ![](../../../../Resources/Images/HigherEd_Agentic_Advisor/instructor%20dropdown.png)
+{% hint style="info" %}
+**NOTE:** Whenever you create or update an instructor profile, always select **Instructor Details** from the drop-down menu in the top-left corner of the form.
+
+![](../../../../Resources/Images/HigherEd_Agentic_Advisor/instructor%20dropdown.png)
+{% endhint %}
 
 An instructor profile includes:
 
@@ -73,7 +81,9 @@ An instructor profile includes:
 
 ![](../../../../Resources/Images/HigherEd_Agentic_Advisor/instructor%20contact.png)
 
-> **NOTE:** When creating a new instructor profile, you must set the **Contact Type** to **Instructor**.
+{% hint style="info" %}
+**NOTE:** When creating a new instructor profile, you must set the **Contact Type** to **Instructor**.
+{% endhint %}
 
 - Instructor information
 

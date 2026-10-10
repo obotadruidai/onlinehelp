@@ -28,7 +28,9 @@ If you have questions about your Druid tenant, please contact [support@druidai.c
 - **Easy Deployment**. Enable voice interactions within the Druid Portal without re-deploying your existing website webchat snippet.
 - **Flexible Modes**. Choose between a dedicated voice-only experience or a hybrid mode that lets users seamlessly switch from talking to typing.
 
-> **NOTE:** Druid webRTC channel requires prior setup of [Druid SIP Connectivity](../Druid%20Voice/Configure%20Druid%20SIP%20Connectivity.md).
+{% hint style="info" %}
+**NOTE:** Druid webRTC channel requires prior setup of [Druid SIP Connectivity](../Druid%20Voice/Configure%20Druid%20SIP%20Connectivity.md).
+{% endhint %}
 
 - **ElevenLabs Voices**. We are thrilled to announce the release of ElevenLabs Voices, a super useful and powerful capability designed to elevate your ElevenLabs voice management directly in the Druid Portal.
   For more information, see [ElevenLabs Voices](../Druid%20Voice/ElevenLabs%20Voices.md).
@@ -53,7 +55,9 @@ You can define the instructions that guide the agent and equip it with the tools
 
 By bringing the agent’s mandate and tooling together in one place, you gain greater control over agent behavior and execution.
 
-> **Info:** Documentation will be available soon.
+{% hint style="info" %}
+**Info:** Documentation will be available soon.
+{% endhint %}
 
 - **Sakari SMS Channel**. The Sakari SMS channel enables you to connect your Druid AI Agent directly with Sakari for powerful text messaging and customer engagement. This new channel streamlines outbound campaigns and two-way messaging—especially for clients already utilizing Sakari—allowing quick setup, automated alerts, and real-time delivery status tracking.  For more information, see [Sakari SMS](../Channels/Sakari_SMS.md).
 - **LLM Resources Metrics and Usage Monitoring**. With this release, you gain comprehensive visibility into Large Language Model (LLM) consumption and performance through the new LLM Resources Metrics dashboard.  For more information, see [LLM Resources Metrics and Usage Monitoring](../Governance%20%26%20Security/LLM%20Resources%20Metrics%20and%20Usage%20Monitoring.md).
@@ -70,9 +74,13 @@ By bringing the agent’s mandate and tooling together in one place, you gain gr
 
 - **Dynamic search priority at conversation time**. With this release, you have greater control over knowledge retrieval during live interactions. While you can configure default search priorities at the data source level, you can now override these priorities dynamically at runtime during a conversation. For more information, see [Dynamic Search Priority at Conversation Time](../Knowledgebase/Dynamic%20Search%20Priority%20at%20Conversation%20Time.md).
 - **Intelligent Document Processing (IDP) extractor (Technology Preview)**. The IDP extractor is now available for Knowledge Base extraction, supporting CSV, Word, PowerPoint, Excel, and PDF files. It provides advanced document parsing to improve the accuracy and contextual understanding of content extracted from complex business documents.
-> **NOTE:** The IDP extractor is a tenant-level feature. To activate it on your tenant during the Technology Preview, contact Druid Support.
+{% hint style="info" %}
+**NOTE:** The IDP extractor is a tenant-level feature. To activate it on your tenant during the Technology Preview, contact Druid Support.
+{% endhint %}
 
-> **Info:** For best results, we recommend using the IDP extractor with the **Basic** content chunker.
+{% hint style="info" %}
+**Info:** For best results, we recommend using the IDP extractor with the **Basic** content chunker.
+{% endhint %}
 
 - **Augmentation for Basic content chunking**. Knowledge Base Augmentation has been enhanced to support Basic content chunkers, enabling authors to use an LLM to generate additional information for extracted content.
 

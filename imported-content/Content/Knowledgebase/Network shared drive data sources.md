@@ -14,7 +14,9 @@ Druid supports adding and extracting data from the following storage types:
 - **FTP**: Integrate data from an FTP server using TLS implicit encryption (for cloud deployments only).
 - **SFTP**: Integrate data from an SFTP server using TLS implicit encryption (for cloud deployments only).
 
-> **NOTE:** While all storage options are available for Druid hybrid (KB Agent installed on premises) and full on-premise deployments, FTP and SFTP storage stand as the sole option available for KB in the cloud.
+{% hint style="info" %}
+**NOTE:** While all storage options are available for Druid hybrid (KB Agent installed on premises) and full on-premise deployments, FTP and SFTP storage stand as the sole option available for KB in the cloud.
+{% endhint %}
 
 This section will guide you through the process of adding data from network shared drive to the KB:
 
@@ -39,7 +41,9 @@ To begin, follow the step-by-step instructions in [Data Source Creation](Data%20
 
 ## SFTP storage
 
-> **NOTE:** Currently, connecting to the SFTP server is only supported via SFTP credentials (username and password). Public key authentication will be supported in a future release.
+{% hint style="info" %}
+**NOTE:** Currently, connecting to the SFTP server is only supported via SFTP credentials (username and password). Public key authentication will be supported in a future release.
+{% endhint %}
 
 To create data sources from SFTP storage via TLS implicit encryption:
 
@@ -88,7 +92,9 @@ Click the **Crawl** button at the top-right corner of the page. In the Start Cra
 
 Click **Start**.
 
-> **Info:** Based on the crawling policy set, it might take up to a few minutes for the crawling to complete. You might want to refresh from time to time to see when the action has completed.
+{% hint style="info" %}
+**Info:** Based on the crawling policy set, it might take up to a few minutes for the crawling to complete. You might want to refresh from time to time to see when the action has completed.
+{% endhint %}
 
 To crawl specific nodes, click the dots next to the desired node in the file repository explorer and select **Crawl Path**.
 

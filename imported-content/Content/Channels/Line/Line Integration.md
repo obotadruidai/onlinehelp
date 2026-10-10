@@ -7,7 +7,9 @@ title: "LINE"
 
 Connect your Druid AI Agent directly to the LINE messaging ecosystem. This integration allows your AI Agent to operate as a native LINE Official Account, enabling automated conversational flows, customer support, and direct user engagement through LINE.
 
-> **Info:** LINE is a messaging application that is especially used in Indonesia, Japan, Taiwan and Thailand.
+{% hint style="info" %}
+**Info:** LINE is a messaging application that is especially used in Indonesia, Japan, Taiwan and Thailand.
+{% endhint %}
 
 <a id="Prerequisites"></a>
 
@@ -15,7 +17,9 @@ Connect your Druid AI Agent directly to the LINE messaging ecosystem. This integ
 
 - You built and published an AI Agent.
 
-> **NOTE:** The LINE channel integration is not available in Druid on premise deployments; you cannot activate the channel.
+{% hint style="info" %}
+**NOTE:** The LINE channel integration is not available in Druid on premise deployments; you cannot activate the channel.
+{% endhint %}
 
 <a id="Integrationprocedure"></a>
 
@@ -93,7 +97,9 @@ When the channel is active, the following fields are available in Druid:
 
 ![](../../Resources/Images/Line/use%20webhook.png)
 
-> **NOTE:**  Set the Webhook URL before you tap on **Use webhook**. Enabling webhooks with an empty URL won't set the enabled status, even though the UI might say otherwise.
+{% hint style="info" %}
+**NOTE:**  Set the Webhook URL before you tap on **Use webhook**. Enabling webhooks with an empty URL won't set the enabled status, even though the UI might say otherwise.
+{% endhint %}
 
 <a id="Step5SettheLINEOfficialAccountfeatures"></a>
 
@@ -129,4 +135,6 @@ Get QR code from the [LINE Developers console](https://developers.line.biz/conso
 
 Your customers will open the LINE app on their mobile devices and scan the QR code to chat with your AI Agent.
 
-> **NOTE:** When a user initiates a conversation with the AI Agent, the Welcome flow will be automatically triggered. Regardless of the user's subscription status to the AI Agent channel, the welcome message will be promptly sent to the user, ensuring a seamless and engaging interaction experience.
+{% hint style="info" %}
+**NOTE:** When a user initiates a conversation with the AI Agent, the Welcome flow will be automatically triggered. Regardless of the user's subscription status to the AI Agent channel, the welcome message will be promptly sent to the user, ensuring a seamless and engaging interaction experience.
+{% endhint %}

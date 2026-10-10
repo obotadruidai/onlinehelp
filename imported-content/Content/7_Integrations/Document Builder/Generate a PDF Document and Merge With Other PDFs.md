@@ -7,7 +7,9 @@ title: "Generate a PDF Document and Merge it With PDFs from DRUID Storage"
 
 This section describes how to use the Document Builder to generate a PDF document using a specific document template (Word or Excel), then merge it with other PDF files stored in DRUID storage, Documents.
 
-> **IMPORTANT!** You can only merge a generated PDF document with specific PDF files stored in the DRUID Document Templates. You cannot generate a Word or Excel file and then merge it with specific PDF files.
+{% hint style="warning" %}
+**IMPORTANT!** You can only merge a generated PDF document with specific PDF files stored in the DRUID Document Templates. You cannot generate a Word or Excel file and then merge it with specific PDF files.
+{% endhint %}
 
 <a id="Step1Createthedocumenttemplate"></a>
 

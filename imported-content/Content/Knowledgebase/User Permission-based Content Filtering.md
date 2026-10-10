@@ -7,7 +7,9 @@ title: "User Permission-based Content Filtering"
 
 When using the Knowledge Base (KB) with a Large Language Model (LLM), you can refine the KB search results by performing a real-time permissions check for the current chat user against the referenced sources. This process is managed by the **KBCheckUserPermissions** internal action, which ensures the AI Agent only provides information that the user is authorized to view within the source system.
 
-> **NOTE:** This feature currently supports SharePoint Online data sources exclusively.
+{% hint style="info" %}
+**NOTE:** This feature currently supports SharePoint Online data sources exclusively.
+{% endhint %}
 
 <a id="PrerequisitesandAuthorization"></a>
 
@@ -15,12 +17,14 @@ When using the Knowledge Base (KB) with a Large Language Model (LLM), you can re
 
 To enable user permission-based content filtering, the **KBCheckUserPermissions** internal action must be able to verify user access rights for the targeted SharePoint Online data source.
 
-> **IMPORTANT!** The Druid AI Platform calls the **GetUserEffectivePermissions** method of the SharePoint REST API, and only this method, to check the user permissions on the cited documents, at conversation time. As per [Microsoft documentation](https://learn.microsoft.com/en-us/sharepoint/dev/sp-add-ins/sharepoint-admin-apis-authentication-and-authorization), this method requires SharePoint **Sites.FullContrall.All** permission on the App Registration.
-> The app registered in Microsoft Entra is configured with access without a user. Druid will adopt Microsoft's enhanced permission scopes for admin APIs as they become available.
->
-> ![](../Resources/Images/KB/perms1.png)
->
-> ![](../Resources/Images/KB/perms2.png)
+{% hint style="warning" %}
+**IMPORTANT!** The Druid AI Platform calls the **GetUserEffectivePermissions** method of the SharePoint REST API, and only this method, to check the user permissions on the cited documents, at conversation time. As per [Microsoft documentation](https://learn.microsoft.com/en-us/sharepoint/dev/sp-add-ins/sharepoint-admin-apis-authentication-and-authorization), this method requires SharePoint **Sites.FullContrall.All** permission on the App Registration.
+The app registered in Microsoft Entra is configured with access without a user. Druid will adopt Microsoft's enhanced permission scopes for admin APIs as they become available.
+
+![](../Resources/Images/KB/perms1.png)
+
+![](../Resources/Images/KB/perms2.png)
+{% endhint %}
 
 <a id="FilterUserPermissionbasedContent"></a>
 

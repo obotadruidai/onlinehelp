@@ -7,7 +7,9 @@ title: "Druid Portal"
 
 The Druid Portal provides an intuitive and easy to use web user interface, the perfect workspace for authoring AI Agents, conversations, and integrations with other platforms and IT systems. It has been designed for AI Agent authoring, packaging many tools in simple environments.
 
-> **NOTE:** If you have opted for a subscription plan, you will get three tenants: one for development, one for testing, and one for production. You will get Druid Portal links and admin credentials in an email.
+{% hint style="info" %}
+**NOTE:** If you have opted for a subscription plan, you will get three tenants: one for development, one for testing, and one for production. You will get Druid Portal links and admin credentials in an email.
+{% endhint %}
 
 Users with elevated privileges have full access rights while other users have the access rights that have been granted by their administrator based on business need to know. The way you access the Druid Portal depends on how your admin set up user authentication.
 
@@ -22,7 +24,9 @@ At a glance, the Druid Portal contains: a header, a menu and a working area.
 The Header contains three key elements that allow you to switch contexts or create new resources:
 
 - **AI Agent**: This displays your current working AI Agent. To create a new AI Agent, click the dropdown list, select **Create AI Agent**, and complete the Create New AI Agent modal.
-> **Info:**  The system automatically selects the AI Agent you last accessed before logging out.
+{% hint style="info" %}
+**Info:**  The system automatically selects the AI Agent you last accessed before logging out.
+{% endhint %}
 
 - **Solution**: Use this to manage and import AI Agent configurations. You can easily export a subset of configurations (like a complete HR AI Agent) and import it into other enterprise tenants (development, testing, or production).
 - **Workspace**: Access digital rooms where business users interact with AI Agents through chat and voice. This also centralizes data coming from various integrated sources. Workspace is a tenant-level feature that requires activation upon request.
@@ -47,6 +51,10 @@ The main menu is where you perform the primary tasks for building and monitoring
 
 The Working Area is your dedicated space to build and manage a single AI Agent and solution at a time. It filters the AI Agent elements so you can focus on creating smooth conversations and seamless integrations.
 
-> **NOTE:** The badges near each element indicate the number of elements in the chosen solution. Your AI Agent may have additional flows, entities, or integrations not displayed in the current solution. Include them in your solution as needed.
+{% hint style="info" %}
+**NOTE:** The badges near each element indicate the number of elements in the chosen solution. Your AI Agent may have additional flows, entities, or integrations not displayed in the current solution. Include them in your solution as needed.
+{% endhint %}
 
-> **Info:** The next time you will log into the Druid Portal, after logging in you will see the page you last navigated to before logging out or before closing the web browser.
+{% hint style="info" %}
+**Info:** The next time you will log into the Druid Portal, after logging in you will see the page you last navigated to before logging out or before closing the web browser.
+{% endhint %}

@@ -7,7 +7,9 @@ title: "Druid Data Service Connector"
 
 Druid Data Service Connector enables authors to use (at a conversational level) Druid entity records that are stored in Druid Data Service. Using this connector is out of the box, as entity records are stored in Druid Data Service, there is no need to define connection strings. You create connector actions and define the Druid Data Service specific integration tasks, then call the integrations tasks on the flows as best suits your needs.
 
-> **NOTE:** Instead of manually configuring integrations, you can use AI Authoring Agents to automate the process. By launching the Integrations Engineer from the Page Help icon on the Integrations page, you can describe your business requirements in natural language to automatically create or fine-tune Druid Data Service integration through guided chat interactions. For more information, see the [AI Authoring Agents](../../2_AI%20Agents/AI%20Authoring%20Agents.md#Create2).
+{% hint style="info" %}
+**NOTE:** Instead of manually configuring integrations, you can use AI Authoring Agents to automate the process. By launching the Integrations Engineer from the Page Help icon on the Integrations page, you can describe your business requirements in natural language to automatically create or fine-tune Druid Data Service integration through guided chat interactions. For more information, see the [AI Authoring Agents](../../2_AI%20Agents/AI%20Authoring%20Agents.md#Create2).
+{% endhint %}
 
 <a id="Step1Createconnectoraction"></a>
 
@@ -42,7 +44,9 @@ For more information, see subsequent sections.
 
 You can add as many UiPath Data Service connector actions as best suit your integration needs.
 
-> **NOTE:** A Connector Action represents a set of one or more integration tasks, which run sequentially and use the same request and response entities.
+{% hint style="info" %}
+**NOTE:** A Connector Action represents a set of one or more integration tasks, which run sequentially and use the same request and response entities.
+{% endhint %}
 
 <a id="Step2AddDruidDataServiceintegrationtasks"></a>
 

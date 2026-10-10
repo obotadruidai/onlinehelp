@@ -107,4 +107,6 @@ Here you can:
 
 - Enable patients to get automatically routed to the appointment agent. Enter the URL of the landing page where the Druid Webchat is hosted. The system uses this link in confirmation emails so patients can easily request an appointment for a test result consultation. If you leave this field empty, the email is sent as a reminder only and does not include the appointment request option. For information on how to embed Druid web chat within your website, see [../../../../../Channels/WebChat/WebChat.md#Deploy](../../../../../Channels/WebChat/WebChat.md#Deploy)[Deploy the WebChat Snippet](../../../../../Channels/WebChat/WebChat.md#Deploy).
 - Set the **Default Email**. Configure the sender email address used for result notifications. Enter the email address patients will see as the sender upon receiving detailed results.
-> **IMPORTANT!** This mandatory field must be configured before the system can send result notification emails.
+{% hint style="warning" %}
+**IMPORTANT!** This mandatory field must be configured before the system can send result notification emails.
+{% endhint %}

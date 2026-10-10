@@ -16,7 +16,9 @@ Based on the model you want to use, from the **Provider** drop-down, select the 
 
 ![](../Resources/Images/AI/providers.png)
 
-> **NOTE:**  Using NeuralSpace and the Knowledge Base model is available in DRUID 5.9 and higher.
+{% hint style="info" %}
+**NOTE:**  Using NeuralSpace and the Knowledge Base model is available in DRUID 5.9 and higher.
+{% endhint %}
 
 <a id="UsingtheDRUIDNLP"></a>
 

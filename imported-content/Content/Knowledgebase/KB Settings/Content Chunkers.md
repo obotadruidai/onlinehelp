@@ -21,7 +21,9 @@ To generate additional information for the extracted content using an LLM, turn 
 
 ![](../../Resources/Images/druid%2010.1/enable%20aug.png)
 
-> **Info:** Configure augmentation strategies in **Knowledge Base Settings** > **Advanced** > **Augmentation**. For more information, see [Augmentation.htm](<https://docs.druidai.com/docs/Content/Knowledgebase/KB%20Settings/Augmentation.htm>).
+{% hint style="info" %}
+**Info:** Configure augmentation strategies in **Knowledge Base Settings** > **Advanced** > **Augmentation**. For more information, see [Augmentation.htm](<https://docs.druidai.com/docs/Content/Knowledgebase/KB%20Settings/Augmentation.htm>).
+{% endhint %}
 
 <a id="LLMContentChunking"></a>
 
@@ -29,7 +31,9 @@ To generate additional information for the extracted content using an LLM, turn 
 
 LLM chunking uses generative AI to perform smart content splitting, focusing on producing more meaningful and contextually relevant chunks. This approach leverages language models to identify and split key pieces of content, improving the relevance of each chunk.
 
-> **Info:** LLM-based chunking is enabled by default to split content into contextually relevant chunks. If the default LLM resource is unavailable, an error is raised. In previous versions, Druid automatically falls back to an alternative model like Azure OpenAI GPT-4o-mini, if it’s configured. If no generative resource is activated on your tenant, Druid defaults to the basic (non-AI) chunking method. Resetting the settings restores LLM chunking using the available resource.
+{% hint style="info" %}
+**Info:** LLM-based chunking is enabled by default to split content into contextually relevant chunks. If the default LLM resource is unavailable, an error is raised. In previous versions, Druid automatically falls back to an alternative model like Azure OpenAI GPT-4o-mini, if it’s configured. If no generative resource is activated on your tenant, Druid defaults to the basic (non-AI) chunking method. Resetting the settings restores LLM chunking using the available resource.
+{% endhint %}
 
 <a id="Addnewchunkers"></a>
 

@@ -39,7 +39,9 @@ Configuring an app in Druid for JWT assertion authentication shares similarities
 ![](../../Resources/Images/JWT%20AUTH%20WITH%20MS/TENANT%20ID.png)
 
 5. In the **Token Expires After** field, enter the expiration time on or after which the JWT must not be accepted for processing, and select the time in hours, minutes, days.
-> **NOTE:** The value you enter here must not exceed the certificate expiration time.
+{% hint style="info" %}
+**NOTE:** The value you enter here must not exceed the certificate expiration time.
+{% endhint %}
 
 6. Upload the **Private Key** file associated with the certificate you configured in the Microsoft Identity Platform. This key is crucial for signing the JWT assertion.
 7. In the **Audience** field, enter the intended recipient of the JWT. In this scenario, it is the Microsoft login server. You can directly copy and paste the URL from the **Authorization Server** field.
@@ -53,18 +55,22 @@ Configuring an app in Druid for JWT assertion authentication shares similarities
 ![](../../Resources/Images/JWT%20AUTH%20WITH%20MS/CLIENT%20APP%20ID.png)
 
 11. In the **Tenant ID**, enter your Microsoft Entra tenant ID (the same ID used in the Authorization Server field).
-> **IMPORTANT!** When authenticating with a third-party application that uses Microsoft Identity Platform (Microsoft Entra ID) solely for authorization—and does not use Microsoft Graph endpoints—you must define the **Scope** variable to target that specific application's API; otherwise, the authorization will fail. In the Variables table, add variable **Scope** (case-sensitive) and set value to: **api://**<Application-ID>**/.default**.
->
-> To get the Application (client) ID, follow these steps:
->
-> 1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/).
-> 2. In the left navigation pane, expand Identity and select **Applications** > **App registrations**.
-> 3. Click the **All applications** tab.
-> 4. Search for and select the target third-party application you are authorizing.
-> 5. On the Overview page, locate the **Application (client) ID** field.
-> 6. Copy to clipboard the GUID value (e.g., 11111111-2222-3333-4444-555555555555).
-> 7. Paste this ID in place of <Application-ID> in your Scope value.
+{% hint style="warning" %}
+**IMPORTANT!** When authenticating with a third-party application that uses Microsoft Identity Platform (Microsoft Entra ID) solely for authorization—and does not use Microsoft Graph endpoints—you must define the **Scope** variable to target that specific application's API; otherwise, the authorization will fail. In the Variables table, add variable **Scope** (case-sensitive) and set value to: **api://**<Application-ID>**/.default**.
+
+To get the Application (client) ID, follow these steps:
+
+1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/).
+2. In the left navigation pane, expand Identity and select **Applications** > **App registrations**.
+3. Click the **All applications** tab.
+4. Search for and select the target third-party application you are authorizing.
+5. On the Overview page, locate the **Application (client) ID** field.
+6. Copy to clipboard the GUID value (e.g., 11111111-2222-3333-4444-555555555555).
+7. Paste this ID in place of <Application-ID> in your Scope value.
+{% endhint %}
 
 12. Save the app.
 
-> **Info:** The JWT assertion is automatically included in all REST calls to external API endpoints (when using the app as Connection Code).
+{% hint style="info" %}
+**Info:** The JWT assertion is automatically included in all REST calls to external API endpoints (when using the app as Connection Code).
+{% endhint %}

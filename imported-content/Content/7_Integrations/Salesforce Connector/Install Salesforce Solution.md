@@ -17,7 +17,9 @@ If not all language(s) defined on the destination AI Agent exist in the solution
 
 If none of the languages on the destination AI Agent exists in the solution package, you have to select which language from the solution to import on each language of the destination AI Agent.
 
-> **Info:** On import, Druid will write the messages in the selected languages making it easy for you to translate in the specific languages later.
+{% hint style="info" %}
+**Info:** On import, Druid will write the messages in the selected languages making it easy for you to translate in the specific languages later.
+{% endhint %}
 
 Check the content of the solution template by clicking the **Components** tab.
 
@@ -29,6 +31,8 @@ To see details about a specific element, click on it (e.g., Flows). The list of 
 
 ![](../../Resources/Images/Salesforce%20Connector/Install%20Salesforce%20Solution_3.png)
 
-> **IMPORTANT!** All elements which will be overwritten by solution import are marked with the Warning label. Solution import (elements overwriting) cannot be reverted, so we strongly recommend you to install solutions on a dev/sandbox environment.
+{% hint style="warning" %}
+**IMPORTANT!** All elements which will be overwritten by solution import are marked with the Warning label. Solution import (elements overwriting) cannot be reverted, so we strongly recommend you to install solutions on a dev/sandbox environment.
+{% endhint %}
 
 To install the selected solution, click the **Import solutio**n (![](../../Resources/Images/Salesforce%20Connector/Install%20Salesforce%20Solution_4.png)) button. The selected solution is imported to the current AI Agent. When the import has successfully completed, a notification is displayed at the bottom-right corner of the page.

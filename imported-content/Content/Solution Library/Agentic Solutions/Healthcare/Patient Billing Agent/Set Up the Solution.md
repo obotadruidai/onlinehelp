@@ -56,7 +56,9 @@ To configure this app connection, follow these steps:
 
 ![](../../../../Resources/Images/Patient%20Billing%20Agent/vision%20details.png)
 
-> **NOTE:** If the DRUID.Vision.Api resource does not appear, contact your sales representative to activate DRUID Vision on your tenant. The DRUID.Vision.Api resource should have the following two claims: **convert-pdf-page-to-jpeg** and **convert-pdf-to-jpeg**. If any of these claims are missing, ask your sales representative to update the configuration.
+{% hint style="info" %}
+**NOTE:** If the DRUID.Vision.Api resource does not appear, contact your sales representative to activate DRUID Vision on your tenant. The DRUID.Vision.Api resource should have the following two claims: **convert-pdf-page-to-jpeg** and **convert-pdf-to-jpeg**. If any of these claims are missing, ask your sales representative to update the configuration.
+{% endhint %}
 
 3. Go to **Solution Contents** > **Apps** and click on **Druid Vision**.
 4. In the **Base URL** field, paste the resource URL you copied at step 2. Remove everything after api/, including `engine/{templateName}`. For example, change: `https://druidvision.eu.druidplatform.com/api/engine/{templateName}` to: `https://druidvision.eu.druidplatform.com/api/`.
@@ -74,7 +76,9 @@ Click on the **SendGrid App REST** and in the variable key value field, enter 
 
 Click **Save & Close** to apply the configuration and return to the Apps page.
 
-> **NOTE:** When [customizing the patient experience](#Step_6), set the **Default Email** to the company automated notification email. This address applies to all system-generated emails in the environment.
+{% hint style="info" %}
+**NOTE:** When [customizing the patient experience](#Step_6), set the **Default Email** to the company automated notification email. This address applies to all system-generated emails in the environment.
+{% endhint %}
 
 #### Configure the AzureStorage app
 

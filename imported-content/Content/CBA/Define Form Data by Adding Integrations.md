@@ -7,9 +7,13 @@ title: "Define Form Data by Adding Integrations"
 
 Integrations allow your form to display data from DRUID Data Services and external sources, ensuring users see accurate and up-to-date information. By configuring integrations, you can create, read, update, and delete entity records within the form.
 
-> **NOTE:** Before defining form data, the entity you’re creating forms for must be set as the Response Entity in the integration task, with the **Is Response Collection** option selected in the **Response** tab.
+{% hint style="info" %}
+**NOTE:** Before defining form data, the entity you’re creating forms for must be set as the Response Entity in the integration task, with the **Is Response Collection** option selected in the **Response** tab.
+{% endhint %}
 
-> **Info:** For quick integration with Druid Data Services, you can use the CRUD Template in the entity integrations. While you can add the CRUD Template multiple times, note that DRUID only duplicates the integration tasks. For more information, see CRUD Template.
+{% hint style="info" %}
+**Info:** For quick integration with Druid Data Services, you can use the CRUD Template in the entity integrations. While you can add the CRUD Template multiple times, note that DRUID only duplicates the integration tasks. For more information, see CRUD Template.
+{% endhint %}
 
 To fetch and display entity data in a form, follow these steps:
 
@@ -20,7 +24,9 @@ To fetch and display entity data in a form, follow these steps:
 - **Update Data** – Updates entity record data.
 - **Delete Data** – Defines actions for record deletion.
 
-> **NOTE:** If you don’t add an integration for a section, users won’t be able to perform that action on entity records.
+{% hint style="info" %}
+**NOTE:** If you don’t add an integration for a section, users won’t be able to perform that action on entity records.
+{% endhint %}
 
 2. Add an integration action to the relevant section:
 
@@ -35,7 +41,9 @@ To fetch and display entity data in a form, follow these steps:
 ![](../Resources/Images/CBA/form%20integration%20action.png)
 
 2. Save the integration action by clicking the **Save** icon (![](../Resources/Images/CBA/save%20view%20icon.png)) at the top-right corner of the editor.
-> **IMPORTANT!**  You can add only one connector action per integration section but can include multiple integration tasks to aggregate data from various sources.
+{% hint style="warning" %}
+**IMPORTANT!**  You can add only one connector action per integration section but can include multiple integration tasks to aggregate data from various sources.
+{% endhint %}
 
 3. Add integration tasks. Click on the **Add task** icon and select the desired integration task from the list where the current entity is Response entity and **Is Response Collection** is selected.
 

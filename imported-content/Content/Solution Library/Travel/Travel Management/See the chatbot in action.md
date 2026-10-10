@@ -5,10 +5,12 @@ title: "See AI Agent in Action"
 <a id="SeeAIAgentinAction"></a>
 
 
-> **NOTE:** The AI Agent is trained in two languages: RO and EN. If you want to switch between languages, just type the following commands in the snippet:
->
-> - “Romana te rog” if you want to switch from EN to RO.
-> - “English please” if you want to switch from RO to EN.
+{% hint style="info" %}
+**NOTE:** The AI Agent is trained in two languages: RO and EN. If you want to switch between languages, just type the following commands in the snippet:
+
+- “Romana te rog” if you want to switch from EN to RO.
+- “English please” if you want to switch from RO to EN.
+{% endhint %}
 
 | Skill | English | Romanian |
 | --- | --- | --- |

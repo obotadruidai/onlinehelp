@@ -41,4 +41,6 @@ If you click **Save**, the **ConnectorSteps** tab appears and you can define 
 
 You can add as many SOAP connector actions as best suit your integration needs.
 
-> **NOTE:** A Connector Action represents a set of one or more integration tasks, which run sequentially and use the same request and response entities.
+{% hint style="info" %}
+**NOTE:** A Connector Action represents a set of one or more integration tasks, which run sequentially and use the same request and response entities.
+{% endhint %}

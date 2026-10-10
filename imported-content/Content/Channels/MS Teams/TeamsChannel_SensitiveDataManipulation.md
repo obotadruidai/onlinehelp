@@ -11,7 +11,9 @@ DRUID provides authors with extensive options to create AI Agents able to secure
 
 ## Sensitive data manipulation in MS Teams channel
 
-> **NOTE:** This feature is available in DRUID version 1.63 for AI Agents using Bot framework version 4. Sensitive data manipulation is only available on prompt steps on both direct line and MS Teams channel. For information on how to configure the prompt steps to manipulate sensitive data, see [Prompt Steps Configuration](../../4_Flows/Prompt%20Steps%20Configuration.md).
+{% hint style="info" %}
+**NOTE:** This feature is available in DRUID version 1.63 for AI Agents using Bot framework version 4. Sensitive data manipulation is only available on prompt steps on both direct line and MS Teams channel. For information on how to configure the prompt steps to manipulate sensitive data, see [Prompt Steps Configuration](../../4_Flows/Prompt%20Steps%20Configuration.md).
+{% endhint %}
 
 When the AI Agent deployed in the MS Teams channel asks the user to enter sensitive data (a prompt message that will capture sensitive data is executed), MS Teams will automatically generate a Teams built-in card that asks for the user confirmation to continue.
 
@@ -21,7 +23,9 @@ After the user confirms, MS Teams renders a dedicated DRUID built-in page, which
 
 ![](../../Resources/Images/Sensitive%20data%20manipulation%20in%20MS%20Teams%20channel/Sensitive%20data%20manipulation_1.png)
 
-> **IMPORTANT!**  The sensitive data passes directly to DRUID platform, always encrypted, bypassing the MS Teams channel. After the user sends the sensitive data in the DRUID built-in page, the data is not shown in the chat.
+{% hint style="warning" %}
+**IMPORTANT!**  The sensitive data passes directly to DRUID platform, always encrypted, bypassing the MS Teams channel. After the user sends the sensitive data in the DRUID built-in page, the data is not shown in the chat.
+{% endhint %}
 
 <a id="MSTeamschannelconfigurationforsensitivedatamanipulation"></a>
 

@@ -30,7 +30,9 @@ If you have questions about your DRUID tenant, please contact [support@Druidai.c
 
 ![](../../Resources/Images/druid%208.14/commands.png)
 
-> **NOTE:** If you have technical flows that currently include such phrases in their NLP training data, make sure to update those flows. Remove the technical phrases from the training phrases section and add them to the new Commands section instead.
+{% hint style="info" %}
+**NOTE:** If you have technical flows that currently include such phrases in their NLP training data, make sure to update those flows. Remove the technical phrases from the training phrases section and add them to the new Commands section instead.
+{% endhint %}
 
 - **Sprinklr channel**. With this release, you can integrate AI Agents with Sprinklr to handle user requests within the chosen channels in Sprinklr flows. For information on how to configure the channel, see [Sprinklr](../../Channels/Sprinklr/Sprinklr%20Integration.md).
 
@@ -39,14 +41,18 @@ If you have questions about your DRUID tenant, please contact [support@Druidai.c
 ## Improvements
 
 - **Druid Conductor - Trigger flows between orchestrated AI Agents or from an orchestrated AI Agent to the Druid Conductor**. With this release, you can now trigger a flow from one orchestrated AI Agent to another orchestrated AI Agent or from an orchestarted AI Agent to the Druid Conductor itself.
-> **NOTE:** Cross-child flow triggering is only supported within the Druid Conductor conversation. It is not available when interacting directly with an individual child AI Agent.
+{% hint style="info" %}
+**NOTE:** Cross-child flow triggering is only supported within the Druid Conductor conversation. It is not available when interacting directly with an individual child AI Agent.
+{% endhint %}
 
 ![](../../Resources/Images/druid%208.14/megabot%20trigger%20flow.png)
 
-> **NOTE:**
->
-> - If a child AI Agent is removed from the Druid Conductor, any flows that rely on it will no longer trigger.
-> - If a AI Agent is assigned as a child to multiple megabots, the flow list will display flows from all child AI Agents across those megabots—grouped by AI Agent. Make sure to select the correct flow to avoid misrouting or triggering unintended behavior.
+{% hint style="info" %}
+**NOTE:**
+
+- If a child AI Agent is removed from the Druid Conductor, any flows that rely on it will no longer trigger.
+- If a AI Agent is assigned as a child to multiple megabots, the flow list will display flows from all child AI Agents across those megabots—grouped by AI Agent. Make sure to select the correct flow to avoid misrouting or triggering unintended behavior.
+{% endhint %}
 
 - **Connector - New Druid APIs with Built-in Authentication**. This introduces new Druid APIs with built-in authentication, providing you with the ability to perform specific actions directly within your integrations:
 
@@ -64,8 +70,10 @@ If you have questions about your DRUID tenant, please contact [support@Druidai.c
 ![](../../Resources/Images/druid%208.14/chat%20languages.png)
 
 - **DRUID Data Service Connector – Batch processing enhancement for Add Entity integration**. This release introduces a new option for the Add Entity integration, **Set parent reference for Batch**. When adding multiple child records in a batch, this option automatically links each child to its parent entity—no need for manual foreign key mapping via Custom Code integration.
-> **NOTE:**
-> To use this feature, you must first define a proper relationship between the parent and child entities by configuring a foreign key field in the child entity that references the parent.
+{% hint style="info" %}
+**NOTE:**
+To use this feature, you must first define a proper relationship between the parent and child entities by configuring a foreign key field in the child entity that references the parent.
+{% endhint %}
 
 ![](../../Resources/Images/druid%208.14/set%20parent%20reference.png)
 

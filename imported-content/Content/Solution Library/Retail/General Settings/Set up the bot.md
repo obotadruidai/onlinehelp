@@ -15,7 +15,9 @@ In Druid Portal:
 
 ## <a id="Step_1:_Configure_bot"></a>Step 1: Configure the AI Agent
 
-> **NOTE:** Retail default language is set to EN-US and additional language is set to RO. If you want to add additional languages on Retail, make sure to add the language of choice as additional AI Agent language and add the according training phrases, synonyms and conditions.
+{% hint style="info" %}
+**NOTE:** Retail default language is set to EN-US and additional language is set to RO. If you want to add additional languages on Retail, make sure to add the language of choice as additional AI Agent language and add the according training phrases, synonyms and conditions.
+{% endhint %}
 
 To configure the AI Agent for Retail, you need to set Live Chat timeouts and Special Flows, enable the AI Agent for Live Chat integration and configure the connection strings.
 
@@ -80,7 +82,9 @@ Victor provides you with a wide range of apps for integration with various syste
 | [UiPathDruidsoft1](#UiPathDruidsoft1_Configuration) | UiPath | UiPath robots | Allows the AI Agent and UiPath robots to work seamlessly together to fulfill customers service and employee requests. | Yes |
 | [UiPathOrchApi](#UiPathOrchApi_Configuration) | REST | UiPath Orchestrator API | Druid integration with UiPath Orchestrator API. | Yes |
 
-> **NOTE:** To run the Retail setup flow, you only need to set up the SQL app.
+{% hint style="info" %}
+**NOTE:** To run the Retail setup flow, you only need to set up the SQL app.
+{% endhint %}
 
 For information on how to set the connection strings, click on the configuration section specific to the app you want to set:
 
@@ -118,7 +122,9 @@ To configure the UiPath connector, from Retail Apps, click **UiPathDruidsoft1**.
 
 Enter the Cloud Orchestrator details (the ones noted in the prerequisites):
 
-> **IMPORTANT!** To have Druid read all the folders from your UiPath Orchestrator, after you provide the UiPath connection strings to the UiPath Cloud Orchestrator, click the **Get UiPath folders** button.
+{% hint style="warning" %}
+**IMPORTANT!** To have Druid read all the folders from your UiPath Orchestrator, after you provide the UiPath connection strings to the UiPath Cloud Orchestrator, click the **Get UiPath folders** button.
+{% endhint %}
 
 For more information on how to configure the UiPath connector, see [Starting UiPath Unattended](../../../7_Integrations/UiPath/Starting%20UiPath%20Unattended.md) or [Creating the UiPath Connection Strings](../../../7_Integrations/UiPath/Creating%20the%20UiPath%20Connection%20Strings.md).
 
@@ -165,7 +171,9 @@ In the Variables section, add the integration context variables as follows:
 
 Click **Save and Close**.
 
-> **IMPORTANT!** In order for the AI Agent integration with the apps to be up and running, you need to publish the connector actions. To do so, from the main menu, click **Integrations** and click the **Publish** button.
+{% hint style="warning" %}
+**IMPORTANT!** In order for the AI Agent integration with the apps to be up and running, you need to publish the connector actions. To do so, from the main menu, click **Integrations** and click the **Publish** button.
+{% endhint %}
 
 <a id="Step2SetUpDruidUsers"></a>
 
@@ -183,7 +191,9 @@ For production environments, you need to make sure that in the Druid Portal you 
 - For all managers, create Druid users and assign them the **Manager** role.
 - For all agents in your customer support department, create Druid users and assign them the **Helpdesk Agent** role.
 
-> **NOTE:** To view all Druid users, in the Druid Portal, from the main menu click **Administration** > **Users** and in the Users page, tick the **ShowChatUsers** check box.
+{% hint style="info" %}
+**NOTE:** To view all Druid users, in the Druid Portal, from the main menu click **Administration** > **Users** and in the Users page, tick the **ShowChatUsers** check box.
+{% endhint %}
 
 For Druid demo and community environments, assign all roles to your user.
 

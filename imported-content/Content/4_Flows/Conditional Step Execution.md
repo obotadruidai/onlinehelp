@@ -74,7 +74,9 @@ For more complex conditions, you can use advanced coding:
 
 2. Use predefined code templates provided in the Code Editor (templates available in the **Add default template** drop-down ( ![](../Resources/Images/Setting%20conditions%20on%20steps/Setting%20Up%20Conditions%20on%20Steps_7.png))).
 3. Customize the template code to suit your requirements.
-> **NOTE:** Ensure that entity references in the Code Editor do not include brackets “[[ ]]” to facilitate usage with the Entity explorer. Use inline functions for intricate business rules, encapsulating the code within a function returning a Boolean.
+{% hint style="info" %}
+**NOTE:** Ensure that entity references in the Code Editor do not include brackets “[[ ]]” to facilitate usage with the Entity explorer. Use inline functions for intricate business rules, encapsulating the code within a function returning a Boolean.
+{% endhint %}
 
 <a id="Useinlinefunctionforcomplexbusinessrules"></a>
 
@@ -93,7 +95,9 @@ For complex business rules, you pack the code inside an inline function returnin
  )()
 ```
 
-> **NOTE:** Inside the code you can refer the conversation context using the same format you know: [[ChatUser]], [[ChatUser]].ChannelId, [[Account]], etc.
+{% hint style="info" %}
+**NOTE:** Inside the code you can refer the conversation context using the same format you know: [[ChatUser]], [[ChatUser]].ChannelId, [[Account]], etc.
+{% endhint %}
 
 <a id="CheckConditionTemplate"></a>
 

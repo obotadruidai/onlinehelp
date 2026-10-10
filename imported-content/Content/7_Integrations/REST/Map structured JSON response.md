@@ -5,16 +5,22 @@ title: "Map Structured JSON Response Body"
 <a id="MapStructuredJSONResponseBody"></a>
 
 
-> **IMPORTANT!** The structure of entities that capture the JSON object response should reflect the structure of the JSON data object that you map on the response.
+{% hint style="warning" %}
+**IMPORTANT!** The structure of entities that capture the JSON object response should reflect the structure of the JSON data object that you map on the response.
+{% endhint %}
 
 To map a simple and structured JSON response body, follow these steps:
 
 1. From the **Response Body Content Type** field, select **JSON**.
 2. In the mapping table, click the **Add** icon next to the mapping line.
 3. In **Connector field name** enter the name of the property you want to map from the JSON response body.
-> **Info:** You can also specify **Connector field name** in the following native scripts: Latin, Greek, Hebrew, Simplified Chinese, Traditional Chinese, Japanese, Hindi and Arabic.
+{% hint style="info" %}
+**Info:** You can also specify **Connector field name** in the following native scripts: Latin, Greek, Hebrew, Simplified Chinese, Traditional Chinese, Japanese, Hindi and Arabic.
+{% endhint %}
 
-> **NOTE:** The way you map the fields depends on the structure of the JSON response body. For more information, see the examples provided below.
+{% hint style="info" %}
+**NOTE:** The way you map the fields depends on the structure of the JSON response body. For more information, see the examples provided below.
+{% endhint %}
 
 4. Leave the **Connector field type** field empty.
 5. In the **Druid entity field name**, type **[[**, select the entity, then select the entity field where you want to store the property from the response.
@@ -116,9 +122,11 @@ In the mapping table, map the fields of the list’s entity type ([[Contract]] i
 
 ![](../../Resources/Images/rest/project%20result%20mapping.png)
 
-> **NOTE:** You can use JSONPath filter expressions in the **Connector field name** field to filter the items in the collection (e.g., use **$[?@.ContractValue >=200]** to store only the contracts with a value equal to or greater than 200.00).
->
-> ![](../../Resources/Images/rest/jsonpath%20filter.png)
+{% hint style="info" %}
+**NOTE:** You can use JSONPath filter expressions in the **Connector field name** field to filter the items in the collection (e.g., use **$[?@.ContractValue >=200]** to store only the contracts with a value equal to or greater than 200.00).
+
+![](../../Resources/Images/rest/jsonpath%20filter.png)
+{% endhint %}
 
 <a id="Mapacollectionofobjectsintherootentity"></a>
 

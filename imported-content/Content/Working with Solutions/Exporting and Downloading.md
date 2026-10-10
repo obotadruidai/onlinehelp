@@ -23,9 +23,13 @@ You can link all entity fields or only specific fields that are used in web view
 
 ![](../Resources/Images/Working%20with%20solutions/link%20entities%20popup.png)
 
-> **Info:** It might take up to a minute to link the entity fields to the current solution; therefore, you might want to wait until the process completes.
+{% hint style="info" %}
+**Info:** It might take up to a minute to link the entity fields to the current solution; therefore, you might want to wait until the process completes.
+{% endhint %}
 
-> **NOTE:** If you link entities that have views, forms and charts defined, then the workspaces using those entity elements are also linked to the current solution and will be included in the solution export package. If you want to exclude the workspaces, select **Select all without Views, Forms & Charts**.
+{% hint style="info" %}
+**NOTE:** If you link entities that have views, forms and charts defined, then the workspaces using those entity elements are also linked to the current solution and will be included in the solution export package. If you want to exclude the workspaces, select **Select all without Views, Forms & Charts**.
+{% endhint %}
 
 <a id="Linkelementstothecurrentsolution"></a>
 
@@ -60,9 +64,13 @@ You can include the following AI Agent-related settings in the solution export p
 - Analytics
 - Roles
 
-> **IMPORTANT!** Including the AI Agent-related settings in the solution export package is fully secure as it does not contain any credentials. After the solution import on the destination AI Agent, you have to manually enter the credentials if specific AI Agent settings require credentials (e.g. machine translation).
+{% hint style="warning" %}
+**IMPORTANT!** Including the AI Agent-related settings in the solution export package is fully secure as it does not contain any credentials. After the solution import on the destination AI Agent, you have to manually enter the credentials if specific AI Agent settings require credentials (e.g. machine translation).
+{% endhint %}
 
-> **NOTE:** Importing the solution package on the destination AI Agent will overwrite that AI Agent settings except for the AI Agent languages. The import will add new languages from solution to the destination AI Agent without removing the existing languages from the destination AI Agent.
+{% hint style="info" %}
+**NOTE:** Importing the solution package on the destination AI Agent will overwrite that AI Agent settings except for the AI Agent languages. The import will add new languages from solution to the destination AI Agent without removing the existing languages from the destination AI Agent.
+{% endhint %}
 
 If the export was successful, Druid generates a new archive (zip file) with the latest version of the elements included in the solution and it's downloaded on your computer in the default Download folder. The zip file contains json files with object metadata.
 

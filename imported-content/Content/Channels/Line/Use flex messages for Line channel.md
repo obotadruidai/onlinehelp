@@ -125,7 +125,9 @@ Copy the JSON content.
 }
 ```
 
-> **NOTE:** Set the flex message parameters to static values as setting them up to values stored in Druid entity fields is not working.
+{% hint style="info" %}
+**NOTE:** Set the flex message parameters to static values as setting them up to values stored in Druid entity fields is not working.
+{% endhint %}
 
 In Druid, go to the desired Message flow step and click to configure it. Click the Metadata section and tap on **Advanced Editing**.
 

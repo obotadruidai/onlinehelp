@@ -21,7 +21,9 @@ In Input mapping on the backchannel step, provide the entity that stores activit
 
 ## Set session parameters using the "config" event
 
-> **NOTE:** Use the "config" event with priority against the SetVoiceSessionParams.
+{% hint style="info" %}
+**NOTE:** Use the "config" event with priority against the SetVoiceSessionParams.
+{% endhint %}
 
 To set the parameters for the entire call (session parameters), at the beginning of the call, on the welcome flow, add a backchannel step named **config** and in **Input mapping** provide the entity which stores the timeouts and actions you want to set.
 
@@ -72,7 +74,9 @@ AudioCodes VoiceAI Connect can pass custom SIP headers from incoming phone calls
 
 By default, **[[ChatUser]].Phone** stores the user’s phone number and **[[ChatUser]].CalleePhoneNumber** stores the AI Agent phone number.
 
-> **NOTE:** You need to create dedicated fields in the [[QueryParams]] system entity that have the same name as the incoming SIP header keys. You can store additional incoming custom SIP headers in dedicated fields in the **[[QueryParams]]** system entity. For that, you need to create dedicated fields that have the same name as the incoming SIP header keys.
+{% hint style="info" %}
+**NOTE:** You need to create dedicated fields in the [[QueryParams]] system entity that have the same name as the incoming SIP header keys. You can store additional incoming custom SIP headers in dedicated fields in the **[[QueryParams]]** system entity. For that, you need to create dedicated fields that have the same name as the incoming SIP header keys.
+{% endhint %}
 
 For more information about configuring header forwarding on the AudioCodes side, see [VoiceAI Connect documentation](https://techdocs.audiocodes.com/voice-ai-connect/#VAIG_Combined/sending-any-SIP-header-to-bot.htm).
 
@@ -84,7 +88,9 @@ When an outbound call (dialout) is initiated via AudioCodes VoiceAI Connect, cus
 
 Druid automatically stores this initiation payload inside the following system entity field: **[[QueryParams]].dialoutMetadata**.
 
-> **IMPORTANT!** Although [[QueryParams]] is a built-in system entity, the **[[QueryParams].dialoutMetadata** field is not created by default. You must manually create the **dialoutMetadata** field (string) inside the [[QueryParams]] system entity before attempting to store, read, or parse this payload in conversation flows.
+{% hint style="warning" %}
+**IMPORTANT!** Although [[QueryParams]] is a built-in system entity, the **[[QueryParams].dialoutMetadata** field is not created by default. You must manually create the **dialoutMetadata** field (string) inside the [[QueryParams]] system entity before attempting to store, read, or parse this payload in conversation flows.
+{% endhint %}
 
 Because this parameter carries structured JSON data (such as participant details, CRM identifiers, or custom session parameters), Druid saves `dialoutMetadata` as a stringified JSON.
 

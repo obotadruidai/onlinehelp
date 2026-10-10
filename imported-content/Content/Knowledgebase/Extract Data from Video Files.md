@@ -7,9 +7,13 @@ title: "Extract Data from Video Files"
 
 Druid can process video files to extract data from video content, making it searchable and usable within your knowledge base.
 
-> **NOTE:** This is a tenant feature and requires **Druid Knowledge Base Multimedia Extractor** activation on your tenant. For activation, reach out to your Druid representative.
+{% hint style="info" %}
+**NOTE:** This is a tenant feature and requires **Druid Knowledge Base Multimedia Extractor** activation on your tenant. For activation, reach out to your Druid representative.
+{% endhint %}
 
-> **IMPORTANT!** Extracting data from video files will incur additional costs.
+{% hint style="warning" %}
+**IMPORTANT!** Extracting data from video files will incur additional costs.
+{% endhint %}
 
 Druid supports data extraction (video transcript) from video files only for the following sources:
 

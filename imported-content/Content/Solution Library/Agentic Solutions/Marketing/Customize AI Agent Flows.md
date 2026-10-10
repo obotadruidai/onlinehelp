@@ -13,7 +13,9 @@ By default, the following three trigger flow steps are included in the agent-rin
 - **Schedule Appointment** – Handles appointment scheduling requests.
 - **Live Agent** – Handles requests to transfer the conversation to a live agent.
 
-> **NOTE:** The three trigger flow steps are provided as configuration points only. Their associated functionality becomes available once you create and link the appropriate custom flows.
+{% hint style="info" %}
+**NOTE:** The three trigger flow steps are provided as configuration points only. Their associated functionality becomes available once you create and link the appropriate custom flows.
+{% endhint %}
 
 To enable these capabilities, you must create the corresponding custom flows and associate them with the predefined trigger flow steps:
 

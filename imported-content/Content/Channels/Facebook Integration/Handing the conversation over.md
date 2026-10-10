@@ -47,7 +47,9 @@ To assign the Facebook app as the Primary Receiver for your Facebook page:
 
 ![](../../Resources/Images/Handing%20the%20conversation%20over%20to%20FB%20Page%20Inbox%20or%20to%20another%20bot/Handing%20the%20conversation%20over_3.png)
 
-> **Info:** If you have multiple AI Agents deployed in the Facebook channel, select the Facebook app created for the specific AI Agent you want to handle conversations by default in Messenger as the primary receiver.
+{% hint style="info" %}
+**Info:** If you have multiple AI Agents deployed in the Facebook channel, select the Facebook app created for the specific AI Agent you want to handle conversations by default in Messenger as the primary receiver.
+{% endhint %}
 
 6. Close the pop-up.
 
@@ -95,7 +97,9 @@ Click the **Body** tab and map the **userId** provided in the request (BodyTempl
 
 ![](../../Resources/Images/Handing%20the%20conversation%20over%20to%20FB%20Page%20Inbox%20or%20to%20another%20bot/Handing%20the%20conversation%20over_6.png)
 
-> **NOTE:** The conversations are handed over from the AI Agent to the Facebook Inbox page (or to another AI Agent as configured in the REST API request) for 24 hours. If the conversations are handed over from the AI Agent to the Facebook page Inbox, when the Facebook page owner marks the conversation as DONE (in the Page Inbox), it is handed back to the AI Agent.
+{% hint style="info" %}
+**NOTE:** The conversations are handed over from the AI Agent to the Facebook Inbox page (or to another AI Agent as configured in the REST API request) for 24 hours. If the conversations are handed over from the AI Agent to the Facebook page Inbox, when the Facebook page owner marks the conversation as DONE (in the Page Inbox), it is handed back to the AI Agent.
+{% endhint %}
 
 Place the integration for passing thread control on the flow step where you do the handover.
 
@@ -105,10 +109,14 @@ Place the integration for passing thread control on the flow step where you do t
 
 Whenever the conversation is handed back to the AI Agent, DRUID Platform triggers the Welcome flow and sets [[ChatUser]].ReturningFromFacebookHandover = true.
 
-> **IMPORTANT!** Set **[[ChatUser]].ReturningFromFacebookHandover** to false on the same step where you place the integration for passing thread control (to make sure that [[ChatUser]].ReturningFromFacebookHandover becomes true only when the conversation is returned to the AI Agent (or to clean up any older context).
+{% hint style="warning" %}
+**IMPORTANT!** Set **[[ChatUser]].ReturningFromFacebookHandover** to false on the same step where you place the integration for passing thread control (to make sure that [[ChatUser]].ReturningFromFacebookHandover becomes true only when the conversation is returned to the AI Agent (or to clean up any older context).
+{% endhint %}
 
 You can create a dedicated branch in the Welcome flow to address the cases when you want to let the users know that they’re talking to the AI Agent again, a branch step that will be executed when [[ChatUser]].ReturningFromFacebookHandover = true (set condition on step).
 
 If you don’t want to let the user know, add an empty step to the Welcome flow or simply do nothing.
 
-> **NOTE:**  If you handle this situation as a separate branch in the Welcome flow, perform a cleanup of **[[ChatUser]].ReturningFromFacebookHandover** for further accessing the Welcome flow from the conversation (from other areas than Facebook handover). To do the cleanup, make sure to set [[ChatUser]].ReturningFromFacebookHandover back to “false” after the branch was reached in conversation (set variable `[[ChatUser]].ReturningFromFacebookHandover = false`).
+{% hint style="info" %}
+**NOTE:**  If you handle this situation as a separate branch in the Welcome flow, perform a cleanup of **[[ChatUser]].ReturningFromFacebookHandover** for further accessing the Welcome flow from the conversation (from other areas than Facebook handover). To do the cleanup, make sure to set [[ChatUser]].ReturningFromFacebookHandover back to “false” after the branch was reached in conversation (set variable `[[ChatUser]].ReturningFromFacebookHandover = false`).
+{% endhint %}

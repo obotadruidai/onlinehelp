@@ -15,4 +15,6 @@ Click **Open UiPath Assistant**. The UiPath Assistant access request pop-up app
 
 Click **Allow**. After the authorization process is complete, the robot will start the attended process.
 
-> **NOTE:** The UiPath authorization process happens is valid for 30 days, unless the browser is used in incognito mode.
+{% hint style="info" %}
+**NOTE:** The UiPath authorization process happens is valid for 30 days, unless the browser is used in incognito mode.
+{% endhint %}

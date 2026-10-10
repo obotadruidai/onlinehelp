@@ -7,7 +7,9 @@ title: "Conversation Diagnostics Agent"
 
 The Conversation Diagnostics Agent analyzes past conversation logs in real time to help you troubleshoot execution failures, debug root causes, and coordinate direct fixes without manual log scanning.
 
-> **Info:** This AI Authoring Agent is available starting with Druid 9.30.
+{% hint style="info" %}
+**Info:** This AI Authoring Agent is available starting with Druid 9.30.
+{% endhint %}
 
 <a id="KeyCapabilities"></a>
 

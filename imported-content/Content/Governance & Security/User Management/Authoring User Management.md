@@ -55,7 +55,9 @@ Security roles are groups of access privileges to specific elements which allow 
 
 The default security role, Admin grants the authors with access privileges to all Druid Portal features and all AI Agents.
 
-> **NOTE:** Admin and User are default platform security roles and you cannot edit their permissions.
+{% hint style="info" %}
+**NOTE:** Admin and User are default platform security roles and you cannot edit their permissions.
+{% endhint %}
 
 If you want to grant different access privileges to your authors (e.g. some authors can manage flows, while others can manage connector actions, document templates or solutions), add new security roles to accommodate your needs.
 

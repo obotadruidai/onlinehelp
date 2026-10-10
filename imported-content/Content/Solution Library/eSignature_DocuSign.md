@@ -63,6 +63,8 @@ In the AI Agent configuration page, click the **Details** tab, and then click th
 
 ![](../Resources/Images/solution%20templates/Cristina/train%20bot.png)
 
-> **NOTE:**  It might take a few minutes for the NLP training to complete, so you might need to wait for Druid to finish training all AI Agent entities that have NLP enabled (NLP=true).
+{% hint style="info" %}
+**NOTE:**  It might take a few minutes for the NLP training to complete, so you might need to wait for Druid to finish training all AI Agent entities that have NLP enabled (NLP=true).
+{% endhint %}
 
 You can start chatting with the AI Agent by saying things like "send documents to sign" or " get signature".

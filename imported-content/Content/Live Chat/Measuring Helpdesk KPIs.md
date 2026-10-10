@@ -9,7 +9,9 @@ Measuring the performance of your helpdesk team requires you to track specific K
 
 The Druid Portal provides you with the possibility to create extensive KPI dashboards to help you monitor the customer service performance.
 
-> **NOTE:** Customizations are required on the conversation history database to have additional KPIs listed in the Dashboard. For information on how to do it, get in touch with [DRUID Tech Support](<mailto:support@druidai.com?subject=I want to customize Dashboard>) or your DRUID implementation partner.
+{% hint style="info" %}
+**NOTE:** Customizations are required on the conversation history database to have additional KPIs listed in the Dashboard. For information on how to do it, get in touch with [DRUID Tech Support](<mailto:support@druidai.com?subject=I want to customize Dashboard>) or your DRUID implementation partner.
+{% endhint %}
 
 The figures below provides a sample dashboard customized to show Live Chat KPIs.
 

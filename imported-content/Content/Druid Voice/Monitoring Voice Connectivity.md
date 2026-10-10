@@ -65,4 +65,6 @@ For deep troubleshooting, you can click any event in the diagram to open the SIP
 - **SIP Headers**: Detailed routing and session information.
 - **SDP Body**: Information regarding audio codecs and media negotiation, which is vital if you encounter "silent call" issues.
 
-> **Info:** Use the SIP Ladder during the initial Druid SIP testing phase to confirm that all handshake signals are being received and acknowledged without protocol errors.
+{% hint style="info" %}
+**Info:** Use the SIP Ladder during the initial Druid SIP testing phase to confirm that all handshake signals are being received and acknowledged without protocol errors.
+{% endhint %}

@@ -7,7 +7,9 @@ title: "Proactive AI Agent Messages"
 
 Proactive AI Agent Messages for Long-Running Integrations allows you to keep users informed and engaged when a flow step involving an integration takes longer than expected to complete. By configuring proactive AI Agent messages at the flow step level, you can automatically send updates to the user at defined intervals. This helps manage expectations and prevents potential timeouts, especially in voice channels.
 
-> **NOTE:** This feature is available in DRUID 8.15 and higher.
+{% hint style="info" %}
+**NOTE:** This feature is available in DRUID 8.15 and higher.
+{% endhint %}
 
 <a id="Howproactivemessageswork"></a>
 
@@ -33,7 +35,9 @@ To configure proactive messages for a flow step that contains an integration whi
 3. Click the **Add new** button within this section.
 4. Set the **Trigger time (seconds**) after which you want a proactive message to be sent. For the first message, this is the time interval trigger. For subsequent messages (if configuring multiple), this represents the time from the start of the step when that specific message should be sent.
 5. In the **Message** field, enter the message you want to send to the user. If your AI Agent is multilingual, provide localized messages for each supported language.
-> **Info:** Repeat steps 4 and 5 to add multiple proactive messages if desired.
+{% hint style="info" %}
+**Info:** Repeat steps 4 and 5 to add multiple proactive messages if desired.
+{% endhint %}
 
 6. Click **Save** on the flow step to apply your proactive message configuration.
 

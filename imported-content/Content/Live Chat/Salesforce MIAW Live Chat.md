@@ -7,9 +7,13 @@ title: "Salesforce MIAW Live Chat"
 
 Salesforce MIAW enhances pre-chat support by identifying customer needs and accessing records before agents connect in the Service Console. It also enables real-time communication with clients directly within the Service Console.
 
-> **NOTE:**  Salesforce Live Chat is in maintenance mode and will retire on February 14, 2026. We recommend switching to Salesforce Messaging for In-App and Web (MIAW), a modern alternative that offers asynchronous, persistent conversations with your customers. Messaging conversation history remains in the window beyond a single interaction. With Messaging for In-App and Web, agents and customers can start and stop the conversation, then pick it back up at a later time. Customers can also message across tabs and devices without disconnecting the conversation.
+{% hint style="info" %}
+**NOTE:**  Salesforce Live Chat is in maintenance mode and will retire on February 14, 2026. We recommend switching to Salesforce Messaging for In-App and Web (MIAW), a modern alternative that offers asynchronous, persistent conversations with your customers. Messaging conversation history remains in the window beyond a single interaction. With Messaging for In-App and Web, agents and customers can start and stop the conversation, then pick it back up at a later time. Customers can also message across tabs and devices without disconnecting the conversation.
+{% endhint %}
 
-> **NOTE:** This feature is available in DRUID version 7.17 and higher.
+{% hint style="info" %}
+**NOTE:** This feature is available in DRUID version 7.17 and higher.
+{% endhint %}
 
 <a id="IntegratingAIAgentswithSalesforceMIAWLiveChat"></a>
 
@@ -114,9 +118,13 @@ Most contact centers want their helpdesk agents to get the transcript of the con
 In order to save the conversation transcript and make it available for Salesforce Live Chat agents, on the flow that connects the client with the agent, make the following settings:
 
 1. On the step where you call the internal action **ConnectToHelpdeskAgent**(Post Actions section), in the **Pre Actions** section, call the internal action **GetConversationTranscript**.
-> **IMPORTANT!**  When calling the **GetConversationTranscript** internal action on the same step where you call **ConnectToHelpdeskAgent**, make sure to call it in the PreActions section. Calling it in the PostActions section will not send the conversation transcript to agents.
+{% hint style="warning" %}
+**IMPORTANT!**  When calling the **GetConversationTranscript** internal action on the same step where you call **ConnectToHelpdeskAgent**, make sure to call it in the PreActions section. Calling it in the PostActions section will not send the conversation transcript to agents.
+{% endhint %}
 
-> **Info:**  You can call the **GetConversationTranscript** internal action on a previous step.
+{% hint style="info" %}
+**Info:**  You can call the **GetConversationTranscript** internal action on a previous step.
+{% endhint %}
 
 2. On the **ConnectToHelpdeskAgent** internal action add the following:
 
@@ -126,7 +134,9 @@ In order to save the conversation transcript and make it available for Salesforc
 }
 ```
 
-> **Info:** You can send additional client information (like Custom Fields) to Salesforce Live Chat Agents together with the conversation transcript.
+{% hint style="info" %}
+**Info:** You can send additional client information (like Custom Fields) to Salesforce Live Chat Agents together with the conversation transcript.
+{% endhint %}
 
 3. Save the step.
 
@@ -164,7 +174,9 @@ In the **ConnectToHelpdeskAgent** internal action, in **ContactCenterParameters*
 }
 ```
 
-> **NOTE:** Make sure to provide the parameters values as strings, when using values from DRUID conversation context (entities, local variables), using "", otherwise, the JSON object is invalid.
+{% hint style="info" %}
+**NOTE:** Make sure to provide the parameters values as strings, when using values from DRUID conversation context (entities, local variables), using "", otherwise, the JSON object is invalid.
+{% endhint %}
 
 **Example - Sending Contact Center Parameters**
 

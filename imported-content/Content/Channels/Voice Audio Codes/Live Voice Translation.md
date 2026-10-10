@@ -43,7 +43,9 @@ To activate and configure live voice translation, follow these steps:
 
 ![](../../Resources/Images/Voice%20Audio%20Codes%20Channel/enable.png)
 
-> **NOTE:** Following the Live Hub 2.19 upgrade, Voice Translation behavior after a call transfer is no longer carried over automatically from the initial call routing rule. The default setting is now disabled. If you want Voice Translation services to continue functioning after a call transfer, you must explicitly configure it on the relevant Transfer routing rule within the AudioCodes Live Hub.
+{% hint style="info" %}
+**NOTE:** Following the Live Hub 2.19 upgrade, Voice Translation behavior after a call transfer is no longer carried over automatically from the initial call routing rule. The default setting is now disabled. If you want Voice Translation services to continue functioning after a call transfer, you must explicitly configure it on the relevant Transfer routing rule within the AudioCodes Live Hub.
+{% endhint %}
 
 14. Click **Update**.
 15. In Druid, make sure you have configured the same voice codes on your Voice AudioCodes channel as you have set them within AudioCodes Live Hub (at [step 7](#Step7)). This ensures proper translation between Druid and AudioCodes.

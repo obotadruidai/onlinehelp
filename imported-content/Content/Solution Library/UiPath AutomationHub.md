@@ -7,7 +7,9 @@ title: "UiPath Automation Hub Starter"
 
 Use this solution if you want to showcase DRUID-UiPath AutomationHub integration. You can use it when the intent not recognized flow is triggered and recommend your employees to submit an idea for automation in the Automation Hub.
 
-> **NOTE:** The solution is available only in EN-US.
+{% hint style="info" %}
+**NOTE:** The solution is available only in EN-US.
+{% endhint %}
 
 1. Download the UiPathAutomationHub template by clicking on the **Download** button below.
 

@@ -10,7 +10,9 @@ Druid Vision provides flexible JPEG-to-PDF conversion through two specialized en
 - **/convert-jpeg-to-pdf** – Returns the converted PDF as a byte array, ideal for scenarios where you need to store, manipulate, or transmit the complete file data.
 - **/convert-jpeg-to-pdf-stream** – Returns the PDF as a stream for improved performance and lower memory overhead, making it the preferred option for handling larger files or high-volume conversions.
 
-> **NOTE:** To use this Druid Vision service, you must have at least one Identity Vision API service enabled for your tenant. If not, please contact [Druid Tech Support](<mailto:support@druidai.com?subject=Request: Activate Druid Vision service IdentityCard>).
+{% hint style="info" %}
+**NOTE:** To use this Druid Vision service, you must have at least one Identity Vision API service enabled for your tenant. If not, please contact [Druid Tech Support](<mailto:support@druidai.com?subject=Request: Activate Druid Vision service IdentityCard>).
+{% endhint %}
 
 <a id="Request"></a>
 

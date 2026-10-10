@@ -27,9 +27,13 @@ To add and configure a File Upload step in a flow:
 - **Step name**: Enter a descriptive name for the step to clarify its purpose (e.g., "Upload Identity Card").
   This name is for internal use and helps you document the flow and understand analytics reports.
 - **Step message**: Enter the message the AI Agent will display to the user when it reaches this step, like "Upload the file here".
-> **NOTE:** Uploaded files are stored in the system entity known as [[File]]. You can store files in specific entity fields by specifying the field in **Input Mapping**.
+{% hint style="info" %}
+**NOTE:** Uploaded files are stored in the system entity known as [[File]]. You can store files in specific entity fields by specifying the field in **Input Mapping**.
+{% endhint %}
 
-> **NOTE:** To enable users upload multiple files in the chat via drag-and-drop, in **Input Mapping**, enter an entity list field that references the [[File]] entity.
+{% hint style="info" %}
+**NOTE:** To enable users upload multiple files in the chat via drag-and-drop, in **Input Mapping**, enter an entity list field that references the [[File]] entity.
+{% endhint %}
 
 5. [Set file restrictions](#Set_file_restrictions) if you need to restrict the types of files users can upload.
 6. Save the step.
@@ -71,11 +75,13 @@ Druid applies a hierarchy to determine which file types are accepted during an u
 2. **File Upload step level**. The system first checks the Allowed file types defined in this step’s Metadata section.
 3. AI Agent **level**. If no restrictions are found at the step or conversation level, the global **Allowed file types** setting in the AI Agent Details page, General tab is applied.
 
-> **NOTE:**
->
-> - Lists are not combined. If a list is found at a higher priority level, the lower levels are completely ignored.
-> - If no file types are specified at any of the three levels, the system allows all supported file extensions by default.
-> - Allowed file type selection at AI Agent level is available starting with Druid 9.22.
+{% hint style="info" %}
+**NOTE:**
+
+- Lists are not combined. If a list is found at a higher priority level, the lower levels are completely ignored.
+- If no file types are specified at any of the three levels, the system allows all supported file extensions by default.
+- Allowed file type selection at AI Agent level is available starting with Druid 9.22.
+{% endhint %}
 
 <a id="FileValidationandAntiMalwareScanning"></a>
 
@@ -87,13 +93,17 @@ If a file fails validation (for example, unsupported type or size), the system r
 
 In Druid 9.20 and higher, the system logs the event in Conversation History, including the file name (when available): "*File <file name> was found corrupted by DRUID Antimalware system*".
 
-> **IMPORTANT!**  For mobile channels like MS Teams on mobile, uploaded images may automatically change to a .png extension. The antimalware check accommodates mismatches between the file extension and its signature (e.g., .png files with .jpg content).
+{% hint style="warning" %}
+**IMPORTANT!**  For mobile channels like MS Teams on mobile, uploaded images may automatically change to a .png extension. The antimalware check accommodates mismatches between the file extension and its signature (e.g., .png files with .jpg content).
+{% endhint %}
 
 <a id="MultipleFileUploadBehavior"></a>
 
 ### Multiple File Upload Behavior
 
-> **NOTE:** In Druid version prior to 9.20, if a user uploads multiple files and only some are flagged as threats, the system rejects the entire set.
+{% hint style="info" %}
+**NOTE:** In Druid version prior to 9.20, if a user uploads multiple files and only some are flagged as threats, the system rejects the entire set.
+{% endhint %}
 
 When users upload multiple files in a single step, each file is processed independently. If a user uploads multiple files and only some are flagged as threats, the system will accept the clean files into the conversation context rather than rejecting the entire set.
 

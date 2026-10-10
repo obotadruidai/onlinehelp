@@ -15,7 +15,9 @@ The Edit Connector Task page opens by default on the General tab. Use this tab t
 
 ![](../../Resources/Images/Druid%20Data%20Service%20Connector/add%20brief%20description%20add%20entity.png)
 
-> **Info:** For optimal execution time and to reduce database load, select **Disable Connector Audit Logging** if the task handles large payloads.
+{% hint style="info" %}
+**Info:** For optimal execution time and to reduce database load, select **Disable Connector Audit Logging** if the task handles large payloads.
+{% endhint %}
 
 <a id="Request"></a>
 
@@ -44,13 +46,17 @@ When you need to add multiple related records at once (for example, a list of ch
 
 This field displays all entity list-type fields defined on the request entity you've selected for your integration task. Choosing an entity list field here signals to DRUID that the integration should operate in batch mode, processing multiple child records related to a single parent record.
 
-> **NOTE:** In DRUID versions older than 8.14, automatically setting the link between child and parent records during batch processing is not available. You have to manually configure this relationship using a Custom Code integration task. This involved using expressions to explicitly set the foreign key field. For example: `[[CampaignActivity]].Campaign.Id = [[Campaign]].Id`.
+{% hint style="info" %}
+**NOTE:** In DRUID versions older than 8.14, automatically setting the link between child and parent records during batch processing is not available. You have to manually configure this relationship using a Custom Code integration task. This involved using expressions to explicitly set the foreign key field. For example: `[[CampaignActivity]].Campaign.Id = [[Campaign]].Id`.
+{% endhint %}
 
 #### Automatically set parent references
 
 DRUID version 8.14 introduced the ability to automatically set the reference to parent records for all children in a batch. This simplifies the integration process significantly.
 
-> **IMPORTANT!** Before you can leverage the automatic parent reference setting, you must first define the relationship between the parent and child entities. This involves configuring a foreign key field in the child entity that points to the parent entity.
+{% hint style="warning" %}
+**IMPORTANT!** Before you can leverage the automatic parent reference setting, you must first define the relationship between the parent and child entities. This involves configuring a foreign key field in the child entity that points to the parent entity.
+{% endhint %}
 
 ##### How to Define the Foreign Key
 
@@ -76,7 +82,9 @@ Suppose you want to add all closed CampaignActivity records related to a Campaig
 
 In this example, the foreign key is **[[CampaignActivity]].Campaign**.
 
-> **Info:** The [[Campaign]].ClosedActivities field is not the foreign key. Instead, it's a reverse lookup list that displays related [[CampaignActivity]] records based on the Campaign reference.
+{% hint style="info" %}
+**Info:** The [[Campaign]].ClosedActivities field is not the foreign key. Instead, it's a reverse lookup list that displays related [[CampaignActivity]] records based on the Campaign reference.
+{% endhint %}
 
 To automatically populate the foreign key for each child record during batch execution:
 

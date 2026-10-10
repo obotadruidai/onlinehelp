@@ -13,7 +13,9 @@ The **Voice Call Terminate Flow** is triggered when a telephony voice call ends.
 
 You can choose which flow should be triggered when a voice conversation ends.
 
-> **NOTE:** If a Voice Termination Flow is configured, Druid automatically logs the ActivityEnd event in [[ChatActivityData]] at the END of this flow. This ensures that any post-call processing runs under the same activity before the session officially closes. Do not manually trigger or send a duplicate call ending activity from within your custom **Voice Termination Flow**, as Druid handles this automatically to prevent duplicate records.
+{% hint style="info" %}
+**NOTE:** If a Voice Termination Flow is configured, Druid automatically logs the ActivityEnd event in [[ChatActivityData]] at the END of this flow. This ensures that any post-call processing runs under the same activity before the session officially closes. Do not manually trigger or send a duplicate call ending activity from within your custom **Voice Termination Flow**, as Druid handles this automatically to prevent duplicate records.
+{% endhint %}
 
 To configure the Voice Call Terminate Flow:
 
@@ -31,7 +33,9 @@ If Agent Assist is enabled and a **Voice Call Terminate Flow** is configured, th
 - Once in the main conversation (with the user).
 - Once in the assistant conversation (between the helpdesk agent and the assistant AI Agent).
 
-> **IMPORTANT!** To avoid running the same actions twice, update your flow with conditional logic before enabling the **Trigger on assist conversation also** option.
+{% hint style="warning" %}
+**IMPORTANT!** To avoid running the same actions twice, update your flow with conditional logic before enabling the **Trigger on assist conversation also** option.
+{% endhint %}
 
 To prepare your **Voice Call Terminate** flow:
 

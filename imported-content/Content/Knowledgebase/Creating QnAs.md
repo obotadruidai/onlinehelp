@@ -21,7 +21,9 @@ This section describes how to create KB articles.
 
 ## Step 1. Test your primary question
 
-> **NOTE:** Before adding a new QnA in the Druid Portal, you need to make sure that your primary question does not exist on the AI Agent (on QnA or Flows).
+{% hint style="info" %}
+**NOTE:** Before adding a new QnA in the Druid Portal, you need to make sure that your primary question does not exist on the AI Agent (on QnA or Flows).
+{% endhint %}
 
 To test your primary question, access the QnA. In the **User says** field, enter your primary question.
 
@@ -33,7 +35,9 @@ Druid searches the question against all intents that exist on the AI Agent (in t
 
 If the primary questions is found as intent on a flow(s) you see that it exists but as Knowledge Base author you do not have access to modify the identified flow(s).
 
-> **NOTE:** To avoid creating duplicated understanding for the AI Agent, we recommend you to use another question.
+{% hint style="info" %}
+**NOTE:** To avoid creating duplicated understanding for the AI Agent, we recommend you to use another question.
+{% endhint %}
 
 A primary question passes the test when Druid finds no matches. Using this primary question, you can now create a QnA.
 
@@ -58,9 +62,11 @@ Click the **Save** button to save the KB article.
 
 The Article appears under the specified category.
 
-> **Info:** The Flows section lists all AI Agent intents and dialogs (including QnAs) enabling the AI Agent administrator easily troubleshoot intents when necessary. The QnA flows are marked with the specific label ![](../Resources/Images/QnA/qna%20label.png). The figure below provides an example.
->
-> ![](../Resources/Images/QnA/qna%20in%20flows.png)
+{% hint style="info" %}
+**Info:** The Flows section lists all AI Agent intents and dialogs (including QnAs) enabling the AI Agent administrator easily troubleshoot intents when necessary. The QnA flows are marked with the specific label ![](../Resources/Images/QnA/qna%20label.png). The figure below provides an example.
+
+![](../Resources/Images/QnA/qna%20in%20flows.png)
+{% endhint %}
 
 <a id="Step3TraintheAIAgent"></a>
 

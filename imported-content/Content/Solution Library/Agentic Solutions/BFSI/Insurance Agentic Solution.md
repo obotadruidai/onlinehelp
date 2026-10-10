@@ -111,7 +111,9 @@ To configure this app connection, follow these steps:
 
 ![](../../../Resources/Images/agentic%20insurance.png)
 
-> **NOTE:** If the DRUID.Vision.Api resource does not appear, contact your sales representative to activate DRUID Vision on your tenant. The DRUID.Vision.Api resource should have the following three claims: **convert-pdf-page-to-jpeg** and **convert-pdf-to-jpeg**. If any of these claims are missing, ask your Druid representative to update the configuration.
+{% hint style="info" %}
+**NOTE:** If the DRUID.Vision.Api resource does not appear, contact your sales representative to activate DRUID Vision on your tenant. The DRUID.Vision.Api resource should have the following three claims: **convert-pdf-page-to-jpeg** and **convert-pdf-to-jpeg**. If any of these claims are missing, ask your Druid representative to update the configuration.
+{% endhint %}
 
 3. Go to **Solution Contents** > **Apps** and click on **DRUID Vision OCR**.
 4. In the **Base URL** field, paste the resource URL you copied at step 2. Remove everything after api/, including *engine/{templateName}*. For example, change: *https://druidvision.eu.druidplatform.com/api/engine/{templateName}* to: *https://druidvision.eu.druidplatform.com/api/*.
@@ -136,7 +138,9 @@ Click on the **AzureStorage** app and fill in the info in the **Account name** a
 
 Click **Save & Close** to apply the configuration and return to the Apps page.
 
-> **NOTE:** After configuring all required apps, click **Publish** to apply the changes.
+{% hint style="info" %}
+**NOTE:** After configuring all required apps, click **Publish** to apply the changes.
+{% endhint %}
 
 <a id="Step3SetuptheAIAgentspecialflows"></a>
 

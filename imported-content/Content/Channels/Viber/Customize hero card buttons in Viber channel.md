@@ -5,7 +5,9 @@ title: "Customizing Hero Card Buttons for Viber Channel"
 <a id="CustomizingHeroCardButtonsforViberChannel"></a>
 
 
-> **NOTE:** This feature is available in DRUID 5.3 and higher.
+{% hint style="info" %}
+**NOTE:** This feature is available in DRUID 5.3 and higher.
+{% endhint %}
 
 While Viber provides advanced options for customizing messages and buttons, DRUID provides you with a set of options to customize Hero card buttons.
 
@@ -13,15 +15,21 @@ To customize hero step buttons, go to the desired hero step configuration and cl
 
 In the JSON field search for "hero" and for each hero card, under the "buttons" array , add the **channelData** property and in it the desired button parameter(s).
 
-> **Info:**  The **channelData** property is automatically generated if you fill-in the **buttonClass** field on the hero card; otherwise, you have to add it in the JSON field.
+{% hint style="info" %}
+**Info:**  The **channelData** property is automatically generated if you fill-in the **buttonClass** field on the hero card; otherwise, you have to add it in the JSON field.
+{% endhint %}
 
 ![](../../Resources/Images/Viber%20Integration/ADVANCED%20EDITING%20HERO%20CARD.png)
 
-> **Info:** To easily customize hero card buttons, you might want to copy the code from the JSON field and paste it in Notepad++ or another text file program, customize the buttons there and then copy the code and paste it in DRUID.
+{% hint style="info" %}
+**Info:** To easily customize hero card buttons, you might want to copy the code from the JSON field and paste it in Notepad++ or another text file program, customize the buttons there and then copy the code and paste it in DRUID.
+{% endhint %}
 
 For each hero card button, you can define the parameters described in the table below.
 
-> **NOTE:** Set button parameters to static (string) values as setting up parameters to values stored in DRUID entity fields is not working.
+{% hint style="info" %}
+**NOTE:** Set button parameters to static (string) values as setting up parameters to values stored in DRUID entity fields is not working.
+{% endhint %}
 
 | Parameter Name | Description | Possible values | Default value |
 | --- | --- | --- | --- |

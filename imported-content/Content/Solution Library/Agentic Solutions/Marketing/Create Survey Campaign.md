@@ -36,7 +36,9 @@ The Campaign Step form appears by default on the **Details** tab. A campaign ste
 
 - **Name**. Enter a descriptive campaign step title (e.g., Initial reach).
 - **Channel**. Select your preferred delivery channel.
-> **NOTE:** All channels support the Survey Campaign, except for Email. Email is only used to deliver the survey link.
+{% hint style="info" %}
+**NOTE:** All channels support the Survey Campaign, except for Email. Email is only used to deliver the survey link.
+{% endhint %}
 
 - **Audience**. Select the target audience segment (e.g., Summer\_Campaign).
 

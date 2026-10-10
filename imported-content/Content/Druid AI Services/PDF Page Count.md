@@ -7,7 +7,9 @@ title: "PDF Page Count"
 
 This Vision endpoint provides the total number of pages in a PDF document. This feature is especially useful when preparing to convert specific PDF pages to JPEG.
 
-> **NOTE:**  This feature is available in DRUID 8.7 and higher. To use this Druid Vision service, you must have at least one Identity Vision API service enabled for your tenant. If not, please contact [Druid Tech Support](<mailto:support@druidai.com?subject=Request: Activate Druid Vision service IdentityCard>).
+{% hint style="info" %}
+**NOTE:**  This feature is available in DRUID 8.7 and higher. To use this Druid Vision service, you must have at least one Identity Vision API service enabled for your tenant. If not, please contact [Druid Tech Support](<mailto:support@druidai.com?subject=Request: Activate Druid Vision service IdentityCard>).
+{% endhint %}
 
 <a id="Request"></a>
 

@@ -27,7 +27,9 @@ This action assigns specific roles to the currently authenticated user in your A
 string / List<string> / [[Entity]].EntityField / @Variable
 ```
 
-> **NOTE:** Ensure the roles you specify exist in the Druid Portal. For information on how to create security roles, see [Authoring User Management](../Governance%20%26%20Security/User%20Management/Authoring%20User%20Management.md).
+{% hint style="info" %}
+**NOTE:** Ensure the roles you specify exist in the Druid Portal. For information on how to create security roles, see [Authoring User Management](../Governance%20%26%20Security/User%20Management/Authoring%20User%20Management.md).
+{% endhint %}
 
 #### Parameters
 
@@ -115,11 +117,13 @@ If an agent clicks to log out while having ongoing conversations or when engaged
 
 This internal action switches the current conversation to a new one by changing the ConversationId. Depending on the parameter value, the context can be retained (either partially or fully) or dropped entirely.
 
-> **NOTE:**  If the ChangeConversation action occurs within a conversation that originated from the Welcome flow, and there has been no user input between the welcome trigger and the internal action, the action will not take effect. This restriction is in place to prevent infinite loops.
->
-> *Example*: If the internal action is implemented in the Cancel Conversation Flow and triggered from the Welcome flow, the new conversation will continuously revert to the same point, creating an endless loop.
->
-> When this internal action is canceled due to the aforementioned infinite loop scenario, it will be logged in the conversation history as follows: "[ChangeConversation invocation was canceled because it was triggered from a welcome flow, and that would generate infinite loops.]"
+{% hint style="info" %}
+**NOTE:**  If the ChangeConversation action occurs within a conversation that originated from the Welcome flow, and there has been no user input between the welcome trigger and the internal action, the action will not take effect. This restriction is in place to prevent infinite loops.
+
+*Example*: If the internal action is implemented in the Cancel Conversation Flow and triggered from the Welcome flow, the new conversation will continuously revert to the same point, creating an endless loop.
+
+When this internal action is canceled due to the aforementioned infinite loop scenario, it will be logged in the conversation history as follows: "[ChangeConversation invocation was canceled because it was triggered from a welcome flow, and that would generate infinite loops.]"
+{% endhint %}
 
 #### Parameters
 
@@ -153,7 +157,9 @@ The ConnectAsHelpdeskAgent internal action connects a user with the Helpdesk Age
 
 This action applies to single Live Chat / route-to-human.
 
-> **NOTE:** To connect as a helpdesk agent, the user must have the **Helpdesk Agent** role.
+{% hint style="info" %}
+**NOTE:** To connect as a helpdesk agent, the user must have the **Helpdesk Agent** role.
+{% endhint %}
 
 This action is crucial for effective agent-to-client assignment in live chat sessions.
 
@@ -188,7 +194,9 @@ If the day’s working hours are continuous, the full range will be shown.
 
 *Example*: If working hours are 8:00–12:00 and 13:00–18:00, and a user attempts to connect at 19:00, the AI Agent will notify them of the day’s full working hours range (08:00 to 18:00), excluding the lunch break.
 
-> **NOTE:** In DRUID version 7.5 and higher, Live Chat working hours are available in the conversation context.
+{% hint style="info" %}
+**NOTE:** In DRUID version 7.5 and higher, Live Chat working hours are available in the conversation context.
+{% endhint %}
 
 **JSON Structure**
 
@@ -230,8 +238,10 @@ If the day’s working hours are continuous, the full range will be shown.
 
 This internal action connects the agent with the specified user.
 
-> **NOTE:**
-> Applies to single live chat setup only!
+{% hint style="info" %}
+**NOTE:**
+Applies to single live chat setup only!
+{% endhint %}
 
 This action automatically leverages existing contexts from the [[HelpdeskClient]] and [[ChatUser]] entities to initiate a live chat session.
 
@@ -304,19 +314,25 @@ Using the unique Facebook user ID provided in the callback request, the action a
 - NLU engine responses
 - other metadata that may contain personal information.
 
-> **Info:** This internal action is available starting with Druid 9.23.
+{% hint style="info" %}
+**Info:** This internal action is available starting with Druid 9.23.
+{% endhint %}
 
 The action affects only the Facebook user identified in the callback request. It executes as part of the [Facebook Data Deletion Flow](Facebook%20Data%20Deletion%20Flow.md) when Facebook notifies Druid that a user has requested data deletion or deleted their Facebook account.
 
 The action does not perform scheduled or bulk deletion of Facebook users.
 
-> **IMPORTANT!** The **DeleteFacebookData** internal action anonymizes conversation content and personally identifiable information only. It **does not remove conversation records or modify reporting data**. Dashboard metrics, historical reports, conversation counts, and other aggregated statistics remain unchanged after the action executes.
+{% hint style="warning" %}
+**IMPORTANT!** The **DeleteFacebookData** internal action anonymizes conversation content and personally identifiable information only. It **does not remove conversation records or modify reporting data**. Dashboard metrics, historical reports, conversation counts, and other aggregated statistics remain unchanged after the action executes.
+{% endhint %}
 
 **Parameters**
 
 This internal action does not require any parameters.
 
-> **Info:** The **DeleteFacebookData** internal action is responsible exclusively for anonymizing Facebook user data. Any additional logging, auditing, or notification logic can be implemented by adding steps to the Facebook Data Deletion Flow.
+{% hint style="info" %}
+**Info:** The **DeleteFacebookData** internal action is responsible exclusively for anonymizing Facebook user data. Any additional logging, auditing, or notification logic can be implemented by adding steps to the Facebook Data Deletion Flow.
+{% endhint %}
 
 <a id="DetectLanguage"></a>
 
@@ -384,7 +400,9 @@ To filter the list, provide a JSON structure that specifies the entity list name
 - **Operator**: The operator to apply (e.g., GreaterThanOrEqual).
 - **ValueExpression**: The value to compare against the entity field.
 
-> **NOTE:** You can set multiple conditions by including them as objects within the "Conditions" array.
+{% hint style="info" %}
+**NOTE:** You can set multiple conditions by including them as objects within the "Conditions" array.
+{% endhint %}
 
 **JSON Structure**
 
@@ -444,7 +462,9 @@ Use this action for multi-factor authentication, allowing you to send a code as 
 
 This internal action loads the [[AlertInfo]] system entity, which is used in the "Alerts" presentation flow. This action retrieves and prepares alert information for display within the flow, ensuring the latest alerts are available for users.
 
-> **Info:** Use this action to populate alerts-related data in the presentation flow effectively.
+{% hint style="info" %}
+**Info:** Use this action to populate alerts-related data in the presentation flow effectively.
+{% endhint %}
 
 <a id="GetConve"></a><a id="GetConversationTranscript"></a>
 
@@ -472,7 +492,9 @@ This action allows authors to save and send conversation transcripts to external
 }
 ```
 
-> **NOTE:** If no parameter is set, the conversation from the current ActivityId will be saved.
+{% hint style="info" %}
+**NOTE:** If no parameter is set, the conversation from the current ActivityId will be saved.
+{% endhint %}
 
 You can filter a conversation transcript by the following parameters:
 
@@ -543,7 +565,9 @@ Unlike integrations that return an explicit response payload, this internal acti
 
 This internal action retrieves the intent specified by **[[Intent]].Text** considering the Druid Conductor feature. Use it to capture the exact intent communicated to the user in the chat and manually execute a prediction against the NLU/KB models of Druid Conductor and orchestrated AI Agents.
 
-> **IMPORTANT!** This internal action functions only when the conversation is initiated through the Druid Conductor. If a user interacts with an orchestrated AI Agent directly, this internal action will not execute the cross-AI agent prediction logic, nor will it query the Druid Conductor models. To learn more about multi-AI Agent orchestration, see [Druid Conductor](../AI%20Agent%20Orhestration/Druid%20Conductor.md).
+{% hint style="warning" %}
+**IMPORTANT!** This internal action functions only when the conversation is initiated through the Druid Conductor. If a user interacts with an orchestrated AI Agent directly, this internal action will not execute the cross-AI agent prediction logic, nor will it query the Druid Conductor models. To learn more about multi-AI Agent orchestration, see [Druid Conductor](../AI%20Agent%20Orhestration/Druid%20Conductor.md).
+{% endhint %}
 
 The sequence in which the system searches for a match depends on which flow triggers the internal action::
 
@@ -558,7 +582,9 @@ The sequence in which the system searches for a match depends on which flow trig
 2. Parent Druid Conductor. It then checks the NLU/KB models of the connected Druid Conductor.
 3. Peer AI Agent. Finally, it checks the models of all other orchestrated AI Agents managed by that same Druid Conductor.
 
-> **Info:** If a Druid Conductor is reverted to a standard AI Agent status, or if an orchestrated AI Agent is disconnected, this internal action will be disregarded and will have no impact on flow execution.
+{% hint style="info" %}
+**Info:** If a Druid Conductor is reverted to a standard AI Agent status, or if an orchestrated AI Agent is disconnected, this internal action will be disregarded and will have no impact on flow execution.
+{% endhint %}
 
 #### Parameters
 
@@ -647,7 +673,9 @@ You can use the result of this action to set up conditions to perform subsequent
 
 This internal action evaluates whether a specific user has the necessary access rights to view or interact with SharePoint content indexed in the Knowledge Base.
 
-> **NOTE:** This internal action is available in Druid 9.18 and higher.
+{% hint style="info" %}
+**NOTE:** This internal action is available in Druid 9.18 and higher.
+{% endhint %}
 
 **Behavior and Logic**
 
@@ -658,7 +686,9 @@ The action utilizes a tiered verification system to ensure content security:
 ![](../Resources/Images/KB/sharepoint%20full%20control.png)
 
 - **Fallback method**: If the **Sites.FullControl.All** permission is missing, the action automatically falls back to the Microsoft Graph API.
-> **IMPORTANT!** When using the Graph API fallback, the internal action can only resolve identities (users and groups) defined in Entra ID. SharePoint-native groups (such as Site Members, Site Owners, or Site Visitors) are not directly resolvable via the Graph API. Consequently, users whose access is granted exclusively through these SharePoint-native groups may receive a "no access" response, even if they have valid permissions within SharePoint.
+{% hint style="warning" %}
+**IMPORTANT!** When using the Graph API fallback, the internal action can only resolve identities (users and groups) defined in Entra ID. SharePoint-native groups (such as Site Members, Site Owners, or Site Visitors) are not directly resolvable via the Graph API. Consequently, users whose access is granted exclusively through these SharePoint-native groups may receive a "no access" response, even if they have valid permissions within SharePoint.
+{% endhint %}
 
 #### Parameters
 
@@ -828,7 +858,9 @@ Each data source type has unique settings you can adjust to keep your knowledge 
 - Update FTP/SFTP login credentials (ID and password)
 - Update extraction thresholds
 
-> **NOTE:** After editing a data source, you must train the KB. To do so, use the internal action **KBTrain**.
+{% hint style="info" %}
+**NOTE:** After editing a data source, you must train the KB. To do so, use the internal action **KBTrain**.
+{% endhint %}
 
 <a id="KBExtractDocumentContent"></a><a id="KBExtrac"></a>
 
@@ -839,7 +871,9 @@ This internal action extracts the content of a document directly within your con
 - For unstructured documents: content is returned in **[[KBOperation]].ExtractedDocument[i].Content**.
 - For structured documents: content is divided into **[[KBOperation]].ExtractedDocument[i].Question** and **[[KBOperation]].ExtractedDocument[i].Answer**.
 
-> **NOTE:** In Druid 9.21 and higher, the **KBExtractDocumentContent** internal action uses the extractors configured for each file MIME type in Knowledge Base Advanced settings. In earlier versions, the action used default extractors that you couldn’t customize.
+{% hint style="info" %}
+**NOTE:** In Druid 9.21 and higher, the **KBExtractDocumentContent** internal action uses the extractors configured for each file MIME type in Knowledge Base Advanced settings. In earlier versions, the action used default extractors that you couldn’t customize.
+{% endhint %}
 
 #### Parameters
 
@@ -864,9 +898,13 @@ When extracting data from EML documents, the response JSON includes dedicated fi
 - **Subject** - The email subject line.
 - **Date** - The email timestamp (ISO 8601 format).
 
-> **NOTE:** The response JSON includes dedicated fields for email metadata starting with Druid 9.12 and higher.
+{% hint style="info" %}
+**NOTE:** The response JSON includes dedicated fields for email metadata starting with Druid 9.12 and higher.
+{% endhint %}
 
-> **IMPORTANT!** Starting with Druid 9.13, the Antimalware Check treats .eml files as archives to prevent unnecessary data loss. If an email contains a restricted or infected attachment, the system isolates and discards only that specific file while successfully extracting the email body and all other safe attachments. Every excluded element triggers a system warning message detailing the reason for exclusion. This replaces the behavior in previous releases, which resulted in EML document rejection for the entire file if a single attachment failed the scan.
+{% hint style="warning" %}
+**IMPORTANT!** Starting with Druid 9.13, the Antimalware Check treats .eml files as archives to prevent unnecessary data loss. If an email contains a restricted or infected attachment, the system isolates and discards only that specific file while successfully extracting the email body and all other safe attachments. Every excluded element triggers a system warning message detailing the reason for exclusion. This replaces the behavior in previous releases, which resulted in EML document rejection for the entire file if a single attachment failed the scan.
+{% endhint %}
 
 The full email content, including all metadata and the complete message body, is also saved in both the answer and content fields within the paragraphs array.
 
@@ -935,7 +973,9 @@ This KB-specific internal action trains the knowledge base directly from within 
 
 This internal action delivers LLM responses token by token, reducing perceived latency and improving conversations. It streams tokens in real time from your configured LLM resource (Endpoint Type and Model Name) and makes them available for immediate playback. For more information, see [Use LLM Response Streaming for Voice Interactions](Use%20LLM%20Response%20Streaming%20for%20Voice%20Interactions.md).
 
-> **NOTE:** This internal action is available in Druid 9.11 and higher.
+{% hint style="info" %}
+**NOTE:** This internal action is available in Druid 9.11 and higher.
+{% endhint %}
 
 <a id="LookupEntity"></a>
 
@@ -1012,7 +1052,9 @@ This action removes the specified roles from the current user.
 string / List<string> / [[Entity]].EntityField / @Variable
 ```
 
-> **NOTE:** Ensure the roles you specify exist in the Druid Portal. For more information on security roles, see [Authoring User Management](../Governance%20%26%20Security/User%20Management/Authoring%20User%20Management.md).
+{% hint style="info" %}
+**NOTE:** Ensure the roles you specify exist in the Druid Portal. For more information on security roles, see [Authoring User Management](../Governance%20%26%20Security/User%20Management/Authoring%20User%20Management.md).
+{% endhint %}
 
 #### Parameters
 
@@ -1050,7 +1092,9 @@ This internal action to match an existing profile or provision a new user as an 
 
 The action uses [[ChatUser]].MasterId and [[ChatUser]].DomainUserName to search the DRUID Users database for a matching user profile. If it finds a match, it replaces the current anonymous user profile with the identified user’s profile. If it doesn’t find a match, it provisions a new user profile.
 
-> **IMPORTANT!** Only use this action to authenticate an anonymous user. Do not use it to switch an authenticated user to another user (e.g., changing the conversation from one user to another).
+{% hint style="warning" %}
+**IMPORTANT!** Only use this action to authenticate an anonymous user. Do not use it to switch an authenticated user to another user (e.g., changing the conversation from one user to another).
+{% endhint %}
 
 The table below lists the [[ChatUser]] attributes expected as input by the **SaveIdentifiedUser** action. In the Set Variables section of the step where you call the internal action, provide the [[ChatUser]] attributes listed in the table below.
 
@@ -1110,7 +1154,9 @@ In this example, the following [[ChatUser]] fields are mandatory: FirstName, Las
 }
 ```
 
-> **IMPORTANT!** Executing **SaveIdentifiedUser** does not automatically assign roles to the user. To ensure proper user permissions, you must execute the **AddUserRoles** internal action to explicitly assign at least the default **"User"** role.
+{% hint style="warning" %}
+**IMPORTANT!** Executing **SaveIdentifiedUser** does not automatically assign roles to the user. To ensure proper user permissions, you must execute the **AddUserRoles** internal action to explicitly assign at least the default **"User"** role.
+{% endhint %}
 
 #### Error codes
 
@@ -1218,7 +1264,9 @@ This internal action transfers the client to another queue or helpdesk agent. Us
 
 This internal action performs machine translation using eTranslation. It translates literal text or text from a specified source DRUID entity field into a different language, which can be entirely unrelated to the current chat conversation language. The translated output is stored in a specified destination entity field.
 
-> **NOTE:** This internal action is available in DRUID 9.8 and requires eTranslation machine translation to be activated on the AI Agent. It does not require enabling **Conversation time translation**. For information on how to set up eTranslation on the AI Agent, see [Using Machine Translation](../2_AI%20Agents/Using%20Machine%20Translation.md).
+{% hint style="info" %}
+**NOTE:** This internal action is available in DRUID 9.8 and requires eTranslation machine translation to be activated on the AI Agent. It does not require enabling **Conversation time translation**. For information on how to set up eTranslation on the AI Agent, see [Using Machine Translation](../2_AI%20Agents/Using%20Machine%20Translation.md).
+{% endhint %}
 
 #### Parameters
 
@@ -1242,10 +1290,12 @@ This internal action performs machine translation using eTranslation. It transla
 | DestinationLanguage | The language code of the translated text (for example, de for German). |
 | Provider | The translation provider to use. Currently supports only **eTranslation**. |
 
-> **NOTE:**
->
-> - The translated text and related metadata (source and destination languages) are logged in the Conversation History.
-> - The selected source and destination languages are independent of the conversation language used by the chat user.
+{% hint style="info" %}
+**NOTE:**
+
+- The translated text and related metadata (source and destination languages) are logged in the Conversation History.
+- The selected source and destination languages are independent of the conversation language used by the chat user.
+{% endhint %}
 
 <a id="UpdateIntentMatching"></a>
 
@@ -1257,7 +1307,9 @@ This action ensures that the Evaluation Tool accurately logs LLM-generated respo
 
 By using **UpdateIntentMatching**, authors can override the Flow Engine's default scoring and precisely record whether a relevant intent was ultimately found.
 
-> **NOTE:** This internal action is available in DRUID 8.13 and higher.
+{% hint style="info" %}
+**NOTE:** This internal action is available in DRUID 8.13 and higher.
+{% endhint %}
 
 **Key Benefits**
 

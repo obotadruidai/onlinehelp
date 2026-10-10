@@ -14,7 +14,9 @@ In Druid Portal:
 
 ## <a id="Step_1:_Configure_bot"></a>Step 1: Configure the AI Agent
 
-> **NOTE:** Energy and Gas, Packed Full Solution default language is set to EN-US and additional language is set to RO. If you want to add additional languages on Energy and Gas, Packed Full Solution, make sure to add the language of choice as additional AI Agent language and add the according training phrases, synonyms and conditions.
+{% hint style="info" %}
+**NOTE:** Energy and Gas, Packed Full Solution default language is set to EN-US and additional language is set to RO. If you want to add additional languages on Energy and Gas, Packed Full Solution, make sure to add the language of choice as additional AI Agent language and add the according training phrases, synonyms and conditions.
+{% endhint %}
 
 To configure the AI Agent for Energy and Gas, Packed Full Solution, you need to set Special Flows and configure the connection strings.
 
@@ -48,7 +50,9 @@ Energy and Gas, Packed Full Solution provides you with a wide range of apps for 
 | [Namirial](#Namirial_Configuration) | REST | eSign from Namirial | Allows the electronic signature of a digital document generated for the onboarding process. | No |
 | [Send-Email](#Send-Email_Configuration) | SendGrid | Your SMTP Server | Sends emails | No. (only if you need to send emails) |
 
-> **NOTE:** To run the Volt setup flow, you only need to set up the **SQL-Electricity** app.
+{% hint style="info" %}
+**NOTE:** To run the Volt setup flow, you only need to set up the **SQL-Electricity** app.
+{% endhint %}
 
 For information on how to set the connection strings, click on the configuration section specific to the app you want to set:
 
@@ -85,7 +89,9 @@ This section describes the connection strings required if you are using Druid AI
 
 - In order to use the Druid AI Services, you need the URL and access token of the instance on which the Druid OCR is running. To get the URL and access token, contact [Druid Tech Support](<mailto:support@druidai.com?subject=I need access to Druid AI Services>).
 
-> **NOTE:** Druid Tech Support generates the access token per tenant and environment.
+{% hint style="info" %}
+**NOTE:** Druid Tech Support generates the access token per tenant and environment.
+{% endhint %}
 
 To configure the REST connector to Druid AI Services, which performs OCR of Romanian identity cards, from Energy and Gas, Packed Full Solution Apps, click **ID OCR** . The Edit Connector page appears.
 
@@ -126,7 +132,9 @@ In the **ApiKey** field, enter the API Key received from your email service prov
 
 Click **Save and Close**.
 
-> **IMPORTANT!** In order for the AI Agent integration with the apps to be up and running, you need to publish the connector actions. To do so, from the main menu, click **Integrations** and click the **Publish** button.
+{% hint style="warning" %}
+**IMPORTANT!** In order for the AI Agent integration with the apps to be up and running, you need to publish the connector actions. To do so, from the main menu, click **Integrations** and click the **Publish** button.
+{% endhint %}
 
 <a id="Step2RunSetupFlow"></a>
 
@@ -144,6 +152,8 @@ You can now train the AI Agent.
 
 Click the **Details** tab, and then click the NLP section header. The NLP area expands. Scroll down to the Train area and click the **Train** button.
 
-> **NOTE:**  It might take a few minutes for the NLP training to complete, so you might need to wait for Druid to finish training all AI Agent entities that have NLP enabled (NLP=true).
+{% hint style="info" %}
+**NOTE:**  It might take a few minutes for the NLP training to complete, so you might need to wait for Druid to finish training all AI Agent entities that have NLP enabled (NLP=true).
+{% endhint %}
 
 You can now see the AI Agent in action.

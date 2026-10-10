@@ -69,7 +69,9 @@ This terminology shift aligns our language with the true power of the Druid AI P
 ![](../../Resources/Images/druid%209.17/export%20dashboard.png)
 
 - **Seamless Time Filtering for Dynamic Chart Drill-downs**. This release enhances the data analysis experience by ensuring that drill-down views in dynamic charts automatically display records within the time interval selected on the dashboard — provided the **Filter By** field is set on the chart. Previously, drill-down views displayed all records and required additional integrations or custom filtering to match the dashboard view. Now, simply configuring the **Filter By** field on a dynamic chart is enough to align drill-down results with the dashboard time interval, delivering faster, more relevant insights with no extra configuration required.
-> **NOTE:** This improvement applies exclusively to dynamic charts. For non-dynamic charts, you must still manually update the chart Advanced Editor or Custom Code to apply drill-down view grouping, filtering, or time interval synchronization.
+{% hint style="info" %}
+**NOTE:** This improvement applies exclusively to dynamic charts. For non-dynamic charts, you must still manually update the chart Advanced Editor or Custom Code to apply drill-down view grouping, filtering, or time interval synchronization.
+{% endhint %}
 
 - **Knowledge Base improvements**. This release introduces various improvements:
 

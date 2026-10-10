@@ -37,11 +37,13 @@ To remove a flow step using the Flow Diagram, follow these steps:
 3. A warning message will appear asking for confirmation.
 4. Click **Yes** in the confirmation pop-up to proceed with the deletion.
 
-> **NOTE:**
->
-> - Deleting a step with child steps will also remove all its child steps.
-> - Deletion actions cannot be undone, so ensure you confirm your decision before proceeding.
-> - The first flow step cannot be removed.
+{% hint style="info" %}
+**NOTE:**
+
+- Deleting a step with child steps will also remove all its child steps.
+- Deletion actions cannot be undone, so ensure you confirm your decision before proceeding.
+- The first flow step cannot be removed.
+{% endhint %}
 
 Alternatively, when using the Flow Designer in list view:
 

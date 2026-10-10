@@ -11,7 +11,9 @@ In Druid Portal:
 
 ## Step 1: Configure the AI Agent
 
-> **NOTE:** Financial Services default language is set to EN-US and additional language is set to RO. If you want to add additional languages on Financial Services, make sure to add the language of choice as additional AI Agent language and add the according training phrases, synonyms and conditions.
+{% hint style="info" %}
+**NOTE:** Financial Services default language is set to EN-US and additional language is set to RO. If you want to add additional languages on Financial Services, make sure to add the language of choice as additional AI Agent language and add the according training phrases, synonyms and conditions.
+{% endhint %}
 
 To configure the AI Agent for Financial Services, you need to set Live Chat timeouts and Special Flows, enable the AI Agent for Live Chat integration and configure the connection strings.
 
@@ -78,7 +80,9 @@ Financial Services provides you with a wide range of apps for integration with v
 | [Doqument](#Doqument_Configuration) | REST | Doqument | Enables the AI Agent automatically convert unstructured data of Romanian balance sheets into accurate, structured and relevant information. | No |
 | [Keysfin](#KeysFin_Configuration) | REST | KeysFin | Enables the AI Agent instantaneously check any Romanian company via Credit & KeysFin reports. | No |
 
-> **NOTE:** To run the Financial Services setup flow, you only need to set up the two SQL apps.
+{% hint style="info" %}
+**NOTE:** To run the Financial Services setup flow, you only need to set up the two SQL apps.
+{% endhint %}
 
 For information on how to set the connection strings, click on the configuration section specific to the app you want to set:
 
@@ -139,7 +143,9 @@ Enter the Cloud Orchestrator details (the ones noted in the prerequisites):
 
 ![](../../../Resources/Images/solution%20templates/Victor/Uipathdruidsoft1%20app%20settings.png)
 
-> **IMPORTANT!** To have Druid read all the folders from your UiPath Orchestrator, after you provide the UiPath connection strings to the UiPath Cloud Orchestrator, click the **Get UiPath folders** button.
+{% hint style="warning" %}
+**IMPORTANT!** To have Druid read all the folders from your UiPath Orchestrator, after you provide the UiPath connection strings to the UiPath Cloud Orchestrator, click the **Get UiPath folders** button.
+{% endhint %}
 
 For more information on how to configure the UiPath connector, see [Triggering an Unattended Process](../../../7_Integrations/UiPath/Running%20Unattended%20Process%20using%20Orchestrator%20Queues.md) or [Creating the UiPath Connection Strings](../../../7_Integrations/UiPath/Creating%20the%20UiPath%20Connection%20Strings.md).
 
@@ -247,7 +253,9 @@ This section describes the connection strings required if you are using Druid AI
 
 - In order to use the Druid AI Services, you need the URL and access token of the instance on which the Druid OCR is running. To get the URL and access token, contact [Druid Tech Support](<mailto:support@druidai.com?subject=I need access to Druid AI Services>).
 
-> **NOTE:** Druid Tech Support generates the access token per tenant and environment.
+{% hint style="info" %}
+**NOTE:** Druid Tech Support generates the access token per tenant and environment.
+{% endhint %}
 
 To configure the REST connector to Druid AI Services, which performs OCR of Romanian identity cards, from Financial Services Apps, click **Victor OCR CALL**. The Edit Connector page appears.
 
@@ -325,9 +333,11 @@ In the **Base URL** field, enter *https://testarews.keysfin.com/service.asmx*.
 
 Click **Save and Close**.
 
-> **IMPORTANT!** In order for the AI Agent integration with the apps to be up and running, you need to publish the connector actions. To do so, from the main menu, click **Integrations** and click the **Publish** button.
->
-> ![](../../../Resources/Images/solution%20templates/Victor/publish%20apps.png)
+{% hint style="warning" %}
+**IMPORTANT!** In order for the AI Agent integration with the apps to be up and running, you need to publish the connector actions. To do so, from the main menu, click **Integrations** and click the **Publish** button.
+
+![](../../../Resources/Images/solution%20templates/Victor/publish%20apps.png)
+{% endhint %}
 
 <a id="Step2RunSetupFlow"></a>
 

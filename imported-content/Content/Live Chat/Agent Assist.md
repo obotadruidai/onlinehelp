@@ -11,7 +11,9 @@ Agents can also ask Agent Assist specific questions to get quick, AI-powered ans
 
 ![](../Resources/Images/Agent%20Assist/agent%20assist.png)
 
-> **NOTE:** This feature is available as a technology preview in Multichat starting with DRUID 8.16.
+{% hint style="info" %}
+**NOTE:** This feature is available as a technology preview in Multichat starting with DRUID 8.16.
+{% endhint %}
 
 <a id="HowItWorks"></a>
 
@@ -50,7 +52,9 @@ The solution comes by default with Druid Data Service integration, saving the su
 
 After setup, Agent Assist will automatically suggest responses, helping agents provide faster and more accurate support.
 
-> **Info:** Agent Assist supports machine translation. Enable and configure the desired machine translation services on the AI Agent. For more information, see [Real-time Machine Translation in Live Chat](Real-time%20Machine%20Translation%20in%20Live%20Chat.md).
+{% hint style="info" %}
+**Info:** Agent Assist supports machine translation. Enable and configure the desired machine translation services on the AI Agent. For more information, see [Real-time Machine Translation in Live Chat](Real-time%20Machine%20Translation%20in%20Live%20Chat.md).
+{% endhint %}
 
 <a id="AgentAssistusageconsiderationsforMultichat"></a>
 
@@ -91,7 +95,9 @@ For more information, see [Voice Call Terminate Flow](../4_Flows/Voice%20Call%20
 
 ## Access the full conversation transcript
 
-> **NOTE:** This feature is available in DRUID 9.2 and higher.
+{% hint style="info" %}
+**NOTE:** This feature is available in DRUID 9.2 and higher.
+{% endhint %}
 
 When Agent Assist is enabled, you can generate a complete transcript that includes both the client-side and assistant conversations. This provides full visibility into the entire interaction—useful for auditing, support analysis, or CRM integration.
 

@@ -146,7 +146,9 @@ To create a Message Template manually, follow these steps:
 ![](../../../Resources/Images/Campaign%20Management/Build%20Campaigns_11.png)
 
 4. Fill in the **Name**, **Description** and **Message** fields with the desired information.
-> **NOTE:** The **Message** field accepts either natural language text or HTML code.
+{% hint style="info" %}
+**NOTE:** The **Message** field accepts either natural language text or HTML code.
+{% endhint %}
 
 ![](../../../Resources/Images/Campaign%20Management/Build%20Campaigns_12.png)
 

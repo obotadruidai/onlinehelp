@@ -7,7 +7,9 @@ title: "Cuedesk"
 
 Cuedesk is a customer service platform that supports AI Agents, live chat, and broadcasts. By integrating a Druid AI Agent with Cuedesk, you can manage user conversations within Cuedesk-supported channels, such as WhatsApp and Facebook Messenger.
 
-> **NOTE:** You can use the Cuedesk web channel for integration. WhatsApp or Facebook Messenger is only required if your specific use case demands it.
+{% hint style="info" %}
+**NOTE:** You can use the Cuedesk web channel for integration. WhatsApp or Facebook Messenger is only required if your specific use case demands it.
+{% endhint %}
 
 <a id="Prerequisites"></a>
 
@@ -134,7 +136,9 @@ After activating the channel, you must create two flows in your Cuedesk workspac
 The New Conversation flow directs all new user messages to the DRUID AI Agent for handling. To create this flow:
 
 1. Download the [New-Conversation-Sample-Flow](https://druiddocs.file.core.windows.net/docs-shares/Cuedesk/New-Conversation-Sample-Flow.txt?sv=2023-01-03&st=2024-06-24T13%3A38%3A18Z&se=2030-06-25T13%3A38%3A00Z&sr=f&sp=r&sig=%2Fnu4VdyQ8rxwyxSzGoPZCfLdy3ctu6iHUbRlilzJN18%3D). This sample flow is designed for the WhatsApp channel but you can update it for Facebook Messenger.
-> **Info:** All messages received from users in the WhatsApp channel via Cue will be handled by the DRUID AI Agent. If it can't answer a question, it will use the internal action **ConnectToHelpdeskAgent** to transfer the user to Cue Live Chat, and a ticket will be created in the Cue Inbox. Once an agent closes a ticket, the user-AI Agent conversation will continue.
+{% hint style="info" %}
+**Info:** All messages received from users in the WhatsApp channel via Cue will be handled by the DRUID AI Agent. If it can't answer a question, it will use the internal action **ConnectToHelpdeskAgent** to transfer the user to Cue Live Chat, and a ticket will be created in the Cue Inbox. Once an agent closes a ticket, the user-AI Agent conversation will continue.
+{% endhint %}
 
 2. In the Cue workspace, click the **Flows** icon on the main menu.
 3. On the Flows page, click **Create a flow**.
@@ -156,11 +160,15 @@ The New Conversation flow directs all new user messages to the DRUID AI Agent fo
 
 ![](../../Resources/Images/Cuedesk/json%20to%20property.png)
 
-> **Info:** The structure of the Request Body in the POST step matches the Body Template structure that DRUID expects, as shown in the Conversation Status section of the channel configuration.
+{% hint style="info" %}
+**Info:** The structure of the Request Body in the POST step matches the Body Template structure that DRUID expects, as shown in the Conversation Status section of the channel configuration.
+{% endhint %}
 
 10. Save the step.
 
-> **NOTE:** After the user sends the first message in the WhatsApp channel, a new conversation begins. This conversation remains active for 24 hours or until the user types "end" in WhatsApp.
+{% hint style="info" %}
+**NOTE:** After the user sends the first message in the WhatsApp channel, a new conversation begins. This conversation remains active for 24 hours or until the user types "end" in WhatsApp.
+{% endhint %}
 
 #### Create Live Chat Ticket Closed Flow
 
@@ -207,7 +215,9 @@ To enable voice messages support, follow these steps:
 - For **Azure**, enter your MS Azure Speech API key and select the region.
 - For **ElevenLabs**, enter your API key.
 
-> **NOTE:** ElevenLabs is available as speech provider in DRUID 9.0 and higher.
+{% hint style="info" %}
+**NOTE:** ElevenLabs is available as speech provider in DRUID 9.0 and higher.
+{% endhint %}
 
 3. By default, the AI Agent replies with text. To have the AI Agent respond with voice, turn on the **Reply with voice messages** toggle.
 4. In the table, click the plus icon. A row is added to the table.

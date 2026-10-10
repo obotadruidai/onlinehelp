@@ -74,7 +74,9 @@ In the eSign Namirial integration, Druid supports three callback types:
 
 - **Workstep Event callback** - specific event callbacks ("StatusUpdateCallbackUrl": “{{DruidBaseURL}}?Token={{DruidToken}}&envelope=##EnvelopeId##&event=##EventType##”) fired on events caused by the underlying "SIGNificant Server Platform" component, but also routed through the notification system of eSignAnyWhere. These callbacks inform in a more detailed way about the workstep events - but note that those events are not necessarily time-synced to the envelope events. To trigger activities on the eSignAnyWhere API, always consider the envelope or envelope status callbacks.
 
-> **NOTE:** This callback type is available in Druid 1.67 and higher.
+{% hint style="info" %}
+**NOTE:** This callback type is available in Druid 1.67 and higher.
+{% endhint %}
 
 Based on the type of callback you want to make, in the request body, provide the URL for the appropriate callback type in the following format:
 
@@ -87,7 +89,9 @@ Based on the type of callback you want to make, in the request body, provide the
 	},
 ```
 
-> **IMPORTANT!**  Make sure that the callback URLs have a length of maximum 500 characters to comply with Namirial URL length restriction.
+{% hint style="warning" %}
+**IMPORTANT!**  Make sure that the callback URLs have a length of maximum 500 characters to comply with Namirial URL length restriction.
+{% endhint %}
 
 You can use additional information provided by the Workstep event callback in the main conversation or start a secondary conversation, as best suits your needs.
 
@@ -128,7 +132,9 @@ Additionally, all following metadata sent by Namirial callback can now pe mapped
 - recipientEmail=##RecipientEmail## – emailadress of current recipient
 - recipientOrder=##RecipientOrder## – index of current recipient
 
-> **NOTE:**  Make sure to type the name of the parameter with first character in lower case, as they are described above.
+{% hint style="info" %}
+**NOTE:**  Make sure to type the name of the parameter with first character in lower case, as they are described above.
+{% endhint %}
 
 In order to shorten the length of the URL when sending multiple callback parameters, you can replace the **Token** parameter with a much shorter authentication key : “secret”.
 

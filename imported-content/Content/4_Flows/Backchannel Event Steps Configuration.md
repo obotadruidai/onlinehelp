@@ -33,12 +33,16 @@ To configure a backchannel event step that triggers a JavaScript function define
 
 1. In the EditFlowStep page, click on the **General** section header. The section expands.
 2. In the **Step name** field, enter the name of the JavaScript function defined in the source code of the web page hosting the AI Agent.
-> **IMPORTANT!** The step name should contain the exact name of the function; otherwise, the step will not trigger the JS function.
+{% hint style="warning" %}
+**IMPORTANT!** The step name should contain the exact name of the function; otherwise, the step will not trigger the JS function.
+{% endhint %}
 
 3. From the **Step message** remove the default message, leave it empty. We use Backchannel Event steps to trigger functions, and not to show messages in the chat.
 4. If you want to pass information to the backchannel event, in the **Input mapping** field, select the desired entity from which you will want to display information.
    > **IMPORTANT!** This not related also to receiving back information in the same entity.
-> **NOTE:** Filling in this field is mandatory, because the AI Agent will not be able to load the function. If you don’t pass information to the backchannel event step, just select any entity.
+{% hint style="info" %}
+**NOTE:** Filling in this field is mandatory, because the AI Agent will not be able to load the function. If you don’t pass information to the backchannel event step, just select any entity.
+{% endhint %}
 
 5. Save the step.
 

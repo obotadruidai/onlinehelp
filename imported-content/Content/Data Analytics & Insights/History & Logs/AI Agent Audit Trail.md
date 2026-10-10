@@ -7,7 +7,9 @@ title: "AI Agent Audit Trail"
 
 The AI Agent Audit Trail gives you a complete historical record of all changes made to flows, integrations and apps in the current AI Agent. This feature helps you track modifications, identify who made them, and ensure accountability for updates. You can also compare different versions to review changes in detail, making it easier to maintain and troubleshoot your AI Agent.
 
-> **NOTE:** Logging apps changes in the Audit Trail is available in DRUID 9.9 and higher.
+{% hint style="info" %}
+**NOTE:** Logging apps changes in the Audit Trail is available in DRUID 9.9 and higher.
+{% endhint %}
 
 To access the AI AgentAudit Trail, from the **History & Logs** menu, click **Audit Trail**.
 
@@ -48,7 +50,9 @@ You can compare the currently selected version with any previous version by sele
 
 ![](../../Resources/Images/Bot%20Audit%20Trail/compare%20with%20new%20log.png)
 
-> **Info:**  If a flow / integration has been updated and later deleted, clicking the modified record in the audit trail may result in an error, as it no longer exists.
+{% hint style="info" %}
+**Info:**  If a flow / integration has been updated and later deleted, clicking the modified record in the audit trail may result in an error, as it no longer exists.
+{% endhint %}
 
 To exit the comparison view, click the **Back** icon or the **Compare** icon again.
 

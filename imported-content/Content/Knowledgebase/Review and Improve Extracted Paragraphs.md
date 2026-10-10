@@ -15,11 +15,15 @@ To review paragraphs in your data source:
 
 1. Go to your data source.
 2. Locate the node/leaf in the tree explorer.
-> **Info:** To streamline your review workflow across large data sets, use the view layout toggle to switch from **Dialog** (Explorer View) to **Split** (Tree explorer and Content). For detailed instructions on layout options, see [Changing the Extracted Paragraphs View](Change%20the%20Extracted%20paragraphs%20View.md).
+{% hint style="info" %}
+**Info:** To streamline your review workflow across large data sets, use the view layout toggle to switch from **Dialog** (Explorer View) to **Split** (Tree explorer and Content). For detailed instructions on layout options, see [Changing the Extracted Paragraphs View](Change%20the%20Extracted%20paragraphs%20View.md).
+{% endhint %}
 
 3. Compare the extracted paragraph directly against your source material to determine whether it requires structural cleanup, intent alignment, or deletion.
 
-> **NOTE:** Any changes you do to extracted paragraphs requires data source retraining in order for the changes to take effect.
+{% hint style="info" %}
+**NOTE:** Any changes you do to extracted paragraphs requires data source retraining in order for the changes to take effect.
+{% endhint %}
 
 <a id="EditExtractedParagraphs"></a>
 
@@ -38,7 +42,9 @@ To modify an extracted paragraph in your data source:
 
 4. Click the **Save** icon.
 
-> **NOTE:** You need to re-train your data source for this action to take place.
+{% hint style="info" %}
+**NOTE:** You need to re-train your data source for this action to take place.
+{% endhint %}
 
 <a id="DeleteExtractedParagraphs"></a>
 
@@ -54,11 +60,15 @@ If an extracted paragraph contains obsolete, redundant, or sensitive information
 
 The paragraph will appear grayed out, indicating it is flagged for removal.
 
-> **Info:** You can undo a deletion request before retraining by clicking the Action menu (...) next to the paragraph and selecting **Undo**.
->
-> ![](../Resources/Images/KB/undo%20deletion.png)
+{% hint style="info" %}
+**Info:** You can undo a deletion request before retraining by clicking the Action menu (...) next to the paragraph and selecting **Undo**.
 
-> **NOTE:** You need to re-train your data source for this action to take place.
+![](../Resources/Images/KB/undo%20deletion.png)
+{% endhint %}
+
+{% hint style="info" %}
+**NOTE:** You need to re-train your data source for this action to take place.
+{% endhint %}
 
 <a id="RetraintheDataSource"></a>
 

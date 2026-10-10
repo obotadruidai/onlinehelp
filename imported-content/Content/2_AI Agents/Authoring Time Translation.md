@@ -25,7 +25,9 @@ The process involves up-front translation during development, which allows the A
 
 ![](../Resources/Images/SDL/authoring%202nd%20diagram.png)
 
-> **NOTE:** Unlike Conversation Time Translation, you **cannot** use multiple machine translation services simultaneously for Authoring Time Translation.
+{% hint style="info" %}
+**NOTE:** Unlike Conversation Time Translation, you **cannot** use multiple machine translation services simultaneously for Authoring Time Translation.
+{% endhint %}
 
 <a id="FlowElementsTranslatedbyMachineTranslation"></a>
 
@@ -95,7 +97,9 @@ While machine translation typically occurs when saving individual flow steps, au
 
 This feature is an efficient way to ensure translation cost savings across complex AI Agents by translating a large amount of content at once. The process runs asynchronously and its duration depends on the AI Agent complexity (number of flows, steps, and configuration). You must wait until the process completes, indicated by a "Success" status.
 
-> **IMPORTANT!**  **Important Rules for Bulk Translation**:
->
-> - The machine translation services do not translate custom messages or flow elements that have been manually customized.
-> - If the process encounters errors, it stops immediately, and an error message appears. Any subsequent bulk translation attempt will restart from the beginning and will not continue from the point of the previous error.
+{% hint style="warning" %}
+**IMPORTANT!**  **Important Rules for Bulk Translation**:
+
+- The machine translation services do not translate custom messages or flow elements that have been manually customized.
+- If the process encounters errors, it stops immediately, and an error message appears. Any subsequent bulk translation attempt will restart from the beginning and will not continue from the point of the previous error.
+{% endhint %}

@@ -153,7 +153,9 @@ To access the Dashboard, select your AI Agent and from the Dashboards menu, clic
 
 ## Filtering dashboard data
 
-> **NOTE:**  You cannot filter dashboard data while the dashboard is in edit mode.
+{% hint style="info" %}
+**NOTE:**  You cannot filter dashboard data while the dashboard is in edit mode.
+{% endhint %}
 
 To filter dashboard data, select the date range for which you want to monitor your AI Agent usage:
 
@@ -169,7 +171,9 @@ To filter dashboard data, select the date range for which you want to monitor 
 
 The Dashboard displays the metrics historical data for the selected AI Agent within the specified date range. Historical data means that if today is selected within the date range, Druid calculates KPI values for events beginning the first day selected (from date) until the past 24 hours. If you select **Today** as Date range, the dashboard shows KPI vales for the past 24 hours.
 
-> **NOTE:**  The dashboard template contains time series KPIs and time series is disabled by default. To show time series data, you need to enable it. For more information, see [Enabling Time Series KPIs](#Enabling_Time_Series_KPIs).
+{% hint style="info" %}
+**NOTE:**  The dashboard template contains time series KPIs and time series is disabled by default. To show time series data, you need to enable it. For more information, see [Enabling Time Series KPIs](#Enabling_Time_Series_KPIs).
+{% endhint %}
 
 <a id="EnablingTimeSeriesKPIs"></a>
 
@@ -177,7 +181,9 @@ The Dashboard displays the metrics historical data for the selected AI Agent wit
 
 By default, time series is disabled. For time series KPIs to register data on the Dashboard, you need to enable time series.
 
-> **Info:** The time series KPIs are only available for widgets of type **Chart** or **Table**.
+{% hint style="info" %}
+**Info:** The time series KPIs are only available for widgets of type **Chart** or **Table**.
+{% endhint %}
 
 To do so, follow these steps:
 

@@ -58,7 +58,9 @@ At the top-left corner of the page, click the icon ![](../Resources/Images/Flow%
 
 The nodes in the diagram represent the flows. By default, the Diagram Designer displays the most recently viewed selection on the **Toolbar**.
 
-> **Info:** You can always go back to the flows list view by clicking the List view icon.
+{% hint style="info" %}
+**Info:** You can always go back to the flows list view by clicking the List view icon.
+{% endhint %}
 
 <a id="Toolbar"></a>
 

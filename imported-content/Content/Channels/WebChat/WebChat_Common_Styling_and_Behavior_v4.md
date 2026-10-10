@@ -20,7 +20,9 @@ The interface introduces visual themes as the primary foundation for layout and 
 - **Light Theme**. A crisp, clean interface optimized for bright environments, offering high contrast and maximum readability.
 - **Dark Theme**. A sleek visual layout designed for modern aesthetics, reduced screen glare, and low-light environments.
 
-> **Info:** **Light** and **Dark** themes are available starting with Druid 9.30. With this release, your current webchat configuration becomes the **Legacy** theme by default.
+{% hint style="info" %}
+**Info:** **Light** and **Dark** themes are available starting with Druid 9.30. With this release, your current webchat configuration becomes the **Legacy** theme by default.
+{% endhint %}
 
 ![](../../Resources/Images/WebChat/Light%20Theme.png)
 ![](../../Resources/Images/WebChat/Dark%20Theme.png)
@@ -37,7 +39,9 @@ This section describes the parameters grouped per category and where applicable 
 
 The Agentic Reasoning and Messaging parameters customize how the chat displays structured AI Agent actions, decision-making steps, and specialized message formats. Adjusting these parameters provides clear visual distinction for automated logic workflows, interactive components, and conversational updates throughout the chat.
 
-> **Info:** These parameters are available starting with Druid 9.30.
+{% hint style="info" %}
+**Info:** These parameters are available starting with Druid 9.30.
+{% endhint %}
 
 <a id="GreetingsMessage"></a>
 
@@ -462,7 +466,9 @@ For users accessing the web chat from inside the Druid Portal, the conversation 
 
 ![](../../Resources/Images/portal%20user%20login/log%20out.png)
 
-> **NOTE:** This option is available only in the Druid Portal chat widget; it is not available in chat widgets hosted in custom pages.
+{% hint style="info" %}
+**NOTE:** This option is available only in the Druid Portal chat widget; it is not available in chat widgets hosted in custom pages.
+{% endhint %}
 
 <a id="AdvancedOptions"></a>
 

@@ -29,7 +29,9 @@ If you have questions about your DRUID tenant, please contact [support@Druidai.c
 ## What's New
 
 - **Multilingual AI Agents – Real-Time Translation with LLM**. You can now use LLM to translate user messages in real time during conversations. This enables smoother multilingual AI Agent interactions and improves understanding across languages.
-> **NOTE:** LLM machine translation is available **only for conversation time translation**.
+{% hint style="info" %}
+**NOTE:** LLM machine translation is available **only for conversation time translation**.
+{% endhint %}
 
 ![](../../Resources/Images/druid%209.1/llm%20translation.png)
 
@@ -72,7 +74,9 @@ For more information, see [Vonage Voice](../../Channels/Vonage_Voice.md).
 ![](../../Resources/Images/druid%209.1/kb%20mesolitica.png)
 
 - **Conversation History – Improved logging for translated messages**. Translated messages are now clearly identified in the conversation history, Flow Log. You can easily see which messages were translated, along with the source and target languages used.
-> **NOTE:** Improved logging for translated messages requires Connector Host upgrade to version 9.1.
+{% hint style="info" %}
+**NOTE:** Improved logging for translated messages requires Connector Host upgrade to version 9.1.
+{% endhint %}
 
 ![](../../Resources/Images/druid%209.1/translated%20messages.png)
 
@@ -105,10 +109,14 @@ This enhancement simplifies integrations by allowing flexible, variable-based UR
 ![](../../Resources/Images/druid%209.1/integration%20url.png)
 
 - **DRUID LLM Resources: gpt-4.1 model**. DRUID now supports the gpt-4.1 model from Azure OpenAI as a configurable LLM resource. To enable this resource for your tenant, please contact [DRUID Support](<mailto:support@druidai.com?subject=DRUID LLM resource: activate gpt-4.1>).
-> **NOTE:** Using the gpt-4.1 model will incur additional costs.
+{% hint style="info" %}
+**NOTE:** Using the gpt-4.1 model will incur additional costs.
+{% endhint %}
 
 - **Knowledge Base - Video Processing (technology preview)**. With this release, DRUID supports video processing to allow data extraction from video content for the following data sources: SharePoint, Custom Data Sources and Website with videos directly hosted (embedded third-party videos like YouTube are not supported).  For more information, see [Extracting Data from Video Files](../../Knowledgebase/Extract%20Data%20from%20Video%20Files.md).
-> **NOTE:** This is a tenant feature and requires **Druid Knowledge Base Multimedia Extractor** activation on your tenant. For activation, reach out to [DRUID Support](<mailto:support@druidai.com?subject=Druid KB Multimedia Extractor activation request>).
+{% hint style="info" %}
+**NOTE:** This is a tenant feature and requires **Druid Knowledge Base Multimedia Extractor** activation on your tenant. For activation, reach out to [DRUID Support](<mailto:support@druidai.com?subject=Druid KB Multimedia Extractor activation request>).
+{% endhint %}
 
 - **Web Forms – Manual Date Entry**. With this release, you can manually enter dates in Date fields on web forms, offering an alternative to using the date selector. Use the date format set in the Platform; otherwise, DRUID will consider the date invalid.
 

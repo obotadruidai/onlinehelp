@@ -33,7 +33,9 @@ Defines the campaign's outreach configuration, including the channel (Voice, SMS
 
 The message supports dynamic fields such as **#PreferredFirstName** to personalize the outreach automatically.
 
-> **Info:** This is the first message the AI Agent sends to the client when the campaign starts.
+{% hint style="info" %}
+**Info:** This is the first message the AI Agent sends to the client when the campaign starts.
+{% endhint %}
 
 ![](../../../../Resources/Images/Outbound%20Patient%20Engagement/Outbound%20Patient%20Engagement_8.png)
 

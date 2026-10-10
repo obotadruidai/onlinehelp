@@ -18,7 +18,9 @@ To grant workspace permissions:
 
 ![](../Resources/Images/CBA/role%20permissions.png)
 
-> **IMPORTANT!** Since workspaces operate within the context of AI Agents, assigned security roles must also have permission to read AI Agent information.
+{% hint style="warning" %}
+**IMPORTANT!** Since workspaces operate within the context of AI Agents, assigned security roles must also have permission to read AI Agent information.
+{% endhint %}
 
 Ensure that business users are assigned roles with appropriate workspace privileges. For example:
 
@@ -26,4 +28,6 @@ Ensure that business users are assigned roles with appropriate workspace privile
 - Team Leads – Permissions to create, edit, and read workspaces.
 - Helpdesk Agents – Read-only access to workspaces.
 
-> **NOTE:**  Workspace privileges also apply to views and forms. A user with permissions to create and edit workspaces will also have the ability to create and edit views and forms.
+{% hint style="info" %}
+**NOTE:**  Workspace privileges also apply to views and forms. A user with permissions to create and edit workspaces will also have the ability to create and edit views and forms.
+{% endhint %}

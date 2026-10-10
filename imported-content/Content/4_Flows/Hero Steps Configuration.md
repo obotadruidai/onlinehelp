@@ -32,7 +32,9 @@ To add and configure a Hero Card step in a DRUID flow:
 8. Click the **Edit** button to configure the Hero Cards.
 9. Add more cards by clicking the **Add card** button.
 10. You can include elements like an image (by entering the image public link), title, subtitle, and description for each card. In the **Navigation URL** field, enter the URL which will open a new page in the browser when the users will click on the image in the card.
-> **Info:** Skip this step if you’re using Hero steps to create menu options.
+{% hint style="info" %}
+**Info:** Skip this step if you’re using Hero steps to create menu options.
+{% endhint %}
 
 11. To create a menu with multiple options, add interactive buttons to each card by clicking **Add button**. Define the button's tag, visible text, and any custom CSS class for button styling if you are using custom styles. Repeat this step for as many buttons as needed.
 
@@ -76,7 +78,9 @@ To configure a hero card with multiple buttons:
 
 ## <a id="Configur"></a>Configuring hero card buttons to open URLs
 
-> **NOTE:** This feature is exclusively available for the web chat and Teams channels.
+{% hint style="info" %}
+**NOTE:** This feature is exclusively available for the web chat and Teams channels.
+{% endhint %}
 
 To configure hero card buttons to open specific URLs, navigate to the Metadata section and select **Advanced editing**. Locate the "buttons" object, and for the desired buttons, adjust the following parameters:
 
@@ -97,7 +101,9 @@ To configure hero card buttons to open specific URLs, navigate to the Metadata s
 
 When a user clicks the button, the URL will open in a new browser window.
 
-> **Info:** In DRUID version 7.5 and higher, clicking the button is logged in the Conversation History, and the flow engine refrains from predicting using the button value.
+{% hint style="info" %}
+**Info:** In DRUID version 7.5 and higher, clicking the button is logged in the Conversation History, and the flow engine refrains from predicting using the button value.
+{% endhint %}
 
 <a id="Configuringherocardpagination"></a>
 

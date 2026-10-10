@@ -5,7 +5,9 @@ title: "Import Solutions"
 <a id="ImportSolutions"></a>
 
 
-> **IMPORTANT!** When you import a solution, please be aware that the elements in the solution will overwrite the AI Agent elements with the same name and SourceId.
+{% hint style="warning" %}
+**IMPORTANT!** When you import a solution, please be aware that the elements in the solution will overwrite the AI Agent elements with the same name and SourceId.
+{% endhint %}
 
 To import a solution, follow these steps:
 
@@ -24,7 +26,9 @@ The Import Solution pop-up appears.
 
 If none of the languages on the destination AI Agent exist in the solution package, you have to select which language from the solution to import on each language of the destination AI Agent.
 
-> **Info:** On import, Druid will write the messages in the selected languages making it easy for you to translate in the specific languages later.
+{% hint style="info" %}
+**Info:** On import, Druid will write the messages in the selected languages making it easy for you to translate in the specific languages later.
+{% endhint %}
 
 5. Check the content of the solution template by clicking the **Components** tab.
 
@@ -34,7 +38,9 @@ The blue label indicates the number of new elements which will be added on the A
 
 To see details about a specific element, click on it (e.g., Flows). The list of flows appears including new and existing flow which will be updated on solution import.
 
-> **IMPORTANT!** All elements which will be overwritten by solution import are marked with the **Warning** label. Solution import (elements overwriting) cannot be reverted, so we strongly recommend you to install solutions on a dev/sandbox environment.
+{% hint style="warning" %}
+**IMPORTANT!** All elements which will be overwritten by solution import are marked with the **Warning** label. Solution import (elements overwriting) cannot be reverted, so we strongly recommend you to install solutions on a dev/sandbox environment.
+{% endhint %}
 
 6. Click the **Import** button.
 7. Click the **Refresh** button to view the import status (completed / success or pending) and update the counters in the **Solution Contents** menu.

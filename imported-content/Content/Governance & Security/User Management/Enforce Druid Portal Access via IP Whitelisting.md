@@ -7,7 +7,9 @@ title: "Enforce Druid Portal Access via IP Whitelisting"
 
 To enhance platform security, Druid Portal administrators can restrict access to the Druid Portal to specific IP addresses or network ranges (e.g., company headquarters or VPN gateways). This restriction applies to both standard user credential login and Single Sign-On (SSO). When enforcing Druid Portal via IP whitelisting access, any login attempt from an unauthorized IP address will result in an "Access Denied" error.
 
-> **IMPORTANT!** For Druid Connector Host hybrid deployments, you must whitelist the IP address of the host machine to ensure uninterrupted service.
+{% hint style="warning" %}
+**IMPORTANT!** For Druid Connector Host hybrid deployments, you must whitelist the IP address of the host machine to ensure uninterrupted service.
+{% endhint %}
 
 <a id="SecurityBestPractice"></a>
 
@@ -19,7 +21,9 @@ For maximum security, route all employee traffic through a Corporate Proxy or VP
 
 ## Configure IP Whitelisting
 
-> **NOTE:** This feature is available starting with Druid 9.19.
+{% hint style="info" %}
+**NOTE:** This feature is available starting with Druid 9.19.
+{% endhint %}
 
 To configure the allowed IP addresses for your tenant:
 

@@ -7,7 +7,9 @@ title: "Set Variables"
 
 The Set Variables section allows you to put information into context by setting entities or local variables (prefixed with @) to specific values or to the result of specific functions. While entity fields hold values according to their defined data types, local variables are always treated as strings.
 
-> **IMPORTANT!** You cannot use connector local variables between flow steps and neither can you use local variables set on flow steps within integrations. For more information, see [Using Connector Local Variables](../7_Integrations/Use_connector_local_variables.md).
+{% hint style="warning" %}
+**IMPORTANT!** You cannot use connector local variables between flow steps and neither can you use local variables set on flow steps within integrations. For more information, see [Using Connector Local Variables](../7_Integrations/Use_connector_local_variables.md).
+{% endhint %}
 
 To access the flow step Set Variables, in the Flow Step editor, click on the Set Variable section header. The section expands.
 
@@ -31,7 +33,9 @@ Similarly, for entity set variables, such as:
 
 `[[Employee]].Document.DrivingLicense = [[DrivingLicense]]`
 
-> **NOTE:** Fields of type entity list are not supported in these set variable constructions.
+{% hint style="info" %}
+**NOTE:** Fields of type entity list are not supported in these set variable constructions.
+{% endhint %}
 
 <a id="Setvariablesandmultilingualentityfields"></a>
 
@@ -66,7 +70,9 @@ For more information, see [Managing Entity Fields](../5_Entities/Managing%20Enti
 | [[SelectedProduct]].TotalAmount = [[SelectedProduct]].UnitPrice \* [[SelectedProduct]].Quantity |  |
 | [[Invoice]].LinesCount = [[InvoiceLineList]].Count |  |
 
-> **NOTE:** Both Input Mapping and Set Variables set on the step provide information context; however, on step execution the input mapping overrides the set variables.
+{% hint style="info" %}
+**NOTE:** Both Input Mapping and Set Variables set on the step provide information context; however, on step execution the input mapping overrides the set variables.
+{% endhint %}
 
 <a id="Setvariablesusingadvancedcoding"></a>
 
@@ -86,7 +92,9 @@ In the Code Editor, entities from the conversation context are referenced with t
 
 The `thisStep` object provides access to the current flow step while the Set Variables code is being executed. You can use it to modify the step before its configured post actions are executed.
 
-> **Info:** Support for `thisStep` manipulation in Set Variables is available starting with Druid 10.0.
+{% hint style="info" %}
+**Info:** Support for `thisStep` manipulation in Set Variables is available starting with Druid 10.0.
+{% endhint %}
 
 Using `thisStep`, you can dynamically control the current step based on your business logic. For example, you can:
 
@@ -273,7 +281,9 @@ You can use the following methods to work with collections:
 
 ## <a id="Set"></a>Set Variables – Error Handling
 
-> **NOTE:** This feature is available in Druid 9.7 and higher.
+{% hint style="info" %}
+**NOTE:** This feature is available in Druid 9.7 and higher.
+{% endhint %}
 
 You can configure the behavior of the conversational engine when encountering an error on variable assignment. This setting controls whether the conversation continues or stops when an error is detected while setting a variable.
 
@@ -289,7 +299,9 @@ To configure error handling for Set Variables:
 
 In Druid 9.20 and higher, for steps that have the **Error Handler** set, you can author how the error is handled in the conversation. Additionally, you can create a flow dedicated to error handling and select it from AI agent details > Dialogue management section, **Exception flow** drop-down.
 
-> **Info:** If no exception flow or step-level handler is defined, the conversation will stop when an exception is raised.
+{% hint style="info" %}
+**Info:** If no exception flow or step-level handler is defined, the conversation will stop when an exception is raised.
+{% endhint %}
 
 3. Save the configuration.
 

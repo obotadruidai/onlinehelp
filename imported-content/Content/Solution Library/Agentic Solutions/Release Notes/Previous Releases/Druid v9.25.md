@@ -25,7 +25,9 @@ The Outbound Patient Engagement Agent is the core outreach engine for proactive 
 - **Balance Notifications Skill** - The Balance Notifications Skill sends timely, automated reminders to patients with outstanding account balances, reducing the time to engage with clients that have overdue invoices and the need for manual collections follow-up. Notifications are tailored to the patient's communication preferences and include direct payment links to maximize conversion rates.
 - **Demographic Updates Skill** - The Demographic Updates Skill proactively contacts patients to verify and refresh their personal information — including address, contact details, and insurance data — at regular intervals. Maintaining accurate demographic records improves care coordination, reduces claim rejections, and supports regulatory compliance requirements.
 
-> **NOTE:** The Outbound Patient Engagement Agent supports **voice campaigns only**.
+{% hint style="info" %}
+**NOTE:** The Outbound Patient Engagement Agent supports **voice campaigns only**.
+{% endhint %}
 
 <a id="PatientBillingAgent"></a>
 
@@ -47,7 +49,9 @@ The Outbound Student Engagement Agent enables institutions to transition from re
 - **Student Counselling Campaign Skill** – The Student Counselling Campaign Skill automates targeted outreach to students with failing grades, guiding them directly into advisor appointment scheduling and general counselling for improving their performance. It acts as an early intervention tool to help struggling students get the immediate academic support they need.
 - **Student Counselling Follow-up Skill** – The Student Counselling Follow-up Skill manages automated communication to check on student progress, triggered when students explicitly request subsequent performance follow-up sessions. It ensures continuous engagement and progress monitoring throughout the academic term.
 - **Freshman Orientation Campaign Skill** – The Freshman Orientation Campaign Skill streamlines student onboarding by actively assisting incoming freshmen with essential orientation activities. It drives early campus engagement by guiding students through event participation and automating the first-time class registration process.
-> **NOTE:** The Outbound Student Engagement Agent supports **voice campaigns only**.
+{% hint style="info" %}
+**NOTE:** The Outbound Student Engagement Agent supports **voice campaigns only**.
+{% endhint %}
 
 <a id="OperationalTools"></a>
 

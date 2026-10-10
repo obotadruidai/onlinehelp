@@ -42,4 +42,6 @@ These release notes provide a high-level overview of new features and improvemen
 
 - **Interactive Metric and Outcome Validation**. Prevent logic conflicts and ensure high reporting accuracy when configuring metrics and outcomes. Solution admins can click **Check Metric Definitions** or **Check Outcome Definitions** to run real-time backend checks and open a interactive chat window. The agent presents optimization recommendations and can apply updates automatically, eliminating manual reconfiguration effort. For more information, see [Step 5. Configure metric definitions](../Operational%20Tools/AI%20Engagement%20Analyst/Set%20Up%20the%20Solution.md#Step2) and [Step 6. Configure the conversation outcomes](../Operational%20Tools/AI%20Engagement%20Analyst/Set%20Up%20the%20Solution.md#Step3).
 
-> **NOTE:** If you upgrade the solution to version 9.31, data provisioning is required due to updated configuration settings. For detailed instructions, refer to [Step 3. Import default settings](../Operational%20Tools/AI%20Engagement%20Analyst/Set%20Up%20the%20Solution.md#Step).
+{% hint style="info" %}
+**NOTE:** If you upgrade the solution to version 9.31, data provisioning is required due to updated configuration settings. For detailed instructions, refer to [Step 3. Import default settings](../Operational%20Tools/AI%20Engagement%20Analyst/Set%20Up%20the%20Solution.md#Step).
+{% endhint %}

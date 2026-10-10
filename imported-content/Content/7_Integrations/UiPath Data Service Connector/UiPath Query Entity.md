@@ -7,7 +7,9 @@ title: "UiPath Query Entity"
 
 Queries the request entity's records. If you want to get a collection of records from an entity list field, you should use [UiPath Query Related Entity](UiPath%20Query%20Related%20Entity.md) instead.
 
-> **IMPORTANT!**  Before defining the integration task, make sure that you have mapped the UiPath Data Service entity to the Druid request entity; otherwise, you won’t be able to set the integration task response.
+{% hint style="warning" %}
+**IMPORTANT!**  Before defining the integration task, make sure that you have mapped the UiPath Data Service entity to the Druid request entity; otherwise, you won’t be able to set the integration task response.
+{% endhint %}
 
 <a id="GeneralSettings"></a>
 

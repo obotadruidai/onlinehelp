@@ -91,7 +91,9 @@ The **live-chat-connect-agent-to-waiting-client** flow is comprised of the follo
 - If the result is **true**, then the backend channel **HelpdeskClientConnected** is executed and a notification informs the agent that he / she has successfully connected to client [[HelpdeskClient]].
 - If the result is **false**, then the backend channel **HelpdeskClientNotConnected** is executed and a notification informs the agent that connecting to client [[HelpdeskClient]] live chat failed.
 
-> **NOTE:** The variable **[[HelpdeskClient]]** is set in the **Input mapping** field on both flow steps of type Backchannel event.
+{% hint style="info" %}
+**NOTE:** The variable **[[HelpdeskClient]]** is set in the **Input mapping** field on both flow steps of type Backchannel event.
+{% endhint %}
 
 You can configure the messages sent to agents regarding the result of the **ConnectToHelpdeskClientMultiChat** internal action. To do so, click to edit the desired backchannel flow step, click the **General** section header and in the **Step message** field, replace the text with the desired message.
 

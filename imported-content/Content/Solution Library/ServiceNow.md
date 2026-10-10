@@ -74,7 +74,9 @@ Add the following UiPath assets:
 
 - **Type**: Credential
 - **Username**& **Password**: your ServiceNow instance credentials.
-> **NOTE:** You must have admin rights with your ServiceNow instance credentials.
+{% hint style="info" %}
+**NOTE:** You must have admin rights with your ServiceNow instance credentials.
+{% endhint %}
 
 ![](../Resources/Images/Solutions%20Library/service%20now%20instance%20credentials.png)
 
@@ -82,7 +84,9 @@ Add the following UiPath assets:
 
 ### Step 3: Publish the ServiceNow Ticket UiPath Processes
 
-> **NOTE:** The UiPath setup for the UiPath processes mentioned in step 3.1 is done on the [Druid-Uipath integration via Webhooks](../7_Integrations/UiPath/Starting%20UiPath%20Unattended.md).
+{% hint style="info" %}
+**NOTE:** The UiPath setup for the UiPath processes mentioned in step 3.1 is done on the [Druid-Uipath integration via Webhooks](../7_Integrations/UiPath/Starting%20UiPath%20Unattended.md).
+{% endhint %}
 
 #### 3.1 For each of the following ServiceNow Ticket UiPath Processes: add-servicenow-ticket, close-servicenow-ticket, servicenow-instance-awakening and update-servicenow-ticket, follow these steps:
 
@@ -96,7 +100,9 @@ Add the following UiPath assets:
 
 #### 3.2 Publish the get-servicenow-tickets process
 
-> **NOTE:** The UiPath setup for the **get-service-now-tickets** process is done on the [Druid-Uipath integration via Orchestrator queues](../7_Integrations/UiPath/Running%20Unattended%20Process%20using%20Orchestrator%20Queues.md).
+{% hint style="info" %}
+**NOTE:** The UiPath setup for the **get-service-now-tickets** process is done on the [Druid-Uipath integration via Orchestrator queues](../7_Integrations/UiPath/Running%20Unattended%20Process%20using%20Orchestrator%20Queues.md).
+{% endhint %}
 
 To publish this process, follow these steps:
 

@@ -54,7 +54,9 @@ By default, common social media domains (e.g., Facebook, LinkedIn) and phone num
 ![](../../Resources/Images/KnowledgeBase_0.2/linsk%20to%20ignore.png)
 
 - **Knowledge Base – Reset Advanced Settings**. We've introduced a new **Reset Advanced Settings** button on the Knowledge Base Settings page, **Advanced Settings** tab. This provides a convenient way to revert all advanced settings, whether configured at the node or data source level, back to their default values. Additionally, it will clear any credentials previously set within the generative endpoint configuration.
-> **NOTE:** This action is irreversible and will impact all customized generative endpoints settings and credentials.
+{% hint style="info" %}
+**NOTE:** This action is irreversible and will impact all customized generative endpoints settings and credentials.
+{% endhint %}
 
 ![](../../Resources/Images/KnowledgeBase_0.2/kb%20delete%20adv%20settings.png)
 
@@ -71,7 +73,9 @@ This expansion is designed to further optimize performance and reduce payload si
 
 For SQL integrations, this comprehensive list of visible columns remains accessible via the **[[<request entity>]] .PageInfo.SelectedFields** array.
 
-> **NOTE:** This feature requires DRUID Connector Host and DRUID Data Service version 8.15 for hybrid and on-premise deployments.
+{% hint style="info" %}
+**NOTE:** This feature requires DRUID Connector Host and DRUID Data Service version 8.15 for hybrid and on-premise deployments.
+{% endhint %}
 
 <a id="Improvements"></a>
 

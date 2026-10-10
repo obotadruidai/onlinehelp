@@ -14,7 +14,9 @@ With Google SSO, your organization benefits from:
 - **Reduced administrative overhead** – No need to handle password resets or manage additional credentials.
 - **Faster onboarding** – New team members can access the portal immediately using their Google accounts.
 
-> **NOTE:** Google SSO is available in Druid 9.12 and higher.
+{% hint style="info" %}
+**NOTE:** Google SSO is available in Druid 9.12 and higher.
+{% endhint %}
 
 <a id="Prerequisites"></a>
 
@@ -40,7 +42,9 @@ Once you have gathered the prerequisites, follow these steps to establish the co
 
 ### Step 1. Set up roles for automatically provisioned users
 
-> **IMPORTANT!**  All users provisioned in Druid Portal with Google will be automatically assigned with the roles set as **Default**.
+{% hint style="warning" %}
+**IMPORTANT!**  All users provisioned in Druid Portal with Google will be automatically assigned with the roles set as **Default**.
+{% endhint %}
 
 To set up default role(s) to be assigned to automatically provisioned users, from the **Administration** menu, click **Roles**. Edit the desired role(s) by selecting **Default**. You can create a new roles with permissions specific to your organization and set it as Default.
 

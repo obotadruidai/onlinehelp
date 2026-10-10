@@ -9,7 +9,9 @@ The Translation Tool enables translators and authors with the appropriate access
 
 This tool is designed specifically for localization teams and professional translators to ensure an AI Agent is perfectly translated across all designated target languages without requiring deep technical knowledge of the Druid platform or flow configuration.
 
-> **NOTE:** The Translation Tool is a tenant-level feature. To activate it for your tenant, please contact your Druid representative.
+{% hint style="info" %}
+**NOTE:** The Translation Tool is a tenant-level feature. To activate it for your tenant, please contact your Druid representative.
+{% endhint %}
 
 <a id="RequiredPermissions"></a>
 
@@ -97,7 +99,9 @@ Example:
 
 ![](../Resources/Images/Translation%20Tool/Translation%20Tool_6.png)
 
-> **NOTE:** You need to translate all elements within the pop-up; otherwise, you are not able to save the translations.
+{% hint style="info" %}
+**NOTE:** You need to translate all elements within the pop-up; otherwise, you are not able to save the translations.
+{% endhint %}
 
 After saving the translations, the status of the selected record will change to “Translated” and the **Target Count** will change to the number of translated elements on that record (Base Count equals Target Count).
 
@@ -115,9 +119,11 @@ Example: choice step
 
 ![](../Resources/Images/Translation%20Tool/Translation%20Tool_9.png)
 
-> **Info:**  For hero, choice, thumbnail steps, you can preview the step translation by clicking the **Preview** button at the top of the pop-up.
->
-> ![](../Resources/Images/Translation%20Tool/Translation%20Tool_10.png)
+{% hint style="info" %}
+**Info:**  For hero, choice, thumbnail steps, you can preview the step translation by clicking the **Preview** button at the top of the pop-up.
+
+![](../Resources/Images/Translation%20Tool/Translation%20Tool_10.png)
+{% endhint %}
 
 Authors and translators with access permissions to the Translation Tool and Flow Designer (see prerequisites) can navigate from the Translation pop-up to the Flow Diagram by clicking the open flow icon (![](../Resources/Images/Translation%20Tool/Translation%20Tool_11.png)) at the top of the Translation pop-up. A new browser window will open the Flow Diagram and the translation elements will display in the Flow Diagram Editor per category.
 

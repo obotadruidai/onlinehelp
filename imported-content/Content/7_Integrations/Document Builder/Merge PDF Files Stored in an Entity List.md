@@ -5,7 +5,9 @@ title: "Merge PDF Files Stored in an Entity List"
 <a id="MergePDFFilesStoredinanEntityList"></a>
 
 
-> **NOTE:** This feature is available in DRUID 5.25 and higher.
+{% hint style="info" %}
+**NOTE:** This feature is available in DRUID 5.25 and higher.
+{% endhint %}
 
 If you store PDF files in an entity list of files and you want to merge them, you can use the Document Builder.
 

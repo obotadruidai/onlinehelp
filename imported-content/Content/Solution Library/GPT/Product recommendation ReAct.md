@@ -35,7 +35,9 @@ Go to the Solutions Library, search for solution Product recommendation, ReAct, 
 
 ## Step 2. Set up your OpenAI API URL and key
 
-> **NOTE:** DRUID provides Open AI features from own Azure subscriptions. The Open AI consumption is charged in addition to your AI Agents subscriptions. Contact your DRUID Sales representative for details. You can also bring your own Microsoft Azure OpenAI service subscription. For more information, see [Microsoft documentation](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/overview).
+{% hint style="info" %}
+**NOTE:** DRUID provides Open AI features from own Azure subscriptions. The Open AI consumption is charged in addition to your AI Agents subscriptions. Contact your DRUID Sales representative for details. You can also bring your own Microsoft Azure OpenAI service subscription. For more information, see [Microsoft documentation](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/overview).
+{% endhint %}
 
 To set up the Azure OpenAI URL and key:
 

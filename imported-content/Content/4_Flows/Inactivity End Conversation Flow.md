@@ -9,7 +9,9 @@ The **Inactivity End Conversation Flow** helps manage conversations that are idl
 
 ![](../Resources/Images/druid%207.13/inactivity%20end%20flow.png)
 
-> **NOTE:**  If the user is in a live chat session, the system will disconnect them.
+{% hint style="info" %}
+**NOTE:**  If the user is in a live chat session, the system will disconnect them.
+{% endhint %}
 
 <a id="UseCases"></a>
 

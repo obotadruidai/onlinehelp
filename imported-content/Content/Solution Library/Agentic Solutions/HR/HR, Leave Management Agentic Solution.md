@@ -75,7 +75,9 @@ To configure the app connection, follow these steps:
 | Druid-LLM 4.1 | Used for external LLM processing. | This app is provisioned by DRUID. Get the claims and token from Administration > Druid Services. |
 | Druid-LLM 4o mini | Used for external LLM processing. | This app is provisioned by DRUID. Get the claims and token from Administration > Druid Services. |
 
-> **NOTE:** If the DRUID.LLM resource does not appear, contact your sales representative to activate these resources.
+{% hint style="info" %}
+**NOTE:** If the DRUID.LLM resource does not appear, contact your sales representative to activate these resources.
+{% endhint %}
 
 2. Click **Save** to complete the configuration.
 3. Once the app is configured, click **Publish**.

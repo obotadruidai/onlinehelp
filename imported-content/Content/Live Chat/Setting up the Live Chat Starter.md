@@ -7,7 +7,9 @@ title: "Setting up Live Chat"
 
 Select the desired AI Agent. Go to the Solutions Library, search for solution Live Chat Advanced and import it. This solution template contains a basic Live Chat configuration to help you easily add Live Chat support to your AI Agent and let it handle live chat sessions between end users and help desk agents.
 
-> **NOTE:** Make sure not to alter the name of the security role ”Helpdesk Agent” as the flow engine makes some automatic identifications based on this role. Changing the name of this security role will break the Live Chat functionality.
+{% hint style="info" %}
+**NOTE:** Make sure not to alter the name of the security role ”Helpdesk Agent” as the flow engine makes some automatic identifications based on this role. Changing the name of this security role will break the Live Chat functionality.
+{% endhint %}
 
 The AI Agent handles live chat from two perspectives:
 

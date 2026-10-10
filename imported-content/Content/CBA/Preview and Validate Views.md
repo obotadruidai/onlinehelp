@@ -13,7 +13,9 @@ The preview opens in a new browser tab, allowing you to check how the view will 
 
 ![](../Resources/Images/CBA/view%20preview.png)
 
-> **Info:** If no records exist at the time of preview or if integrations have not been configured, the preview will display with no data.
+{% hint style="info" %}
+**Info:** If no records exist at the time of preview or if integrations have not been configured, the preview will display with no data.
+{% endhint %}
 
 To refine the preview, authors can filter the view and display only the fields hidden on mobile devices by tapping **Fields on Mobile** at the top-right corner of the page, then clicking **Refresh**.
 

@@ -30,12 +30,16 @@ The helpdesk AI Agent must focus exclusively on live chat operations. It should 
 To configure Druid External Live Chat, follow these steps:
 
 1. Create an AI Agent dedicated only to managing incoming live chat requests. For more information, see [Creating AI Agents](../2_AI%20Agents/Creating%20AI%20Agents.md).
-> **IMPORTANT!**  Do not set the Welcome flow on this AI Agent as its purpose is only to manage incoming live chat calls.
+{% hint style="warning" %}
+**IMPORTANT!**  Do not set the Welcome flow on this AI Agent as its purpose is only to manage incoming live chat calls.
+{% endhint %}
 
 2. Import the **Live Chat Advanced** solution from the Solution Library and configure the Live Chat settings and special flows. For more information, see [Setting up Live Chat](Setting%20up%20the%20Live%20Chat%20Starter.md).
 3. Add queues and assign agents. For more information, see [Live Chat With Multiple Queues](Live%20Chat%20Multiple%20Queues.md).
 4. Import the **Addon for DRUID External Live Chat** solution from the Solution Library. This solution contains a system flow that triggers when a live chat request comes to the Helpdesk AI Agent. The flow places the client in the queue and captures the metadata sent by the client AI Agent (if any).
-> **Info:** You can customize this flow to place clients in specific queues based on the queue code received from the client AI Agent. For example, add branches to route requests from client AI Agent 1 to Queue 1, and so on.
+{% hint style="info" %}
+**Info:** You can customize this flow to place clients in specific queues based on the queue code received from the client AI Agent. For example, add branches to route requests from client AI Agent 1 to Queue 1, and so on.
+{% endhint %}
 
 5. Go to the AI Agent details page, **Live Chat** section.
 6. Tap on the **Use as External Contact Center** toggle.
@@ -59,9 +63,13 @@ Follow this procedure to configure each of your client AI Agents:
 5. Import the **Live Chat Advanced** solution from the Solution Library. You need this solution only to send metadata to the Helpdesk AI Agent and capture client feedback.
 6. From the **Live chat client disconnected flow** dropdown, select the dedicated flow that will trigger when the conversation ends. For example, create a flow to capture user feedback. Note that this is logged only on the client AI Agent and is not sent to or stored in the Helpdesk AI Agent.
 
-> **NOTE:** Live chat special flows and timers should only be configured in the helpdesk AI Agent.
+{% hint style="info" %}
+**NOTE:** Live chat special flows and timers should only be configured in the helpdesk AI Agent.
+{% endhint %}
 
-> **Info:** Helpdesk agent resolutions are captured by the helpdesk AI Agent, while client feedback is captured by the client AI Agents.
+{% hint style="info" %}
+**Info:** Helpdesk agent resolutions are captured by the helpdesk AI Agent, while client feedback is captured by the client AI Agents.
+{% endhint %}
 
 <a id="Sendtheconversationtranscript"></a>
 
@@ -70,9 +78,13 @@ Follow this procedure to configure each of your client AI Agents:
 To save the conversation transcript and make it available for helpdesk agents, on the client AI Agent, go to the l**ive-chat-connect-to-agent** flow, make the following settings:
 
 1. On the step where you call the internal action **ConnectToHelpdeskAgent** (Post Actions section), in the Pre Actions section, call the internal action **GetConversationTranscript**.
-> **IMPORTANT!** When calling the **GetConversationTranscript** internal action on the same step where you call **ConnectToHelpdeskAgent**, make sure to call it in the PreActions section. Calling it in the PostActions section will not send the conversation transcript to helpdesk agents.
+{% hint style="warning" %}
+**IMPORTANT!** When calling the **GetConversationTranscript** internal action on the same step where you call **ConnectToHelpdeskAgent**, make sure to call it in the PreActions section. Calling it in the PostActions section will not send the conversation transcript to helpdesk agents.
+{% endhint %}
 
-> **Info:**  You can call the **GetConversationTranscript** internal action on a previous step.
+{% hint style="info" %}
+**Info:**  You can call the **GetConversationTranscript** internal action on a previous step.
+{% endhint %}
 
 2. On the **ConnectToHelpdeskAgent** internal action add the following:
 
@@ -82,7 +94,9 @@ To save the conversation transcript and make it available for helpdesk agents, o
 }
 ```
 
-> **Info:** You can send additional client information to the helpdesk agents together with the conversation transcript. For more information, see [Druid External Live Chat](#Send).
+{% hint style="info" %}
+**Info:** You can send additional client information to the helpdesk agents together with the conversation transcript. For more information, see [Druid External Live Chat](#Send).
+{% endhint %}
 
 3. Save the step.
 
@@ -92,9 +106,13 @@ To save the conversation transcript and make it available for helpdesk agents, o
 
 On the client AI Agent, go to the flow **live-chat-connect-to-agent**, step **S2 Connect to helpdesk agent** and click on the **ConnectToHelpdeskAgent** internal action. Provide the desired parameters inside the **ContactCenterParameters** object in JSON format.
 
-> **IMPORTANT!** The fields you send from the client AI Agent to the Helpdesk AI Agent must be defined in the **[[QueryParams]]** system entity on the Helpdesk AI Agent that serves as contact center.
+{% hint style="warning" %}
+**IMPORTANT!** The fields you send from the client AI Agent to the Helpdesk AI Agent must be defined in the **[[QueryParams]]** system entity on the Helpdesk AI Agent that serves as contact center.
+{% endhint %}
 
-> **NOTE:**  The payload must follow a key-value format where both the key and value are strings. When using values from Druid conversation context (entities, local variables) as parameter values, ensure they are enclosed in double quotes ("") to maintain valid JSON formatting.
+{% hint style="info" %}
+**NOTE:**  The payload must follow a key-value format where both the key and value are strings. When using values from Druid conversation context (entities, local variables) as parameter values, ensure they are enclosed in double quotes ("") to maintain valid JSON formatting.
+{% endhint %}
 
 **Example - Send Contact Center parameters**
 

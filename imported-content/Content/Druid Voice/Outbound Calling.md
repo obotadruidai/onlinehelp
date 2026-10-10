@@ -37,7 +37,9 @@ Common examples include:
 
 The exact integration depends on the telephony platform used in your deployment.
 
-> **IMPORTANT!** Druid does not function as an outbound dialer and cannot independently place telephone calls to users. An external telephony platform must first establish the telephone call. Druid joins the interaction only after the recipient answers and the SIP session is established.
+{% hint style="warning" %}
+**IMPORTANT!** Druid does not function as an outbound dialer and cannot independently place telephone calls to users. An external telephony platform must first establish the telephone call. Druid joins the interaction only after the recipient answers and the SIP session is established.
+{% endhint %}
 
 <a id="Typicalusecases"></a>
 

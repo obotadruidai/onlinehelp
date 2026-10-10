@@ -23,7 +23,9 @@ The OAuth 2.0 authorization flow implementation in Druid is a seven-step process
 
 1. The Druid requests authorization to access protected resources owned by the user (resource owner) by directing the user to the authorize endpoint.
 2. Druid assistant displays a link in the chat that redirects the user to a login dialog at the web application. The user clicks the link and authenticates.
-> **Info:**  This link is accessible from any channel that can use a web browser to open it.
+{% hint style="info" %}
+**Info:**  This link is accessible from any channel that can use a web browser to open it.
+{% endhint %}
 
 3. The resource owner authenticates and authorizes the resource access request from the application, and returns an authorization grant (authorization code) to Druid for that ConversationId.
 4. Druid then requests an access token from the authorization server by presenting the authorization grant.

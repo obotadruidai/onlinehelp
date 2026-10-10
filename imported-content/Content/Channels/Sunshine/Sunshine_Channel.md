@@ -7,7 +7,9 @@ title: "Zendesk Sunshine"
 
 You can deploy AI Agents across any Zendesk Sunshine-supported channels, offering greater flexibility to empower your clients and users to engage with you effectively.
 
-> **NOTE:** Previously, Sunshine Conversations apps integration only supported [AI Agent deployment in WhatsApp](Sunshine_Channel_Old.md). However, starting with DRUID 8.9, you can deploy AI Agents across multiple Sunshine-supported channels, expanding your communication options.
+{% hint style="info" %}
+**NOTE:** Previously, Sunshine Conversations apps integration only supported [AI Agent deployment in WhatsApp](Sunshine_Channel_Old.md). However, starting with DRUID 8.9, you can deploy AI Agents across multiple Sunshine-supported channels, expanding your communication options.
+{% endhint %}
 
 <a id="Prerequisites"></a>
 
@@ -129,7 +131,9 @@ This section describes how to deploy the AI Agent in Zendesk web channel:
 
 ## Send Zendesk survey ratings to the AI Agent
 
-> **NOTE:** This feature is available in DRUID 9.5 and higher.
+{% hint style="info" %}
+**NOTE:** This feature is available in DRUID 9.5 and higher.
+{% endhint %}
 
 When a ticket is resolved or a Zendesk agent disconnects a conversation, Zendesk can automatically send a survey asking the user to rate the interaction. You can configure Zendesk to also send these ratings to your AI Agent:
 

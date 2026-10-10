@@ -37,7 +37,9 @@ Click the **Save** button. The sample value will be highlighted (in green for en
 
 ![](../Resources/Images/Druid%205.12/flow%20step%20sample%20value.png)
 
-> **NOTE:** Using sample values in training phrases is available in DRUID 5.12 and higher. This feature is backwards compatible, the training phrases with NER on flows and flow steps remain unchanged; however, we recommend you to update the training phrases with NER to provide sample values.
+{% hint style="info" %}
+**NOTE:** Using sample values in training phrases is available in DRUID 5.12 and higher. This feature is backwards compatible, the training phrases with NER on flows and flow steps remain unchanged; however, we recommend you to update the training phrases with NER to provide sample values.
+{% endhint %}
 
 You have successfully added a training phrase that will help the AI Agent capture user input.
 

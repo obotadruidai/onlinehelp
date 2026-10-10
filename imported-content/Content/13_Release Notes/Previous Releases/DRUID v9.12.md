@@ -32,7 +32,9 @@ If you have questions about your Druid tenant, please contact [support@Druidai.c
 ## Improvements
 
 - **Amazon Live Chat - Real-Time Queue Position Retrieval**. You can now enable the retrieval of a user's real-time position in the Amazon Connect Live Chat queue and include it in the Druid conversation context. To activate this, set the **PositionInQueueSetByCC** parameter to true in the **ConnectToHelpdeskAgent** internal action.  For more information, see [Enable real-time queue position retrieval from Amazon Connect](../../Live%20Chat/Amazon%20Live%20Chat.md#Enable).
-> **NOTE:** This feature requires granting the AWS user an IAM policy with **GetContactMetrics** permissions.
+{% hint style="info" %}
+**NOTE:** This feature requires granting the AWS user an IAM policy with **GetContactMetrics** permissions.
+{% endhint %}
 
 - **Outlook Channel- Email Attachment Antimalware Scan**. Enhanced security for the Outlook channel by introducing an email attachment antimalware scan. If an incoming email contains a malicious file, the Flow Engine continues the conversation using only the safe components (such as the email body and recipients). Details regarding the infected email and the malicious file names are logged in the Conversation History.
 - **Knowledge Base - improvements**. This release introduces various improvements to the KB:
@@ -78,7 +80,9 @@ These enhancements make it easier to find and analyze extraction and processing 
 
 - You can now upload two separate PDF files, each containing one side of the identity card. Previously, a single PDF with both sides was required.
 - The endpoint now supports OCR processing of the official address certificate issued by the national authority responsible for population records and identity documents.
-> **NOTE:** Only original electronic documents downloaded from the Romanian Police Department are accepted. Scans or photos of the document are not allowed.
+{% hint style="info" %}
+**NOTE:** Only original electronic documents downloaded from the Romanian Police Department are accepted. Scans or photos of the document are not allowed.
+{% endhint %}
 
 <a id="BugFixes"></a>
 

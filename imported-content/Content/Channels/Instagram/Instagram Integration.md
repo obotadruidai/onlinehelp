@@ -108,7 +108,9 @@ Continue with creating a Facebook app.
 
 ### Step 2: Create a Facebook app
 
-> **NOTE:** The Facebook UI may appear slightly different depending on which version you are using.
+{% hint style="info" %}
+**NOTE:** The Facebook UI may appear slightly different depending on which version you are using.
+{% endhint %}
 
 1. In your browser, navigate to [Facebook for Developers](https://developers.facebook.com/) and log in.
 2. On the toolbar, click **My Apps**. Your Apps page appears.
@@ -141,7 +143,9 @@ The Create an app wizard appears.
 
 ![](../../Resources/Images/Instagram/create%20app%20overview.png)
 
-> **Info:** For security reasons, you might be required to re-enter your Facebook password.
+{% hint style="info" %}
+**Info:** For security reasons, you might be required to re-enter your Facebook password.
+{% endhint %}
 
 After the app creation process completes, the App Dashboard appears.
 
@@ -178,9 +182,13 @@ This section describes how to customize your app:
 ![](../../Resources/Images/Instagram/customize%20app.png)
 
 2. Add the following permissions: **instagram\_basic** and **instagram\_manage\_messages**.
-> **IMPORTANT!** **instagram\_manage\_messages** subscription is required for handling Instagram user story mentions. Mentioning an Instagram account linked to a AI Agent in a user's story triggers the Welcome flow. The event "story\_mention" is logged in a new system entity field, **[[ConversationInfo]].InstagramEvent**, providing authors with control over subsequent actions by evaluating the condition **[[ConversationInfo]].InstagramEvent == "story\_mention"** within the Welcome flow.
+{% hint style="warning" %}
+**IMPORTANT!** **instagram\_manage\_messages** subscription is required for handling Instagram user story mentions. Mentioning an Instagram account linked to a AI Agent in a user's story triggers the Welcome flow. The event "story\_mention" is logged in a new system entity field, **[[ConversationInfo]].InstagramEvent**, providing authors with control over subsequent actions by evaluating the condition **[[ConversationInfo]].InstagramEvent == "story\_mention"** within the Welcome flow.
+{% endhint %}
 
-> **Info:** If you encounter an error, attempt to add them a second time.
+{% hint style="info" %}
+**Info:** If you encounter an error, attempt to add them a second time.
+{% endhint %}
 
 ![](../../Resources/Images/Instagram/insta%20permissions%20req.png)
 
@@ -251,7 +259,9 @@ The channel configuration modal appears.
 
 ![](../../Resources/Images/Instagram/fb%20page%20add%20in%20channel.png)
 
-> **Info:** If you host the AI Agent (via Facebook app) in multiple Facebook pages, click **+Add page** and enter the Page ID and access token for any subsequent Facebook pages.
+{% hint style="info" %}
+**Info:** If you host the AI Agent (via Facebook app) in multiple Facebook pages, click **+Add page** and enter the Page ID and access token for any subsequent Facebook pages.
+{% endhint %}
 
 7. Copy the **Callback URL** and **Verify Token** and save them in a safe location as you will need them to configure the Facebook app webhooks.
 
@@ -317,7 +327,9 @@ To check your Facebook app subscription status to your Facebook page, under sect
 
 While your Facebook app is in Development roles, you can test the integration directly in Instagram only by using an account who has been granted the Tester role.
 
-> **Info:** For testing purposes, an account other than the admin account is required to interact with the channel and chat with the AI Agent.
+{% hint style="info" %}
+**Info:** For testing purposes, an account other than the admin account is required to interact with the channel and chat with the AI Agent.
+{% endhint %}
 
 Before testing the integration from Instagram, assign the Instagram Tester role to a Facebook test account:
 

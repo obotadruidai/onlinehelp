@@ -78,13 +78,17 @@ As child fields are xml elements within the SOAP body, you need to provide speci
 
 Click the **Response** tab. Map the response fields of the API call to Druid response entity fields.
 
-> **NOTE:** You can specify keys (**Connector field name**) in the following native scripts: Latin, Greek, Hebrew, Simplified Chinese, Traditional Chinese, Japanese, Hindi and Arabic.
+{% hint style="info" %}
+**NOTE:** You can specify keys (**Connector field name**) in the following native scripts: Latin, Greek, Hebrew, Simplified Chinese, Traditional Chinese, Japanese, Hindi and Arabic.
+{% endhint %}
 
 Save the integration task. Now [publish the integration](Step%204%20Publish%20the%20integrations.md) and then you can use it on flow steps.
 
 If the response uses a SOAP envelope namespace other than the default (http://schemas.xmlsoap.org/soap/envelope/), enter the appropriate namespace in the **Envelope Namespace** field (e.g., http://www.w3.org/2003/05/soap-envelope), then map the response.
 
-> **NOTE:** The **Envelope Namespace** field is available in DRUID 7.14 and higher.
+{% hint style="info" %}
+**NOTE:** The **Envelope Namespace** field is available in DRUID 7.14 and higher.
+{% endhint %}
 
 <a id="ExampleGetthecurrencyISOcodeandnameforacountry"></a>
 

@@ -125,4 +125,6 @@ To define when and how often an alert runs, follow these steps:
 
 For more information on alerts, see [Alert Flows](../../../../4_Flows/Alert%20Flows.md).
 
-> **Info:** If you want to build custom campaigns, follow the instructions provided in section [Campaign Management Agentic Solution](../../Marketing/Campaign%20Management%20Agentic%20Solution.md#Building) of the Campaign Management Agentic solution topic.
+{% hint style="info" %}
+**Info:** If you want to build custom campaigns, follow the instructions provided in section [Campaign Management Agentic Solution](../../Marketing/Campaign%20Management%20Agentic%20Solution.md#Building) of the Campaign Management Agentic solution topic.
+{% endhint %}

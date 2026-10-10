@@ -52,7 +52,9 @@ Example: Google Cloud API Services
 
 ![](../../Resources/Images/Oauth%202_FINAL/Configuring%20OAuth%20v2%20Authorization_1.png)
 
-> **IMPORTANT!**  The redirect URI must be accessible by the end user. In environments like MS Teams tabs or web iFrames, it might require whitelisting or specific configurations within your mobile app's WebView implementation.
+{% hint style="warning" %}
+**IMPORTANT!**  The redirect URI must be accessible by the end user. In environments like MS Teams tabs or web iFrames, it might require whitelisting or specific configurations within your mobile app's WebView implementation.
+{% endhint %}
 
 3. Copy the client credentials. Upon successful application registration, the service will issue your application's **Client ID** and **Client Secret**. If you're registering an application with the Microsoft identity platform, you need to add a client secret and copy its value. Keep these values secure, as you will use them in Druid.
 
@@ -134,7 +136,9 @@ The Connector Action page appears on the **Connector general** tab.
 
 ![](../../Resources/Images/Oauth%202_FINAL/Configuring%20OAuth%20v2%20Authorization_8.png)
 
-> **NOTE:** This call is always a GET method, with request data sent as query parameters, according to the industry standard. It cannot be modified to a POST, or configured with request data in the body section.
+{% hint style="info" %}
+**NOTE:** This call is always a GET method, with request data sent as query parameters, according to the industry standard. It cannot be modified to a POST, or configured with request data in the body section.
+{% endhint %}
 
 7. In the **Authorization URL** enter the OAuth 2.0 authorization endpoint provided by your identity provider:
 
@@ -146,31 +150,41 @@ The Connector Action page appears on the **Connector general** tab.
 
 8. Druid adds by default the following standard parameters (key/value pair) in the authorization request: `client_id`, `redirect_uri` and `response_type`.
 9. You can remove from standard parameters or add others to meet with the requirements of the web application you’re using to be granted with the authorization code.
-> **NOTE:** When mapping parameter values do not use “” or ‘, enter the values in clear.
+{% hint style="info" %}
+**NOTE:** When mapping parameter values do not use “” or ‘, enter the values in clear.
+{% endhint %}
 
-> **IMPORTANT!**  If the OAuth system you’re integrating with uses scopes, make sure to add the scopes in the mapping table to let the target application know for which privileges the call is requesting access. The scopes you provide should be in the list of scopes granted to Druid when enrolling Druid as a trusted application inside the Authorization Server of the web application.
->
-> ![](../../Resources/Images/Oauth%202_FINAL/scope%20example.png)
+{% hint style="warning" %}
+**IMPORTANT!**  If the OAuth system you’re integrating with uses scopes, make sure to add the scopes in the mapping table to let the target application know for which privileges the call is requesting access. The scopes you provide should be in the list of scopes granted to Druid when enrolling Druid as a trusted application inside the Authorization Server of the web application.
+
+![](../../Resources/Images/Oauth%202_FINAL/scope%20example.png)
+{% endhint %}
 
 10. Click the **Access Token Request** tab to configure the authorization grant request.
 
 ![](../../Resources/Images/Oauth%202_FINAL/Configuring%20OAuth%20v2%20Authorization_10.png)
 
 11. In the **Token request URL** field, enter the token\_uri Druid will use to obtain authorization from the end-user to obtain an access token. The value of the token\_urI is generated when you register Druid in the web application.
-> **Info:** The values for {{client\_id}}, {{client\_secret}}, etc., will automatically be replaced at runtime with the ones set on the OAuth App.
+{% hint style="info" %}
+**Info:** The values for {{client\_id}}, {{client\_secret}}, etc., will automatically be replaced at runtime with the ones set on the OAuth App.
+{% endhint %}
 
 Example:
 
 ![](../../Resources/Images/Oauth%202_FINAL/Configuring%20OAuth%20v2%20Authorization_11.png)
 
 12. If the response from the API service provides a refresh token as well, you can also set up refresh token in the access token request. To do so, click **Request Returns Refresh Token**. A new tab appears, **Refresh Token Request**. Click on it and in the **Refresh token request URL** provide the endpoint of the web application, which handles refresh tokens. The Body contains by default the standard parameters necessary to obtain a refresh token.
-> **NOTE:**  By default, the Request type is set to **UseWwwFormURLEncoded**, the method is POST and request data is set in the body of the call, according to the industry standard practices. However, the configurations can be modified to meet the Authorization Server specific.
+{% hint style="info" %}
+**NOTE:**  By default, the Request type is set to **UseWwwFormURLEncoded**, the method is POST and request data is set in the body of the call, according to the industry standard practices. However, the configurations can be modified to meet the Authorization Server specific.
+{% endhint %}
 
 ![](../../Resources/Images/Oauth%202_FINAL/Configuring%20OAuth%20v2%20Authorization_12.png)
 
 You can test the **Sign in** action. Click the **Authorization test** tab and click the **Test** button.
 
-> **Info:**  You might need to meet specific web application prerequisites in order to test authorization (e.g., have at least one test user defined).
+{% hint style="info" %}
+**Info:**  You might need to meet specific web application prerequisites in order to test authorization (e.g., have at least one test user defined).
+{% endhint %}
 
 If the testing passes, you will get **Success**. In a future release, further passed / failed details will be provided.
 
@@ -196,15 +210,21 @@ By default, the access token is configured as part of the header of the request 
 - Parameter – The AI Agent expects the authorization field as part of the URL path for the request.
 
 4. Click the **Save** icon displayed inline to save the additional authorization field.
-> **NOTE:** All integrations which use this OAuth App will automatically inherit this header key(s). The option, however, can be modified for each integration, specifically. An example is shown in the figure below.
->
-> ![](../../Resources/Images/Oauth%202_FINAL/Configuring%20OAuth%20v2%20Authorization_17.png)
+{% hint style="info" %}
+**NOTE:** All integrations which use this OAuth App will automatically inherit this header key(s). The option, however, can be modified for each integration, specifically. An example is shown in the figure below.
 
-> **Info:** You can add variables (e.g., username, password) to OAuth apps, in addition to the authorization fields. These variables can be kept secret throughout the integrations, enhancing security and flexibility.
+![](../../Resources/Images/Oauth%202_FINAL/Configuring%20OAuth%20v2%20Authorization_17.png)
+{% endhint %}
+
+{% hint style="info" %}
+**Info:** You can add variables (e.g., username, password) to OAuth apps, in addition to the authorization fields. These variables can be kept secret throughout the integrations, enhancing security and flexibility.
+{% endhint %}
 
 5. Save the app.
 
-> **NOTE:** The first special action (Sign In Connector Action) will ONLY provide an access token (with the permissions set according to the requested scopes, if any) which can be used to authorize server-to-server API calls. To further authenticate the user in the conversation (from anonymous state), you should use the second special action, Get User Identity Connector Action as described in Step 4.
+{% hint style="info" %}
+**NOTE:** The first special action (Sign In Connector Action) will ONLY provide an access token (with the permissions set according to the requested scopes, if any) which can be used to authorize server-to-server API calls. To further authenticate the user in the conversation (from anonymous state), you should use the second special action, Get User Identity Connector Action as described in Step 4.
+{% endhint %}
 
 <a id="Step4DefinetheGetuseridentityaction"></a>
 
@@ -221,7 +241,9 @@ To create the **Get user identity** action, follow these steps:
 
 3. Click **Save**. The page refreshes and displays on the **Connector steps** tab.
 4. At the top-right corner of the page, click the **Create Task** button and select **GetUserIdentity**. The Edit Connector Action page appears on the **General** tab.
-> **NOTE:** This special connector action ONLY uses the system **[[ChatUser]]** Druid entity for capturing the response data. No other (custom) entity can be used, as [[ChatUser]] is further required in the conversational authentication process (SaveIdentifiedUser, etc.).
+{% hint style="info" %}
+**NOTE:** This special connector action ONLY uses the system **[[ChatUser]]** Druid entity for capturing the response data. No other (custom) entity can be used, as [[ChatUser]] is further required in the conversational authentication process (SaveIdentifiedUser, etc.).
+{% endhint %}
 
 5. Enter a **Description** and from the **Connection Code** drop-down, select the **OAuth2** app.
 

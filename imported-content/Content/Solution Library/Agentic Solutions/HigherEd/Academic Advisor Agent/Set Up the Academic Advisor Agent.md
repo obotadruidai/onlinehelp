@@ -88,7 +88,9 @@ To provision all the required information for the AI Agent, follow these steps:
 
 The default settings include a predefined set of values and records. You can modify and personalize existing fields to align with your institution needs.
 
-> **IMPORTANT!**  The data provision must complete successfully before the AI Agent can process student requests. If the provisioning fails, review the app connection configuration provision the data again.
+{% hint style="warning" %}
+**IMPORTANT!**  The data provision must complete successfully before the AI Agent can process student requests. If the provisioning fails, review the app connection configuration provision the data again.
+{% endhint %}
 
 4. Click on the default settings record.
 5. On the form, update the **AI Agent Name** and the **University Name**.

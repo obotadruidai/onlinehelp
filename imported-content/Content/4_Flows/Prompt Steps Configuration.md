@@ -61,7 +61,9 @@ Below the test area, you'll see the information the AI Agent extracted based on 
 
 ## Sensitive data handling on Prompt steps
 
-> **NOTE:**  Sensitive data manipulation is only available on prompt steps on both direct line and MS Teams channel.
+{% hint style="info" %}
+**NOTE:**  Sensitive data manipulation is only available on prompt steps on both direct line and MS Teams channel.
+{% endhint %}
 
 If you want to capture user sensitive data and send it to third-party systems via connectors, in input mapping use entity fields which have **Holds Sensitive Data** enabled.
 
@@ -75,7 +77,9 @@ When a step is configured to handle sensitive data, the AI Agent will display a 
 
 ## Sensitive data manipulation in MS Teams channel
 
-> **NOTE:** This feature is only available for AI Agents using Bot framework version 4. Sensitive data manipulation is only available on Prompt steps on both direct line and MS Teams channel. For sensitive data manipulation in MS Teams channel, an additional configuration step is required. For more information, see [Configuration for Sensitive Data Manipulation](../Channels/MS%20Teams/TeamsChannel_SensitiveDataManipulation.md).
+{% hint style="info" %}
+**NOTE:** This feature is only available for AI Agents using Bot framework version 4. Sensitive data manipulation is only available on Prompt steps on both direct line and MS Teams channel. For sensitive data manipulation in MS Teams channel, an additional configuration step is required. For more information, see [Configuration for Sensitive Data Manipulation](../Channels/MS%20Teams/TeamsChannel_SensitiveDataManipulation.md).
+{% endhint %}
 
 For AI Agents deployed in the MS Teams channel, additional configuration is required to securely handle sensitive data. When the AI Agent prompts for sensitive information, MS Teams generates a built-in card for user confirmation.
 
@@ -85,7 +89,9 @@ Once confirmed, a DRUID page is rendered for secure data entry.
 
 ![](../Resources/Images/Sensitive%20data%20manipulation%20in%20MS%20Teams%20channel/Sensitive%20data%20manipulation_1.png)
 
-> **IMPORTANT!**  The sensitive data passes directly to DRUID platform, always encrypted, bypassing the MS Teams channel. After the user sends the sensitive data in the DRUID built-in page, the data is not shown in the chat.
+{% hint style="warning" %}
+**IMPORTANT!**  The sensitive data passes directly to DRUID platform, always encrypted, bypassing the MS Teams channel. After the user sends the sensitive data in the DRUID built-in page, the data is not shown in the chat.
+{% endhint %}
 
 ## Related Topics
 

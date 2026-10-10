@@ -7,7 +7,9 @@ title: "High Availability On-Premises Deployment"
 
 Druid HA deployments leverage industry-standard Kubernetes technology. This setup is designed to handle light to moderate chat traffic, averaging 100 messages per minute, with occasional spikes up to 300 messages per minute, and no significant load on the Druid Connector.
 
-> **NOTE:** The architecture, components, and requirements described in this section apply to Druid AI Platform version 8.3 and higher.
+{% hint style="info" %}
+**NOTE:** The architecture, components, and requirements described in this section apply to Druid AI Platform version 8.3 and higher.
+{% endhint %}
 
 <a id="StandardDeploymentArchitectureDiagram"></a>
 
@@ -64,7 +66,9 @@ Druid HA deployments leverage industry-standard Kubernetes technology. This setu
 
 ### Production Environment
 
-> **NOTE:** The DRUID Platform supports only Active-Passive disaster recovery. Active-Active configurations are not supported. For Active-Passive DR, the environment must meet the same requirements as the production setup. Additionally, replication mechanisms must be implemented for SQL databases and storage to ensure data continuity.
+{% hint style="info" %}
+**NOTE:** The DRUID Platform supports only Active-Passive disaster recovery. Active-Active configurations are not supported. For Active-Passive DR, the environment must meet the same requirements as the production setup. Additionally, replication mechanisms must be implemented for SQL databases and storage to ensure data continuity.
+{% endhint %}
 
 | # | Item | Qty (Nodes) | OS | CPU (Intel Xeon) | RAM | SSD | Data | Notes |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -79,7 +83,9 @@ Druid HA deployments leverage industry-standard Kubernetes technology. This setu
 
 1 These specifications apply only to worker nodes. Control-plane node requirements are detailed in the Kubernetes deployment documentation, which is outside this document scope.
 
-> **NOTE:** For disaster recovery (DR), the Druid AI Platform supports only an active-passive DR mechanism; active-active DR is not supported. In an active-passive DR setup, the requirements are the same as those for a production environment. Additionally, you must implement mechanisms to replicate both SQL databases and storage.
+{% hint style="info" %}
+**NOTE:** For disaster recovery (DR), the Druid AI Platform supports only an active-passive DR mechanism; active-active DR is not supported. In an active-passive DR setup, the requirements are the same as those for a production environment. Additionally, you must implement mechanisms to replicate both SQL databases and storage.
+{% endhint %}
 
 <a id="TestingEnvironment"></a>
 
@@ -93,7 +99,9 @@ Druid HA deployments leverage industry-standard Kubernetes technology. This setu
 | 4 | Microsoft test server (App server + Land AI Agent page) | 1 | Windows Server 2016+; Updates “up to date” | 2 vCPU | 8 GB | OS 120 GB | - | ASP.NET 4.6.1. Hosting IIS is required. (Dedicated or shared) |
 | 5 | Microsoft SQL server (DB server) | 1 | Windows Server 2016+; Updates “up to date” | 2 vCPU | 8 GB | OS 120 GB | 50 GB  (Scale as required) | Microsoft SQL Server Standard 2019+ Database Service (Dedicated or shared) |
 
-> **NOTE:** For non-GPU semantic classification machines used in the testing environment, the above table can be replaced with the following one. Please note that LLM machines require a GPU and therefore have no alternative.
+{% hint style="info" %}
+**NOTE:** For non-GPU semantic classification machines used in the testing environment, the above table can be replaced with the following one. Please note that LLM machines require a GPU and therefore have no alternative.
+{% endhint %}
 
 <a id="TestingEnvironmentnonGPUspecs"></a>
 
@@ -145,7 +153,9 @@ Druid HA deployments leverage industry-standard Kubernetes technology. This setu
 - **TCP Protocol** enabled in SQL Server Configuration Manager
 - SQL Server port, `{{SQL-SERVER-PORT}}` (default **1433**), is open in the firewall of the DB Server. It must be a fixed port, not on a dynamically allocated one.
 
-> **NOTE:** The database server can be replaced with an equivalent service such as SQL Server Managed Instance from Microsoft Azure, Amazon RDS for SQL Server, or similar offerings from other major cloud providers.
+{% hint style="info" %}
+**NOTE:** The database server can be replaced with an equivalent service such as SQL Server Managed Instance from Microsoft Azure, Amazon RDS for SQL Server, or similar offerings from other major cloud providers.
+{% endhint %}
 
 <a id="DetailedcomponentsCPUandmemoryrequestsandlimits"></a>
 

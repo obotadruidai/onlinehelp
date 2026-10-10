@@ -11,7 +11,9 @@ To set it up, go to the AI Agent Details page, click on Dialogue Management, the
 
 ![](../Resources/Images/Alerts/inactivity%20cancel%20timeout.png)
 
-> **NOTE:**  For DRUID version prior to 8.7, flow inactivity timeout is by default set to 15 mins for hybrid and full cloud installations, but is customizable for on-prem installations only (at application level, so the setting applies to all tenants and AI Agents).
+{% hint style="info" %}
+**NOTE:**  For DRUID version prior to 8.7, flow inactivity timeout is by default set to 15 mins for hybrid and full cloud installations, but is customizable for on-prem installations only (at application level, so the setting applies to all tenants and AI Agents).
+{% endhint %}
 
 <a id="Usecases"></a>
 

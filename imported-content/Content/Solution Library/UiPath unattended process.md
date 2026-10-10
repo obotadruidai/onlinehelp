@@ -9,7 +9,9 @@ Triggering unattended robots will execute tasks and interact with applications i
 
 The process includes UiPath integration with unattended automation. Contact Center Agent is chatting with the AI Agent and triggers an unattended automation.
 
-> **NOTE:** You need a UiPath tenant but you can easily open a free Community subscription.
+{% hint style="info" %}
+**NOTE:** You need a UiPath tenant but you can easily open a free Community subscription.
+{% endhint %}
 
 1. Download the UiPath process you want to use:
 

@@ -30,7 +30,9 @@ To manage the dictionary, navigate to **NLU** > **Knowledge Base**, then follow 
 2. Navigate to **Advanced** > **Embedding**.
 3. In the Synonym Sets section, click the **+** (Add) icon to generate a new entry line.
 4. Enter the terms you wish to group together, ensuring each word or phrase is separated by a comma followed by a space (e.g., in stock, available, ready to ship, on hand).
-> **Info:** Ensure there are no trailing commas at the end of a set to maintain search index integrity.
+{% hint style="info" %}
+**Info:** Ensure there are no trailing commas at the end of a set to maintain search index integrity.
+{% endhint %}
 
 5. To save the set, press **ENTER** on your keyboard or click the **+** icon again to add a subsequent set.
 

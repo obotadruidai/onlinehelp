@@ -62,7 +62,9 @@ By using NLU, the Conversational AI will recognize the language and semantics be
 
 Understanding the difference between NLP and NLU is important when building AI Agents as it might impact the way your AI Agent interprets what the user said and meant which might affect the quality of your AI Agent.
 
-> **NOTE:** By default, DRUID uses NLP for language classification. If you want the Conversational AI to use a more complex language classification algorithm, enable NLU. For more information, see Natural Language Understanding.
+{% hint style="info" %}
+**NOTE:** By default, DRUID uses NLP for language classification. If you want the Conversational AI to use a more complex language classification algorithm, enable NLU. For more information, see Natural Language Understanding.
+{% endhint %}
 
 ![](../Resources/Images/AI/IMAGE2.png)
 

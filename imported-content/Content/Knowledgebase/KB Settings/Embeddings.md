@@ -28,7 +28,9 @@ Trainable Elements define which specific parts of an article—such as the title
 
 Each element can be enabled or disabled individually using its respective toggle switch, allowing for single or multi-element configurations. These preferences are set at the Knowledge Base and data source level, with granular overrides available at the node and leaf level.
 
-> **NOTE:** Generated summary and generated questions are produced by the LLM content chunker. Configure generation options under **Advanced** > **Content Chunkers**. For more information, see [Content Chunkers](Content%20Chunkers.md).
+{% hint style="info" %}
+**NOTE:** Generated summary and generated questions are produced by the LLM content chunker. Configure generation options under **Advanced** > **Content Chunkers**. For more information, see [Content Chunkers](Content%20Chunkers.md).
+{% endhint %}
 
 | Parameter | Description |
 | --- | --- |

@@ -35,7 +35,9 @@ In DRUID version 5.0 and higher, you can also add date range in training phrases
 
 Provide complete training phrases with sample values for start date and end date. E.g.: "how many employees updated their personal data 01-01-2023 - 04-19-2023". In this example, the dates are sample values for the range (start date - end date).
 
-> **NOTE:** Avoid using words that identity a range (e.g., until, between, etc.), otherwise the NLP Engine will fail extracting the date range.
+{% hint style="info" %}
+**NOTE:** Avoid using words that identity a range (e.g., until, between, etc.), otherwise the NLP Engine will fail extracting the date range.
+{% endhint %}
 
 Add target entity for the two sample values: [[Entity]].<start date field> - [[Entity]].<end date field>. To do that, select the date and click on the selection. In the pop-up that opens, click in the **Target Entity / Entity** field and select the desired entity field (either the entity field that stores the start date or the one that stores the end date) and click **Save**.
 
@@ -47,13 +49,17 @@ Example:
 
 ![](../Resources/Images/Druid%205.12/date%20sample%20values.png)
 
-> **NOTE:** Using sample values in training phrases is available in DRUID 5.12 and higher. This feature is backwards compatible, the training phrases with NER on flows and flow steps remain unchanged; however, we recommend you to update the training phrases with NER to provide sample values for entities.
+{% hint style="info" %}
+**NOTE:** Using sample values in training phrases is available in DRUID 5.12 and higher. This feature is backwards compatible, the training phrases with NER on flows and flow steps remain unchanged; however, we recommend you to update the training phrases with NER to provide sample values for entities.
+{% endhint %}
 
 Save the settings.
 
-> **Info:** To see how the NLP engine extracts a date range from the user intent, go to **Evaluation** and test different input phrases. Example:
->
-> ![](../Resources/Images/Flows/evaluate%20user%20input.png)
+{% hint style="info" %}
+**Info:** To see how the NLP engine extracts a date range from the user intent, go to **Evaluation** and test different input phrases. Example:
+
+![](../Resources/Images/Flows/evaluate%20user%20input.png)
+{% endhint %}
 
 <a id="ConfiguringNERinTrainingPhrasesExample"></a>
 

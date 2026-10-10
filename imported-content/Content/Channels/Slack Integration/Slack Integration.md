@@ -9,7 +9,9 @@ Integrating your AI Agent with Slack enables users to interact with your agent d
 
 This guide walks you through configuring a Slack application, retrieving API credentials, and linking your AI Agent to your Slack workspace.
 
-> **NOTE:** Slack channel integration is not supported for Druid on-premises deployments.
+{% hint style="info" %}
+**NOTE:** Slack channel integration is not supported for Druid on-premises deployments.
+{% endhint %}
 
 <a id="Prerequisites"></a>
 
@@ -75,7 +77,9 @@ To do so, follow these steps:
 
 ![](../../Resources/Images/Slack/oauth%20token.png)
 
-> **IMPORTANT!** If you add new Bot Token Scopes to the app, you scroll up to section OAuth Tokens for Your Workspace and click **Reinstall to <workspace>** in order for the new scopes to have effect. The **Bot User OAuth Token** remains unchanged.
+{% hint style="warning" %}
+**IMPORTANT!** If you add new Bot Token Scopes to the app, you scroll up to section OAuth Tokens for Your Workspace and click **Reinstall to <workspace>** in order for the new scopes to have effect. The **Bot User OAuth Token** remains unchanged.
+{% endhint %}
 
 <a id="Step3GettheSlackappbasicInformation"></a>
 
@@ -133,7 +137,9 @@ After the channel’s activation, the following fields are available in Druid:
 #### Set up the app interactivity in messages
 
 1. On the **Features** menu, click **Interactivity & Shortcuts** and tap on **Interactivity**.
-> **Info:** If **Socket Mode** is enabled, disable it and set up the Request URL for your app. The Socket Modes is intended for internal apps that are in development or need to be deployed behind a firewall.
+{% hint style="info" %}
+**Info:** If **Socket Mode** is enabled, disable it and set up the Request URL for your app. The Socket Modes is intended for internal apps that are in development or need to be deployed behind a firewall.
+{% endhint %}
 
 2. In the **Request URL** field, enter the following URL: https://slack.botframework.com/api/Actions. This is the Interactivity Request URL automatically generated in Druid after you published the Slack channel. The value is generic for all AI Agents.
 
@@ -169,10 +175,12 @@ Follow these steps to subscribe to six specific bot events:
 
 As you add events in Slack, it lists the scopes you need to request. The scopes you need will depend on the events you subscribe to and how you intend to respond to them. For Slack supported scopes, refer to [Scopes and permissions](https://api.slack.com/scopes). See also [Understanding OAuth scopes for AI Agents](https://api.slack.com/tutorials/understanding-oauth-scopes-bot).
 
-> **IMPORTANT!** If you set up special scopes on the app which use Bot User Oauth Token, after you subscribe to events, the following message appears at the top of the page: "You’ve changed the permission scopes your app uses. Please **reinstall your app** for these changes to take effect (and if your app is listed in the Slack App Directory, you’ll need to resubmit it as well)".
-> For Bot events subscriptions to take effect, in that message click the **reinstall your app** link. **Allow** the Slack app to access your workspace.
->
-> ![](../../Resources/Images/Slack/ALLOW%20SLACK%20APP.png)
+{% hint style="warning" %}
+**IMPORTANT!** If you set up special scopes on the app which use Bot User Oauth Token, after you subscribe to events, the following message appears at the top of the page: "You’ve changed the permission scopes your app uses. Please **reinstall your app** for these changes to take effect (and if your app is listed in the Slack App Directory, you’ll need to resubmit it as well)".
+For Bot events subscriptions to take effect, in that message click the **reinstall your app** link. **Allow** the Slack app to access your workspace.
+
+![](../../Resources/Images/Slack/ALLOW%20SLACK%20APP.png)
+{% endhint %}
 
 #### Allow Messages & Slash Commands
 
@@ -229,4 +237,6 @@ To interact with the AI Agent in a Slack channel, start your message with **@**<
 
 Each thread has a unique conversation ID in Druid that stores the thread conversation in the Conversation History.
 
-> **NOTE:** When a user initiates a conversation with the AI Agent, the Welcome flow will be automatically triggered. Regardless of the user's subscription status to the AI Agent channel, the welcome message will be promptly sent to the user, ensuring a seamless and engaging interaction experience.
+{% hint style="info" %}
+**NOTE:** When a user initiates a conversation with the AI Agent, the Welcome flow will be automatically triggered. Regardless of the user's subscription status to the AI Agent channel, the welcome message will be promptly sent to the user, ensuring a seamless and engaging interaction experience.
+{% endhint %}

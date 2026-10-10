@@ -38,12 +38,16 @@ Add as many orchestrated AI Agents as you have use cases. Each one appears in th
 
 ![](../Resources/Images/Megabots/agents%20org%20chart.png)
 
-> **IMPORTANT!** After adding AI Agents, train your Druid Conductor to ensure it can understand user intent and delegate tasks to the appropriate specialized AI Agent.
+{% hint style="warning" %}
+**IMPORTANT!** After adding AI Agents, train your Druid Conductor to ensure it can understand user intent and delegate tasks to the appropriate specialized AI Agent.
+{% endhint %}
 
-> **NOTE:**
->
-> - A Druid Conductor cannot itself be orchestrated by another Druid Conductor.
-> - An AI Agent can be orchestrated by multiple Druid Conductor simultaneously.
+{% hint style="info" %}
+**NOTE:**
+
+- A Druid Conductor cannot itself be orchestrated by another Druid Conductor.
+- An AI Agent can be orchestrated by multiple Druid Conductor simultaneously.
+{% endhint %}
 
 <a id="ManuallyControlDruidConductorRouting"></a>
 
@@ -61,12 +65,14 @@ You can force the Druid Conductor to perform the routing prediction against a sp
 
 The value must be the AI Agent name (not the AI Agent ID).
 
-> **IMPORTANT!**
->
-> - The value must match the AI Agent name exactly.
-> - AI Agent names must be unique within the tenant.
-> - If **[[ChatUser]].PredictTargetBot** is not set or is null, the Druid Conductorperforms the prediction against all eligible orchestrated AI Agents.
-> - The Druid Conductor itself can also be specified as a target AI Agent.
+{% hint style="warning" %}
+**IMPORTANT!**
+
+- The value must match the AI Agent name exactly.
+- AI Agent names must be unique within the tenant.
+- If **[[ChatUser]].PredictTargetBot** is not set or is null, the Druid Conductorperforms the prediction against all eligible orchestrated AI Agents.
+- The Druid Conductor itself can also be specified as a target AI Agent.
+{% endhint %}
 
 *Example Scenario*
 
@@ -78,7 +84,9 @@ Assume the following orchestrated AI Agents are available:
 
 If [**[ChatUser]].PredictTargetBot = "Finance Agent"** the prediction will be executed only against the Finance Agent, and no other AI Agent will be considered during routing.
 
-> **NOTE:** Use **[[ChatUser]].PredictTargetBot** when you want to restrict prediction to a single known AI Agent. This differs from **[[ChatUser]].RestrictedTargetBots**, which excludes AI Agents from consideration while still allowing prediction across the remaining eligible AI Agents.
+{% hint style="info" %}
+**NOTE:** Use **[[ChatUser]].PredictTargetBot** when you want to restrict prediction to a single known AI Agent. This differs from **[[ChatUser]].RestrictedTargetBots**, which excludes AI Agents from consideration while still allowing prediction across the remaining eligible AI Agents.
+{% endhint %}
 
 <a id="RestrictingroutingtoasubsetoforchestratedAIAgents"></a>
 
@@ -99,14 +107,18 @@ You can prevent the Druid Conductor from considering specific orchestrated AI Ag
 
 In this example, the Druid Conductor will perform the prediction against all orchestrated AI Agents except HR Agent and Finance Agent.
 
-> **IMPORTANT!**
->
-> - **[ChatUser]].RestrictedTargetBots** is an exclusion list (blacklist).
-> - AI Agents listed in [ChatUser]].RestrictedTargetBots are ignored during routing prediction.
-> - All other orchestrated AI Agents remain eligible for prediction.
-> - If the array is empty or not set, the prediction is performed against all orchestrated AI Agents.
+{% hint style="warning" %}
+**IMPORTANT!**
 
-> **NOTE:**  If you need to route only to a specific AI Agent, use targetChildBot . **[ChatUser]].RestrictedTargetBots** only removes AI Agents from consideration; it does not define the set of AI Agents against which prediction is performed.
+- **[ChatUser]].RestrictedTargetBots** is an exclusion list (blacklist).
+- AI Agents listed in [ChatUser]].RestrictedTargetBots are ignored during routing prediction.
+- All other orchestrated AI Agents remain eligible for prediction.
+- If the array is empty or not set, the prediction is performed against all orchestrated AI Agents.
+{% endhint %}
+
+{% hint style="info" %}
+**NOTE:**  If you need to route only to a specific AI Agent, use targetChildBot . **[ChatUser]].RestrictedTargetBots** only removes AI Agents from consideration; it does not define the set of AI Agents against which prediction is performed.
+{% endhint %}
 
 *Example Scenario*
 
@@ -141,11 +153,13 @@ Druid Conductor supports triggering flows between orchestrated AI Agents (using 
 
 *For example, a healthcare scenario: the Appointments Scheduling agent can trigger a flow in the Insurance & Eligibility agent mid-conversation to verify coverage, then pass control back — all within a single seamless user interaction.*
 
-> **NOTE:**
->
-> - Cross-AI Agents flow triggering only works within an active Druid Conductor-managed conversation.
-> - If an orchestrated AI Agent is removed from Druid Conductor, any flows referencing it will stop triggering.
-> - When an AI Agent is orchestrated by multiple Druid Conductor, the flow list shows all flows across all sibling AI Agents— grouped by AI Agent. Select carefully to avoid misrouting.
+{% hint style="info" %}
+**NOTE:**
+
+- Cross-AI Agents flow triggering only works within an active Druid Conductor-managed conversation.
+- If an orchestrated AI Agent is removed from Druid Conductor, any flows referencing it will stop triggering.
+- When an AI Agent is orchestrated by multiple Druid Conductor, the flow list shows all flows across all sibling AI Agents— grouped by AI Agent. Select carefully to avoid misrouting.
+{% endhint %}
 
 <a id="KnowledgeBaseMultiAIAgentPredict"></a>
 

@@ -7,7 +7,9 @@ title: "Manipulating NER Candidates"
 
 You can manipulate entity candidates seamlessly, facilitating external database searches, and tailored flow authoring to meet specific contextual needs.
 
-> **NOTE:** This feature is available in DRUID version 7.4 and higher.
+{% hint style="info" %}
+**NOTE:** This feature is available in DRUID version 7.4 and higher.
+{% endhint %}
 
 The Flow Engine identifies all candidates from an utterance and stores information for each candidate in a dedicated system entity as follows:
 

@@ -76,7 +76,9 @@ For more information, see [Score Calculator](../../Knowledgebase/KB%20Settings/S
 
 This list of columns is also accessible in SQL integrations via the [[<request entity>]].PageInfo.SelectedFields array.
 
-> **NOTE:** This feature requires DRUID Connector Host and DRUID Data Service version 8.15 for hybrid and on-premise deployments.
+{% hint style="info" %}
+**NOTE:** This feature requires DRUID Connector Host and DRUID Data Service version 8.15 for hybrid and on-premise deployments.
+{% endhint %}
 
 - **Debug messages – Improved visibility**. To help authors easily identify debug messages added to flow steps, two key improvements have been made:
 

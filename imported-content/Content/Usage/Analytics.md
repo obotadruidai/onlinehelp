@@ -23,7 +23,9 @@ In this section you will learn how to set up ROI KPIs on flows and integrations,
 
 Analytics are available on all flows (Flow, **Details** tab) and on all integrations (Integrations, connector action, **ConnectorGeneral** tab).
 
-> **NOTE:**  The Analytics are not available at integration task level.
+{% hint style="info" %}
+**NOTE:**  The Analytics are not available at integration task level.
+{% endhint %}
 
 To set up ROI analytics, go to the desired flow or integration on which you want to run your calculations.
 

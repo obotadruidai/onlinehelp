@@ -7,7 +7,9 @@ title: "Salesforce Live Chat"
 
 Salesforce Live Chat is a native Salesforce tool that enables customer service teams to communicate in real-time with their website users.
 
-> **NOTE:** Salesforce Live Chat is in maintenance mode and will retire on February 14, 2026. We recommend switching to Salesforce Messaging for In-App and Web (MIAW), a modern alternative that offers asynchronous, persistent conversations with your customers.
+{% hint style="info" %}
+**NOTE:** Salesforce Live Chat is in maintenance mode and will retire on February 14, 2026. We recommend switching to Salesforce Messaging for In-App and Web (MIAW), a modern alternative that offers asynchronous, persistent conversations with your customers.
+{% endhint %}
 
 While Salesforce Live Chat is intended to handle smaller, quick issues that can easily be resolved in one interaction, you can use Salesforce Omni-Channel to handle more complex issues and thus help create a seamless connection between all of your customer service channels so your agents can easily handle chat as well as other channels like cases from emails and phones.
 
@@ -93,7 +95,9 @@ The Salesforce-generated chat session ID (engagement ID) is particularly useful 
 
 To get the engagement ID in the conversation context, manually add the **[[HelpdeskClient]].ExternalEngagementId** field in the Druid Portal. This field will be automatically populated when the client is placed in the waiting queue.
 
-> **NOTE:** This feature is available in DRUID 8.4 and higher.
+{% hint style="info" %}
+**NOTE:** This feature is available in DRUID 8.4 and higher.
+{% endhint %}
 
 <a id="SendingtheconversationtranscripttoSalesforceLiveChatAgents"></a>
 
@@ -104,9 +108,13 @@ Most contact centers want their helpdesk agents to get the transcript of the con
 In order to save the conversation transcript and make it available for Salesforce Live Chat agents, on the flow that connects the client with the agent, make the following settings:
 
 1. On the step where you call the internal action **ConnectToHelpdeskAgent**(Post Actions section), in the **Pre Actions** section, call the internal action **GetConversationTranscript**.
-> **IMPORTANT!**  When calling the **GetConversationTranscript** internal action on the same step where you call **ConnectToHelpdeskAgent**, make sure to call it in the PreActions section. Calling it in the PostActions section will not send the conversation transcript to agents.
+{% hint style="warning" %}
+**IMPORTANT!**  When calling the **GetConversationTranscript** internal action on the same step where you call **ConnectToHelpdeskAgent**, make sure to call it in the PreActions section. Calling it in the PostActions section will not send the conversation transcript to agents.
+{% endhint %}
 
-> **Info:**  You can call the **GetConversationTranscript** internal action on a previous step.
+{% hint style="info" %}
+**Info:**  You can call the **GetConversationTranscript** internal action on a previous step.
+{% endhint %}
 
 2. On the **ConnectToHelpdeskAgent** internal action add the following:
 
@@ -116,7 +124,9 @@ In order to save the conversation transcript and make it available for Salesforc
 }
 ```
 
-> **Info:** You can send additional client information (like Custom Fields) to Salesforce Live Chat Agents together with the conversation transcript. For more information, see [Handling multiple queues and sending Contact Center Parameters](#Handling_multiple_queues_and_sending_Contact_Center_Parameters).
+{% hint style="info" %}
+**Info:** You can send additional client information (like Custom Fields) to Salesforce Live Chat Agents together with the conversation transcript. For more information, see [Handling multiple queues and sending Contact Center Parameters](#Handling_multiple_queues_and_sending_Contact_Center_Parameters).
+{% endhint %}
 
 3. Save the step.
 
@@ -124,7 +134,9 @@ In order to save the conversation transcript and make it available for Salesforc
 
 ## <a id="Handling_multiple_queues_and_sending_Contact_Center_Parameters"></a>Sending Contact Center Parameters
 
-> **NOTE:** This feature is available in DRUID 8.2 and higher.
+{% hint style="info" %}
+**NOTE:** This feature is available in DRUID 8.2 and higher.
+{% endhint %}
 
 The table below lists the Contact Center Parameters authors can send to Salesforce Live Chat.
 
@@ -146,7 +158,9 @@ The table below lists the Contact Center Parameters authors can send to Salesfor
 
 On the **ConnectToHelpdeskAgent** internal action, provide the desired parameters inside the `ContactCenterParameters` object in JSON format.
 
-> **NOTE:** Make sure to provide the parameters values as strings, when using values from DRUID conversation context (entities, local variables), using "", otherwise, the JSON object is invalid.
+{% hint style="info" %}
+**NOTE:** Make sure to provide the parameters values as strings, when using values from DRUID conversation context (entities, local variables), using "", otherwise, the JSON object is invalid.
+{% endhint %}
 
 **Example - Send Contact Center parameters**
 

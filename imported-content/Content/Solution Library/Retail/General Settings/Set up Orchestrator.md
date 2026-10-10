@@ -49,7 +49,9 @@ NAME: **Subject**
 
 TYPE:Text
 
-> **NOTE:** For all fields select the type **Text**and set up the Maximum Length of 4000 characters.
+{% hint style="info" %}
+**NOTE:** For all fields select the type **Text**and set up the Maximum Length of 4000 characters.
+{% endhint %}
 
 ![](../../../Resources/Images/Retail/retail%20case%20entity.png)
 

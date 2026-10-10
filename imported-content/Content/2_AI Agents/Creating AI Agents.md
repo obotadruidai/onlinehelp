@@ -28,7 +28,9 @@ Welcome to the process of building your first AI Agent! This guide provides the 
 
 To ensure the integrity of your AI Agent configuration, once an AI Agent initial configuration is saved, the default language becomes read-only. Introduced in Druid 9.19, this restriction prevents accidental changes that could break existing flows, intent recognition, or language-specific entity configurations.
 
-> **Info:** Always verify the primary language of your AI Agent during the initial creation process. If a different default language is required for a new project, a new AI Agent must be created.
+{% hint style="info" %}
+**Info:** Always verify the primary language of your AI Agent during the initial creation process. If a different default language is required for a new project, a new AI Agent must be created.
+{% endhint %}
 
 4. Click **Save**. The page refreshes, opening the AI Agent settings on the **Details** tab.
 
@@ -71,7 +73,9 @@ Publishing the AI Agent is essential to make it functional and provision all the
 
 1. Click the **Details** tab.
 2. Click the **Publish** button at the bottom of the page.
-> **IMPORTANT!** AI Agent publishing can take up to a minute. You can continue creating solutions and other configurations, but you can only chat with the AI Agent after it is successfully published.
+{% hint style="warning" %}
+**IMPORTANT!** AI Agent publishing can take up to a minute. You can continue creating solutions and other configurations, but you can only chat with the AI Agent after it is successfully published.
+{% endhint %}
 
 3. After clicking **Publish**, a notification appears at the top of the page: “Request for provisioning was successfully sent!”. Monitor the AI Agent provisioning status using the following color indicators:
 
@@ -84,7 +88,9 @@ Publishing the AI Agent is essential to make it functional and provision all the
 
 4. After publishing, you can test the AI Agent. Open the chat bubble on the right side and type your messages.
 
-> **NOTE:** The newly created AI Agent currently lacks conversation flows, so it will respond with "Sorry, I don’t understand". You need to create / import a solution.
+{% hint style="info" %}
+**NOTE:** The newly created AI Agent currently lacks conversation flows, so it will respond with "Sorry, I don’t understand". You need to create / import a solution.
+{% endhint %}
 
 <a id="Step5ImportDruidStartersolution"></a>
 

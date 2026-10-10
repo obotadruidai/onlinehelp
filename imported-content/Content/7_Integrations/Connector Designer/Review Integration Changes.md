@@ -7,7 +7,9 @@ title: "Review Integration Changes"
 
 You can review the changes made to an integration by using the Audit Trail feature that provides you with a comprehensive historical record of all changes made by authors to an inetgration.
 
-> **NOTE:** The Audit trail is in technological preview in DRUID 7.8. In a future release, you will be able to restore the integration to a previous version.
+{% hint style="info" %}
+**NOTE:** The Audit trail is in technological preview in DRUID 7.8. In a future release, you will be able to restore the integration to a previous version.
+{% endhint %}
 
 To review the updates made to an integration, follow these steps:
 

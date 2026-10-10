@@ -109,9 +109,13 @@ The table below provides you with the list of Live Chat messages you can customi
 To ensure agents receive the conversation transcript from the AI Agent before engaging in live chat, follow these steps:
 
 1. On the step where you call the **ConnectToHelpdeskAgent** internal action, in the Pre Actions section, call the **GetConversationTranscript** internal action.
-> **IMPORTANT!** Ensure **GetConversationTranscript** is called in the Pre Actions section. Calling it in the Post Actions section will not send the transcript to agents.
+{% hint style="warning" %}
+**IMPORTANT!** Ensure **GetConversationTranscript** is called in the Pre Actions section. Calling it in the Post Actions section will not send the transcript to agents.
+{% endhint %}
 
-> **Info:** You can also call GetConversationTranscript in a previous step.
+{% hint style="info" %}
+**Info:** You can also call GetConversationTranscript in a previous step.
+{% endhint %}
 
 2. On the **ConnectToHelpdeskAgent** internal action, add the following:
 
@@ -121,7 +125,9 @@ To ensure agents receive the conversation transcript from the AI Agent before en
 }
 ```
 
-> **Info:** You can also send additional client information to Cisco Live Chat agents. For more information, see [Sending Contact Center Parameters](#_Sending_Contact_Center).
+{% hint style="info" %}
+**Info:** You can also send additional client information to Cisco Live Chat agents. For more information, see [Sending Contact Center Parameters](#_Sending_Contact_Center).
+{% endhint %}
 
 3. Save the step.
 
@@ -144,7 +150,9 @@ You can send the following Contact Center parameters to Cisco Live Chat:
 
 On the **ConnectToHelpdeskAgent** internal action, provide the desired parameters inside the ContactCenterParameters object in JSON format.
 
-> **NOTE:** Make sure to provide the parameters values as strings, when using values from DRUID conversation context (entities, local variables), using "", otherwise, the JSON object is invalid.
+{% hint style="info" %}
+**NOTE:** Make sure to provide the parameters values as strings, when using values from DRUID conversation context (entities, local variables), using "", otherwise, the JSON object is invalid.
+{% endhint %}
 
 **Example - Send Contact Center parameters**
 

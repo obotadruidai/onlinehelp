@@ -7,7 +7,9 @@ title: "Read Files with the Druid Connector Host"
 
 The Read File integration task enables the DRUID Connector Host to read files from a specific local disk or network location accessible by the host machine and then deliver these files within conversations.
 
-> **NOTE:** This integration is available for DRUID Connector Host version 9.0 and higher and is exclusively for hybrid and on-premises installations.
+{% hint style="info" %}
+**NOTE:** This integration is available for DRUID Connector Host version 9.0 and higher and is exclusively for hybrid and on-premises installations.
+{% endhint %}
 
 <a id="Prerequisites"></a>
 
@@ -70,7 +72,9 @@ This code snippet retrieves the file name (e.g., from a user input) and combines
 6. Provide a short description for the task.
 7. In the **File Path** field, enter [[request entity]].Name using the explorer selector.
    This will dynamically retrieve the full file path constructed in the previous Custom Code step.
-> **Info:** You can manually enter a full file path as a string. Example: *"C:\\fd\\publish20250630170421.pdf"*.
+{% hint style="info" %}
+**Info:** You can manually enter a full file path as a string. Example: *"C:\\fd\\publish20250630170421.pdf"*.
+{% endhint %}
 
 8. In the **File Entity** field, select the file-type field where the read file should be stored.
 

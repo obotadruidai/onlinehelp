@@ -11,7 +11,9 @@ While business users consume the data in workspace views, the authors consume th
 
 To manage records as a business user, in the desired workspace access the view. On the workspace menu, click on the desired link (entity). The default view specific to that link (entity) displays.
 
-> **IMPORTANT!** You need to upgrade both the DRUID Connector Host to version 5.29 or higher and the entity associated with the web view to add the PageInfo system entity field; otherwise, loading the web view will fail.
+{% hint style="warning" %}
+**IMPORTANT!** You need to upgrade both the DRUID Connector Host to version 5.29 or higher and the entity associated with the web view to add the PageInfo system entity field; otherwise, loading the web view will fail.
+{% endhint %}
 
 If you want to view another view, from the **Views** drop-drop-down select the desired view.
 
@@ -47,12 +49,14 @@ Fields of specific type or with specific properties have specific particularitie
 
 ![](../Resources/Images/CBA/choose%20filebutton.png)
 
-> **NOTE:**
->
-> - DRUID supports uploading the following file extensions: .pdf, .png, .jpg, .jpeg, .doc, .docx, .xls, .xlsx, .odt, .ods, .tiff, .tif, .mp3, .mp4, .mkv, .webm, .txt, .json and .csv.
-> - After you choose the desired file and click the **Save** icon (![](../Resources/Images/CBA/save%20file%20on%20form.png) ) at the top-right corner of the form, DRUID performs file extension and malware validation. If the validations pass, the file is uploaded and appears as download link in the form.
->
-> ![](../Resources/Images/CBA/file%20downlaod%20link.png)
+{% hint style="info" %}
+**NOTE:**
+
+- DRUID supports uploading the following file extensions: .pdf, .png, .jpg, .jpeg, .doc, .docx, .xls, .xlsx, .odt, .ods, .tiff, .tif, .mp3, .mp4, .mkv, .webm, .txt, .json and .csv.
+- After you choose the desired file and click the **Save** icon (![](../Resources/Images/CBA/save%20file%20on%20form.png) ) at the top-right corner of the form, DRUID performs file extension and malware validation. If the validations pass, the file is uploaded and appears as download link in the form.
+
+![](../Resources/Images/CBA/file%20downlaod%20link.png)
+{% endhint %}
 
 <a id="Editrecords"></a>
 
@@ -79,7 +83,9 @@ You have two options for deleting entity records:
 
 ### Delete records in bulk
 
-> **NOTE:** This feature is available in DRUID 5.27 and higher. It requires DRUID Connector Host upgrade to version 5.27 or higher and DRUID Data Service upgrade to the latest version.
+{% hint style="info" %}
+**NOTE:** This feature is available in DRUID 5.27 and higher. It requires DRUID Connector Host upgrade to version 5.27 or higher and DRUID Data Service upgrade to the latest version.
+{% endhint %}
 
 In the views that display records from DRUID Data Service only, you can delete multiple records in bulk by selecting the records you want to delete and then clicking the **Delete** button at the top-right corner of the page.
 

@@ -9,7 +9,9 @@ Flows Train Set is designed to simplify the business user experience creating si
 
 This feature allows authors to train the AI Agent NLP model within the current solution with train phrases, intents and responses to deliver to chat users. For more complex responses, like getting the info from an application or having multiple variants for the response, you can trigger specific flows that best suit your needs.
 
-> **NOTE:** The Flows Train Set feature is available in the Flows list view.
+{% hint style="info" %}
+**NOTE:** The Flows Train Set feature is available in the Flows list view.
+{% endhint %}
 
 ![](../Resources/Images/Flows/flows%20train%20set%20menu.png)
 
@@ -19,7 +21,9 @@ This feature allows authors to train the AI Agent NLP model within the current s
 
 This feature works with bulk data sets, using template based import / export of flows train sets in Excel file format.
 
-> **IMPORTANT!** The upload process will **REPLACE** the current matching train set for this AI Agent with those in the excel file. The other non-matching trains sets remain unchanged. Make sure that you download a copy of the existing train set before processing. To do so, click the **Train Set** button and click **Download solution train set**. Based on your browser settings, the flows train set file is either automatically saved to your default Download folder or you need to save it.
+{% hint style="warning" %}
+**IMPORTANT!** The upload process will **REPLACE** the current matching train set for this AI Agent with those in the excel file. The other non-matching trains sets remain unchanged. Make sure that you download a copy of the existing train set before processing. To do so, click the **Train Set** button and click **Download solution train set**. Based on your browser settings, the flows train set file is either automatically saved to your default Download folder or you need to save it.
+{% endhint %}
 
 You can import a new solution train set or [update the existing one](#Updating).
 

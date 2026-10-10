@@ -34,7 +34,9 @@ Voice campaigns initiate outbound automated voice calls to deliver spoken notifi
 
 ![](../../../Resources/Images/Ring%20central%20%2B%20excel%20export%20updates/Create%20RingCentral%20CX%20Campaigns_1_1.png)
 
-> **NOTE:**  The campaign should include exactly one campaign step configured with the Voice channel.
+{% hint style="info" %}
+**NOTE:**  The campaign should include exactly one campaign step configured with the Voice channel.
+{% endhint %}
 
 10. Configure the following mandatory fields:
 

@@ -56,7 +56,9 @@ User Input Processing Logic:
 5. If no next steps are found, before raising event “No next step found”, does Predict, searches for an intent change. Like in step 1.b. If intent change found, cancels the current flow and triggers the new one. If intent change is not found, moves to step 6.
 6. If no next steps found, the AI Agent raises the error event “No next step found”.
 
-> **NOTE:** All flow steps inherit the roles associated with the flow.
+{% hint style="info" %}
+**NOTE:** All flow steps inherit the roles associated with the flow.
+{% endhint %}
 
 By adhering to this processing logic, the AI Agent efficiently handles user inputs and guides conversations seamlessly.
 

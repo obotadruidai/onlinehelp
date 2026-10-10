@@ -62,7 +62,9 @@ You have two options to filter the query:
 
 ![](../../Resources/Images/Druid%20Data%20Service%20Connector/related%20entity%20custom%20query.png)
 
-> **Info:**  If you don’t provide filtering parameters, the response retrieves all records in the collection.
+{% hint style="info" %}
+**Info:**  If you don’t provide filtering parameters, the response retrieves all records in the collection.
+{% endhint %}
 
 To filter the query using the standard query, in the Filtering section, **Filter Group** tab, set the filtering properties for the query. You can use the following properties:
 

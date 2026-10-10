@@ -9,7 +9,9 @@ The Voice channel through VoiceAI Connect from AudioCodes enables you to deliver
 
 VoiceAI Connect acts like a hub connecting different telephony systems (telephony channel, public telephony provider, contact center, enterprise communication platform, or any platform communicating via WebRTC) to the Druid bot framework and voice AI cognitive services.
 
-> **Info:** Through AudioCodes, you can integrate DRUID with various telephony systems like: Genesys, Avaya, Cisco. For information on the list of available contact center solutions you can integrate DRUID with, see [SBC Interoperability List](https://www.audiocodes.com/partners/sbc-interoperability-list).
+{% hint style="info" %}
+**Info:** Through AudioCodes, you can integrate DRUID with various telephony systems like: Genesys, Avaya, Cisco. For information on the list of available contact center solutions you can integrate DRUID with, see [SBC Interoperability List](https://www.audiocodes.com/partners/sbc-interoperability-list).
+{% endhint %}
 
 ![](../../Resources/Images/Voice%20Audio%20Codes%20Channel/Voice%20Audio%20Codes%20Channel.png)
 
@@ -55,9 +57,13 @@ For example:
 }
 ```
 
-> **NOTE:** To provide users with a flawless conversation and avoid interrupting the conversation due to language change as Druid takes for granted the language identified by the STT language detection, map all AI Agent languages: AI Agent default language, AI Agent additional languages (if any) and the languages used on the AI Agent at Conversation Time translation. For situations when you want to trigger the Language changed flow, you can activate Druid language detection on the AI Agent.
+{% hint style="info" %}
+**NOTE:** To provide users with a flawless conversation and avoid interrupting the conversation due to language change as Druid takes for granted the language identified by the STT language detection, map all AI Agent languages: AI Agent default language, AI Agent additional languages (if any) and the languages used on the AI Agent at Conversation Time translation. For situations when you want to trigger the Language changed flow, you can activate Druid language detection on the AI Agent.
+{% endhint %}
 
-> **Info:** If the STT service provider has voice only en-UK and not for en-US, you can map “en-UK” to “en-US”.
+{% hint style="info" %}
+**Info:** If the STT service provider has voice only en-UK and not for en-US, you can map “en-UK” to “en-US”.
+{% endhint %}
 
 7. Send the **token** and **DRUID URL** to your Druid representative and they will set up the connection between your AI Agent and VoiceAI Connect.
 
@@ -102,7 +108,9 @@ When the call disconnects, the following data is logged in the conversation cont
 
 ## <a id="Handle"></a>Handle AudioCodes Exceptions
 
-> **Info:** This feature is available starting with Druid 9.30.
+{% hint style="info" %}
+**Info:** This feature is available starting with Druid 9.30.
+{% endhint %}
 
 AudioCodes-specific errors are treated as exceptions within Druid. This allows flow authors to capture end-to-end errors directly during voice conversations, perform error recovery (such as changing the TTS provider for the current conversation), or send notifications to bot administrators.
 

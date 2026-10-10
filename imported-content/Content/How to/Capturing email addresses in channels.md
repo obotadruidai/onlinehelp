@@ -13,7 +13,9 @@ Although you can manage this through Input Mapping Training Phrases, DRUID might
 
 Applying the classic rules for email validation might prevent DRUID from extracting email addresses from user input.
 
-> **IMPORTANT!** DRUID applies less restrictive validation rules on email format, which might lead to capturing non-existent / broken emails. To ensure that the email format complies with the email format supported by your organization, we recommend you do an extra JavaScript validation in the flow(s) to apply your specific format rules by including a regular expression (regex) on a step after the one that captures user email.
+{% hint style="warning" %}
+**IMPORTANT!** DRUID applies less restrictive validation rules on email format, which might lead to capturing non-existent / broken emails. To ensure that the email format complies with the email format supported by your organization, we recommend you do an extra JavaScript validation in the flow(s) to apply your specific format rules by including a regular expression (regex) on a step after the one that captures user email.
+{% endhint %}
 
 <a id="DRUIDvalidationrulesforemails"></a>
 
@@ -29,4 +31,6 @@ Applying the classic rules for email validation might prevent DRUID from extract
 
 - The maximum total length of the local-part of an email address is 64 octets.
 
-> **NOTE:**  These email validation rules apply in DRUID version 5.8 and higher.
+{% hint style="info" %}
+**NOTE:**  These email validation rules apply in DRUID version 5.8 and higher.
+{% endhint %}

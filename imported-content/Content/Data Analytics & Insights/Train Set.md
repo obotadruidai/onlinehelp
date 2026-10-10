@@ -19,7 +19,9 @@ The Train Set feature (**Train Set** tab) enables you to:
 
 ## <a id="Evaluating_the_bot_training_model"></a>Evaluate the AI Agent training model
 
-> **NOTE:** The evaluation metrics are using trained data and there might be new settings not included. Check the last train date and train the AI Agent model by clicking the **Train** button.
+{% hint style="info" %}
+**NOTE:** The evaluation metrics are using trained data and there might be new settings not included. Check the last train date and train the AI Agent model by clicking the **Train** button.
+{% endhint %}
 
 The Train Set page provides you with information from the TrainLog file (with matching percentage for each training phrase). You can check the general metrics of the AI Agent training model and the general metrics per flow.
 
@@ -61,7 +63,9 @@ Edit the desired training phrase and click the **Train** button to train the AI 
 
 ![](../Resources/Images/Evaluating%20Bot%20Training%20Model/train%20bot%20train%20set.png)
 
-> **Info:**  If you selected **Enable auto train** on the AI Agent (AI Agent details page, NLP section, there is no need to click the **Train** button.
+{% hint style="info" %}
+**Info:**  If you selected **Enable auto train** on the AI Agent (AI Agent details page, NLP section, there is no need to click the **Train** button.
+{% endhint %}
 
 <a id="Evaluatechildmodels"></a>
 
@@ -75,7 +79,9 @@ The NLP model of the parent flow appears.
 
 ![](../Resources/Images/Evaluating%20Bot%20Training%20Model/parent%20submodel.png)
 
-> **NOTE:** The [NLP parameters](../Conversational%20AI/Setting%20Up%20the%20Conversational%20AI%20%28DRUID%20versions%20prior%20to%205.15%29.md) set on the AI Agent apply to the AI Agent model and to child models.
+{% hint style="info" %}
+**NOTE:** The [NLP parameters](../Conversational%20AI/Setting%20Up%20the%20Conversational%20AI%20%28DRUID%20versions%20prior%20to%205.15%29.md) set on the AI Agent apply to the AI Agent model and to child models.
+{% endhint %}
 
 You can evaluate child models similar to evaluating AI Agent training phrases:
 
@@ -86,7 +92,9 @@ You can evaluate child models similar to evaluating AI Agent training phrases:
 
 ![](../Resources/Images/Evaluating%20Bot%20Training%20Model/detailed%20child%20model.png)
 
-> **IMPORTANT!** For child intents, if the TargetMatchScore (the target threshold for matching utterance) is not reached, DRUID does not trigger IntentNotRecognized.
+{% hint style="warning" %}
+**IMPORTANT!** For child intents, if the TargetMatchScore (the target threshold for matching utterance) is not reached, DRUID does not trigger IntentNotRecognized.
+{% endhint %}
 
 To go back to the AI Agent model, at the top-left side of the Evaluation page (above the test child model understanding area), click **Back to AI Agent Model**.
 

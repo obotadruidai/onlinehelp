@@ -9,7 +9,9 @@ title: "Annotation Tool"
 
 DRUID Annotation Tool helps authors leverage the NLU model of their AI Agents based on real conversations with the users. This tool helps authors to use actual “real-life” AI Agent conversation as data source for improving the AI Agent NLU model, in a new single user-friendly interface.
 
-> **IMPORTANT!** This feature is available for DRUID Connectors v1.45 or above. If you have a hybrid or on premise DRUID deployment, install DRUID Connector Host version 1.45 or above.
+{% hint style="warning" %}
+**IMPORTANT!** This feature is available for DRUID Connectors v1.45 or above. If you have a hybrid or on premise DRUID deployment, install DRUID Connector Host version 1.45 or above.
+{% endhint %}
 
 The Annotation tool enables authors to:
 
@@ -41,7 +43,9 @@ The Annotation tool enables authors to:
 8. Annotate the data based on your needs (add intents from conversation history as new training/test phrases). For more information on how to annotate messages in the Conversation History, see [Viewing and Annotating](Viewing%20Conversation%20History.md#_Viewing_and_Annotating).
 9. Click the **Train Set** tab and train the AI Agent by clicking the **Train** button.
 10. Compare the general metrics of the AI Agent training model with the ones prior the conversation history upload.
-> **Info:**  If the new metrics are worse than the previous ones, make the necessary corrections using DRUID’s available evaluation tools.
+{% hint style="info" %}
+**Info:**  If the new metrics are worse than the previous ones, make the necessary corrections using DRUID’s available evaluation tools.
+{% endhint %}
 
 11. Once the new metrics satisfy your needs, download the train set.
 12. Go back on the production environment and select your AI Agent and solution, click **Flows** and upload the train set.

@@ -18,7 +18,9 @@ Data transfer between the platform and external systems relies entirely on two p
 
 ![](../../Resources/Images/Integrations/REST%20Overview%20image.png)
 
-> **NOTE:** To connect securely to internal enterprise software without exposing APIs to the public internet, deploy the Druid Connector Host inside your local firewall. For configuration details, see the [Installing the Druid Connector Host](../../Druid%20Deployment/Install%20Druid%20Connector%20Host.md) documentation.
+{% hint style="info" %}
+**NOTE:** To connect securely to internal enterprise software without exposing APIs to the public internet, deploy the Druid Connector Host inside your local firewall. For configuration details, see the [Installing the Druid Connector Host](../../Druid%20Deployment/Install%20Druid%20Connector%20Host.md) documentation.
+{% endhint %}
 
 <a id="TechnicalWorkflowExecution"></a>
 
@@ -40,7 +42,9 @@ Prior to executing business logic tasks, the platform establishes connection aut
 
 The Flow Engine dispatches the core application request to the specified resource endpoint path, injecting the security context retrieved in [Step 1](#Step).
 
-> **Info:** To minimize system latency and external network load, the platform caches the security context token and reuses it across subsequent sequential integration steps until validation checks fail.
+{% hint style="info" %}
+**Info:** To minimize system latency and external network load, the platform caches the security context token and reuses it across subsequent sequential integration steps until validation checks fail.
+{% endhint %}
 
 <a id="Step3TokenValidationExpirationLoop"></a>
 

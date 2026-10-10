@@ -11,7 +11,9 @@ A cookie is a small file that is downloaded to your computer when you access spe
 
 ## What types of cookies does DRUID use?
 
-> **IMPORTANT!** AI Agent widgets never store user personal data and neither sensitive data in their cookies.
+{% hint style="warning" %}
+**IMPORTANT!** AI Agent widgets never store user personal data and neither sensitive data in their cookies.
+{% endhint %}
 
 Cookies used by Druid AI Agents fall under these two categories:
 

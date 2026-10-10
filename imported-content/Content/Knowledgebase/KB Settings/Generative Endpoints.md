@@ -7,7 +7,9 @@ title: "Generative Endpoints"
 
 Generative Endpoints define the language model connections used by the Knowledge Base for AI-powered interactions. Each endpoint specifies the model provider, model configuration, and token limits that govern how the Knowledge Base generates responses.
 
-> **IMPORTANT!** All generative endpoints added before DRUID 8.13 are labeled "Obsolete"; however, they remain active and continue to function in your current configurations.
+{% hint style="warning" %}
+**IMPORTANT!** All generative endpoints added before DRUID 8.13 are labeled "Obsolete"; however, they remain active and continue to function in your current configurations.
+{% endhint %}
 
 <a id="SupportedLLMproviders"></a>
 
@@ -23,7 +25,9 @@ You can connect to the following large language model (LLM) providers:
 - Mesolitica – MaLLaM - This LLM provider is available in DRUID 9.1 and higher.
 - AWS Bedrock - This LLM provider is available in DRUID 9.5 and higher.
 
-> **NOTE:**  If you want to use Druid-dedicated resources for Druid, Azure OpenAI, Mistral or Google, contact your sales representative to activate them for your tenant.
+{% hint style="info" %}
+**NOTE:**  If you want to use Druid-dedicated resources for Druid, Azure OpenAI, Mistral or Google, contact your sales representative to activate them for your tenant.
+{% endhint %}
 
 <a id="AddaNewGenerativeEndpoint"></a>
 
@@ -38,7 +42,9 @@ To add a generative endpoint:
 
 3. Click **Save**.
 
-> **Info:** To add new generative endpoints in DRUID versions prior to 8.4, go to the **Advanced Settings** field within the Advanced Settings JSON section, and in the generativeEndpoints collection, copy the structure of an existing endpoint, paste it, and set the name for the new endpoint. Save your changes, and the new generative endpoint will appear in the Generative Endpoints section of the UI.
+{% hint style="info" %}
+**Info:** To add new generative endpoints in DRUID versions prior to 8.4, go to the **Advanced Settings** field within the Advanced Settings JSON section, and in the generativeEndpoints collection, copy the structure of an existing endpoint, paste it, and set the name for the new endpoint. Save your changes, and the new generative endpoint will appear in the Generative Endpoints section of the UI.
+{% endhint %}
 
 <a id="GenerativeEndpointParameters"></a>
 

@@ -33,7 +33,9 @@ If you require full control and precise localization for each language, follow t
 - Intents
 - Entity values
 
-> **Info:** This option requires more effort but provides greater localization accuracy.
+{% hint style="info" %}
+**Info:** This option requires more effort but provides greater localization accuracy.
+{% endhint %}
 
 <a id="Userealtimemachinetranslation"></a>
 

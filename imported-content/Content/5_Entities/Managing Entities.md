@@ -7,7 +7,9 @@ title: "Managing Entities"
 
 Druid empowers you to tailor the entity model according to your requirements by providing options to edit, remove, unlink, and link entities within your solution effortlessly. By effectively managing entities, you can fine-tune your solution's structure and enhance its functionality to meet your specific needs.
 
-> **NOTE:** You can manage and adjust your entity configurations efficiently using AI Authoring Agents. By launching the Data Modeler from the Page Help icon, you can describe your business requirements in natural language to automatically fine-tune your existing data models. For more information, see [AI Authoring Agents](../2_AI%20Agents/AI%20Authoring%20Agents.md#Create).
+{% hint style="info" %}
+**NOTE:** You can manage and adjust your entity configurations efficiently using AI Authoring Agents. By launching the Data Modeler from the Page Help icon, you can describe your business requirements in natural language to automatically fine-tune your existing data models. For more information, see [AI Authoring Agents](../2_AI%20Agents/AI%20Authoring%20Agents.md#Create).
+{% endhint %}
 
 <a id="Editentities"></a>
 
@@ -29,7 +31,9 @@ You can also provide for an entity the **Plural Name** and **Icon URL**, which h
 
 ## Delete entities
 
-> **IMPORTANT!** Exercise caution when deleting entities as the action is irreversible and removes all associated fields and relations. You might want to unlink it from the solution instead. If you try deleting an entity that is referenced by another entity / other entity fields, a warning message will display the list of entity fields referencing it and you cannot delete it.
+{% hint style="warning" %}
+**IMPORTANT!** Exercise caution when deleting entities as the action is irreversible and removes all associated fields and relations. You might want to unlink it from the solution instead. If you try deleting an entity that is referenced by another entity / other entity fields, a warning message will display the list of entity fields referencing it and you cannot delete it.
+{% endhint %}
 
 To remove an entity:
 
@@ -42,7 +46,9 @@ To remove an entity:
 
 Druid allows you to dissociate an entity from the current solution without eliminating it from the AI Agent informational model, facilitating future utilization.
 
-> **NOTE:** Unlinking entities from a solution is available exclusively in list view.
+{% hint style="info" %}
+**NOTE:** Unlinking entities from a solution is available exclusively in list view.
+{% endhint %}
 
 To unlink an entity from the selected solution, click the Unlink icon displayed in line with the entity.
 
@@ -62,9 +68,11 @@ To view the list of entities that are unused within the current solution, click 
 
 From the list, you can link specific entities by clicking the corresponding **Link** icon displayed in line or link all entities by clicking the **Link all** button at the top-right corner of the page.
 
-> **Info:** If the list of entities which are not used by the AI Agent within the current solution is too long, use the **Search** feature to quickly spot the desired entity and all the entities referenced / referencing it.
->
-> ![](../Resources/Images/Entities/search%20unlinked%20entities.png)
+{% hint style="info" %}
+**Info:** If the list of entities which are not used by the AI Agent within the current solution is too long, use the **Search** feature to quickly spot the desired entity and all the entities referenced / referencing it.
+
+![](../Resources/Images/Entities/search%20unlinked%20entities.png)
+{% endhint %}
 
 To ensure that the linked entities will be available within the current solution, click the **Confirm** button at the top-right corner of the page.
 

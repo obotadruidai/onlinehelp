@@ -11,7 +11,9 @@ A Workspace is a digital environment in the Druid Portal where users interact wi
 
 ![](../Resources/Images/CBA/CBA%20map.png)
 
-> **NOTE:**  Conversational AI Applications is a tenant feature, so if you want to activate it for your tenant, get in touch with [DRUID Support](<mailto:support@druidai.com?subject=Activate CBA for my tenant>).
+{% hint style="info" %}
+**NOTE:**  Conversational AI Applications is a tenant feature, so if you want to activate it for your tenant, get in touch with [DRUID Support](<mailto:support@druidai.com?subject=Activate CBA for my tenant>).
+{% endhint %}
 
 <a id="BusinessBenefits"></a>
 

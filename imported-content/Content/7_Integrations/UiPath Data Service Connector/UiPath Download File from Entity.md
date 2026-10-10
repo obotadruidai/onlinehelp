@@ -7,7 +7,9 @@ title: "UiPath Download File from Entity"
 
 Downloads the file from the specified UiPath entity field to Druid.
 
-> **IMPORTANT!** Before defining the integration task, make sure that you have mapped the UiPath Data Service entity to the Druid request entity; otherwise, you won’t be able to set the integration task response.
+{% hint style="warning" %}
+**IMPORTANT!** Before defining the integration task, make sure that you have mapped the UiPath Data Service entity to the Druid request entity; otherwise, you won’t be able to set the integration task response.
+{% endhint %}
 
 <a id="GeneralSettings"></a>
 

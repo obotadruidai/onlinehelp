@@ -9,7 +9,9 @@ Interacting with your personal, locally installed UiPath robot is now easier tha
 
 The process includes UiPath integration with attended automation. Contact Center Agent is chatting with the AI Agent and triggers an attended automation.
 
-> **NOTE:** You need a UiPath tenant but you can easily open a free Community subscription.
+{% hint style="info" %}
+**NOTE:** You need a UiPath tenant but you can easily open a free Community subscription.
+{% endhint %}
 
 1. Download the UiPath process.
 

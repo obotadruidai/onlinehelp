@@ -192,9 +192,13 @@ Most contact centers want their helpdesk agents to get the transcript of the con
 In order to save the conversation transcript and make it available for Oracle Live Chat agents, on the flow that connects the client with the agent, make the following settings:
 
 1. On the step where you call the internal action **ConnectToHelpdeskAgent**(Post Actions section), in the **Pre Actions** section, call the internal action **GetConversationTranscript**.
-> **IMPORTANT!**  When calling the **GetConversationTranscript** internal action on the same step where you call **ConnectToHelpdeskAgent**, make sure to call it in the PreActions section. Calling it in the PostActions section will not send the conversation transcript to agents.
+{% hint style="warning" %}
+**IMPORTANT!**  When calling the **GetConversationTranscript** internal action on the same step where you call **ConnectToHelpdeskAgent**, make sure to call it in the PreActions section. Calling it in the PostActions section will not send the conversation transcript to agents.
+{% endhint %}
 
-> **Info:**  You can call the **GetConversationTranscript** internal action on a previous step.
+{% hint style="info" %}
+**Info:**  You can call the **GetConversationTranscript** internal action on a previous step.
+{% endhint %}
 
 2. On the **ConnectToHelpdeskAgent** internal action add the following:
 
@@ -206,7 +210,9 @@ In order to save the conversation transcript and make it available for Oracle Li
 
 ![](../Resources/Images/Live%20Chat/Oracle%20Agent/configrue%20send%20transcript.png)
 
-> **Info:** You can send additional client information (like Custom Fields) to Oracle Live Chat Agents together with the conversation transcript. For more information, see [Handling multiple queues and sending Contact Center Parameters](#Handling_multiple_queues_and_sending_Contact_Center_Parameters).
+{% hint style="info" %}
+**Info:** You can send additional client information (like Custom Fields) to Oracle Live Chat Agents together with the conversation transcript. For more information, see [Handling multiple queues and sending Contact Center Parameters](#Handling_multiple_queues_and_sending_Contact_Center_Parameters).
+{% endhint %}
 
 3. Save the step.
 
@@ -245,7 +251,9 @@ The table below lists the Contact Center Parameters authors can send to Oracle L
 
 On the **ConnectToHelpdeskAgent** internal action, provide the desired parameters inside the `ContactCenterParameters` object in JSON format.
 
-> **NOTE:** The payload must follow a key-value format where both the key and value are strings. When using values from DRUID conversation context (entities, local variables) as parameter values, ensure they are enclosed in double quotes ("") to maintain valid JSON formatting.
+{% hint style="info" %}
+**NOTE:** The payload must follow a key-value format where both the key and value are strings. When using values from DRUID conversation context (entities, local variables) as parameter values, ensure they are enclosed in double quotes ("") to maintain valid JSON formatting.
+{% endhint %}
 
 **Example - Send Contact Center parameters**
 

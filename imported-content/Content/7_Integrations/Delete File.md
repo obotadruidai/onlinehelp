@@ -7,7 +7,9 @@ title: "Delete Files with the Druid Connector Host"
 
 The **Delete File** integration task enables the Druid Connector Host to delete a single file from a specific local disk or network location accessible by the host machine.
 
-> **NOTE:**  This integration is available for Druid Connector Host version 9.13 and higher and is exclusively for hybrid and on-premises installations.
+{% hint style="info" %}
+**NOTE:**  This integration is available for Druid Connector Host version 9.13 and higher and is exclusively for hybrid and on-premises installations.
+{% endhint %}
 
 <a id="AddandconfiguretheReadfileintegration"></a>
 

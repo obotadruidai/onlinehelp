@@ -38,9 +38,13 @@ To upload a file, click on the node where you want to upload it, and click Uploa
 
 Browse for the desired file(s), select it / them, and then click **Open**. You can upload multiple files at the same time.
 
-> **Info:** When uploading files, you can manage duplicate filenames using options similar to Windows file handling: **Replace**, **Create Copy**, or **Skip**. These actions can be applied individually per file or globally (**Replace All**, **Create Copy for All)**. The Skip option is available starting with Druid version 9.31.
+{% hint style="info" %}
+**Info:** When uploading files, you can manage duplicate filenames using options similar to Windows file handling: **Replace**, **Create Copy**, or **Skip**. These actions can be applied individually per file or globally (**Replace All**, **Create Copy for All)**. The Skip option is available starting with Druid version 9.31.
+{% endhint %}
 
-> **NOTE:** The maximum file upload size is limited to 20 MB. You can also upload video files as long as the file size is limited to 20 MB.
+{% hint style="info" %}
+**NOTE:** The maximum file upload size is limited to 20 MB. You can also upload video files as long as the file size is limited to 20 MB.
+{% endhint %}
 
 The selected file(s) appear in the tree under the selected folder.
 
@@ -64,7 +68,9 @@ To extract data from the root library, click the **Extract** button at the top l
 
 You can extract data only from specific documents by using bulk actions.  For more information, see [Data Source Status and Bulk Actions](Data%20source%20status.md).
 
-> **NOTE:** The extraction might take a few seconds, depending on the number of links included in the scrapping.
+{% hint style="info" %}
+**NOTE:** The extraction might take a few seconds, depending on the number of links included in the scrapping.
+{% endhint %}
 
 To extract data only from a specific node / leaf, click the dots next to the tree element and select **Extract**.
 

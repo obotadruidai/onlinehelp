@@ -29,7 +29,9 @@ Using **Local** scope allows direct queries within the connector action, elimina
 
 ### Perform update on given records
 
-> **NOTE:** In DRUID versions prior to 7.1, this is the default functionality.
+{% hint style="info" %}
+**NOTE:** In DRUID versions prior to 7.1, this is the default functionality.
+{% endhint %}
 
 To update a specific record or multiple related records in DRUID Data Service provided in the request entity based on the Id in the conversation context, choose **On given records**.
 
@@ -37,7 +39,9 @@ The **Batch Execution Entity List** field displays all fields of type "Entity li
 
 Enable **Use Upsert mode** when performing an update on given records to handle cases where some records in the request payload may not yet exist — each record will be updated if found, or automatically inserted if it doesn't exist.
 
-> **NOTE:** Use Upsert mode is available in Druid 9.17 and higher.
+{% hint style="info" %}
+**NOTE:** Use Upsert mode is available in Druid 9.17 and higher.
+{% endhint %}
 
 To map all entity fields existing on the request entity, tap on **Map All Fields**.
 
@@ -54,11 +58,15 @@ If you choose to map only specific entity fields in the request, additional fiel
 
 To update same value(s) on multiple records from Druid Data Service, which result from a conditional query (where clauses / filters), choose **Conditional update**. Click on the **Field Mapping Action** button and click on **Refresh Fields**. The list of scalar entity fields (no entity/entity list fields) existing on the request entity displays.
 
-> **Info:** You cannot update fields of type entity or entity lists.
+{% hint style="info" %}
+**Info:** You cannot update fields of type entity or entity lists.
+{% endhint %}
 
 Select the desired field and in the corresponding input field, enter the desired value.
 
-> **NOTE:** Selecting a field and leaving the corresponding input field empty will use the value from the request entity for that field.
+{% hint style="info" %}
+**NOTE:** Selecting a field and leaving the corresponding input field empty will use the value from the request entity for that field.
+{% endhint %}
 
 In the Filtering area, add conditions to filter records in the Druid Data Service.
 
@@ -107,9 +115,11 @@ Use the connector task on desired flow step(s) as best suits your needs.
 
 ## Test the integration task
 
-> **NOTE:** In order to test the Update entity task, you first need to test the Add entity task and from the **TestResult** copy the value of the entity record **Id**.
->
-> ![](../../Resources/Images/Druid%20Data%20Service%20Connector/Get%20Entity_4.png)
+{% hint style="info" %}
+**NOTE:** In order to test the Update entity task, you first need to test the Add entity task and from the **TestResult** copy the value of the entity record **Id**.
+
+![](../../Resources/Images/Druid%20Data%20Service%20Connector/Get%20Entity_4.png)
+{% endhint %}
 
 To test the Update entity integration task, click the **Test** tab. In the RequestEntity, provide the **Id** of the entity record you copied from the TestResult of the Add entity task and click the **Test** button (![](../../Resources/Images/Druid%20Data%20Service%20Connector/Add%20Entity_8.png)).
 

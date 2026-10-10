@@ -104,7 +104,9 @@ The entity is used for user authentication. The table below lists all the entity
 
 ## [[AlertCategory]]
 
-> **IMPORTANT!** This system entity is used for application purposes only. DO NOT use it in conversation authoring.
+{% hint style="warning" %}
+**IMPORTANT!** This system entity is used for application purposes only. DO NOT use it in conversation authoring.
+{% endhint %}
 
 <a id="[[AlertInfo]]"></a>
 
@@ -199,7 +201,9 @@ You can use the following parameters to filter the conversation transcript withi
 
 Stores billing-related information collected during the conversation. This entity stores the billing details provided by the user during the payment flow. It ensures that all relevant payment data is captured for processing.
 
-> **NOTE:** This system entity is available in DRUID 9.7 and higher.
+{% hint style="info" %}
+**NOTE:** This system entity is available in DRUID 9.7 and higher.
+{% endhint %}
 
 | Field Name | Type | Description |
 | --- | --- | --- |
@@ -315,7 +319,9 @@ For directline (web channel), Druid automatically collects the following informa
 
 DRUID automatically saves the information in [[ChatActivityData]].
 
-> **Info:** You can create additional fields in [[QueryParams]] fields to collect additional information when a conversation is initiated.
+{% hint style="info" %}
+**Info:** You can create additional fields in [[QueryParams]] fields to collect additional information when a conversation is initiated.
+{% endhint %}
 
 <a id="[[InactivityDetails]]"></a>
 

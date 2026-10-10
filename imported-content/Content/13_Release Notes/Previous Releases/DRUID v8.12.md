@@ -25,7 +25,9 @@ If you have questions about your DRUID tenant, please contact [support@Druidai.c
 - **Cuedesk and RingCentral Channels – Voice message support**. Your AI Agent can now process voice messages on Cuedesk and RingCentral channels. To enable this feature, configure voice message support in the channel settings by providing your MS Azure Speech API key and selecting the preferred language and voice options. This allows seamless audio message processing and AI Agent responses in a natural, human-like voice.
   For more information, see [Cuedesk Channel](../../Channels/Cuedesk/Cuedesk%20Integration.md) and [RingCentral Channel](../../Channels/RingCentral/RingCentral_channel.md).
 - **Evaluation Tool – Enhanced train details display for Train Set selection**. The Evaluation page now accurately updates the displayed train details based on the selected train set. When choosing **Current Train Set**, **Previous Train Set**, or **Earlier Train Set** from the **Train Set History** drop-down, the corresponding details (Train Started On, Trained On, and Duration) are shown, ensuring a more reliable evaluation process.
-> **NOTE:** This data is not backwards compatible and will only be displayed as you train the AI Agent.
+{% hint style="info" %}
+**NOTE:** This data is not backwards compatible and will only be displayed as you train the AI Agent.
+{% endhint %}
 
 ![](../../Resources/Images/drudi%208.12/set%20history.png)
 

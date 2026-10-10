@@ -32,7 +32,9 @@ Follow these steps to connect users interacting through Zendesk widgets (Zendesk
 
 ## Use Zendesk Live Chat with DRUID Channels
 
-> **NOTE:** This feature is available in DRUID version 8.19 and higher.
+{% hint style="info" %}
+**NOTE:** This feature is available in DRUID version 8.19 and higher.
+{% endhint %}
 
 This setup connects users from DRUID channels — such as the DRUID web snippet or Direct Line — to Zendesk live agents.
 
@@ -113,7 +115,9 @@ When passing control to Zendesk’s Agent Workspace you can include the followin
 
 To send Contact Center parameters to Zendesk Live Chat, on the **ConnectToHelpdeskAgent** internal action, provide the desired parameters inside the `ContactCenterParameters` object in JSON format.
 
-> **NOTE:** The payload must follow a key-value format where both the key and value are strings. When using values from DRUID conversation context (entities, local variables) as parameter values, ensure they are enclosed in double quotes ("") to maintain valid JSON formatting.
+{% hint style="info" %}
+**NOTE:** The payload must follow a key-value format where both the key and value are strings. When using values from DRUID conversation context (entities, local variables) as parameter values, ensure they are enclosed in double quotes ("") to maintain valid JSON formatting.
+{% endhint %}
 
 **Example - Send Contact Center parameters**
 

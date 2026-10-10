@@ -75,7 +75,9 @@ In the **Exchange/Queue** field, enter the name of your RabbitMQ exchange and in
 
 ![](../../Resources/Images/BluePrism/ROUTING%20KEY.png)
 
-> **NOTE:** In DRUID 7.11 onwards, you can place an item directly on a queue. In the **Exchange/Queue** field enter the name of the queue and leave the **Routing Key** field empty.
+{% hint style="info" %}
+**NOTE:** In DRUID 7.11 onwards, you can place an item directly on a queue. In the **Exchange/Queue** field enter the name of the queue and leave the **Routing Key** field empty.
+{% endhint %}
 
 In the **Routing Key** field, enter the routing key that binds the queue to the exchange you specified above.
 
@@ -95,7 +97,9 @@ You can either publish integrations one by one at creation time by clicking the 
 
 ## Step 5. Configure DRUID callback details in BluePrism Studio
 
-> **NOTE:** To configure DRUID callback details in BluePrism Studio, you need the StartFlow token and DRUID Endpoint URL for BluePrism integration. To have the StartFlow endpoint active on your tenant and have access to the bearer token, get in touch with [DRUID Support](<mailto:support@druidai.com?subject=BluePrism integration - I need Start Flow bearer token>).
+{% hint style="info" %}
+**NOTE:** To configure DRUID callback details in BluePrism Studio, you need the StartFlow token and DRUID Endpoint URL for BluePrism integration. To have the StartFlow endpoint active on your tenant and have access to the bearer token, get in touch with [DRUID Support](<mailto:support@druidai.com?subject=BluePrism integration - I need Start Flow bearer token>).
+{% endhint %}
 
 Once DRUID Support activates the StartFlow endpoint on your tenant, on the Administration menu, click DRUID Services. Copy the token of the StartFlow endpoint.
 
@@ -126,9 +130,13 @@ In BluePrism Studio, go to your process, and add a POST JSON action for calling 
 - **contextData**. The stringified JSON of the request entity containing the values of the fields mapped in DRUID on the BluePrism integration request.
 - **entityName**. the name of the DRUID response entity.
 
-> **NOTE:**  The BluePrism process should create the **contextData** and the **JSON** object and use the `toString()` function to stringify them both.
+{% hint style="info" %}
+**NOTE:**  The BluePrism process should create the **contextData** and the **JSON** object and use the `toString()` function to stringify them both.
+{% endhint %}
 
-> **Info:** This JSON fields are saved in DRUID in system entity [[BPAutomation]].
+{% hint style="info" %}
+**Info:** This JSON fields are saved in DRUID in system entity [[BPAutomation]].
+{% endhint %}
 
 ## Related Topics
 

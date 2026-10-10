@@ -5,7 +5,9 @@ title: "Filtering records in a view"
 <a id="Filteringrecordsinaview"></a>
 
 
-> **IMPORTANT!** You need to upgrade both the DRUID Connector Host to version 5.29 or higher and the entity associated with the web view; otherwise, loading the web view will fail.
+{% hint style="warning" %}
+**IMPORTANT!** You need to upgrade both the DRUID Connector Host to version 5.29 or higher and the entity associated with the web view; otherwise, loading the web view will fail.
+{% endhint %}
 
 You can filter all columns in a view regardless the data type in ascending or descending order.
 
@@ -13,7 +15,9 @@ For data of type string, integer and decimal you can use filters to help you nar
 
 ![](../Resources/Images/CBA/filetring%20rules.png)
 
-> **NOTE:** Extended filters are available in DRUID 5.22 and higher.
+{% hint style="info" %}
+**NOTE:** Extended filters are available in DRUID 5.22 and higher.
+{% endhint %}
 
 To filter the records in a view by applying filters on a specific column, click the **Filter** icon in the column header, then select the condition and define the filter rule(s) and click **Apply**.
 
@@ -21,7 +25,9 @@ The view displays the records based on the selected filtering criteria.
 
 ![](../Resources/Images/CBA/filtered%20view.png)
 
-> **Info:** You can add maximum two filter rules.
+{% hint style="info" %}
+**Info:** You can add maximum two filter rules.
+{% endhint %}
 
 <a id="Choosethefilteringconditionlogicaloperator"></a>
 
@@ -53,11 +59,15 @@ To remove a filter rule, click **Remove rule**. To remove the filter, click **Cl
 
 ## Automatically take into consideration the server-side web view filtering and pagination
 
-> **IMPORTANT!** Automatic server-side filtering and pagination is available only for web views that contain data from DRUID Data Service.
+{% hint style="warning" %}
+**IMPORTANT!** Automatic server-side filtering and pagination is available only for web views that contain data from DRUID Data Service.
+{% endhint %}
 
 Filtering and pagination are seamlessly handled server-side, harmonizing with any client-side settings. The user's applied filters and pagination on the web view synchronize with the Query entity integration defined on the server-side, ensuring a unified experience.
 
-> **NOTE:**  To make use of this feature, you'll need to upgrade both the DRUID Connector Host to version 5.29 or higher, and the entity associated with the web view.
+{% hint style="info" %}
+**NOTE:**  To make use of this feature, you'll need to upgrade both the DRUID Connector Host to version 5.29 or higher, and the entity associated with the web view.
+{% endhint %}
 
 To upgrade the entity associated with the web view, go to the entity details, click the **Fields** tab and in the notification displayed on top of the page, click the **Upgrade** button.
 
@@ -133,7 +143,9 @@ In the Custom Code task, add the following JavaScript code:
 
 Ensure the "totalCount" variable is delivered as an integer to the `SetPageInfoTotalCount()` method. In the example above, we used the `parseInt()` JavaScript function to convert the value to an integer.
 
-> **Info:** The Custom Code task adds the parameter value to the response of the connector integration, without altering the response entity.
+{% hint style="info" %}
+**Info:** The Custom Code task adds the parameter value to the response of the connector integration, without altering the response entity.
+{% endhint %}
 
 ![](../Resources/Images/CBA/custom%20code.png)
 

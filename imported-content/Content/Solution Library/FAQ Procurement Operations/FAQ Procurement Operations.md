@@ -28,7 +28,9 @@ To configure the solution template, follow these steps:
 
 ### Step 1. Set special flows
 
-> **NOTE:** Grocery default language is set to EN-US and additional language is set to RO. If you want to add additional languages on Grocery, make sure to add the language of choice as additional AI Agent language and add the according training phrases, synonyms and conditions.
+{% hint style="info" %}
+**NOTE:** Grocery default language is set to EN-US and additional language is set to RO. If you want to add additional languages on Grocery, make sure to add the language of choice as additional AI Agent language and add the according training phrases, synonyms and conditions.
+{% endhint %}
 
 Click the Special Flows section header and select the following special flows:
 
@@ -51,10 +53,12 @@ Click the **Details** tab, and then click the NLP section header. The NLP area e
 
 ## See FAQ Procurement Operations in Action
 
-> **NOTE:** The AI Agent is trained in two languages: RO and EN. If you want to switch between languages, just type the following commends in the chat:
->
-> - “Romana te rog” if you want to switch from EN to RO.
-> - “English please” if you want to switch from RO to EN.
+{% hint style="info" %}
+**NOTE:** The AI Agent is trained in two languages: RO and EN. If you want to switch between languages, just type the following commends in the chat:
+
+- “Romana te rog” if you want to switch from EN to RO.
+- “English please” if you want to switch from RO to EN.
+{% endhint %}
 
 The list below provides you with a list of things you can say to the AI Agent in either English or Romanian.
 

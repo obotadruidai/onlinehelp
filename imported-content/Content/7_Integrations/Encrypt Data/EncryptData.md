@@ -11,7 +11,9 @@ authors can now achieve this by designing their AI Agents to encrypt the data tr
 
 Constructed from the Advanced Encryption Standard (AES) algorithm with a block size of 128 bits, AES with Galois/Counter Mode (AES-GCM) is a block cipher mode of operation that provides high speed of authenticated encryption and data integrity.
 
-> **NOTE:** Data encryption is available on all connector apps for Druid version 1.61 or higher.
+{% hint style="info" %}
+**NOTE:** Data encryption is available on all connector apps for Druid version 1.61 or higher.
+{% endhint %}
 
 ![](../../Resources/Images/Encrypt%20Data/Encrypt%20Data.png)
 
@@ -33,7 +35,9 @@ When defining the connector actions, you first encrypt the data based on your ne
 
 If you want to add data encryption on existing connector actions, add the Encrypt Data task, configure it and then use the drag and drop functionality to make it the first integration task to be executed in that connector action.
 
-> **NOTE:**  Use Encrypt Data as the first integration task on a connector action only if you are using the encrypted data on subsequent integration tasks within that action; otherwise, the encrypted data remains inside the connector, Druid will not transmit it to 3rd party systems.
+{% hint style="info" %}
+**NOTE:**  Use Encrypt Data as the first integration task on a connector action only if you are using the encrypted data on subsequent integration tasks within that action; otherwise, the encrypted data remains inside the connector, Druid will not transmit it to 3rd party systems.
+{% endhint %}
 
 To add an Encrypt Data integration task, go to the desired connector action, click the **Create Task** button, click **Security** and select **Encrypt data**.
 
@@ -43,7 +47,9 @@ The Encrypt Data configuration page appears.
 
 Provide a **Description** and from the **ConnectionCode** field, select the desired connector app.
 
-> **Info:**  If the **ConnectionCode** field has no values that means you did not configure data encryption on any of the existing connector apps and you should configure it.
+{% hint style="info" %}
+**Info:**  If the **ConnectionCode** field has no values that means you did not configure data encryption on any of the existing connector apps and you should configure it.
+{% endhint %}
 
 Provide the Druid entity field(s) you want to use as input for data encryption (fields from the request entity set on the connector action), regardless if they are sensitive or not. Then, the encryption task will output the encrypted data in automatically created local variables, which should further be used as input data in the subsequent connector task(s); the local variables only exist during the runtime of the integration (connector action), so until the last task from the action is completed.
 
@@ -65,7 +71,9 @@ If encryption with salt (**Secure encryption with salt option**) is set on the c
 
 Druid AES GCM encryption uses [Rfc2898DeriveBytes](https://docs.microsoft.com/en-us/dotnet/api/system.security.cryptography.rfc2898derivebytes?view=net-6.0) with 10000 iterations to generate a PBKDF2 pseudo-random 256 bit key.
 
-> **NOTE:**  The data encrypted by EncryptData connector task will be logged as it will be sent to 3rd party environments (databases, APIs, CRM, etc). The encrypted form of the output data will be visible in logs, for debugging purposes, as it can only be decrypted by the owners of the encryption key.
+{% hint style="info" %}
+**NOTE:**  The data encrypted by EncryptData connector task will be logged as it will be sent to 3rd party environments (databases, APIs, CRM, etc). The encrypted form of the output data will be visible in logs, for debugging purposes, as it can only be decrypted by the owners of the encryption key.
+{% endhint %}
 
 Only the input data that is held in sensitive Druid entity fields (with “Holds Sensitive Data” true) will be anonymized from connector logs and conversation history.
 

@@ -5,11 +5,15 @@ title: "Test Druid SIP Calls"
 <a id="TestDruidSIPCalls"></a>
 
 
-> **Info:** This feature is available starting with Druid 9.27.
+{% hint style="info" %}
+**Info:** This feature is available starting with Druid 9.27.
+{% endhint %}
 
 The Test Call feature provides a sandbox environment to verify your speech services and evaluate how your AI Agent responds in real time before connecting your system to a live call center environment.
 
-> **Info:** To simplify testing, the test call completely disregards the configured Sip FQDN, IP whitelisting, and connection type settings.
+{% hint style="info" %}
+**Info:** To simplify testing, the test call completely disregards the configured Sip FQDN, IP whitelisting, and connection type settings.
+{% endhint %}
 
 <a id="Prerequisite"></a>
 
@@ -38,7 +42,9 @@ The Test Call modal window appears. You can choose to open it in a new window.
 5. Grant the browser permission to access your microphone if prompted.
 6. Speak into your microphone to interact with the AI Agent.
 7. You can adjust your input and output volume using the **Mic volume** and AI Agent **volume** sliders during the call.
-> **Info:** The Test Call modal contains an **Include debug messages** toggle that lets you alternate between two diagnostic views during the call and after it ends. For more information, see the subsequent section.
+{% hint style="info" %}
+**Info:** The Test Call modal contains an **Include debug messages** toggle that lets you alternate between two diagnostic views during the call and after it ends. For more information, see the subsequent section.
+{% endhint %}
 
 8. Click **Hang up** to end the call session and **Close** to close the modal.
 

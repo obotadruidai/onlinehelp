@@ -13,7 +13,9 @@ Druid Solutions Library offers a wide range of solution templates and business a
 
 ## AI Agent Authoring Lifecycle
 
-> **IMPORTANT!** Druid solution templates are not end-to-end production ready solutions; therefore, do not install them directly in your production AI Agent, because it might overwrite your existing configurations.
+{% hint style="warning" %}
+**IMPORTANT!** Druid solution templates are not end-to-end production ready solutions; therefore, do not install them directly in your production AI Agent, because it might overwrite your existing configurations.
+{% endhint %}
 
 AI Agent authoring does not always go as simple as using predefined solutions directly in your production environment. You need to follow some intermediary steps which allow you to build and optimize the solution to correspond to your specific requirements and then use it in production.
 

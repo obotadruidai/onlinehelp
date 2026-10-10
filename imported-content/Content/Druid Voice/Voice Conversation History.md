@@ -36,7 +36,9 @@ The Conversation Transcript displays a chronological text log of the exchange be
 
 ### Automatic Conversation Ended Event
 
-> **Info:** This feature is available starting with Druid 9.27.
+{% hint style="info" %}
+**Info:** This feature is available starting with Druid 9.27.
+{% endhint %}
 
 To ensure easy identification of call duration, the Druid SIP channel automatically saves the ActivityEnd event in the [[ChatActivityData]] to mark a conversation as completed in the system (End Time). This closure is triggered automatically by any of the following events:
 
@@ -93,4 +95,6 @@ Displays a granular, multi-colored performance bar totaling processing latency i
 - **TTS**. The time required to synthesize the bot text back into outbound audio.
 - AI Agent. The pure core decision-making and flow-processing duration of the Druid AI Platform engine.
 
-> **Info:** If your voice AI Agent experiences higher-than-expected latency, apply our [best practices](Best%20Practices%20for%20Low%20Voice%20Latency.md) to reduce response times and improve the overall voice experience.
+{% hint style="info" %}
+**Info:** If your voice AI Agent experiences higher-than-expected latency, apply our [best practices](Best%20Practices%20for%20Low%20Voice%20Latency.md) to reduce response times and improve the overall voice experience.
+{% endhint %}
