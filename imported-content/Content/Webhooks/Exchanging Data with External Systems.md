@@ -1,56 +1,47 @@
 ---
-title: "Exchanging Data with External Systems"
+title: Exchanging Data with External Systems
 ---
 
-<a id="ExchangingDatawithExternalSystems"></a>
-
+# Exchanging Data with External Systems
 
 The `/GenericIntegration` endpoint allows external webhooks to send requests to DRUID, triggering a connector integration to process the data. When a webhook call is received, Druid extracts key request details—such as query parameters, headers, and the request body—and stores them in predefined entity fields. The system then executes the specified integration and returns a response.
 
 This enables flexible automation by allowing developers to configure Custom Code integrations that process incoming data and generate tailored responses. By leveraging this feature, you can interact with external systems efficiently while maintaining structured data handling within the Druid AI Platform.
 
-<a id="Limitations"></a>
+### Limitations
 
-## Limitations
+* Supports only the POST method.
+* Accepts only bearer tokens (permanent or short-lived) generated in the Webhooks > Authentication tab. For more information, see [Webhooks](../Webhooks.md).
 
-- Supports only the POST method.
-- Accepts only bearer tokens (permanent or short-lived) generated in the Webhooks > Authentication tab. For more information, see [Webhooks](../Webhooks.md).
-
-<a id="Prerequisites"></a>
-
-## Prerequisites
+### Prerequisites
 
 Before using this endpoint, ensure that the entity where the integration will be executed includes the following fields:
 
-| Field Name | Data Type | Description |
-| --- | --- | --- |
-| RequestParams | String | Stores the query parameters as a string. |
-| RequestBody | JObject | Stores the request body. |
-| RequestHeaders | String | Stores request headers as a concatenated string in URL query format (headerKey1=value1&headerKey2=value2). |
-| ResponseBody | JObject | Stores the response data returned to the external webhook. |
+| Field Name     | Data Type | Description                                                                                                 |
+| -------------- | --------- | ----------------------------------------------------------------------------------------------------------- |
+| RequestParams  | String    | Stores the query parameters as a string.                                                                    |
+| RequestBody    | JObject   | Stores the request body.                                                                                    |
+| RequestHeaders | String    | Stores request headers as a concatenated string in URL query format (headerKey1=value1\&headerKey2=value2). |
+| ResponseBody   | JObject   | Stores the response data returned to the external webhook.                                                  |
 
-<a id="ExecuteSynchronousIntegrations"></a>
-
-## Execute Synchronous Integrations
+### Execute Synchronous Integrations
 
 Synchronous integration is used for requests that are expected to complete quickly. The external webhook waits for the integration to finish and receive the final response in a single API call.
 
-<a id="Syntax"></a>
-
-### Syntax
+#### Syntax
 
 `POST https://<tenant_name>.druidplatform.com/api/Druid/<BotId>/<entityName>/<integrationId>/GenericIntegration?<QueryParams>`
 
 Where:
 
-- `<tenant_name>` and `<BotId>` are automatically filled when you copy the URL from **Webhooks** > **Druid**.
+* `<tenant_name>` and `<BotId>` are automatically filled when you copy the URL from **Webhooks** > **Druid**.
 
-![](../Resources/Images/Webhooks/prefilled%20url.png)
+![](<../../.gitbook/assets/prefilled url.png>)
 
-- Replace `<entityName>` with the name of the entity where the integration was created.
-- Replace `<integrationId>` with the ID of the connector action you want to execute in Druid.
+* Replace `<entityName>` with the name of the entity where the integration was created.
+* Replace `<integrationId>` with the ID of the connector action you want to execute in Druid.
 
-![](../Resources/Images/Webhooks/cnn%20id.png)
+![](<../../.gitbook/assets/cnn id.png>)
 
 {% hint style="info" %}
 **NOTE:** By default, the response type is **application/json** in Druid 9.17 and higher. In previous versions, the default is text/plain. If the external service returns data in a format other than JSON (e.g., text/plain or xml), you must specify that format in the `responseContentType` parameter to ensure the integration processes the payload correctly.
@@ -60,9 +51,7 @@ Where:
 `POST https://<tenant_name>.druidplatform.com/api/Druid/<BotId>/<entityName>/<integrationId>/GenericIntegration?responseContentType=text/plain`
 {% endhint %}
 
-<a id="Request"></a>
-
-### Request
+#### Request
 
 You can send query parameters, additional headers, and a request body (in text or JSON format) with your request.
 
@@ -70,9 +59,9 @@ To include query parameters, add them to the request URL after the **?** symbol,
 
 `POST https://<tenant_name>.druidplatform.com/api/Druid/<BotId>/<entityName>/<integrationId>/GenericIntegration?Parameter1=value&Parameter2=value&...`
 
-![](../Resources/Images/Webhooks/query%20params.png)
+![](<../../.gitbook/assets/query params.png>)
 
-![](../Resources/Images/Webhooks/headers.png)
+![](../../.gitbook/assets/headers.png)
 
 When DRUID receives a request through this endpoint, it processes the request as follows:
 
@@ -80,15 +69,13 @@ When DRUID receives a request through this endpoint, it processes the request as
 2. Performs the integration having the ID provided in the request URL.
 3. Captures and stores request components in dedicated Druid entity fields:
 
-- **RequestParams**: Stores query parameters.
-- **RequestBody**: Stores the request body.
-- **RequestHeaders**: Stores request headers as a concatenated string.
+* **RequestParams**: Stores query parameters.
+* **RequestBody**: Stores the request body.
+* **RequestHeaders**: Stores request headers as a concatenated string.
 
 To use the received data in Druid, create a Custom Code integration and process the data as needed.
 
-<a id="Response"></a>
-
-### Response
+#### Response
 
 By default, the API call response is stored in ResponseBody (JObject). The entire response payload is sent to the external webhook. You can modify the Custom Code integration to send specific text or data.
 
@@ -146,9 +133,7 @@ The following example sends an acknowledgment response instead of a data payload
 })();
 ```
 
-<a id="ExecuteAsynchronousIntegrationsLongRunningRequests"></a>
-
-## Execute Asynchronous Integrations (Long Running Requests)
+### Execute Asynchronous Integrations (Long Running Requests)
 
 Asynchronous integration is used for long running jobs that are expected to take more than 5 minutes to execute. An async integration is ideal for tasks like a bulk SMS campaign where the external SMS provider does not allow sending messages in a single bulk request, requiring Druid to process the list and make sequential API calls over an extended period.
 
@@ -158,19 +143,17 @@ Asynchronous integration is used for long running jobs that are expected to take
 
 Async integration uses a two-step process based on the long polling principle to prevent the webhook from timing out while waiting for the result: one to start the job and one or more to retrieve the final result.
 
-<a id="Step1InitiatetheAsynchronousIntegration"></a>
-
-### Step 1: Initiate the Asynchronous Integration
+#### Step 1: Initiate the Asynchronous Integration
 
 Send a POST request to the standard integration endpoint, including the `asyncResponse = true` request parameter.
 
-#### Syntax
+**Syntax**
 
 `POST https://<tenant_name>.druidplatform.com/api/Druid/<BotId>/<entityName>/<integrationId>/GenericIntegration?Parameter1=value&Parameter2=value&asyncResponse=true`
 
 The API call will immediately return a response containing an invocationId, confirming that the long-running job has started.
 
-![](../Resources/Images/druid%209.10/invocation%20id.png)
+![](<../../.gitbook/assets/invocation id.png>)
 
 {% hint style="info" %}
 **NOTE:** By default, the response type is **application/json**. If the external service returns data in a format other than JSON (e.g., text/plain or xml), you must specify that format in the `responseContentType` parameter to ensure the integration processes the payload correctly.
@@ -180,17 +163,15 @@ The API call will immediately return a response containing an invocationId, conf
 `POST https://<tenant_name>.druidplatform.com/api/Druid/<BotId>/<entityName>/<integrationId>/GenericIntegration?Parameter1=value&Parameter2=value&asyncResponse=true&responseContentType=text/plain`
 {% endhint %}
 
-<a id="Step2RetrievetheIntegrationResponse"></a>
-
-### Step 2: Retrieve the Integration Response
+#### Step 2: Retrieve the Integration Response
 
 Following the long polling principle, make API calls from time to time (e.g., every X minutes) to the separate `GetGenericIntegrationResponse` endpoint. You must provide the **invocationId** received in Step 1 as a request parameter.
 
-#### Syntax
+**Syntax**
 
 `GET https://<tenant_name>.druidplatform.com/api/Druid/<BotId>/GetGenericIntegrationResponse?invocationId=<invocationId>&responseContentType=text/plain`
 
-![](../Resources/Images/druid%209.10/get%20response.png)
+![](<../../.gitbook/assets/get response.png>)
 
 If the integration is still running, the API will return a status indicating the job is not yet complete.
 

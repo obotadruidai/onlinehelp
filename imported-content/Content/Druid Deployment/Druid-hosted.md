@@ -1,9 +1,8 @@
 ---
-title: "Druid-Hosted Full Cloud"
+title: Druid-Hosted Full Cloud
 ---
 
-<a id="DruidHostedFullCloud"></a>
-
+# Druid-Hosted Full Cloud
 
 All Druid solution components are hosted in Microsoft Azure and managed by Druid. With a Druid subscription, we mind the maintenance and updates while you focus on your business.
 
@@ -11,47 +10,41 @@ All Druid solution components are hosted in Microsoft Azure and managed by Druid
 **NOTE:** Integration with your local applications is possible only if the respective applications provide API through the Internet.
 {% endhint %}
 
-<a id="DeploymentArchitecture"></a>
-
-## Deployment Architecture
+### Deployment Architecture
 
 The following diagram shows the main components of the Druid AI Platform from the deployment perspective.
 
-![](../Resources/Images/Deployment/CloudDeploymnet.png)
+![](../../.gitbook/assets/CloudDeploymnet.png)
 
 Each Druid environment is hosted in an Azure Cloud data center located in a specific region, as follows:
 
 | DRUID Environment | Azure Cloud Region |
-| --- | --- |
-| PROD EU | West Europe |
-| PROD US | East US |
-| PROD AU | Australia East |
+| ----------------- | ------------------ |
+| PROD EU           | West Europe        |
+| PROD US           | East US            |
+| PROD AU           | Australia East     |
 
 DRUID provides SaaS from these Azure Cloud regions, with geo-redundant backup storage for added data protection.
 
-<a id="DruidComponents"></a>
+#### Druid Components
 
-### Druid Components
-
-#### Druid AI Platform
+**Druid AI Platform**
 
 The Druid AI Platform is a cloud-based solution, hosted in Microsoft Azure. It includes all the components required to setup and run the AI Agents. The Druid AI Platform is a multi-tenant deployment, hosted by Druid.
 
-#### Druid Connector Host
+**Druid Connector Host**
 
 The Druid Connector Host provides integration between AI Agents and other applications, services, or databases.
 
-#### Druid Data Service
+**Druid Data Service**
 
 The Druid DataService serves as Druid's data storage solution, preserving Druid entity records created and managed within the Druid Platform. This storage simplifies record authoring for authors, who can use these records for Named Entity Recognition (NER) training and various other contexts.
 
-#### Web Channel
+**Web Channel**
 
 The Web Channel (Druid Portal or local AI Agent web pages) and the Druid Mobile app communicates with the AI Agents using the TCP/IP protocol.
 
-<a id="DataFlow"></a>
-
-### Data Flow
+#### Data Flow
 
 In a Druid-hosted deployment, the data flow is the following:
 
@@ -63,15 +56,13 @@ In a Druid-hosted deployment, the data flow is the following:
 
 Figure: Logical Architecture
 
-![](../Resources/Images/Deployment/CloudLogical%20Architecture.png)
+![](<../../.gitbook/assets/CloudLogical Architecture.png>)
 
 Figure: Physical Architecture
 
-![](../Resources/Images/Deployment/CloudPhysicalArchitecture.png)
+![](../../.gitbook/assets/CloudPhysicalArchitecture.png)
 
-<a id="Authentication"></a>
-
-## Authentication
+### Authentication
 
 The Druid AI Platform provides you with extensive authentication methods.
 
@@ -83,29 +74,25 @@ You can authenticate the users chatting with your AI Agent asking specific quest
 
 Usually, the AI Agents for your employees uses Active Directory integration, MS Teams or Slack. The AI Agents for external users, customers and partners, use local Druid two-factor authentication.
 
-<a id="Integrations"></a>
-
-## Integrations
+### Integrations
 
 Druid can quickly connect with any Core Banking, CRM, ERP, BI, HCM through REST, SOAP, Web services, APIs, MQs, SQL connections. If applications do not expose interfaces, the conversational platform can be integrated with RPA - UiPath. ​
 
-For more information on Druid integrations, see [Integrations](../7_Integrations/Enterprise%20Connectors.md).​
+For more information on Druid integrations, see [Integrations](<../7_Integrations/Enterprise Connectors.md>).​
 
-<a id="Channels"></a>
-
-## Channels
+### Channels
 
 Multi-channel deployment is supported by Druid and offers a wide range of digital channels in multiple languages so you can reach your customers wherever they like to be, in their natural digital way. With Druid conversational platform you will deliver the experience your customers and employees expect.​
 
-- External channels: Mobile App, Web, WhatsApp, Facebook Messenger etc.​
-- Internal channels: Microsoft Teams, Intranet, Slack.​
+* External channels: Mobile App, Web, WhatsApp, Facebook Messenger etc.​
+* Internal channels: Microsoft Teams, Intranet, Slack.​
 
 Cross-channel interaction is also available. In addition to standard channels mentioned before, Druid offers support for other channels:
 
-![](../Resources/Images/Deployment/channels.png)
+![](../../.gitbook/assets/channels.png)
 
-## Related Topics
+### Related Topics
 
-- [Channels](../Channels/Channels.md)
-- [Enterprise Connectors](../7_Integrations/Enterprise%20Connectors.md)
-- [Handling Authentication](../How%20to/Handling%20Authentication.md)
+* [Channels](../Channels/Channels.md)
+* [Enterprise Connectors](<../7_Integrations/Enterprise Connectors.md>)
+* [Handling Authentication](<../How to/Handling Authentication.md>)

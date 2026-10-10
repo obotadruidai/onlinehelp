@@ -1,9 +1,8 @@
 ---
-title: "Using Flex Messages for LINE Channel"
+title: Using Flex Messages for LINE Channel
 ---
 
-<a id="UsingFlexMessagesforLINEChannel"></a>
-
+# Using Flex Messages for LINE Channel
 
 LINE Chat Bot API allows sending flex message, to provide the user with a set of predefined actions.
 
@@ -13,7 +12,7 @@ While [LINE documentation](https://developers.viber.com/docs/tools/keyboards/) p
 
 If you have a LINE account, use the [Flex Message Simulator](https://developers.line.biz/flex-simulator/) to customize the layout of your message. After you finish designing the layout of the Flex message, click the **View as JSON** button at the right-top side of the Simulator.
 
-![](../../Resources/Images/Line/view%20json.png)
+![](<../../../.gitbook/assets/view json.png>)
 
 Copy the JSON content.
 

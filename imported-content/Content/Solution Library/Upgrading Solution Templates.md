@@ -1,15 +1,14 @@
 ---
-title: "Upgrading Solution Templates"
+title: Upgrading Solution Templates
 ---
 
-<a id="UpgradingSolutionTemplates"></a>
-
+# Upgrading Solution Templates
 
 Upgrading solution templates is similar to installing them.
 
 From the Solutions Library, select the template you want to upgrade and click the **Upgrade solution** button.
 
-![](../Resources/Images/Solutions%20Library/Solution%20Templates_7.png)
+![](<../../.gitbook/assets/Solution Templates_7.png>)
 
 Click the **Components** tab to check the elements which will be overwritten by the upgrade.
 

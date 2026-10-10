@@ -1,39 +1,34 @@
 ---
-title: "UiPath Delete Entity"
+title: UiPath Delete Entity
 ---
 
-<a id="UiPathDeleteEntity"></a>
-
+# UiPath Delete Entity
 
 Deletes an existing Entity record.
 
 {% hint style="warning" %}
-**IMPORTANT!**  Before defining the integration task, make sure that you have mapped the UiPath Data Service entity to the Druid request entity; otherwise, you won’t be able to set the integration task response.
+**IMPORTANT!** Before defining the integration task, make sure that you have mapped the UiPath Data Service entity to the Druid request entity; otherwise, you won’t be able to set the integration task response.
 {% endhint %}
 
-<a id="GeneralSettings"></a>
+### General Settings
 
-## General Settings
-
-The Edit Connector Task page appears by default on the **General** tab.
+The Edit Connector Task page appears by default on the **General** tab.
 
 Set the general parameters:
 
-| Parameter | Description |
-| --- | --- |
-| Description | Provide a brief relevant description of the task to be performed. |
-| ConnectionCode | Select the UiPath Data Service connection string. |
+| Parameter      | Description                                                       |
+| -------------- | ----------------------------------------------------------------- |
+| Description    | Provide a brief relevant description of the task to be performed. |
+| ConnectionCode | Select the UiPath Data Service connection string.                 |
 
-![](../../Resources/Images/UiPath%20Data%20Service%20Connector/UiPath%20Delete%20Entity.png)
+![](<../../../.gitbook/assets/UiPath Delete Entity.png>)
 
-<a id="Request"></a>
+### Request
 
-## Request
-
-Click the **Request** tab.
+Click the **Request** tab.
 
 In the **Request entity Id** field, select the field that stores the Id of the Druid Request entity.
 
-![](../../Resources/Images/UiPath%20Data%20Service%20Connector/UiPath%20Get%20Entity_1.png)
+![](<../../../.gitbook/assets/UiPath Get Entity_1.png>)
 
 Click the **Save** button to save the integration task and remain on the page or the **Save & Close** button to save and return to Connector Steps.

@@ -1,40 +1,35 @@
 ---
-title: "Machine Reading Zone OCR"
+title: Machine Reading Zone OCR
 ---
 
-<a id="MachineReadingZoneOCR"></a>
-
+# Machine Reading Zone OCR
 
 The Druid API engine performs OCR and data extraction from documents which contain Machine Reading Zone (MRZ), such as Romanian identity cards (both old and new), living permits, passports and residence cards.
 
 {% hint style="info" %}
 **NOTE:**
 
-- In order to use this Druid Vision service, contact [Druid Tech Support](<mailto:support@druidai.com?subject=Request: Activate Druid Vision service MRZ>).
-- For any APIs that are used for testing purposes and not in a production environment, Druid CANNOT be held responsible for the security of the processed data under the General Data Protection Regulation (GDPR). We highly recommend you to use sample data and documents for all APIs in testing environments.
+* In order to use this Druid Vision service, contact [Druid Tech Support](../Druid%20AI%20Services/mailto:support@druidai.com).
+* For any APIs that are used for testing purposes and not in a production environment, Druid CANNOT be held responsible for the security of the processed data under the General Data Protection Regulation (GDPR). We highly recommend you to use sample data and documents for all APIs in testing environments.
 {% endhint %}
 
-<a id="Request"></a>
+### Request
 
-## Request
+|                              |                                                                                                                                                                                              |
+| ---------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Method                       | POST                                                                                                                                                                                         |
+| API Resource URL (Endpoint)  | The endpoint of the Druid Vision MRZ service. For information on how to get the endpoint, see [Druid Vision](<Druid Vision.md>).                                                             |
+| Authorization                | Select **Bearer Token** and provide the Druid Vision **Token**. For information on how to get the endpoint, see [Druid Vision](<Druid Vision.md>). ![](<../../.gitbook/assets/mrz auth.png>) |
+| Headers                      | Content-Type: “multipart/form-data” ![](<../../.gitbook/assets/mrz headers.png>)                                                                                                             |
+| Body without face validation | “file”: (file attachment). Supported formats: png, jpg, pdf. ![](../../.gitbook/assets/mrz.png)                                                                                              |
 
-|  |  |
-| --- | --- |
-| Method | POST |
-| API Resource URL (Endpoint) | The endpoint of the Druid Vision MRZ service. For information on how to get the endpoint, see [Druid Vision](Druid%20Vision.md). |
-| Authorization | Select **Bearer Token** and provide the Druid Vision **Token**. For information on how to get the endpoint, see [Druid Vision](Druid%20Vision.md).  ![](../Resources/Images/OCR%20ID/mrz%20auth.png) |
-| Headers | Content-Type: “multipart/form-data”  ![](../Resources/Images/OCR%20ID/mrz%20headers.png) |
-| Body without face validation | “file”: <attached document file> (file attachment).  Supported formats: png, jpg, pdf.  ![](../Resources/Images/OCR%20ID/mrz.png) |
-
-<a id="Response"></a>
-
-## Response
+### Response
 
 Data Returned by MRZ interpretation is found in the Data section of the response.
 
 Click the desired option below to see the response for the specific request.
 
-## Identity Cards
+### Identity Cards
 
 **Response Example**
 
@@ -197,9 +192,7 @@ Identity Cards [
 ]
 ```
 
-<a id="Passports"></a>
-
-## Passports
+### Passports
 
 **Response Example**
 
@@ -248,16 +241,14 @@ Passports [
  ]
 ```
 
-<a id="Validations"></a>
-
-### Validations
+#### Validations
 
 Validations performed in the MRZ section:
 
-- **DocumentNumber** - checksum cross-checked with MRZ Line\_2 first control digit.
-- **DateOfBirth** - checksum cross-checked with MRZ Line\_2 second control digit.
-- **ExpireDate** - checksum cross-checked with MRZ Line\_2 third control digit.
-- **Line\_2** - checksum of the entire MRZ line 2 (if any of the above fails, the entire line fails and the entire MRZ checksum fails).
-- **Sex** - validation on values “F” or “M”.
-- **DBirthVsDExpiry** - checks if the identity card has expired.
-- **CrossCheck\_DocSeriesNumber** - Crosschecks the document serial number versus the one in the MRZ line. The validation is done for Identity cards only.
+* **DocumentNumber** - checksum cross-checked with MRZ Line\_2 first control digit.
+* **DateOfBirth** - checksum cross-checked with MRZ Line\_2 second control digit.
+* **ExpireDate** - checksum cross-checked with MRZ Line\_2 third control digit.
+* **Line\_2** - checksum of the entire MRZ line 2 (if any of the above fails, the entire line fails and the entire MRZ checksum fails).
+* **Sex** - validation on values “F” or “M”.
+* **DBirthVsDExpiry** - checks if the identity card has expired.
+* **CrossCheck\_DocSeriesNumber** - Crosschecks the document serial number versus the one in the MRZ line. The validation is done for Identity cards only.

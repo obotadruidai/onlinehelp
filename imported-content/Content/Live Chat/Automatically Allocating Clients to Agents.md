@@ -1,32 +1,27 @@
 ---
-title: "Automatically Allocating Clients to Agents"
+title: Automatically Allocating Clients to Agents
 ---
 
-<a id="AutomaticallyAllocatingClientstoAgents"></a>
-
+# Automatically Allocating Clients to Agents
 
 Live Chat allows your helpdesk agents to accept client live chat requests automatically. Once a client initiates a live chat request, DRUID automatically connects them to an available helpdesk agent. Available agents are logged-in agents who did not reach the concurrent chat limit and did not request a break.
 
-<a id="Benefits"></a>
+### Benefits
 
-## Benefits
+* Maximizes the call center productivity by spreading the work evenly across your call center team, ensuring equal workload for all your agents
+* Reduces the clients wait time, which helps reduce queue abandonment.
 
-- Maximizes the call center productivity by spreading the work evenly across your call center team, ensuring equal workload for all your agents
-- Reduces the clients wait time, which helps reduce queue abandonment.
-
-<a id="ConcurrentChatLimit"></a>
-
-## Concurrent Chat Limit
+### Concurrent Chat Limit
 
 To configure the maximum number of chat conversations above which DRUID platform will not automatically connect waiting clients to agents, you should take into consideration the following aspects:
 
-- You have only the generic queue, there are no queues defined. To configure the maximum number of chat conversations above which DRUID platform will not automatically connect waiting clients to agents, go to the AI Agent details, click the Live Chat section header and in the to **Max number of sessions for automatic allocation** field, type the desired value. The default value is 0, which means that automatic allocation is disabled.
+* You have only the generic queue, there are no queues defined. To configure the maximum number of chat conversations above which DRUID platform will not automatically connect waiting clients to agents, go to the AI Agent details, click the Live Chat section header and in the to **Max number of sessions for automatic allocation** field, type the desired value. The default value is 0, which means that automatic allocation is disabled.
 
-![](../Resources/Images/Live%20Chat/set%20limit.png)
+![](<../../.gitbook/assets/set limit.png>)
 
-- You have queues defined. In this case, the **Max number of sessions for automatic allocation** settings no longer appears on the AI Agent details page; the **Has automatic allocation** setting appears in the Live Chat section and it is disabled and non-editable.
+* You have queues defined. In this case, the **Max number of sessions for automatic allocation** settings no longer appears on the AI Agent details page; the **Has automatic allocation** setting appears in the Live Chat section and it is disabled and non-editable.
 
-![](../Resources/Images/Live%20Chat/disbled%20max%20alloc.png)
+![](<../../.gitbook/assets/disbled max alloc.png>)
 
 {% hint style="info" %}
 **NOTE:** Setting the maximum number of sessions for automatic allocation on a queue level is available in DRUID 5.17 and higher. For backwards compatibility, if you have AI Agents with multiple queues defined and automatic allocation was set on the AI Agent, the **Has automatic allocation** setting displays in the AI Agent details and it is disabled and non-editable. You have to set up the **Max number of sessions for automatic allocation** per queue.
@@ -34,11 +29,11 @@ To configure the maximum number of chat conversations above which DRUID platform
 
 Set the **Max number of sessions for automatic allocation** per queue.
 
-![](../Resources/Images/Live%20Chat/automatic%20all%20on%20queue%20level.png)
+![](<../../.gitbook/assets/automatic all on queue level.png>)
 
 After you set the **Max number of sessions for automatic allocation** for a queue / more queues, the **Has automatic allocation** setting in the AI Agent details page is automatically enabled.
 
-![](../Resources/Images/Live%20Chat/auto%20alloc%20enabled.png)
+![](<../../.gitbook/assets/auto alloc enabled.png>)
 
 If the **Max number of sessions for automatic allocation** is set on queues, DRUID takes into consideration the minimum value of the setting on queue level when automatically allocating clients to agents.
 
@@ -54,7 +49,7 @@ If you want to place live chat calls to a specific waiting queue and automatical
 
 For example:
 
-**Example - Automatic allocation to [[MyEntity]].CodeOfTheQueue**
+**Example - Automatic allocation to \[\[MyEntity]].CodeOfTheQueue**
 
 ```
 {
@@ -63,17 +58,17 @@ For example:
 }
 ```
 
-![](../Resources/Images/Live%20Chat/concurrent%20limit%20auto.png)
+![](<../../.gitbook/assets/concurrent limit auto.png>)
 
 {% hint style="info" %}
-**NOTE:** For backwards compatibility, you can put clients in a specific waiting queue by specifying the queue code either from a DRUID entity field ( [[<Entity>]].<QueueCodefield>), or a DRUID local variable (@queue\_code) or directly as a string (e.g., "Loans").
+**NOTE:** For backwards compatibility, you can put clients in a specific waiting queue by specifying the queue code either from a DRUID entity field ( \[\[]].), or a DRUID local variable (@queue\_code) or directly as a string (e.g., "Loans").
 {% endhint %}
 
 When transferring clients to another queue, you can automatically allocate clients to agents. To do so, add the following additional parameter to internal action **TransferHelpdeskCall**: `"AutomaticAllocation" : true` (in JSON format)
 
 For example:
 
-**Example - Automatic allocation to [[MyEntity]].CodeOfTheQueue**
+**Example - Automatic allocation to \[\[MyEntity]].CodeOfTheQueue**
 
 ```
 {
@@ -82,23 +77,21 @@ For example:
 }
 ```
 
-![](../Resources/Images/Live%20Chat/transfer%20allocation.png)
+![](<../../.gitbook/assets/transfer allocation.png>)
 
 {% hint style="info" %}
-**NOTE:** For backwards compatibility, you can transfer clients to a queue by specifying the queue code either from a DRUID entity field ( [[<Entity>]].<QueueCodefield>), or a DRUID local variable (@queue\_code) or directly as a string (e.g., "Loans").
+**NOTE:** For backwards compatibility, you can transfer clients to a queue by specifying the queue code either from a DRUID entity field ( \[\[]].), or a DRUID local variable (@queue\_code) or directly as a string (e.g., "Loans").
 {% endhint %}
 
-<a id="ChatAllocationRules"></a>
-
-## Chat Allocation Rules
+### Chat Allocation Rules
 
 DRUID will automatically allocate clients entering in a waiting queue to an agent, following these rules:
 
-- Allocate client to an agent who is free (has zero ongoing live conversations).
-- If no agent is free, allocate the client to an agent who has not reach out the concurrent chat limit following these criteria:
-  - Allocate client to the agent who has the least number of connected clients.
-  - Allocate client to an agent based on the time of the last connection with a client in ascending order.
-- If all agents are busy (have reach out the concurrent chat limit), during break or have requested a break, the client remains in the waiting queue and will be allocated to the first available agent.
+* Allocate client to an agent who is free (has zero ongoing live conversations).
+* If no agent is free, allocate the client to an agent who has not reach out the concurrent chat limit following these criteria:
+  * Allocate client to the agent who has the least number of connected clients.
+  * Allocate client to an agent based on the time of the last connection with a client in ascending order.
+* If all agents are busy (have reach out the concurrent chat limit), during break or have requested a break, the client remains in the waiting queue and will be allocated to the first available agent.
 
 {% hint style="warning" %}
 **IMPORTANT!** If there are clients waiting in the queue and the working hours of that queue is reached out (clients waiting in the queue outside working hours), DRUID will stop automatically allocating clients to agents in that queue giving the agents the option to choose if they want to take further live chat calls outside the working hours.
@@ -108,12 +101,12 @@ DRUID will automatically allocate clients entering in a waiting queue to an agen
 **NOTE:** For Multichat, DRUID searches available agents defined on the specific queue where the client was initially placed. DRUID will not automatically transfer the client to another queue.
 {% endhint %}
 
-![](../Resources/Images/Live%20Chat/allocating%20agents.png)
+![](<../../.gitbook/assets/allocating agents.png>)
 
-For information on how to enable the Break functionality, see [Live Chat With Multiple Queues](Live%20Chat%20Multiple%20Queues.md), Step 6.
+For information on how to enable the Break functionality, see [Live Chat With Multiple Queues](<Live Chat Multiple Queues.md>), Step 6.
 
-## Related Topics
+### Related Topics
 
-- [Automatically Logging Out Helpdesk Agents](Automatically%20Logging%20Out.md)
-- [Live Chat With Multiple Queues](Live%20Chat%20Multiple%20Queues.md)
-- [Multichat for Helpdesk Agents](Multichat%20v2%20for%20Helpdesk.md)
+* [Automatically Logging Out Helpdesk Agents](<Automatically Logging Out.md>)
+* [Live Chat With Multiple Queues](<Live Chat Multiple Queues.md>)
+* [Multichat for Helpdesk Agents](<Multichat v2 for Helpdesk.md>)

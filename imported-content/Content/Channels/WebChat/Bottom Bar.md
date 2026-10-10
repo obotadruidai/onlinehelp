@@ -1,14 +1,13 @@
 ---
-title: "Bottom Bar"
+title: Bottom Bar
 ---
 
-<a id="BottomBar"></a>
+# Bottom Bar
 
-
-![](../../Resources/Images/WebChat/bottom%20bar.png)
+![](<../../../.gitbook/assets/bottom bar.png>)
 
 {% hint style="info" %}
-**NOTE:** In the HTML template below, make sure that your replace the following: <your Druid tenant>, <your AI Agent ID> and <your AI Agent base URL>.
+**NOTE:** In the HTML template below, make sure that your replace the following: , and .
 {% endhint %}
 
 **HTML Template**

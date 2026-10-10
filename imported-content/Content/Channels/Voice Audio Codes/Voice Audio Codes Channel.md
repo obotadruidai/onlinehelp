@@ -1,9 +1,8 @@
 ---
-title: "Voice AudioCodes"
+title: Voice AudioCodes
 ---
 
-<a id="VoiceAudioCodes"></a>
-
+# Voice AudioCodes
 
 The Voice channel through VoiceAI Connect from AudioCodes enables you to deliver a seamless voice experience to the users talking to your DruidAI Agents.
 
@@ -13,39 +12,35 @@ VoiceAI Connect acts like a hub connecting different telephony systems (telephon
 **Info:** Through AudioCodes, you can integrate DRUID with various telephony systems like: Genesys, Avaya, Cisco. For information on the list of available contact center solutions you can integrate DRUID with, see [SBC Interoperability List](https://www.audiocodes.com/partners/sbc-interoperability-list).
 {% endhint %}
 
-![](../../Resources/Images/Voice%20Audio%20Codes%20Channel/Voice%20Audio%20Codes%20Channel.png)
+![](<../../../.gitbook/assets/Voice Audio Codes Channel.png>)
 
 In a typical AI Agent deployment, VoiceAI Connect receives a phone call and connects it to your AI Agent.
 
-<a id="Prerequisites"></a>
+### Prerequisites
 
-## Prerequisites
+* For Druid on premise deployments, make sure that you provide inbound access from the following messaging endpoint: DRUID.BotApp.
 
-- For Druid on premise deployments, make sure that you provide inbound access from the following messaging endpoint: DRUID.BotApp.
-
-<a id="ActivatetheVoiceAudioCodesChannel"></a>
-
-## Activate the Voice AudioCodes Channel
+### Activate the Voice AudioCodes Channel
 
 To activate the channel, follow these steps:
 
 1. In the Druid Portal, go to AI Agent settings, and then click the **Channels** tab.
 2. Click the **AudioCodes** card.
 
-![](../../Resources/Images/Voice%20Audio%20Codes%20Channel/channel%20card.png)
+![](<../../../.gitbook/assets/channel card.png>)
 
 The channel configuration modal appears.
 
-![](../../Resources/Images/Voice%20Audio%20Codes%20Channel/audiocodes%20modal.png)
+![](<../../../.gitbook/assets/audiocodes modal.png>)
 
 3. Generate the required security token. Click the **Generate** button to create the security token.
 4. By default, the communication between DRUID and VoiceAi Connect is done via the WebSocket protocol. Clear the **Use web socket** checkbox only for special deployments where network restrictions may deny WebSocket communication.
-5. In the **Reply timeout in seconds** field, enter the maximum time (in seconds) the AI Agent has to respond before the call is automatically disconnected. For more information, see [Handle Conversation Disconnect](#_Handle_Conversation_Disconnect).
+5. In the **Reply timeout in seconds** field, enter the maximum time (in seconds) the AI Agent has to respond before the call is automatically disconnected. For more information, see [Handle Conversation Disconnect](<Voice Audio Codes Channel.md#_Handle_Conversation_Disconnect>).
 6. In the **Language map** JSON field, provide a one-to-one mapping between the language codes used by the Speech-To-Text (STT) service provider (key on the left) and DRUID-specific language codes, that is, ISO 639-1(key on the right), providing the Text-to-speech voice DRUID will be using. For reference, consult the locales and voices supported for Text-to-speech provided by [Azure Cognitive Services](https://learn.microsoft.com/en-us/azure/cognitive-services/speech-service/language-support?tabs=tts).
 
 Use the following format for the language codes mapping:
 
-"<STT Provider language code/locale>": "<DRUID-specific language code>|<Text-to-speech voice>"
+"\<STT Provider language code/locale>": "|"
 
 For example:
 
@@ -69,25 +64,23 @@ For example:
 
 After the channel’s activation, the following fields are available in Druid:
 
-- **[[ChatUser]].ChannelId** = “audiocodes”. It identifies the channel.
-- **[[ChatUser]].Phone** – Stores the Calling Party phone number. (The initiator of the call).
-- **[[ChatUser]].CalleePhoneNumber** – Stores the Called Party phone number. (The destination of the call).
+* **\[\[ChatUser]].ChannelId** = “audiocodes”. It identifies the channel.
+* **\[\[ChatUser]].Phone** – Stores the Calling Party phone number. (The initiator of the call).
+* **\[\[ChatUser]].CalleePhoneNumber** – Stores the Called Party phone number. (The destination of the call).
 
 Because the AI Agent can both receive and initiate calls, the values in thelast two fields shift depending on the direction:
 
 Inbound Call (User calls AI Agent):
 
-- **[[ChatUser]].Phone** stores the user phone number.
-- **[[ChatUser]].CalleePhoneNumber** stores the AI Agent phone number.
+* **\[\[ChatUser]].Phone** stores the user phone number.
+* **\[\[ChatUser]].CalleePhoneNumber** stores the AI Agent phone number.
 
 Outbound Call (AI Agent calls User):
 
-- **[[ChatUser]].Phone** stores the AI Agent phone number.
-- **[[ChatUser]].CalleePhoneNumber** stores the user phone number.
+* **\[\[ChatUser]].Phone** stores the AI Agent phone number.
+* **\[\[ChatUser]].CalleePhoneNumber** stores the user phone number.
 
-<a id="HandleConversationDisconnect"></a>
-
-## <a id="_Handle_Conversation_Disconnect"></a>Handle Conversation Disconnect
+### Handle Conversation Disconnect <a href="#handle_conversation_disconnect" id="handle_conversation_disconnect"></a>
 
 A call disconnects if the AI Agent does not respond within the **Reply timeout in seconds** threshold set on the channel or if the user says nothing for 120 seconds.
 
@@ -95,18 +88,14 @@ You can configure what happens on conversation disconnect. Go to the AI Agent de
 
 When the call disconnects, the following data is logged in the conversation context:
 
-- **[[ChatUser]].VoiceConversationTerminatedReason** - The reason for which the call is disconnected. E.g., “Client Side”. The reason of the disconnect can be one of the following:
+* **\[\[ChatUser]].VoiceConversationTerminatedReason** - The reason for which the call is disconnected. E.g., “Client Side”. The reason of the disconnect can be one of the following:
+* **SocketInterrupted** – The connection was interrupted.
+* **UserBecameSilent** – The user said nothing for 120 seconds.
+* **CallTerminatedByCaller** – The user terminated the call.
+* **Error** – An error occurred on AudioCodes side.
+* **\[\[ChatUser]].VoiceConversationTerminatedReasonCode** – The code (text) associated to the disconnect reason. E.g., “client-disconnected”.
 
-- **SocketInterrupted** – The connection was interrupted.
-- **UserBecameSilent** – The user said nothing for 120 seconds.
-- **CallTerminatedByCaller** – The user terminated the call.
-- **Error** – An error occurred on AudioCodes side.
-
-- **[[ChatUser]].VoiceConversationTerminatedReasonCode** – The code (text) associated to the disconnect reason. E.g., “client-disconnected”.
-
-<a id="HandleAudioCodesExceptions"></a>
-
-## <a id="Handle"></a>Handle AudioCodes Exceptions
+### Handle AudioCodes Exceptions <a href="#handle" id="handle"></a>
 
 {% hint style="info" %}
 **Info:** This feature is available starting with Druid 9.30.
@@ -118,17 +107,15 @@ To handle these exceptions:
 
 1. Navigate to AI Agent details > **Dialogue management**.
 2. Click to view the **Voice Call Terminate** flow.
-3. Add a conditional branch with the following expression: **[[ChatUser]].VoiceConversationTerminatedReason == "error"**
+3. Add a conditional branch with the following expression: **\[\[ChatUser]].VoiceConversationTerminatedReason == "error"**
 4. Configure the desired exception handling steps (e.g., alert notifications or fallback TTS provider logic) inside this branch.
 
-<a id="ConversationHistory"></a>
+### Conversation History
 
-## Conversation History
-
-All voice conversations begin with “[Voice start event]”. This is particularly useful for debugging purposes to measure the time from the moment when the call was initiated (AI Agent picks up the call) until the AI Agent says the first message.
+All voice conversations begin with “\[Voice start event]”. This is particularly useful for debugging purposes to measure the time from the moment when the call was initiated (AI Agent picks up the call) until the AI Agent says the first message.
 
 For this channel, Druid also logs in the Conversation History the **Speech-to-Text Confidence Score**, that is, the value representing the confidence level of the recognition received from the speech-to-text provider.
 
-![](../../Resources/Images/Voice%20Audio%20Codes%20Channel/Voice%20Audio%20Codes%20Channel_8.png)
+![](<../../../.gitbook/assets/Voice Audio Codes Channel_8.png>)
 
 When the call disconnects due to an error, the disconnect reason logged in the Conversation History is “PlatformIntegrationError” (the message status is Platform Integration error).

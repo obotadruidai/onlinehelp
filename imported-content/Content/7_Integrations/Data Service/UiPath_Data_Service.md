@@ -1,9 +1,8 @@
 ---
-title: "UiPath Data Service"
+title: UiPath Data Service
 ---
 
-<a id="UiPathDataService"></a>
-
+# UiPath Data Service
 
 authors can easily create DRUID information model (at a tenant level) using UiPath schema, easily synchronizing DRUID informational model with UiPath informational model.
 
@@ -11,71 +10,65 @@ A schema represents the metadata of every entity, which contains information suc
 
 DRUID also provides authors with the option to export DRUID schema in JSON format (containing the entity metadata) they can easily import in UiPath Data Service, eliminating the need to manually create entities in UiPath Data Service to sync DRUID’s informational model.
 
-<a id="Prerequisites"></a>
+### Prerequisites
 
-## Prerequisites
+* You need to have configured a [UiPath Data Service Connector](<../UiPath Data Service Connector/UiPath Data Service Connector.md>) (activate the connection to your UiPath Data Service).
 
-- You need to have configured a [UiPath Data Service Connector](../UiPath%20Data%20Service%20Connector/UiPath%20Data%20Service%20Connector.md) (activate the connection to your UiPath Data Service).
+### Create DRUID entities using UiPath schema
 
-<a id="CreateDRUIDentitiesusingUiPathschema"></a>
-
-## Create DRUID entities using UiPath schema
-
-1. Load the UiPath entity schema, by clicking the **Actions** drop-down and clicking **Refresh UiPath Schema**. If you want to map certain UiPath fields to specific DRUID entities fields you can do so by following the procedure described in section [Loading UiPath Entity Schema and Mapping Fields](../UiPath%20Data%20Service%20Connector/Loading%20UiPath%20Entity%20Schema.md).
+1. Load the UiPath entity schema, by clicking the **Actions** drop-down and clicking **Refresh UiPath Schema**. If you want to map certain UiPath fields to specific DRUID entities fields you can do so by following the procedure described in section [Loading UiPath Entity Schema and Mapping Fields](<../UiPath Data Service Connector/Loading UiPath Entity Schema.md>).
 2. Click the **Actions** drop-down, and then click **Create Druid Entities**.
 
-![](../../Resources/Images/UiPath%20Data/UiPath%20Data%20Service.png)
+![](<../../../.gitbook/assets/UiPath Data Service.png>)
 
 The UiPath entities unmapped to specific DRUID entities are created in DRUID with all associated fields and relationships. DRUID automatically creates the entities under a specific category, that is, **UiPath**. The entities and their fields will have the name of their corresponding UiPath entities.
 
 The reference table below provides you with insights on how DRUID maps different types of UiPath Data Service fields to DRUID field types.
 
-| DRUID field Type | UiPath Data Service Field type |
-| --- | --- |
-| Boolean | Yes/No |
-| Currency | - |
-| Date | Date |
-| DateTime | DateTime |
-| Decimal | Number |
-| Email | Text |
-| Entity | Relationship |
-| Entity List | Relationship |
-| Guid | UniqueId |
-| Hashtag | Text |
-| Integer | Number |
-| InvariantDate | Date |
-| InvariantDateTime | DateTime |
-| InvariantTime | - |
-| IPAddress | Text |
-| Long | - |
-| Percentage | Number |
-| String | Text |
-| Time | - |
-| Url | Text |
-| Entity | ChoiceSet |
-| Entity List | MultiChoiceSet |
-| [[File]] | File |
+| DRUID field Type  | UiPath Data Service Field type |
+| ----------------- | ------------------------------ |
+| Boolean           | Yes/No                         |
+| Currency          | -                              |
+| Date              | Date                           |
+| DateTime          | DateTime                       |
+| Decimal           | Number                         |
+| Email             | Text                           |
+| Entity            | Relationship                   |
+| Entity List       | Relationship                   |
+| Guid              | UniqueId                       |
+| Hashtag           | Text                           |
+| Integer           | Number                         |
+| InvariantDate     | Date                           |
+| InvariantDateTime | DateTime                       |
+| InvariantTime     | -                              |
+| IPAddress         | Text                           |
+| Long              | -                              |
+| Percentage        | Number                         |
+| String            | Text                           |
+| Time              | -                              |
+| Url               | Text                           |
+| Entity            | ChoiceSet                      |
+| Entity List       | MultiChoiceSet                 |
+| \[\[File]]        | File                           |
 
-<a id="ExportDRUIDInformationalmodelalltenantentities"></a>
-
-## Export DRUID Informational model (all tenant entities)
+### Export DRUID Informational model (all tenant entities)
 
 After you create DRUID entities and/or map specific UiPath entities to specific UiPath entities, you can export DRUID informational model in UiPath schema format and then import it in your UiPath Data Service tenant.
 
 To export DRUID informational model (all entities existing on your DRUID tenant) in UiPath schema format:
 
 1. Go to AI Agent details, **Data Service** tab.
-2. Click the **Actions** drop-down and then click **Export UiPath Schema**.
+2. Click the **Actions** drop-down and then click **Export UiPath Schema**.
 
-![](../../Resources/Images/UiPath%20Data/UiPath%20Data%20Service_1.png)
+![](<../../../.gitbook/assets/UiPath Data Service_1.png>)
 
 The Confirm Export pop-up appears.
 
-![](../../Resources/Images/UiPath%20Data/UiPath%20Data%20Service_2.png)
+![](<../../../.gitbook/assets/UiPath Data Service_2.png>)
 
-3. Click **Confirm**. A message informs you how many entities were generated in the export file.
+3.  Click **Confirm**. A message informs you how many entities were generated in the export file.
 
-   ![](../../Resources/Images/UiPath%20Data/UiPath%20Data%20Service_3.png)
+    ![](<../../../.gitbook/assets/UiPath Data Service_3.png>)
 4. Click **Download**. After downloading the file, click the **Close** button to close the pop-up.
 
 DRUID downloads all entities existing on your tenant as a JSON file containing the entities metadata. The file is saved on your local machine in the default download folder.
@@ -83,18 +76,16 @@ DRUID downloads all entities existing on your tenant as a JSON file containing t
 {% hint style="info" %}
 **NOTE:** If you have mapped UiPath entities to existing DRUID entities, the JSON file will contain the schema of the UiPath entity and not the schema of the mapped DRUID entity.
 
-For example, I have the UiPath entity, **CardStatus** mapped to DRUID entity, **CardStatus**.  The JSON file sill contain the schema of the UiPath entity (with fields: **ChoiceSetId** and **ChoiceSetName**).
+For example, I have the UiPath entity, **CardStatus** mapped to DRUID entity, **CardStatus**.  The JSON file sill contain the schema of the UiPath entity (with fields: **ChoiceSetId** and **ChoiceSetName**).
 
-![](../../Resources/Images/UiPath%20Data/UiPath%20Data%20Service_4.png)
+<img src="../../../.gitbook/assets/UiPath Data Service_4.png" alt="" data-size="original">
 
-![](../../Resources/Images/UiPath%20Data/UiPath%20Data%20Service_5.png)
+<img src="../../../.gitbook/assets/UiPath Data Service_5.png" alt="" data-size="original">
 {% endhint %}
 
 You may import the file in your UiPath Data Service tenant with the click of a button. For information on how to import schema, see [UiPath documentation](mailto:https://docs.uipath.com/data-service/docs/schema-export-and-import).
 
-<a id="ExportaspecificDRUIDentityschema"></a>
-
-## Export a specific DRUID entity schema
+### Export a specific DRUID entity schema
 
 There are cases, when instead of exporting all entities existing on your DRUID tenant, you need to export only the UiPath schema of a specific DRUID entity.
 
@@ -102,17 +93,17 @@ To export a DRUID entity in JSON format following the UiPath schema:
 
 1. On your solution entities, click on the desired entity. The entity details page appears.
 2. Click the **Data Service** tab.
-3. Click the **Actions** drop-down and then click **Export UiPath Schema**.
+3. Click the **Actions** drop-down and then click **Export UiPath Schema**.
 
-![](../../Resources/Images/UiPath%20Data/UiPath%20Data%20Service_6.png)
+![](<../../../.gitbook/assets/UiPath Data Service_6.png>)
 
 The Confirm Export pop-up appears.
 
-![](../../Resources/Images/UiPath%20Data/UiPath%20Data%20Service_2.png)
+![](<../../../.gitbook/assets/UiPath Data Service_2.png>)
 
 4. Click **Confirm**. A message informs you that one entity was generated in the export file.
 
-![](../../Resources/Images/UiPath%20Data/UiPath%20Data%20Service_7.png)
+![](<../../../.gitbook/assets/UiPath Data Service_7.png>)
 
 5. Click **Download**.
 

@@ -1,34 +1,29 @@
 ---
-title: "Romanian Living Permit OCR"
+title: Romanian Living Permit OCR
 ---
 
-<a id="RomanianLivingPermitOCR"></a>
-
+# Romanian Living Permit OCR
 
 The Druid API engine performs OCR and data extraction from Romanian living permits.
 
 {% hint style="info" %}
 **NOTE:**
 
-- In order to use this Druid Vision service, contact [Druid Tech Support](<mailto:support@druidai.com?subject=Request: Activate Druid Vision service RO_LivingPermit>).
-- For any APIs that are used for testing purposes and not in a production environment, Druid CANNOT be held responsible for the security of the processed data under the General Data Protection Regulation (GDPR). We highly recommend you to use sample data and documents for all APIs in testing environments.
+* In order to use this Druid Vision service, contact [Druid Tech Support](../Druid%20AI%20Services/mailto:support@druidai.com).
+* For any APIs that are used for testing purposes and not in a production environment, Druid CANNOT be held responsible for the security of the processed data under the General Data Protection Regulation (GDPR). We highly recommend you to use sample data and documents for all APIs in testing environments.
 {% endhint %}
 
-<a id="Request"></a>
+### Request
 
-## Request
+|                             |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| --------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Method                      | POST                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| API Resource URL (Endpoint) | The endpoint of the Druid Vision RO\_LivingPermit service. For information on how to get the endpoint, see [Druid Vision](<Druid Vision.md>).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| Headers                     | Authorization: “Bearer ” Content-Type: “multipart/form-data” ![](<../../.gitbook/assets/permit headers.png>)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| Authorization               | Select **Bearer Token** and provide the Druid Vision **Token**. For information on how to get the endpoint, see [Druid Vision](<Druid Vision.md>). ![](<../../.gitbook/assets/living permit auth.png>)                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| Body                        | - “file”: . - “file”: Supported formats: png, jpg, pdf. ![](../../.gitbook/assets/livepermit.png) If extraction fails due to issues like poor image quality, you can skip any of the following validation checks: - ValidTo - ValidFrom - SIRUTA - to skip the PlaceOfPrint validation - DateOfBirth - Sex - DocNumber - to skip the DocNumber validation from the MRZ cross check Add the **skipValidations** parameter in the request body as many times as validation checks you want to escape from validation. ![](<../../.gitbook/assets/living permit valid.png>) **NOTE:** Skipping validations is available in DRUID 8.1 and higher. |
 
-|  |  |
-| --- | --- |
-| Method | POST |
-| API Resource URL (Endpoint) | The endpoint of the Druid Vision RO\_LivingPermit service. For information on how to get the endpoint, see [Druid Vision](Druid%20Vision.md). |
-| Headers | Authorization: “Bearer <your bearer token>”  Content-Type: “multipart/form-data”  ![](../Resources/Images/OCR%20ID/permit%20headers.png) |
-| Authorization | Select **Bearer Token** and provide the Druid Vision **Token**. For information on how to get the endpoint, see [Druid Vision](Druid%20Vision.md).  ![](../Resources/Images/OCR%20ID/living%20permit%20auth.png) |
-| Body | - “file”: <attached front of the RO live permit>. - “file”: <attached back of the RO live permit>   Supported formats: png, jpg, pdf.  ![](../Resources/Images/OCR%20ID/livepermit.png)  If extraction fails due to issues like poor image quality, you can skip any of the following validation checks:   - ValidTo - ValidFrom - SIRUTA - to skip the PlaceOfPrint validation - DateOfBirth - Sex - DocNumber - to skip the DocNumber validation from the MRZ cross check   Add the **skipValidations** parameter in the request body as many times as validation checks you want to escape from validation.  ![](../Resources/Images/vision/living%20permit%20valid.png)  **NOTE:** Skipping validations is available in DRUID 8.1 and higher. |
-
-<a id="ResponseforoldRomanianlivingpermits"></a>
-
-## Response - for old Romanian living permits
+### Response - for old Romanian living permits
 
 **Response Example**
 
@@ -94,9 +89,7 @@ The Druid API engine performs OCR and data extraction from Romanian living permi
  }
 ```
 
-<a id="ResponsefornewRomanianlivingpermits"></a>
-
-## Response - for new Romanian living permits
+### Response - for new Romanian living permits
 
 The ValidationResult object in the OCR response performs real-time cross-checks on the extracted fields from the Romanian living permit. A validation is considered "Valid" if the extracted information matches the control standards or successfully cross-references with other document sections (such as the Machine Reading Zone - MRZ).
 

@@ -1,34 +1,29 @@
 ---
-title: "Romanian Residence Card OCR"
+title: Romanian Residence Card OCR
 ---
 
-<a id="RomanianResidenceCardOCR"></a>
-
+# Romanian Residence Card OCR
 
 The Druid API engine performs OCR and data extraction from Romanian residence cards.
 
 {% hint style="info" %}
 **NOTE:**
 
-- In order to use this Druid Vision service, contact [Druid Tech Support](<mailto:support@druidai.com?subject=Request: Activate Druid Vision service  RO_ResidenceCard>).
-- For any APIs that are used for testing purposes and not in a production environment, Druid CANNOT be held responsible for the security of the processed data under the General Data Protection Regulation (GDPR). We highly recommend you to use sample data and documents for all APIs in testing environments.
+* In order to use this Druid Vision service, contact [Druid Tech Support](../Druid%20AI%20Services/mailto:support@druidai.com).
+* For any APIs that are used for testing purposes and not in a production environment, Druid CANNOT be held responsible for the security of the processed data under the General Data Protection Regulation (GDPR). We highly recommend you to use sample data and documents for all APIs in testing environments.
 {% endhint %}
 
-<a id="Request"></a>
+### Request
 
-## Request
+|                             |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| --------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Method                      | POST                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| API Resource URL (Endpoint) | The endpoint of the Druid Vision RO\_ResidenceCard service. For information on how to get the endpoint, see [Druid Vision](<Druid Vision.md>).                                                                                                                                                                                                                                                                                                                                                                                                             |
+| Headers                     | Authorization: “Bearer ” Content-Type: “multipart/form-data” ![](<../../.gitbook/assets/residencecard headers.png>)                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| Authorization               | Select **Bearer Token** and provide the Druid Vision **Token**. For information on how to get the endpoint, see [Druid Vision](<Druid Vision.md>). ![](<../../.gitbook/assets/residencecrad auth.png>)                                                                                                                                                                                                                                                                                                                                                     |
+| Body                        | “file”: . Supported formats: png, jpg, pdf. ![](<../../.gitbook/assets/residence card.png>) If extraction fails due to issues like poor image quality, you can skip any of the following validation checks: - SIRUTA - to skip the Address validation - DateOfBirth - Validity - IssueDate - Sex Add the **skipValidations** parameter in the request body as many times as validation checks you want to escape from validation. ![](<../../.gitbook/assets/residence card (1).png>) **NOTE:** Skipping validations is available in DRUID 8.1 and higher. |
 
-|  |  |
-| --- | --- |
-| Method | POST |
-| API Resource URL (Endpoint) | The endpoint of the Druid Vision RO\_ResidenceCard service. For information on how to get the endpoint, see [Druid Vision](Druid%20Vision.md). |
-| Headers | Authorization: “Bearer <your bearer token>”  Content-Type: “multipart/form-data”  ![](../Resources/Images/OCR%20ID/residencecard%20headers.png) |
-| Authorization | Select **Bearer Token** and provide the Druid Vision **Token**. For information on how to get the endpoint, see [Druid Vision](Druid%20Vision.md).  ![](../Resources/Images/OCR%20ID/residencecrad%20auth.png) |
-| Body | “file”: <attached RO residence card document>.  Supported formats: png, jpg, pdf.  ![](../Resources/Images/OCR%20ID/residence%20card.png)  If extraction fails due to issues like poor image quality, you can skip any of the following validation checks:   - SIRUTA - to skip the Address validation - DateOfBirth - Validity - IssueDate - Sex   Add the **skipValidations** parameter in the request body as many times as validation checks you want to escape from validation.  ![](../Resources/Images/vision/residence%20card.png)  **NOTE:** Skipping validations is available in DRUID 8.1 and higher. |
-
-<a id="Response"></a>
-
-## Response
+### Response
 
 **Response Example**
 

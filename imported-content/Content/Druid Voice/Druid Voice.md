@@ -1,9 +1,8 @@
 ---
-title: "Druid Voice"
+title: Druid Voice
 ---
 
-<a id="DruidVoice"></a>
-
+# Druid Voice
 
 Druid Voice enables organizations to deploy AI-powered voice Agents across telephony systems and digital voice channels. By combining speech recognition, conversational AI, large language models, and speech synthesis, Druid Voice allows users to interact naturally with AI Agents using their voice.
 
@@ -11,70 +10,52 @@ Built on the Druid AI Platform, Druid Voice provides a provider-agnostic archite
 
 Whether deployed in contact centers, enterprise telephony environments, or digital channels, Druid Voice allows organizations to automate customer interactions, improve service availability, and deliver natural voice experiences at scale.
 
-<a id="SupportedVoiceChannels"></a>
-
-## Supported Voice Channels
+### Supported Voice Channels
 
 Druid Voice currently supports the following voice channels:
 
-- **Druid SIP (VoIP Gateway)**– Enables AI-powered voice interactions through SIP-based telephony infrastructure, including contact centers, PBXs, SBCs, and SIP trunk providers.
-- **webRTC** – Enables browser-based voice interactions through the Druid WebChat channel.
-  This channel is available starting with Druid 10.1.
+* **Druid SIP (VoIP Gateway)**– Enables AI-powered voice interactions through SIP-based telephony infrastructure, including contact centers, PBXs, SBCs, and SIP trunk providers.
+* **webRTC** – Enables browser-based voice interactions through the Druid WebChat channel. This channel is available starting with Druid 10.1.
 
 Both channels leverage the same Druid AI Platform and can use the same conversational flows, integrations, and AI capabilities.
 
-<a id="ArchitectureOverview"></a>
-
-## Architecture Overview
+### Architecture Overview
 
 The following diagram illustrates the core components of Druid Voice:
 
-![](../Resources/Images/Druid%20Voice/DRUID%20VOICE.png)
+![](<../../.gitbook/assets/DRUID VOICE.png>)
 
-<a id="VoiceChannels"></a>
-
-### Voice Channels
+#### Voice Channels
 
 Voice interactions originate through supported channels such as Druid SIP and webRTC.
 
-<a id="SpeechtoTextServices"></a>
+#### Speech-to-Text Services
 
-### Speech-to-Text Services
+Incoming audio is converted into text using the configured Speech-to-Text provider. Supported providers are documented in the [TTS and STT Vendors](<TTS and STT Vendors.md>) topic.
 
-Incoming audio is converted into text using the configured Speech-to-Text provider. Supported providers are documented in the [TTS and STT Vendors](TTS%20and%20STT%20Vendors.md) topic.
-
-<a id="DruidAIPlatform"></a>
-
-### Druid AI Platform
+#### Druid AI Platform
 
 The Druid AI Platform is the central intelligence layer responsible for processing user requests and generating responses.
 
 The platform includes:
 
-- **Language Understanding Engine** – Extracts intents, entities, and contextual information from user input.
-- **Flow Engine** – Executes conversation logic, orchestrates integrations, and manages dialogue flow.
-- **Audio and Voice Orchestration** – Audio Orchestration and Voice Orchestration are logical platform components that abstract communication between Druid Voice and external or proprietary speech providers. These orchestration layers provide:
+* **Language Understanding Engine** – Extracts intents, entities, and contextual information from user input.
+* **Flow Engine** – Executes conversation logic, orchestrates integrations, and manages dialogue flow.
+* **Audio and Voice Orchestration** – Audio Orchestration and Voice Orchestration are logical platform components that abstract communication between Druid Voice and external or proprietary speech providers. These orchestration layers provide:
+* Provider abstraction
+* Service failover
+* Language-specific configuration
+* Runtime routing of speech requests
 
-- Provider abstraction
-- Service failover
-- Language-specific configuration
-- Runtime routing of speech requests
+#### LLM Services
 
-<a id="LLMServices"></a>
+For use cases requiring generative AI capabilities, the platform can invoke configured Large Language Model providers through the LLM Resources Manager. LLM providers are configured and governed at the tenant level through the Druid Portal. Supported providers are documented in the [LLM Resource Management and Governance](<../Governance & Security/LLM Resource Management and Governance.md>) topic.
 
-### LLM Services
+#### Text-to-Speech Services
 
-For use cases requiring generative AI capabilities, the platform can invoke configured Large Language Model providers through the LLM Resources Manager. LLM providers are configured and governed at the tenant level through the Druid Portal. Supported providers are documented in the [LLM Resource Management and Governance](../Governance%20%26%20Security/LLM%20Resource%20Management%20and%20Governance.md) topic.
+Generated responses are converted into natural-sounding speech using the configured Text-to-Speech provider. Supported providers are documented in the [TTS and STT Vendors](<TTS and STT Vendors.md>) topic.
 
-<a id="TexttoSpeechServices"></a>
-
-### Text-to-Speech Services
-
-Generated responses are converted into natural-sounding speech using the configured Text-to-Speech provider. Supported providers are documented in the [TTS and STT Vendors](TTS%20and%20STT%20Vendors.md) topic.
-
-<a id="EndtoEndCoreVoiceFlow"></a>
-
-## End-to-End Core Voice Flow
+### End-to-End Core Voice Flow
 
 The platform processes real-time voice interactions across five lifecycle stages:
 
@@ -84,12 +65,10 @@ The platform processes real-time voice interactions across five lifecycle stages
 4. **Response Generation**. Dynamic text generation using enterprise LLM resources.
 5. **Speech Synthesis (TTS)**. Conversion of text responses back into natural audio streams for caller delivery.
 
-<a id="Prerequisites"></a>
-
-## Prerequisites
+### Prerequisites
 
 Before using Druid Voice:
 
-- The Druid Voice feature must be enabled for your tenant.
-- You must have at least one published AI Agent.
-- Appropriate STT, TTS, and optional LLM providers must be configured.
+* The Druid Voice feature must be enabled for your tenant.
+* You must have at least one published AI Agent.
+* Appropriate STT, TTS, and optional LLM providers must be configured.

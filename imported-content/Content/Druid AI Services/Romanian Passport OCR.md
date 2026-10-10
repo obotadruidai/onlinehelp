@@ -1,35 +1,30 @@
 ---
-title: "Romanian Passports OCR"
+title: Romanian Passports OCR
 ---
 
-<a id="RomanianPassportsOCR"></a>
-
+# Romanian Passports OCR
 
 The DRUIDAPI engine performs OCR and data extraction from Romanian passports.
 
 {% hint style="info" %}
 **NOTE:**
 
-- In order to use this DRUID Vision service, contact [Druid Tech Support](<mailto:support@druidai.com?subject=Request: Activate Druid Vision service IdentityCard>).
-- For any APIs that are used for testing purposes and not in a production environment, DRUID CANNOT be held responsible for the security of the processed data under the General Data Protection Regulation (GDPR). We highly recommend you to use sample data and documents for all APIs in testing environments.
+* In order to use this DRUID Vision service, contact [Druid Tech Support](../Druid%20AI%20Services/mailto:support@druidai.com).
+* For any APIs that are used for testing purposes and not in a production environment, DRUID CANNOT be held responsible for the security of the processed data under the General Data Protection Regulation (GDPR). We highly recommend you to use sample data and documents for all APIs in testing environments.
 {% endhint %}
 
-<a id="Request"></a>
+### Request
 
-## Request
+|                              |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| ---------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Method                       | POST                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| API Resource URL (Endpoint)  | The endpoint of the DRUID Vision **RO\_Passport** service. For information on how to get the endpoint, see [Druid Vision](<Druid Vision.md>).                                                                                                                                                                                                                                                                                                                                                 |
+| Headers                      | Authorization: “Bearer ” Content-Type: “multipart/form-data”                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| Authorization                | Select **Bearer Token** and provide the Druid Vision **Token**. For information on how to get the endpoint, see [Druid Vision](<Druid Vision.md>).                                                                                                                                                                                                                                                                                                                                            |
+| Body without face validation | “file”: (file attachment). Supported formats: png, jpg, pdf. If extraction fails due to issues like poor image quality, you can skip any of the following validation checks: - DateOfBirth - ExpireDate - IssueDate - Sex - CNP Add the **skipValidations** parameter in the request body as many times as validation checks you want to escape from validation. ![](<../../.gitbook/assets/RO_Passport validation.png>) **NOTE:** Skipping validations is available in DRUID 8.1 and higher. |
+| Body with face validation    | “file”: (file attachment) “selfie”: (file attachment) Supported formats: png, jpg, pdf. **NOTE:** The client/user needs to smile in the selfie, otherwise the face validation will fail.                                                                                                                                                                                                                                                                                                      |
 
-|  |  |
-| --- | --- |
-| Method | POST |
-| API Resource URL (Endpoint) | The endpoint of the DRUID Vision **RO\_Passport** service. For information on how to get the endpoint, see [Druid Vision](Druid%20Vision.md). |
-| Headers | Authorization: “Bearer <your bearer token>”  Content-Type: “multipart/form-data” |
-| Authorization | Select **Bearer Token** and provide the Druid Vision **Token**. For information on how to get the endpoint, see [Druid Vision](Druid%20Vision.md). |
-| Body without face validation | “file”: <attached document file> (file attachment).  Supported formats: png, jpg, pdf.  If extraction fails due to issues like poor image quality, you can skip any of the following validation checks:   - DateOfBirth - ExpireDate - IssueDate - Sex - CNP   Add the **skipValidations** parameter in the request body as many times as validation checks you want to escape from validation.  ![](../Resources/Images/vision/RO_Passport%20validation.png)  **NOTE:** Skipping validations is available in DRUID 8.1 and higher. |
-| Body with face validation | “file”: <attached document file> (file attachment)  “selfie”: <attached selfie photo> (file attachment)  Supported formats: png, jpg, pdf.  **NOTE:** The client/user needs to smile in the selfie, otherwise the face validation will fail. |
-
-<a id="Response"></a>
-
-## Response
+### Response
 
 Data Returned by MRZ interpretation is found in the Data section of the response.
 
@@ -122,69 +117,67 @@ Data Returned by MRZ interpretation is found in the Data section of the response
 }
 ```
 
-<a id="Validations"></a>
-
-### Validations
+#### Validations
 
 Validations performed in the MRZ section:
 
-- **DocumentNumber** - checksum cross-checked with MRZ Line\_2 first control digit.
-- **DateOfBirth** - checksum cross-checked with MRZ Line\_2 second control digit.
-- **DateOfExpiry** - checksum cross-checked with MRZ Line\_2 third control digit.
-- **Line\_2** - checksum of the entire MRZ line 2 (if any of the above fails, the entire line fails and the entire MRZ checksum fails).
-- **Sex** - validation on values “F” or “M”.
+* **DocumentNumber** - checksum cross-checked with MRZ Line\_2 first control digit.
+* **DateOfBirth** - checksum cross-checked with MRZ Line\_2 second control digit.
+* **DateOfExpiry** - checksum cross-checked with MRZ Line\_2 third control digit.
+* **Line\_2** - checksum of the entire MRZ line 2 (if any of the above fails, the entire line fails and the entire MRZ checksum fails).
+* **Sex** - validation on values “F” or “M”.
 
 Based on **Code** and **Nationality**, an existing template of the OCR service is identified:
 
-- If Code = “PE” and Nationality = “ROU”, the template “RO\_Passport” is used.
+* If Code = “PE” and Nationality = “ROU”, the template “RO\_Passport” is used.
 
 The results of the “RO\_Passport” template provide the following validations:
 
-- **CNP** - Status Invalid if the checksum of the CNP cross-checked with the control digit fails. The CNP validation is performed against the ID values provided in the reference table below.
+* **CNP** - Status Invalid if the checksum of the CNP cross-checked with the control digit fails. The CNP validation is performed against the ID values provided in the reference table below.
 
-| ID | County of Birth |
-| --- | --- |
-| 0 | Invalid |
-| 1 | Alba |
-| 2 | Arad |
-| 3 | Argeș |
-| 4 | Bacău |
-| 5 | Bihor |
-| 6 | Bistrița\_Năsăud |
-| 7 | Botoșani |
-| 8 | Brașov |
-| 9 | Brăila |
-| 10 | Buzău |
-| 11 | Caraș\_Severin |
-| 12 | Cluj |
-| 13 | Constanța |
-| 14 | Covasna |
-| 15 | Dâmbovița |
-| 16 | Dolj |
-| 17 | Galați |
-| 18 | Gorj |
-| 19 | Harghita |
-| 20 | Hunedoara |
-| 21 | Ialomița |
-| 22 | Iași |
-| 23 | Ilfov |
-| 24 | Maramureș |
-| 25 | Mehedinți |
-| 26 | Mureș |
-| 27 | Neamț |
-| 28 | Olt |
-| 29 | Prahova |
-| 30 | Satu\_Mare |
-| 31 | Sălaj |
-| 32 | Sibiu |
-| 33 | Suceava |
-| 34 | Teleorman |
-| 35 | Timiș |
-| 36 | Tulcea |
-| 37 | Vaslui |
-| 38 | Vâlcea |
-| 39 | Vrancea |
-| 40 | București |
+| ID | County of Birth      |
+| -- | -------------------- |
+| 0  | Invalid              |
+| 1  | Alba                 |
+| 2  | Arad                 |
+| 3  | Argeș                |
+| 4  | Bacău                |
+| 5  | Bihor                |
+| 6  | Bistrița\_Năsăud     |
+| 7  | Botoșani             |
+| 8  | Brașov               |
+| 9  | Brăila               |
+| 10 | Buzău                |
+| 11 | Caraș\_Severin       |
+| 12 | Cluj                 |
+| 13 | Constanța            |
+| 14 | Covasna              |
+| 15 | Dâmbovița            |
+| 16 | Dolj                 |
+| 17 | Galați               |
+| 18 | Gorj                 |
+| 19 | Harghita             |
+| 20 | Hunedoara            |
+| 21 | Ialomița             |
+| 22 | Iași                 |
+| 23 | Ilfov                |
+| 24 | Maramureș            |
+| 25 | Mehedinți            |
+| 26 | Mureș                |
+| 27 | Neamț                |
+| 28 | Olt                  |
+| 29 | Prahova              |
+| 30 | Satu\_Mare           |
+| 31 | Sălaj                |
+| 32 | Sibiu                |
+| 33 | Suceava              |
+| 34 | Teleorman            |
+| 35 | Timiș                |
+| 36 | Tulcea               |
+| 37 | Vaslui               |
+| 38 | Vâlcea               |
+| 39 | Vrancea              |
+| 40 | București            |
 | 41 | București\_Sector\_1 |
 | 42 | București\_Sector\_2 |
 | 43 | București\_Sector\_3 |
@@ -193,22 +186,20 @@ The results of the “RO\_Passport” template provide the following validations
 | 46 | București\_Sector\_6 |
 | 47 | București\_Sector\_7 |
 | 48 | București\_Sector\_8 |
-| 51 | Călărași |
-| 52 | Giurgiu |
-| 80 | Outside\_Romania |
+| 51 | Călărași             |
+| 52 | Giurgiu              |
+| 80 | Outside\_Romania     |
 
-- **Validity** - Status Invalid if the OCR service fails to retrieve information in **IssueDate** and **ExpiryDate**.
-- **MRZ** - Status Invalid if at least one of the cross-checks on the MRZ field fails (document number, date of birth, date of expiry, sex, IssuingState).
-- **Sex** - Status Invalid if the cross-check of the following fields fail: Sex from CNP, Sex from Document, Sex from MRZ.
-- **DateOfBirth** - Status Invalid if the cross-check of the following fields fail: DateOfBirth from CNP, DateOfBirth from Document, DateOfBirth from MRZ.
-- **IssueDate** - Status Invalid if the cross-check of the following fields fail: IssueDate from Document, IssueDate from MRZ.
-- **Face** - Status Invalid if the "Face.Confidence" is not 1.0 or "Invalid: you forgot to smile" if the customer is not smiling in the selfie. This validation is done for OCR of Romanian identity cards with selfie.
+* **Validity** - Status Invalid if the OCR service fails to retrieve information in **IssueDate** and **ExpiryDate**.
+* **MRZ** - Status Invalid if at least one of the cross-checks on the MRZ field fails (document number, date of birth, date of expiry, sex, IssuingState).
+* **Sex** - Status Invalid if the cross-check of the following fields fail: Sex from CNP, Sex from Document, Sex from MRZ.
+* **DateOfBirth** - Status Invalid if the cross-check of the following fields fail: DateOfBirth from CNP, DateOfBirth from Document, DateOfBirth from MRZ.
+* **IssueDate** - Status Invalid if the cross-check of the following fields fail: IssueDate from Document, IssueDate from MRZ.
+* **Face** - Status Invalid if the "Face.Confidence" is not 1.0 or "Invalid: you forgot to smile" if the customer is not smiling in the selfie. This validation is done for OCR of Romanian identity cards with selfie.
 
 If the data cannot be extracted by the OCR Service, validations on all of the above fields will fail.
 
-<a id="Statusfield"></a>
-
-### Status field
+#### Status field
 
 1. **InvalidDocument**. All validations on the document failed.
 2. **Partial**. There are failed validations.
@@ -218,9 +209,7 @@ If the data cannot be extracted by the OCR Service, validations on all of the ab
 
 If Status is other than “Complete”, you see the error and the validation details in the “ValidationResult” attribute.
 
-<a id="ImageValidation"></a>
-
-### Image Validation
+#### Image Validation
 
 For best results the image is automatically prepared by the API before the OCR process executes, applying multiple image processing algorithms.
 

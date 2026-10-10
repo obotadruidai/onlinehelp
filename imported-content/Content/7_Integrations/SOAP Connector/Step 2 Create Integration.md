@@ -1,9 +1,8 @@
 ---
-title: "Step 2. Create Integration Actions"
+title: Step 2. Create Integration Actions
 ---
 
-<a id="Step2CreateIntegrationActions"></a>
-
+# Step 2. Create Integration Actions
 
 Connector Action (Integration) only represents a host for a group of one or more integration tasks. The integration technology/type (SQL, REST, SOAP, SMTP, etc.) is defined at task level, not at action (integration) level.
 
@@ -15,29 +14,29 @@ Thus, at Connector Action (Integration) level, only the general information is s
 
 Using the solution’s Connector Designer, you can define the integration actions and tasks:
 
-1. From the main menu, click **Integrations**. The Connector Designer appears.
+1. From the main menu, click **Integrations**. The Connector Designer appears.
 
-![](../../Resources/Images/SOAP%20Connector/Step%202%20Create%20Integration.png)
+![](<../../../.gitbook/assets/Step 2 Create Integration (2).png>)
 
-2. At the top-right corner of the page, click the **Create Connector Action** button (![](../../Resources/Images/SOAP%20Connector/Step%202%20Create%20Integration_1.png)). The Edit Connector Action page appears by default on the **ConnectorGeneral** tab.
+2. At the top-right corner of the page, click the **Create Connector Action** button (![](<../../../.gitbook/assets/Step 2 Create Integration_1 (2).png>)). The Edit Connector Action page appears by default on the **ConnectorGeneral** tab.
 3. Provide the connector action general details by setting up the parameters described in the table below.
 
-| Parameter | Description |
-| --- | --- |
-| Name | The name of the action. The field is mandatory. |
-| Description | A brief description of the action that might be useful for other tenant admins. The field is mandatory. |
-| Category | Define on the spot when creating the action. Useful when you want to find the actions in the Integrations list. The field is mandatory. |
-| Icon | Select the icon that best describes the integration. It helps you easily identify the integration action in the list of integrations. If no icon is selected, DRUID will show default icon.  ![](../../Resources/Images/default%20icon.png)  **NOTE:** This field is available in DRUID 1.71 and higher. |
-| Request Entity Name | The entity used by the AI Agent to send data to the external app via the current action. |
-| Response Entity Name | The entity used by the AI Agent to receive data from the external app via the current action. |
-| Is Response Collection | Tick only if the expected response is a list of records.  E.g., a list of holidays, whereas each holiday has its own data set. The response from the integration, in this case, will be saved in [[<ResponseEntity>List]] instead of [[<ResponseEntity>]]. E.g., [[HolidayList]]. |
-| Is Active | Tick to activate the connector action. An inactive connector action will be ignored at runtime. |
+| Parameter              | Description                                                                                                                                                                                                                                                                                              |
+| ---------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Name                   | The name of the action. The field is mandatory.                                                                                                                                                                                                                                                          |
+| Description            | A brief description of the action that might be useful for other tenant admins. The field is mandatory.                                                                                                                                                                                                  |
+| Category               | Define on the spot when creating the action. Useful when you want to find the actions in the Integrations list. The field is mandatory.                                                                                                                                                                  |
+| Icon                   | Select the icon that best describes the integration. It helps you easily identify the integration action in the list of integrations. If no icon is selected, DRUID will show default icon. ![](<../../../.gitbook/assets/default icon.png>) **NOTE:** This field is available in DRUID 1.71 and higher. |
+| Request Entity Name    | The entity used by the AI Agent to send data to the external app via the current action.                                                                                                                                                                                                                 |
+| Response Entity Name   | The entity used by the AI Agent to receive data from the external app via the current action.                                                                                                                                                                                                            |
+| Is Response Collection | Tick only if the expected response is a list of records. E.g., a list of holidays, whereas each holiday has its own data set. The response from the integration, in this case, will be saved in \[\[List]] instead of \[\[]]. E.g., \[\[HolidayList]].                                                   |
+| Is Active              | Tick to activate the connector action. An inactive connector action will be ignored at runtime.                                                                                                                                                                                                          |
 
-![](../../Resources/Images/SOAP%20Connector/Step%202%20Create%20Integration_2.png)
+![](<../../../.gitbook/assets/Step 2 Create Integration_2 (1).png>)
 
-4. Click **Save** to save the settings and stay on page to add tasks, or click **Save & Close** to save and exit the page.
+4. Click **Save** to save the settings and stay on page to add tasks, or click **Save & Close** to save and exit the page.
 
-If you click **Save**, the **ConnectorSteps** tab appears and you can define the SOAP integration tasks as best suits your needs.
+If you click **Save**, the **ConnectorSteps** tab appears and you can define the SOAP integration tasks as best suits your needs.
 
 You can add as many SOAP connector actions as best suit your integration needs.
 

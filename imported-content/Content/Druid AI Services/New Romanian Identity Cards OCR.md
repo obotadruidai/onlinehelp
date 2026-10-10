@@ -1,41 +1,36 @@
 ---
-title: "New Romanian Identity Cards OCR"
+title: New Romanian Identity Cards OCR
 ---
 
-<a id="NewRomanianIdentityCardsOCR"></a>
-
+# New Romanian Identity Cards OCR
 
 The Druid API engine supports OCR and data extraction for Romanian identity cards issued with a CIP (electronic chip), applicable to identity cards issued starting in January 2024.
 
 {% hint style="info" %}
 **NOTE:**
 
-- In order to use this Druid Vision service, contact [Druid Tech Support](<mailto:support@druidai.com?subject=Request: Activate Druid Vision service JAM_VotersId>).
-- For any APIs that are used for testing purposes and not in a production environment, Druid CANNOT be held responsible for the security of the processed data under the General Data Protection Regulation (GDPR). We highly recommend you to use sample data and documents for all APIs in testing environments.
+* In order to use this Druid Vision service, contact [Druid Tech Support](../Druid%20AI%20Services/mailto:support@druidai.com).
+* For any APIs that are used for testing purposes and not in a production environment, Druid CANNOT be held responsible for the security of the processed data under the General Data Protection Regulation (GDPR). We highly recommend you to use sample data and documents for all APIs in testing environments.
 {% endhint %}
 
-<a id="Request"></a>
+### Request
 
-## Request
+|                              |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| ---------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Method                       | POST                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| API Resource URL (Endpoint)  | The endpoint of the Druid Vision **New\_IdentityCard** service. For information on how to get the endpoint, see [Druid Vision](<Druid Vision.md>).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| Authorization                | Select **Bearer Token** and provide the Druid Vision **Token**. For information on how to get the endpoint, see [Druid Vision](<Druid Vision.md>). ![](<../../.gitbook/assets/new ro id auth.png>)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| Headers                      | Content-Type: “multipart/form-data” ![](<../../.gitbook/assets/new ro id headers.png>)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| Body without face validation | “file”: (file attachment). Add two separate PDF files, each containing one side of the identity card. Supported formats: png, jpg, pdf. ![](<../../.gitbook/assets/new ro id files.png>) **NOTE:** In Druid versions prior to 9.12, add a single PDF file containing both sides of the identity card. In Druid 9.12 and higher, you can also upload the official address certificate issued by the national authority responsible for population records and identity documents. **NOTE:** Only original electronic documents downloaded from the Romanian Police Department are accepted. Scans or photos of the document are not allowed. The file must be in PDF format for security reasons. If extraction fails due to issues like poor image quality, you can skip any of the following validation checks: - Sex - DateOfBirth - ExpireDate - SIRUTA - to skip Address validation from the identity card back. Add the **skipValidations** parameter in the request body as many times as validation checks you want to escape from validation. ![](<../../.gitbook/assets/new ro id skip valid.png>) **NOTE:** Skipping validations is available in DRUID 8.1 and higher. |
+| Body with face validation    | “file”: (file attachment). Add the front of the new identity card. “selfie”: (file attachment) ![](<../../.gitbook/assets/mewro id with selfie.png>) Supported formats: png, jpg, pdf. **NOTE:** The user needs to smile in the selfie, otherwise the face validation will fail. **NOTE:** You can skip the same validation checks listed at **Body without face validation**.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 
-|  |  |
-| --- | --- |
-| Method | POST |
-| API Resource URL (Endpoint) | The endpoint of the Druid Vision **New\_IdentityCard** service. For information on how to get the endpoint, see [Druid Vision](Druid%20Vision.md). |
-| Authorization | Select **Bearer Token** and provide the Druid Vision **Token**. For information on how to get the endpoint, see [Druid Vision](Druid%20Vision.md).  ![](../Resources/Images/vision/new%20ro%20id%20auth.png) |
-| Headers | Content-Type: “multipart/form-data”  ![](../Resources/Images/vision/new%20ro%20id%20headers.png) |
-| Body without face validation | “file”: <attached document file> (file attachment). Add two separate PDF files, each containing one side of the identity card.  Supported formats: png, jpg, pdf.  ![](../Resources/Images/vision/new%20ro%20id%20files.png)  **NOTE:** In Druid versions prior to 9.12, add a single PDF file containing both sides of the identity card.  In Druid 9.12 and higher, you can also upload the official address certificate issued by the national authority responsible for population records and identity documents.  **NOTE:** Only original electronic documents downloaded from the Romanian Police Department are accepted. Scans or photos of the document are not allowed. The file must be in PDF format for security reasons.  If extraction fails due to issues like poor image quality, you can skip any of the following validation checks:   - Sex - DateOfBirth - ExpireDate - SIRUTA - to skip Address validation from the identity card back.   Add the **skipValidations** parameter in the request body as many times as validation checks you want to escape from validation.  ![](../Resources/Images/vision/new%20ro%20id%20skip%20valid.png)  **NOTE:** Skipping validations is available in DRUID 8.1 and higher. |
-| Body with face validation | “file”: <attached document file> (file attachment). Add the front of the new identity card.  “selfie”: <attached selfie photo> (file attachment)  ![](../Resources/Images/vision/mewro%20id%20with%20selfie.png)  Supported formats: png, jpg, pdf.  **NOTE:** The user needs to smile in the selfie, otherwise the face validation will fail.    **NOTE:** You can skip the same validation checks listed at **Body without face validation**. |
-
-<a id="Response"></a>
-
-## Response
+### Response
 
 Data Returned by MRZ interpretation is found in the Data section of the response.
 
 Click the desired option below to see the response for the specific request.
 
-## Identity Card without face validation
+### Identity Card without face validation
 
 **Response Example**
 
@@ -172,7 +167,7 @@ Click the desired option below to see the response for the specific request.
 }
 ```
 
-## Identity Card with face validation
+### Identity Card with face validation
 
 **Response Example**
 
@@ -244,70 +239,68 @@ Click the desired option below to see the response for the specific request.
 }
 ```
 
-<a id="Validations"></a>
-
-### Validations
+#### Validations
 
 Validations performed in the MRZ section:
 
-- **DocumentNumber** - checksum cross-checked with MRZ Line\_2 first control digit.
-- **DateOfBirth** - checksum cross-checked with MRZ Line\_2 second control digit.
-- **DateOfExpiry** - checksum cross-checked with MRZ Line\_2 third control digit.
-- **Line\_2** - checksum of the entire MRZ line 2 (if any of the above fails, the entire line fails and the entire MRZ checksum fails).
-- **Sex** - validation on values “F” or “M”.
+* **DocumentNumber** - checksum cross-checked with MRZ Line\_2 first control digit.
+* **DateOfBirth** - checksum cross-checked with MRZ Line\_2 second control digit.
+* **DateOfExpiry** - checksum cross-checked with MRZ Line\_2 third control digit.
+* **Line\_2** - checksum of the entire MRZ line 2 (if any of the above fails, the entire line fails and the entire MRZ checksum fails).
+* **Sex** - validation on values “F” or “M”.
 
 Based on **Code** and **Nationality**, an existing template of the OCR service is identified:
 
-- If Code = “ID” and Nationality = “ROU”, the template “Identity Card” is used.
-- If Code = “IS” and Nationality = “ROU”, the template “RO\_ResidenceCard” is used.
+* If Code = “ID” and Nationality = “ROU”, the template “Identity Card” is used.
+* If Code = “IS” and Nationality = “ROU”, the template “RO\_ResidenceCard” is used.
 
 The results of the “Identity Card” template provide the following validations:
 
-- **CNP** - Status Invalid if the checksum of the CNP cross-checked with the control digit fails. The CNP validation is performed against the ID values provided in the reference table below.
+* **CNP** - Status Invalid if the checksum of the CNP cross-checked with the control digit fails. The CNP validation is performed against the ID values provided in the reference table below.
 
-| ID | County of Birth |
-| --- | --- |
-| 0 | Invalid |
-| 1 | Alba |
-| 2 | Arad |
-| 3 | Argeș |
-| 4 | Bacău |
-| 5 | Bihor |
-| 6 | Bistrița\_Năsăud |
-| 7 | Botoșani |
-| 8 | Brașov |
-| 9 | Brăila |
-| 10 | Buzău |
-| 11 | Caraș\_Severin |
-| 12 | Cluj |
-| 13 | Constanța |
-| 14 | Covasna |
-| 15 | Dâmbovița |
-| 16 | Dolj |
-| 17 | Galați |
-| 18 | Gorj |
-| 19 | Harghita |
-| 20 | Hunedoara |
-| 21 | Ialomița |
-| 22 | Iași |
-| 23 | Ilfov |
-| 24 | Maramureș |
-| 25 | Mehedinți |
-| 26 | Mureș |
-| 27 | Neamț |
-| 28 | Olt |
-| 29 | Prahova |
-| 30 | Satu\_Mare |
-| 31 | Sălaj |
-| 32 | Sibiu |
-| 33 | Suceava |
-| 34 | Teleorman |
-| 35 | Timiș |
-| 36 | Tulcea |
-| 37 | Vaslui |
-| 38 | Vâlcea |
-| 39 | Vrancea |
-| 40 | București |
+| ID | County of Birth      |
+| -- | -------------------- |
+| 0  | Invalid              |
+| 1  | Alba                 |
+| 2  | Arad                 |
+| 3  | Argeș                |
+| 4  | Bacău                |
+| 5  | Bihor                |
+| 6  | Bistrița\_Năsăud     |
+| 7  | Botoșani             |
+| 8  | Brașov               |
+| 9  | Brăila               |
+| 10 | Buzău                |
+| 11 | Caraș\_Severin       |
+| 12 | Cluj                 |
+| 13 | Constanța            |
+| 14 | Covasna              |
+| 15 | Dâmbovița            |
+| 16 | Dolj                 |
+| 17 | Galați               |
+| 18 | Gorj                 |
+| 19 | Harghita             |
+| 20 | Hunedoara            |
+| 21 | Ialomița             |
+| 22 | Iași                 |
+| 23 | Ilfov                |
+| 24 | Maramureș            |
+| 25 | Mehedinți            |
+| 26 | Mureș                |
+| 27 | Neamț                |
+| 28 | Olt                  |
+| 29 | Prahova              |
+| 30 | Satu\_Mare           |
+| 31 | Sălaj                |
+| 32 | Sibiu                |
+| 33 | Suceava              |
+| 34 | Teleorman            |
+| 35 | Timiș                |
+| 36 | Tulcea               |
+| 37 | Vaslui               |
+| 38 | Vâlcea               |
+| 39 | Vrancea              |
+| 40 | București            |
 | 41 | București\_Sector\_1 |
 | 42 | București\_Sector\_2 |
 | 43 | București\_Sector\_3 |
@@ -316,24 +309,22 @@ The results of the “Identity Card” template provide the following validation
 | 46 | București\_Sector\_6 |
 | 47 | București\_Sector\_7 |
 | 48 | București\_Sector\_8 |
-| 51 | Călărași |
-| 52 | Giurgiu |
-| 80 | Outside\_Romania |
+| 51 | Călărași             |
+| 52 | Giurgiu              |
+| 80 | Outside\_Romania     |
 
-- **Validity** - Status Invalid if the OCR service fails to retrieve information in **IssueDate** and **ExpiryDate**.
-- **MRZ** - Status Invalid if at least one of the cross-checks on the MRZ field fails (document number, date of birth, date of expiry, sex, IssuingState).
-- **Sex** - Status Invalid if the cross-check of the following fields fail: Sex from CNP, Sex from Document, Sex from MRZ.
-- **DateOfBirth** - Status Invalid if the cross-check of the following fields fail: DateOfBirth from CNP, DateOfBirth from Document, DateOfBirth from MRZ.
-- **IssueDate** - Status Invalid if the cross-check of the following fields fail: IssueDate from Document, IssueDate from MRZ.
-- **ExpireDate** - Status Invalid if the cross-check of the following fields fail: ExpireDate from Document, ExpireDate from MRZ.
-- **SIRUTA** - Status Invalid if the value of field Locality cannot be matched to the SIRUTA dictionary.
-- **Face** - Status Invalid if the "Face.Confidence" is not 1.0 or "Invalid: you forgot to smile" if the customer is not smiling in the selfie. This validation is done for OCR of Romanian identity cards with selfie.
+* **Validity** - Status Invalid if the OCR service fails to retrieve information in **IssueDate** and **ExpiryDate**.
+* **MRZ** - Status Invalid if at least one of the cross-checks on the MRZ field fails (document number, date of birth, date of expiry, sex, IssuingState).
+* **Sex** - Status Invalid if the cross-check of the following fields fail: Sex from CNP, Sex from Document, Sex from MRZ.
+* **DateOfBirth** - Status Invalid if the cross-check of the following fields fail: DateOfBirth from CNP, DateOfBirth from Document, DateOfBirth from MRZ.
+* **IssueDate** - Status Invalid if the cross-check of the following fields fail: IssueDate from Document, IssueDate from MRZ.
+* **ExpireDate** - Status Invalid if the cross-check of the following fields fail: ExpireDate from Document, ExpireDate from MRZ.
+* **SIRUTA** - Status Invalid if the value of field Locality cannot be matched to the SIRUTA dictionary.
+* **Face** - Status Invalid if the "Face.Confidence" is not 1.0 or "Invalid: you forgot to smile" if the customer is not smiling in the selfie. This validation is done for OCR of Romanian identity cards with selfie.
 
 If the data cannot be extracted by the OCR Service, validations on all of the above fields will fail.
 
-<a id="Statusfield"></a>
-
-### Status field
+#### Status field
 
 1. **InvalidDocument**. All validations on the document failed.
 2. **Partial**. There are failed validations.
@@ -343,9 +334,7 @@ If the data cannot be extracted by the OCR Service, validations on all of the ab
 
 If Status is other than “Complete”, you see the error and the validation details in the “ValidationResult” attribute.
 
-<a id="ImageValidation"></a>
-
-### Image Validation
+#### Image Validation
 
 To ensure optimal OCR results, the API automatically enhances the image before processing by applying multiple image optimization algorithms.
 

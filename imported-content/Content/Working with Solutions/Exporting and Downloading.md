@@ -1,27 +1,24 @@
 ---
-title: "Export Solutions"
+title: Export Solutions
 ---
 
-<a id="ExportSolutions"></a>
-
+# Export Solutions
 
 Before exporting a solution, you need to link all elements (integration entities, document templates, apps roles) that you need on destination (especially those which do not exist on destination, on the tenant or environment where you will import the solution); otherwise, the solution import will fail.
 
-<a id="Linkentityentityfieldstothecurrentsolution"></a>
-
-## Link entity / entity fields to the current solution
+### Link entity / entity fields to the current solution
 
 Linking entities / entity fields to the current solution is useful when you want to export a solution with views and forms defined for specific entities.
 
-To link entities /entity fields, from the **Solution Contents** menu, click **Entities** and at the top-right corner of the Entities page, click ![](../Resources/Images/Working%20with%20solutions/linbk%20button.png). Click the link icon displayed in line with the entities you want to link and at the top of the page, click the **Confirm** button.
+To link entities /entity fields, from the **Solution Contents** menu, click **Entities** and at the top-right corner of the Entities page, click ![](<../../.gitbook/assets/linbk button.png>). Click the link icon displayed in line with the entities you want to link and at the top of the page, click the **Confirm** button.
 
-![](../Resources/Images/Working%20with%20solutions/link%20entities.png)
+![](<../../.gitbook/assets/link entities (1).png>)
 
 The Link entities and entity fields pop-up appears which lists the entities you selected and all the entities already linked to the current solution (if any).
 
 You can link all entity fields or only specific fields that are used in web views, forms and charts. Click the drop-down displayed in front of the entity name and select all the entity fields or only the ones you want to link to the current solution, then click **Save**.
 
-![](../Resources/Images/Working%20with%20solutions/link%20entities%20popup.png)
+![](<../../.gitbook/assets/link entities popup.png>)
 
 {% hint style="info" %}
 **Info:** It might take up to a minute to link the entity fields to the current solution; therefore, you might want to wait until the process completes.
@@ -31,38 +28,34 @@ You can link all entity fields or only specific fields that are used in web view
 **NOTE:** If you link entities that have views, forms and charts defined, then the workspaces using those entity elements are also linked to the current solution and will be included in the solution export package. If you want to exclude the workspaces, select **Select all without Views, Forms & Charts**.
 {% endhint %}
 
-<a id="Linkelementstothecurrentsolution"></a>
-
-## Link elements to the current solution
+### Link elements to the current solution
 
 To link elements to the current solution, from the main menu, click **References**, click the Link icon corresponding to the elements you want to link and click **Apply changes**.
 
-![](../Resources/Images/Working%20with%20solutions/references.png)
+![](../../.gitbook/assets/references.png)
 
 The elements are linked to the current solution, that is the solution has all needed dependencies. You can now export the solution.
 
-<a id="Exportasolution"></a>
-
-## Export a solution
+### Export a solution
 
 To export a solution, at the top-right corner of the solution configuration page, click the **Export solution** button.
 
-![](../Resources/Images/Working%20with%20solutions/Exporting%20and%20Downloading.png)
+![](<../../.gitbook/assets/Exporting and Downloading.png>)
 
 You can include the following AI Agent-related settings in the solution export package, by selecting the **Include AI Agent settings** toggle:
 
-- Enable Web Socket
-- Block File Upload
-- Is out of band upload
-- Bot framework version
-- Authentication expiration minutes
-- Additional languages (including machine translation setup, but without credentials)
-- Theme and webchat custom parameters
-- NLU settings (without credentials to external NLU providers)
-- Dialog management (special flows)
-- Live Chat configurations (without Queues and Agents)
-- Analytics
-- Roles
+* Enable Web Socket
+* Block File Upload
+* Is out of band upload
+* Bot framework version
+* Authentication expiration minutes
+* Additional languages (including machine translation setup, but without credentials)
+* Theme and webchat custom parameters
+* NLU settings (without credentials to external NLU providers)
+* Dialog management (special flows)
+* Live Chat configurations (without Queues and Agents)
+* Analytics
+* Roles
 
 {% hint style="warning" %}
 **IMPORTANT!** Including the AI Agent-related settings in the solution export package is fully secure as it does not contain any credentials. After the solution import on the destination AI Agent, you have to manually enter the credentials if specific AI Agent settings require credentials (e.g. machine translation).
@@ -76,9 +69,7 @@ If the export was successful, Druid generates a new archive (zip file) with the 
 
 At the top of the configuration page, the status of the solution packaging operation appears. It's “Pending” while the solution is packed in a zip file and “Failed” if the operation failed. If status is “Pending”, click the **Refresh** button to refresh the status of the solution packaging operation.
 
-<a id="Downloadasolution"></a>
-
-## Download a solution
+### Download a solution
 
 Downloading a solution is similar to exporting it but faster.
 

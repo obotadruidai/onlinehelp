@@ -1,22 +1,20 @@
 ---
-title: "Using Connector Local Variables"
+title: Using Connector Local Variables
 ---
 
-<a id="UsingConnectorLocalVariables"></a>
+# Using Connector Local Variables
 
-
-Connector local variables are variables you can use from the integration context between the integration tasks.
-These variables are of type string.
+Connector local variables are variables you can use from the integration context between the integration tasks. These variables are of type string.
 
 {% hint style="warning" %}
 **IMPORTANT!** You can use the connector local variables only within the integration context. You cannot use local variables set on flow steps within integrations and neither can you use connector local variables as local variables between flow steps.
 
-![](../Resources/Images/druid%205.17/nnn%20variables.png)
+<img src="../../.gitbook/assets/nnn variables.png" alt="" data-size="original">
 {% endhint %}
 
 To set a connector local variable, on the response of an integration task use the format **@variable**.
 
-![](../Resources/Images/druid%205.17/set%20cnn%20variable.png)
+![](<../../.gitbook/assets/set cnn variable.png>)
 
 To use a connector local variable within the integration context on integrations tasks of type other than Custom Code, use the following format: `@variable`.
 

@@ -1,41 +1,32 @@
 ---
-title: "Custom Code"
+title: Custom Code
 ---
 
-<a id="CustomCode"></a>
-
+# Custom Code
 
 The Custom Code integration task evolves the DRUID Connector into a business operations layer. Use it to implement business rules that always apply either to the flow engine, web views, forms, and external applications.
 
 To define the business rules, you write custom JavaScript code.
 
-<a id="Usecases"></a>
+### Use cases
 
-## Use cases
+* Perform data validations and raise errors when the data validation fails. For example:
+* When updating a client account check that it includes valid person ID, first name and last name, regardless of where the save is triggered: flow engine, web form or external applications.
+* When creating a new account, check that there is no other account in external system with the same personal identification code regardless of where the save is triggered: flow engine, web form or external applications.
+* Do extensive calculations. E.g., perform forecast calculations.
+* Transform the data
+* Execute conditional tasks.
+* Move business logic from the flows into integrations.
 
-- Perform data validations and raise errors when the data validation fails. For example:
+### Prerequisite
 
-- When updating a client account check that it includes valid person ID, first name and last name, regardless of where the save is triggered: flow engine, web form or external applications.
-- When creating a new account, check that there is no other account in external system with the same personal identification code regardless of where the save is triggered: flow engine, web form or external applications.
+* You should have medium to extensive JavaScript knowledge.
 
-- Do extensive calculations. E.g., perform forecast calculations.
-- Transform the data
-- Execute conditional tasks.
-- Move business logic from the flows into integrations.
-
-<a id="Prerequisite"></a>
-
-## Prerequisite
-
-- You should have medium to extensive JavaScript knowledge.
-
-<a id="HowtousetheCustomCodeintegrationtask"></a>
-
-## How to use the Custom Code integration task
+### How to use the Custom Code integration task
 
 To add a Custom Code task in the Connector Diagram, click the Palette icon, the click on **Integration - Common**. Drag Custom Code onto the diagram and drop it where you want the integration to be executed.
 
-![](../Resources/Images/Custom%20Code/add%20custom%20code%20task.png)
+![](<../../.gitbook/assets/add custom code task.png>)
 
 In the **Description** field, provide a brief, relevant description of the business rule to be implemented.
 
@@ -43,29 +34,27 @@ The **Code Extension** field contains a default code snippet for the Custom Code
 
 To write your own code, we recommend maximizing the code snippet editor for better visibility.
 
-![](../Resources/Images/Custom%20Code/MAXIMIZE.png)
+![](../../.gitbook/assets/MAXIMIZE.png)
 
 You can either modify the default snippet or use a blank template and function templates, which are categorized under **Add snippet**. To learn more about available functions and templates, refer to the relevant section in this topic.
 
-![](../Resources/Images/Custom%20Code/blank%20template.png)
+![](<../../.gitbook/assets/blank template.png>)
 
 Use JavaScript to implement your business rule. The Request Entity and Response Entity are displayed at the top of the Code Extension field for reference.
 
 Once your code is complete, save the code snippet.
 
-![](../Resources/Images/Custom%20Code/save%20code.png)
+![](<../../.gitbook/assets/save code.png>)
 
 Save the integration.
 
-![](../Resources/Images/Custom%20Code/save%20custom%20code.png)
+![](<../../.gitbook/assets/save custom code.png>)
 
 The section below provides the different template snippets and function templates you can use to write your business rules in the code snippet.
 
-<a id="Templates"></a>
+### Templates
 
-## Templates
-
-## Blank template
+### Blank template
 
 The blank template contains an immediately invoked function expression with an empty main function. Use it when you want to create your business rules from scratch. You can use the other function and method templates available.
 
@@ -77,7 +66,7 @@ The blank template contains an immediately invoked function expression with an e
 })()
 ```
 
-## Default snippet
+### Default snippet
 
 The Druid default snippet is a JavaScript template for handling request and response entity manipulation within a connector action. It initializes or modifies the request entity, logs task details, executes predefined tasks, processes the response entity, and handles errors. The snippet ensures smooth data flow and task execution while allowing for customization.
 
@@ -131,11 +120,9 @@ Context.CompleteAction();
 })()
 ```
 
-<a id="Context"></a>
+### Context
 
-## Context
-
-## Request entity
+### Request entity
 
 The Request Entity template provides a structure for retrieving, creating, and modifying request entity values within a connector action. It ensures the request entity is initialized, updates its fields as needed, and saves the changes back to the context. Use this template when you need to manipulate request data before processing further actions.
 
@@ -151,7 +138,7 @@ Context.SetRequestEntity(requestEntity);
 ```
 
 {% hint style="info" %}
-**NOTE:**  The entity you update using custom code is shared within the connector action context. This means that the order in which this task is executed is the one for any connector integration task (e.g. REST) and the context of the response entity is kept between integration tasks and you can use it on subsequent tasks (on the connector action).
+**NOTE:** The entity you update using custom code is shared within the connector action context. This means that the order in which this task is executed is the one for any connector integration task (e.g. REST) and the context of the response entity is kept between integration tasks and you can use it on subsequent tasks (on the connector action).
 {% endhint %}
 
 Use DRUID custom functions `EntityFactory.CreateCollection("entity name")` and `EntityFactory.CreateEntityByName("entity name")` to create entity objects.
@@ -184,7 +171,7 @@ Context.SetRequestEntity(requestEntity);
 }) ()
 ```
 
-## Response entity
+### Response entity
 
 The **Response entity** template provides a structure for modifying and updating response entity values within a connector action. It retrieves the response entity, updates its fields, and saves the changes back to the context. Use this template when you need to manipulate response data before it is returned.
 
@@ -199,9 +186,9 @@ const responseEntity = Context.GetResponseEntity();
 Context.SetResponseEntity(responseEntity);
 ```
 
-## Chat user
+### Chat user
 
-The Chat User template provides a way to retrieve the authenticated chat user as a constant within your custom code. This allows you to apply specific business rules based on the user's details. The [[ChatUser]] entity is read-only, meaning you can access its information but cannot modify, delete, or create new records. Use this template when you need to personalize logic based on the chat user.
+The Chat User template provides a way to retrieve the authenticated chat user as a constant within your custom code. This allows you to apply specific business rules based on the user's details. The \[\[ChatUser]] entity is read-only, meaning you can access its information but cannot modify, delete, or create new records. Use this template when you need to personalize logic based on the chat user.
 
 **Chat user Template**
 
@@ -209,7 +196,7 @@ The Chat User template provides a way to retrieve the authenticated chat user as
 const chatUserEntity = Context.GetChatUserEntity();
 ```
 
-## Set PageInfo TotalCount
+### Set PageInfo TotalCount
 
 This template enables server-side pagination by defining the total number of records available for web views displaying data from non-Druid Data Service databases. By retrieving the totalCount variable from the context and converting it to an integer, this template ensures efficient handling of large data sets, improving performance and responsiveness. Use this template to optimize data loading and enhance the user experience in paginated views.
 
@@ -220,11 +207,9 @@ This template enables server-side pagination by defining the total number of rec
     Context.SetPageInfoTotalCount(parseInt(totalCount));
 ```
 
-<a id="Operational"></a>
+### Operational
 
-## Operational
-
-## Execute task
+### Execute task
 
 This method allows you to execute a specified integration task within the current connector action. You can trigger tasks like REST API calls, data processing, or other operations as part of the workflow. Use this template when you need to run a specific task dynamically within your custom code.
 
@@ -234,7 +219,7 @@ This method allows you to execute a specified integration task within the curren
 Context.ExecuteTask("TaskName");
 ```
 
-## Log request task
+### Log request task
 
 This method enables you to log key details about the request in the task's Audit Log, such as entity values, during the execution of the connector action. It’s useful for auditing and troubleshooting by documenting request-related activities.
 
@@ -245,7 +230,7 @@ This method enables you to log key details about the request in the task's Audit
 Context.LogRequestTask("Request Entity Name value is " + requestEntity.Name);
 ```
 
-## Log response task
+### Log response task
 
 This method enables you to log key details about the response in the task's Audit Log, such as entity values, during the execution of the connector action. It’s useful for auditing and troubleshooting by documenting response-related activities.
 
@@ -256,7 +241,7 @@ This method enables you to log key details about the response in the task's Audi
 Context.LogRequestTask("Response Entity Name value is " + responseEntity.Name);
 ```
 
-## Raise error
+### Raise error
 
 This method allows you to validate data consistency or halt execution when business conditions are not met. You can trigger an error, stop the current connector action execution, and return a specific error type and message. This method is helpful for enforcing business rules and ensuring data integrity during processing.
 
@@ -285,7 +270,7 @@ if(responseEntity.ErrorCode == "ERROR"){
 })()
 ```
 
-## Complete action
+### Complete action
 
 This method stops the current connector action execution without running any subsequent integration tasks. It is used to prematurely terminate the workflow when no further processing is needed, ensuring that the remaining tasks are skipped. This is useful when you want to end the action early based on specific conditions or logic.
 
@@ -295,9 +280,7 @@ This method stops the current connector action execution without running any sub
 Context.CompleteAction();
 ```
 
-<a id="Wait"></a>
-
-## Wait
+### Wait
 
 This method introduces a delay before executing a task. You can specify a wait time of up to 5000 ms (5 seconds). The Wait() method can be called a maximum of 3 times per task.
 
@@ -317,15 +300,13 @@ Context.LogRequestTask("hello after the second wait");
 
 In this example, the Wait() method pauses execution twice, first for 2000 ms (2 seconds) and then for 3000 ms (3 seconds), allowing better control over task timing within integration tasks.
 
-<a id="Entity"></a>
-
-## Entity
+### Entity
 
 {% hint style="info" %}
-**NOTE:** You can refer to entities and entity collections by name in the Custom Code editor. If you use the Entity explorer when creating an entity or entity collection, remove the brackets “[[ ]]”.
+**NOTE:** You can refer to entities and entity collections by name in the Custom Code editor. If you use the Entity explorer when creating an entity or entity collection, remove the brackets “\[\[ ]]”.
 {% endhint %}
 
-## Create entity
+### Create entity
 
 This method creates a new entity of the request entity type if it has not been initialized in the context. It ensures that an entity is available for manipulation or further processing.
 
@@ -343,7 +324,7 @@ if(requestEntity == null){
 
 In the provided template, if the requestEntity is null (not initialized), it is created using `EntityFactory.CreateEntityByName("REQUESTENTITYNAME")`. This allows you to work with a new entity when needed.
 
-*Example: create an opportunity*
+_Example: create an opportunity_
 
 The following example creates an opportunity when it has a Name and an Estimated Value greater than 50. Specific business errors will inform the user why opportunity creation has failed.
 
@@ -370,7 +351,7 @@ if(requestEntity.EstimatedValue <=50 ){
 })()
 ```
 
-## Create entity list
+### Create entity list
 
 This method creates a new collection of the request entity type if it has not been initialized in the context. It is useful when you need to initialize a collection for further manipulation or processing.
 
@@ -388,7 +369,7 @@ if(entityCollection == null){
 
 In the provided template, if the request entity list is null (not initialized), it is created using `EntityFactory.CreateCollection("REQUESTENTITYNAME")`. This allows you to work with a new entity list / collection.
 
-## Clone entity
+### Clone entity
 
 This function creates a clone of an entity to ensure that any modifications to the clone do not affect the original entity. This is useful when you need to work with multiple instances of an entity while preserving the integrity of the original data.
 
@@ -402,7 +383,7 @@ This function creates a clone of an entity to ensure that any modifications to t
 EntityUtils.Clone(ENTITYNAME);
 ```
 
-*Example: Cloning Entities to Avoid Overwriting*
+_Example: Cloning Entities to Avoid Overwriting_
 
 Imagine you have an entity representing a user account, and you want to create a list of accounts with different names but keep the original account unchanged.
 
@@ -430,13 +411,13 @@ MyAccount.Name = "Admin";  // Update the original entity's name to "Admin"
 
 In this example:
 
-- Inside the loop, `EntityUtils.Clone(MyAccount)` creates a new instance (clone) of the original MyAccount entity for each iteration.
-- The Name property of each cloned account is changed to "`User " + i.toString()`, creating unique names for each cloned account.
-- After the loop, when `MyAccount.Name` is set to "Admin", it only affects the original entity, not the clones stored in `myAccountList`. The cloned accounts in the list retain their original names, like "User 0", "User 1", etc.
+* Inside the loop, `EntityUtils.Clone(MyAccount)` creates a new instance (clone) of the original MyAccount entity for each iteration.
+* The Name property of each cloned account is changed to "`User " + i.toString()`, creating unique names for each cloned account.
+* After the loop, when `MyAccount.Name` is set to "Admin", it only affects the original entity, not the clones stored in `myAccountList`. The cloned accounts in the list retain their original names, like "User 0", "User 1", etc.
 
 By using cloning, you prevent any accidental changes to the original entity, allowing you to manage multiple versions of it independently.
 
-## Stringify entity
+### Stringify entity
 
 This method converts the given entity into a JSON-formatted string. This is useful when you need to log, debug, or send entity data as a string in API requests, integrations, or other custom logic.
 
@@ -447,7 +428,7 @@ EntityUtils.Stringify(ENTITYNAME);
 ```
 
 {% hint style="info" %}
-**NOTE:** Do not use the brackets “[[ ]]” when providing the entity name.
+**NOTE:** Do not use the brackets “\[\[ ]]” when providing the entity name.
 {% endhint %}
 
 **Example**
@@ -484,17 +465,14 @@ The `EntityUtils.Stringify(requestEntity);` method will return:
 "{\"Name\":\"New Opportunity\",\"EstimatedValue\":1000,\"Status\":\"Open\"}"
 ```
 
-<a id="Variables"></a>
+### Variables
 
-## Variables
-
-## Get context variable
+### Get context variable
 
 This method retrieves the value of a local variable within the current connector integration. It allows you to access and use variables that are defined during the execution of the connector action. This method is useful for referencing values stored in the context for use in your custom logic.
 
 {% hint style="info" %}
-**NOTE:** You can use connector local variables from the integration context between the integration tasks
-using the following format: `var` `variableName``= Context.GetContextVariable("``variableName``");`. For more information, see [Using Connector Local Variables](Use_connector_local_variables.md).
+**NOTE:** You can use connector local variables from the integration context between the integration tasks using the following format: `var` `variableName``= Context.GetContextVariable("``variableName``");`. For more information, see [Using Connector Local Variables](Use_connector_local_variables.md).
 {% endhint %}
 
 **Get Context variable - Template**
@@ -503,11 +481,11 @@ using the following format: `var` `variableName``= Context.GetContextVariable("`
 Context.GetContextVariable("variableName");
 ```
 
-## Get connector application variable
+### Get connector application variable
 
 This method retrieves a connector integration variable from the context, which stores REST application credentials. It provides access to application-specific credentials or parameters for authentication or configuration within your custom logic.
 
-![](../Resources/Images/druid%205.17/rest%20app.png)
+![](<../../.gitbook/assets/rest app.png>)
 
 **Get connector application variable Template**
 
@@ -515,7 +493,7 @@ This method retrieves a connector integration variable from the context, which s
 Context.GetConnectorApplicationVariable("variableName","appName");
 ```
 
-## Set context variable
+### Set context variable
 
 This method sets a local variable within the connector integration context. It allows you to store values that can be accessed and used later in the execution of your custom logic.
 
@@ -525,11 +503,9 @@ This method sets a local variable within the connector integration context. It a
 Context.SetContextVariable("variableName", "value");
 ```
 
-<a id="Localscope"></a>
+### Local scope
 
-## Local scope
-
-## Set Local Scope Entity
+### Set Local Scope Entity
 
 This method sets an entity within the local scope of the connector action, allowing you to perform operations on data directly within the action, rather than relying on external context. Use this when you need to define and manipulate a specific entity within the current execution without affecting the global context.
 
@@ -539,7 +515,7 @@ This method sets an entity within the local scope of the connector action, allow
 Context.SetLocalScopeEntity(entity);
 ```
 
-## Get Local Scope Entity
+### Get Local Scope Entity
 
 This method retrieves an entity from the local scope defined within the connector action. You can access previously set entities within the local scope to perform further operations. This avoids the need to query external data sources or manage a larger context.
 
@@ -549,7 +525,7 @@ This method retrieves an entity from the local scope defined within the connecto
 Context.GetLocalScopeEntity("ENTITYNAME");
 ```
 
-## Set Local Scope Entity Collection
+### Set Local Scope Entity Collection
 
 This method sets a collection of records within the local scope. It allows you to store and work with multiple records directly within the connector action, eliminating the need to manage external queries or larger contexts. Use this when you want to work with a group of related entities during the integration task.
 
@@ -559,7 +535,7 @@ This method sets a collection of records within the local scope. It allows you t
 SetLocalScopeEntityCollection(entity);
 ```
 
-## Get Local Scope Entity Collection
+### Get Local Scope Entity Collection
 
 This method retrieves a collection of records from the local scope, allowing you to access entity records you previously set. This makes it easier to perform operations on multiple records within the current connector action without needing to reference external contexts.
 
@@ -569,11 +545,9 @@ This method retrieves a collection of records from the local scope, allowing you
 GetLocalScopeEntityCollection("ENTITYNAME");
 ```
 
-<a id="Encryption"></a>
+### Encryption
 
-## Encryption
-
-## AES Encrypt
+### AES Encrypt
 
 Encrypts the request body or only specific request data using the AES256CBC algorithm.
 
@@ -589,9 +563,8 @@ EncryptionUtils.AES256CBC.Encrypt(plainText, key);
 
 Where:
 
-- **plainText** is the
-  request data to be encrypted.
-- **key** is the encryption key you get from the connector app, Variables section.
+* **plainText** is the request data to be encrypted.
+* **key** is the encryption key you get from the connector app, Variables section.
 
 **Example - Encrypt the request ExecutionId**
 
@@ -606,7 +579,7 @@ Where:
 )
 ```
 
-## AES Decrypt
+### AES Decrypt
 
 Decrypts the encrypted request body or only specific request data using the AES256CBC algorithm.
 
@@ -622,12 +595,13 @@ EncryptionUtils.AES256CBC.Decrypt(plainText,key);
 
 Where:
 
-- **plainText** is the encrypted string that includes the Initialization Vector (IV) at the beginning, followed by the actual encrypted payload.
+* **plainText** is the encrypted string that includes the Initialization Vector (IV) at the beginning, followed by the actual encrypted payload.
+
 {% hint style="info" %}
 **NOTE:** The IV is embedded at the beginning of the **plainText** parameter. You don't need to provide the IV separately. The decryption method automatically extracts it and uses it during decryption.
 {% endhint %}
 
-- **key** is the encryption/decryption key retrieved from the Variables section in the connector app.
+* **key** is the encryption/decryption key retrieved from the Variables section in the connector app.
 
 **Example - Decrypt the request ExecutionId**
 
@@ -642,14 +616,14 @@ Where:
 )
 ```
 
-## Generic JWT
+### Generic JWT
 
 The JWT custom code template simplifies generating and encrypting JWTs for secure client authentication involving a double JWT exchange.
 
 {% hint style="info" %}
 **Info:** All default claims (except for the private ones) adhere to the standard format, eliminating the need for you to perform any format transformations.
 
-![](../Resources/Images/Custom%20Code/default%20claims.png)
+<img src="../../.gitbook/assets/default claims.png" alt="" data-size="original">
 {% endhint %}
 
 **JWT Template**
@@ -699,7 +673,7 @@ Context.LogRequestTask(jwt);
 })()
 ```
 
-![](../Resources/Images/Custom%20Code/kwt%20example.png)
+![](<../../.gitbook/assets/kwt example.png>)
 
 {% hint style="info" %}
 **Info:** In DRUID 7.9 and higher, the Custom Code feature includes the CryptoJS library, enabling you to utilize JavaScript implementations of standard and secure cryptographic algorithms. In DRUID 7.10 onwards, the CryptoJS library also supports the SHA1 encryption algorithm.
@@ -720,7 +694,7 @@ Context.LogRequestTask(hashString);
 })()
 ```
 
-## RSA JWT
+### RSA JWT
 
 Uses standard asymmetric RSA encryption powered by your certificate private key string.
 
@@ -744,7 +718,7 @@ let jwt = EncryptionUtils.JWT.GenerateJWTRSA(options, a);
 Context.SetContextVariable("jwt", jwt);
 ```
 
-## Custom RSA JWT
+### Custom RSA JWT
 
 Provides explicit control over your asymmetric signing algorithm and padding style configurations.
 
@@ -769,7 +743,7 @@ let jwt = EncryptionUtils.JWT.GenerateJWTRSACustom(options, a, "SHA512", "Pss");
 Context.SetContextVariable("jwt", jwt);
 ```
 
-## RSA JWT with Header
+### RSA JWT with Header
 
 Provides explicit control over your asymmetric signing algorithm and padding style configurations.
 
@@ -800,12 +774,12 @@ let jwt = EncryptionUtils.JWT.GenerateJWTRSAWithHeader(options, a, "test-key-1",
 Context.SetContextVariable("jwt", jwt);
 ```
 
-## Decrypt JWT
+### Decrypt JWT
 
 The Decrypt JWT method allows you to decode a JSON Web Token (JWT) and validate its authenticity. This functionality is helpful in two key scenarios:
 
-- **Verifying Secret Key**: By decrypting the JWT with a known secret key, you can confirm if the key you possess is indeed the correct one used to sign the token.
-- **Extracting Conversation-Level Information**: Once decrypted, the JWT token reveals valuable information embedded within it. This information can be used to understand the context of a conversation, such as user identities and access permissions.
+* **Verifying Secret Key**: By decrypting the JWT with a known secret key, you can confirm if the key you possess is indeed the correct one used to sign the token.
+* **Extracting Conversation-Level Information**: Once decrypted, the JWT token reveals valuable information embedded within it. This information can be used to understand the context of a conversation, such as user identities and access permissions.
 
 **Decrypt JWT Template**
 
@@ -831,25 +805,21 @@ The provided template demonstrates how to decrypt a JWT token using the DecryptJ
 
 Replace placeholders: Fill in the following placeholders within the template:
 
-- token: The JWT token you intend to decode.
-- secret key: The secret key used to sign the token (required for decryption).
-- Specify decryption algorithm in `EncryptionUtils.JWT.DecryptJWT(token, secret, "<decryption algorithm>")`. DRUID currently supports three algorithms for JWT decryption: HS256, HS512 and RS256. Choose the appropriate algorithm based on the token's encryption method.
+* token: The JWT token you intend to decode.
+* secret key: The secret key used to sign the token (required for decryption).
+* Specify decryption algorithm in `EncryptionUtils.JWT.DecryptJWT(token, secret, "<decryption algorithm>")`. DRUID currently supports three algorithms for JWT decryption: HS256, HS512 and RS256. Choose the appropriate algorithm based on the token's encryption method.
 
 {% hint style="info" %}
 **NOTE:** The RS256 decryption algorithm is available in DRUID 8.5 and higher.
 {% endhint %}
 
-<a id="Encoding"></a>
-
-## Encoding
+### Encoding
 
 {% hint style="info" %}
 **NOTE:** These methods are available in DRUID 9.1 and higher.
 {% endhint %}
 
-<a id="microcontent2"></a>
-
-## Base64 Encode
+### Base64 Encode
 
 Encodes a string to Base64 using UTF-8. Use this to safely transmit plain text (e.g., credentials or binary content) in headers, URLs, or other parts of a request.
 
@@ -861,7 +831,7 @@ StringUtils.Base64Encode(plainText);
 
 Where:
 
-- `plainText` is the string you want to encode in Base64 format.
+* `plainText` is the string you want to encode in Base64 format.
 
 **Example**
 
@@ -872,11 +842,9 @@ Context.LogRequestTask(encoded);
 })();
 ```
 
-![](../Resources/Images/druid%209.1/base64%20encode.png)
+![](<../../.gitbook/assets/base64 encode.png>)
 
-<a id="microcontent3"></a>
-
-## Base64 Decode
+### Base64 Decode
 
 Decodes a Base64-encoded string back into its original format.
 
@@ -892,7 +860,7 @@ StringUtils.Base64Decode(encodedText);
 
 Where:
 
-- `encodedText` is the Base64 encoded string you want to decode into its original format.
+* `encodedText` is the Base64 encoded string you want to decode into its original format.
 
 **Example**
 
@@ -903,19 +871,18 @@ Context.LogRequestTask(decodedText);
 })();
 ```
 
-![](../Resources/Images/druid%209.1/decodeBase64.png)
+![](../../.gitbook/assets/decodeBase64.png)
 
-<a id="XML"></a>
+### XML
 
-## XML
+### Map XML string to Entity Fields
 
-## Map XML string to Entity Fields
+* Facilitates the mapping of XML strings to DRUID entity fields. This is particularly useful when REST API responses contain a complex or unstructured XML format that cannot be directly mapped to DRUID entities.
 
-- Facilitates the mapping of XML strings to DRUID entity fields. This is particularly useful when REST API responses contain a complex or unstructured XML format that cannot be directly mapped to DRUID entities.
 {% hint style="info" %}
 **NOTE:** You should store the received XML as string in a DRUID entity field in the REST Response, then use the Custom Code integration task and this template to map the desired XML data to DRUID entity fields.
 
-![](../Resources/Images/druid%207.14/rest%20text.png)
+<img src="../../.gitbook/assets/rest text.png" alt="" data-size="original">
 {% endhint %}
 
 **Map XML string to Entity Fields - Template**
@@ -959,9 +926,9 @@ let result = Context.ParseXMLToEntityFields(reqEntity, xml, mappingArray);
 Context.SetRequestEntity(result);
 ```
 
-## Parse XML To Entity Fields
+### Parse XML To Entity Fields
 
-- Parses an XML array to DRUID entity list.
+* Parses an XML array to DRUID entity list.
 
 **XML Example**
 
@@ -1030,11 +997,9 @@ let result = Context.ParseXMLToEntityFields(reqEntity, xml, mappingArray);
 Context.SetRequestEntity(result);
 ```
 
-<a id="FileUtils"></a>
+### FileUtils
 
-## FileUtils
-
-## Read XML from file
+### Read XML from file
 
 {% hint style="info" %}
 **NOTE:** This feature is available in DRUID 8.5 and higher.
@@ -1062,7 +1027,7 @@ You can further use the 'Map XML String to Entity Fields' feature to map the ext
 
 After making your updates, you can generate an updated XML file using the method: `FileUtils.WriteXMLToFile(XMLContent: string, fileName: string)`.
 
-## Write XML to file
+### Write XML to file
 
 {% hint style="info" %}
 **NOTE:** This feature is available in DRUID 8.5 and higher.
@@ -1089,7 +1054,7 @@ The `FileUtils.WriteXMLToFile(XMLContent: string, fileName: string)` method allo
 
 This method is particularly useful for generating and providing an XML file to the user during a chat interaction.
 
-## Read Txt from file
+### Read Txt from file
 
 {% hint style="info" %}
 **NOTE:** This feature is available in DRUID 8.8 and higher.
@@ -1113,7 +1078,7 @@ Below is an example script demonstrating how to use this method:
 })();  
 ```
 
-## Write Txt to file
+### Write Txt to file
 
 {% hint style="info" %}
 **NOTE:** This feature is available in DRUID 8.8 and higher.
@@ -1138,7 +1103,7 @@ The `FileUtils.WriteTxtToFile(txtContent, fileName)` method allows you to create
 
 This method is particularly useful for generating and providing a txt file to the user during a chat interaction or sending it to a third-party system via an API call.
 
-## Read JSON from file
+### Read JSON from file
 
 {% hint style="info" %}
 **NOTE:** This feature is available in DRUID 8.8 and higher.
@@ -1162,7 +1127,7 @@ Below is an example script demonstrating how to use this method:
 })();  
 ```
 
-## Write JSON to file
+### Write JSON to file
 
 {% hint style="info" %}
 **NOTE:** This feature is available in DRUID 8.8 and higher.
@@ -1187,13 +1152,9 @@ This method is particularly useful for creating JSON files that can be shared wi
 })();
 ```
 
-<a id="DateTimeUtils"></a>
+### DateTimeUtils <a href="#tolocalestring" id="tolocalestring"></a>
 
-## <a id="toLocaleString"></a><a id="tolocalestring"></a>DateTimeUtils
-
-<a id="microcontent1"></a>
-
-## Stringify Date
+### Stringify Date
 
 The JavaScript `toLocaleString()` method is not supported in the Custom Code. To achieve similar functionality, use the built-in `DateTimeUtils.StringifyDate(date, format)` method.
 
@@ -1217,16 +1178,12 @@ Context.LogRequestTask(formattedDate);
 ```
 
 {% hint style="info" %}
-**NOTE:**  The method does not auto-detect the user's locale. For internationalization, you need to manually format dates based on the target audience’s preferences.
+**NOTE:** The method does not auto-detect the user's locale. For internationalization, you need to manually format dates based on the target audience’s preferences.
 {% endhint %}
 
-<a id="DataManipulation"></a>
+### Data Manipulation
 
-## Data Manipulation
-
-<a id="Set"></a>
-
-## Set Object
+### Set Object
 
 The `Set()` object allows you to store unique values of any type. Use it when you need to filter duplicate data from an entity collection or a list of values.
 
@@ -1240,7 +1197,7 @@ The `Set()` object allows you to store unique values of any type. Use it when yo
 
 **Parameters**
 
-- **iterable:** An iterable object (such as an Array) whose elements will be added to the new Set. If not specified, a new empty Set is created.
+* **iterable:** An iterable object (such as an Array) whose elements will be added to the new Set. If not specified, a new empty Set is created.
 
 **Example**
 
@@ -1271,33 +1228,31 @@ In this example, we use a Set to extract unique categories from a list of produc
 })();
 ```
 
-<a id="Testingthecustomcodeintegrationtaskandcodetracing"></a>
-
-## Testing the custom code integration task and code tracing
+### Testing the custom code integration task and code tracing
 
 You can test the execution of your code and manually verify in the Code Trace that the code works correctly or if there are any logic errors.
 
 Code tracing is an effective tool in debugging efforts at authoring time as it traces the execution of all the lines in the code and enables you to validate your code.
 
-To test the code, click on the **Test** tab, then click the **Test** button (![](../Resources/Images/Custom%20Code/test%20button.png)) at the top-right corner of the page.
+To test the code, click on the **Test** tab, then click the **Test** button (![](<../../.gitbook/assets/test button (1).png>)) at the top-right corner of the page.
 
 The Code Trace traces the execution of your Custom Code integration task and enables you to:
 
-- View the points where the execution has failed (highlighted in red). If the code execution returns errors, you can debug the code by going through the CodeTrace and see what went wrong.
-- View the lines of code which were not executed (grayed lines) and the lines that were successfully executed (marked with a green line on the left).
+* View the points where the execution has failed (highlighted in red). If the code execution returns errors, you can debug the code by going through the CodeTrace and see what went wrong.
+* View the lines of code which were not executed (grayed lines) and the lines that were successfully executed (marked with a green line on the left).
 
-![](../Resources/Images/druid%205.27/CodeTrace_failure.png)
+![](../../.gitbook/assets/CodeTrace_failure.png)
 
-- View what changed in an entity by clicking the compare icon first for the reference entity data and then for the updated entity data. A page opens displaying side-by-side the initial (reference) and the updated entity data.
+* View what changed in an entity by clicking the compare icon first for the reference entity data and then for the updated entity data. A page opens displaying side-by-side the initial (reference) and the updated entity data.
 
-![](../Resources/Images/druid%205.27/entity%20comparison.png)
+![](<../../.gitbook/assets/entity comparison.png>)
 
-- View an entity as JSON by clicking on the magnifier icon.
+* View an entity as JSON by clicking on the magnifier icon.
 
-![](../Resources/Images/druid%205.27/see%20entity%20json.png)
+![](<../../.gitbook/assets/see entity json.png>)
 
-- View the audit log for **Context.ExecuteTask** and see the values returned from the executed task if it was executed successfully, or the error if the task execution failed.
+* View the audit log for **Context.ExecuteTask** and see the values returned from the executed task if it was executed successfully, or the error if the task execution failed.
 
-![](../Resources/Images/druid%205.27/task%20successful.png)
+![](<../../.gitbook/assets/task successful.png>)
 
-![](../Resources/Images/druid%205.27/task%20failed.png)
+![](<../../.gitbook/assets/task failed.png>)

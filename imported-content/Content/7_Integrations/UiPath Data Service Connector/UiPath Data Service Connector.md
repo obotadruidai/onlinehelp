@@ -1,9 +1,8 @@
 ---
-title: "UiPath Data Service Connector"
+title: UiPath Data Service Connector
 ---
 
-<a id="UiPathDataServiceConnector"></a>
-
+# UiPath Data Service Connector
 
 UiPath Data Service integration enables authors to create AI Agent informational model in sync with their data model from the UiPath Data Service.
 
@@ -11,105 +10,95 @@ UiPath Data Service integration enables authors to create AI Agent informational
 **IMPORTANT!** The integration is a tenant feature available on request. If you want to integrate with UiPath Data Service, get in touch with [Druid Support.](mailto:support@druidai.com?subject=UiPath%20Data%20Service%20on%20Tenant)
 {% endhint %}
 
-<a id="Step1InDruidcreateUiPathDataServiceconnectorapp"></a>
-
-## Step 1. In Druid, create UiPath Data Service connector app
+### Step 1. In Druid, create UiPath Data Service connector app
 
 The UiPath connector allows integration with the UiPath Orchestrator, to serve the Druid UiPath Connector Action with the credentials needed to perform the required tasks, in this case to connect to UiPath Data Service. Thus, the UiPath Connector App only stores access credentials to the Orchestrator.
 
-To add an UiPath connector app for the AI Agent within the selected solution, on the left menu click **Apps**. The Apps page appears listing the connection strings created for the selected solution.
+To add an UiPath connector app for the AI Agent within the selected solution, on the left menu click **Apps**. The Apps page appears listing the connection strings created for the selected solution.
 
-At the top-right corner of the page, click **CreateConnector** and select **UiPath**. The Edit Connector page appears.
+At the top-right corner of the page, click **CreateConnector** and select **UiPath**. The Edit Connector page appears.
 
-![](../../Resources/Images/UiPath%20Data%20Service%20Connector/UiPath%20Data%20Service%20Connector.png)
+![](<../../../.gitbook/assets/UiPath Data Service Connector.png>)
 
-In the **Code** field, enter a name for the UiPath connector.
+In the **Code** field, enter a name for the UiPath connector.
 
 In the **Execution Timeout** field, enter the maximum number of seconds a request is allowed to execute. By default, the timeout for all connector integrations is 60 seconds. This setting will apply to all connector tasks which use this app.
 
 {% hint style="info" %}
-**NOTE:**  This field is available for Druid version 1.60 or higher and requires Connector Host upgrade.
+**NOTE:** This field is available for Druid version 1.60 or higher and requires Connector Host upgrade.
 {% endhint %}
 
 If you want to encrypt the data on the connector, from the **Encryption Type** drop-down, select **AESCGM**.
 
 {% hint style="info" %}
-**NOTE:**  This feature is available in Druid version 1.61 or higher.
+**NOTE:** This feature is available in Druid version 1.61 or higher.
 {% endhint %}
 
 **Encryption Type** enables data encryption on the connector using the AES CGM encryption algorithm and allows authors to encrypt specific data before sending it to external UiPath Orchestrator or RPA unattended robots, by using the Encrypt Data integration task as first task in the desired connector action.
 
 When you select AES CGM encryption algorithm (the only one currently available), two new options are available:
 
-- **Encryption Key** – click the **Generate** button to generate the key, which will be used by the Encrypt Data task to encrypt the data and by the client / 3rd party application to decrypt the data and use it further.
-- **Secure encryption with salt** – adds a random 64-bits salt to the data before encrypting it. If data encryption is used for integration with RPA unattended robots, the RPA robot (UiPath Studio) should contain the Decrypt Text activity from UiPath.Cryptography package, configured to use the AESCGM algorithm, Druid decryption key and the text to be decrypted from a local variable. This option is set to true by default on the UiPAth connector app (because the UiPath.Cryptography package uses this algorithm).
+* **Encryption Key** – click the **Generate** button to generate the key, which will be used by the Encrypt Data task to encrypt the data and by the client / 3rd party application to decrypt the data and use it further.
+* **Secure encryption with salt** – adds a random 64-bits salt to the data before encrypting it. If data encryption is used for integration with RPA unattended robots, the RPA robot (UiPath Studio) should contain the Decrypt Text activity from UiPath.Cryptography package, configured to use the AESCGM algorithm, Druid decryption key and the text to be decrypted from a local variable. This option is set to true by default on the UiPAth connector app (because the UiPath.Cryptography package uses this algorithm).
 
-For more information, see [Encrypt Data - UiPath Use Cases](../UiPath/Encrypt%20Data%20UiPath%20Use%20Cases.md).
+For more information, see [Encrypt Data - UiPath Use Cases](<../UiPath/Encrypt Data UiPath Use Cases.md>).
 
-From the **SecurityType** drop-down, select **Data Service** (External Applications).
+From the **SecurityType** drop-down, select **Data Service** (External Applications).
 
-![](../../Resources/Images/UiPath%20Data%20Service%20Connector/UiPath%20Data%20Service%20Connector_1.png)
+![](<../../../.gitbook/assets/UiPath Data Service Connector_1.png>)
 
 Click the **Save** button.
 
 Get the **Redirect URL** automatically generated by Druid by clicking the copy icon, you will need it to create your external application in Orchestrator.
 
-![](../../Resources/Images/UiPath%20Data%20Service%20Connector/UiPath%20Data%20Service%20Connector_4.png)
+![](<../../../.gitbook/assets/UiPath Data Service Connector_4.png>)
 
-<a id="Step2InOrchestratorcreateanexternalappforUiPathDataService"></a>
+### Step 2. In Orchestrator, create an external app for UiPath Data Service
 
-## Step 2. In Orchestrator, create an external app for UiPath Data Service
-
-1. Click the main menu, click **Admin** > **External Applications**.
-2. Click the **Add application** button (![](../../Resources/Images/UiPath%20Data%20Service%20Connector/UiPath%20Data%20Service%20Connector_5.png)). The Add Application page appears.
-3. Enter the **Application Name** and leave selected **Confidential application**.
-4. Click the **Add Scopes** button. The scopes editor appears on the right side.
-5. From the **Resources** drop-down, select **Data Service API**.
-6. Click the **User Scope(s)** tab and select all scopes: **DataService.Schema.Read**, **DataService.Data.Read**, **DataService.Data.Write**.
-7. Click the **Save** button. The application scopes appear on the external app configuration page.
+1. Click the main menu, click **Admin** > **External Applications**.
+2. Click the **Add application** button (![](<../../../.gitbook/assets/UiPath Data Service Connector_5.png>)). The Add Application page appears.
+3. Enter the **Application Name** and leave selected **Confidential application**.
+4. Click the **Add Scopes** button. The scopes editor appears on the right side.
+5. From the **Resources** drop-down, select **Data Service API**.
+6. Click the **User Scope(s)** tab and select all scopes: **DataService.Schema.Read**, **DataService.Data.Read**, **DataService.Data.Write**.
+7. Click the **Save** button. The application scopes appear on the external app configuration page.
 8. In the **Redirect URL** field, paste the **Redirect URL** you copied from Druid (the one that was automatically generated after defining the connection strings).
 
-![](../../Resources/Images/UiPath%20Data%20Service%20Connector/UiPath%20Data%20Service%20Connector_6.png)
+![](<../../../.gitbook/assets/UiPath Data Service Connector_6.png>)
 
-9. Click the **Add** button. The application is successfully added and a pop-up appears providing you with the **App ID** and **App secret**. Store them in a safe location; you will need them in Druid.
+9. Click the **Add** button. The application is successfully added and a pop-up appears providing you with the **App ID** and **App secret**. Store them in a safe location; you will need them in Druid.
 
-![](../../Resources/Images/UiPath%20Data%20Service%20Connector/UiPath%20Data%20Service%20Connector_7.png)
+![](<../../../.gitbook/assets/UiPath Data Service Connector_7.png>)
 
-<a id="Step3InDruiddefineUiPathDataServiceconnectionstrings"></a>
+### Step 3. In Druid, define UiPath Data Service connection strings
 
-## Step 3. In Druid, define UiPath Data Service connection strings
-
-On the left menu click **Apps** and select the connector app you created at Step 1.
+On the left menu click **Apps** and select the connector app you created at Step 1.
 
 Set the following parameters:
 
-| Parameter | Description |
-| --- | --- |
-| App Id | The App ID and App Secret of the external application you created in Orchestrator. If you forgot the App Secret, you can generate a new one. |
-| App Secret |  |
-| Tenant Logical Name | To get the values for these parameters, go to the UiPath Cloud Services Portal (*https://cloud.uipath.com/<tenancyName>/portal\_/serviceinstances*), under **Admin** > **Tenants**, click the desired tenant and click the API Access icon corresponding to the Orchestrator service.  [!\[\](../../Resources/Images/UiPath%20Data%20Service%20Connector/UiPath%20Data%20Service%20Connector_2.png)](../../Resources/Images/Integrations/tenant%20details.png) |
-| Account Logical Name |  |
-| External Application Scopes | To get the scopes, go to your Orchestrator external application and from the Resources table, click the **Copy** icon and paste them in Druid: **DataService.Schema.Read**, **DataService.Data.Read**, **DataService.Data.Write**.  ![](../../Resources/Images/UiPath%20Data%20Service%20Connector/UiPath%20Data%20Service%20Connector_3.png) |
+| Parameter                   | Description                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| App Id                      | The App ID and App Secret of the external application you created in Orchestrator. If you forgot the App Secret, you can generate a new one.                                                                                                                                                                                                                                                                                                      |
+| App Secret                  |                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| Tenant Logical Name         | To get the values for these parameters, go to the UiPath Cloud Services Portal (_https://cloud.uipath.com//portal\_/serviceinstances_), under **Admin** > **Tenants**, click the desired tenant and click the API Access icon corresponding to the Orchestrator service. [!\[\](../../Resources/Images/UiPath%20Data%20Service%20Connector/UiPath%20Data%20Service%20Connector\_2.png)](../../Resources/Images/Integrations/tenant%20details.png) |
+| Account Logical Name        |                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| External Application Scopes | To get the scopes, go to your Orchestrator external application and from the Resources table, click the **Copy** icon and paste them in Druid: **DataService.Schema.Read**, **DataService.Data.Read**, **DataService.Data.Write**. ![](<../../../.gitbook/assets/UiPath Data Service Connector_3.png>)                                                                                                                                            |
 
 Click the **Save** button.
 
-<a id="Step4AuthorizeconnectiontoUiPathDataService"></a>
+### Step 4. Authorize connection to UiPath Data Service
 
-## Step 4. Authorize connection to UiPath Data Service
-
-In Druid Portal, authorize the connection to the UiPath Data Service by clicking the **Authorize** button (![](../../Resources/Images/UiPath%20Data%20Service%20Connector/UiPath%20Data%20Service%20Connector_8.png)).
+In Druid Portal, authorize the connection to the UiPath Data Service by clicking the **Authorize** button (![](<../../../.gitbook/assets/UiPath Data Service Connector_8.png>)).
 
 If you followed the previous steps, the authorization is successful; otherwise, check that you properly set the connection strings.
 
-![](../../Resources/Images/UiPath%20Data%20Service%20Connector/UiPath%20Data%20Service%20Connector_9.png)
+![](<../../../.gitbook/assets/UiPath Data Service Connector_9.png>)
 
-<a id="Step5ActivatetheconnectiontoyourUiPathDataService"></a>
-
-## Step 5. Activate the connection to your UiPath Data Service
+### Step 5. Activate the connection to your UiPath Data Service
 
 In Druid, go to the AI Agent details and click the **Data Services** tab.
 
-![](../../Resources/Images/UiPath%20Data%20Service%20Connector/UiPath%20Data%20Service%20Connector_10.png)
+![](<../../../.gitbook/assets/UiPath Data Service Connector_10.png>)
 
 Tick on **Active**.
 
@@ -117,6 +106,6 @@ From the **Connection Code** field, select the UiPath connector you created for 
 
 Click the **Save** button.
 
-![](../../Resources/Images/UiPath%20Data%20Service%20Connector/UiPath%20Data%20Service%20Connector_11.png)
+![](<../../../.gitbook/assets/UiPath Data Service Connector_11.png>)
 
-You can either now, [load the UiPath entity schema](Loading%20UiPath%20Entity%20Schema.md) in Druid and map UiPath entity fields to Druid entity fields or directly create Druid entities.
+You can either now, [load the UiPath entity schema](<Loading UiPath Entity Schema.md>) in Druid and map UiPath entity fields to Druid entity fields or directly create Druid entities.

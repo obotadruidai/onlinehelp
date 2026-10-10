@@ -1,14 +1,13 @@
 ---
-title: "Full Page Chat"
+title: Full Page Chat
 ---
 
-<a id="FullPageChat"></a>
+# Full Page Chat
 
-
-![](../../Resources/Images/WebChat/full%20page%20chat.png)
+![](<../../../.gitbook/assets/full page chat.png>)
 
 {% hint style="info" %}
-**NOTE:** In the HTML template below, make sure that your replace the following: <your Druid tenant>, <your AI Agent ID> and <your AI Agent base URL>.
+**NOTE:** In the HTML template below, make sure that your replace the following: , and .
 {% endhint %}
 
 **HTML Template**

@@ -1,15 +1,12 @@
 ---
-title: "Managing Steps"
+title: Managing Steps
 ---
 
-<a id="ManagingSteps"></a>
-
+# Managing Steps
 
 When managing your flow in the Druid Portal, you have the flexibility to adjust the sequence of steps and delete unnecessary ones.
 
-<a id="Changethestepsorder"></a>
-
-## Change the steps order
+### Change the steps order
 
 To reorder steps using the Flow Designer in list view:
 
@@ -18,17 +15,13 @@ To reorder steps using the Flow Designer in list view:
 3. Drag the step to the desired location.
 4. Release the mouse button to drop the step into its new position.
 
-![](../Resources/Images/Flows/Moving%20steps%20changing%20the.png)
+![](<../../.gitbook/assets/Moving steps changing the.png>)
 
-<a id="Makeastepchildofanotherstep"></a>
-
-## Make a step child of another step
+### Make a step child of another step
 
 You can also adjust the hierarchy of steps by making a child step become a parent step and vice versa. Use drag and drop to move the step to its new position.
 
-<a id="DeleteFlowSteps"></a>
-
-## Delete Flow Steps
+### Delete Flow Steps
 
 To remove a flow step using the Flow Diagram, follow these steps:
 
@@ -40,9 +33,9 @@ To remove a flow step using the Flow Diagram, follow these steps:
 {% hint style="info" %}
 **NOTE:**
 
-- Deleting a step with child steps will also remove all its child steps.
-- Deletion actions cannot be undone, so ensure you confirm your decision before proceeding.
-- The first flow step cannot be removed.
+* Deleting a step with child steps will also remove all its child steps.
+* Deletion actions cannot be undone, so ensure you confirm your decision before proceeding.
+* The first flow step cannot be removed.
 {% endhint %}
 
 Alternatively, when using the Flow Designer in list view:
@@ -50,12 +43,12 @@ Alternatively, when using the Flow Designer in list view:
 1. Click the **Delete** icon displayed inline with the flow step you wish to remove.
 2. Confirm the step deletion in the confirmation dialog by clicking **Yes**.
 
-![](../Resources/Images/Flows/delete%20flow%20step.png)
+![](<../../.gitbook/assets/delete flow step.png>)
 
 A confirmation dialog appears asking you to confirm step deletion. Click Yes to delete the step.
 
 By using these functionality, you can efficiently manage the structure of your flow, ensuring it aligns with your conversational design needs.
 
-## Related Topics
+### Related Topics
 
-- [Conversation Lifecycle](Conversation%20Lifecycle.md)
+* [Conversation Lifecycle](<Conversation Lifecycle.md>)

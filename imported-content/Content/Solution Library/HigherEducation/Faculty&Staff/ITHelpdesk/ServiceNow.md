@@ -1,49 +1,44 @@
 ---
-title: "ServiceNow"
+title: ServiceNow
 ---
 
-<a id="ServiceNow"></a>
-
+# ServiceNow
 
 This topic explains how to configure a DRUID REST app and integration tasks for ServiceNow integration. It covers authentication and supported API operations (GET, POST, PATCH).
 
-<a id="AuthenticationwithOAuthCredentials"></a>
-
-## Authentication with OAuth Credentials
+### Authentication with OAuth Credentials
 
 To authenticate with ServiceNow, you'll need the following information:
 
-- **Base URL**: The URL of your ServiceNow instance.
-- **Client ID**: From your ServiceNow OAuth configuration.
-- **Client Secret**: From your ServiceNow OAuth configuration.
-- **Username**: A service account user.
-- **Password**: Password for the service account.
-- **Grant Type**: password
+* **Base URL**: The URL of your ServiceNow instance.
+* **Client ID**: From your ServiceNow OAuth configuration.
+* **Client Secret**: From your ServiceNow OAuth configuration.
+* **Username**: A service account user.
+* **Password**: Password for the service account.
+* **Grant Type**: password
 
-![](../../../../Resources/Images/HE/SERVICENOW%20OAUTH_624x484.png)
+![](<../../../../../.gitbook/assets/SERVICENOW OAUTH_624x484.png>)
 
-![](../../../../Resources/Images/HE/servicenow_params.png)
+![](../../../../../.gitbook/assets/servicenow_params.png)
 
-<a id="GenerateOAuthCredentials"></a>
-
-## Generate OAuth Credentials
+### Generate OAuth Credentials
 
 To obtain the Client ID and Client Secret:
 
 1. In your ServiceNow instance, go to **System OAuth** > **Application Registry**.
 
-![](../../../../Resources/Images/HE/app%20registry.png)
+![](<../../../../../.gitbook/assets/app registry.png>)
 
 2. Register a new OAuth application.
 
-![](../../../../Resources/Images/HE/oauth%20app.png)
+![](<../../../../../.gitbook/assets/oauth app.png>)
 
 Use a dedicated service account for DRUID integration. Assign it permissions to:
 
-- Read
-- Create
-- Update
-- Delete incidents
+* Read
+* Create
+* Update
+* Delete incidents
 
 3. Save the generated credentials.
 
@@ -51,9 +46,7 @@ See [ServiceNow documentation](https://www.servicenow.com/docs/bundle/yokohama-s
 
 The following sections provide the required endpoints and parameters for various ServiceNow REST API operations.
 
-<a id="CreateanIncident"></a>
-
-## Create an Incident
+### Create an Incident
 
 **API Resource URL**
 
@@ -75,9 +68,7 @@ POST {{BaseUrl}}/api/now/table/incident
 }
 ```
 
-<a id="GetIncidentInformation"></a>
-
-## Get Incident Information
+### Get Incident Information
 
 **API Resource URL**
 
@@ -85,9 +76,7 @@ POST {{BaseUrl}}/api/now/table/incident
 GET: {{BaseUrl}}/api/now/table/incident?sys_class_name={sys_class_name}&sysparam_view={sysparam_view}&sysparam_limit={sysparam_limit}&number={number}&sysparm_display_value=true
 ```
 
-<a id="GetIncidentsbyUser"></a>
-
-## Get Incidents by User
+### Get Incidents by User
 
 **API Resource URL**
 
@@ -95,9 +84,7 @@ GET: {{BaseUrl}}/api/now/table/incident?sys_class_name={sys_class_name}&sysparam
 GET: {{BaseUrl}}/api/now/table/incident?sys_class_name={sys_class_name}&sysparam_view={sysparam_view}&sysparam_limit={sysparam_limit}&sysparm_display_value=true
 ```
 
-<a id="UpdateanIncident"></a>
-
-## Update an Incident
+### Update an Incident
 
 **API Resource URL**
 

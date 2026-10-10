@@ -1,35 +1,30 @@
 ---
-title: "Jamaican Passport OCR"
+title: Jamaican Passport OCR
 ---
 
-<a id="JamaicanPassportOCR"></a>
-
+# Jamaican Passport OCR
 
 The Druid API engine performs OCR and data extraction from Jamaican passports.
 
 {% hint style="info" %}
 **NOTE:**
 
-- In order to use this Druid Vision service, contact [Druid Tech Support](<mailto:support@druidai.com?subject=Request: Activate Druid Vision service JAM_Passport>).
-- For any APIs that are used for testing purposes and not in a production environment, Druid CANNOT be held responsible for the security of the processed data under the General Data Protection Regulation (GDPR). We highly recommend you to use sample data and documents for all APIs in testing environments.
+* In order to use this Druid Vision service, contact [Druid Tech Support](../Druid%20AI%20Services/mailto:support@druidai.com).
+* For any APIs that are used for testing purposes and not in a production environment, Druid CANNOT be held responsible for the security of the processed data under the General Data Protection Regulation (GDPR). We highly recommend you to use sample data and documents for all APIs in testing environments.
 {% endhint %}
 
-<a id="Request"></a>
+### Request
 
-## Request
+|                              |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| ---------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Method                       | POST                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| API Resource URL (Endpoint)  | The endpoint of the Druid Vision **JAM\_Passport** service. For information on how to get the endpoint, see [Druid Vision](<Druid Vision.md>).                                                                                                                                                                                                                                                                                                                                                                                   |
+| Authorization                | Select **Bearer Token** and provide the Druid Vision **Token**. For information on how to get the endpoint, see [Druid Vision](<Druid Vision.md>). ![](<../../.gitbook/assets/jam pass auth.png>)                                                                                                                                                                                                                                                                                                                                |
+| Headers                      | Content-Type: “multipart/form-data” ![](<../../.gitbook/assets/jamaican pass multipart.png>)                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| Body without face validation | “file”: (file attachment). Supported formats: png, jpg, pdf. ![](<../../.gitbook/assets/jam pass body.png>) If extraction fails due to issues like poor image quality, you can skip any of the following validation checks: - DateOfBirth - Validity - IssueDate - Sex Add the **skipValidations** parameter in the request body as many times as validation checks you want to escape from validation. ![](<../../.gitbook/assets/JAM_Passport valid.png>) **NOTE:** Skipping validations is available in DRUID 8.1 and higher. |
+| Body with face validation    | “file”: (file attachment) “selfie”: (file attachment) Supported formats: png, jpg, pdf. **NOTE:** The user needs to smile in the selfie, otherwise the face validation will fail.                                                                                                                                                                                                                                                                                                                                                |
 
-|  |  |
-| --- | --- |
-| Method | POST |
-| API Resource URL (Endpoint) | The endpoint of the Druid Vision **JAM\_Passport** service. For information on how to get the endpoint, see [Druid Vision](Druid%20Vision.md). |
-| Authorization | Select **Bearer Token** and provide the Druid Vision **Token**. For information on how to get the endpoint, see [Druid Vision](Druid%20Vision.md).  ![](../Resources/Images/vision/jam%20pass%20auth.png) |
-| Headers | Content-Type: “multipart/form-data”  ![](../Resources/Images/vision/jamaican%20pass%20multipart.png) |
-| Body without face validation | “file”: <attached document file> (file attachment).  Supported formats: png, jpg, pdf.  ![](../Resources/Images/vision/jam%20pass%20body.png)  If extraction fails due to issues like poor image quality, you can skip any of the following validation checks:   - DateOfBirth - Validity - IssueDate - Sex   Add the **skipValidations** parameter in the request body as many times as validation checks you want to escape from validation.  ![](../Resources/Images/vision/JAM_Passport%20valid.png)  **NOTE:** Skipping validations is available in DRUID 8.1 and higher. |
-| Body with face validation | “file”: <attached document file> (file attachment)  “selfie”: <attached selfie photo> (file attachment)  Supported formats: png, jpg, pdf.  **NOTE:** The user needs to smile in the selfie, otherwise the face validation will fail. |
-
-<a id="Response"></a>
-
-## Response
+### Response
 
 Data Returned by MRZ interpretation is found in the Data section of the response.
 
@@ -111,38 +106,34 @@ Data Returned by MRZ interpretation is found in the Data section of the response
 }
 ```
 
-<a id="Validations"></a>
-
-### Validations
+#### Validations
 
 Validations performed in the MRZ section:
 
-- **DocumentNumber** - checksum cross-checked with MRZ Line\_2 first control digit.
-- **DateOfBirth** - checksum cross-checked with MRZ Line\_2 second control digit.
-- **DateOfExpiry** - checksum cross-checked with MRZ Line\_2 third control digit.
-- **Line\_2** - checksum of the entire MRZ line 2 (if any of the above fails, the entire line fails and the entire MRZ checksum fails).
-- **Sex** - validation on values “F” or “M”.
+* **DocumentNumber** - checksum cross-checked with MRZ Line\_2 first control digit.
+* **DateOfBirth** - checksum cross-checked with MRZ Line\_2 second control digit.
+* **DateOfExpiry** - checksum cross-checked with MRZ Line\_2 third control digit.
+* **Line\_2** - checksum of the entire MRZ line 2 (if any of the above fails, the entire line fails and the entire MRZ checksum fails).
+* **Sex** - validation on values “F” or “M”.
 
 Based on **Code** and **Nationality**, an existing template of the OCR service is identified:
 
-- If Code = “ID” and Nationality = “JAM”, the template “JAM\_Passport” is used.
+* If Code = “ID” and Nationality = “JAM”, the template “JAM\_Passport” is used.
 
 The results of the JAM\_Passport template provide the following validations:
 
-- **Validity** - Status Invalid if the OCR service fails to retrieve information in **IssueDate** and **ExpiryDate**.
-- **MRZ** - Status Invalid if at least one of the cross-checks on the MRZ field fails (document number, date of birth, date of expiry, sex, IssuingState).
-- **Sex** - Status Invalid if the cross-check of the following fields fail: Sex from Document, Sex from MRZ.
-- **DateOfBirth** - Status Invalid if the cross-check of the following fields fail: DateOfBirth from Document, DateOfBirth from MRZ.
-- **IssueDate** - Status Invalid if the cross-check of the following fields fail: IssueDate from Document, IssueDate from MRZ.
-- **ExpireDate** - Status Invalid if the cross-check of the following fields fail: ExpireDate from Document, ExpireDate from MRZ.
-- **SIRUTA** - Status Invalid if the value of field Locality cannot be matched to the SIRUTA dictionary.
-- **Face** - Status Invalid if the "Face.Confidence" is not 1.0 or "Invalid: you forgot to smile" if the customer is not smiling in the selfie. This validation is done for OCR of Jamaican passports with selfie.
+* **Validity** - Status Invalid if the OCR service fails to retrieve information in **IssueDate** and **ExpiryDate**.
+* **MRZ** - Status Invalid if at least one of the cross-checks on the MRZ field fails (document number, date of birth, date of expiry, sex, IssuingState).
+* **Sex** - Status Invalid if the cross-check of the following fields fail: Sex from Document, Sex from MRZ.
+* **DateOfBirth** - Status Invalid if the cross-check of the following fields fail: DateOfBirth from Document, DateOfBirth from MRZ.
+* **IssueDate** - Status Invalid if the cross-check of the following fields fail: IssueDate from Document, IssueDate from MRZ.
+* **ExpireDate** - Status Invalid if the cross-check of the following fields fail: ExpireDate from Document, ExpireDate from MRZ.
+* **SIRUTA** - Status Invalid if the value of field Locality cannot be matched to the SIRUTA dictionary.
+* **Face** - Status Invalid if the "Face.Confidence" is not 1.0 or "Invalid: you forgot to smile" if the customer is not smiling in the selfie. This validation is done for OCR of Jamaican passports with selfie.
 
 If the data cannot be extracted by the OCR Service, validations on all of the above fields will fail.
 
-<a id="Statusfield"></a>
-
-### Status field
+#### Status field
 
 1. **InvalidDocument**. All validations on the document failed.
 2. **Partial**. There are failed validations.
@@ -152,9 +143,7 @@ If the data cannot be extracted by the OCR Service, validations on all of the ab
 
 If Status is other than “Complete”, you see the error and the validation details in the “ValidationResult” attribute.
 
-<a id="ImageValidation"></a>
-
-### Image Validation
+#### Image Validation
 
 For best results the image is automatically prepared by the API before the OCR process executes, applying multiple image processing algorithms.
 

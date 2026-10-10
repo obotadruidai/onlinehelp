@@ -1,17 +1,14 @@
 ---
-title: "Manage Data Records"
+title: Manage Data Records
 ---
 
-<a id="ManageDataRecords"></a>
-
+# Manage Data Records
 
 For solution admins
 
 While the solution comes with a predefined set of records, and you might also already have your institution data stored in Druid Data Service, admins can manually add new records based on the needs in the Admin workspace.
 
-<a id="Updatedegreeofferings"></a>
-
-## Update degree offerings
+### Update degree offerings
 
 Degrees are academic credentials or titles awarded by colleges and universities upon the successful completion of a structured program of study.
 
@@ -23,27 +20,25 @@ To add a new degree:
 2. Click the **New AcademicDegree** icon at the top right corner of the page.
 3. Fill in the following fields:
 
-| Field | Description |
-| --- | --- |
-| Name | The name of the degree. |
+| Field       | Description                                                                                 |
+| ----------- | ------------------------------------------------------------------------------------------- |
+| Name        | The name of the degree.                                                                     |
 | Description | The description the AI Agent uses when answering student questions. This field is optional. |
 
-![](../../../../Resources/Images/HigherEd_Agentic_Advisor/Manage%20Data%20Records%20for%20solution_4.png)
+![](<../../../../../.gitbook/assets/Manage Data Records for solution_4.png>)
 
 4. Save and close the form.
 
-<a id="ClassifyAcademicLevels"></a>
-
-## Classify Academic Levels
+### Classify Academic Levels
 
 Academic Level defines a student's standing in their degree program. The AI Agent uses Academic Level to apply level-specific enrollment rules and tailor course recommendations to the student's stage in their program.
 
-| Academic Level | Description |
-| --- | --- |
-| Freshman | A first-year undergraduate student, typically in the initial stage of their degree program. |
-| Sophomore | A second-year undergraduate student, continuing foundational coursework and beginning to explore their major. |
-| Junior | A third-year undergraduate student, focused on major-specific coursework and program requirements. |
-| Senior | A fourth-year undergraduate student, completing final degree requirements and preparing for graduation. |
+| Academic Level | Description                                                                                                   |
+| -------------- | ------------------------------------------------------------------------------------------------------------- |
+| Freshman       | A first-year undergraduate student, typically in the initial stage of their degree program.                   |
+| Sophomore      | A second-year undergraduate student, continuing foundational coursework and beginning to explore their major. |
+| Junior         | A third-year undergraduate student, focused on major-specific coursework and program requirements.            |
+| Senior         | A fourth-year undergraduate student, completing final degree requirements and preparing for graduation.       |
 
 To add a new academic level:
 
@@ -51,16 +46,14 @@ To add a new academic level:
 2. Click the **New AcademicLevel** icon at the top right corner of the page.
 3. Fill in the following fields:
 
-| Field | Description |
-| --- | --- |
-| Name | The name of the level. |
+| Field       | Description                                                                                 |
+| ----------- | ------------------------------------------------------------------------------------------- |
+| Name        | The name of the level.                                                                      |
 | Description | The description the AI Agent uses when answering student questions. This field is optional. |
 
 4. Save the form.
 
-<a id="AddNewSemesters"></a>
-
-## Add New Semesters
+### Add New Semesters
 
 Academic Periods lists the academic semesters and terms (e.g., Fall 2024, Spring 2025). The AI Agent uses the active period as the default semester when students browse or enroll in courses.
 
@@ -70,41 +63,35 @@ To add a new semester for the upcoming term so students can enroll in courses fo
 2. Click the **New AcademicPeriod** icon at the top right corner of the page.
 3. In the form, enter the name of the new academic period, the start date and end date and save the form.
 
-![](../../../../Resources/Images/HigherEd_Agentic_Advisor/Manage%20Data%20Records%20for%20solution_1.png)
+![](<../../../../../.gitbook/assets/Manage Data Records for solution_1.png>)
 
-<a id="UnderstandStudentEnrollmentStatus"></a>
-
-## Understand Student Enrollment Status
+### Understand Student Enrollment Status
 
 The system tracks the following enrollment statuses for each course:
 
-- **In Progress**: The students are actively enrolled and the course is currently underway. Attendance, assignments, and assessments are ongoing.
-- **Incomplete**: The student has submitted a request to retake this course in the following academic year. The course will remain on the student record until successfully completed.
-- **Withdrawn**: The student has withdrawn from the course. This action may have academic and financial implications depending on the withdrawal deadline.
-- **Complete**: The course has been successfully concluded and a final grade has been recorded on the student's academic record.
+* **In Progress**: The students are actively enrolled and the course is currently underway. Attendance, assignments, and assessments are ongoing.
+* **Incomplete**: The student has submitted a request to retake this course in the following academic year. The course will remain on the student record until successfully completed.
+* **Withdrawn**: The student has withdrawn from the course. This action may have academic and financial implications depending on the withdrawal deadline.
+* **Complete**: The course has been successfully concluded and a final grade has been recorded on the student's academic record.
 
 When the student starts a conversation, the AI Agent identifies the intent and guides the student through the appropriate steps. Sensitive operations require identity verification first.
 
-<a id="Classifystudentsincategories"></a>
-
-## Classify students in categories
+### Classify students in categories
 
 Student classification is defined by two primary categories: student type and student status. These indicators determine a learner's residency, academic path, and eligibility for institutional actions.
 
-<a id="Studenttypes"></a>
-
-### Student types
+#### Student types
 
 Student type primarily identifies the residency and tuition classification of the learner:
 
-- **International student**: A learner attending the institution from outside the country.
-- **In-state student**: A learner who meets local residency requirements for regional tuition rates.
-- **Out-of-state student**: A learner who resides within the country but outside the local tuition jurisdiction.
+* **International student**: A learner attending the institution from outside the country.
+* **In-state student**: A learner who meets local residency requirements for regional tuition rates.
+* **Out-of-state student**: A learner who resides within the country but outside the local tuition jurisdiction.
 
 The AI Agent uses student status and student type to manage enrollment:
 
-- Student status determines access. The AI Agent checks if a learner is eligible to perform actions (e.g., a Declared student can register, while a Suspended student or Prospect cannot).
-- Student type determines requirements. The AI Agent applies specific rules based on residency (e.g., calculating different tuition rates for an In-State student versus an International student).
+* Student status determines access. The AI Agent checks if a learner is eligible to perform actions (e.g., a Declared student can register, while a Suspended student or Prospect cannot).
+* Student type determines requirements. The AI Agent applies specific rules based on residency (e.g., calculating different tuition rates for an In-State student versus an International student).
 
 To add a new student type:
 
@@ -112,23 +99,21 @@ To add a new student type:
 2. Click the **New StudentType** icon at the top right corner of the page.
 3. Fill in the following fields:
 
-| Field | Description |
-| --- | --- |
-| Name | The name of the category. |
+| Field       | Description                                                                                 |
+| ----------- | ------------------------------------------------------------------------------------------- |
+| Name        | The name of the category.                                                                   |
 | Description | The description the AI Agent uses when answering student questions. This field is optional. |
 
 4. Save and close the form.
 
-<a id="Studentstatuses"></a>
-
-### Student statuses
+#### Student statuses
 
 Student status defines the current academic standing or progress of the learner:
 
-- **Prospect**: A potential learner who has expressed interest but is not yet enrolled.
-- **Undeclared**: An active student who has not yet selected a specific major or field of study.
-- **Declared**: An active student who has officially selected and been accepted into a specific major.
-- **Suspended**: A student who is temporarily prohibited from participating in academic activities.
+* **Prospect**: A potential learner who has expressed interest but is not yet enrolled.
+* **Undeclared**: An active student who has not yet selected a specific major or field of study.
+* **Declared**: An active student who has officially selected and been accepted into a specific major.
+* **Suspended**: A student who is temporarily prohibited from participating in academic activities.
 
 To define a new student status:
 
@@ -136,16 +121,14 @@ To define a new student status:
 2. Click the **New StudentStatus** icon at the top right corner of the page.
 3. Fill in the following fields:
 
-| Field | Description |
-| --- | --- |
-| Name | The name of the status. |
+| Field       | Description                                                                                 |
+| ----------- | ------------------------------------------------------------------------------------------- |
+| Name        | The name of the status.                                                                     |
 | Description | The description the AI Agent uses when answering student questions. This field is optional. |
 
 4. Save and close the form.
 
-<a id="AddNewCampuses"></a>
-
-## Add New Campuses
+### Add New Campuses
 
 You can define the physical or virtual campuses associated with the institution. The AI Agent uses campus information when answering student questions about location-specific resources and events.
 
@@ -155,20 +138,18 @@ To add a new campus:
 2. Click the **New Campus** icon at the top right corner of the page.
 3. Fill in the following fields:
 
-| Field | Description |
-| --- | --- |
-| Name | The name of the campus (e.g., Main Campus, Forest Campus). |
-| Address | The address of the campus location. |
-| City | The city where the campus is located. |
-| State | The state or province where the campus is located. |
-| Country | The country where the campus is located. |
-| Office Locations | In the view on the form, click the **New Record** icon above the table. The New Office Location form appears. Enter a location name, then select the Campus from the dropdown.  ![](../../../../Resources/Images/HigherEd_Agentic_Advisor/OFFICE%20RECORD.png)  Save and close the form. |
+| Field            | Description                                                                                                                                                                                                                                                     |
+| ---------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Name             | The name of the campus (e.g., Main Campus, Forest Campus).                                                                                                                                                                                                      |
+| Address          | The address of the campus location.                                                                                                                                                                                                                             |
+| City             | The city where the campus is located.                                                                                                                                                                                                                           |
+| State            | The state or province where the campus is located.                                                                                                                                                                                                              |
+| Country          | The country where the campus is located.                                                                                                                                                                                                                        |
+| Office Locations | In the view on the form, click the **New Record** icon above the table. The New Office Location form appears. Enter a location name, then select the Campus from the dropdown. ![](<../../../../../.gitbook/assets/OFFICE RECORD.png>) Save and close the form. |
 
 4. Save and close the form.
 
-<a id="DefineInstructorStatuses"></a>
-
-## Define Instructor Statuses
+### Define Instructor Statuses
 
 Instructor Status defines the current employment standing of an instructor. The AI Agent uses Instructor Status to determine whether an instructor is available to teach courses in the current academic period.
 
@@ -181,9 +162,7 @@ To add a new instructor status:
 3. Enter the name of the status.
 4. Save and close the form.
 
-<a id="DefineInstructorTypes"></a>
-
-## Define Instructor Types
+### Define Instructor Types
 
 Instructor Type identifies the employment classification of an instructor. The AI Agent uses the Instructor Type to determine teaching load, course assignment eligibility, and scheduling availability.
 
@@ -196,9 +175,7 @@ To add a new instructor type:
 3. Enter the name of the type.
 4. Save and close the form.
 
-<a id="AddInstructorTitles"></a>
-
-## Add Instructor Titles
+### Add Instructor Titles
 
 Instructor Title identifies the academic rank of an instructor. The AI Agent uses the Instructor Title to apply rank-specific rules for course assignment, supervision, and academic responsibilities.
 

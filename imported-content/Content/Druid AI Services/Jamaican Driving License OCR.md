@@ -1,34 +1,29 @@
 ---
-title: "Jamaican Driver License OCR"
+title: Jamaican Driver License OCR
 ---
 
-<a id="JamaicanDriverLicenseOCR"></a>
-
+# Jamaican Driver License OCR
 
 The Druid API engine performs OCR and data extraction from Jamaican driver licenses.
 
 {% hint style="info" %}
 **NOTE:**
 
-- In order to use this Druid Vision service, contact [Druid Tech Support](<mailto:support@druidai.com?subject=Request: Activate Druid Vision service JAM_DriversLicence>).
-- For any APIs that are used for testing purposes and not in a production environment, Druid CANNOT be held responsible for the security of the processed data under the General Data Protection Regulation (GDPR). We highly recommend you to use sample data and documents for all APIs in testing environments.
+* In order to use this Druid Vision service, contact [Druid Tech Support](../Druid%20AI%20Services/mailto:support@druidai.com).
+* For any APIs that are used for testing purposes and not in a production environment, Druid CANNOT be held responsible for the security of the processed data under the General Data Protection Regulation (GDPR). We highly recommend you to use sample data and documents for all APIs in testing environments.
 {% endhint %}
 
-<a id="Request"></a>
+### Request
 
-## Request
+|                             |                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Method                      | POST                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| API Resource URL (Endpoint) | The endpoint of the Druid Vision **JAM\_DriversLicence** service. For information on how to get the endpoint, see [Druid Vision](<Druid Vision.md>).                                                                                                                                                                                                                                                                                        |
+| Authorization               | Select **Bearer Token** and provide the Druid Vision **Token**. For information on how to get the endpoint, see [Druid Vision](<Druid Vision.md>). ![](<../../.gitbook/assets/jam drive auth.png>)                                                                                                                                                                                                                                          |
+| Headers                     | Content-Type: “multipart/form-data” ![](<../../.gitbook/assets/jamaican drive multipart.png>)                                                                                                                                                                                                                                                                                                                                               |
+| Body                        | “file”: (file attachment). Supported formats: png, jpg, pdf. ![](<../../.gitbook/assets/jam drive body.png>) If extraction fails due to issues like poor image quality, you can skip the **DateIssued** validation check by using the **skipValidations** parameter in the request body as shown in the image below. ![](../../.gitbook/assets/JAM_DriversLicence.png) **NOTE:** Skipping validations is available in DRUID 8.1 and higher. |
 
-|  |  |
-| --- | --- |
-| Method | POST |
-| API Resource URL (Endpoint) | The endpoint of the Druid Vision **JAM\_DriversLicence** service. For information on how to get the endpoint, see [Druid Vision](Druid%20Vision.md). |
-| Authorization | Select **Bearer Token** and provide the Druid Vision **Token**. For information on how to get the endpoint, see [Druid Vision](Druid%20Vision.md).  ![](../Resources/Images/vision/jam%20drive%20auth.png) |
-| Headers | Content-Type: “multipart/form-data”  ![](../Resources/Images/vision/jamaican%20drive%20multipart.png) |
-| Body | “file”: <attached document file> (file attachment).  Supported formats: png, jpg, pdf.  ![](../Resources/Images/vision/jam%20drive%20body.png)  If extraction fails due to issues like poor image quality, you can skip the **DateIssued** validation check by using the **skipValidations** parameter in the request body as shown in the image below.  ![](../Resources/Images/vision/JAM_DriversLicence.png)  **NOTE:** Skipping validations is available in DRUID 8.1 and higher. |
-
-<a id="Response"></a>
-
-## Response
+### Response
 
 **Response Example**
 
@@ -80,7 +75,7 @@ The Druid API engine performs OCR and data extraction from Jamaican driver licen
 
 The JAM\_Passport template performs the following validation:
 
-- **DateIssued** – The status is “Invalid” if the document’s **DateIssued** field does not pass validation.
+* **DateIssued** – The status is “Invalid” if the document’s **DateIssued** field does not pass validation.
 
 **Failed Validation Example**
 

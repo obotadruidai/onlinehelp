@@ -1,9 +1,8 @@
 ---
-title: "Druid Data Service Installation"
+title: Druid Data Service Installation
 ---
 
-<a id="DruidDataServiceInstallation"></a>
-
+# Druid Data Service Installation
 
 Druid Data Service is Druid’s data storage used to persist entity records created and managed within the Druid AI Platform simplifying records authoring. authors can further use these records in NER training and in other different contexts.
 
@@ -11,86 +10,71 @@ This document describes how to install Druid Data Service on your premises.
 
 The following tokens used within this document are supposed to be replaced with their real values before being used:
 
-| Token | Description |
-| --- | --- |
-| `{{DRUID-CONNECTOR}}` | The machine which hosts Druid Connector Host service. |
+| Token                     | Description                                                                                                                                               |
+| ------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `{{DRUID-CONNECTOR}}`     | The machine which hosts Druid Connector Host service.                                                                                                     |
 | `{{DATASERVICE-SERVER}}`¹ | The machine which hosts Druid Data Service. It can be the same machine that hosts Druid Connector Host service as long as all requirements are fulfilled. |
-| `{{DATASERVICE-PORT}}` | The TCP port on which Druid Data Service will be accessed. |
-| `{{TENANT-NAME}}` | Your tenant name assigned by Druid team. |
+| `{{DATASERVICE-PORT}}`    | The TCP port on which Druid Data Service will be accessed.                                                                                                |
+| `{{TENANT-NAME}}`         | Your tenant name assigned by Druid team.                                                                                                                  |
 
-<a id="Prerequisites"></a>
+### Prerequisites
 
-## Prerequisites
+* Your tenant is already configured in Hybrid mode deployment.
+* Make a request to [Druid Tech Support](mailto:support@druidai.com) to activate the Druid Data Service feature.
+* You will provide your tenant identifier, `{{TENANT-NAME}`}.
 
-- Your tenant is already configured in Hybrid mode deployment.
-- Make a request to [Druid Tech Support](mailto:support@druidai.com) to activate the Druid Data Service feature.
+### Hardware requirements
 
-- You will provide your tenant identifier, `{{TENANT-NAME}`}.
+| Item         | Testing Environment                         | Production Environment |
+| ------------ | ------------------------------------------- | ---------------------- |
+| CPU count    | 1                                           | 2                      |
+| CPU Type     | Proc Intel i7 gen 8 min or equivalent Xeon. |                        |
+| RAM          | 4 GB                                        | 8 GB                   |
+| Storage Type | Min 500 IOPS.                               |                        |
 
-<a id="Hardwarerequirements"></a>
+### Software requirements
 
-## Hardware requirements
+| Tool       | Install instructions                                                                                                     | Type        |
+| ---------- | ------------------------------------------------------------------------------------------------------------------------ | ----------- |
+| Notepad ++ | [https://notepad-plus-plus.org/downloads/](https://notepad-plus-plus.org/downloads/)                                     | Recommended |
+| Mongo DB   | [https://www.mongodb.com/docs/manual/tutorial/#installation](https://www.mongodb.com/docs/manual/tutorial/#installation) | Mandatory   |
 
-| Item | Testing Environment | Production Environment |
-| --- | --- | --- |
-| CPU count | 1 | 2 |
-| CPU Type | Proc Intel i7 gen 8 min or equivalent Xeon. |  |
-| RAM | 4 GB | 8 GB |
-| Storage Type | Min 500 IOPS. |  |
+By default, MongoDB is installed without any secured access, which means that the database can be viewed or modified by anyone who has network access to the machine running the MongoDB service. To set up security for your MongoDB installation, see [Configure secured access to your MongoDB database](<Druid Data Service Installation.md#Configure_secured_access_to_your_MongoDB_database>).
 
-<a id="Softwarerequirements"></a>
+### Networking requirements
 
-## Software requirements
-
-| Tool | Install instructions | Type |
-| --- | --- | --- |
-| Notepad ++ | [https://notepad-plus-plus.org/downloads/](https://notepad-plus-plus.org/downloads/) | Recommended |
-| Mongo DB | [https://www.mongodb.com/docs/manual/tutorial/#installation](https://www.mongodb.com/docs/manual/tutorial/#installation) | Mandatory |
-
-By default, MongoDB is installed without any secured access, which means that the database can be viewed or modified by anyone who has network access to the machine running the MongoDB service. To set up security for your MongoDB installation, see [Configure secured access to your MongoDB database](#Configure_secured_access_to_your_MongoDB_database).
-
-<a id="Networkingrequirements"></a>
-
-## Networking requirements
-
-| Source | Destination | Protocol | Port | Function | Used at |
-| --- | --- | --- | --- | --- | --- |
-| `{{DRUID-CONNECTOR}}` | `{{DATASERVICE-SERVER}}` | https  http | {{DATASERVICE- PORT}} | Feature DataService | Utilization |
-| `{{DATASERVICE-SERVER}}` | `{{MONGODB-INSTANCE}}` | tcp | 27017 | Data persistence in Druid | Utilization |
-| `{{DATASERVICE-SERVER}}` | `{{TENANT-NAME}}`.druidplatform.com | https | 443 | Platform stored in Azure | Utilization |
+| Source                   | Destination                         | Protocol   | Port                    | Function                  | Used at     |
+| ------------------------ | ----------------------------------- | ---------- | ----------------------- | ------------------------- | ----------- |
+| `{{DRUID-CONNECTOR}}`    | `{{DATASERVICE-SERVER}}`            | https http | \{{DATASERVICE- PORT\}} | Feature DataService       | Utilization |
+| `{{DATASERVICE-SERVER}}` | `{{MONGODB-INSTANCE}}`              | tcp        | 27017                   | Data persistence in Druid | Utilization |
+| `{{DATASERVICE-SERVER}}` | `{{TENANT-NAME}}`.druidplatform.com | https      | 443                     | Platform stored in Azure  | Utilization |
 
 This section describes how to install Druid Data Service using the Connector Host installer kit.
 
-<a id="Step1DownloadDruidConnectorHostInstaller"></a>
-
-## Step 1: Download Druid Connector Host Installer
+### Step 1: Download Druid Connector Host Installer
 
 On the `{{DATASERVICE-SERVER}}` machine, download the Druid Connector Host Installer:
 
-1. Access the Druid Portal using an admin account and from the left menu select **All Settings** > **Download binaries**.
+1. Access the Druid Portal using an admin account and from the left menu select **All Settings** > **Download binaries**.
 2. Expand the latest version and download the zip file.
 
-![](../../Resources/Images/Druid%20Data%20Service%20Installation/download%20cnn%20host%20installer.png)
+![](<../../../.gitbook/assets/download cnn host installer.png>)
 
 The file is downloaded in your default download folder.
 
-<a id="Step2Unzipthedownloadedfile"></a>
+### Step 2: Unzip the downloaded file
 
-## Step 2: Unzip the downloaded file
+Usually, the URL security zone might prevent the downloaded file execution. Right-click on the file and click **Properties**, untick the **Read-only** checkbox, click **Apply**, confirm the changes and then click **OK**. Unzip the downloaded file into the installation folder, e.g. _D:\Druid_.
 
-Usually, the URL security zone might prevent the downloaded file execution. Right-click on the file and click **Properties**, untick the **Read-only** checkbox, click **Apply**, confirm the changes and then click **OK**. Unzip the downloaded file into the installation folder, e.g. *D:\Druid*.
+![](<../../../.gitbook/assets/read-only untick.png>)
 
-![](../../Resources/Images/Druid%20Data%20Service%20Installation/read-only%20untick.png)
-
-<a id="Step3InstallDruidDataService"></a>
-
-## Step 3. Install Druid Data Service
+### Step 3. Install Druid Data Service
 
 Go to the folder Druid Connector installer and double-click on **Druid.ConnectorHost.Installer.exe**.
 
 The installation wizard opens. Select **Data Service**.
 
-![](../../Resources/Images/Druid%20Data%20Service%20Installation/DS%20install.png)
+![](<../../../.gitbook/assets/DS install.png>)
 
 {% hint style="info" %}
 **NOTE:** Selecting both options will install the Data Service and the Connector Host on the same machine.
@@ -101,46 +85,44 @@ Click **Next**.
 Select **Install a new Data Service instance**.
 
 {% hint style="info" %}
-**Info:**  Using the Druid Connector Host installer, you can also upgrade or uninstall versions of Druid Data Service installed using the installer.
+**Info:** Using the Druid Connector Host installer, you can also upgrade or uninstall versions of Druid Data Service installed using the installer.
 {% endhint %}
 
 Click **Next**.
 
 Provide Druid Data Service installation parameters or import the settings by clicking the **Import settings** button and uploading the appsettings.json file from an older Druid Data Service installation folder.
 
-| Parameter | Description | Example |
-| --- | --- | --- |
-| Data Service |  |  |
-| Instance name | The name of the Data Service instance | test-DS |
-| Installation folder | The link of the folder where the Data Service will be installed. | E:\Druid\DataService\_test-DS |
-| **Connections** |  |  |
-| MongoDB | The connection string to the MongoDB database. | mongodb://localhost:27017/ |
-| **Druid Portal API** |  |  |
-| URL | The Druid AI Platform url. | https://{{environment  }}.druidplatform.com/ |
-| Tenant | The name of your Druid AI Platform tenant assigned by the Druid team. | documentation |
-| Username | A dedicated Druid Portal user ( in your tenant) with Druid Backend API permissions. We recommend you to use the same credential as the one used for Druid Connector Host installation. |  |
-| Password | The password of the dedicated Druid Portal user. |  |
-| Configurations |  |  |
-| Local port number | The http port for communicating with Data Service. | 5105 |
-| Query ResultSet Max Limit | The maximum number of records that can be transmitted through Druid Data Service. We recommend you to set the value to minimum 100.000. | 100000 |
-| **Service settings** |  |  |
-| Local System / User account | The credentials of the Windows user under which the Data Service will run. |  |
-| **Client Rate Limiting** |  |  |
-| Period/Limit | Control the rate of requests sent to Druid Data service to prevent DDOS attacks. We recommend you to leave the default limits. |  |
+| Parameter                   | Description                                                                                                                                                                            | Example                                       |
+| --------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------- |
+| Data Service                |                                                                                                                                                                                        |                                               |
+| Instance name               | The name of the Data Service instance                                                                                                                                                  | test-DS                                       |
+| Installation folder         | The link of the folder where the Data Service will be installed.                                                                                                                       | E:\Druid\DataService\_test-DS                 |
+| **Connections**             |                                                                                                                                                                                        |                                               |
+| MongoDB                     | The connection string to the MongoDB database.                                                                                                                                         | mongodb://localhost:27017/                    |
+| **Druid Portal API**        |                                                                                                                                                                                        |                                               |
+| URL                         | The Druid AI Platform url.                                                                                                                                                             | https://\{{environment \}}.druidplatform.com/ |
+| Tenant                      | The name of your Druid AI Platform tenant assigned by the Druid team.                                                                                                                  | documentation                                 |
+| Username                    | A dedicated Druid Portal user ( in your tenant) with Druid Backend API permissions. We recommend you to use the same credential as the one used for Druid Connector Host installation. |                                               |
+| Password                    | The password of the dedicated Druid Portal user.                                                                                                                                       |                                               |
+| Configurations              |                                                                                                                                                                                        |                                               |
+| Local port number           | The http port for communicating with Data Service.                                                                                                                                     | 5105                                          |
+| Query ResultSet Max Limit   | The maximum number of records that can be transmitted through Druid Data Service. We recommend you to set the value to minimum 100.000.                                                | 100000                                        |
+| **Service settings**        |                                                                                                                                                                                        |                                               |
+| Local System / User account | The credentials of the Windows user under which the Data Service will run.                                                                                                             |                                               |
+| **Client Rate Limiting**    |                                                                                                                                                                                        |                                               |
+| Period/Limit                | Control the rate of requests sent to Druid Data service to prevent DDOS attacks. We recommend you to leave the default limits.                                                         |                                               |
 
 Click **Next**, then click **Start**.
 
 After the Data Service installation completes, click **Exit**.
 
-<a id="Step3ReviewandupgradeDruidDataService"></a>
-
-## Step 3. Review and upgrade Druid Data Service
+### Step 3. Review and upgrade Druid Data Service
 
 Go to **Administration** > **Settings**. Click the **Druid Data Service** tab and click the **Review & Upgrade** button.
 
 Druid screens all existing entities across all AI Agents on your tenant and detects the entities that have fields for which the field type is incompatible with the required system field type. You can go through the list and click on entity (entities) to see which field types were found incompatible.
 
-![](../../Resources/Images/Druid%20Data%20Service/second%20pop%20up.png)
+![](<../../../.gitbook/assets/second pop up.png>)
 
 {% hint style="warning" %}
 **IMPORTANT!** The upgrade is irreversible; so before upgrading, we strongly recommend you to check the new system entity field types and review your existing configurations to make sure that they are not affected by these changes.
@@ -153,27 +135,25 @@ Druid screens all existing entities across all AI Agents on your tenant and dete
 The following Druid system fields are automatically populated on entity and entity field creation; therefore, a specific field type is required by Druid.
 
 | Druid System Field | Druid field Type |
-| --- | --- |
-| Id | String |
-| CreatedByUserId | String |
-| CreatedOn | DateTime |
-| ModifiedByUserId | String |
-| ModifiedOn | String |
-| OperatedByBotId | String |
+| ------------------ | ---------------- |
+| Id                 | String           |
+| CreatedByUserId    | String           |
+| CreatedOn          | DateTime         |
+| ModifiedByUserId   | String           |
+| ModifiedOn         | String           |
+| OperatedByBotId    | String           |
 
 Click the **Overwrite entity fields** button at the bottom of the pop-up to overwrite your existing field types to the ones required by Druid.
 
 At the top-right corner of the page, click the **Save all** button.
 
 {% hint style="warning" %}
-**IMPORTANT!**  Make sure that you click **Save all**; otherwise, enabling Druid Data Service and overwriting the entity fields will have no effect.
+**IMPORTANT!** Make sure that you click **Save all**; otherwise, enabling Druid Data Service and overwriting the entity fields will have no effect.
 {% endhint %}
 
-Use [Druid Data Service Connector](../Druid%20Data%20Service%20Connector/Druid_Data_%20Service_Connector.md) to manage entity records within the conversational flows.
+Use [Druid Data Service Connector](<../Druid Data Service Connector/Druid_Data_ Service_Connector.md>) to manage entity records within the conversational flows.
 
-<a id="Step4ConfiguresecuredaccesstoyourMongoDBdatabase"></a>
-
-## <a id="Configure_secured_access_to_your_MongoDB_database"></a>Step 4. Configure secured access to your MongoDB database
+### Step 4. Configure secured access to your MongoDB database <a href="#configure_secured_access_to_your_mongodb_database" id="configure_secured_access_to_your_mongodb_database"></a>
 
 By default, MongoDB is installed without any secured access. This section describes how to set up security for your MongoDB installation.
 
@@ -191,17 +171,18 @@ This section describes how to configure security in MongoDB using the compass to
 
 1. Access compass and click the **Connect** button
 
-![](../../Resources/Images/Mongo/Mongo.png)
+![](../../../.gitbook/assets/Mongo.png)
 
 2. At the left-bottom of the Compass window, click on **>\_MONGOSH**.
 
-![](../../Resources/Images/Mongo/Mongo_1.png)
+![](../../../.gitbook/assets/Mongo_1.png)
 
 3. Change the database to admin by typing `use admin` and pressing **ENTER**.
 
-![](../../Resources/Images/Mongo/Mongo_2.png)
+![](../../../.gitbook/assets/Mongo_2.png)
 
 4. Create the user by typing the text below and replacing `{{MONGOADMIN}}` and `{{MONGOPASS}}` with the MongoDB credentials (user and password).
+
 {% hint style="info" %}
 **NOTE:** For credentials, use only alphanumeric characters.
 {% endhint %}
@@ -220,9 +201,9 @@ db.createUser(
 
 5. Press **ENTER**. The response must be `{ ok: 1 }`.
 
-![](../../Resources/Images/Mongo/Mongo_3.png)
+![](../../../.gitbook/assets/Mongo_3.png)
 
-6. Edit the file *C:\Program Files\MongoDB\Server\6.0\bin\mongod.cfg* by setting up the following configuration.
+6. Edit the file _C:\Program Files\MongoDB\Server\6.0\bin\mongod.cfg_ by setting up the following configuration.
 
 ```
 security: authorization: enabled
@@ -246,9 +227,7 @@ mongodb://{{MONGOADMIN}}:{{MONGOPASS}}@localhost:27017
 
 For example, `mongodb://druid-mongo-admin:TLb2DDPKuhVr5ZYU@localhost:27017`.
 
-<a id="Step5ConfigureDatabaseUserPrivilegesforDataServiceIndexes"></a>
-
-## Step 5. Configure Database User Privileges for Data Service Indexes
+### Step 5. Configure Database User Privileges for Data Service Indexes
 
 While the MongoDB administrator handles overall database access, the specific database user account configured for Druid Data Services requires targeted privileges to support advanced index operations.
 
@@ -256,14 +235,14 @@ To fully use the Index details and Create Index features within Dataservice-Mong
 
 Assign the predefined MongoDB role `readWrite`, which includes these defaults. Depending on whether you are modifying an existing user or creating a new one, execute the appropriate command block in the MongoDB shell:
 
-- To grant rights to an existing user (mongoDataServiceUser):
+* To grant rights to an existing user (mongoDataServiceUser):
 
 ```
 use admin
 db.grantRolesToUser("mongoDataServiceUser", [ { role: “clusterAdmin", db: "{environment}Tenant{tenantId}Store" } ])
 ```
 
-- To create a new user with these rights:
+* To create a new user with these rights:
 
 ```
 use {environment}Tenant{tenantId}Store
@@ -274,7 +253,7 @@ db.createUser({
 })
 ```
 
-- To verify the assigned user rights:
+* To verify the assigned user rights:
 
 ```
 use admin
@@ -283,10 +262,10 @@ db.getUser("mongoDataServiceUser", { showPrivileges: true })
 
 Variable Definitions:
 
-- {environment} – The Druid DataService environment variable (defaults to an empty string '').
-- {tenantId} – The Druid Tenant ID.
+* {environment} – The Druid DataService environment variable (defaults to an empty string '').
+* {tenantId} – The Druid Tenant ID.
 
-## Related Topics
+### Related Topics
 
-- [CNN\_Host\_Installation\_on\_Linux](https://docs.druidai.com/docs/Content/Druid%20Deployment/CNN_Host_Installation_on_Linux.htm)
-- [Install Druid Connector Host](../../Druid%20Deployment/Install%20Druid%20Connector%20Host.md)
+* [CNN\_Host\_Installation\_on\_Linux](https://docs.druidai.com/docs/Content/Druid%20Deployment/CNN_Host_Installation_on_Linux.htm)
+* [Install Druid Connector Host](<../../Druid Deployment/Install Druid Connector Host.md>)

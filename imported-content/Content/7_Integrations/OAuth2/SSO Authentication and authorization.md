@@ -1,9 +1,8 @@
 ---
-title: "SSO Authentication OAuth 2.0"
+title: SSO Authentication OAuth 2.0
 ---
 
-<a id="SSOAuthenticationOAuth20"></a>
-
+# SSO Authentication OAuth 2.0
 
 OAuth (Open Authorization) 2.0 is an open standard authorization protocol designed to allow a website or application to access resources hosted by other web apps on behalf of a user. It acts as an intermediary layer, providing the third-party service (e.g., Google, Facebook, LinkedIn) with an access token that authorizes specific user account information to be shared.
 
@@ -13,18 +12,17 @@ This video shows how an authenticated user submits a support ticket directly thr
 
 This section describes how it works and how to configure Druid for OAuth 2.0 grant type Authorization Code.
 
-<a id="HowDoesOAuth20Work"></a>
-
-## How Does OAuth 2.0 Work?
+### How Does OAuth 2.0 Work?
 
 The OAuth 2.0 authorization flow implementation in Druid is a seven-step process.
 
-![](../../Resources/Images/Oauth%202_FINAL/SSO%20Authentication%20and%20authorization.png)
+![](<../../../.gitbook/assets/SSO Authentication and authorization.png>)
 
 1. The Druid requests authorization to access protected resources owned by the user (resource owner) by directing the user to the authorize endpoint.
 2. Druid assistant displays a link in the chat that redirects the user to a login dialog at the web application. The user clicks the link and authenticates.
+
 {% hint style="info" %}
-**Info:**  This link is accessible from any channel that can use a web browser to open it.
+**Info:** This link is accessible from any channel that can use a web browser to open it.
 {% endhint %}
 
 3. The resource owner authenticates and authorizes the resource access request from the application, and returns an authorization grant (authorization code) to Druid for that ConversationId.
@@ -33,20 +31,16 @@ The OAuth 2.0 authorization flow implementation in Druid is a seven-step process
 6. Druid can now request access on user’s behalf to protected resources from the Resource Server at the provider by presenting the access token.
 7. If the access token is valid, the resource server returns the requested resources to Druid.
 
-<a id="OAuthAuthorizationParticularities"></a>
+### OAuth Authorization Particularities
 
-## OAuth Authorization Particularities
+* The authentication session is held per conversation Id.
+* Authentication tokens (access token, refresh token, etc.) are handled by the AI Agent in the conversation context.
+* You can request authentication both for server-to-server integrations or for user’s conversation.
 
-- The authentication session is held per conversation Id.
-- Authentication tokens (access token, refresh token, etc.) are handled by the AI Agent in the conversation context.
-- You can request authentication both for server-to-server integrations or for user’s conversation.
-
-<a id="OAuth20usedbyDruidforbothuserauthorizationandauthentication"></a>
-
-## OAuth 2.0 used by Druid for both user authorization and authentication
+### OAuth 2.0 used by Druid for both user authorization and authentication
 
 In Druid, you can use OAuth 2.0 for both authorization and user authentication.It provides you with three types of actions you can use for OAuth 2.0 purposes:
 
-- **Sign in** – handles both authentication and authorization when calling external API services on user’s behalf without necessarily authenticating the user within the conversation.
-- **Get user identity** – get user data (first name, last name, email, etc.) to identify and authenticate the user within the conversation. Requires Sign in.
-- **Sign out** – You can give the users the possibility to prevent the conversation from having access to external services on user’s behalf. You can use this action only if the external service provides an endpoint for signing out.
+* **Sign in** – handles both authentication and authorization when calling external API services on user’s behalf without necessarily authenticating the user within the conversation.
+* **Get user identity** – get user data (first name, last name, email, etc.) to identify and authenticate the user within the conversation. Requires Sign in.
+* **Sign out** – You can give the users the possibility to prevent the conversation from having access to external services on user’s behalf. You can use this action only if the external service provides an endpoint for signing out.

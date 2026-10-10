@@ -1,9 +1,8 @@
 ---
-title: "Set Variables"
+title: Set Variables
 ---
 
-<a id="SetVariables"></a>
-
+# Set Variables
 
 The Set Variables section allows you to put information into context by setting entities or local variables (prefixed with @) to specific values or to the result of specific functions. While entity fields hold values according to their defined data types, local variables are always treated as strings.
 
@@ -37,46 +36,39 @@ Similarly, for entity set variables, such as:
 **NOTE:** Fields of type entity list are not supported in these set variable constructions.
 {% endhint %}
 
-<a id="Setvariablesandmultilingualentityfields"></a>
-
-## Set variables and multilingual entity fields
+### Set variables and multilingual entity fields
 
 You can put information into context by setting entities to language specific values.
 
-#### Prerequisite
+**Prerequisite**
 
-- The entity field has the **Holds multilanguage records** option enabled.
-  For more information, see [Managing Entity Fields](../5_Entities/Managing%20Entity%20Fields.md) and [Multilingual Entity Fields](../5_Entities/Multilingual%20Entity%20Fields.md).
+* The entity field has the **Holds multilanguage records** option enabled. For more information, see [Managing Entity Fields](<../5_Entities/Managing Entity Fields.md>) and [Multilingual Entity Fields](<../5_Entities/Multilingual Entity Fields.md>).
 
 In the Set Variable section on the desired flow step, provide the desired entity as key and the multilingual entity field as key and as value for all languages. The multilingual entity field acts as an alias for the language-specific field clones and Druid will automatically set values based on the user's language. You can also provide as value the language-specific field clones (which are available in entity object explorer).
 
-![](../Resources/Images/Flows/set%20variable%20multi%20ner.png)
+![](<../../.gitbook/assets/set variable multi ner.png>)
 
-For more information, see [Managing Entity Fields](../5_Entities/Managing%20Entity%20Fields.md) and [NER and Multilanguage AI Agents](../5_Entities/Multilingual%20Entity%20Fields.md).
+For more information, see [Managing Entity Fields](<../5_Entities/Managing Entity Fields.md>) and [NER and Multilanguage AI Agents](<../5_Entities/Multilingual Entity Fields.md>).
 
-<a id="SettingUpVariablesExamples"></a>
+### Setting Up Variables Examples
 
-## Setting Up Variables Examples
-
-| Example | Description |
-| --- | --- |
-| [[FinancialProduct]].PrincipalAmount = 35000 | Sets to a number. |
-| [[FinancialProduct]].Notes = “to refinance another loan” | Sets to a string. |
-| [[ChatUser]].Language = “en-us” | Sets to a string. |
-| [[Form]].CurrentWelcomeTime = new Date(); | Sets the **CurrentWelcomeTime** field of type DateTime, to the current date. |
-| [[Form]].LastWelcomeTime = [[Form]].LastWelcomeTime == null ? [[Form]].CurrentWelcomeTime : [[Form]].LastWelcomeTime | Uses the conditional (ternary) operator. |
-| [[Form]].MinutesFromLastWelcome = Math.abs([[Form]].CurrentWelcomeTime - [[Form]].LastWelcomeTime) / 36000 | Uses a math function. |
-| [[SelectedProduct]] = [[ProductList]][0] | Uses entity collections. Sets the [[SelectedProduct]] entity (type Product) with the first element from the array [[ProductList]]. |
-| [[SelectedProduct]].TotalAmount = [[SelectedProduct]].UnitPrice \* [[SelectedProduct]].Quantity |  |
-| [[Invoice]].LinesCount = [[InvoiceLineList]].Count |  |
+| Example                                                                                                                      | Description                                                                                                                            |
+| ---------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| \[\[FinancialProduct]].PrincipalAmount = 35000                                                                               | Sets to a number.                                                                                                                      |
+| \[\[FinancialProduct]].Notes = “to refinance another loan”                                                                   | Sets to a string.                                                                                                                      |
+| \[\[ChatUser]].Language = “en-us”                                                                                            | Sets to a string.                                                                                                                      |
+| \[\[Form]].CurrentWelcomeTime = new Date();                                                                                  | Sets the **CurrentWelcomeTime** field of type DateTime, to the current date.                                                           |
+| \[\[Form]].LastWelcomeTime = \[\[Form]].LastWelcomeTime == null ? \[\[Form]].CurrentWelcomeTime : \[\[Form]].LastWelcomeTime | Uses the conditional (ternary) operator.                                                                                               |
+| \[\[Form]].MinutesFromLastWelcome = Math.abs(\[\[Form]].CurrentWelcomeTime - \[\[Form]].LastWelcomeTime) / 36000             | Uses a math function.                                                                                                                  |
+| \[\[SelectedProduct]] = \[\[ProductList]]\[0]                                                                                | Uses entity collections. Sets the \[\[SelectedProduct]] entity (type Product) with the first element from the array \[\[ProductList]]. |
+| \[\[SelectedProduct]].TotalAmount = \[\[SelectedProduct]].UnitPrice \* \[\[SelectedProduct]].Quantity                        |                                                                                                                                        |
+| \[\[Invoice]].LinesCount = \[\[InvoiceLineList]].Count                                                                       |                                                                                                                                        |
 
 {% hint style="info" %}
 **NOTE:** Both Input Mapping and Set Variables set on the step provide information context; however, on step execution the input mapping overrides the set variables.
 {% endhint %}
 
-<a id="Setvariablesusingadvancedcoding"></a>
-
-## Set variables using advanced coding
+### Set variables using advanced coding
 
 You can use advanced coding in Set Variables when assigning a value requires more complex processing. In addition to calculating and assigning values, advanced coding provides access to the current flow step through the `thisStep` object.
 
@@ -84,11 +76,9 @@ To use advanced coding, in the Set Variables section of your flow step, select t
 
 The Code Editor provides a set of predefined code templates that you can use to define your JavaScript code. To add a template, click **Add default template**, and then select the template that best suits your needs.
 
-In the Code Editor, entities from the conversation context are referenced with the same syntax you are already familiar, using brackets. Example: [[ChatUser]], [[Account], etc.
+In the Code Editor, entities from the conversation context are referenced with the same syntax you are already familiar, using brackets. Example: \[\[ChatUser]], \[\[Account], etc.
 
-<a id="ControlthecurrentflowstepusingthisStep"></a>
-
-### <a id="Control"></a>Control the current flow step using thisStep
+#### Control the current flow step using thisStep <a href="#control" id="control"></a>
 
 The `thisStep` object provides access to the current flow step while the Set Variables code is being executed. You can use it to modify the step before its configured post actions are executed.
 
@@ -98,10 +88,10 @@ The `thisStep` object provides access to the current flow step while the Set Var
 
 Using `thisStep`, you can dynamically control the current step based on your business logic. For example, you can:
 
-- clear the current step's post actions to prevent a configured action, such as an integration, from executing;
-- set a debug message;
-- modify the current step message;
-- use other supported properties of the current flow step.
+* clear the current step's post actions to prevent a configured action, such as an integration, from executing;
+* set a debug message;
+* modify the current step message;
+* use other supported properties of the current flow step.
 
 This is particularly useful when you need to validate data before allowing subsequent actions configured on the step to execute.
 
@@ -138,7 +128,7 @@ To modify the message of the current step, use:
 thisStep.Message = "Your message";
 ```
 
-#### Validate integration requests before execution
+**Validate integration requests before execution**
 
 In agentic flows, Set Variables can be used to process and validate arguments received from an LLM before those arguments are sent to an integration.
 
@@ -178,9 +168,7 @@ This prevents the integration from being triggered. The flow can continue to the
 
 Use this approach when validation depends on information that is available at runtime, such as function arguments, existing entity values, or other conversation context.
 
-<a id="Startfromscratchusinganemptyinlinefunction"></a>
-
-### Start from scratch using an empty inline function
+#### Start from scratch using an empty inline function
 
 You structure your code inside an inline function.
 
@@ -195,9 +183,7 @@ You structure your code inside an inline function.
  )()
 ```
 
-<a id="SetEntityTemplate"></a>
-
-### Set Entity Template
+#### Set Entity Template
 
 Use this template if you want to create an entity or if you want to set scalar attributes. Remove the unnecessary code to accommodate your needs.
 
@@ -227,9 +213,7 @@ function ()
 )()
 ```
 
-<a id="SetEntityCollectionTemplate"></a>
-
-### Set Entity Collection Template
+#### Set Entity Collection Template
 
 Use this template if you want to create an entity collection. Remove the unnecessary code to accommodate your needs.
 
@@ -262,24 +246,20 @@ Use this template if you want to create an entity collection. Remove the unneces
 )();
 ```
 
-<a id="Extensivemethodsforcollections"></a>
-
-### Extensive methods for collections
+#### Extensive methods for collections
 
 You can use the following methods to work with collections:
 
-| Method | Example |
-| --- | --- |
-| Create a new collection | ``` /*Replace Account and Contracts with your entities */ [[Account]].Contracts = EntityFactory.CreateCollection("your_entity_name"); ``` |
-| Add new item at the end of the collection | ``` /* Contracts is a Field of type Entity List, a collection. */ [[Account]].Contracts.Add(newContract); ``` |
-| Insert new item to collection at the specified position | **Example - Add contract #20000 at position 2**   ``` newContract = EntityFactory.CreateEntityByName("entity_name"); newContract.ContractNumber = 20000; position = 2; [[Account]].Contracts.Insert(position,newContract); ``` |
-| Remove an item from a collection from the specified position | **Example: Remove contract from specified position**   ``` [[Account]].Contracts.RemoveAt(position); ``` |
-| Get the number of elements in a collection | **Example**   ``` intCount = [[Account]].Contracts.Count; ``` |
-| Refer an item inside a collection | **Example**   ``` [[AccountList]][i].Name ``` |
+| Method                                                       | Example                                                                                                                                                                                                                |
+| ------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Create a new collection                                      | `/*Replace Account and Contracts with your entities */ [[Account]].Contracts = EntityFactory.CreateCollection("your_entity_name");`                                                                                    |
+| Add new item at the end of the collection                    | `/* Contracts is a Field of type Entity List, a collection. */ [[Account]].Contracts.Add(newContract);`                                                                                                                |
+| Insert new item to collection at the specified position      | **Example - Add contract #20000 at position 2** `newContract = EntityFactory.CreateEntityByName("entity_name"); newContract.ContractNumber = 20000; position = 2; [[Account]].Contracts.Insert(position,newContract);` |
+| Remove an item from a collection from the specified position | **Example: Remove contract from specified position** `[[Account]].Contracts.RemoveAt(position);`                                                                                                                       |
+| Get the number of elements in a collection                   | **Example** `intCount = [[Account]].Contracts.Count;`                                                                                                                                                                  |
+| Refer an item inside a collection                            | **Example** `[[AccountList]][i].Name`                                                                                                                                                                                  |
 
-<a id="SetVariablesErrorHandling"></a>
-
-## <a id="Set"></a>Set Variables – Error Handling
+### Set Variables – Error Handling <a href="#set" id="set"></a>
 
 {% hint style="info" %}
 **NOTE:** This feature is available in Druid 9.7 and higher.
@@ -294,8 +274,8 @@ To configure error handling for Set Variables:
 1. Go to the AI Agent details > **Dialogue management**.
 2. From the **Set variable error severity** drop-down, select one of the following options:
 
-- **Silent** – Skips the error and continues the conversation. This was the default behavior in previous releases.
-- **Raise exception** – Triggers an exception and records the error in the Conversation History. Use the **Raise exception** option to detect configuration issues early and prevent incomplete or incorrect variable assignments during conversations.
+* **Silent** – Skips the error and continues the conversation. This was the default behavior in previous releases.
+* **Raise exception** – Triggers an exception and records the error in the Conversation History. Use the **Raise exception** option to detect configuration issues early and prevent incomplete or incorrect variable assignments during conversations.
 
 In Druid 9.20 and higher, for steps that have the **Error Handler** set, you can author how the error is handled in the conversation. Additionally, you can create a flow dedicated to error handling and select it from AI agent details > Dialogue management section, **Exception flow** drop-down.
 
@@ -305,7 +285,7 @@ In Druid 9.20 and higher, for steps that have the **Error Handler** set, you can
 
 3. Save the configuration.
 
-## Related Topics
+### Related Topics
 
-- [Managing Entity Fields](../5_Entities/Managing%20Entity%20Fields.md)
-- [Multilingual Entity Fields](../5_Entities/Multilingual%20Entity%20Fields.md)
+* [Managing Entity Fields](<../5_Entities/Managing Entity Fields.md>)
+* [Multilingual Entity Fields](<../5_Entities/Multilingual Entity Fields.md>)

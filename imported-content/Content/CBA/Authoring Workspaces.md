@@ -1,9 +1,8 @@
 ---
-title: "Authoring Workspaces"
+title: Authoring Workspaces
 ---
 
-<a id="AuthoringWorkspaces"></a>
-
+# Authoring Workspaces
 
 Workspaces in the Druid Portal are dedicated digital environments where business users can engage with AI Agents through chat or voice interactions. They also provide access to centralized data from various sources via DRUID integrations.
 
@@ -13,10 +12,10 @@ Workspaces can be customized to fit different roles within a department. For ins
 
 **Team Leads**
 
-![](../Resources/Images/CBA/team%20elad%20workspace.png)
+![](<../../.gitbook/assets/team elad workspace.png>)
 
 **Helpdesk Agents**
 
-![](../Resources/Images/CBA/helpdesk%20agent%20workspace2.png)
+![](<../../.gitbook/assets/helpdesk agent workspace2.png>)
 
-Access to workspaces is role-based, ensuring users can only interact with the data and features relevant to their responsibilities. For details on managing access, see [Define Security Roles for Business Users](Define%20Security%20Roles%20for%20Business%20Users.md).
+Access to workspaces is role-based, ensuring users can only interact with the data and features relevant to their responsibilities. For details on managing access, see [Define Security Roles for Business Users](<Define Security Roles for Business Users.md>).

@@ -1,35 +1,28 @@
 ---
-title: "Handle Outbound Call Termination"
+title: Handle Outbound Call Termination
 ---
 
-<a id="HandleOutboundCallTermination"></a>
-
+# Handle Outbound Call Termination
 
 The solution automatically records the outcome of each call, whether the conversation ends normally or the contacted person hangs up before the AI Agent completes the interaction.
 
 When a call ends, the solution updates the corresponding campaign activity with the following information:
 
-- Status – The campaign activity status that reflects the call outcome (disposition).
-- End Date – The date and time when the call ended.
-- Summary – A summary of the conversation between the AI Agent and the contacted person.
+* Status – The campaign activity status that reflects the call outcome (disposition).
+* End Date – The date and time when the call ended.
+* Summary – A summary of the conversation between the AI Agent and the contacted person.
 
-<a id="NormalCallTermination"></a>
-
-## Normal Call Termination
+### Normal Call Termination
 
 When the AI Agent completes the conversation with the contacted person, it ends the call and automatically updates the corresponding campaign activity with the appropriate status, end date, and conversation summary.
 
-<a id="EarlyCallTermination"></a>
-
-## Early Call Termination
+### Early Call Termination
 
 If the contacted person hangs up before the AI Agent completes the conversation, the early-temination-flow is triggered immediately.
 
 This flow ensures that the campaign activity is updated even when the conversation ends unexpectedly. The activity captures the call status, end date, and a summary of the conversation up to the point of termination.
 
-<a id="ViewCallOutcomes"></a>
-
-## View Call Outcomes
+### View Call Outcomes
 
 To review the information recorded for a completed call:
 
@@ -40,8 +33,8 @@ To review the information recorded for a completed call:
 
 This information helps campaign managers track call outcomes, review interactions, and monitor outbound campaign activity.
 
-![](../../../Resources/Images/Ring%20central%20%2B%20excel%20export%20updates/Handle%20Outbound%20Call%20Termination.png)
+![](<../../../../.gitbook/assets/Handle Outbound Call Termination.png>)
 
-![](../../../Resources/Images/Ring%20central%20%2B%20excel%20export%20updates/Handle%20Outbound%20Call%20Termination_1_1887x859.png)
+![](<../../../../.gitbook/assets/Handle Outbound Call Termination_1_1887x859.png>)
 
 If the contacted person hangs up first, the **early-temination-flow** flow is triggered immediately. This flow still captures the same details mentioned above, including the conversation summary and the status.

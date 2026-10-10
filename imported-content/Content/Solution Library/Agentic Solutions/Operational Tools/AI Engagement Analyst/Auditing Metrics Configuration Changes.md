@@ -1,9 +1,8 @@
 ---
-title: "Auditing Metrics Configuration Changes"
+title: Auditing Metrics Configuration Changes
 ---
 
-<a id="AuditingMetricsConfigurationChanges"></a>
-
+# Auditing Metrics Configuration Changes
 
 for solution admins
 
@@ -13,9 +12,7 @@ By tracking these modifications, this feature allows solution admins to compare 
 
 To facilitate manual corrections, the audit log displays the original system values first, followed by all subsequent updates in chronological order. This sequential layout enables authors to review the initial system values and manually update the record back to those baseline settings should their custom updates not work as intended.
 
-<a id="AccessingtheAuditLog"></a>
-
-## Accessing the Audit Log
+### Accessing the Audit Log
 
 Follow these steps to review the configuration history for Metrics or Metric Options:
 
@@ -28,8 +25,8 @@ In the Audit area, review the configuration, which highlights the initial system
 
 Metric Audit
 
-![](../../../../Resources/Images/AI%20Engagement%20Analyst/metric%20audit.png)
+![](<../../../../../.gitbook/assets/metric audit.png>)
 
 Metric Options Audit
 
-![](../../../../Resources/Images/AI%20Engagement%20Analyst/metric%20options%20audit.png)
+![](<../../../../../.gitbook/assets/metric options audit.png>)

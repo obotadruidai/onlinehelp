@@ -87,7 +87,7 @@
       * [Flows Train Set](<Content/4_Flows/Flows Train Set.md>)
         * [Solution Train Set Format](<Content/4_Flows/Flows Train Set Template.md>)
       * [Viewing and Managing Entities in a Flow](<Content/4_Flows/Viewing and Managing Entities in a Flow.md>)
-      * Troubleshooting and Auditing Flows
+      * [Troubleshooting and Auditing Flows](building-ai-agent/authoring-tools/flows/troubleshooting-and-auditing-flows/README.md)
         * [Troubleshooting Steps with Debug Messages](<Content/4_Flows/Troubleshooting Steps with Debug Messages.md>)
         * [Review Flow Changes](<Content/4_Flows/Review flow changes.md>)
       * [Disabling Flows](<Content/4_Flows/Disabling Flows.md>)
@@ -170,7 +170,7 @@
         * [Entity NER-specific Parameters](<Content/Conversational AI/Entity NER specific Parameters.md>)
         * [Contextual NER](<Content/Conversational AI/Contextual NER.md>)
         * [Improving AI Agent NER](<Content/Conversational AI/Improving AI Agent NER.md>)
-    * Localization
+    * [Localization](building-ai-agent/authoring-tools/localization/README.md)
       * [Multilingual AI Agents](<Content/2_AI Agents/Multilingual AI Agents.md>)
         * [Using Machine Translation](<Content/2_AI Agents/Using Machine Translation.md>)
         * [Conversation Time Translation](<Content/2_AI Agents/Conversation Time Translation.md>)
@@ -184,7 +184,7 @@
         * [Druid 10.3](<Content/Solution Library/Agentic Solutions/Release Notes/Future Releases/Druid 10.3.md>)
         * [Druid 10.1](<Content/Solution Library/Agentic Solutions/Release Notes/Future Releases/Druid 10.1.md>)
       * [Druid 9.31](<Content/Solution Library/Agentic Solutions/Release Notes/Druid 9.31 - Latest.md>)
-      * Previous Releases
+      * [Previous Releases](solutions-library/agentic-solutions/business-apps-releases/previous-releases/README.md)
         * [Druid 9.29](<Content/Solution Library/Agentic Solutions/Release Notes/Previous Releases/Druid v9.29.md>)
         * [Druid 9.27](<Content/Solution Library/Agentic Solutions/Release Notes/Previous Releases/Druid v9.27.md>)
         * [Druid 9.25](<Content/Solution Library/Agentic Solutions/Release Notes/Previous Releases/Druid v9.25.md>)
@@ -248,7 +248,7 @@
         * [Set Up the Retail Solution (for solution admins)](<Content/Solution Library/Agentic Solutions/Retail/Set Up the Retail Solution (for solution admins).md>)
         * [Data Model and Workspace References](<Content/Solution Library/Agentic Solutions/Retail/Data Model and Workspace References.md>)
     * [Banking](<Content/Solution Library/Agentic Solutions/BFSI/Banking.md>)
-    * Operational Tools
+    * [Operational Tools](solutions-library/agentic-solutions/operational-tools/README.md)
       * [AI Knowledge Base Builder](<Content/Solution Library/Agentic Solutions/Operational Tools/AI Knowledge Base Builder.md>)
       * [Data Anonymization Agentic Solution](<Content/Solution Library/Agentic Solutions/Operational Tools/Data Anonymization Agentic Solution.md>)
       * [AI Engagement Analyst](<Content/Solution Library/Agentic Solutions/Operational Tools/AI Engagement Analyst/AI Engagement Analyst.md>)
@@ -260,16 +260,16 @@
           * [Manually Process Individual Conversations](<Content/Solution Library/Agentic Solutions/Operational Tools/AI Engagement Analyst/Manually process individual.md>)
         * [Set Up the Solution](<Content/Solution Library/Agentic Solutions/Operational Tools/AI Engagement Analyst/Set Up the Solution.md>)
         * [Auditing Metrics Configuration Changes](<Content/Solution Library/Agentic Solutions/Operational Tools/AI Engagement Analyst/Auditing Metrics Configuration Changes.md>)
-    * Helpdesk
+    * [Helpdesk](solutions-library/agentic-solutions/helpdesk/README.md)
       * [Case Management Agentic Solution](<Content/Solution Library/Agentic Solutions/Helpdesk/Case Management Agentic Solution.md>)
         * [Case Reporting Dashboard](<Content/Solution Library/Agentic Solutions/Helpdesk/Case Management/Case Reporting Dashboard.md>)
       * [Email Case Handling Agentic Solution](<Content/Solution Library/Agentic Solutions/Helpdesk/Email Case Handling Agentic Solution.md>)
         * [Case Reporting Dashboard](<Content/Solution Library/Agentic Solutions/Helpdesk/Email Case handling/Case Reporting Dashboard.md>)
         * [Set Up the Solution](<Content/Solution Library/Agentic Solutions/Helpdesk/Email Case handling/Set Up Email Case Handling Solution.md>)
       * [Email Invoice Handling Agentic Solution](<Content/Solution Library/Agentic Solutions/Helpdesk/Email Invoice Handling Agentic Solution.md>)
-    * HR
+    * [HR](solutions-library/agentic-solutions/hr/README.md)
       * [HR, Leave Management Agentic Solution](<Content/Solution Library/Agentic Solutions/HR/HR, Leave Management Agentic Solution.md>)
-    * Marketing
+    * [Marketing](solutions-library/agentic-solutions/marketing/README.md)
       * [Campaign Management Agentic Solution](<Content/Solution Library/Agentic Solutions/Marketing/Campaign Management Agentic Solution.md>)
         * [Build Campaigns](<Content/Solution Library/Agentic Solutions/Marketing/Build Campaigns.md>)
           * [Create SMS Campaigns](<Content/Solution Library/Agentic Solutions/Marketing/Create SMS Campaigns.md>)
@@ -288,11 +288,11 @@
         * [Audience Automations](<Content/Solution Library/Agentic Solutions/Marketing/Audience Automations.md>)
         * [Set Up the Solution](<Content/Solution Library/Agentic Solutions/Marketing/Set Up Campaign Solution.md>)
       * [Targeted Outreach Agentic Solution](<Content/Solution Library/Agentic Solutions/Marketing/Targeted Outreach Agentic Solution.md>)
-  * Solution Templates
+  * [Solution Templates](solutions-library/solution-templates/README.md)
     * [Installing Solution Templates](<Content/Solution Library/Installing Solution Templates.md>)
     * [Upgrading Solution Templates](<Content/Solution Library/Upgrading Solution Templates.md>)
     * [Druid Starter](<Content/Solution Library/Druid Starter.md>)
-    * Knowledge Base
+    * [Knowledge Base](solutions-library/solution-templates/knowledge-base/README.md)
       * [Knowledgebase with GPT V4](<Content/Solution Library/Knowledge Base/Knowledgebase with GPT V4.md>)
         * [Understanding AI Agent Routing Logic](<Content/Solution Library/Knowledge Base/Understanding AI Agent Routing Logic.md>)
         * [Set Up the Solution](<Content/Solution Library/Knowledge Base/Set Up the Solution.md>)
@@ -320,35 +320,35 @@
       * [UiPath ServiceNow Integration](<Content/Solution Library/UiPath ServiceNow Integration.md>)
       * [UiPath Salesforce Integration](<Content/Solution Library/UiPath_SalesForce_integration.md>)
       * [UiPath Start My Day](<Content/Solution Library/UiPath_start_my_day.md>)
-    * Live Chat
+    * [Live Chat](solutions-library/solution-templates/live-chat/README.md)
       * [Live Chat Advanced](<Content/Solution Library/Live Chat Advanced.md>)
       * [Clarabridge Live Chat](<Content/Solution Library/Clarabridge Live Chat/Clarabridge Live Chat.md>)
-    * Authentication
+    * [Authentication](solutions-library/solution-templates/authentication/README.md)
       * [Web Authentication](<Content/Solution Library/Web_Authentication.md>)
       * [MS Teams Authentication](<Content/Solution Library/MS Teams Authentication.md>)
       * [WhatsApp Authentication](<Content/Solution Library/WhatsApp_Authentication.md>)
       * [Facebook Authentication](<Content/Solution Library/Facebook_Authentication.md>)
-    * Healthcare
+    * [Healthcare](solutions-library/solution-templates/healthcare/README.md)
       * [Online Appointment](<Content/Solution Library/Healthcare/Online Appointment.md>)
       * [Epic Appointment Management Agent](<Content/Solution Library/Healthcare/Epic Appointment Management Agent/Epic Appointment Management.md>)
         * [Set Up the Solution](<Content/Solution Library/Healthcare/Epic Appointment Management Agent/Set Up the Solution.md>)
         * [Epic API inventory](<Content/Solution Library/Healthcare/Epic Appointment Management Agent/Epic API inventory.md>)
-    * Higher Education
-      * Students
-        * Student Success
+    * [Higher Education](solutions-library/solution-templates/higher-education/README.md)
+      * [Students](solutions-library/solution-templates/higher-education/students/README.md)
+        * [Student Success](solutions-library/solution-templates/higher-education/students/student-success/README.md)
           * [Agent Course Scheduling](<Content/Solution Library/HigherEducation/Students/Student Success/AgentCourseScheduling.md>)
           * [Ellucian Banner](<Content/Solution Library/HigherEducation/Students/Student Success/Ellucian Banner.md>)
           * [PeopleSoft](<Content/Solution Library/HigherEducation/Students/Student Success/PeopleSoft.md>)
           * [Slate](<Content/Solution Library/HigherEducation/Students/Student Success/Slate.md>)
-        * [Admission & Enrollment](<Content/Solution Library/HigherEducation/Students/Admission&Enrollment.md>)
+        * [Admission & Enrollment](<Content/Solution Library/HigherEducation/Students/Admission\&Enrollment.md>)
         * [Financial Aid](<Content/Solution Library/HigherEducation/Students/FinancialAid.md>)
         * [Housing](<Content/Solution Library/HigherEducation/Students/Housing.md>)
         * [Advancement](<Content/Solution Library/HigherEducation/Students/Advancement.md>)
-      * Faculty & Staff
-        * HR
-        * IT Helpesk
-          * [ServiceNow](<Content/Solution Library/HigherEducation/Faculty&Staff/ITHelpdesk/ServiceNow.md>)
-        * Finance
+      * [Faculty & Staff](solutions-library/solution-templates/higher-education/faculty-and-staff/README.md)
+        * [HR](solutions-library/solution-templates/higher-education/faculty-and-staff/hr.md)
+        * [IT Helpesk](solutions-library/solution-templates/higher-education/faculty-and-staff/it-helpesk/README.md)
+          * [ServiceNow](<Content/Solution Library/HigherEducation/Faculty\&Staff/ITHelpdesk/ServiceNow.md>)
+        * [Finance](solutions-library/solution-templates/higher-education/faculty-and-staff/finance.md)
     * [Human Resources](<Content/Solution Library/Cristina.md>)
       * [Employee Self-Service](<Content/Solution Library/Human Resources/Employee Self-Service/Employee Self-Service.md>)
       * [Recruitment](<Content/Solution Library/Human Resources/Recruitment/Recruitment.md>)
@@ -365,12 +365,12 @@
         * [Set up UiPath Data Service Process](<Content/Solution Library/Human Resources/General Settings/Set up Orchestrator.md>)
         * [Deploy Cristina on Teams](<Content/Solution Library/Human Resources/General Settings/Deploy Cristina on Teams.md>)
     * [Financial Services](<Content/Solution Library/Financial Services.md>)
-      * Financial Services
+      * [Financial Services](solutions-library/solution-templates/financial-services/financial-services/README.md)
         * [KYC Commercial Customer](<Content/Solution Library/Financial Services/Financial Services/KYC Commercial Customer.md>)
         * [KYC Retail Customer](<Content/Solution Library/Financial Services/Financial Services/KYC Retail Customer.md>)
         * [Loan Request](<Content/Solution Library/Financial Services/Financial Services/Loan Request.md>)
         * [Postpone Banking Installments](<Content/Solution Library/Financial Services/Financial Services/Postpone banking installments.md>)
-      * Customer Service
+      * [Customer Service](solutions-library/solution-templates/financial-services/customer-service/README.md)
         * [Document Builder](<Content/Solution Library/Financial Services/Customer Service/Document Builder.md>)
         * [Claim Insurance](<Content/Solution Library/Financial Services/Customer Service/Claim Insurance.md>)
           * [Setting Up the Claim Insurance UiPath Process](<Content/Solution Library/Financial Services/Customer Service/Setting up the Claim Insurance.md>)
@@ -392,10 +392,10 @@
         * [Creating Druid Users For Financial Services](<Content/Solution Library/Financial Services/General Settings/Create_Druid_Users.md>)
         * [Setting Up AI Center](<Content/Solution Library/Financial Services/General Settings/Setting_up_AI_Center.md>)
         * [Setting up the UiPath Process](<Content/Solution Library/Financial Services/General Settings/Setting_up_UiPath_Processes.md>)
-          * [Step 1: Set up Orchestrator Victor_Attended Next Best Deal Process](<Content/Solution Library/Financial Services/General Settings/Step 1 Set up Orchestrator.md>)
-          * [Step 2: Set up Orchestrator Victor_Unattended Next Best Deal Process](<Content/Solution Library/Financial Services/General Settings/Step 2 Set up Orchestrator.md>)
-          * [Step 3: Set up Orchestrator Victor_Advanced Process_Data Service](<Content/Solution Library/Financial Services/General Settings/Step 3 Set up Orchestrator.md>)
-          * [Step 4: Set up Orchestrator Victor_Advanced Process_Action Center](<Content/Solution Library/Financial Services/General Settings/Step 4 Set up Orchestrator.md>)
+          * [Step 1: Set up Orchestrator Victor\_Attended Next Best Deal Process](<Content/Solution Library/Financial Services/General Settings/Step 1 Set up Orchestrator.md>)
+          * [Step 2: Set up Orchestrator Victor\_Unattended Next Best Deal Process](<Content/Solution Library/Financial Services/General Settings/Step 2 Set up Orchestrator.md>)
+          * [Step 3: Set up Orchestrator Victor\_Advanced Process\_Data Service](<Content/Solution Library/Financial Services/General Settings/Step 3 Set up Orchestrator.md>)
+          * [Step 4: Set up Orchestrator Victor\_Advanced Process\_Action Center](<Content/Solution Library/Financial Services/General Settings/Step 4 Set up Orchestrator.md>)
     * [Retail](<Content/Solution Library/Retail.md>)
       * [Packed Retail Solution](<Content/Solution Library/Retail/Packed Retail Solution.md>)
       * [Customer Service](<Content/Solution Library/Retail/Customer Service/Customer Service.md>)
@@ -408,30 +408,30 @@
         * [Training the Entities and the AI Agent](<Content/Solution Library/Retail/General Settings/Train_entities_and_bot.md>)
         * [Set up UiPath Data Service Process](<Content/Solution Library/Retail/General Settings/Set up Orchestrator.md>)
       * [See Retail Bot in Action](<Content/Solution Library/Retail/See Retail in Action.md>)
-    * Sales
+    * [Sales](solutions-library/solution-templates/sales/README.md)
       * [Customer 360](<Content/Solution Library/Sales/Customer 360/Customer360.md>)
-    * KYC
+    * [KYC](solutions-library/solution-templates/kyc/README.md)
       * [KYC Persona](<Content/Solution Library/KYC/KYC Persona.md>)
     * [Grocery](<Content/Solution Library/Grocery/Grocery.md>)
     * [ServiceNow](<Content/Solution Library/ServiceNow.md>)
-    * eSignature
+    * [eSignature](solutions-library/solution-templates/esignature/README.md)
       * [eSignature Namirial](<Content/Solution Library/eSignature_Namirial.md>)
       * [eSignature DocuSign](<Content/Solution Library/eSignature_DocuSign.md>)
       * [Electronic Signature with Evrotrust](<Content/Solution Library/eSignature Evotrust.md>)
-    * Helpdesk
+    * [Helpdesk](solutions-library/solution-templates/helpdesk/README.md)
       * [Helpdesk, Reset password](<Content/Solution Library/Helpdesk/Helpdesk, Reset password/Helpdesk, Reset password.md>)
       * [Helpdesk, FAQ](<Content/Solution Library/Helpdesk/Helpdesk, FAQ/Helpdesk, FAQ.md>)
     * [Small Talk](<Content/Solution Library/Small Talk.md>)
     * [Automotive](<Content/Solution Library/Automotive/Automotive.md>)
       * [Car Rental](<Content/Solution Library/Automotive/Car Rental/CarRental.md>)
       * [FAQ Car Rental](<Content/Solution Library/Automotive/FAQ Car Rental/FAQ Car Rental.md>)
-    * Procurement
+    * [Procurement](solutions-library/solution-templates/procurement/README.md)
       * [FAQ Procurement Operations](<Content/Solution Library/FAQ Procurement Operations/FAQ Procurement Operations.md>)
-    * Utilities
+    * [Utilities](solutions-library/solution-templates/utilities/README.md)
       * [Energy and Gas, Packed Full Solution](<Content/Solution Library/Utilities/Energy and Gas, Packed Full Solution/Energy and Gas_ Packed Full Solution.md>)
         * [Setting Up the AI Agent](<Content/Solution Library/Utilities/Energy and Gas, Packed Full Solution/Set up the bot.md>)
         * [See AI Agent in Action](<Content/Solution Library/Utilities/Energy and Gas, Packed Full Solution/See bot in action.md>)
-    * Travel
+    * [Travel](solutions-library/solution-templates/travel/README.md)
       * [Travel Management](<Content/Solution Library/Travel/Travel Management/Travel_Management.md>)
         * [Setting Up the AI Agent](<Content/Solution Library/Travel/Travel Management/Setting up the bot.md>)
         * [See AI Agent in Action](<Content/Solution Library/Travel/Travel Management/See the chatbot in action.md>)
@@ -439,10 +439,11 @@
       * [Configuring the Solution Template](<Content/Solution Library/Hospitality/Configuring Solution Templates.md>)
       * [See the AI Agent in action](<Content/Solution Library/Hospitality/See the chatbot in action.md>)
     * [Raffle](<Content/Solution Library/Raffle.md>)
+
 ## Knowledge & Data
 
 * [Knowledge Base](Content/Knowledgebase/Knowledgebase.md)
-  * Knowledge Base Settings
+  * [Knowledge Base Settings](knowledge-and-data/knowledgebase/knowledge-base-settings/README.md)
     * [KB General Settings](<Content/Knowledgebase/KB Settings/KB General Settings.md>)
     * [KB Advanced Settings](<Content/Knowledgebase/KB Settings/KB Advanced Settings.md>)
       * [Generative Endpoints](<Content/Knowledgebase/KB Settings/Generative Endpoints.md>)
@@ -478,6 +479,7 @@
     * [KB Management at Conversation Time](Content/Knowledgebase/KBConversationTime.md)
     * [Dynamic Search Priority at Conversation Time](<Content/Knowledgebase/Dynamic Search Priority at Conversation Time.md>)
     * [KB Extraction Tools](Content/Knowledgebase/KBExtractionTools.md)
+
 ## Data Service
 
 * [Druid Data Service](<Content/7_Integrations/Data Service/Druid_Data_Service.md>)
@@ -502,19 +504,19 @@
   * [Transfer Calls](<Content/Druid Voice/Transfer Calls.md>)
 * [Integrations](Content/7_Integrations/Integrations.md)
   * [Enterprise Connectors](<Content/7_Integrations/Enterprise Connectors.md>)
-    * General Integration Settings
+    * [General Integration Settings](data-service/integrations/enterprise-connectors/general-integration-settings/README.md)
       * [Defining Connection Strings (Apps)](<Content/7_Integrations/Defining Connection Strings.md>)
       * [Defining the Integration Actions](<Content/7_Integrations/Defining the Integration Actions.md>)
       * [Using Connector Local Variables](Content/7_Integrations/Use_connector_local_variables.md)
-    * Developer Tools
+    * [Developer Tools](data-service/integrations/enterprise-connectors/developer-tools/README.md)
       * [Connector Designer](<Content/7_Integrations/Connector Designer/Connector_Designer.md>)
       * [Debugging Integrations](<Content/7_Integrations/Debugging Integrations.md>)
       * [DRUID System Functions](<Content/7_Integrations/Druid System Functions.md>)
       * [Review Integration Changes](<Content/7_Integrations/Connector Designer/Review Integration Changes.md>)
       * [Accessing Druid Endpoints in Druid Hybrid Deployments](<Content/Druid Deployment/Accessing Druid Endpoints in Druid Hybrid Deployments.md>)
-    * Identity &Encryption
+    * [Identity \&Encryption](data-service/integrations/enterprise-connectors/identity-and-encryption/README.md)
       * [Active Directory Connector](<Content/7_Integrations/Active Directory/Active Directory Connector.md>)
-        * Creating AD Connectors
+        * [Creating AD Connectors](data-service/integrations/enterprise-connectors/identity-and-encryption/active-directory-connector/creating-ad-connectors/README.md)
           * [Step 1. Create AD App](<Content/7_Integrations/Active Directory/Step 1.  Create AD App.md>)
           * [Step 2. Create Integration Actions](<Content/7_Integrations/Active Directory/Step 2. Create Integration Actions.md>)
           * [Step 3. Add Integration Tasks](<Content/7_Integrations/Active Directory/Step 3. Add Integration Tasks.md>)
@@ -528,7 +530,7 @@
         * [Signing Out users authenticated using OAuth v2](<Content/7_Integrations/OAuth2/Signing Out users authenticated.md>)
       * [SSO Authentication with SAML](<Content/7_Integrations/SamlAuth/SSO Authentication with SAML.md>)
       * [Encrypt Data](<Content/7_Integrations/Encrypt Data/EncryptData.md>)
-    * Data & Storage
+    * [Data & Storage](data-service/integrations/enterprise-connectors/data-and-storage/README.md)
       * [Azure Blob Storage Connector](<Content/7_Integrations/Azure Blob Storage/Azure Blob Storage Connector.md>)
         * [Step 1. Create App](<Content/7_Integrations/Azure Blob Storage/Step 1 Create App.md>)
         * [Step 2. Create Integration Action](<Content/7_Integrations/Azure Blob Storage/Step 2 Create Integration.md>)
@@ -558,7 +560,7 @@
         * [UiPath Upload File to Entity](<Content/7_Integrations/UiPath Data Service Connector/UiPath Upload File to Entity.md>)
         * [UiPath Delete File from Entity](<Content/7_Integrations/UiPath Data Service Connector/UiPath Delete File from Entity.md>)
       * [SQL Connector](<Content/7_Integrations/SQL/SQL Connector.md>)
-        * Creating SQL Connectors
+        * [Creating SQL Connectors](data-service/integrations/enterprise-connectors/data-and-storage/sql-connector/creating-sql-connectors/README.md)
           * [Step 1. Create SQL App](<Content/7_Integrations/SQL/Step 1 Create SQL App.md>)
             * [Additional Connection Parameters](<Content/7_Integrations/SQL/Additional Connection Parameters.md>)
           * [Step 2. Create Integration Actions](<Content/7_Integrations/SQL/Step 2 Create Integration.md>)
@@ -571,7 +573,7 @@
       * [Creating SMTP Connectors](<Content/7_Integrations/Email Connectors/Creating SMTP Connectors.md>)
       * [Creating SendGrid Connectors](<Content/7_Integrations/Email Connectors/Creating SendGrid Connectors.md>)
       * [Email Body](<Content/7_Integrations/Email Connectors/Email Body.md>)
-    * RPA
+    * [RPA](data-service/integrations/enterprise-connectors/rpa/README.md)
       * [UiPath Connector](<Content/7_Integrations/UiPath/UiPath Connector.md>)
         * [Creating the UiPath Connection Strings](<Content/7_Integrations/UiPath/Creating the UiPath Connection Strings.md>)
         * [Running Unattended Process using Orchestrator Queues](<Content/7_Integrations/UiPath/Running Unattended Process using Orchestrator Queues.md>)
@@ -590,7 +592,7 @@
       * [BluePrism Connector](<Content/7_Integrations/BluePrism/BluePrism Connector.md>)
         * [Creating the BluePrism Connection Strings](<Content/7_Integrations/BluePrism/Creating the BluePrism Connection Strings.md>)
         * [Adding Item to BluePrism Queue](<Content/7_Integrations/BluePrism/Adding Item to BluePrism Queue.md>)
-    * Web Services
+    * [Web Services](data-service/integrations/enterprise-connectors/web-services/README.md)
       * [REST](Content/7_Integrations/REST/REST.md)
         * [REST Apps](<Content/7_Integrations/REST/REST Apps.md>)
           * [Custom Authentication](<Content/7_Integrations/REST/Custom Authentication.md>)
@@ -604,7 +606,7 @@
         * [REST Calls](<Content/7_Integrations/REST/REST Calls.md>)
           * [General Settings](<Content/7_Integrations/REST/General Settings.md>)
           * [REST request settings](<Content/7_Integrations/REST/Request Settings.md>)
-          * Response Settings
+          * [Response Settings](data-service/integrations/enterprise-connectors/web-services/rest/rest-calls/response-settings/README.md)
             * [REST Response General Settings](<Content/7_Integrations/REST/Response Settings.md>)
             * [Map Structured JSON Response Body](<Content/7_Integrations/REST/Map structured JSON response.md>)
             * [Map Header](<Content/7_Integrations/REST/Map Header from JSON Response.md>)
@@ -624,12 +626,12 @@
         * [Step 3. Add Integration Tasks](<Content/7_Integrations/SOAP Connector/Step 3 Add Integration Tasks.md>)
         * [Step 4: Publish the integrations](<Content/7_Integrations/SOAP Connector/Step 4 Publish the integrations.md>)
       * [Epic Integration](<Content/7_Integrations/Epic/Epic Integration.md>)
-    * Specialized & Custom
+    * [Specialized & Custom](data-service/integrations/enterprise-connectors/specialized-and-custom/README.md)
       * [Custom Code](<Content/7_Integrations/Custom Code.md>)
       * [Document Builder](<Content/7_Integrations/Document Builder/Document Builder.md>)
         * [Generate Documents using Document Templates](<Content/7_Integrations/Document Builder/Generate word, excel and PDF files using document templates.md>)
         * [Generate a PDF Document and Merge it With PDFs from DRUID Storage](<Content/7_Integrations/Document Builder/Generate a PDF Document and Merge With Other PDFs.md>)
-        * Create Document Templates
+        * [Create Document Templates](data-service/integrations/enterprise-connectors/specialized-and-custom/document-builder/create-document-templates/README.md)
           * [Creating Excel Templates](<Content/7_Integrations/Document Builder/Creating Excel Templates.md>)
             * [Defining Flat Information](<Content/7_Integrations/Document Builder/Defining Flat Information.md>)
             * [Defining Detailed information - table](<Content/7_Integrations/Document Builder/Defining Detailed information.md>)
@@ -640,7 +642,7 @@
         * [Merge PDF Files Stored in an Entity List](<Content/7_Integrations/Document Builder/Merge PDF Files Stored in an Entity List.md>)
         * [Generate Documents Using Dynamic Templates](<Content/7_Integrations/Document Builder/Generate Documents with Dynamic Templates.md>)
       * [eSign Namirial](<Content/7_Integrations/eSign Namirial.md>)
-      * Files
+      * [Files](data-service/integrations/enterprise-connectors/specialized-and-custom/files/README.md)
         * [Download File by REST API](<Content/7_Integrations/Download file by REST API.md>)
         * [Read Excel File](<Content/7_Integrations/Read excel file.md>)
         * [List Files with the Druid Connector Host](<Content/7_Integrations/List Files.md>)
@@ -884,7 +886,7 @@
     * [Druid AI Platform Services and IPs](<Content/Druid Deployment/DRUID Platform Services and IPs.md>)
     * [Deployment Requirements](<Content/Druid Deployment/Deployment Requirements.md>)
     * [Druid Connector Host](<Content/Druid Deployment/Druid Connector Host.md>)
-      * CNN Host Installation on Windows
+      * [CNN Host Installation on Windows](data-service/druid-deployment/hybrid-deployment/druid-connector-host/cnn-host-installation-on-windows/README.md)
         * [Install Druid Connector Host](<Content/Druid Deployment/Install Druid Connector Host.md>)
         * [Druid Connector Host High Availability](<Content/Druid Deployment/Druid Connector High Availability.md>)
     * [Druid Data Service Installation](<Content/Druid Deployment/Druid Data Service Installation.md>)
@@ -898,7 +900,7 @@
     * [Druid 10.5](<Content/13_Release Notes/Future Releases/Druid 10.5.md>)
     * [Druid 10.3](<Content/13_Release Notes/Future Releases/Druid 10.3.md>)
   * [Druid 10.1 - Latest](<Content/13_Release Notes/Druid 10.1 Latest.md>)
-  * Previous Releases
+  * [Previous Releases](data-service/druid-ai-releases/previous-releases/README.md)
     * [Druid 10.0](<Content/13_Release Notes/Previous Releases/Druid 10.0.md>)
     * [Druid 9.31](<Content/13_Release Notes/Previous Releases/Druid 9.31.md>)
     * [Druid 9.30](<Content/13_Release Notes/Previous Releases/Druid 9.30.md>)
@@ -951,6 +953,7 @@
     * [DRUID 8.3](<Content/13_Release Notes/Previous Releases/DRUID v8.3.md>)
     * [DRUID 8.2](<Content/13_Release Notes/Previous Releases/DRUID v8.2.md>)
     * [DRUID 8.1](<Content/13_Release Notes/Previous Releases/DRUID v8.1.md>)
+
 ## How to
 
 * [Handling Authentication](<Content/How to/Handling Authentication.md>)

@@ -1,9 +1,8 @@
 ---
-title: "JWT Assertion Authentication Examples via Custom Code"
+title: JWT Assertion Authentication Examples via Custom Code
 ---
 
-<a id="JWTAssertionAuthenticationExamplesviaCustomCode"></a>
-
+# JWT Assertion Authentication Examples via Custom Code
 
 This section describes examples of authentication with JWT assertion using Custom Code.
 
@@ -11,23 +10,17 @@ If your target API does not accept static credentials and instead demands an ass
 
 Use this path to configure Druid as a trusted server. Instead of transmitting static credentials, Druid executes code locally within the connector to generate a short-lived token assertion on the fly.
 
-<a id="ConfigurationSteps"></a>
+### Configuration Steps
 
-## Configuration Steps
+#### Prerequisite
 
-<a id="Prerequisite"></a>
+* Before you begin, save the private key as context variable on the app.
 
-### Prerequisite
-
-- Before you begin, save the private key as context variable on the app.
-
-![](../../Resources/Images/Integrations/cnn%20app%20variable.png)
+![](<../../../.gitbook/assets/cnn app variable.png>)
 
 To configure JWT Assertion authentication via Custom Code, set up the **Authenticate client connector action** using the following sequence:
 
-<a id="Step1AddaCustomCodeintegrationtaskfirst"></a>
-
-### Step 1. Add a Custom Code integration task first
+#### Step 1. Add a Custom Code integration task first
 
 Click the **Create Task** button and select **Custom Code**.
 
@@ -37,15 +30,13 @@ Click the **Create Task** button and select **Custom Code**.
 
 In the code editor area, retrieve your securely stored certificate private key from your application variables.
 
-Call one of the built-in local cryptographic methods to sign your payload. Read the [JWT Assertion Generation Reference](#JWT_Assertion_Generation_Reference) below for available options and exact syntax.
+Call one of the built-in local cryptographic methods to sign your payload. Read the [JWT Assertion Generation Reference](<JWT Assertion Authentication Examples via Custom Code.md#JWT_Assertion_Generation_Reference>) below for available options and exact syntax.
 
 Within your custom script, save the generated token string into a context variable (for example, @jwt).
 
 Save the integration task.
 
-<a id="Step2AddtheAuthenticateClientintegrationtask"></a>
-
-### Step 2. Add the Authenticate Client integration task
+#### Step 2. Add the Authenticate Client integration task
 
 Click **Create Task** again and select **Authenticate Client** directly after your Custom Code integration task.
 
@@ -53,9 +44,7 @@ Click the **Request** tab, click the **Body** sub-tab, and map your target conne
 
 This configuration passes the local cryptographic token forward to the identity provider endpoint to obtain your final access token.
 
-<a id="JWTAssertionGenerationReference"></a>
-
-## <a id="JWT_Assertion_Generation_Reference"></a>JWT Assertion Generation Reference
+### JWT Assertion Generation Reference <a href="#jwt_assertion_generation_reference" id="jwt_assertion_generation_reference"></a>
 
 When writing your script in the **Custom Code** integration task, choose one of the following four generation options based on your security infrastructure requirements.
 
@@ -94,9 +83,7 @@ icXlBUdQ6ya17speo6H3G3E=
 -----END PRIVATE KEY-----
 ```
 
-<a id="GenericJWT"></a>
-
-### Generic JWT
+#### Generic JWT
 
 Uses symmetric encryption with a shared private key.
 
@@ -123,19 +110,17 @@ Context.SetContextVariable("jwt", jwt);
 
 Custom Code Task Example
 
-![](../../Resources/Images/Integrations/SIMPLE%20JWT%20CUSTOM%20CODE.png)
+![](<../../../.gitbook/assets/SIMPLE JWT CUSTOM CODE.png>)
 
 Authenticate Client Task Example
 
-![](../../Resources/Images/Integrations/generic%20jwt%20auth%20client.png)
+![](<../../../.gitbook/assets/generic jwt auth client.png>)
 
 Rest API Call - Custom Code Response variable
 
-![](../../Resources/Images/Integrations/generic%20jwt%20api%20call%20response.png)
+![](<../../../.gitbook/assets/generic jwt api call response.png>)
 
-<a id="RSAJWT"></a>
-
-### RSA JWT
+#### RSA JWT
 
 Uses standard asymmetric RSA encryption powered by your certificate private key string.
 
@@ -161,23 +146,21 @@ Context.SetContextVariable("jwt", jwt);
 
 Custom Code Task Example
 
-![](../../Resources/Images/Integrations/jwtrsa_custom%20code.png)
+![](<../../../.gitbook/assets/jwtrsa_custom code.png>)
 
 Authenticate Client Task Example
 
-![](../../Resources/Images/Integrations/auth%20client%20jwt%20var.png)
+![](<../../../.gitbook/assets/auth client jwt var.png>)
 
 Rest API Call - Custom Code Response variable
 
-![](../../Resources/Images/Integrations/custom%20code%20generate%20jwt.png)
+![](<../../../.gitbook/assets/custom code generate jwt.png>)
 
 Verification of the signing algorithm with [jwt.io](https://www.jwt.io/)
 
-![](../../Resources/Images/Integrations/jwtio_1.png)
+![](../../../.gitbook/assets/jwtio_1.png)
 
-<a id="CustomRSAJWT"></a>
-
-### Custom RSA JWT
+#### Custom RSA JWT
 
 Provides explicit control over your asymmetric signing algorithm and padding style configurations.
 
@@ -204,23 +187,21 @@ Context.SetContextVariable("jwt", jwt);
 
 Custom Code Task Example
 
-![](../../Resources/Images/Integrations/custom%20rsa%20code.png)
+![](<../../../.gitbook/assets/custom rsa code.png>)
 
 Authenticate Client Task Example
 
-![](../../Resources/Images/Integrations/custom%20rsa%20auth%20request.png)
+![](<../../../.gitbook/assets/custom rsa auth request.png>)
 
 Rest API Call - Custom Code Response variable
 
-![](../../Resources/Images/Integrations/jwt%20custom%20rsa%20generation.png)
+![](<../../../.gitbook/assets/jwt custom rsa generation.png>)
 
 Verification of the signing algorithm with [jwt.io](https://www.jwt.io/)
 
-![](../../Resources/Images/Integrations/custom%20rsa%20io.png)
+![](<../../../.gitbook/assets/custom rsa io.png>)
 
-<a id="RSAJWTwithHeader"></a>
-
-### RSA JWT with Header
+#### RSA JWT with Header
 
 Injects cryptographic identity parameters directly into the JWT metadata header area for strict token verification environments.
 
@@ -253,21 +234,21 @@ Context.SetContextVariable("jwt", jwt);
 
 Metadata Header Parameters:
 
-- **kid (Key ID)**: An arbitrary string identifier you select. It tells the token recipient which public key to use for signature verification. While any test string works during staging, production environments should use a unique UUID, certificate thumbprint, or key name from a secure vault.
-- **x5t (X.509 SHA-1 Thumbprint)**: The base64url-encoded SHA-1 fingerprint of the public certificate linked to your private key.
+* **kid (Key ID)**: An arbitrary string identifier you select. It tells the token recipient which public key to use for signature verification. While any test string works during staging, production environments should use a unique UUID, certificate thumbprint, or key name from a secure vault.
+* **x5t (X.509 SHA-1 Thumbprint)**: The base64url-encoded SHA-1 fingerprint of the public certificate linked to your private key.
 
 Custom Code Task Example
 
-![](../../Resources/Images/Integrations/rsaheader%20code.png)
+![](<../../../.gitbook/assets/rsaheader code.png>)
 
 Authenticate Client Task Example
 
-![](../../Resources/Images/Integrations/auth%20client%20rsa%20header.png)
+![](<../../../.gitbook/assets/auth client rsa header.png>)
 
 Rest API Call - Custom Code Response variable
 
-![](../../Resources/Images/Integrations/jwtrsa%20with%20header.png)
+![](<../../../.gitbook/assets/jwtrsa with header.png>)
 
 Verification of the signing algorithm with [jwt.io](https://www.jwt.io/)
 
-![](../../Resources/Images/Integrations/rsa%20header%20verif.png)
+![](<../../../.gitbook/assets/rsa header verif.png>)

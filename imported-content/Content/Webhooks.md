@@ -1,9 +1,8 @@
 ---
-title: "Webhooks"
+title: Webhooks
 ---
 
-<a id="Webhooks"></a>
-
+# Webhooks
 
 {% hint style="info" %}
 **NOTE:** This feature is available in DRUID 7.7 and higher.
@@ -11,43 +10,35 @@ title: "Webhooks"
 
 Webhooks provide specifications for DRUID endpoints and enable you to generate a bearer token for authentication. To access webhooks, click **Webhooks** on the **Administration** menu. The **Endpoints** tab displays DRUID endpoints; click on an endpoint to view its structure.
 
-![](Resources/Images/druid%207.7/webhook%20endpoints.png)
+![](<../.gitbook/assets/webhook endpoints.png>)
 
 To obtain the bearer token for authenticating requests to DRUID endpoints (MediatelAgentConnected, StartFlow, UiPathAttended), click the **Authentication** tab. You have two options: generate a permanent token or the authentication endpoint.
 
-<a id="Generateapermanenttoken"></a>
-
-## Generate a permanent token
+### Generate a permanent token
 
 Click on the 'Permanent bearer token' section and click the **Generate new token** button to generate a new token. Copy it from the Token column, and use it for requests authentication.
 
-![](Resources/Images/druid%207.7/permanent%20token.png)
+![](<../.gitbook/assets/permanent token.png>)
 
 Include the bearer token in the Authorization area of your requests.
 
-![](Resources/Images/startflow/authorization.png)
+![](../.gitbook/assets/authorization.png)
 
 You can deactivate a permanent token at any time by clicking **Actions** > **Inactivate**.
 
-![](Resources/Images/druid%207.7/inactivate%20token.png)
+![](<../.gitbook/assets/inactivate token.png>)
 
-<a id="UsetheAuthenticationendpoint"></a>
-
-## Use the Authentication endpoint
+### Use the Authentication endpoint
 
 The authentication endpoint returns an access token that allows you to access the API's endpoints. To see the endpoint specification and structure, on the **Authentication** tab, click on 'Authentication endpoint'.
 
-![](Resources/Images/druid%207.7/auth%20endpoint.png)
+![](<../.gitbook/assets/auth endpoint (1).png>)
 
-<a id="Syntax"></a>
-
-### Syntax
+#### Syntax
 
 `POST *.druidplatform.com/api/services/app/WebAPIService/ExternalAuthenticate`
 
-<a id="Requestbody"></a>
-
-### Request body
+#### Request body
 
 ```
 {
@@ -57,15 +48,13 @@ The authentication endpoint returns an access token that allows you to access th
 }
 ```
 
-| Parameter | Data type | Mandatory | Description |
-| --- | --- | --- | --- |
-| userNameOrEmailAddress | string | yes | The username or the email address associated to an existing DRUID service account who has the privileges to manage users. |
-| password | string | yes | Password of the above user account. |
-| tenant | string | yes | The name of your DRUID tenant. |
+| Parameter              | Data type | Mandatory | Description                                                                                                               |
+| ---------------------- | --------- | --------- | ------------------------------------------------------------------------------------------------------------------------- |
+| userNameOrEmailAddress | string    | yes       | The username or the email address associated to an existing DRUID service account who has the privileges to manage users. |
+| password               | string    | yes       | Password of the above user account.                                                                                       |
+| tenant                 | string    | yes       | The name of your DRUID tenant.                                                                                            |
 
-<a id="ResponseBody"></a>
-
-### Response Body
+#### Response Body
 
 ```
 {
@@ -81,37 +70,33 @@ The authentication endpoint returns an access token that allows you to access th
 }
 ```
 
-| Parameter | Data type | Description |
-| --- | --- | --- |
-| accessToken | string | Access token required as a parameter when sending API requests. The access token is valid for 30 minutes (1800 seconds). When the access token expires, you need to get another one and use that in the next API calls. |
-| encryptedAccessToken | string | The encrypted access token. |
-| success | boolean | True if the access token has been successfully generated. |
-| error | string | If the request was successful, it returns **null**. Otherwise, an error message is provided, indicating the reason for the request failure, such as non-existing tenant name or username, or incorrect password. |
+| Parameter            | Data type | Description                                                                                                                                                                                                             |
+| -------------------- | --------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| accessToken          | string    | Access token required as a parameter when sending API requests. The access token is valid for 30 minutes (1800 seconds). When the access token expires, you need to get another one and use that in the next API calls. |
+| encryptedAccessToken | string    | The encrypted access token.                                                                                                                                                                                             |
+| success              | boolean   | True if the access token has been successfully generated.                                                                                                                                                               |
+| error                | string    | If the request was successful, it returns **null**. Otherwise, an error message is provided, indicating the reason for the request failure, such as non-existing tenant name or username, or incorrect password.        |
 
 Include the bearer token in the Authorization area of your requests.
 
-![](Resources/Images/startflow/authorization.png)
+![](../.gitbook/assets/authorization.png)
 
-<a id="Errorcodes"></a>
+#### Error codes
 
-### Error codes
+* 400 – Bad request
+* 404 - The syntax of the call is incorrect.
+* 500 — Internal server error
 
-- 400 – Bad request
-- 404 - The syntax of the call is incorrect.
-- 500 — Internal server error
-
-<a id="Example"></a>
-
-### Example
+#### Example
 
 In this example:
 
-- DRUID service account user requests an access token. The user has privileges to manage users.
-- The user's account credentials are **test-oana** (username) and **Oana123#** (password).
-- The request is successful and assigns the user an access token.
-- This access token will be valid for 30 minutes (1800 seconds).
+* DRUID service account user requests an access token. The user has privileges to manage users.
+* The user's account credentials are **test-oana** (username) and **Oana123#** (password).
+* The request is successful and assigns the user an access token.
+* This access token will be valid for 30 minutes (1800 seconds).
 
-#### Request
+**Request**
 
 **{**
 
@@ -123,7 +108,7 @@ In this example:
 }
 ```
 
-#### Response body
+**Response body**
 
 ```
 {

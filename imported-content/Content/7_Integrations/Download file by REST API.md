@@ -1,9 +1,8 @@
 ---
-title: "Download File by REST API"
+title: Download File by REST API
 ---
 
-<a id="DownloadFilebyRESTAPI"></a>
-
+# Download File by REST API
 
 The Download File integration enables you to use a REST API call to download a file from a third-party tool and store it directly in a DRUID entity.
 
@@ -18,14 +17,14 @@ To add this integration task:
 3. Click **Create Task**.
 4. Select **Files** > **Download File**.
 
-Setting up the request is similar to a REST request. For more information, see the [REST Request](REST/Request%20Settings.md) settings. The primary difference between the Download File by REST API and REST API is how you set up the response.
+Setting up the request is similar to a REST request. For more information, see the [REST Request](<REST/Request Settings.md>) settings. The primary difference between the Download File by REST API and REST API is how you set up the response.
 
 To set up the response:
 
 1. Click the **Response** tab.
-2. From the **Project Result to Entity Path** field, select the field of type Entity that references the [[File]] system entity.
+2. From the **Project Result to Entity Path** field, select the field of type Entity that references the \[\[File]] system entity.
 
-![](../Resources/Images/Integrations/download%20file.png)
+![](<../../.gitbook/assets/download file.png>)
 
 3. To provide a custom name for the downloaded file, in the **File name** field, either provide a static name (string) or use a value stored in an entity field or variable. If the File name field is empty, the connector will try to identify the file name from the Content-Disposition header or from the URL.
 4. Save the integration task.

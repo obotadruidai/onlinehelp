@@ -1,9 +1,8 @@
 ---
-title: "Step 2. Create Integration Action"
+title: Step 2. Create Integration Action
 ---
 
-<a id="Step2CreateIntegrationAction"></a>
-
+# Step 2. Create Integration Action
 
 Connector Action (Integration) only represents a host for a group of one or more integration tasks. The integration technology/type (Azure Storage, SQL, REST, SOAP, SMTP, etc.) is defined at task level, not at action (integration) level.
 
@@ -15,24 +14,24 @@ Thus, at Connector Action (Integration) level, only the general information is s
 
 Using the solution’s Connector Designer, you can define the integration actions and tasks:
 
-1. From the main menu, click **Integrations**. The Connector Designer appears.
-2. At the top-right corner of the page, click the **Create Connector Action** button (![](../../Resources/Images/Azure%20Blob%20Storage%20Connector/Step%202%20Create%20Integration.png)). The Edit Connector Action page appears by default on the **ConnectorGeneral** tab.
+1. From the main menu, click **Integrations**. The Connector Designer appears.
+2. At the top-right corner of the page, click the **Create Connector Action** button (![](<../../../.gitbook/assets/Step 2 Create Integration.png>)). The Edit Connector Action page appears by default on the **ConnectorGeneral** tab.
 3. Provide the connector action general details by setting up the parameters described in the table below.
 
-| Parameter | Description |
-| --- | --- |
-| Name | The name of the action. The field is mandatory. |
-| Description | A brief description of the action that might be useful for other tenant admins. The field is mandatory. |
-| Category | Define on the spot when creating the action. Useful when you want to find the actions in the Integrations list. The field is mandatory. |
-| Icon | Select the icon that best describes the integration. It helps you easily identify the integration action in the list of integrations. If no icon is selected, DRUID will show default icon.  ![](../../Resources/Images/default%20icon.png)  **NOTE:** This field is available in DRUID 1.71 and higher. |
-| Request Entity Name | The entity used by the AI Agent to send data to Azure Storage via the current action. |
-| Response Entity Name | The entity used by the AI Agent to receive the share URL from Azure Storage via the current action. |
-| Is Response Collection | Tick only if the expected response is a list of records. Leave unticked as the response is only a share URl. |
-| Is Active | Tick to activate the connector action. An inactive connector action will be ignored at runtime. |
+| Parameter              | Description                                                                                                                                                                                                                                                                                              |
+| ---------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Name                   | The name of the action. The field is mandatory.                                                                                                                                                                                                                                                          |
+| Description            | A brief description of the action that might be useful for other tenant admins. The field is mandatory.                                                                                                                                                                                                  |
+| Category               | Define on the spot when creating the action. Useful when you want to find the actions in the Integrations list. The field is mandatory.                                                                                                                                                                  |
+| Icon                   | Select the icon that best describes the integration. It helps you easily identify the integration action in the list of integrations. If no icon is selected, DRUID will show default icon. ![](<../../../.gitbook/assets/default icon.png>) **NOTE:** This field is available in DRUID 1.71 and higher. |
+| Request Entity Name    | The entity used by the AI Agent to send data to Azure Storage via the current action.                                                                                                                                                                                                                    |
+| Response Entity Name   | The entity used by the AI Agent to receive the share URL from Azure Storage via the current action.                                                                                                                                                                                                      |
+| Is Response Collection | Tick only if the expected response is a list of records. Leave unticked as the response is only a share URl.                                                                                                                                                                                             |
+| Is Active              | Tick to activate the connector action. An inactive connector action will be ignored at runtime.                                                                                                                                                                                                          |
 
-![](../../Resources/Images/Azure%20Blob%20Storage%20Connector/Step%202%20Create%20Integration_1.png)
+![](<../../../.gitbook/assets/Step 2 Create Integration_1.png>)
 
-4. Click **Save** to save the settings and stay on page to add tasks, or click **Save & Close** to save and exit the page.
+4. Click **Save** to save the settings and stay on page to add tasks, or click **Save & Close** to save and exit the page.
 
 If you click **Save**, the **ConnectorSteps tab** appears.
 

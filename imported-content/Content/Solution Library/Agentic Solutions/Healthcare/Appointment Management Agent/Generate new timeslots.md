@@ -1,9 +1,8 @@
 ---
-title: "Generate New Timeslots"
+title: Generate New Timeslots
 ---
 
-<a id="GenerateNewTimeslots"></a>
-
+# Generate New Timeslots
 
 For medical back-office
 
@@ -17,13 +16,13 @@ To generate new timeslots, follow these steps:
 2. Click **Timeslots** on the workspace menu.
 3. Click the **Add Timeslots** button.
 
-![](../../../../Resources/Images/Agentic%20Healthcare/add%20timeslots.png)
+![](<../../../../../.gitbook/assets/add timeslots.png>)
 
 An interactive chat window will open to guide you through the timeslots creating.
 
 4. Follow the guidelines in the chat to create new timeslots.
 
-![](../../../../Resources/Images/Agentic%20Healthcare/generate%20timeslot.png)
+![](<../../../../../.gitbook/assets/generate timeslot.png>)
 
 {% hint style="info" %}
 **NOTE:** When new timeslots are generated, any overlapping timeslots are automatically deleted.

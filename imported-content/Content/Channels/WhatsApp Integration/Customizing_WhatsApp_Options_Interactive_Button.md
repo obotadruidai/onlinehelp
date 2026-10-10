@@ -1,9 +1,8 @@
 ---
-title: "Customizing the WhatsApp \"Options\" Interactive Button"
+title: Customizing the WhatsApp "Options" Interactive Button
 ---
 
-<a id="CustomizingtheWhatsAppOptionsInteractiveButton"></a>
-
+# Customizing the WhatsApp "Options" Interactive Button
 
 For hero, choice and thumbnail steps, in DRUID 5.5 and higher you can customize the label of the **Options** button shown in WhatsApp. To do so, on the flow step, in the Metadata section, tap on **AdvancedEditing** and in the code editor and under your specific step type object, add the following object:
 
@@ -23,4 +22,4 @@ For hero, choice and thumbnail steps, in DRUID 5.5 and higher you can customize 
 **NOTE:** The character limit for each button text is **20** for choice steps and **24** for hero and thumbnail steps.
 {% endhint %}
 
-![](../../Resources/Images/WhatsAppMeta/advanced%20editing.png)
+![](<../../../.gitbook/assets/advanced editing.png>)

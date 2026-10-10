@@ -1,17 +1,14 @@
 ---
-title: "Two-Factor Authentication Using an Authenticator App"
+title: Two-Factor Authentication Using an Authenticator App
 ---
 
-<a id="TwoFactorAuthenticationUsinganAuthenticatorApp"></a>
-
+# Two Factor Authentication Using an Authenticator App
 
 Two-Factor Authentication (2FA) adds an extra layer of security to your Druid accounts. By requiring a temporary, time-based verification code from a mobile authenticator app (such as Google Authenticator or Authy) alongside standard user credentials, 2FA protects sensitive data and prevents unauthorized tenant access.
 
 This guide explains how Druid Portal administrators can enable authenticator-based 2FA tenant-wide, and how portal users can enroll, manage recovery codes, and swap authenticator apps.
 
-<a id="Enabletwofactorauthentication"></a>
-
-## Enable two-factor authentication
+### Enable two-factor authentication
 
 For Druid Portal administrators
 
@@ -22,13 +19,11 @@ To enable authenticator app support for your entire tenant, follow these steps:
 3. Click the **Security** tab.
 4. Scroll down to the **Two Factor Login** area and check **Enable Two-Factor With Authenticator**.
 
-![](../../Resources/Images/Two%20factir%20auth/Two%20Factor%20Authentication.png)
+![](<../../../.gitbook/assets/Two Factor Authentication.png>)
 
 5. Click **Save all** in the top-right corner of the page.
 
-<a id="Setuptwofactorauthenticationforyouraccount"></a>
-
-## Set up two-factor authentication for your account
+### Set up two-factor authentication for your account
 
 For Druid Portal users
 
@@ -37,43 +32,42 @@ Once tenant administrators enable 2FA, you will be prompted to set up your authe
 1. Go to your tenant login page in your browser.
 2. Enter your username and password, then click **Log in**.
 
-![](../../Resources/Images/Two%20factir%20auth/Two%20Factor%20Authentication_1.png)
+![](<../../../.gitbook/assets/Two Factor Authentication_1.png>)
 
 3. If multiple authentication options are enabled, select **Authenticator App** from the verification type dropdown and click **Submit**.
 
-![](../../Resources/Images/Two%20factir%20auth/Two%20Factor%20Authentication_2.png)
+![](<../../../.gitbook/assets/Two Factor Authentication_2.png>)
 
 4. Open your preferred authenticator app (e.g., Google Authenticator, Authy) on your mobile device.
 5. Scan the QR code displayed on your screen.
+
 {% hint style="info" %}
-**Info:**  If you cannot scan the QR code, click the copy button next to the setup key and enter it into your authenticator app.
+**Info:** If you cannot scan the QR code, click the copy button next to the setup key and enter it into your authenticator app.
 {% endhint %}
 
 6. Your app will generate a 6-digit one-time password. Enter this code in the input boxes on the Druid screen and click **Submit**.
 
-![](../../Resources/Images/Two%20factir%20auth/Two%20Factor%20Authentication_4.png)
+![](<../../../.gitbook/assets/Two Factor Authentication_4.png>)
 
 The **Save your recovery codes** page will appear. These codes are crucial for gaining account access if you lose your mobile device.
 
 7. Click **Copy codes** or **Download codes** and store them in a secure location.
 
-![](../../Resources/Images/Two%20factir%20auth/Two%20Factor%20Authentication_5.png)
+![](<../../../.gitbook/assets/Two Factor Authentication_5.png>)
 
 8. Select **I have saved my recovery codes in a safe place** and click **Finish**. Your account is now more secure.
 
-![](../../Resources/Images/Two%20factir%20auth/Two%20Factor%20Authentication_6.png)
+![](<../../../.gitbook/assets/Two Factor Authentication_6.png>)
 
 You can continue to the Druid Portal by clicking **Continue to app**.
 
 At the next login, you will be asked for the user credentials, then for the verification code from your authenticator app.
 
 {% hint style="info" %}
-**Info:**  If you lose access to your authenticator app, use a recovery code to log in. You can use a recovery code only once. If you use all of them, you can generate new ones.
+**Info:** If you lose access to your authenticator app, use a recovery code to log in. You can use a recovery code only once. If you use all of them, you can generate new ones.
 {% endhint %}
 
-<a id="Setupanotherauthenticatorapp"></a>
-
-## Set up another authenticator app
+### Set up another authenticator app
 
 For Druid Portal users
 
@@ -82,18 +76,16 @@ If you switch mobile devices or want to register a different authenticator servi
 1. Log into the Druid Portal.
 2. Click your profile icon in the top-right corner and select **My settings**.
 
-![](../../Resources/Images/Two%20factir%20auth/Two%20Factor%20Authentication_7.png)
+![](<../../../.gitbook/assets/Two Factor Authentication_7.png>)
 
 3. Click the **Two Factor Login** tab.
 4. Scan the new QR code with your new authenticator app.
 
-![](../../Resources/Images/Two%20factir%20auth/Two%20Factor%20Authentication_8.png)
+![](<../../../.gitbook/assets/Two Factor Authentication_8.png>)
 
 At next login, at the second-authentication step, use the code generated by the new authenticator app.
 
-<a id="Generatenewrecoverycodes"></a>
-
-## Generate new recovery codes
+### Generate new recovery codes
 
 For Druid Portal users
 
@@ -105,16 +97,16 @@ If you have misplaced your recovery codes, or have used most of your remaining c
 
 1. Click your profile icon in the top-right corner and select **My settings**.
 
-![](../../Resources/Images/Two%20factir%20auth/Two%20Factor%20Authentication_7.png)
+![](<../../../.gitbook/assets/Two Factor Authentication_7.png>)
 
 2. Click the **Two Factor Login** tab, then click **Regenerate recovery codes**.
 3. Click **Yes** on the confirmation prompt to invalidate old codes.
 
-![](../../Resources/Images/Two%20factir%20auth/Two%20Factor%20Authentication_9.png)
+![](<../../../.gitbook/assets/Two Factor Authentication_9.png>)
 
 4. Copy or download your new codes and keep them safe.
 
-![](../../Resources/Images/Two%20factir%20auth/Two%20Factor%20Authentication_10.png)
+![](<../../../.gitbook/assets/Two Factor Authentication_10.png>)
 
 5. Select **I have saved my recovery codes in a safe place** and click **Finish**.
 6. Click **Save** in the My settings window to apply the changes.

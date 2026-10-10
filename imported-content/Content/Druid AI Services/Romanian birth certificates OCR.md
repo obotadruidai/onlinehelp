@@ -1,34 +1,29 @@
 ---
-title: "Romanian Birth Certificates"
+title: Romanian Birth Certificates
 ---
 
-<a id="RomanianBirthCertificates"></a>
-
+# Romanian Birth Certificates
 
 The Druid API engine performs OCR and data extraction from Romanian birth certificates.
 
 {% hint style="info" %}
 **NOTE:**
 
-- In order to use this Druid Vision service, contact [Druid Tech Support](<mailto:support@druidai.com?subject=Request: Activate Druid Vision service BirthCertificate>).
-- For any APIs that are used for testing purposes and not in a production environment, Druid CANNOT be held responsible for the security of the processed data under the General Data Protection Regulation (GDPR). We highly recommend you to use sample data and documents for all APIs in testing environments.
+* In order to use this Druid Vision service, contact [Druid Tech Support](../Druid%20AI%20Services/mailto:support@druidai.com).
+* For any APIs that are used for testing purposes and not in a production environment, Druid CANNOT be held responsible for the security of the processed data under the General Data Protection Regulation (GDPR). We highly recommend you to use sample data and documents for all APIs in testing environments.
 {% endhint %}
 
-<a id="Request"></a>
+### Request
 
-## Request
+|                             |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| --------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Method                      | POST                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| API Resource URL (Endpoint) | The endpoint of the Druid Vision BirthCertificate service. For information on how to get the endpoint, see [Druid Vision](<Druid Vision.md>).                                                                                                                                                                                                                                                                                                                                                                                                         |
+| Headers                     | Authorization: “Bearer ” Content-Type: “multipart/form-data” ![](<../../.gitbook/assets/birth headers.png>)                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| Authorization               | Select **Bearer Token** and provide the Druid Vision **Token**. For information on how to get the endpoint, see [Druid Vision](<Druid Vision.md>). ![](<../../.gitbook/assets/birtcertif auth.png>)                                                                                                                                                                                                                                                                                                                                                   |
+| Body                        | “file”: (file attachment). Supported formats: png, jpg, pdf. ![](<../../.gitbook/assets/birth certif.png>) If extraction fails due to issues like poor image quality, you can skip any of the following validation checks: - Sex - SIRUTA - to skip PlaceOfBirthvalidation - DateOfBirth Add the **skipValidations** parameter in the request body as many times as validation checks you want to escape from validation. ![](<../../.gitbook/assets/birth cert validation.png>) **NOTE:** Skipping validations is available in DRUID 8.1 and higher. |
 
-|  |  |
-| --- | --- |
-| Method | POST |
-| API Resource URL (Endpoint) | The endpoint of the Druid Vision BirthCertificate service. For information on how to get the endpoint, see [Druid Vision](Druid%20Vision.md). |
-| Headers | Authorization: “Bearer <your bearer token>”  Content-Type: “multipart/form-data”  ![](../Resources/Images/OCR%20ID/birth%20headers.png) |
-| Authorization | Select **Bearer Token** and provide the Druid Vision **Token**. For information on how to get the endpoint, see [Druid Vision](Druid%20Vision.md).  ![](../Resources/Images/OCR%20ID/birtcertif%20auth.png) |
-| Body | “file”: <attached document file> (file attachment).  Supported formats: png, jpg, pdf.  ![](../Resources/Images/OCR%20ID/birth%20certif.png)  If extraction fails due to issues like poor image quality, you can skip any of the following validation checks:   - Sex - SIRUTA - to skip PlaceOfBirthvalidation - DateOfBirth   Add the **skipValidations** parameter in the request body as many times as validation checks you want to escape from validation.  ![](../Resources/Images/vision/birth%20cert%20validation.png)  **NOTE:** Skipping validations is available in DRUID 8.1 and higher. |
-
-<a id="Response"></a>
-
-## Response
+### Response
 
 **Response Example**
 

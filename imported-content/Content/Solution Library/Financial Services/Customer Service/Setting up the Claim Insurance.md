@@ -1,43 +1,36 @@
 ---
-title: "Setting Up the Claim Insurance UiPath Process"
+title: Setting Up the Claim Insurance UiPath Process
 ---
 
-<a id="SettingUptheClaimInsuranceUiPathProcess"></a>
+# Setting Up the Claim Insurance UiPath Process
 
-
-<a id="Step1CreateOrchestratorfolder"></a>
-
-## Step 1: Create Orchestrator folder
+### Step 1: Create Orchestrator folder
 
 Go to the Orchestrator and create a new modern folder where you will add the Claim Insurance UiPath Process.
 
-<a id="Step2PublishtheClaimInsuranceUiPathProcess"></a>
-
-## Step 2: Publish the Claim Insurance UiPath Process
+### Step 2: Publish the Claim Insurance UiPath Process
 
 Unzip the Claim-Insurance-Processing file (it contains the Claim Insurance UiPath process) and open the Flowchart.xaml.
 
 To publish this process in your orchestrator, click **Publish**.
 
-![](../../../Resources/Images/SetUp%20UiPath%20Covid%20Claim%20Insurance_New%20UIPath/Setting%20up%20the%20Claim%20Insurance.png)
+![](<../../../../.gitbook/assets/Setting up the Claim Insurance.png>)
 
-<a id="Step3Addnewprocessinorchestrator"></a>
-
-## Step 3: Add new process in orchestrator
+### Step 3: Add new process in orchestrator
 
 After the folder is created, click on it, go to **Automations** > **Processes**, and click **Add Process**.
 
-![](../../../Resources/Images/SetUp%20UiPath%20Covid%20Claim%20Insurance_New%20UIPath/Setting%20up%20the%20Claim%20Insurance_1.png)
+![](<../../../../.gitbook/assets/Setting up the Claim Insurance_1.png>)
 
 Select the Package name published at step 2, and click **Continue**.
 
-![](../../../Resources/Images/SetUp%20UiPath%20Covid%20Claim%20Insurance_New%20UIPath/Setting%20up%20the%20Claim%20Insurance_2.png)
+![](<../../../../.gitbook/assets/Setting up the Claim Insurance_2.png>)
 
 The process runs asynchronously, so you need to define what happens after the job completes. The process needs to call back Druid.
 
 To do so, in Orchestrator, click **Tenant**, and from the top menu, click **Webhooks**.
 
-![](../../../Resources/Images/Starting%20UiPath%20Unattended%20Processes/How%20to%20set%20up%20the%20UiPath%20Integration_16.png)
+![](<../../../../.gitbook/assets/How to set up the UiPath Integration_16.png>)
 
 In the **URL** field, paste the value of the **Druid Endpoint URL** and in the **Secret** field, paste the value of the **Druid Endpoint Secret**.
 
@@ -45,25 +38,24 @@ Tick **Enabled**.
 
 Select **Individual Events** as **Event Type**, select **Jobs** and from the list, select the first two jobs:
 
-- **Job completed**. A job has completed successfully. The event is linked to the UiPath child flow step **After Job Complete (Success)**.
-- **Job faulted**. A job has failed to finish execution (incl. app exceptions). The event is linked to the UiPath child flow step **After Job Complete (Error)**.
+* **Job completed**. A job has completed successfully. The event is linked to the UiPath child flow step **After Job Complete (Success)**.
+* **Job faulted**. A job has failed to finish execution (incl. app exceptions). The event is linked to the UiPath child flow step **After Job Complete (Error)**.
 
 {% hint style="info" %}
 **NOTE:** >
 
-- We recommend you to select only these two types of events, as at this moment, the Druid AI Platform will ignore all other events. In new Druid versions, we will add support for more orchestrator events.
-- As the Orchestrator allows setting Webhooks on a tenant level, it will send all events on all processes existing in all folders on the tenant, including the ones that are not set up in Druid; however, Druid will ignore the events transmitted by the Orchestrator, which are not related to processes Druid started.
+* We recommend you to select only these two types of events, as at this moment, the Druid AI Platform will ignore all other events. In new Druid versions, we will add support for more orchestrator events.
+* As the Orchestrator allows setting Webhooks on a tenant level, it will send all events on all processes existing in all folders on the tenant, including the ones that are not set up in Druid; however, Druid will ignore the events transmitted by the Orchestrator, which are not related to processes Druid started.
 {% endhint %}
 
 Click the **UPDATE** button to save the Webhook configuration.
 
 Now your UiPath setup is completed.
 
-<a id="Step4SetupDruid"></a>
+### Step 4: Set up Druid
 
-## Step 4: Set up Druid
+1. In Druid, go to Apps and create a new UiPath connection. For information on how to do that, see [Creating the UiPath Connection Strings](<../../../7_Integrations/UiPath/Creating the UiPath Connection Strings.md>).
 
-1. In Druid, go to Apps and create a new UiPath connection. For information on how to do that, see [Creating the UiPath Connection Strings](../../../7_Integrations/UiPath/Creating%20the%20UiPath%20Connection%20Strings.md).
 {% hint style="info" %}
 **NOTE:** The user used to obtain the UiPath Connector App credentials must have permission to run jobs on the corresponding Orchestrator Folder.
 {% endhint %}
@@ -73,10 +65,10 @@ Now your UiPath setup is completed.
 4. Set up your connection code.
 5. Select job type **Unattended**.
 
-![](../../../Resources/Images/SetUp%20UiPath%20Covid%20Claim%20Insurance_New%20UIPath/Setting%20up%20the%20Claim%20Insurance_3.png)
+![](<../../../../.gitbook/assets/Setting up the Claim Insurance_3.png>)
 
 6. Publish the connector.
 
-## Related Topics
+### Related Topics
 
-- [How to Set Up the UiPath Integration](../../../7_Integrations/UiPath/How%20to%20set%20up%20the%20UiPath%20Integration.md)
+* [How to Set Up the UiPath Integration](<../../../7_Integrations/UiPath/How to set up the UiPath Integration.md>)

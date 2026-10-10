@@ -1,52 +1,45 @@
 ---
-title: "Custom Data Sources"
+title: Custom Data Sources
 ---
 
-<a id="CustomDataSources"></a>
-
+# Custom Data Sources
 
 Custom data sources allow you to extract data from third-party systems that expose data via APIs. These sources support integration responses and help retrieve content when none of the standard DRUID data source types apply.
 
 Custom data sources can include databases, where each table represents a node, and table content represents records (such as articles). You can also use them to extract data from systems like Confluence, Zendesk, and Salesforce Ticketing/KB.
 
 {% hint style="info" %}
-**NOTE:** Druid supports video file extraction. For requirements, limitations, and how the extraction works, see [Extracting Data from Video Files](Extract%20Data%20from%20Video%20Files.md).
+**NOTE:** Druid supports video file extraction. For requirements, limitations, and how the extraction works, see [Extracting Data from Video Files](<Extract Data from Video Files.md>).
 {% endhint %}
 
-<a id="Howcustomdatasourceswork"></a>
-
-## How custom data sources work
+### How custom data sources work
 
 Custom Knowledge Base (KB) data sources enable Druid to access and retrieve data from external systems using DRUID integrations (DRUID Connectors). This approach leverages Druid existing hybrid deployment capabilities to securely access on-premise data sources.
 
 To create a custom data source, you need to configure two key processes (integrations):
 
-- **Crawl Integration** – Responsible for discovering and retrieving the structure (nodes and hierarchy) of the data source, including file nodes.
-- **Extract Integration** – Responsible for extracting the actual content from the files identified and retrieved by the Crawl Integration.
+* **Crawl Integration** – Responsible for discovering and retrieving the structure (nodes and hierarchy) of the data source, including file nodes.
+* **Extract Integration** – Responsible for extracting the actual content from the files identified and retrieved by the Crawl Integration.
 
-<a id="Thecrawlingprocess"></a>
-
-### The crawling process
+#### The crawling process
 
 The crawling process is iterative, meaning it repeats until a specific condition is met. It starts at a defined point in the data source and retrieves nodes for each hierarchy level. This process continues, exploring each level of the hierarchy, until one of the following occurs:
 
-- Crawl Depth limit reached. The crawling process reaches the maximum depth level specified in the crawling configuration.
-- No more child nodes available. The crawling process reaches a point in the hierarchy where a node has no further child nodes.
+* Crawl Depth limit reached. The crawling process reaches the maximum depth level specified in the crawling configuration.
+* No more child nodes available. The crawling process reaches a point in the hierarchy where a node has no further child nodes.
 
 For example:
 
-- **Depth = 1**: The integration runs once at the root level (level 0) and retrieves all direct child nodes of the root.
-- **Depth = 2**: The integration runs ONCE for the root node (level 0) and then once for each of its direct child nodes (level 1), to discover the subsequent children of level 2, for each child in level 1. If the root node has 10 child nodes, the integration executes 11 times in total (once for the root and once for each child node).
+* **Depth = 1**: The integration runs once at the root level (level 0) and retrieves all direct child nodes of the root.
+* **Depth = 2**: The integration runs ONCE for the root node (level 0) and then once for each of its direct child nodes (level 1), to discover the subsequent children of level 2, for each child in level 1. If the root node has 10 child nodes, the integration executes 11 times in total (once for the root and once for each child node).
 
-![](../Resources/Images/Custom%20Data%20Sources_01/crawling%20tree.png)
+![](<../../.gitbook/assets/crawling tree.png>)
 
-During each execution, the crawling integration populates the request entity with the data of the currently processed level. This request entity includes the parent node’s ID, specifically the value of **[[KBCustomDSDiscoverTask]].ParentNode.Id**, which is essential for correctly establishing the hierarchical relationship between nodes in the data source. It ensures that each discovered child node is correctly associated with its parent in the response returned by the integration.
+During each execution, the crawling integration populates the request entity with the data of the currently processed level. This request entity includes the parent node’s ID, specifically the value of **\[\[KBCustomDSDiscoverTask]].ParentNode.Id**, which is essential for correctly establishing the hierarchical relationship between nodes in the data source. It ensures that each discovered child node is correctly associated with its parent in the response returned by the integration.
 
 Iterating through the discovered hierarchy of nodes is controlled by the Knowledge Base engine itself. You don’t need to implement logic for iterating through the hierarchy in the crawling integration. The crawling integration should focus only on returning the child nodes of a single given parent node. The crawling engine will further call the integration for each parent node, depending on the requested depth and the number of parent nodes.
 
-<a id="Theextractionprocess"></a>
-
-### The extraction process
+#### The extraction process
 
 The extraction process focuses on retrieving the content from the nodes identified during crawling. The Extract integration is executed once for each node of the data source, discovered in crawling stage, and as such, it is designed to deliver the content of a single node per execution.
 
@@ -54,28 +47,25 @@ The KB Engine orchestrates this by invoking the Extract integration for every no
 
 For example, if the crawling process discovers 15 nodes under the root, the KB Engine will execute the Extract Integration 15 times, once per node, to extract their respective content.
 
-<a id="Setupcustomdatasources"></a>
-
-## Set up custom data sources
+### Set up custom data sources
 
 This section describes how to set up a custom data source.
 
-<a id="Step1Createanintegrationfornodecrawling"></a>
-
-### Step 1: Create an integration for node crawling
+#### Step 1: Create an integration for node crawling
 
 To create a crawling integration:
 
-1. Add an integration action (**Integrations** > **Create connector action**). For information on how to create a connector action, see [Defining the Integration Actions](../7_Integrations/Defining%20the%20Integration%20Actions.md). When defining the connector action:
+1. Add an integration action (**Integrations** > **Create connector action**). For information on how to create a connector action, see [Defining the Integration Actions](<../7_Integrations/Defining the Integration Actions.md>). When defining the connector action:
 
-- For both **Request Entity Name** and **Response Entity Name**, select the **[[KBCustomDSDiscoverTask]]** entity.
-- Check both **Reduce Connector Audit Logging** and **Disable Connector Audit Full Database Logging**. This helps prevent performance issues and heavy database loading.
+* For both **Request Entity Name** and **Response Entity Name**, select the **\[\[KBCustomDSDiscoverTask]]** entity.
+* Check both **Reduce Connector Audit Logging** and **Disable Connector Audit Full Database Logging**. This helps prevent performance issues and heavy database loading.
 
-![](../Resources/Images/Custom%20Data%20Sources_01/cnn%20action.png)
+![](<../../.gitbook/assets/cnn action.png>)
 
 2. Create an integration task for crawling. Add a custom code integration task and other integrations to accommodate your use case (REST, SQL, SOAP, etc.).
+
 {% hint style="info" %}
-**NOTE:** The crawling integration must exclusively use the dedicated system entity **[[KBCustomDSDiscoverTask]]**; otherwise, it will not appear in the data source configuration panel.
+**NOTE:** The crawling integration must exclusively use the dedicated system entity **\[\[KBCustomDSDiscoverTask]]**; otherwise, it will not appear in the data source configuration panel.
 {% endhint %}
 
 3. Define the crawling logic.
@@ -167,34 +157,33 @@ How this template script works:
 
 1. **Retrieves the request entity from the crawling context**. If the request entity has not been initialized in the context, an error message is displayed and the process stops.
 2. **Initializes the nodes collection**. The script initializes an empty KBWebsitePage collection that stores all discovered nodes for the current task execution.
-3. **Executes a discovery task to fetch data**. Calls an external task (for example, Wordpress Discover Sites) to retrieve data from the source system, such as WordPress pages or files.
-   The results are stored in the response entity.
+3. **Executes a discovery task to fetch data**. Calls an external task (for example, Wordpress Discover Sites) to retrieve data from the source system, such as WordPress pages or files. The results are stored in the response entity.
 4. **Adds comprehensive metadata to each node**. For each discovered node, it creates a new KBWebsitePage entity, maps the external data (Name, URL), and assigns technical metadata (External Object ID, Page Type, MIME Type). Crucially, it sets Modified, ContentLastModified, or ContentHash to help the Knowledge Base engine detect content changes and ensure efficient content re-extraction.
 5. **Completes the response entity**. Sets the status of the current level to complete (`responseEntity.Status = 1`), indicating that all nodes at this level have been discovered (for example, when pagination is not used).
 6. **Sends back the response**. Returns the response entity to the Knowledge Base engine so it can continue building the knowledge tree.
 
-<a id="Step2Createanintegrationfordataextraction"></a>
-
-### Step 2: Create an integration for data extraction
+#### Step 2: Create an integration for data extraction
 
 To create an extraction integration:
 
-1. Add an integration action (**Integrations** > **Create connector action**). For information on how to create a connector action, see [Defining the Integration Actions](../7_Integrations/Defining%20the%20Integration%20Actions.md). When defining the connector action:
-   - For both **Request Entity Name** and **Response Entity Name**, select the **[[KBCustomDSProcessNodeTask]]** entity.
-   - Check both **Reduce Connector Audit Logging** and **Disable Connector Audit Full Database Logging**. This helps prevent performance issues and heavy database loading.
+1.  Add an integration action (**Integrations** > **Create connector action**). For information on how to create a connector action, see [Defining the Integration Actions](<../7_Integrations/Defining the Integration Actions.md>). When defining the connector action:
 
-   ![](../Resources/Images/Custom%20Data%20Sources_01/extraction.png)
+    * For both **Request Entity Name** and **Response Entity Name**, select the **\[\[KBCustomDSProcessNodeTask]]** entity.
+    * Check both **Reduce Connector Audit Logging** and **Disable Connector Audit Full Database Logging**. This helps prevent performance issues and heavy database loading.
+
+    ![](../../.gitbook/assets/extraction.png)
 2. Add a REST integration task to retrieve content files from the third-party system.
+
 {% hint style="info" %}
-**NOTE:** The extraction integration must exclusively use the dedicated system entity **[[KBCustomDSProcessNodeTask]]**; otherwise, it will not appear in the data source configuration panel.
+**NOTE:** The extraction integration must exclusively use the dedicated system entity **\[\[KBCustomDSProcessNodeTask]]**; otherwise, it will not appear in the data source configuration panel.
 {% endhint %}
 
-3. Save the response in **[[KBCustomDSProcessNodeTask]].**<field of type file>. Set **Project Result To Entity Path** to **[[KBCustomDSProcessNodeTask]].**<field of type file>.
+3. Save the response in **\[\[KBCustomDSProcessNodeTask]].**. Set **Project Result To Entity Path** to **\[\[KBCustomDSProcessNodeTask]].**.
 
-![](../Resources/Images/Custom%20Data%20Sources_01/Custom%20Data%20Sources.png)
+![](<../../.gitbook/assets/Custom Data Sources.png>)
 
 {% hint style="info" %}
-**Info:** The most efficient way to extract data from third-party systems, you can configure the extraction integration to construct JSON content as per the Druid structured JSON format. This allows structured content from external systems to be processed efficiently. Save the response in a JSON file. For details on the structure of the JSON file, see [JSON File Structure](#JSON_File_Structure).
+**Info:** The most efficient way to extract data from third-party systems, you can configure the extraction integration to construct JSON content as per the Druid structured JSON format. This allows structured content from external systems to be processed efficiently. Save the response in a JSON file. For details on the structure of the JSON file, see [JSON File Structure](<Custom Data Sources.md#JSON_File_Structure>).
 {% endhint %}
 
 4. Add a custom code task to extract the content from the previous response and store it inside FileContent in the corresponding KB node (file node).
@@ -215,9 +204,7 @@ To create an extraction integration:
 
 You can add additional integration tasks for example to use generative AI for rephrasing content.
 
-<a id="Step3Createacustomdatasource"></a>
-
-### Step 3. Create a custom data source
+#### Step 3. Create a custom data source
 
 To create a custom data source:
 
@@ -234,9 +221,7 @@ Once the custom data source is set up:
 
 You can choose which file explorer elements Druid will extract information from during the extraction process. To exclude an element from scraping, click the three dots icon next to it, and then select **Exclude**. To include a previously excluded element, click the three dots icon next to it, and then select **Include**.
 
-<a id="JSONFileStructure"></a>
-
-## <a id="JSON_File_Structure"></a>JSON File Structure
+### JSON File Structure <a href="#json_file_structure" id="json_file_structure"></a>
 
 For Custom data sources, third-party tools must support REST APIs for data exchange. Extracted content — whether in Word documents, Excel files, PDFs, or JSON format — must be mapped into a structured JSON file before integration.
 
@@ -265,14 +250,14 @@ The JSON file should follow this format:
 
 The following table provides the description of each JSON property:
 
-| Property | Required | Description |
-| --- | --- | --- |
-| Title | Yes | The title of the content entry. |
-| Content | Yes | The content to be added to the Knowledge Base. |
-| PageNumber | No | Relevant only when mapping data from PDFs or Word documents. Specifies the page number where the content was extracted. |
-| SheetName | No | Relevant only when mapping data from Excel files. Specifies the sheet name where the content was extracted. |
+| Property   | Required | Description                                                                                                             |
+| ---------- | -------- | ----------------------------------------------------------------------------------------------------------------------- |
+| Title      | Yes      | The title of the content entry.                                                                                         |
+| Content    | Yes      | The content to be added to the Knowledge Base.                                                                          |
+| PageNumber | No       | Relevant only when mapping data from PDFs or Word documents. Specifies the page number where the content was extracted. |
+| SheetName  | No       | Relevant only when mapping data from Excel files. Specifies the sheet name where the content was extracted.             |
 
-## Related Topics
+### Related Topics
 
-- [Advanced Features and Optimization](Advanced%20Features%20and%20Optimization.md)
-- [Data Management and Schedules](Data%20Management%20and%20Schedules.md)
+* [Advanced Features and Optimization](<Advanced Features and Optimization.md>)
+* [Data Management and Schedules](<Data Management and Schedules.md>)

@@ -1,19 +1,14 @@
 ---
-title: "Filter Data using Druid Custom Query"
+title: Filter Data using Druid Custom Query
 ---
 
-<a id="FilterDatausingDruidCustomQuery"></a>
-
+# Filter Data using Druid Custom Query
 
 The Druid Custom Query allows you to filter request data for Query entities and Query-related entity integration tasks. With this feature, you can retrieve and analyze data from entities beyond the request entity, without relying on the Query-related entity integration task. The Druid Custom Query supports a range of SQL statements, functions, operators, and clauses, as detailed below.
 
-<a id="Basicstatements"></a>
+### Basic statements
 
-## Basic statements
-
-<a id="SELECT"></a>
-
-## SELECT
+### SELECT
 
 The `SELECT` statement is used to select data from a database table.
 
@@ -28,18 +23,16 @@ SELECT field_1, field_2, field_3...
 FROM entity
 ```
 
-**Example - select specific fields from the entity [[Account]]**
+**Example - select specific fields from the entity \[\[Account]]**
 
 ```
 SELECT FirstName, LastName, Age
 FROM Account
 ```
 
-<a id="Aliases"></a>
+### Aliases
 
-## Aliases
-
-## Column Alias
+### Column Alias
 
 A column alias provides a temporary name for a field in your result set, making it easier to read. For example, when concatenating fields together, you might alias the result.
 
@@ -51,16 +44,16 @@ column_name AS alias_name
 
 Where:
 
-- `column_name` is the original name of the entity field that you wish to alias.
-- `AS` is optional. Whether you specify the `AS` keyword or not has no impact on the alias.
-- `alias_name` is the temporary name to assign to the entity field.
+* `column_name` is the original name of the entity field that you wish to alias.
+* `AS` is optional. Whether you specify the `AS` keyword or not has no impact on the alias.
+* `alias_name` is the temporary name to assign to the entity field.
 
 {% hint style="info" %}
 **NOTE:**
 
-- If the `alias_name` contains spaces, you must enclose the `alias_name` in quotes.
-- It is acceptable to use spaces when you are aliasing a column name.
-- The `alias_name` is only valid within the scope of the SQL statement.
+* If the `alias_name` contains spaces, you must enclose the `alias_name` in quotes.
+* It is acceptable to use spaces when you are aliasing a column name.
+* The `alias_name` is only valid within the scope of the SQL statement.
 {% endhint %}
 
 **Example 1**
@@ -83,7 +76,7 @@ WHERE FirstName = 'John'
 
 In this example, we've aliased the second column (i.e.: FirstName and LastName concatenated) as "Client Name". Since there are spaces in this `alias_name`, we enclosed "Client Name" in quotes.
 
-## Table Alias
+### Table Alias
 
 Creates a temporary name for entities / tables. Table aliases are used to shorten your SQL to make it easier to read or when you are performing a self join (i.e.: listing the same entity / table more than once in the FROM clause).
 
@@ -95,16 +88,16 @@ table_name AS alias_name
 
 Where:
 
-- `table_name` is the original name of the entity that you wish to alias.
-- `AS` is optional. Whether you specify the `AS` keyword or not has no impact on the alias.
-- `alias_name` is the temporary name to assign to the entity.
+* `table_name` is the original name of the entity that you wish to alias.
+* `AS` is optional. Whether you specify the `AS` keyword or not has no impact on the alias.
+* `alias_name` is the temporary name to assign to the entity.
 
 {% hint style="info" %}
 **NOTE:**
 
-- If the `alias_name` contains spaces, you must enclose the `alias_name` in quotes.
-- It is not generally good practice to use spaces when you are aliasing a table name.
-- The `alias_name` is only valid within the scope of the SQL statement.
+* If the `alias_name` contains spaces, you must enclose the `alias_name` in quotes.
+* It is not generally good practice to use spaces when you are aliasing a table name.
+* The `alias_name` is only valid within the scope of the SQL statement.
 {% endhint %}
 
 In the examples below, we omit AS when aliasing a table name.
@@ -121,7 +114,7 @@ ON p.ProductId = Inventory.ProductId
 ORDER BY p.ProductName ASC, Inventory.Quantity DESC
 ```
 
-The query retrieves the product names and their corresponding quantities from [[Products]] and [[Inventory]] entities. It matches these entities based on the ProductId field. The results are sorted first by ProductName in ascending order and then by Quantity in descending order within each product name.
+The query retrieves the product names and their corresponding quantities from \[\[Products]] and \[\[Inventory]] entities. It matches these entities based on the ProductId field. The results are sorted first by ProductName in ascending order and then by Quantity in descending order within each product name.
 
 In this example, we've created an alias for the Products entity called **p**.Within this SQL statement, we referred to the Products entity as p.
 
@@ -151,13 +144,9 @@ In this example, the query selects data from the KBTestPlan, KBTestPlanXTestCase
 
 The GROUP BY clause groups aggregated result by specific columns — t1.Id, t1.Name, t1.CreatedOn, Bot.Id, and Bot.Name — while counting the test cases associated with each test plan.
 
-<a id="Filteringandconditions"></a>
+### Filtering and conditions
 
-## Filtering and conditions
-
-<a id="WHERE"></a>
-
-## WHERE
+### WHERE
 
 The WHERE clause is used to filter records in a query, ensuring that only those meeting specific conditions are retrieved.
 
@@ -173,7 +162,7 @@ WHERE condition
 **NOTE:** When filtering by a system entity field, use the syntax '@FieldName' in the WHERE clause. Map the variable name to the DRUID system entity field without the @ symbol. For reference, see the example below.
 {% endhint %}
 
-The following query retrieves test case details from the [[KBTestCase]] entity, filtering records based on the AI Agent ID. It converts the @BotId variable into a unique identifier type before applying the filter. The results are sorted in descending order by the CreatedOn field.
+The following query retrieves test case details from the \[\[KBTestCase]] entity, filtering records based on the AI Agent ID. It converts the @BotId variable into a unique identifier type before applying the filter. The results are sorted in descending order by the CreatedOn field.
 
 **Example - filtering by BotId**
 
@@ -184,29 +173,29 @@ where T1.BotId = CONVERT(GUID, '@BotId') -- Filter for the current <span class="
 order by T1.CreatedOn DESC;
 ```
 
-When using this query, we set the BotId variable to [[ChatUser]].BotId in the mapping table.
+When using this query, we set the BotId variable to \[\[ChatUser]].BotId in the mapping table.
 
-![](../../Resources/Images/Druid%20Data%20Service%20Connector/map%20filed%20custom%20query.png)
+![](<../../../.gitbook/assets/map filed custom query.png>)
 
 The following operators can be used in the WHERE clause:
 
-| Operator | Description |
-| --- | --- |
-| = | Equal |
-| > | Greater than |
-| < | Less than |
-| >= | Greater than or equal |
-| <= | Less than or equal |
-| != | Not equal to |
-| LIKE | Searches for a specified pattern in a field. The LIKE operator supports two types of pattern matching: standard SQL wildcards and regular expression-like syntax.  **Info:** In DRUID versions prior to 9.4, the `LIKE` operator only supports % wildcards.  **Syntax**   ``` SELECT field_1, field_2, ... FROM entity WHERE field_n LIKE pattern ```     **SQL-style wildcard approach: Finding books where the name starts with "The"**   ``` SELECT     s.BookName,     s.Price,     s.QuantitySold,     (s.Price * s.QuantitySold) AS TotalSales FROM Sales s WHERE s.BookName LIKE 'The%' ```     **Regular expression-like approach: Finding books where the name starts with "The"**   ``` SELECT     s.BookName,     s.Price,     s.QuantitySold,     (s.Price * s.QuantitySold) AS TotalSales FROM Sales s WHERE s.BookName LIKE '^The' ```     **SQL-style wildcard approach: Finding books where the name ends with "Guide"**   ``` SELECT     s.BookName,     s.Price,     s.QuantitySold,     (s.Price * s.QuantitySold) AS TotalSales FROM Sales s WHERE s.BookName LIKE '%Guide' ```     **Regular expression-like approach: Finding books where the name ends with "Guide"**   ``` SELECT     s.BookName,     s.Price,     s.QuantitySold,     (s.Price * s.QuantitySold) AS TotalSales FROM Sales s WHERE s.BookName LIKE '%Guide$' ``` |
-| AND / OR | Combines multiple conditions in a WHERE clause.  **Example**   ``` SELECT FirstName, LastName FROM Account WHERE Age > 30 AND City = 'New York' ``` |
-| IN | Allows you to specify multiple values in a `WHERE` clause. Returns all records that are in any of the values in a given list or subquery.  **NOTE:** This operator is available in DRUID 9.4 and higher.  **Example 1 - select customers from Romania, Germany and Spain**   ``` SELECT s.FirstName, s.LastName, s.Country FROM Customers s WHERE Country IN ('Romania', 'Germany', 'Spain') ```     **Example 2 - Return customers that have an order**   ``` SELECT c.FirstName, c.LastName, c.Country FROM Customers c WHERE c.CustomerId IN (SELECT o.CustomerId FROM Orders o); ``` |
-| NOT IN | Allows you to specify multiple values in a `WHERE` clause. Returns all records that are NOT any of the values in a given list or in the results of a subquery.  **NOTE:** This operator is available in DRUID 9.4 and higher.  **Example 1 - select customers except those from Romania, Germany and Spain**   ``` SELECT s.FirstName, s.LastName, s.Country FROM Customers s WHERE Country NOT IN ('Romania', 'Germany', 'Spain') ```     **Example 2 - Return all customers that have NOT placed any orders**   ``` SELECT c.FirstName, c.LastName, c.Country FROM Customers c WHERE c.CustomerId NOT IN (SELECT o.CustomerId FROM Orders o); ``` |
-| NOT | Negates a condition, filtering out rows that match the specified criteria. Use it in combination with other operators to give the opposite result, also called the negative result.  **Syntax**   ``` SELECT field_1, field_1, ... FROM entity WHERE NOT condition; ```     **Example 1 - select customers except those from Romania**   ``` SELECT s.FirstName, s.LastName, s.Country FROM Customers s WHERE NOT Country = 'Romania' ```   If you need to exclude multiple values, use the `NOT IN` operator. |
-| IS NULL | Checks for null values. Use it in the `WHERE` clause to select entity records with a NULL value in a specific field.  **Syntax**   ``` SELECT      field_1,      field_2,      field_N FROM      entity WHERE      field_N IS NULL ```     **Example: select customers who have a NULL value in the Address field**   ``` SELECT      s.CustomerName,      s.ContactName,      s.Address FROM      Customers s WHERE      s.Address IS NULL ``` |
-| IS NOT NULL | Checks for non-empty values (NOT NULL values). Use it in the `WHERE` clause to select entity records with a non-empty value in a specific field.  **Syntax**   ``` SELECT      field_1,      field_2,      field_N FROM      entity WHERE      field_N IS NOT NULL ```     **Example: select customers who have a value in the Address field**   ``` SELECT      s.CustomerName,      s.ContactName,      s.Address FROM      Customers s WHERE      s.Address IS NOT NULL ``` |
+| Operator    | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| ----------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| =           | Equal                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| >           | Greater than                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| <           | Less than                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| >=          | Greater than or equal                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| <=          | Less than or equal                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| !=          | Not equal to                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| LIKE        | Searches for a specified pattern in a field. The LIKE operator supports two types of pattern matching: standard SQL wildcards and regular expression-like syntax. **Info:** In DRUID versions prior to 9.4, the `LIKE` operator only supports % wildcards. **Syntax** `SELECT field_1, field_2, ... FROM entity WHERE field_n LIKE pattern` **SQL-style wildcard approach: Finding books where the name starts with "The"** `SELECT     s.BookName,     s.Price,     s.QuantitySold,     (s.Price * s.QuantitySold) AS TotalSales FROM Sales s WHERE s.BookName LIKE 'The%'` **Regular expression-like approach: Finding books where the name starts with "The"** `SELECT     s.BookName,     s.Price,     s.QuantitySold,     (s.Price * s.QuantitySold) AS TotalSales FROM Sales s WHERE s.BookName LIKE '^The'` **SQL-style wildcard approach: Finding books where the name ends with "Guide"** `SELECT     s.BookName,     s.Price,     s.QuantitySold,     (s.Price * s.QuantitySold) AS TotalSales FROM Sales s WHERE s.BookName LIKE '%Guide'` **Regular expression-like approach: Finding books where the name ends with "Guide"** `SELECT     s.BookName,     s.Price,     s.QuantitySold,     (s.Price * s.QuantitySold) AS TotalSales FROM Sales s WHERE s.BookName LIKE '%Guide$'` |
+| AND / OR    | Combines multiple conditions in a WHERE clause. **Example** `SELECT FirstName, LastName FROM Account WHERE Age > 30 AND City = 'New York'`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| IN          | Allows you to specify multiple values in a `WHERE` clause. Returns all records that are in any of the values in a given list or subquery. **NOTE:** This operator is available in DRUID 9.4 and higher. **Example 1 - select customers from Romania, Germany and Spain** `SELECT s.FirstName, s.LastName, s.Country FROM Customers s WHERE Country IN ('Romania', 'Germany', 'Spain')` **Example 2 - Return customers that have an order** `SELECT c.FirstName, c.LastName, c.Country FROM Customers c WHERE c.CustomerId IN (SELECT o.CustomerId FROM Orders o);`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| NOT IN      | Allows you to specify multiple values in a `WHERE` clause. Returns all records that are NOT any of the values in a given list or in the results of a subquery. **NOTE:** This operator is available in DRUID 9.4 and higher. **Example 1 - select customers except those from Romania, Germany and Spain** `SELECT s.FirstName, s.LastName, s.Country FROM Customers s WHERE Country NOT IN ('Romania', 'Germany', 'Spain')` **Example 2 - Return all customers that have NOT placed any orders** `SELECT c.FirstName, c.LastName, c.Country FROM Customers c WHERE c.CustomerId NOT IN (SELECT o.CustomerId FROM Orders o);`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| NOT         | Negates a condition, filtering out rows that match the specified criteria. Use it in combination with other operators to give the opposite result, also called the negative result. **Syntax** `SELECT field_1, field_1, ... FROM entity WHERE NOT condition;` **Example 1 - select customers except those from Romania** `SELECT s.FirstName, s.LastName, s.Country FROM Customers s WHERE NOT Country = 'Romania'` If you need to exclude multiple values, use the `NOT IN` operator.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| IS NULL     | Checks for null values. Use it in the `WHERE` clause to select entity records with a NULL value in a specific field. **Syntax** `SELECT      field_1,      field_2,      field_N FROM      entity WHERE      field_N IS NULL` **Example: select customers who have a NULL value in the Address field** `SELECT      s.CustomerName,      s.ContactName,      s.Address FROM      Customers s WHERE      s.Address IS NULL`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| IS NOT NULL | Checks for non-empty values (NOT NULL values). Use it in the `WHERE` clause to select entity records with a non-empty value in a specific field. **Syntax** `SELECT      field_1,      field_2,      field_N FROM      entity WHERE      field_N IS NOT NULL` **Example: select customers who have a value in the Address field** `SELECT      s.CustomerName,      s.ContactName,      s.Address FROM      Customers s WHERE      s.Address IS NOT NULL`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 
-## ORDER BY
+### ORDER BY
 
 Sorts the result set of a query by one or more fields / aliases in ascending or descending order.
 
@@ -262,7 +251,7 @@ FROM Customers s
 ORDER BY s.Country, s.CustomerName
 ```
 
-## GROUP BY
+### GROUP BY
 
 Groups records that have the same values in specified fields. It is often used in conjunction with aggregate functions to perform calculations on each group.
 
@@ -314,9 +303,7 @@ LEFT JOIN BookStatus s ON b.StatusId = s.Id 
 GROUP BY CreatedOn, Status.Name, Status.Color
 ```
 
-<a id="HAVING"></a>
-
-## HAVING
+### HAVING
 
 Groups records after they have been aggregated, unlike the `WHERE` clause which filters individual records before aggregation. It's specifically designed to work with aggregate functions (like `COUNT`, `SUM`, `AVG`, `MIN`, and `MAX`) and allows you to filter groups based on the results of those aggregations.
 
@@ -339,13 +326,9 @@ GROUP BY DepartmentName
 HAVING SUM(Amount) > 100000
 ```
 
-<a id="AggregateFunctions"></a>
+### Aggregate Functions
 
-## Aggregate Functions
-
-<a id="MIN"></a>
-
-## MIN
+### MIN
 
 Returns the smallest value of the selected field.
 
@@ -364,9 +347,7 @@ FROM Products
 GROUP BY CategoryID
 ```
 
-<a id="MAX"></a>
-
-## MAX
+### MAX
 
 Returns the highest value of the selected field.
 
@@ -389,9 +370,7 @@ WHERE s.OrderDate >= '2024-01-01'
 GROUP BY s.OrderID, s.OrderName, s.OrderDate
 ```
 
-<a id="AVG"></a>
-
-## AVG
+### AVG
 
 Returns the average value in a set.
 
@@ -415,9 +394,7 @@ GROUP BY s.CustomerID
 HAVING AVG(s.Amount) > 5000
 ```
 
-<a id="COUNT"></a>
-
-## COUNT
+### COUNT
 
 Returns the number of records in a dataset.
 
@@ -442,7 +419,7 @@ FROM Products
 GROUP BY CategoryName
 ```
 
-## COUNT(DISTINCT field)
+### COUNT(DISTINCT field)
 
 Counts the number of unique (non-duplicate) values in a specified field. This is useful when you want to determine how many distinct entries exist in a dataset for a particular field.
 
@@ -467,9 +444,7 @@ WHERE SaleDate >= CONVERT(DateTime, '2024-01-01')
   AND SaleDate <= CONVERT(DateTime, '2024-12-31')
 ```
 
-<a id="STRING_AGG"></a>
-
-## STRING\_AGG
+### STRING\_AGG
 
 This function combines values from a field across an entity list into a single string, inserting a specified delimiter between each value.
 
@@ -483,8 +458,8 @@ STRING_AGG(field, delimiter)
 
 Parameters:
 
-- **field**: The target field containing values to concatenate. Non-string values are converted to string types.
-- **delimiter:** The string separator inserted between concatenated values.
+* **field**: The target field containing values to concatenate. Non-string values are converted to string types.
+* **delimiter:** The string separator inserted between concatenated values.
 
 The following query groups records by department ID and concatenates values from the name field across the employees entity list into a single comma-separated string:
 
@@ -495,11 +470,9 @@ FROM employees
 GROUP BY dept_id;
 ```
 
-<a id="Joins"></a>
+### Joins
 
-## Joins
-
-## INNER JOIN
+### INNER JOIN
 
 Selects records that have matching values in both the specified parent entity and the child entity.
 
@@ -523,7 +496,7 @@ ON Suppliers.SupplierId = Orders.SupplierId;
 
 The query returns all records from the Suppliers and Orders entities where there is a matching SupplierId value in both the Suppliers and Orders entities. If one of the records is missing the SupplierId in one of the two entities, the record will be omitted from the result.
 
-## LEFT JOIN
+### LEFT JOIN
 
 Returns all records from the parent, and the matching records from the child entity. The result is 0 records from the parent entity, if there is no match.
 
@@ -547,7 +520,7 @@ ORDER BY Customers.CustomerName
 
 The query retrieves customer names and their corresponding order IDs. It returns all customers, including those who do not have any orders. Customers without orders will have a NULL value in the OrderID column. The results are sorted alphabetically by customer name.
 
-## RIGHT JOIN
+### RIGHT JOIN
 
 Druid does not support `RIGHT JOIN`. If you wanted to use a `RIGHT JOIN` (e.g., fetching all records from table B and the matching records from table A), you can rewrite it with a `LEFT JOIN` by swapping the tables.
 
@@ -564,18 +537,14 @@ ORDER BY Orders.OrderID
 
 Where:
 
-- `LEFT JOIN` ensures that all records from the Customers table are returned.
-- By swapping the order of the tables, Customers becomes the left table and Orders becomes the right table. This ensures that you get all rows from Orders, just like a `RIGHT JOIN` would do in other SQL systems.
+* `LEFT JOIN` ensures that all records from the Customers table are returned.
+* By swapping the order of the tables, Customers becomes the left table and Orders becomes the right table. This ensures that you get all rows from Orders, just like a `RIGHT JOIN` would do in other SQL systems.
 
 Even though Druid doesn’t support `RIGHT JOIN`, this approach using `LEFT JOIN` with the tables reversed gives you the same result.
 
-<a id="SetOperations"></a>
+### Set Operations
 
-## Set Operations
-
-<a id="UNION"></a>
-
-## UNION
+### UNION
 
 Combines the results of two or more `SELECT` queries into a single result set. By default, **UNION** eliminates duplicate rows, ensuring that the result contains only unique records.
 
@@ -587,10 +556,10 @@ Combines the results of two or more `SELECT` queries into a single result set. B
 **Info:** If you want to keep all records, including duplicates, use `UNION ALL` instead.
 {% endhint %}
 
-*Example*:
+_Example_:
 
-- Let's assume you have two entities: [[Sales]] and [[Revenue], both containing CustomerId and PurchaseAmount fields.
-- You want to combine the data from the [[Sales]] and [[Revenue]] entities, but only include distinct records (unique combinations of CustomerId and PurchaseAmount).
+* Let's assume you have two entities: \[\[Sales]] and \[\[Revenue], both containing CustomerId and PurchaseAmount fields.
+* You want to combine the data from the \[\[Sales]] and \[\[Revenue]] entities, but only include distinct records (unique combinations of CustomerId and PurchaseAmount).
 
 **Example**
 
@@ -602,7 +571,7 @@ SELECT t.CustomerId ID, t.PurchaseAmount Amount
 FROM Revenue t
 ```
 
-## UNION ALL
+### UNION ALL
 
 Combines the results of two or more `SELECT` queries into a single result set, including duplicates. Unlike `UNION`, which removes duplicates, `UNION ALL` retains all records from the combined queries, even if they are identical.
 
@@ -610,10 +579,10 @@ Combines the results of two or more `SELECT` queries into a single result set, i
 **NOTE:** This operator is available in DRUID 8.9 and higher.
 {% endhint %}
 
-*Example*:
+_Example_:
 
-- Let's assume you have two entities: [[Sales]] and [[Revenue]], both containing CustomerId and PurchaseAmount fields.
-- You want to combine the data from the [[Sales]] and [[Revenue]] entities, and include all records, even duplicates.
+* Let's assume you have two entities: \[\[Sales]] and \[\[Revenue]], both containing CustomerId and PurchaseAmount fields.
+* You want to combine the data from the \[\[Sales]] and \[\[Revenue]] entities, and include all records, even duplicates.
 
 **Example**
 
@@ -625,11 +594,9 @@ SELECT t.CustomerId ID, t.PurchaseAmount Amount
 FROM Revenue t
 ```
 
-The result will include all records, even if there are duplicate records between the [[Sales]] and [[Revenue]] entities.
+The result will include all records, even if there are duplicate records between the \[\[Sales]] and \[\[Revenue]] entities.
 
-<a id="INTERSECT"></a>
-
-## INTERSECT
+### INTERSECT
 
 Returns only the rows that are common between two `SELECT` queries. In other words, it returns the intersection of the result sets — only the records that exist in both queries.
 
@@ -641,8 +608,8 @@ INTERSECT removes duplicates by default, so if a record appears multiple times i
 
 Example:
 
-- Let’s say you have two Druid entities: [[Customers]] and [[Subscribers]], each with a CustomerId and Email field.
-- You want to find the customers who are both customers and have subscribed to your newsletter.
+* Let’s say you have two Druid entities: \[\[Customers]] and \[\[Subscribers]], each with a CustomerId and Email field.
+* You want to find the customers who are both customers and have subscribed to your newsletter.
 
 **Example**
 
@@ -654,11 +621,9 @@ SELECT CustomerId, Email
 FROM Subscribers
 ```
 
-The result contains only the records that are common in both entities [[Customers]] and [[Subscribers]].
+The result contains only the records that are common in both entities \[\[Customers]] and \[\[Subscribers]].
 
-<a id="EXCEPT"></a>
-
-## EXCEPT
+### EXCEPT
 
 Returns the records from the first `SELECT` query that do not exist in the second `SELECT` query. Essentially, it retrieves the difference between the two result sets, excluding any duplicate rows by default.
 
@@ -668,8 +633,8 @@ Returns the records from the first `SELECT` query that do not exist in the secon
 
 Example:
 
-- Let’s say you have two Druid entities: [[Employees]] and [[Contractors]], each with EmployeeId and Name fields.
-- You want to find all the employees who are not contractors.
+* Let’s say you have two Druid entities: \[\[Employees]] and \[\[Contractors]], each with EmployeeId and Name fields.
+* You want to find all the employees who are not contractors.
 
 ```
 SELECT EmployeeId, Name
@@ -679,9 +644,7 @@ SELECT EmployeeId, Name
 FROM Contractors;
 ```
 
-<a id="ExpressionsandOperators"></a>
-
-## Expressions and Operators
+### Expressions and Operators
 
 Expressions allow you to perform calculations or operations on fields, literals, and constants. These expressions are often combined with operators to manipulate the data within your queries.
 
@@ -689,21 +652,21 @@ Expressions allow you to perform calculations or operations on fields, literals,
 **Info:** You can also use expressions in the `WHERE` clause to filter results.
 {% endhint %}
 
-## Arithmetic Operators
+### Arithmetic Operators
 
 Druid supports basic arithmetic operators for mathematical calculations:
 
-- +: Addition
-- -: Subtraction
-- \*: Multiplication
-- /: Division
+* +: Addition
+* \-: Subtraction
+* \*: Multiplication
+* /: Division
 
 {% hint style="info" %}
 **NOTE:**
 
-- The arithmetic operators are used for arithmetic calculations when both fields are numeric data types (e.g., int, float, decimal).
-- If any of expression fields contains NULL values, the result of the addition will be NULL unless handled explicitly with functions like `COALESCE` or `ISNULL`.
-- The expression can be used in the `SELECT` clause to create a new column in the result set that holds the result.
+* The arithmetic operators are used for arithmetic calculations when both fields are numeric data types (e.g., int, float, decimal).
+* If any of expression fields contains NULL values, the result of the addition will be NULL unless handled explicitly with functions like `COALESCE` or `ISNULL`.
+* The expression can be used in the `SELECT` clause to create a new column in the result set that holds the result.
 {% endhint %}
 
 This example multiplies Price by Quantity to calculate the total cost of an order:
@@ -715,16 +678,16 @@ SELECT Price * Quantity AS TotalCost
 FROM Orders
 ```
 
-## Expression Literals
+### Expression Literals
 
 Literals are fixed values used directly in statements. They can be of various data types, including strings, numbers and date and time.
 
 {% hint style="info" %}
 **NOTE:**
 
-- **String Literals**: Use single quotes to enclose string values. Double quotes are not used for strings.
-- **Numeric Literals**: Write numbers directly without quotes.
-- **Date and Time Literals**: Use single quotes to enclose date and time values.
+* **String Literals**: Use single quotes to enclose string values. Double quotes are not used for strings.
+* **Numeric Literals**: Write numbers directly without quotes.
+* **Date and Time Literals**: Use single quotes to enclose date and time values.
 {% endhint %}
 
 This expression adds 10 to the Price field for each record, creating a new calculated field NewPrice.
@@ -736,13 +699,9 @@ SELECT Price + 10 AS NewPrice
 FROM Products
 ```
 
-<a id="Functions"></a>
+### Functions <a href="#function" id="function"></a>
 
-## <a id="Function"></a>Functions
-
-<a id="ROUND"></a>
-
-## ROUND
+### ROUND
 
 {% hint style="info" %}
 **Info:** This function is available starting with Druid 9.30.
@@ -758,8 +717,8 @@ ROUND(numeric_expression, decimal_places)
 
 Where:
 
-- **numeric\_expression**: A numeric field, arithmetic calculation, or aggregate function (e.g., AVG()).
-- **decimal\_places**: The number of decimal places to round the result to.
+* **numeric\_expression**: A numeric field, arithmetic calculation, or aggregate function (e.g., AVG()).
+* **decimal\_places**: The number of decimal places to round the result to.
 
 **Example — Using ROUND with an Aggregate Function**
 
@@ -773,9 +732,7 @@ GROUP BY [item].[Name]
 ORDER BY [item].[Name] ASC;
 ```
 
-<a id="StringFunctions"></a>
-
-## String Functions
+### String Functions
 
 String functions are used to manipulate and process text (string) data. These functions help format, extract, replace, and analyze string values.
 
@@ -783,9 +740,7 @@ String functions are used to manipulate and process text (string) data. These fu
 **NOTE:** The string functions are supported in DRUID 7.2 and higher.
 {% endhint %}
 
-<a id="LEFT"></a>
-
-## LEFT
+### LEFT
 
 Returns the leftmost part of a character string based on the specified number of characters.
 
@@ -797,8 +752,8 @@ LEFT(character_expression, integer_expression)
 
 Where:
 
-- *character\_expression*  is an entity field.
-- *integer\_expression* is a positive integer that specifies how many characters of the *character\_expression* will be returned. If *integer\_expression* is negative, an error is returned.
+* _character\_expression_ is an entity field.
+* _integer\_expression_ is a positive integer that specifies how many characters of the _character\_expression_ will be returned. If _integer\_expression_ is negative, an error is returned.
 
 **Example - extract the first 3 characters from the CustomerName**
 
@@ -807,9 +762,7 @@ SELECT LEFT(CustomerName, 3) AS ShortName
 FROM Customers
 ```
 
-<a id="LEN"></a>
-
-## LEN
+### LEN
 
 Returns the number of characters in a specified string, excluding trailing spaces.
 
@@ -830,9 +783,7 @@ WHERE LEN(CustomerName) > 5  
 ORDER BY NameLength DESC
 ```
 
-<a id="LTRIM"></a>
-
-## LTRIM
+### LTRIM
 
 Removes leading spaces (or specified characters) from the beginning of a string. This function is useful for cleaning up user input, standardizing text, and improving data quality in queries.
 
@@ -849,9 +800,7 @@ SELECT CustomerName, LTRIM(CustomerName) AS TrimmedName
 FROM Customers
 ```
 
-<a id="LOWER"></a>
-
-## LOWER
+### LOWER
 
 converts all uppercase letters in a string to lowercase. This function is useful for case-insensitive comparisons, normalizing text, and formatting data consistently.
 
@@ -868,9 +817,7 @@ SELECT CustomerName, LOWER(CustomerName) AS LowercaseName
 FROM Customers
 ```
 
-<a id="REPLACE"></a>
-
-## REPLACE
+### REPLACE
 
 Replaces all occurrences of a specified substring within a string with another substring. This function is useful for standardizing text, cleaning data, and making bulk text modifications in queries.
 
@@ -882,9 +829,9 @@ REPLACE(field, string_pattern, string_replacement)
 
 Where:
 
-- `field` – The original field of type string where replacements occur.
-- `string_pattern` – The substring to be found and replaced.
-- `string_replacement` – The new substring that replaces `string_pattern`.
+* `field` – The original field of type string where replacements occur.
+* `string_pattern` – The substring to be found and replaced.
+* `string_replacement` – The new substring that replaces `string_pattern`.
 
 **Example - replace occurrences of "Inc." with "LLC" in company names**
 
@@ -893,9 +840,7 @@ SELECT CompanyName, REPLACE(CompanyName, 'Inc.', 'LLC') AS UpdatedCompanyName
 FROM Companies
 ```
 
-<a id="RIGHT"></a>
-
-## RIGHT
+### RIGHT
 
 Returns a specified number of characters from the end (right side) of a string. This function is useful for extracting suffixes, checking data patterns, and formatting outputs.
 
@@ -912,9 +857,7 @@ SELECT CustomerName, CustomerPhone, RIGHT(CustomerPhone, 4) AS LastDigits
 FROM Customers
 ```
 
-<a id="RTRIM"></a>
-
-## RTRIM
+### RTRIM
 
 Removes trailing spaces (or specified characters) from the end of a string. This function is useful for cleaning up user input, normalizing text, and ensuring consistent data formatting.
 
@@ -926,8 +869,8 @@ RTRIM(field [, characters])
 
 Where:
 
-- `field` – A field of type string value to be trimmed.
-- `characters` (Optional) – A set of characters to remove from the end of the string. If not specified, only space characters (CHAR(32)) are removed.
+* `field` – A field of type string value to be trimmed.
+* `characters` (Optional) – A set of characters to remove from the end of the string. If not specified, only space characters (CHAR(32)) are removed.
 
 **Example - remove trailing spaces from customer names**
 
@@ -936,9 +879,7 @@ SELECT CustomerName, RTRIM(CustomerName) AS TrimmedName
 FROM Customers
 ```
 
-<a id="SUBSTRING"></a>
-
-## SUBSTRING
+### SUBSTRING
 
 Extracts a portion of a string based on the given starting point and length of the desired substring.
 
@@ -950,9 +891,9 @@ SUBSTRING(field, start, length)
 
 Where:
 
-- `field` – A field from which the substring will be extracted.
-- `start` – An integer that specifies the starting position for the substring. The position starts at 1, meaning the first character is at position 1. If start is less than 1, the substring will begin at the first character.
-- `length` – A positive integer that specifies how many characters to extract from the starting position. If the sum of start and length exceeds the available characters, the entire string from start will be returned. A negative length will generate an error.
+* `field` – A field from which the substring will be extracted.
+* `start` – An integer that specifies the starting position for the substring. The position starts at 1, meaning the first character is at position 1. If start is less than 1, the substring will begin at the first character.
+* `length` – A positive integer that specifies how many characters to extract from the starting position. If the sum of start and length exceeds the available characters, the entire string from start will be returned. A negative length will generate an error.
 
 **Example - extract the first 5 characters from the CustomerName field**
 
@@ -961,9 +902,7 @@ SELECT CustomerName, SUBSTRING(CustomerName, 1, 5) AS First5Chars
 FROM Customers
 ```
 
-<a id="UPPER"></a>
-
-## UPPER
+### UPPER
 
 Converts all lowercase letters in a string to uppercase. This function is useful for standardizing text, ensuring consistent capitalization, and comparing strings in a case-insensitive manner.
 
@@ -980,15 +919,11 @@ SELECT CustomerName, UPPER(CustomerName) AS Name
 FROM Customers
 ```
 
-<a id="DATETIMEFunctions"></a>
-
-## DATETIME Functions
+### DATETIME Functions
 
 You can use the following DATETIME functions in a DRUID Custom Query to manipulate and filter data based on date and time values. These functions support use cases such as rounding to specific time intervals, shifting dates, and extracting specific parts of a timestamp.
 
-<a id="DATEADD"></a>
-
-## DATEADD
+### DATEADD
 
 Adds or subtracts a specific interval from a DATETIME value.
 
@@ -1000,9 +935,9 @@ DATEADD(unit, number, datetime_value)
 
 Where:
 
-- `unit` – The part of the date to change (e.g., 'DAY', 'HOUR', 'MONTH').
-- `number` – A positive or negative integer indicating the amount to add or subtract.
-- `datetime_value` – The base date or timestamp.
+* `unit` – The part of the date to change (e.g., 'DAY', 'HOUR', 'MONTH').
+* `number` – A positive or negative integer indicating the amount to add or subtract.
+* `datetime_value` – The base date or timestamp.
 
 **Example: Orders from the Last 7 Days**
 
@@ -1024,9 +959,7 @@ WHERE TRUNC(QUARTER, OrderDate) = TRUNC(QUARTER, DATEADD(QUARTER, -1, CURRENT_TI
 
 The query returns orders from the previous quarter.
 
-<a id="DATEPART"></a>
-
-## DATEPART
+### DATEPART
 
 Extracts a specific part of a DATETIME value.
 
@@ -1038,15 +971,15 @@ DATEPART(unit, datetime_value)
 
 Supported units:
 
-- YEAR
-- QUARTER
-- MONTH
-- DAY
-- HOUR
-- MINUTE
-- SECOND
-- WEEK
-- WEEKDAY (day of week)
+* YEAR
+* QUARTER
+* MONTH
+* DAY
+* HOUR
+* MINUTE
+* SECOND
+* WEEK
+* WEEKDAY (day of week)
 
 **Example: Orders in the Current Month**
 
@@ -1059,9 +992,7 @@ WHERE DATEPART(MONTH, OrderDate) = DATEPART(MONTH, CURRENT_TIMESTAMP)
 
 The query returns orders from the current month and year.
 
-<a id="DATEDIFF"></a>
-
-## DATEDIFF
+### DATEDIFF
 
 Calculates the number of specified time units that have elapsed between a starting date/time expression and an ending date/time expression. This function is useful for determining durations, calculating age, measuring time differences, or filtering records based on time intervals.
 
@@ -1075,20 +1006,20 @@ Calculates the number of specified time units that have elapsed between a starti
 DATEDIFF(start_datetime, end_datetime, unit)
 ```
 
-- YEAR
-- QUARTER
-- MONTH
-- DAY
-- HOUR
-- MINUTE
-- SECOND
-- WEEK
+* YEAR
+* QUARTER
+* MONTH
+* DAY
+* HOUR
+* MINUTE
+* SECOND
+* WEEK
 
 The functions returns a numeric value representing the difference in the specified unit:
 
-- A **positive integer** if end\_datetime is later than start\_datetime.
-- A **negative integer** if end\_datetime is earlier than start\_datetime.
-- **0** if both dates are the same for the specified unit.
+* A **positive integer** if end\_datetime is later than start\_datetime.
+* A **negative integer** if end\_datetime is earlier than start\_datetime.
+* **0** if both dates are the same for the specified unit.
 
 **Example: Group Orders by Month Difference**
 
@@ -1126,9 +1057,7 @@ In the example above:
 2. The result is returned in a new column named DurationInMinutes.
 3. The `WHERE` clause filters the results to only include records where the modification date is after the creation date (i.e., the duration is positive).
 
-<a id="GETDATE"></a>
-
-## GETDATE
+### GETDATE
 
 Returns the current date and time in UTC. Unlike traditional SQL's GETDATE() which returns server local time, this function always returns UTC time with the 'Z' timezone indicator.
 
@@ -1159,9 +1088,7 @@ WHERE OrderDate >= DATEADD(HOUR, -24, GETDATE())
 ORDER BY OrderDate DESC
 ```
 
-<a id="TODAY"></a>
-
-## TODAY
+### TODAY
 
 Returns the current date in UTC with the time component set to midnight (00:00:00). This function is useful for date-only comparisons without considering the time of day.
 
@@ -1192,9 +1119,7 @@ WHERE OrderDate >= DATEADD(DAY, -7, TODAY())
 ORDER BY OrderDate DESC
 ```
 
-<a id="TRUNC"></a>
-
-## TRUNC
+### TRUNC
 
 Rounds down a DATETIME value to the nearest specified unit.
 
@@ -1206,15 +1131,15 @@ TRUNC(unit, datetime_value)
 
 Supported units:
 
-- SECOND
-- MINUTE
-- HOUR
-- DAY
-- WEEK
-- MONTH
-- QUARTER
-- QUARTER\_END
-- YEAR
+* SECOND
+* MINUTE
+* HOUR
+* DAY
+* WEEK
+* MONTH
+* QUARTER
+* QUARTER\_END
+* YEAR
 
 **Example: Orders Rounded to the Same Day**
 
@@ -1236,13 +1161,9 @@ WHERE TRUNC(QUARTER, OrderDate) = TRUNC(QUARTER, CURRENT_TIMESTAMP)
 
 The query returns orders placed in the current quarter.
 
-<a id="AdvancedFunctions"></a>
+### Advanced Functions
 
-## Advanced Functions
-
-<a id="COALESCE"></a>
-
-## COALESCE
+### COALESCE
 
 Handles missing data (NULL values) in a dataset by providing an alternative (default) value. This can be useful when displaying data in reports or queries where missing information should be replaced with a more meaningful or user-friendly substitute.
 
@@ -1272,7 +1193,7 @@ SELECT s.ClientName AS Name,
 FROM Account s
 ```
 
-## CONVERT to VARCHAR, INTEGER, FLOAT or DECIMAL
+### CONVERT to VARCHAR, INTEGER, FLOAT or DECIMAL
 
 Converts the value of a field in a dataset to a specified data type. You can use this function to transform data into the following types: varchar, int, float, or decimal. Use this function when you need to ensure that data is in the correct format for querying, calculations, or comparisons.
 
@@ -1295,7 +1216,7 @@ FROM Products s
 
 Example output:
 
-![](../../Resources/Images/Druid%20Data%20Service%20Connector/varchart%20output.png)
+![](<../../../.gitbook/assets/varchart output.png>)
 
 **Convert to INTEGER example**
 
@@ -1308,7 +1229,7 @@ FROM Products s
 
 Example output:
 
-![](../../Resources/Images/Druid%20Data%20Service%20Connector/integert%20example.png)
+![](<../../../.gitbook/assets/integert example.png>)
 
 {% hint style="info" %}
 **NOTE:** Converting to **int** removes any decimal portion—it does not round, it just truncates.
@@ -1325,7 +1246,7 @@ FROM Products s
 
 Example output:
 
-![](../../Resources/Images/Druid%20Data%20Service%20Connector/float%20example.png)
+![](<../../../.gitbook/assets/float example.png>)
 
 **Convert to DECIMAL example**
 
@@ -1338,9 +1259,9 @@ FROM Products s
 
 Example output:
 
-![](../../Resources/Images/Druid%20Data%20Service%20Connector/decimal%20example.png)
+![](<../../../.gitbook/assets/decimal example.png>)
 
-## CONVERT to the specified date format
+### CONVERT to the specified date format
 
 Converts int, decimal, double, datetime and varchar to the specified date format.
 
@@ -1359,36 +1280,32 @@ SELECT CONVERT(VARCHAR, a.CreatedOn) AS CreatedOnFormatted
 FROM Account a;
 ```
 
-| Format Id | DRUID Data Service Pattern | T-SQL Pattern |
-| --- | --- | --- |
-| 1 | "%m/%d/%Y" | "MM/DD/YY" |
-| 2 | "%Y.%m.%d | "YY.MM.DD" |
-| 3 | "%d/%m/%Y" | "DD/MM/YY" |
-| 4 | "%d.%m.%Y" | "DD.MM.YY" |
-| 6 | "%d %b %Y" | "DD MMM YY" |
-| 8 | "%H:%M:%S" | "hh:mm:ss" |
-| 110 | "%m-%d-%Y" | "MM-DD-YYYY" |
-| 111 | "%Y/%m/%d" | "YYYY/MM/DD" |
-| 112 | "%Y%m%d" | "YYYYMMDD" |
-| 114 | "%d %b %Y %H:%M:%S:%L" | "DD MMM YYYY HH:MM:SS:MMM" |
-| 120 | "%Y-%m-%d %H:%M:%S" | "YYYY-MM-DD HH:MM:SS" |
-| 121 | "%Y-%m-%d %H:%M:%S.%L" | "YYYY-MM-DD HH:MM:SS.mmm" |
-| 130 | "%d %b %Y %H:%M:%S:%L" | "dd mon yyyy hh:mi:ss:mmm(AM/PM)" |
+| Format Id | DRUID Data Service Pattern | T-SQL Pattern                     |
+| --------- | -------------------------- | --------------------------------- |
+| 1         | "%m/%d/%Y"                 | "MM/DD/YY"                        |
+| 2         | "%Y.%m.%d                  | "YY.MM.DD"                        |
+| 3         | "%d/%m/%Y"                 | "DD/MM/YY"                        |
+| 4         | "%d.%m.%Y"                 | "DD.MM.YY"                        |
+| 6         | "%d %b %Y"                 | "DD MMM YY"                       |
+| 8         | "%H:%M:%S"                 | "hh:flag\_mm:ss"                  |
+| 110       | "%m-%d-%Y"                 | "MM-DD-YYYY"                      |
+| 111       | "%Y/%m/%d"                 | "YYYY/MM/DD"                      |
+| 112       | "%Y%m%d"                   | "YYYYMMDD"                        |
+| 114       | "%d %b %Y %H:%M:%S:%L"     | "DD MMM YYYY HH:MM:SS:MMM"        |
+| 120       | "%Y-%m-%d %H:%M:%S"        | "YYYY-MM-DD HH:MM:SS"             |
+| 121       | "%Y-%m-%d %H:%M:%S.%L"     | "YYYY-MM-DD HH:MM:SS.mmm"         |
+| 130       | "%d %b %Y %H:%M:%S:%L"     | "dd mon yyyy hh:mi:ss:mmm(AM/PM)" |
 
 {% hint style="info" %}
 **NOTE:**
 
-- DRUID Data Services pattern is currently missing 2-digit years.
-- %b or Month as 3 letter in DRUID Data Services pattern is after FormatId **7** (130, 114, 6).
+* DRUID Data Services pattern is currently missing 2-digit years.
+* %b or Month as 3 letter in DRUID Data Services pattern is after FormatId **7** (130, 114, 6).
 {% endhint %}
 
-<a id="Recordslimitingclauses"></a>
+### Records limiting clauses
 
-## Records limiting clauses
-
-<a id="OFFSET"></a>
-
-## OFFSET
+### OFFSET
 
 Skips a specified number of records before returning results. Used in combination with `FETCH NEXT`, limits the number of records returned after the offset.
 
@@ -1408,19 +1325,17 @@ OFFSET 90 ROWS FETCH NEXT 15 ROWS ONLY
 
 In this example:
 
-- The query retrieves a specific subset of rows from a joined result of two tables, EntityMetadata (e) and EntityFieldMetadata (ef).
-- The results are ordered by the LastModificationTime column from the EntityFieldMetadata table (ef) in descending order. This means that the most recently modified records will appear first in the result set.
-- The `OFFSET` statement skips the first 90 rows of the ordered result set. It means that the retrieval starts from the 91st row onward.
-- After skipping the first 90 rows, the `FETCH` statement limits the number of rows returned to the next 15 rows only, effectively giving rows 91 through 105 in the ordered list.
+* The query retrieves a specific subset of rows from a joined result of two tables, EntityMetadata (e) and EntityFieldMetadata (ef).
+* The results are ordered by the LastModificationTime column from the EntityFieldMetadata table (ef) in descending order. This means that the most recently modified records will appear first in the result set.
+* The `OFFSET` statement skips the first 90 rows of the ordered result set. It means that the retrieval starts from the 91st row onward.
+* After skipping the first 90 rows, the `FETCH` statement limits the number of rows returned to the next 15 rows only, effectively giving rows 91 through 105 in the ordered list.
 
-<a id="TOP"></a>
-
-## TOP
+### TOP
 
 Limits the result set to a specified number of rows. However, without proper ordering, the results can appear in an arbitrary order. To ensure a predictable and meaningful result, it is always recommended to use the `TOP` clause in combination with `ORDER BY`.
 
 {% hint style="info" %}
-**NOTE:**  This function is supported in DRUID 7.2 and higher.
+**NOTE:** This function is supported in DRUID 7.2 and higher.
 {% endhint %}
 
 **Syntax**
@@ -1439,34 +1354,28 @@ FROM Contact
 ORDER BY FirstName
 ```
 
-<a id="JoiningwithEntityFieldsforLargeDataVolumes"></a>
-
-## <a id="Joining"></a>Joining with Entity Fields for Large Data Volumes
+### Joining with Entity Fields for Large Data Volumes <a href="#joining" id="joining"></a>
 
 When working with large data volumes, using the `GROUP BY` clause correctly is essential for both accurate results and good query performance. Aggregating data by specific groupings, especially when joining related entity fields, allows you to combine data from multiple entities while ensuring correct aggregation across joined entities. Incorrect grouping can lead to inaccurate results or inefficient queries.
 
 {% hint style="warning" %}
-**IMPORTANT!** Indexing is critical when working with large data sets. Make sure that entities and fields used in joins and aggregation are properly indexed. For more information, see [Add Data Service Indexes](../Data%20Service/Druid_Data_Service.md#Add).
+**IMPORTANT!** Indexing is critical when working with large data sets. Make sure that entities and fields used in joins and aggregation are properly indexed. For more information, see [Add Data Service Indexes](<../Data Service/Druid_Data_Service.md#Add>).
 {% endhint %}
 
 {% hint style="info" %}
 **NOTE:** Joining data from referenced entities is available starting with Druid 19.16.
 {% endhint %}
 
-<a id="Importantconsiderations"></a>
-
-### Important considerations
+#### Important considerations
 
 When joining entity fields and aggregating data, keep the following in mind:
 
-- Bracket notation is used to expose related entity fields in the result set.
-- All non-aggregated fields in the `SELECT` clause must also appear in the `GROUP BY` clause.
-- Aliases help avoid ambiguity when referencing fields from joined entities.
-- All date and time values are stored in Druid as UTC. Time offsets may be required to account for user time zones. Truncating the adjusted timestamp removes the time component so all records for the same day are grouped together.
+* Bracket notation is used to expose related entity fields in the result set.
+* All non-aggregated fields in the `SELECT` clause must also appear in the `GROUP BY` clause.
+* Aliases help avoid ambiguity when referencing fields from joined entities.
+* All date and time values are stored in Druid as UTC. Time offsets may be required to account for user time zones. Truncating the adjusted timestamp removes the time component so all records for the same day are grouped together.
 
-<a id="Syntax"></a>
-
-### Syntax
+#### Syntax
 
 **Syntax**
 
@@ -1484,9 +1393,7 @@ ORDER BY 
   field_2 ASC
 ```
 
-<a id="Example1Aggregatingdatausingrelatedentityfields"></a>
-
-### Example 1: Aggregating data using related entity fields
+#### Example 1: Aggregating data using related entity fields
 
 The following example counts books and groups the results by author. The **Book** entity is joined with the related Author entity, and author fields are included in the aggregation.
 
@@ -1503,9 +1410,7 @@ GROUP BY field_2, RelatedEntity.Field 
 ORDER BY field_2 ASC
 ```
 
-<a id="Example2Aggregatingdatausingdatenormalization"></a>
-
-### Example 2: Aggregating data using date normalization
+#### Example 2: Aggregating data using date normalization
 
 The following example aggregates books by name and by day. The **ReceivedOn** timestamp is adjusted by 120 minutes and then truncated to the start of the day to ensure correct daily grouping.
 

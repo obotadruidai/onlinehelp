@@ -1,9 +1,8 @@
 ---
-title: "Conversational AI"
+title: Conversational AI
 ---
 
-<a id="ConversationalAI"></a>
-
+# Conversational AI
 
 AI Agents use Conversational Artificial Intelligence (Conversational AI) to improve the customer/user experience. They mimic human conversations through the user journey using contextual information to deliver relevant messages to users and they assist your Support Center Helpdesk Agents during live conversations with the clients.
 
@@ -15,44 +14,38 @@ Experienced authors can build AI-powered AI Agents that collect specific informa
 
 In the AI Agents context, Conversational Artificial Intelligence encompasses two main concepts (basic language classification algorithms): Natural Language Processing (NLP) and Natural Language Understanding (NLU).
 
-![](../Resources/Images/AI/IMAGE1.png)
+![](../../.gitbook/assets/IMAGE1.png)
 
 In this section you will learn what NLP and NLU are, the difference between the two concepts to help you choose the one that best suit your AI Agent needs.
 
-<a id="WhatisNLP"></a>
-
-## What is NLP?
+### What is NLP?
 
 **NLP** is a component of AI that enables AI Agents to interact with humans using natural language. It transforms utterances (user input / what the user says) into structured data, breaking text down into smaller data sets so that Machine Learning (ML) algorithms can analyze to find relationships among the various data sets and how they work together.
 
 NLP enables AI Agents to identify the underlying intent/ question users might express in different ways using natural language. For example, when the user wants to find out the bank account balance:
 
-- What is my account balance?
-- How much money have I got in my account?
+* What is my account balance?
+* How much money have I got in my account?
 
 Users are inconsistent with their language making it difficult for authors to predict everything they say to the AI Agents and how they say it.
 
 While NLP algorithms focus on what the user says, they do not focus on understanding what the user meant. This is where NLU enters the picture.
 
-<a id="WhatisNLU"></a>
-
-## What is NLU?
+### What is NLU?
 
 While NLP algorithms focus on what the user says, they do not focus on understanding what the user meant. This is where NLU enters the picture.
 
 **NLU** is another component of AI, considered sometimes a subset of NLP, which enables AI Agents to interpret and understand what the user says. ML algorithms will recognize language specifics such as semantics, sentiment, intent and context and enable AI Agents to understand language subtleties. For example:
 
-- What’s my bank account balance?
-- The banks will be closed on Easter Monday.
-- The municipality has installed many banks in the park.
+* What’s my bank account balance?
+* The banks will be closed on Easter Monday.
+* The municipality has installed many banks in the park.
 
 With NLU, AI Agents can recognize many variations in which humans say the same things. For example, the question "what's the weather like outside?" can be asked in many ways: “What's the weather like out?”, “How's the weather?”, “ What's the weather like?”, etc.
 
 NLU allows AI Agents to understand the conversation’s context and extract its meaning based on the context, enabling them to guide the users throughout the conversation.
 
-<a id="WhentouseNLPandwhentouseNLU"></a>
-
-## When to use NLP and when to use NLU?
+### When to use NLP and when to use NLU?
 
 If authors want to build a simple AI Agent that returns a series of predefined responses, they could use only NLP.
 
@@ -66,11 +59,9 @@ Understanding the difference between NLP and NLU is important when building AI A
 **NOTE:** By default, DRUID uses NLP for language classification. If you want the Conversational AI to use a more complex language classification algorithm, enable NLU. For more information, see Natural Language Understanding.
 {% endhint %}
 
-![](../Resources/Images/AI/IMAGE2.png)
+![](../../.gitbook/assets/IMAGE2.png)
 
-<a id="AutomaticSpeechRecognitionASRandTexttospeechTTS"></a>
-
-## Automatic Speech Recognition (ASR) and Text-to-speech (TTS)
+### Automatic Speech Recognition (ASR) and Text-to-speech (TTS)
 
 The NLP and automatic speech recognition (ASR) engines enable voice-driven conversations between humans and AI Agents. ASR is the cornerstone of the voice experience, allowing AI Agents to understand humans in their pure form of communication: speech.
 

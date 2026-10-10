@@ -1,9 +1,8 @@
 ---
-title: "UiPath Connector"
+title: UiPath Connector
 ---
 
-<a id="UiPathConnector"></a>
-
+# UiPath Connector
 
 DRUID - UiPath integration brings the RPA into your front office, allowing both customers and employees to benefit from the robot’s help. Streamline the customer and employee experience and help them fulfill their needs across the entire journey.
 
@@ -19,21 +18,19 @@ Robotic Process Automation (RPA) can allow AI Agents to move from simple interac
 
 You can use the DRUID - UiPath integration to streamline the customer experience by helping them fulfill their needs across the entire customer journey and also improve the employee experience. With the combination of automation and AI Agents, employees can use the AI Agent interface to get information or post data into applications without needing to switch from screen to screen. This way, your employees can focus on getting work done instead of focusing on tedious processes and apps.
 
-The Druid AI Platform provides integration with both [unattended](Starting%20UiPath%20Unattended.md) and [attended](Running%20UiPath%20Attended%20Processes.md) UiPath robots.
+The Druid AI Platform provides integration with both [unattended](<Starting UiPath Unattended.md>) and [attended](<Running UiPath Attended Processes.md>) UiPath robots.
 
 The DRUID - UiPath integration supports three use cases, as follows:
 
-![](../../Resources/Images/Integrations/RPA.png)
+![](../../../.gitbook/assets/RPA.png)
 
-- Human and AI Agent trigger the RPA process.
-- UiPath robot alerts the human and asks for help.
-- The manager of the robots' team asks the AI Agent for activity reports.
+* Human and AI Agent trigger the RPA process.
+* UiPath robot alerts the human and asks for help.
+* The manager of the robots' team asks the AI Agent for activity reports.
 
-<a id="UiPathDRUIDStarter"></a>
-
-## UiPath DRUID Starter
+### UiPath DRUID Starter
 
 The UiPath DRUID Starter is meant to help you get started with the DRUID UiPath integration.
 
-1. From the [Solutions Library](../../Solution%20Library/Solutions%20Library.md), import the DRUID Starter solution template.
-2. From the [Solutions Library](../../Solution%20Library/Solutions%20Library.md), import the UiPath Starter solution template corresponding to the processes you want to run (UiPath Starter Attended / UiPath Starter Unattended).
+1. From the [Solutions Library](<../../Solution Library/Solutions Library.md>), import the DRUID Starter solution template.
+2. From the [Solutions Library](<../../Solution Library/Solutions Library.md>), import the UiPath Starter solution template corresponding to the processes you want to run (UiPath Starter Attended / UiPath Starter Unattended).

@@ -1,9 +1,8 @@
 ---
-title: "Filtering records in a view"
+title: Filtering records in a view
 ---
 
-<a id="Filteringrecordsinaview"></a>
-
+# Filtering records in a view
 
 {% hint style="warning" %}
 **IMPORTANT!** You need to upgrade both the DRUID Connector Host to version 5.29 or higher and the entity associated with the web view; otherwise, loading the web view will fail.
@@ -13,7 +12,7 @@ You can filter all columns in a view regardless the data type in ascending or de
 
 For data of type string, integer and decimal you can use filters to help you narrow down the records you want to see.
 
-![](../Resources/Images/CBA/filetring%20rules.png)
+![](<../../.gitbook/assets/filetring rules.png>)
 
 {% hint style="info" %}
 **NOTE:** Extended filters are available in DRUID 5.22 and higher.
@@ -23,41 +22,35 @@ To filter the records in a view by applying filters on a specific column, click 
 
 The view displays the records based on the selected filtering criteria.
 
-![](../Resources/Images/CBA/filtered%20view.png)
+![](<../../.gitbook/assets/filtered view.png>)
 
 {% hint style="info" %}
 **Info:** You can add maximum two filter rules.
 {% endhint %}
 
-<a id="Choosethefilteringconditionlogicaloperator"></a>
-
-## Choose the filtering condition (logical operator)
+### Choose the filtering condition (logical operator)
 
 The first step in creating filter criteria is to select the type of condition you want to use. The following conditions are available:
 
-- **Match All** provides you with "And" functionality. Choose this option when you want all of the filter rules to be met.
-- **Match Any** provides you with "Or" functionality. Choose this option when you have two filter rules and at least one condition has to be met.
+* **Match All** provides you with "And" functionality. Choose this option when you want all of the filter rules to be met.
+* **Match Any** provides you with "Or" functionality. Choose this option when you have two filter rules and at least one condition has to be met.
 
-<a id="Definethefilterrules"></a>
-
-## Define the filter rules
+### Define the filter rules
 
 To define the filter rule, select the desired operator and specify a single value. The table below provides the list of operators that are available for columns that contain data of type string, integer and decimal.
 
-| Operator | Description |
-| --- | --- |
-| Starts with | The results include only the records where the data in the column starts with the value specified in the filter rule. |
-| Contains | The results include only the records where the data in the column contains the value specified in the filter rule. |
+| Operator     | Description                                                                                                                |
+| ------------ | -------------------------------------------------------------------------------------------------------------------------- |
+| Starts with  | The results include only the records where the data in the column starts with the value specified in the filter rule.      |
+| Contains     | The results include only the records where the data in the column contains the value specified in the filter rule.         |
 | Not contains | The results include only the records where the data in the column does not contain the value specified in the filter rule. |
-| Ends with | The results include only the records where the data in the column ends with the value specified in the filter rule. |
-| Equals | The results include only the records where the data in the column matches the value in the filter. |
-| Not equals | The results include only records where the data in the column does not match the value in the filter. |
+| Ends with    | The results include only the records where the data in the column ends with the value specified in the filter rule.        |
+| Equals       | The results include only the records where the data in the column matches the value in the filter.                         |
+| Not equals   | The results include only records where the data in the column does not match the value in the filter.                      |
 
 To remove a filter rule, click **Remove rule**. To remove the filter, click **Clear** in the filter.
 
-<a id="Automaticallytakeintoconsiderationtheserversidewebviewfilteringandpagination"></a>
-
-## Automatically take into consideration the server-side web view filtering and pagination
+### Automatically take into consideration the server-side web view filtering and pagination
 
 {% hint style="warning" %}
 **IMPORTANT!** Automatic server-side filtering and pagination is available only for web views that contain data from DRUID Data Service.
@@ -66,38 +59,32 @@ To remove a filter rule, click **Remove rule**. To remove the filter, click **Cl
 Filtering and pagination are seamlessly handled server-side, harmonizing with any client-side settings. The user's applied filters and pagination on the web view synchronize with the Query entity integration defined on the server-side, ensuring a unified experience.
 
 {% hint style="info" %}
-**NOTE:**  To make use of this feature, you'll need to upgrade both the DRUID Connector Host to version 5.29 or higher, and the entity associated with the web view.
+**NOTE:** To make use of this feature, you'll need to upgrade both the DRUID Connector Host to version 5.29 or higher, and the entity associated with the web view.
 {% endhint %}
 
 To upgrade the entity associated with the web view, go to the entity details, click the **Fields** tab and in the notification displayed on top of the page, click the **Upgrade** button.
 
-![](../Resources/Images/druid%205.29/upgrade%20entity.png)
+![](<../../.gitbook/assets/upgrade entity (1).png>)
 
 A window appears. Review the new fields that will be added to your entity and click **Upgrade** again.
 
-![](../Resources/Images/druid%205.29/updrage%20new%20field.png)
+![](<../../.gitbook/assets/updrage new field.png>)
 
-Following the upgrades, a new system field of type 'Entity', **PageInfo**, becomes available in the upgraded entity. PageInfo references [[PageInfo]], a new system entity. This field facilitates the transfer of specific page-related information from the client-side to the server-side (the Query entity task defined on the web view).
+Following the upgrades, a new system field of type 'Entity', **PageInfo**, becomes available in the upgraded entity. PageInfo references \[\[PageInfo]], a new system entity. This field facilitates the transfer of specific page-related information from the client-side to the server-side (the Query entity task defined on the web view).
 
-![](../Resources/Images/druid%205.29/page%20info%20added.png)
+![](<../../.gitbook/assets/page info added.png>)
 
-For more information about the [[PageInfo]] system entity, see [System Entities](../5_Entities/System%20Entities.md).
+For more information about the \[\[PageInfo]] system entity, see [System Entities](<../5_Entities/System Entities.md>).
 
-<a id="ServersidepaginationfornonDRUIDDataServicedatabases"></a>
-
-## Server-side pagination for non-DRUID Data Service databases
+### Server-side pagination for non-DRUID Data Service databases
 
 For efficient handling of large amounts of data, use server-side pagination on web views. Follow these steps to enable server-side pagination in web views that display data from non-Druid Data Service databases like MS SQL:
 
-<a id="Step1UpgradeConnectorHostandDataServicetoversion529orhigher"></a>
-
-### Step 1: Upgrade Connector Host and Data Service to version 5.29 or higher
+#### Step 1: Upgrade Connector Host and Data Service to version 5.29 or higher
 
 Ensure both the Connector Host and Data Service are upgraded to the latest version.
 
-<a id="Step2AltertheintegrationtaskforServerSidePagination"></a>
-
-### Step 2: Alter the integration task for Server-Side Pagination.
+#### Step 2: Alter the integration task for Server-Side Pagination.
 
 Modify the integration task (SQL, REST, CRM, etc.) to retrieve data, including the aggregated “totalCount” value in the response.
 
@@ -118,15 +105,13 @@ select @totalCount as totalCount, b.* from 
 as b
 ```
 
-![](../Resources/Images/CBA/sql%20pagination%20request.png)
+![](<../../.gitbook/assets/sql pagination request.png>)
 
 Map the "totalCount" value to a local response variable in the **Response** tab.
 
-![](../Resources/Images/CBA/SQL%20RESPONSE.png)
+![](<../../.gitbook/assets/SQL RESPONSE.png>)
 
-<a id="Step3AddCustomCodefortotalCountMapping"></a>
-
-### Step 3: Add Custom Code for "totalCount" Mapping
+#### Step 3: Add Custom Code for "totalCount" Mapping
 
 Use a Custom Code integration task to send the aggregated total number of available records ("totalCount") from the connector integration towards the DRUID web view.
 
@@ -147,10 +132,8 @@ Ensure the "totalCount" variable is delivered as an integer to the `SetPageInfoT
 **Info:** The Custom Code task adds the parameter value to the response of the connector integration, without altering the response entity.
 {% endhint %}
 
-![](../Resources/Images/CBA/custom%20code.png)
+![](<../../.gitbook/assets/custom code (1).png>)
 
-<a id="Step4Verifythewebviewpagination"></a>
-
-### Step 4: Verify the web view pagination
+#### Step 4: Verify the web view pagination
 
 Verify your configuration and ensure that the pagination works in client-server mode, especially for large data sets (larger than 1000 records).

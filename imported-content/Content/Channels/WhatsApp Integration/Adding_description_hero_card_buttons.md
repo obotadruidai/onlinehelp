@@ -1,9 +1,8 @@
 ---
-title: "Adding Description for Hero Card Buttons"
+title: Adding Description for Hero Card Buttons
 ---
 
-<a id="AddingDescriptionforHeroCardButtons"></a>
-
+# Adding Description for Hero Card Buttons
 
 You can add description for hero card buttons. To do that on the hero step, go to Metadata section, tap on **Advanced Editing** and in the JSON field, for each button in the "buttons" array add the **channelData** object and set the "description" property.
 
@@ -63,14 +62,12 @@ You can add description for hero card buttons. To do that on the hero step, go t
 }
 ```
 
-<a id="Herocardsrenderingconsiderations"></a>
-
-### Hero cards rendering considerations
+#### Hero cards rendering considerations
 
 A hero step with multiple cards which have no title is rendered in WhatsApp with a blank space between the cards.
 
-![](../../Resources/Images/WhatsAppMeta/Multiple%20Cards.png)
+![](<../../../.gitbook/assets/Multiple Cards.png>)
 
 A hero step with a single card will show no blank space.
 
-![](../../Resources/Images/WhatsAppMeta/Single%20Card.png)
+![](<../../../.gitbook/assets/Single Card.png>)

@@ -1,9 +1,8 @@
 ---
-title: "BluePrism Connector"
+title: BluePrism Connector
 ---
 
-<a id="BluePrismConnector"></a>
-
+# BluePrism Connector
 
 {% hint style="info" %}
 **NOTE:** The Blue Prism Connector is available in DRUID 1.58 and higher.
@@ -13,13 +12,11 @@ DRUID provides you with the full power of native Robotic Process Automation (RPA
 
 In Blue Prism the workqueue is the central hub of all automations.
 
-<a id="Howitworks"></a>
-
-## How it works
+### How it works
 
 In BluePrism the RabbitMQ queue is the central hub of all automations.
 
-![](../../Resources/Images/BluePrism/diagram.png)
+![](<../../../.gitbook/assets/diagram (3).png>)
 
 1. DRUID sends items to RabbitMQ queue.
 2. RabbitMQ direct exchange delivers messages to queues based on the message routing key. A queue binds to the exchange with a specific routing key.

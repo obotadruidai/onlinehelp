@@ -1,34 +1,29 @@
 ---
-title: "Australia New South Wales Driving License"
+title: Australia New South Wales Driving License
 ---
 
-<a id="AustraliaNewSouthWalesDrivingLicense"></a>
-
+# Australia New South Wales Driving License
 
 The Druid API engine supports OCR and data extraction for driving licenses issued by Australia New South Wales.
 
 {% hint style="info" %}
 **NOTE:**
 
-- In order to use this Druid Vision service, contact [Druid Tech Support](<mailto:support@druidai.com?subject=Request: Activate Druid Vision service JAM_VotersId>).
-- For any APIs that are used for testing purposes and not in a production environment, Druid CANNOT be held responsible for the security of the processed data under the General Data Protection Regulation (GDPR). We highly recommend you to use sample data and documents for all APIs in testing environments.
+* In order to use this Druid Vision service, contact [Druid Tech Support](../Druid%20AI%20Services/mailto:support@druidai.com).
+* For any APIs that are used for testing purposes and not in a production environment, Druid CANNOT be held responsible for the security of the processed data under the General Data Protection Regulation (GDPR). We highly recommend you to use sample data and documents for all APIs in testing environments.
 {% endhint %}
 
-<a id="Request"></a>
+### Request
 
-## Request
+|                             |                                                                                                                                                                                             |
+| --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Method                      | POST                                                                                                                                                                                        |
+| API Resource URL (Endpoint) | The endpoint of the Druid Vision **AU\_NSW\_DL** service. For information on how to get the endpoint, see [Druid Vision](<Druid Vision.md>).                                                |
+| Authorization               | Select **Bearer Token** and provide the Druid Vision **Token**. For information on how to get the endpoint, see [Druid Vision](<Druid Vision.md>). ![](<../../.gitbook/assets/au auth.png>) |
+| Headers                     | Content-Type: “multipart/form-data” ![](<../../.gitbook/assets/au headers.png>)                                                                                                             |
+| Body                        | “file”: (file attachment). Supported formats: png, jpg, pdf. ![](<../../.gitbook/assets/au body.png>)                                                                                       |
 
-|  |  |
-| --- | --- |
-| Method | POST |
-| API Resource URL (Endpoint) | The endpoint of the Druid Vision **AU\_NSW\_DL** service. For information on how to get the endpoint, see [Druid Vision](Druid%20Vision.md). |
-| Authorization | Select **Bearer Token** and provide the Druid Vision **Token**. For information on how to get the endpoint, see [Druid Vision](Druid%20Vision.md).  ![](../Resources/Images/vision/au%20auth.png) |
-| Headers | Content-Type: “multipart/form-data”  ![](../Resources/Images/vision/au%20headers.png) |
-| Body | “file”: <attached document file> (file attachment).  Supported formats: png, jpg, pdf.  ![](../Resources/Images/vision/au%20body.png) |
-
-<a id="Response"></a>
-
-## Response
+### Response
 
 Data Returned by MRZ interpretation is found in the Data section of the response.
 

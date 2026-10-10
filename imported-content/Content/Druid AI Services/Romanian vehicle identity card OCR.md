@@ -1,34 +1,29 @@
 ---
-title: "Romanian Vehicle Identity Card"
+title: Romanian Vehicle Identity Card
 ---
 
-<a id="RomanianVehicleIdentityCard"></a>
-
+# Romanian Vehicle Identity Card
 
 The Druid API engine performs OCR and data extraction from Romanian car registration certificates.
 
 {% hint style="info" %}
 **NOTE:**
 
-- In order to use this Druid Vision service, contact [Druid Tech Support](<mailto:support@druidai.com?subject=Request: Activate Druid Vision service RO_RegistrationCertificate>).
-- For any APIs that are used for testing purposes and not in a production environment, Druid CANNOT be held responsible for the security of the processed data under the General Data Protection Regulation (GDPR). We highly recommend you to use sample data and documents for all APIs in testing environments.
+* In order to use this Druid Vision service, contact [Druid Tech Support](../Druid%20AI%20Services/mailto:support@druidai.com).
+* For any APIs that are used for testing purposes and not in a production environment, Druid CANNOT be held responsible for the security of the processed data under the General Data Protection Regulation (GDPR). We highly recommend you to use sample data and documents for all APIs in testing environments.
 {% endhint %}
 
-<a id="Request"></a>
+### Request
 
-## Request
+|                             |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Method                      | POST                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| API Resource URL (Endpoint) | The endpoint of the Druid Vision **RO\_VehicleIdentityCard** service. For information on how to get the endpoint, see [Druid Vision](<Druid Vision.md>).                                                                                                                                                                                                                                                                                                                                               |
+| Authorization               | Select **Bearer Token** and provide the Druid Vision **Token**. For information on how to get the endpoint, see [Druid Vision](<Druid Vision.md>). ![](<../../.gitbook/assets/ro vehicle id auth.png>)                                                                                                                                                                                                                                                                                                 |
+| Headers                     | Content-Type: “multipart/form-data” ![](<../../.gitbook/assets/ro vehicle headers.png>)                                                                                                                                                                                                                                                                                                                                                                                                                |
+| Body                        | “file”: (file attachment). Add both pages of the vehicle identity card. Supported formats: png, jpg, pdf. ![](<../../.gitbook/assets/ro vehicle id files.png>) If extraction fails due to issues such as poor image quality, you can skip the validation of the QR code and bar code on the second page of the vehicle identity card by including the parameter **skipValidations** = **CardNumber** in the request body. **NOTE:** Skipping validations is available in DRUID version 8.1 and higher. |
 
-|  |  |
-| --- | --- |
-| Method | POST |
-| API Resource URL (Endpoint) | The endpoint of the Druid Vision **RO\_VehicleIdentityCard** service. For information on how to get the endpoint, see [Druid Vision](Druid%20Vision.md). |
-| Authorization | Select **Bearer Token** and provide the Druid Vision **Token**. For information on how to get the endpoint, see [Druid Vision](Druid%20Vision.md).  ![](../Resources/Images/vision/ro%20vehicle%20id%20auth.png) |
-| Headers | Content-Type: “multipart/form-data”  ![](../Resources/Images/vision/ro%20vehicle%20headers.png) |
-| Body | “file”: <attached document file> (file attachment). Add both pages of the vehicle identity card.  Supported formats: png, jpg, pdf.  ![](../Resources/Images/vision/ro%20vehicle%20id%20files.png)  If extraction fails due to issues such as poor image quality, you can skip the validation of the QR code and bar code on the second page of the vehicle identity card by including the parameter **skipValidations** = **CardNumber** in the request body.  **NOTE:** Skipping validations is available in DRUID version 8.1 and higher. |
-
-<a id="Response"></a>
-
-## Response
+### Response
 
 **Response Example**
 

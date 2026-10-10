@@ -1,9 +1,8 @@
 ---
-title: "Druid Connector Host"
+title: Druid Connector Host
 ---
 
-<a id="DruidConnectorHost"></a>
-
+# Druid Connector Host
 
 In hybrid deployments, the AI Agents running in the Druid Cloud are integrated with on premise apps. The AI Agents and on premise apps communicate via the Druid Connector Host installed on your local servers, usually hosted in your DMZ zone.
 
@@ -18,16 +17,16 @@ The Druid Connector performs the following types of connections:
 3. Save conversation history into the local Database.
 4. Call the integrated apps or databases.
 
-![](../Resources/Images/Integrations/Installing%20the%20Druid%20Connector.png)
+![](<../../.gitbook/assets/Installing the Druid Connector.png>)
 
-You can also use the Druid Connector Host in a high availability scenario. For more information see [Druid Connector High Availability](Druid%20Connector%20High%20Availability.md).
+You can also use the Druid Connector Host in a high availability scenario. For more information see [Druid Connector High Availability](<Druid Connector High Availability.md>).
 
-#### Software footprint
+**Software footprint**
 
 The DRUID Connector Host application service includes the following components:
 
-- Action Processor
-- Connection History processor
-- Nancy API Web Server (required by the UiPath integration) (http://<Druid\_connector\_host>:12345/services).
+* Action Processor
+* Connection History processor
+* Nancy API Web Server (required by the UiPath integration) (http://\<Druid\_connector\_host>:12345/services).
 
 This section provides step-by-step procedures for setting up your own Druid Connector Host on Windows or Linux.

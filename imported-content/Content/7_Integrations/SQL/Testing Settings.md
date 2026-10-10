@@ -1,9 +1,8 @@
 ---
-title: "Testing Settings"
+title: Testing Settings
 ---
 
-<a id="TestingSettings"></a>
-
+# Testing Settings
 
 The Druid AI Platform provides the possibility to test the configurations of the SQL Task directly from authoring portal (without the need to place your newly created connector action in a flow and test it within a AI Agent conversation).
 
@@ -21,8 +20,8 @@ For example:
 
 In order to test the task, you need to create an initial context, used for request (similar to when the task is called from a conversation, where Request Entity has data from conversational context). To do that, you’ll need to provide the request entity data in JSON format. Create the JSON object for a Druid entity in the following way:
 
-- Mention the entity name in "$entityTypeName$" property. E.g., `"$entityTypeName$":"Employee"`.
-- Add a new property for each field in Druid entity. E.g., `"EmployeeId":1234` or `"FirstName":"John"`.
+* Mention the entity name in "$entityTypeName$" property. E.g., `"$entityTypeName$":"Employee"`.
+* Add a new property for each field in Druid entity. E.g., `"EmployeeId":1234` or `"FirstName":"John"`.
 
 Example of a Druid entity in Jobject format:
 
@@ -37,9 +36,9 @@ Example of a Druid entity in Jobject format:
 }
 ```
 
-In case you need to map data from the **[[ChatUser]]** entity, as well, click the **ChatUser** tab and in the JSON field, replace the values of the chat user details:
+In case you need to map data from the **\[\[ChatUser]]** entity, as well, click the **ChatUser** tab and in the JSON field, replace the values of the chat user details:
 
-**Maping data from the [[ChatUser]] entity - Example**
+**Maping data from the \[\[ChatUser]] entity - Example**
 
 ```
 {
@@ -65,7 +64,7 @@ At the top-right corner of the page click the **Test** button. In the lower part
 
 If the test is successful, you will see data in **ResponseEntity** tab (here you can see how would the response entity look like when the connector task will be called within a conversation).
 
-![](../../Resources/Images/SQL%20Connector/Testing%20Settings.png)
+![](<../../../.gitbook/assets/Testing Settings.png>)
 
 You can also check the **Request Task** tab, to see the SQL statement (with values) for this particular test.
 
@@ -73,8 +72,8 @@ You can also check the **Request Task** tab, to see the SQL statement (with valu
 **NOTE:** For SQL connector tasks, the response task will not return any values in the user interface.
 {% endhint %}
 
-![](../../Resources/Images/SQL%20Connector/Testing%20Settings_1.png)
+![](<../../../.gitbook/assets/Testing Settings_1.png>)
 
 If the test fails, you can navigate through the **Test Result** tabs to troubleshoot misconfiguration.
 
-![](../../Resources/Images/SQL%20Connector/Testing%20Settings_2.png)
+![](<../../../.gitbook/assets/Testing Settings_2.png>)

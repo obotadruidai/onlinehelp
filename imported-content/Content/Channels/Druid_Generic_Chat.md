@@ -1,9 +1,8 @@
 ---
-title: "Druid Generic Chat"
+title: Druid Generic Chat
 ---
 
-<a id="DruidGenericChat"></a>
-
+# Druid Generic Chat
 
 The **Druid Generic Chat** channel provides a REST API-based integration that connects your proprietary web chat interface directly to the Druid Conversational Engine.
 
@@ -11,17 +10,13 @@ The Custom Web Chat channel is the preferred choice for organizations that want 
 
 Unlike the standard Druid Web Chat channel, which includes a ready-to-use chat widget and user interface, the Druid Generic Chat channel does not provide any front-end components. Instead, it exposes a set of REST messaging endpoints that enable your application to exchange text messages with a Druid AI Agent while giving you complete control over the user experience.
 
-![](../Resources/Images/Generic%20Chat/diagram%20generic%20chat.png)
+![](<../../.gitbook/assets/diagram generic chat.png>)
 
-<a id="InteractionMechanisms"></a>
-
-## Interaction Mechanisms
+### Interaction Mechanisms
 
 The Druid Generic Chat channel supports two distinct communication mechanisms to facilitate message exchanges between your custom front-end interface and the Conversational Engine. Depending on your system design and responsiveness criteria, you can implement either a synchronous approach or an asynchronous polling cycle to manage the user experience.
 
-<a id="SynchronousRequestResponseDefault"></a>
-
-### Synchronous Request-Response (Default)
+#### Synchronous Request-Response (Default)
 
 In this mode, when a user sends a message through your proprietary chat UI, your backend client API forwards this input to Druid by calling the message delivery REST API (`/messages`). Your client API holds the HTTPS connection open with Druid while the Flow Engine processes the request. Once ready, all generated AI Agent replies are delivered back to your client API in the synchronous response payload, which then routes them back to the front-end interface.
 
@@ -29,9 +24,7 @@ In this mode, when a user sends a message through your proprietary chat UI, your
 **NOTE:** If a flow step triggers a slow external API or data operation, the client application must wait until the full processing cycle completes, which can lead to visible delays in the user experience.
 {% endhint %}
 
-<a id="LongPollingMechanismAsynchronous"></a>
-
-### Long Polling Mechanism (Asynchronous)
+#### Long Polling Mechanism (Asynchronous)
 
 Long Polling offers an asynchronous alternative to the default synchronous request-response model. It is designed to significantly improve responsiveness and user experience, especially in scenarios involving multi-message replies or delayed AI Agent processing (for example, due to complex backend integrations, database lookups, or proactive messages).
 
@@ -48,40 +41,30 @@ The `/getMessages` request will time out after a set period (typically 30 second
 The following sequence outlines how your backend client API handles communication between your custom front-end interface and Druid when using the long polling asynchronous model:
 
 1. Initiating the conversation:
-
-1. When the user opens the web chat, the web chat interface initiates the conversation with the client REST API.
-2. The client REST API initiates the conversation with Druid AI Agent, which authenticates the conversation.
-3. The Druid AI Agent responds with the Welcome Message.
-
-2. The Web chat sends the welcome message:
-
-1. The client REST API responds with the Welcome Message (received from Druid AI Agent).
-2. The web chat interface gives the Welcome message to the user.
-
-3. The web chat interface captures user input:
-
-1. The web chat interface captures the “User says”.
-2. The web chat interface sends the user's messages to the client REST API .
-3. The client REST API sends the user input to the AI Agent, calling the Druid API Create Activity (`POST *.druidplatform.com/api/generic-chat/{botId}/messages`).
+2. When the user opens the web chat, the web chat interface initiates the conversation with the client REST API.
+3. The client REST API initiates the conversation with Druid AI Agent, which authenticates the conversation.
+4. The Druid AI Agent responds with the Welcome Message.
+5. The Web chat sends the welcome message:
+6. The client REST API responds with the Welcome Message (received from Druid AI Agent).
+7. The web chat interface gives the Welcome message to the user.
+8. The web chat interface captures user input:
+9. The web chat interface captures the “User says”.
+10. The web chat interface sends the user's messages to the client REST API .
+11. The client REST API sends the user input to the AI Agent, calling the Druid API Create Activity (`POST *.druidplatform.com/api/generic-chat/{botId}/messages`).
 
 {% hint style="info" %}
 **NOTE:** The client REST API DOES NOT wait for a synchronous response from this API call.
 {% endhint %}
 
 4. Backend client API polling for AI Agent responses:
+5. Immediately after sending the user's input, the backend client API begins polling for responses by making periodic POST requests to the Long Polling endpoint: `*.druidplatform.com/api/generic-chat/{botId}/messages/getMessages`.
+6. The Druid AI Agent sends available AI Agent responses to the backend client API via these `getMessages` calls, as soon as they are ready. Each `getMessages` call returns one message/event.
+7. If the Druid AI Agent has more messages, the backend client API immediately makes another POST request to `getMessages` to retrieve the next one. This continues until no more messages are received.
+8. User closes the call:
+9. The web chat UI announces the backend client API that the conversation is closed.
+10. The backend client API announces the Druid AI Agent that the conversation is closed (e.g., by sending a close\_conversation message) to end the active long polling loop and free up system resources.
 
-1. Immediately after sending the user's input, the backend client API begins polling for responses by making periodic POST requests to the Long Polling endpoint: `*.druidplatform.com/api/generic-chat/{botId}/messages/getMessages`.
-2. The Druid AI Agent sends available AI Agent responses to the backend client API via these `getMessages` calls, as soon as they are ready. Each `getMessages` call returns one message/event.
-3. If the Druid AI Agent has more messages, the backend client API immediately makes another POST request to `getMessages` to retrieve the next one. This continues until no more messages are received.
-
-5. User closes the call:
-
-1. The web chat UI announces the backend client API that the conversation is closed.
-2. The backend client API announces the Druid AI Agent that the conversation is closed (e.g., by sending a close\_conversation message) to end the active long polling loop and free up system resources.
-
-<a id="ChannelConfiguration"></a>
-
-## Channel Configuration
+### Channel Configuration
 
 {% hint style="info" %}
 **NOTE:** For Druid on premise deployments, make sure that you provide inbound access from the following messaging endpoint: DRUID.BotApp.
@@ -96,39 +79,35 @@ To configure the channel:
 3. Copy the generated **Authorize URL** and **AI Agent URL**.
 4. If your system architecture requires asynchronous delivery, toggle the **Enable long polling** option and copy the corresponding long poll endpoint.
 
-![](../Resources/Images/Generic%20Chat/generic%20chat%20config.png)
+![](<../../.gitbook/assets/generic chat config.png>)
 
 5. Optionally, customize channel display settings as follows:
 
-- **Alias**: Enter a clear, business-friendly display name (e.g., Interactive Messaging). This value is stored in**[[ChatUser]].ChannelDisplayName**, which appears in reporting tools like AI Agent Summary dashboard - Engagement KPIs and can also be referenced in flow business logic.
-- **Description**: Enter a brief description. This is particularly helpful when using an alias, as it helps identify the channel's specific purpose within the Druid Portal.
-- **Channel Icon**: Upload a custom icon to display on the channel card within the Druid Portal.
+* **Alias**: Enter a clear, business-friendly display name (e.g., Interactive Messaging). This value is stored in\*\*\[\[ChatUser]].ChannelDisplayName\*\*, which appears in reporting tools like AI Agent Summary dashboard - Engagement KPIs and can also be referenced in flow business logic.
+* **Description**: Enter a brief description. This is particularly helpful when using an alias, as it helps identify the channel's specific purpose within the Druid Portal.
+* **Channel Icon**: Upload a custom icon to display on the channel card within the Druid Portal.
 
 6. Click **Publish** to activate the channel.
 
 During session execution, Druid automatically populates the following system fields:
 
-- **[[ChatUser]].ChannelId** = "generic-chat"
-- **[[ChatUser]].ChannelDisplayName** - Stores the Alias which is used in AI Agent Summary Dashboard > Engagement KPIs > Channel chart.
-- **[[ChatUser]].UserId** - Stores the unique client user identification string.
+* **\[\[ChatUser]].ChannelId** = "generic-chat"
+* **\[\[ChatUser]].ChannelDisplayName** - Stores the Alias which is used in AI Agent Summary Dashboard > Engagement KPIs > Channel chart.
+* **\[\[ChatUser]].UserId** - Stores the unique client user identification string.
 
-<a id="DruidAPIReference"></a>
-
-## Druid API Reference
+### Druid API Reference
 
 Use these specifications to connect your proprietary interface application layer to the Druid messaging engine.
 
-<a id="Authorize"></a>
-
-### Authorize
+#### Authorize
 
 Establishes an anonymous session and provides the short-lived access token required for subsequent interactions.
 
-#### Syntax
+**Syntax**
 
 POST: `*.druidplatform.com/api/services/app/Chat/AuthorizeAnonymousAsync`
 
-#### Request Body
+**Request Body**
 
 **Authorize API**
 
@@ -140,7 +119,7 @@ POST: `*.druidplatform.com/api/services/app/Chat/AuthorizeAnonymousAsync`
 }
 ```
 
-#### Response
+**Response**
 
 **Response Example**
 
@@ -155,17 +134,15 @@ POST: `*.druidplatform.com/api/services/app/Chat/AuthorizeAnonymousAsync`
 
 The returned bearer authorization token remains valid for exactly 1 hour from generation time.
 
-<a id="SendMessagesCreateActivity"></a>
-
-### Send Messages (Create Activity)
+#### Send Messages (Create Activity)
 
 Transmits the text written by the user to the Druid messaging layer.
 
-#### Syntax
+**Syntax**
 
 POST: `*.druidplatform.com/api/generic-chat/{botId}/messages`
 
-#### Request Header
+**Request Header**
 
 In the request header, map the Authorize key to the bearer token obtained from the Authorize API. Use the Druid-specific `CONCAT` function for the Authorize key value with the following syntax:
 
@@ -177,9 +154,9 @@ CONCAT('Bearer ',[[Entity]].StringField)
 
 Here, `[[Entity]].StringField` represents the field that stores the token obtained from the Authorize API.
 
-![](../Resources/Images/VoiceText%20Channel/authorize%20concat.png)
+![](<../../.gitbook/assets/authorize concat.png>)
 
-#### Request
+**Request**
 
 **Request template**
 
@@ -208,7 +185,7 @@ Here, `[[Entity]].StringField` represents the field that stores the token obtain
 
 The `timeout` parameter enables you to specify a duration in seconds for the system to wait for a response from the Flow Engine. If the Flow Engine doesn't respond within the configured timeout period, the system will log an error in the Conversation History.
 
-#### Response
+**Response**
 
 ```
 {
@@ -224,17 +201,15 @@ The `timeout` parameter enables you to specify a duration in seconds for the sys
 }
 ```
 
-<a id="GetMessagesLongPolling"></a>
-
-### Get Messages (Long Polling)
+#### Get Messages (Long Polling)
 
 Retrieves messages asynchronously from the Druid AI Agent when the background long polling mechanism is enabled
 
-#### Syntax
+**Syntax**
 
 POST `*.druidplatform.com/api/generic-chat/{botId}/messages/getMessages`
 
-#### Request Header
+**Request Header**
 
 In the request header, map the Authorize key to the bearer token obtained from the Authorize API. Use the Druid-specific `CONCAT` function for the Authorize key value with the following syntax:
 
@@ -246,9 +221,9 @@ CONCAT('Bearer ',[[Entity]].StringField)
 
 Here, `[[Entity]].StringField` represents the field that stores the token obtained from the Authorize API.
 
-![](../Resources/Images/VoiceText%20Channel/authorize%20concat.png)
+![](<../../.gitbook/assets/authorize concat.png>)
 
-#### Request Body
+**Request Body**
 
 ```
 { 
@@ -256,25 +231,23 @@ Here, `[[Entity]].StringField` represents the field that stores the token obtain
 } 
 ```
 
-##### Parameters
+**Parameters**
 
-| Parameter | Type | Description | Required |
-| --- | --- | --- | --- |
-| conversationId | String | The unique identifier for the ongoing conversation, obtained from the Authorize API response. | Yes |
+| Parameter      | Type   | Description                                                                                   | Required |
+| -------------- | ------ | --------------------------------------------------------------------------------------------- | -------- |
+| conversationId | String | The unique identifier for the ongoing conversation, obtained from the Authorize API response. | Yes      |
 
-#### Response
+**Response**
 
-The response structure for `getMessages` is identical to the *Responds with Message* sections described for SendMessages API response, containing the AI Agent response or an event.
+The response structure for `getMessages` is identical to the _Responds with Message_ sections described for SendMessages API response, containing the AI Agent response or an event.
 
 {% hint style="info" %}
 **NOTE:** The `getMessages` endpoint will return the next available message or event as soon as it's ready, or after a timeout period if no message is available. The client API should continuously poll this endpoint until the conversation is officially closed.
 {% endhint %}
 
-<a id="Requestbodyexamples"></a>
+### Request body examples
 
-## Request body examples
-
-## Trigger flow
+### Trigger flow
 
 ```
 {
@@ -288,7 +261,7 @@ The response structure for `getMessages` is identical to the *Responds with Mess
 }
 ```
 
-## Option selection on a choice/hero step
+### Option selection on a choice/hero step
 
 ```
 {
@@ -302,7 +275,7 @@ The response structure for `getMessages` is identical to the *Responds with Mess
 }
 ```
 
-## File Upload
+### File Upload
 
 ```
 {
@@ -322,15 +295,13 @@ The response structure for `getMessages` is identical to the *Responds with Mess
 }
 ```
 
-<a id="ResponsePayload"></a>
-
-## Response Payload
+### Response Payload
 
 Responses are fetched using long polling (`/getMessages`).
 
 The following provides supported flow steps and their supported features.
 
-## Simple (Message/Action)
+### Simple (Message/Action)
 
 Supports Markdown, special characters, and formatting. Step actions execute automatically.
 
@@ -392,7 +363,7 @@ Supports Markdown, special characters, and formatting. Step actions execute auto
   },
 ```
 
-## Choice Step
+### Choice Step
 
 Interactive buttons returned under `suggestedActions`.
 
@@ -443,7 +414,7 @@ Interactive buttons returned under `suggestedActions`.
 ]
 ```
 
-## Hero Card
+### Hero Card
 
 Multi-card layout (carousel) with images and `imBack` buttons.
 
@@ -594,9 +565,7 @@ Multi-card layout (carousel) with images and `imBack` buttons.
   }
 ```
 
-<a id="Thumbnail"></a>
-
-## Thumbnail
+### Thumbnail
 
 Small thumbnail layout with description and buttons.
 
@@ -731,9 +700,9 @@ Small thumbnail layout with description and buttons.
 ]
 ```
 
-## Adaptive Card
+### Adaptive Card
 
-Renders schema forms via *application/vnd.microsoft.card.adaptive*.
+Renders schema forms via _application/vnd.microsoft.card.adaptive_.
 
 When sending a response to an adaptive card step, the request payload must submit the form data inside the value JObject, while the text parameter remains set to null.
 
@@ -764,9 +733,9 @@ The request body must include the target card identifier (hiddenAdaptiveCardId),
 
 The parameters inside the value object are received in the response message sent by Druid when the adaptive card is rendered:
 
-- **hiddenAdaptiveCardId** – The adaptive card identifier provided in the channelData object (or within the submit action data of the card attachment content).
-- **validationId** – The step validation identifier provided within the submit action data of the adaptive card attachment content.
-- **EntityField** – Key-value pairs matching the field identifiers defined in the adaptive card payload (for example, [[Employee]].LastNameEmployee), mapped to the user-submitted values.
+* **hiddenAdaptiveCardId** – The adaptive card identifier provided in the channelData object (or within the submit action data of the card attachment content).
+* **validationId** – The step validation identifier provided within the submit action data of the adaptive card attachment content.
+* **EntityField** – Key-value pairs matching the field identifiers defined in the adaptive card payload (for example, \[\[Employee]].LastNameEmployee), mapped to the user-submitted values.
 
 Example response from Druid containing an adaptive card:
 
@@ -879,7 +848,7 @@ Example response from Druid containing an adaptive card:
 ]
 ```
 
-## File Upload
+### File Upload
 
 ```
 [
@@ -913,7 +882,7 @@ Example response from Druid containing an adaptive card:
 ]
 ```
 
-## Step with attachment
+### Step with attachment
 
 Returns downloadable assets via a `contentUrl` token.
 
@@ -954,7 +923,7 @@ Returns downloadable assets via a `contentUrl` token.
   },
 ```
 
-## Prompt step
+### Prompt step
 
 ```
 [
@@ -987,7 +956,7 @@ Returns downloadable assets via a `contentUrl` token.
   }
 ```
 
-## Agentic step
+### Agentic step
 
 Sends agent conversation context (GPTChatMessage\_Collection) followed by text.
 
@@ -997,7 +966,7 @@ URL: \*.druidplatform.com/api/generic-chat/{botId}/messages
 
 Status: 200
 
-Request for */api/chat/message*:
+Request for _/api/chat/message_:
 
 **Request**
 
@@ -1133,10 +1102,8 @@ Druid response:
   }
 ```
 
-<a id="ChannelCapabilities"></a>
+### Channel Capabilities
 
-## Channel Capabilities
-
-- **Session Management**. Sending "reset" clears the active flow state while keeping the active conversationId intact.
-- **Multi-file Upload**. Multiple file attachments can be sent in a single incoming payload.
-- **Live Agent Escalation**. Native handoff to human helpdesk agents is fully supported.
+* **Session Management**. Sending "reset" clears the active flow state while keeping the active conversationId intact.
+* **Multi-file Upload**. Multiple file attachments can be sent in a single incoming payload.
+* **Live Agent Escalation**. Native handoff to human helpdesk agents is fully supported.

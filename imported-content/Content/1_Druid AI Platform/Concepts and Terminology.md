@@ -1,21 +1,16 @@
 ---
-title: "Concepts and Terminology"
+title: Concepts and Terminology
 ---
 
-<a id="ConceptsandTerminology"></a>
-
+# Concepts and Terminology
 
 This topic introduces the key terms you must know before working with the **Druid AI Platform**.
 
-<a id="AgenticAI"></a>
-
-## Agentic AI
+### Agentic AI
 
 Agentic AI is a framework to building AI systems that use iterative, multi-step reasoning and actions to achieve a goal, rather than a single prompt-and-response interaction.
 
-<a id="AIAgent"></a>
-
-## AI Agent
+### AI Agent
 
 An AI Agent is a software system that can interact with users, reason over context, retrieve knowledge, and execute actions within a defined business scope.
 
@@ -23,9 +18,7 @@ In Druid, AI Agents can support both guided conversational experiences and auton
 
 AI Agents operate within enterprise boundaries. Their behavior is governed by configured rules, permissions, integrations, available skills, and human or system oversight. This ensures that AI Agents can provide assistance, make decisions, and perform actions reliably, securely, and in line with organizational processes.
 
-<a id="DruidConductor"></a>
-
-## Druid Conductor
+### Druid Conductor
 
 Druid Conductor is an orchestration AI Agent that acts as the primary interface in any conversation. It owns the conversation end-to-end — handling requests it can answer directly, and silently triggering specialized AI Agents when needed. The user always talks to one AI Agent. The complexity is invisible.
 
@@ -33,11 +26,9 @@ Think of a healthcare company where Mary is the primary AI Agent that patients a
 
 Orchestrated AI Agents work like specialized teams within your organization. Each one is an expert in its own domain. Druid Conductor knows when to handle something itself and when to call in a specialist — preserving full context across every hand off so the conversation always feels continuous.
 
-![](../Resources/Images/Megabots/Megabots.png)
+![](../../.gitbook/assets/Megabots.png)
 
-<a id="AgenticSkill"></a>
-
-## Agentic Skill
+### Agentic Skill
 
 An Agentic Skill, also referred to as a Skill, is an operational capability that enables a Druid AI Agent to perform a business task reliably and contextually within an enterprise environment.
 
@@ -49,39 +40,29 @@ For example, an Appointment Management Agent can use multiple Agentic Skills to 
 
 Compared to traditional agentic skills that mainly provide reusable instructions, tools, or artifacts for automations, Druid Agentic Skills go further by combining those artifacts with enterprise context, governance, integrations, and orchestration. They enable the AI Agent not only to perform tasks, but also to operate inside the enterprise and deliver outcomes across real business processes.
 
-For more information, see [Understanding Agentic Skills](../AI%20Agent%20Orhestration/Druid%20Conductor.md#Understa).
+For more information, see [Understanding Agentic Skills](<../AI Agent Orhestration/Druid Conductor.md#Understa>).
 
-<a id="ArtificialIntelligenceAI"></a>
-
-## Artificial Intelligence (AI)
+### Artificial Intelligence (AI)
 
 Artificial Intelligence (AI) is the intelligence demonstrated by machines. It includes concepts like natural language understanding (NLU) and machine learning.
 
-<a id="Channel"></a>
-
-## Channel
+### Channel
 
 A **channel** is the environment that hosts the AI Agent and enables two-way conversation.
 
 You can build and deploy Druid AI Agents across various channels. For employee-facing AI Agents, consider deploying them on Intranet Web Pages, Microsoft Teams, or Slack. For customer-facing AI Agents, you might deploy them on your public website, Facebook, WhatsApp, Skype, or custom Mobile Apps.
 
-<a id="Context"></a>
-
-## Context
+### Context
 
 Similar to natural language **context**, the context controls the flow of a conversation. During a conversation flow, the AI Agent saves information in its memory, which is cached in the form of **entities** and **variables**.
 
-<a id="Flow"></a>
-
-## Flow
+### Flow
 
 A **Flow** configures the dialog between the end-user and the AI Agent. In the Druid AI Platform, a Flow is equivalent to an **Intent** plus a **Dialog**.
 
 A **Flow** uses a tree-like structure where you configure logical decisions to provide different paths based on context, actions, or user input.
 
-<a id="Intent"></a>
-
-## Intent
+### Intent
 
 An **Intent** represents the purpose of a user’s input (an utterance). An **Intent** categorizes the user’s goal for one conversation turn.
 
@@ -89,15 +70,11 @@ You define many Intents and bundle them together with **Dialogs** into **Flows**
 
 For each **Intent**, you can define actions that trigger specific behaviors in your system. When the AI Agent matches the **Intent**, it provides the action to your system.
 
-<a id="Dialog"></a>
-
-## Dialog
+### Dialog
 
 A **Dialog** defines the AI Agent's responses to defined Intents. In the Druid AI Platform, you configure the Dialog as part of the Flow.
 
-<a id="Entities"></a>
-
-## Entities
+### Entities
 
 **Entities** are variables that complement or modify the Intent. An **Entity** is a snippet of information the AI Agent can understand to serve the correct answer.
 
@@ -105,43 +82,31 @@ A **Dialog** defines the AI Agent's responses to defined Intents. In the Druid A
 
 **Example**: The Account entity represents a person or organization that buys goods or services. It includes fields like Name, First Name, Last Name, Email, Orders (collection of Orders), Invoices (collection of Invoices), and Payments (collection of Payments).
 
-<a id="Utterance"></a>
-
-## Utterance
+### Utterance
 
 An **Utterance** is whatever the user says or inputs. The **Druid AI Agent** extracts the **Intent** and **Entities** essential to carrying on a conversation from the **Utterance**.
 
-<a id="Druidlocalvariable"></a>
-
-## Druid local variable
+### Druid local variable
 
 **Druid local variables** are defined in **Flows** and persist throughout the conversation during the **Flow** execution.
 
-<a id="Integrationcontextvariable"></a>
-
-## Integration context variable
+### Integration context variable
 
 **Integration context variables** persist during the connector task execution and are used for custom authentication. Druid keeps them in memory until using them in the authorization call to the business API.
 
-<a id="MachinelearningML"></a>
-
-## Machine learning (ML)
+### Machine learning (ML)
 
 Machine learning (ML) is the field of AI that focuses on making machines learn. In the context of AI Agents, **ML** improves the AI Agent's ability to answer complex user queries over time.
 
-<a id="NaturallanguageprocessingNLP"></a>
-
-## Natural language processing (NLP)
+### Natural language processing (NLP)
 
 Natural language processing (NLP) is a field of AI that encompasses everything related to a machine understanding human input. To do this, an **NLP** engine uses tools such as natural language understanding, sentiment analysis, and tokenization.
 
-<a id="NaturallanguageunderstandingNLU"></a>
-
-## Natural language understanding (NLU)
+### Natural language understanding (NLU)
 
 Natural language understanding (NLU) is the process that examines an **utterance** and extracts its **entities** and **intent**. It allows a machine to understand what a user is saying.
 
-## Related Topics
+### Related Topics
 
-- [Druid AI Platform](Druid%20Platform.md)
-- [Druid Portal](Druid%20Portal.md)
+* [Druid AI Platform](<Druid Platform.md>)
+* [Druid Portal](<Druid Portal.md>)

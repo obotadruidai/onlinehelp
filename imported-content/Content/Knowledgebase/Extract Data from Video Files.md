@@ -1,9 +1,8 @@
 ---
-title: "Extract Data from Video Files"
+title: Extract Data from Video Files
 ---
 
-<a id="ExtractDatafromVideoFiles"></a>
-
+# Extract Data from Video Files
 
 Druid can process video files to extract data from video content, making it searchable and usable within your knowledge base.
 
@@ -17,15 +16,13 @@ Druid can process video files to extract data from video content, making it sear
 
 Druid supports data extraction (video transcript) from video files only for the following sources:
 
-- SharePoint
-- Custom Data Sources
-- File repository
-- Shared drive
-- Website: Videos must be hosted directly on the website. Extraction is not supported for videos embedded from third-party platforms (e.g., YouTube, Vimeo).
+* SharePoint
+* Custom Data Sources
+* File repository
+* Shared drive
+* Website: Videos must be hosted directly on the website. Extraction is not supported for videos embedded from third-party platforms (e.g., YouTube, Vimeo).
 
-<a id="Howitworks"></a>
-
-## How it works
+### How it works
 
 The process of extracting data from video files involves several automated steps:
 
@@ -33,16 +30,14 @@ The process of extracting data from video files involves several automated steps
 2. **Video to Audio Conversion**. Druid utilizes a robust multimedia framework to convert the video file into an audio format (MP4).
 3. **Audio Transcription (ASR)**. Automatic Speech Recognition (ASR) technology is then applied to generate a transcript from the audio. This transcript is temporarily stored within Druid. You can download the transcript file from the data source.
 
-![](../Resources/Images/KB/video%20download.png)
+![](<../../.gitbook/assets/video download.png>)
 
-4. **Data Extraction**. The KB Agent extracts relevant data from the generated transcript. This is performed using the extractor configured under **Knowledge Base Settings** > **Advanced**  > **File Extractors** > **Video**. The default extractor is Druid Standard extractor and Basic content chunker. You can select the LLM content chunker based on your preferences for enhanced extraction.
+4. **Data Extraction**. The KB Agent extracts relevant data from the generated transcript. This is performed using the extractor configured under **Knowledge Base Settings** > **Advanced** > **File Extractors** > **Video**. The default extractor is Druid Standard extractor and Basic content chunker. You can select the LLM content chunker based on your preferences for enhanced extraction.
 
-<a id="Importantconsiderationsandlimitations"></a>
-
-## Important considerations and limitations
+### Important considerations and limitations
 
 Please be aware of the following when extracting data from video files:
 
-- **Video File Size Limits**: Druid can extract data only from video files with a maximum size of 1GB or an audio duration of 2 hours, whichever is exceeded first. If either of these limits is surpassed, the video file extraction will fail.
-- **Processing Time**: Extracting data from larger video files can be a time-consuming process and may take up to several hours to complete.
-- **Original Video File Access**: You cannot download the original video file directly from the data source after extraction.
+* **Video File Size Limits**: Druid can extract data only from video files with a maximum size of 1GB or an audio duration of 2 hours, whichever is exceeded first. If either of these limits is surpassed, the video file extraction will fail.
+* **Processing Time**: Extracting data from larger video files can be a time-consuming process and may take up to several hours to complete.
+* **Original Video File Access**: You cannot download the original video file directly from the data source after extraction.

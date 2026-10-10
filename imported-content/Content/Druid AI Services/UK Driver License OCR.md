@@ -1,34 +1,29 @@
 ---
-title: "UK Driver License OCR"
+title: UK Driver License OCR
 ---
 
-<a id="UKDriverLicenseOCR"></a>
-
+# UK Driver License OCR
 
 The Druid API engine performs OCR and data extraction from UK driver licenses.
 
 {% hint style="info" %}
 **NOTE:**
 
-- In order to use this Druid Vision service, contact [Druid Tech Support](<mailto:support@druidai.com?subject=Request: Activate Druid Vision service RO_DriverLicense>).
-- For any APIs that are used for testing purposes and not in a production environment, Druid CANNOT be held responsible for the security of the processed data under the General Data Protection Regulation (GDPR). We highly recommend you to use sample data and documents for all APIs in testing environments.
+* In order to use this Druid Vision service, contact [Druid Tech Support](../Druid%20AI%20Services/mailto:support@druidai.com).
+* For any APIs that are used for testing purposes and not in a production environment, Druid CANNOT be held responsible for the security of the processed data under the General Data Protection Regulation (GDPR). We highly recommend you to use sample data and documents for all APIs in testing environments.
 {% endhint %}
 
-<a id="Request"></a>
+### Request
 
-## Request
+|                             |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| --------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Method                      | POST                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| API Resource URL (Endpoint) | The endpoint of the Druid Vision UK\_DrivingLicence service. For information on how to get the endpoint, see [Druid Vision](<Druid Vision.md>).                                                                                                                                                                                                                                                                                                                                                                              |
+| Headers                     | Authorization: “Bearer ” Content-Type: “multipart/form-data”                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| Authorization               | Select **Bearer Token** and provide the Druid Vision **Token**. For information on how to get the endpoint, see [Druid Vision](<Druid Vision.md>).                                                                                                                                                                                                                                                                                                                                                                           |
+| Body                        | “file”: (file attachment). Supported formats: png, jpg, pdf. ![](<../../.gitbook/assets/uk driver.png>) If extraction fails due to issues like poor image quality, you can skip any of the following validation checks: - BirthDate - IssueDate - ExpireDate Add the **skipValidations** parameter in the request body as many times as validation checks you want to escape from validation. ![](<../../.gitbook/assets/uk driving license valid.png>) **NOTE:** Skipping validations is available in DRUID 8.1 and higher. |
 
-|  |  |
-| --- | --- |
-| Method | POST |
-| API Resource URL (Endpoint) | The endpoint of the Druid Vision UK\_DrivingLicence service. For information on how to get the endpoint, see [Druid Vision](Druid%20Vision.md). |
-| Headers | Authorization: “Bearer <your bearer token>”  Content-Type: “multipart/form-data” |
-| Authorization | Select **Bearer Token** and provide the Druid Vision **Token**. For information on how to get the endpoint, see [Druid Vision](Druid%20Vision.md). |
-| Body | “file”: <attached document file> (file attachment).  Supported formats: png, jpg, pdf.  ![](../Resources/Images/vision/uk%20driver.png)  If extraction fails due to issues like poor image quality, you can skip any of the following validation checks:   - BirthDate - IssueDate - ExpireDate   Add the **skipValidations** parameter in the request body as many times as validation checks you want to escape from validation.  ![](../Resources/Images/vision/uk%20driving%20license%20valid.png)  **NOTE:** Skipping validations is available in DRUID 8.1 and higher. |
-
-<a id="Response"></a>
-
-## Response
+### Response
 
 **Response Example**
 
@@ -82,13 +77,11 @@ The Druid API engine performs OCR and data extraction from UK driver licenses.
 }
 ```
 
-<a id="Validations"></a>
-
-## Validations
+### Validations
 
 The results of the UK\_DrivingLicence template provide the following validation:
 
-- **Issue Date**
-  - Status Invalid if the ValidityStartDate from Document fails.
-- **Expiration Date** - Status Invalid if the ValidityEndDate from Document fails.
-- **BirthDate** - Status Invalid if the BirthDate from Document fails.
+* **Issue Date**
+  * Status Invalid if the ValidityStartDate from Document fails.
+* **Expiration Date** - Status Invalid if the ValidityEndDate from Document fails.
+* **BirthDate** - Status Invalid if the BirthDate from Document fails.

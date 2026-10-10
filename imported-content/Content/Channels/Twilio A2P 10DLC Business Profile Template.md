@@ -1,9 +1,8 @@
 ---
-title: "A2P 10DLC Business Profile Template"
+title: A2P 10DLC Business Profile Template
 ---
 
-<a id="A2P10DLCBusinessProfileTemplate"></a>
-
+# A2P 10DLC Business Profile Template
 
 When integrating sAKARI with Campaign Manager, you must register for A2P 10DLC (Application-to-Person 10-Digit Long Code) messaging to send SMS campaigns to U.S. phone numbers. This registration is required by mobile carriers to reduce spam and ensure reliable message delivery.
 
@@ -13,9 +12,7 @@ If the Druid team performs the registration for you, download and complete the S
 
 Before completing the template, review the requirements below to make sure the information you provide meets the A2P 10DLC requirements.
 
-<a id="PrivacyPolicyandTermsConditionsrequirements"></a>
-
-## Privacy Policy and Terms & Conditions requirements
+### Privacy Policy and Terms & Conditions requirements
 
 Your **Privacy Policy** and **Terms & Conditions** must be available through valid, publicly accessible URLs. The pages must not require users or Sakari reviewers to log in.
 
@@ -23,9 +20,7 @@ Your **Privacy Policy** and **Terms & Conditions** must be available through val
 **IMPORTANT!** The **Privacy Policy URL** and **Terms & Conditions URL** must be valid, live, and publicly accessible (not password-protected or login-gated). Registrations submitted without compliant links will be rejected by Sakari and mobile carriers.
 {% endhint %}
 
-<a id="PrivacyPolicy"></a>
-
-### Privacy Policy
+#### Privacy Policy
 
 Your Privacy Policy should clearly explain how customer information is collected, used, and protected.
 
@@ -33,25 +28,21 @@ For SMS messaging, make sure that your Privacy Policy also includes the applicab
 
 In particular, it should clearly state that mobile information and SMS opt-in data or consent will not be shared with third parties or affiliates for their marketing or promotional purposes.
 
-<a id="TermsConditions"></a>
-
-### Terms & Conditions
+#### Terms & Conditions
 
 Your Terms & Conditions should include information about your SMS messaging program, such as:
 
-- The program or brand name.
-- A description of the types of messages users can expect to receive.
-- Message frequency or a statement that message frequency may vary.
-- A statement that message and data rates may apply.
-- Instructions for opting out, such as replying STOP.
-- Instructions for obtaining help, such as replying HELP.
-- Customer support information.
-- A link to your Privacy Policy.
-- A statement that carriers are not liable for delayed or undelivered messages.
+* The program or brand name.
+* A description of the types of messages users can expect to receive.
+* Message frequency or a statement that message frequency may vary.
+* A statement that message and data rates may apply.
+* Instructions for opting out, such as replying STOP.
+* Instructions for obtaining help, such as replying HELP.
+* Customer support information.
+* A link to your Privacy Policy.
+* A statement that carriers are not liable for delayed or undelivered messages.
 
-<a id="Consentandoptinrequirements"></a>
-
-## Consent and opt-in requirements
+### Consent and opt-in requirements
 
 Sakari requires you to obtain appropriate consent from end users before sending them messages.
 
@@ -59,11 +50,11 @@ When completing the template, clearly describe how users consent to receive SMS 
 
 If users opt in through a website:
 
-- Provide the URL where the opt-in process can be reviewed.
-- Clearly identify the business or organization that will send the messages.
-- Clearly explain the types of messages the user is agreeing to receive.
-- Make SMS consent clear and explicit.
-- Provide access to the applicable Privacy Policy and Terms & Conditions.
+* Provide the URL where the opt-in process can be reviewed.
+* Clearly identify the business or organization that will send the messages.
+* Clearly explain the types of messages the user is agreeing to receive.
+* Make SMS consent clear and explicit.
+* Provide access to the applicable Privacy Policy and Terms & Conditions.
 
 If you use other opt-in methods, such as SMS, an application, a paper form, or another process, describe how consent is collected. If you support multiple opt-in methods, include all applicable methods.
 
@@ -73,9 +64,7 @@ Users must also be able to opt out of receiving messages. Include the applicable
 
 After a recipient opts out, do not send additional messages unless the recipient subsequently provides the required consent to receive messages again.
 
-<a id="Downloadandcompletethetemplate"></a>
-
-## Download and complete the template
+### Download and complete the template
 
 {% hint style="info" %}
 **Info:** You do not need to complete this template if you perform the A2P 10DLC registration directly with Sakari.
@@ -83,16 +72,16 @@ After a recipient opts out, do not send additional messages unless the recipient
 
 If you want the Druid team to perform the A2P 10DLC registration on your behalf, download and complete the A2P 10DLC Business Profile template.
 
-[!\[\](../Resources/Images/Download.png)](<https://druiddocs.file.core.windows.net/docs-shares/Twilio/A2P10DLC registration_InfoTemplate_20260812.docx?sv=2025-07-05&spr=https&st=2026-08-13T12%3A22%3A41Z&se=2050-08-14T12%3A22%3A00Z&sr=f&sp=r&sig=zIxh0LGPvYI5tlP4Og7YiEZszriMT%2BLRMYCfjd12T%2Bc%3D>)
+[!\[\](../Resources/Images/Download.png)](https:/druiddocs.file.core.windows.net/docs-shares/Twilio/A2P10DLC%20registration_InfoTemplate_20260812.docx)
 
 The template collects the information required for registration, including:
 
-- Business and contact information.
-- Campaign details and messaging use case.
-- Message samples.
-- End-user consent and opt-in information.
-- Privacy Policy URL.
-- Terms & Conditions URL.
+* Business and contact information.
+* Campaign details and messaging use case.
+* Message samples.
+* End-user consent and opt-in information.
+* Privacy Policy URL.
+* Terms & Conditions URL.
 
 {% hint style="info" %}
 **Info:** The template contains fictional information and is provided for guidance only. Replace all example information with details that accurately describe your business, campaign, and consent process before sending the template to the Druid team.

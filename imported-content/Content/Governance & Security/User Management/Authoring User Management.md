@@ -1,9 +1,8 @@
 ---
-title: "Authoring User Management"
+title: Authoring User Management
 ---
 
-<a id="AuthoringUserManagement"></a>
-
+# Authoring User Management
 
 The User Management module allows you to manage authors and AI Agent users (also known as “Chat Users”) and their permissions within the Druid Portal.
 
@@ -15,39 +14,32 @@ Author users are always authenticated in the Druid AI Platform, while chat users
 
 This section covers two topics:
 
-- [Authentication](#Authentication)
-- [Authorization](#Authorization).
+* [Authentication](<Authoring User Management.md#Authentication>)
+* [Authorization](<Authoring User Management.md#Authorization>).
 
-<a id="Authentication"></a>
-
-## <a id="Authentication"></a>Authentication
+### Authentication <a href="#authentication" id="authentication"></a>
 
 In Druid Portal, authors are authenticated via username and password. When creating a user directly in the Portal, we recommend you to make sure that password complexity meets the following requirements:
 
-- The password minimum length is 8 characters.
-- The password contains characters from all three of the following categories:
+* The password minimum length is 8 characters.
+* The password contains characters from all three of the following categories:
+* At least one uppercase letter
+* At least one lowercase letter
+* At least one digit
+* Non-alphanumeric characters (special characters): (\~!@#$%^&\*\_-+=\`|(){}\[]:;"'<>,.?/)
 
-- At least one uppercase letter
-- At least one lowercase letter
-- At least one digit
-- Non-alphanumeric characters (special characters): (~!@#$%^&\*\_-+=`|\(){}[]:;"'<>,.?/)
+#### Password Management Policy
 
-<a id="PasswordManagementPolicy"></a>
+To set the password management policy, from the **Administration** menu, click **Settings** and in the Settings page, click the **User management** tab. Two options are available:
 
-### Password Management Policy
-
-To set the password management policy, from the **Administration** menu, click **Settings** and in the Settings page, click the **User management**  tab. Two options are available:
-
-- Prevent the user's new password from being the same as any of the last x passwords. The default value is **3**.
-- Set the password to expire after a specific number of days .The default value is **30 days**.
+* Prevent the user's new password from being the same as any of the last x passwords. The default value is **3**.
+* Set the password to expire after a specific number of days .The default value is **30 days**.
 
 Select the desired option and set value, then click the **Save all** button at the top-right corner of the page.
 
-![](../../Resources/Images/Authoring%20User%20Management/password%20policy.png)
+![](<../../../.gitbook/assets/password policy.png>)
 
-<a id="Authorization"></a>
-
-## <a id="Authorization"></a>Authorization
+### Authorization <a href="#authorization" id="authorization"></a>
 
 In Druid, authors are authorized based on security roles. They are granted access only based on the business area they need to know.
 
@@ -67,19 +59,17 @@ To create a new security role:
 2. At the top-right corner of the page, click the **Create new role** button. The Create new role page appears.
 3. Enter **Role name**.
 
-![](../../Resources/Images/Authoring%20User%20Management/create%20role.png)
+![](<../../../.gitbook/assets/create role.png>)
 
 4. Click the **Permissions** tab.
 5. Select the permission you want to group under this security role. The figure below provides an example.
 
-![](../../Resources/Images/Authoring%20User%20Management/role%20permissions.png)
+![](<../../../.gitbook/assets/role permissions (1).png>)
 
 6. Click the **Save** button to save the security role. You can now create AI Agent author users and assign the new security role, or assign it to existing authors.
 
-<a id="PortalAccessSecurity"></a>
-
-## Portal Access Security
+### Portal Access Security
 
 In addition to password policies, administrators can restrict access to the Druid Portal to authorized IPs or network locations. By enabling Portal Login IP Whitelisting, you can ensure that users (including those using SSO) can only log in from specific company IP addresses or VPN gateways.
 
-For more information on configuring these restrictions, see [Enforce Druid Portal Access via IP Whitelisting](Enforce%20Druid%20Portal%20Access%20via%20IP%20Whitelisting.md).
+For more information on configuring these restrictions, see [Enforce Druid Portal Access via IP Whitelisting](<Enforce Druid Portal Access via IP Whitelisting.md>).

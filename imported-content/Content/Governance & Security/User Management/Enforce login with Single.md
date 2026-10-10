@@ -1,25 +1,22 @@
 ---
-title: "Enforce Login with Single Sign On (for Druid Portal admins)"
+title: Enforce Login with Single Sign On (for Druid Portal admins)
 ---
 
-<a id="EnforceLoginwithSingleSignOnforDruidPortaladmins"></a>
-
+# Enforce login with Single Sign On for Druid Portal admins
 
 By default, the login page allows users to sign in using either Single Sign On (SSO)—if enabled on the tenant—or standard user credentials (username and password).
 
-![](../../Resources/Images/Enforce%20login%20with%20Single%20Sign%20On/Single%20Sign%20On%20Login%20Enforcement.png)
+![](<../../../.gitbook/assets/Single Sign On Login Enforcement.png>)
 
 To mitigate the risk of DDoS attacks, credential theft, and unauthorized access from orphaned accounts, you can restrict login to SSO only, provided you have already enabled and configured login with an external provider (OpenID Connect, LDAP, Google, or WS-Federation). This ensures that all authentication follows your organization's centralized security policies and MFA requirements.
 
-![](../../Resources/Images/Enforce%20login%20with%20Single%20Sign%20On/Single%20Sign%20On%20Login%20Enforcement_1.png)
+![](<../../../.gitbook/assets/Single Sign On Login Enforcement_1.png>)
 
 {% hint style="info" %}
 **NOTE:** This feature is available in Druid 9.18 and higher.
 {% endhint %}
 
-<a id="EnforceSSOLogin"></a>
-
-## Enforce SSO Login
+### Enforce SSO Login
 
 To enforce SSO login:
 
@@ -27,27 +24,26 @@ To enforce SSO login:
 2. Click the **External Login Settings** tab.
 3. Select **Enforce SSO login** and copy the **Login key**.
 
-![](../../Resources/Images/Enforce%20login%20with%20Single%20Sign%20On/Single%20Sign%20On%20Login%20Enforcement_2.png)
+![](<../../../.gitbook/assets/Single Sign On Login Enforcement_2.png>)
 
 4. Save this key in a secure vault for admin access only.
+
 {% hint style="warning" %}
 **IMPORTANT!** If something goes wrong with the SSO login (downtime with the SSO provider, etc.) you want to provide the users with the option to login with user credentials. In order to do that, you will need the **Login key**.
 {% endhint %}
 
 5. Click the **Save all** button at the top right corner of the page.
 
-<a id="RestoreMixedModeAuthentication"></a>
-
-## Restore Mixed Mode Authentication
+### Restore Mixed Mode Authentication
 
 If you need to re-enable both SSO and credentials login (mixed mode), you must use the **Login key** to bypass the enforcement.
 
 You can do this in two ways:
 
-- Access your standard login page and, in the browser address bar, add **?login-key=<login key value>** to the end of the URL, replacing <login key value> with the key you previously saved in your secure vault.
-- Access your tenant using the following URL format:
+* Access your standard login page and, in the browser address bar, add **?login-key=** to the end of the URL, replacing with the key you previously saved in your secure vault.
+* Access your tenant using the following URL format:
 
-<tenancyName>.<subdomains>.druidplatform.com/account/login?login-key=<login key value>
+..druidplatform.com/account/login?login-key=
 
 Once the default login page appears:
 
