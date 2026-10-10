@@ -1,0 +1,127 @@
+<a id="SettingupLiveChat"></a>
+
+# Setting up Live Chat
+
+Select the desired AI Agent. Go to the Solutions Library, search for solution Live Chat Advanced and import it. This solution template contains a basic Live Chat configuration to help you easily add Live Chat support to your AI Agent and let it handle live chat sessions between end users and help desk agents.
+
+> **NOTE:** Make sure not to alter the name of the security role ”Helpdesk Agent” as the flow engine makes some automatic identifications based on this role. Changing the name of this security role will break the Live Chat functionality.
+
+The AI Agent handles live chat from two perspectives:
+
+- client-side
+- agent-side
+
+The diagram below describes how the AI Agent handles Live chat on both the client and agent side throughout the live chat lifecycle.
+
+![](../Resources/Images/Live%20Chat/live%20chat%20steps.png)
+
+Legend:
+
+|  |  |
+| --- | --- |
+| **Form** |  |
+| Process element | Action |
+| Data element | Message |
+| **Color** |  |
+| Orange process element | Special flow or a flow triggered by a special event |
+| Orange data element | Special message |
+| Green element | Action performed by the AI Agent. |
+| Light gray element | Read-only |
+| Dark gray element | Action performed by the agent |
+| Blue element | User input |
+
+Live Chat works with special flows and events that are set up on the AI Agent.
+
+The AI Agent automatically identifies and raises special events within the chat with the end user. For each such event you have the option to personalize the customer and agent experience, using either special flows or special messages.
+
+<a id="LiveChatSettings"></a>
+
+## Live Chat Settings
+
+To access the Live Chat settings, go to the AI Agent details and click the **Live Chat** section header. The section expands and you can set Live Chat specific parameters as follows:
+
+- [Live Chat general parameters](#Set_Live_Chat_general_parameters)
+- [Live Chat timeouts](#Set_Live_Chat_timeouts)
+- [Live Chat special flows](#Set_Live_Chat_Special_Flows)
+- [Live Chat special messages](#Set_Live_Chat_Special_Messages).
+
+<a id="SetLiveChatgeneralparameters"></a>
+
+### <a id="Set_Live_Chat_general_parameters"></a>Set Live Chat general parameters
+
+Tick the following two check boxes:
+
+- **Enable web socket** for communication performance. Check with your network administrator if the Web Socket Protocol is active inside your network.
+- **Enable Bot API**. The Bot API is DRUID's message status message service and it is mandatory to enable it. This is a tenant feature, so enabling it will enable this service on all AI Agents on your tenant.
+- **Show past conversations**. Control the visibility of past conversations on the Agent page.
+
+![](../Resources/Images/CBA/pst%20conversations.png)
+
+<a id="SetLiveChattimeouts"></a>
+
+### <a id="Set_Live_Chat_timeouts"></a>Set Live Chat timeouts
+
+In order for Live Chat events to be raised, you need to set up on the AI Agent the timeout parameters provided in the table below.
+
+| Parameter | Description |
+| --- | --- |
+| Live chat queue waiting timeout mins | The amount of time in minutes that a client could wait until an agent accepts the incoming live chat request. When the time limit is reached, the **live-chat-waiting-message-in-the-queue** flow is triggered. For more information on this flow, see [Notify clients while on the Waiting Queue](Handling%20live%20chat%20on%20client%20side.md) |
+| Live chat conversation idle timeout mins | The idle time limit for which a client can be idle (i.e. does not respond) in an ongoing conversation with an agent. Once the time limit is reached, the dialog times out and the client is automatically returned to AI Agent context.  **NOTE:** In DRUID 8.3 and higher, the idle timeout timer is also reset by messages sent by the live chat agent, in addition to messages from clients.  **NOTE:** You can customize the way your AI Agent handles idle live chat conversations. To do so, follow these steps:  1. Create a new flow and configure it based on your specific needs. 2. From the **NLU** menu, click **Configurations**. Click the **Intents** tab, then click the Dialogue management section header and from the **Inactivity cancel conversation flow** field, select the previously created flow. 3. Click the **Save** button to save the settings.   If during a live chat, the **Live chat conversation idle timeout mins** is reached, the flow selected in the **Inactivity cancel conversation flow** field will be triggered. |
+| Apply only on client silence | When enabled, this feature prevents the auto-disconnect mechanism triggered by **Live chat conversation idle timeout mins** when the last message in the conversation is from the user (client), ensuring that the session remains active as long as the client is engaged.  When active, it alleviates the necessity for the agent to pause the conversation when undertaking tasks outside of the chat, particularly those requiring a significant amount of time.  You can conveniently enable or disable this feature based on your specific requirements |
+| Send timeout warning to agent | Sends the **ConversationIdleWarningMessage** to the agent when a live chat conversation becomes idle. The warning is triggered at half of the time defined in the Live chat conversation idle timeout mins setting.  **NOTE:** This parameter is available in DRUID 8.1 and higher. |
+
+<a id="SetLiveChatSpecialFlows"></a>
+
+### <a id="Set_Live_Chat_Special_Flows"></a>Set Live Chat Special Flows
+
+In order for Live Chat to work, you need to set up the following Special flows on the AI Agent (Live Chat section).
+
+The table below provides an overview of the predefined flows that come with the Live Chat Starter, how to select them as AI Agent’s special flows, whether they work on the client or the agent’s side and a brief description of what they do.
+
+| Conversation Status | Special Flow / Flow Name | Flow triggered by special event | Client side | Agent side | Brief Description |
+| --- | --- | --- | --- | --- | --- |
+| Live Chat | LiveChatClientDisconnectedFlowId / live-chat-feedback-client |  | x |  | Captures the client’s feedback. |
+|  | LiveChatAgentDisconnectedFlowId / live-chat-agent-disconnect |  |  | x | - The live chat session is ended by the agent (the agent disconnects). - Captures the agent’s closing resolution. |
+| Chatting with the AI Agent | LiveChatClientWaitingInQueueFlowId / live-chat-connect-to-agent |  | x |  | Places the client in the Waiting queue. |
+| Live Chat | LiveChatClientConnectedFlowId / live-chat-client-connected |  |  | x | Agent connects with the client. |
+| Waiting in the queue |  | live-chat-waiting-message-in-the-queue | x |  | - Notifies the clients that they’ve been added to the waiting queue. - Asks the client if they would like to wait or not. |
+| Live Chat |  | live-chat-connect-agent-to-waiting-client |  | x | The AI Agent informs the agent if connecting in a live chat session with the client was successful or not. If the live chat session started, the client will be taken off from the waiting queue. For more information on this flow, see [Notify the agent if connecting to a client was successful or not](Handling%20live%20chat%20on%20Agent%20side.md) |
+| Chatting with the AI Agent |  | SignInHelpDeskAgent |  | x | Places the agent in the available agents queue. |
+|  |  | SignOutHelpDeskAgent |  | x | Takes out the agent from the available agents queue. |
+
+<a id="SetLiveChatSpecialMessages"></a>
+
+### <a id="Set_Live_Chat_Special_Messages"></a>Set Live Chat Special Messages
+
+You can set up specific responses triggered by special Live Chat special flows and events in which an AI Agent might reach out. You can either set the list of responses via the AI Agent Designer or set the flows to provide customized responses via the Flow Designer.
+
+This is the list of Live Chat messages:
+
+![](../Resources/Images/Live%20Chat/special%20messages.png)
+
+| Special Message | Description |
+| --- | --- |
+| ConnectedToHelpdeskAgent | The default message sent to the client when a helpdesk agent joins the conversation—immediately after connecting. By default, this message contains the helpdesk agent name (first name and last name).  **Info:** Starting with Druid 9.27, if the tenant administrator defines an alias for the helpdesk agent user, this alias will be provided in the special message instead. |
+| ConversationIdleWarningMessage | The default message sent to the client to warn them that the live chat conversation is becoming idle. This message is triggered when the chat has been inactive for half the duration set in the 'Live chat conversation idle timeout mins' parameter. |
+| LiveChatAgentDisconnectedFromPool | The default message sent to an agent after they sign out of Live Chat and are removed from the available agents' queue |
+| LiveChatAgentDisconnectedSelfConfirmation | This is the default message sent to the agent when they disconnect from a conversation. However, if a specific message is defined in the 'Live chat agent disconnected flow' (which is used to capture the agent's closing resolution), that message will be used instead. |
+| LiveChatAgentError | This message notifies the user that an unexpected issue has occurred with the live chat functionality—typically with third-party live chat providers. |
+| LiveChatAgentLeft | This is the default message sent to the user to notify them that one of the helpdesk agents engaged in the live session left the session (mainly for Oracle contact center and other 3rd party providers). |
+| LiveChatAgentLeftInformation | Similar to LiveChatAgentLeft, this is the default message sent to users when a helpdesk agent disconnects. However, it includes additional information—specifically, the agent’s first and last names, represented by placeholders {0} and {1}. This applies to certain live chat providers only.  By default, this message contains the helpdesk agent name (first name and last name).  **Info:** Starting with Druid 9.27, if the tenant administrator defines an alias for the helpdesk agent user, this alias will be provided in the special message instead. |
+| LiveChatClientAssignedToGroup | This is the default message sent to the client when they are assigned to a specific group. It applies to third-party contact center providers that support client group assignments. |
+| LiveChatClientDisconnectedSelfConfirmation | This is the default message sent to the client when they end a conversation. If a specific message is configured in the 'Live chat client disconnected flow' (used to gather client feedback), that custom message will be displayed instead. |
+| LiveChatClientLeftInformation | The default message sent to the helpdesk agent when the client disconnects. This message includes additional information about the client, specifically their first name and last name (represented by {0} and {1}). |
+| LiveChatClientTransferred | This is the default message sent to the agent when the current helpdesk agent transfers the conversation to a different agent. |
+| LiveChatConversationPausedConfirmation | This is the default message sent to the agent when an agent pauses a live chat session. The conversation is temporarily on hold but has not ended. The client can wait for the agent to resume the chat or take alternative actions based on the AI Agent's configuration. |
+| LiveChatExpectedWaitTimeInQueue | This message informs the client of their current position in the waiting queue and provides an estimated wait time in seconds. It is sent during the waiting period while the client is in the queue for a live chat session. The message is dynamically updated based on the client’s queue position and estimated wait time. |
+| LiveChatFileSizeTooLarge | This message is displayed when a client attempts to upload a file that exceeds the maximum allowed size. |
+| LiveChatNewLeadAgent | This is the default message sent when one of the engaged agents is designated as the lead agent—applies to Oracle Contact Center and other third-party providers. |
+| LiveChatPauseKeyword | This is not a special message but a keyword recognized by the DRUID conversational engine. It is used when an agent needs to pause a live chat session. The Pause command cancels the live chat timeout temporarily and remains in effect until the agent sends a new message in the chat. |
+| LiveChatQueueWaitingTimeout | This message is sent when the client has been waiting in the queue for longer than the configured LiveChatQueueWaitingTimeoutMins value. It notifies the user that all agents are currently busy and suggests alternative ways to contact support. |
+| LiveChatWaitForAvailableAgent | This is the default message sent to clients when they enter the waiting queue for a live chat session, unless a different message is configured in the 'Live chat client waiting in queue flow'. If the client chooses to wait, they remain in the queue and may later receive the LiveChatExpectedWaitTimeInQueue message with their queue position and estimated wait time. If they decline, the chat session is ended. |
+
+## Related Topics
+
+- [Configuring AI Agent Advanced Settings](../2_AI%20Agents/Configuring%20AI%20Agent%20Advanced%20Settings.md)
+- [Inactivity Cancel Conversation Flow](../4_Flows/InactivityCancelConversationFlow.md)
+- [Special Flows](../4_Flows/Special%20Flows.md)

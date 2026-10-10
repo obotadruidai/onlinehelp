@@ -3,16 +3,15 @@ site:
   title: Druid AI Docs
   structure:
     - type: section
-      key: section-2
-      title: Documentation
-      path: documentation
-      icon: book-blank
+      key: section-6
+      title: Imported content
+      path: imported-content
       default: true
       children:
         - type: space
-          key: space-2
-          title: Documentation
-          path: documentation
+          key: space-6
+          title: Imported content
+          path: imported-content
           default: true
           content:
-            directory: ./documentation
+            directory: ./imported-content
