@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="SettingUptheWebChatinHTMLPage"></a>
 
 # Setting Up the Web Chat in HTML Page

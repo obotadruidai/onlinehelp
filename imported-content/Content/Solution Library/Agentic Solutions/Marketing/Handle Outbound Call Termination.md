@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="HandleOutboundCallTermination"></a>
 
 # Handle Outbound Call Termination

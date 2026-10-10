@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="HandlingInputMappingExceptions"></a>
 
 # Handling Input Mapping Exceptions

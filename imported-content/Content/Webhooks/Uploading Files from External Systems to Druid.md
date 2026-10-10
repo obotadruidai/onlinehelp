@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="UploadingFilesfromExternalSystemstoDruid"></a>
 
 # Uploading Files from External Systems to Druid

@@ -194,6 +194,7 @@ class ConvertTests(unittest.TestCase):
         self.assertIn("```", page)
         self.assertIn("[[Intent]].Match", page)
         self.assertIn('description: "Flow engine actions."', page)
+        self.assertIn("visible: false", page)
 
 
 if __name__ == "__main__":

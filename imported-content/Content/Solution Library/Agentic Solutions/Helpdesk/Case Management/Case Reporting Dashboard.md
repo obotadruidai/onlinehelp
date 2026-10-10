@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="CaseReportingDashboard"></a>
 
 # Case Reporting Dashboard

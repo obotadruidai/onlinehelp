@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="MultichatforHelpdeskAgents"></a>
 
 # Multichat for Helpdesk Agents

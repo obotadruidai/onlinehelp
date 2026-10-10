@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="ListFileswiththeDruidConnectorHost"></a>
 
 # List Files with the Druid Connector Host

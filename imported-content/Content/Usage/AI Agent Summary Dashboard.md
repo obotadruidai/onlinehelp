@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="AIAgentSummaryDashboard"></a>
 
 # AI Agent Summary Dashboard

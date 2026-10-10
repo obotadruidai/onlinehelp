@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="SQLConnector"></a>
 
 # SQL Connector

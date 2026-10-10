@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="EnergyandGasPackedFullSolution"></a>
 
 # Energy and Gas, Packed Full Solution

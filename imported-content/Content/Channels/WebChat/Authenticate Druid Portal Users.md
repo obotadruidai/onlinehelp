@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="AuthenticateDruidPortalUsers"></a>
 
 # Authenticate Druid Portal Users

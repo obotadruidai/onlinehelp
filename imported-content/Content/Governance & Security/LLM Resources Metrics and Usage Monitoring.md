@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="LLMResourcesMetricsandUsageMonitoring"></a>
 
 # LLM Resources Metrics and Usage Monitoring

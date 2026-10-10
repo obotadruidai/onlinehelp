@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="DefiningConnectionStringsApps"></a>
 
 # Defining Connection Strings (Apps)

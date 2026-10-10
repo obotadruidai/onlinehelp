@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="CustomizingHeroCardButtonsforViberChannel"></a>
 
 # Customizing Hero Card Buttons for Viber Channel

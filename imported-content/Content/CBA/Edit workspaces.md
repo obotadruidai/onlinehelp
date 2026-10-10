@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="EditWorkspaces"></a>
 
 # Edit Workspaces

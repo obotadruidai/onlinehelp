@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="VonageSMS"></a>
 
 # Vonage SMS

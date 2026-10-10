@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="HindiStopWords"></a>
 
 # Hindi Stop Words

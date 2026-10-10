@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="JWTAssertionAuthenticationExamplesviaCustomCode"></a>
 
 # JWT Assertion Authentication Examples via Custom Code

@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="MonitorCampaignPerformance"></a>
 
 # Monitor Campaign Performance

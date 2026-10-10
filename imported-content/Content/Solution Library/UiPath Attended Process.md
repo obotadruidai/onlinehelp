@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="UiPathAttendedProcess"></a>
 
 # UiPath Attended Process

@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="ExtensiveSensitiveDataManipulation"></a>
 
 # Extensive Sensitive Data Manipulation

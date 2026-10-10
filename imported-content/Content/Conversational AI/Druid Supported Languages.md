@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="DruidSupportedLanguages"></a>
 
 # Druid Supported Languages

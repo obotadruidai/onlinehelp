@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="Druid913"></a>
 
 # Druid 9.13

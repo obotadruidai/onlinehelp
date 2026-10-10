@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="ProductrecommendationwithGPTAzureReAct"></a>
 
 # Product recommendation with GPT-Azure (ReAct)

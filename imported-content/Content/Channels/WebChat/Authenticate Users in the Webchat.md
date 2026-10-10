@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="AuthenticateUsersintheDruidWebchat"></a>
 
 # Authenticate Users in the Druid Webchat

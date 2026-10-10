@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="Step4Callactiononthedesiredflowstep"></a>
 
 # Step 4. Call action on the desired flow step

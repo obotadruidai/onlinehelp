@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="DRUID89"></a>
 
 # DRUID 8.9

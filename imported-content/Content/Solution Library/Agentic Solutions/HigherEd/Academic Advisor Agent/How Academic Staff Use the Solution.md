@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="HowAcademicStaffUsetheSolution"></a>
 
 # How Academic Staff Use the Solution

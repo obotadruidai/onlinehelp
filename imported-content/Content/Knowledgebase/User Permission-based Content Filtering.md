@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="UserPermissionbasedContentFiltering"></a>
 
 # User Permission-based Content Filtering

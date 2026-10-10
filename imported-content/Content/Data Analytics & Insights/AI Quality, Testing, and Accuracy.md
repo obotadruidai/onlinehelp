@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="AIQualityTestingandAccuracy"></a>
 
 # AI Quality, Testing, and Accuracy

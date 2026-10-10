@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="ReviewandImproveExtractedParagraphs"></a>
 
 # Review and Improve Extracted Paragraphs

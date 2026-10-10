@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="AcademicAdvisorAgent"></a>
 
 # Academic Advisor Agent

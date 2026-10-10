@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="DruidExternalLiveChat"></a>
 
 # Druid External Live Chat

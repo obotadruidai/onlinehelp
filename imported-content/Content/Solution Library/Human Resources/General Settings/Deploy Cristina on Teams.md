@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="DeployCristinaonTeams"></a>
 
 # Deploy Cristina on Teams

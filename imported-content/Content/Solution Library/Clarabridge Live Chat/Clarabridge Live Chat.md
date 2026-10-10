@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="ClarabridgeLiveChat"></a>
 
 # Clarabridge Live Chat

@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="TransferringComplexDataTypethroughtheStartAttendedJobIntegration"></a>
 
 # Transferring Complex Data Type through the Start Attended Job Integration

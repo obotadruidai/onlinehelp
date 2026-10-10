@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="DruidHostedFullCloud"></a>
 
 # Druid-Hosted Full Cloud

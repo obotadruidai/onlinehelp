@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="ManipulateDataWithoutDRUIDEntityStructures"></a>
 
 # Manipulate Data Without DRUID Entity Structures

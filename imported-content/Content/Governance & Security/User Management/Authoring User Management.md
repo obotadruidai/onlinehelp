@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="AuthoringUserManagement"></a>
 
 # Authoring User Management

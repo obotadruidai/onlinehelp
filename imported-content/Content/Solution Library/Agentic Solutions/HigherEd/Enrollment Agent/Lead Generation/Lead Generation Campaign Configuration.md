@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="LeadGenerationCampaignConfiguration"></a>
 
 # Lead Generation Campaign Configuration

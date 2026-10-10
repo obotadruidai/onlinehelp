@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="WebChatCommonStylingandBehaviorBotframeworkv3"></a>
 
 # WebChat Common Styling and Behavior (Bot framework v3)

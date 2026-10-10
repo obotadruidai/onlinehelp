@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="PromissoryNotesOCR"></a>
 
 # Promissory Notes OCR

@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="MSTeamsAuthentication"></a>
 
 # MS Teams Authentication

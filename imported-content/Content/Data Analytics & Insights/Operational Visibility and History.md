@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="OperationalVisibilityandHistory"></a>
 
 # Operational Visibility and History

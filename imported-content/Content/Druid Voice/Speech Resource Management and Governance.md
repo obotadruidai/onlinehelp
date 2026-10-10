@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="SpeechResourceManagementandGovernance"></a>
 
 # Speech Resource Management and Governance

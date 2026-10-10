@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="CreateSMSCampaigns"></a>
 
 # Create SMS Campaigns

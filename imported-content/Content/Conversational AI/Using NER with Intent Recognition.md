@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="UsingNERwithIntentRecognition"></a>
 
 # Using NER with Intent Recognition

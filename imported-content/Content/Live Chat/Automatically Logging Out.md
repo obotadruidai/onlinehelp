@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="AutomaticallyLoggingOutHelpdeskAgents"></a>
 
 # Automatically Logging Out Helpdesk Agents

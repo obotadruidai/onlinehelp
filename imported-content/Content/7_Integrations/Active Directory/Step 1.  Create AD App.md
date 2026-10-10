@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="Step1CreateADApp"></a>
 
 # Step 1. Create AD App

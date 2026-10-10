@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="Step3SetupOrchestratorVictorAdvancedProcessDataService"></a>
 
 # Step 3: Set up Orchestrator Victor\_Advanced Process\_Data Service

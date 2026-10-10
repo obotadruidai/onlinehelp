@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="GoogleDriveDataSources"></a>
 
 # Google Drive Data Sources

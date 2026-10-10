@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="EnforceDruidPortalAccessviaIPWhitelisting"></a>
 
 # Enforce Druid Portal Access via IP Whitelisting

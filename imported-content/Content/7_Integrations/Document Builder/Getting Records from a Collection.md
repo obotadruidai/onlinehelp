@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="GettingRecordsfromaCollectiontable"></a>
 
 # Getting Records from a Collection (table)

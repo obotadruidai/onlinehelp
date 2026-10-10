@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="TrainingtheEntitiesandtheAIAgent"></a>
 
 # Training the Entities and the AI Agent

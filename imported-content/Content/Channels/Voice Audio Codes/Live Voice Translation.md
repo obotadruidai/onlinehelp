@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="LiveVoiceTranslation"></a>
 
 # Live Voice Translation

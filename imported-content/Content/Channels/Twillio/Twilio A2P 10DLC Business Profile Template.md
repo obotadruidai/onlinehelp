@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="TwilioA2P10DLCBusinessProfileTemplate"></a>
 
 # Twilio A2P 10DLC Business Profile Template

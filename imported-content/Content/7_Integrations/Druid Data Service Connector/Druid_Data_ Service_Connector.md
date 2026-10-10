@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="DruidDataServiceConnector"></a>
 
 # Druid Data Service Connector

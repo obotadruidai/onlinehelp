@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="TTSandSTTVendors"></a>
 
 # TTS and STT Vendors

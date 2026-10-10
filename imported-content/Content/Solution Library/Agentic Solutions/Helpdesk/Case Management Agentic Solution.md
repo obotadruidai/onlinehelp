@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="CaseManagementAgenticSolution"></a>
 
 # Case Management Agentic Solution

@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="AgentCourseScheduling"></a>
 
 # Agent Course Scheduling

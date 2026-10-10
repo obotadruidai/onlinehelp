@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="ViewingConversationHistory"></a>
 
 # <a id="_Viewing_and_Annotating"></a><a id="_Viewing_Conversation_History"></a>Viewing Conversation History

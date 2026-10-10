@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="UiPathStartMyDay"></a>
 
 # UiPath Start My Day

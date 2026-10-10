@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="DefineViewProperties"></a>
 
 # Define View Properties

@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="AutomaticallyAllocatingClientstoAgents"></a>
 
 # Automatically Allocating Clients to Agents

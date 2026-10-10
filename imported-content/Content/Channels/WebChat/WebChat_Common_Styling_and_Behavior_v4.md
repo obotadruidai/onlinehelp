@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="WebChatCommonStylingandBehavior"></a>
 
 # WebChat Common Styling and Behavior

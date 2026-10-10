@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="DruidAIPlatformServicesandIPs"></a>
 
 # Druid AI Platform Services and IPs

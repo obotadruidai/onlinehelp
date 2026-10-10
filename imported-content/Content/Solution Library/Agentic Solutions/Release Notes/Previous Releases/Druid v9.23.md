@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="Druidv923"></a>
 
 # Druid v9.23

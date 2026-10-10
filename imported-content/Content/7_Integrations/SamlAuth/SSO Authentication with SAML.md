@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="SSOAuthenticationwithSAML"></a>
 
 # SSO Authentication with SAML

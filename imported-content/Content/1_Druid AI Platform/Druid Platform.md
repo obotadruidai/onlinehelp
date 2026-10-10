@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="DruidAIPlatform"></a>
 
 # Druid AI Platform

@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="CustomizingtheWhatsAppOptionsInteractiveButton"></a>
 
 # Customizing the WhatsApp "Options" Interactive Button

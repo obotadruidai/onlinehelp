@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="EstonianStopWords"></a>
 
 # Estonian Stop Words

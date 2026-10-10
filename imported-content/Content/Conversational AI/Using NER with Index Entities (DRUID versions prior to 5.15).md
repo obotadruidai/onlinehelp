@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="UsingNERwithIndexEntitiesDRUIDversionspriorto515"></a>
 
 # Using NER with Index Entities (DRUID versions prior to 5.15)

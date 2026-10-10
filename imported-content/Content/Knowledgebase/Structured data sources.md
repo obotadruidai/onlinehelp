@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="StructuredDataSources"></a>
 
 # Structured Data Sources

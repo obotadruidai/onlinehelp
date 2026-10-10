@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="HandlingLiveChatonAgentSide"></a>
 
 # Handling Live Chat on Agent Side

@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="TamilStopWords"></a>
 
 # Tamil Stop Words

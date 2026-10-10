@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="RomanianIdentityCardsOCR"></a>
 
 # Romanian Identity Cards OCR

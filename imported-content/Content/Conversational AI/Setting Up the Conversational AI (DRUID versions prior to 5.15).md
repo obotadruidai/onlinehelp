@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="SettingUptheAIAgentConversationalAIDRUIDversionspriorto515"></a>
 
 # Setting Up the AI Agent Conversational AI (DRUID versions prior to 5.15)

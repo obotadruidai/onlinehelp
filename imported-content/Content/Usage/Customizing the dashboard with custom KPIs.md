@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="CustomizingthedashboardwithcustomKPIs"></a>
 
 # Customizing the dashboard with custom KPIs

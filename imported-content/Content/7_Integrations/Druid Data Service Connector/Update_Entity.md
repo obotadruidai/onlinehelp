@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="UpdateEntity"></a>
 
 # Update Entity

@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="UiPathDataServiceConnector"></a>
 
 # UiPath Data Service Connector

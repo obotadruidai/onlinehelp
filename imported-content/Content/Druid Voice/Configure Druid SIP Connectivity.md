@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="ConfigureDruidSIPConnectivity"></a>
 
 # Configure Druid SIP Connectivity

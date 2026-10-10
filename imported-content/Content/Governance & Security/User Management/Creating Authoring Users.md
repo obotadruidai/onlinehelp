@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="CreatingAuthoringUsersPortalUsers"></a>
 
 # Creating Authoring Users (Portal Users)

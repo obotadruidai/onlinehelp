@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="Step1CreateSOAPApp"></a>
 
 # Step 1.  Create SOAP App

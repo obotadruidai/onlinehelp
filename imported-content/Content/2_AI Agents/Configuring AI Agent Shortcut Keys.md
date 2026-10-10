@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="ConfiguringAIAgentShortcutKeys"></a>
 
 # Configuring AI Agent Shortcut Keys

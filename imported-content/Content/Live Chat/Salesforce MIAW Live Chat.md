@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="SalesforceMIAWLiveChat"></a>
 
 # Salesforce MIAW Live Chat

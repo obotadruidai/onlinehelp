@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="EmployeeUpdatePersonalData"></a>
 
 # Employee Update Personal Data

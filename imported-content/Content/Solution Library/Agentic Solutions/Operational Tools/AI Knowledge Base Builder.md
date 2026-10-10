@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="AIKnowledgeBaseBuilder"></a>
 
 # AI Knowledge Base Builder

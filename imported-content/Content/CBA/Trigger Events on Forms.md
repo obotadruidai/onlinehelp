@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="TriggerEventsonForms"></a>
 
 # Trigger Events on Forms

@@ -700,9 +700,13 @@ def compose_page(markdown: str, title: str, description: str) -> str:
     body = markdown.lstrip()
     if not re.search(r"(?m)^#\s+\S", body):
         body = f"# {title}\n\n{body}"
+    # GitBook already shows the page title. Hide that chrome so the heading in the body is the only one.
+    lines = ["---", "layout:", "  title:", "    visible: false"]
     if description:
         escaped = description.replace("\\", "\\\\").replace('"', '\\"')
-        body = f'---\ndescription: "{escaped}"\n---\n\n{body}'
+        lines.append(f'description: "{escaped}"')
+    lines.append("---")
+    body = "\n".join(lines) + "\n\n" + body
     if not body.endswith("\n"):
         body += "\n"
     return body

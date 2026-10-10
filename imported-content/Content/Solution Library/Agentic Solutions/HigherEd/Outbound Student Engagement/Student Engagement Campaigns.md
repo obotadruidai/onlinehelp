@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="StudentEngagementCampaigns"></a>
 
 # Student Engagement Campaigns

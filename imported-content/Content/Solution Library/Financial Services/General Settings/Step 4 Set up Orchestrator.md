@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="Step4SetupOrchestratorVictorAdvancedProcessActionCenter"></a>
 
 # Step 4: Set up Orchestrator Victor\_Advanced Process\_Action Center

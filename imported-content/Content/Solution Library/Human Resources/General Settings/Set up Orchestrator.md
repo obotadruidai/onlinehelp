@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="SetupUiPathDataServiceProcess"></a>
 
 # Set up UiPath Data Service Process

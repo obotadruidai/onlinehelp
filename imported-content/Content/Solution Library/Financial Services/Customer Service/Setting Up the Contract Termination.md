@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="SettingUptheContractTerminationUiPathAttendedProcess"></a>
 
 # Setting Up the Contract Termination UiPath Attended Process

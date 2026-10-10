@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="DruidConnectorHostHighAvailability"></a>
 
 # Druid Connector Host High Availability

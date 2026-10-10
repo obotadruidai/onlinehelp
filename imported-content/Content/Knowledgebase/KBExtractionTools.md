@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="KBExtractionTools"></a>
 
 # KB Extraction Tools

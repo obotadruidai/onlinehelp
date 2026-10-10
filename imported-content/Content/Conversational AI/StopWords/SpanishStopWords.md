@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="SpanishStopWords"></a>
 
 # Spanish Stop Words

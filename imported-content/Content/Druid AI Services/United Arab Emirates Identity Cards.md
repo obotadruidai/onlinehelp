@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="UnitedArabEmiratesIdentityCards"></a>
 
 # United Arab Emirates Identity Cards

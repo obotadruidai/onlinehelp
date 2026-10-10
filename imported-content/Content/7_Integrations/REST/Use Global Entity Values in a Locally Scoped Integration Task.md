@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="UseGlobalEntityValuesinaLocallyScopedIntegrationTask"></a>
 
 # Use Global Entity Values in a Locally Scoped Integration Task

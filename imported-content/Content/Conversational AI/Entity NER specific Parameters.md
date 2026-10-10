@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="EntityNERspecificParameters"></a>
 
 # Entity NER-specific Parameters

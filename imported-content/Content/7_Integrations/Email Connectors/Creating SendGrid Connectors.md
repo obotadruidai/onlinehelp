@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="CreatingSendGridConnectors"></a>
 
 # Creating SendGrid Connectors

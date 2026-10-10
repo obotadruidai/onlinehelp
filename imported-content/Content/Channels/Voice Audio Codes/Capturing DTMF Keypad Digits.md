@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="CapturingDTMFKeypadDigits"></a>
 
 # Capturing DTMF Keypad Digits

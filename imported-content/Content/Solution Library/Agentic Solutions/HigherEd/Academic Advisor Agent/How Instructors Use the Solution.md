@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="HowInstructorsUsetheSolution"></a>
 
 # How Instructors Use the Solution

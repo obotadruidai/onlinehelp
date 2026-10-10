@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="EvaluateWordsUsedinMultipleIntents"></a>
 
 # Evaluate Words Used in Multiple Intents

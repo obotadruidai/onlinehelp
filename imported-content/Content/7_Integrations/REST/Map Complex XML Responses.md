@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="MapComplexXMLResponses"></a>
 
 # Map Complex XML Responses

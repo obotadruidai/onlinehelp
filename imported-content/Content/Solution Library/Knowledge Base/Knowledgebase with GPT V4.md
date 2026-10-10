@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="KnowledgebasewithGPTV4"></a>
 
 # Knowledgebase with GPT V4

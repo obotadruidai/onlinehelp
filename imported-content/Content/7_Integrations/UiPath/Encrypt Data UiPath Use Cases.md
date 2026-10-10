@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="EncryptDataUiPathUseCases"></a>
 
 # Encrypt Data - UiPath Use Cases

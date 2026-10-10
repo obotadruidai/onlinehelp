@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="GenerateZUGFeRDXML"></a>
 
 # Generate ZUGFeRD XML

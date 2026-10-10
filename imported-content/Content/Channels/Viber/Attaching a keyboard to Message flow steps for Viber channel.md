@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="AttachingakeyboardtoMessageStepsforViberChannel"></a>
 
 # Attaching a keyboard to Message Steps for Viber Channel

@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="BasqueStopWords"></a>
 
 # Basque Stop Words

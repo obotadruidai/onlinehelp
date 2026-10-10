@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="HelpdeskFAQ"></a>
 
 # Helpdesk, FAQ

@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="DruidConnectorHost"></a>
 
 # Druid Connector Host

@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="ConvertPDFPagetoJPEG"></a>
 
 # Convert PDF Page to JPEG

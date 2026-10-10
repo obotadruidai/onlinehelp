@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="DataModelandWorkspaceReferences"></a>
 
 # Data Model and Workspace References

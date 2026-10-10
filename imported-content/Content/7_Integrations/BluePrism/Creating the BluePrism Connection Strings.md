@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="CreatingtheBluePrismConnectionStrings"></a>
 
 # Creating the BluePrism Connection Strings

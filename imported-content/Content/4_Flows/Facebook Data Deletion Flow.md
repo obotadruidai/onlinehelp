@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="FacebookDataDeletionFlow"></a>
 
 # Facebook Data Deletion Flow

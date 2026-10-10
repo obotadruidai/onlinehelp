@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="ExchangingDatawithExternalSystems"></a>
 
 # Exchanging Data with External Systems

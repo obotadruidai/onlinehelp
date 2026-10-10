@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="PostponeBankingInstallments"></a>
 
 # Postpone Banking Installments

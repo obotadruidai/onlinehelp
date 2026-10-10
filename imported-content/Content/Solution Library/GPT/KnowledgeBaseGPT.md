@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="KnowledgeBasewithChatGPT"></a>
 
 # Knowledge Base with ChatGPT

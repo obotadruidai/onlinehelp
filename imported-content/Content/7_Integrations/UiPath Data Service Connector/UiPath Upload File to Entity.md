@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="UiPathUploadFiletoEntity"></a>
 
 # UiPath Upload File to Entity

@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="ReadExcelFile"></a>
 
 # Read Excel File

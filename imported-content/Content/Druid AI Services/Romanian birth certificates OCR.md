@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="RomanianBirthCertificates"></a>
 
 # Romanian Birth Certificates

@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="QnASetFormat"></a>
 
 # QnA Set Format

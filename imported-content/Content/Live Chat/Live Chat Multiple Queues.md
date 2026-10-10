@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="LiveChatWithMultipleQueues"></a>
 
 # Live Chat With Multiple Queues

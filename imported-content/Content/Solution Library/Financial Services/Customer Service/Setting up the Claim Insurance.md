@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="SettingUptheClaimInsuranceUiPathProcess"></a>
 
 # Setting Up the Claim Insurance UiPath Process

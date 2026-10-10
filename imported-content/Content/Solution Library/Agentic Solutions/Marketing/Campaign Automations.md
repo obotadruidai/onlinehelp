@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="CampaignAutomations"></a>
 
 # Campaign Automations

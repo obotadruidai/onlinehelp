@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="SlovenianStopWords"></a>
 
 # Slovenian Stop Words

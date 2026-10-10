@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="RealtimeMachineTranslationinLiveChat"></a>
 
 # Real-time Machine Translation in Live Chat

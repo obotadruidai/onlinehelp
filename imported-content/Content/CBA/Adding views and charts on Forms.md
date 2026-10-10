@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="AddViewsandChartstoFormsUsingSubGrids"></a>
 
 # Add Views and Charts to Forms Using Sub-Grids

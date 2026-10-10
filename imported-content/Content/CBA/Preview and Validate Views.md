@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="PreviewandValidateViews"></a>
 
 # Preview and Validate Views

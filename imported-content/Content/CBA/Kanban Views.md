@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="KanbanViews"></a>
 
 # Kanban Views

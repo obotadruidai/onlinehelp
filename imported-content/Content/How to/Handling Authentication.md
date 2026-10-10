@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="HandlingAuthentication"></a>
 
 # Handling Authentication

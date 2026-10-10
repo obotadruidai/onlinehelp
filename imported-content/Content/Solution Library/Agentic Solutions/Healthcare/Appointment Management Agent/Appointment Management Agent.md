@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="AppointmentManagementAgent"></a>
 
 # Appointment Management Agent

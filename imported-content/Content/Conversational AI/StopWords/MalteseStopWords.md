@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="MalteseStopWords"></a>
 
 # Maltese Stop Words

@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="PatientEngagementCampaigns"></a>
 
 # Patient Engagement Campaigns

@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="GenerateDocumentsusingDocumentTemplates"></a>
 
 # Generate Documents using Document Templates

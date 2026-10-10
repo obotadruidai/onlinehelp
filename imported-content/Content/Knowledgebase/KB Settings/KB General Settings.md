@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="KBGeneralSettings"></a>
 
 # KB General Settings

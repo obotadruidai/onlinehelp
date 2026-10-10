@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="RomanianVehicleIdentityCard"></a>
 
 # Romanian Vehicle Identity Card

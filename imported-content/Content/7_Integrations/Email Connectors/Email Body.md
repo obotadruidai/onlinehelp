@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="EmailBody"></a>
 
 # <a id="_Email_Body"></a>Email Body

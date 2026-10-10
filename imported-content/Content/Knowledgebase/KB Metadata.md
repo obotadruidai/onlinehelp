@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="EnhanceKBAnswerswithKBMetadata"></a>
 
 # Enhance KB Answers with KB Metadata

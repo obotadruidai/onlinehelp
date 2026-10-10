@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="ReviewIntegrationChanges"></a>
 
 # Review Integration Changes

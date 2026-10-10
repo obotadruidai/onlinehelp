@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="SettingUpAICenter"></a>
 
 # Setting Up AI Center

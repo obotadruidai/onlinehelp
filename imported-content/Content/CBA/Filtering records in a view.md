@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="Filteringrecordsinaview"></a>
 
 # Filtering records in a view

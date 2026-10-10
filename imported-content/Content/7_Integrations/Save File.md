@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="SaveFileswiththeDruidConnectorHost"></a>
 
 # Save Files with the Druid Connector Host

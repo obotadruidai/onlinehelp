@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="PatientBillingAgent"></a>
 
 # Patient Billing Agent

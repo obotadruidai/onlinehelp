@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="SerbianCyrillicStopWords"></a>
 
 # Serbian (Cyrillic) Stop Words

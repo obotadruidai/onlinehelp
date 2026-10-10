@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="RomanianLivingPermitOCR"></a>
 
 # Romanian Living Permit OCR

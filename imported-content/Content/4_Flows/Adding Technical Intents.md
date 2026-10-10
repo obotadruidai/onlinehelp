@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="AddingTechnicalIntents"></a>
 
 # Adding Technical Intents

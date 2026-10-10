@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="ImportandSetUptheSolution"></a>
 
 # Import and Set Up the Solution

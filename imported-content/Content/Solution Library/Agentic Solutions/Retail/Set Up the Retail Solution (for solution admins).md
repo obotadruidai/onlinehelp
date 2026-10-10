@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="SetUptheRetailSolutionforsolutionadmins"></a>
 
 # Set Up the Retail Solution (for solution admins)

@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="LLMResourceManagementandGovernance"></a>
 
 # LLM Resource Management and Governance

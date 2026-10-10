@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="DataSourceCreation"></a>
 
 # Data Source Creation

@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="BackchannelEventBotFrameworkv4"></a>
 
 # Backchannel Event (Bot Framework v4)

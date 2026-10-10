@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="ExpenseBookingwithOCR"></a>
 
 # Expense Booking with OCR

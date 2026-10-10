@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="NamedEntityRecognitionNER"></a>
 
 # Named Entity Recognition (NER)

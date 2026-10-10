@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="ConfiguringOAuthv2Authorization"></a>
 
 # Configuring OAuth v2 Authorization

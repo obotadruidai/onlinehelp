@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="Step3AddIntegrationTasksforDocumentsGeneration"></a>
 
 # Step 3. Add Integration Tasks for Documents Generation

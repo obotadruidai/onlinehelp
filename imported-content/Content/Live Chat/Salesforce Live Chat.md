@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="SalesforceLiveChat"></a>
 
 # Salesforce Live Chat

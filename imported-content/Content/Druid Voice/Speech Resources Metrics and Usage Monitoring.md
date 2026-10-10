@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="SpeechResourcesMetricsandUsageMonitoring"></a>
 
 # Speech Resources Metrics and Usage Monitoring

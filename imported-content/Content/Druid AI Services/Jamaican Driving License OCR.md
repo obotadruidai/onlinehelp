@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="JamaicanDriverLicenseOCR"></a>
 
 # Jamaican Driver License OCR

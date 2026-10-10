@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="DruidAIReleases"></a>
 
 # Druid AI Releases

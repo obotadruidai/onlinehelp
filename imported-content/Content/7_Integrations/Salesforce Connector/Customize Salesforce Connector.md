@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="CustomizeSalesforceConnectorApp"></a>
 
 # Customize Salesforce Connector App

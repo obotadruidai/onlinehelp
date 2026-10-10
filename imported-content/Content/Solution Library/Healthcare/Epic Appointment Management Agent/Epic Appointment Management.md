@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 # Epic Appointment Management Agent
 
 <a id="EpicAppointmentManagementAgent"></a>

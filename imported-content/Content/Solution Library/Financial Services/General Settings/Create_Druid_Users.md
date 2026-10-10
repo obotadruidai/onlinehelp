@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="CreatingDruidUsersForFinancialServices"></a>
 
 # Creating Druid Users For Financial Services

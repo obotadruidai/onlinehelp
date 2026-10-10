@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="DefineFormProperties"></a>
 
 # Define Form Properties

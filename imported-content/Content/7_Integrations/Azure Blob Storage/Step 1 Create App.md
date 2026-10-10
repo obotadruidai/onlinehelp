@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="Step1CreateApp"></a>
 
 # Step 1. Create App

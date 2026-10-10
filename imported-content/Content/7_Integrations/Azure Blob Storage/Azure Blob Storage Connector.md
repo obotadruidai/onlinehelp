@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="AzureBlobStorageConnector"></a>
 
 # Azure Blob Storage Connector

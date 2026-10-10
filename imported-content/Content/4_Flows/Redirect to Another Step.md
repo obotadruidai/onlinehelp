@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="RedirecttoAnotherStep"></a>
 
 # Redirect to Another Step

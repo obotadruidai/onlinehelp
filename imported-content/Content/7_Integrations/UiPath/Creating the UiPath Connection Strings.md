@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="CreatingtheUiPathConnectionStrings"></a>
 
 # Creating the UiPath Connection Strings

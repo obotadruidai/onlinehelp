@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="AustraliaNewSouthWalesDrivingLicense"></a>
 
 # Australia New South Wales Driving License

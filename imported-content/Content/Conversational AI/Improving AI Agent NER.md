@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="ImprovingAIAgentNER"></a>
 
 # Improving AI Agent NER

@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="InactivityCancelConversationFlow"></a>
 
 # Inactivity Cancel Conversation Flow

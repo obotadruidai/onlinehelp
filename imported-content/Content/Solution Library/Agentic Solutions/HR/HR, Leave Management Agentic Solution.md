@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="HRLeaveManagementAgenticSolution"></a>
 
 # HR, Leave Management Agentic Solution

@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="InstallDruidConnectorHost"></a>
 
 # Install Druid Connector Host

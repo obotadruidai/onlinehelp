@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="MappingInputFieldsinUserExpressions"></a>
 
 # Mapping Input Fields in User Expressions

@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="CreatingWordDocumentTemplates"></a>
 
 # Creating Word Document Templates

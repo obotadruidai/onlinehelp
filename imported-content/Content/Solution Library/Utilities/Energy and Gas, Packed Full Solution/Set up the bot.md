@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="SettingUptheAIAgent"></a>
 
 # Setting Up the AI Agent

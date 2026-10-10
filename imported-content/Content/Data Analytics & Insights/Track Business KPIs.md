@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="TrackBusinessKPIs"></a>
 
 # Track Business KPIs

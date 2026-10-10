@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="EnableChatinForms"></a>
 
 # Enable Chat in Forms

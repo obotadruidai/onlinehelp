@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="UsingFlexMessagesforLINEChannel"></a>
 
 # Using Flex Messages for LINE Channel

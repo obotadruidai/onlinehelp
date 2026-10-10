@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="RomanianStopWords"></a>
 
 # Romanian Stop Words

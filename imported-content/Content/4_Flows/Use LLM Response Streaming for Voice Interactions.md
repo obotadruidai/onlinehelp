@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="UseLLMResponseStreamingforVoiceInteractions"></a>
 
 # Use LLM Response Streaming for Voice Interactions

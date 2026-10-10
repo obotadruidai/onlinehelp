@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="Step4Publishtheintegrations"></a>
 
 # Step 4: Publish the integrations

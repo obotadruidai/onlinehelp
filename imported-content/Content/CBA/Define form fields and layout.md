@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="DefineFormFieldsandLayout"></a>
 
 # Define Form Fields and Layout

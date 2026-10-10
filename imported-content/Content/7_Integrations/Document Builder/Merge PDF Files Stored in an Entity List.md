@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="MergePDFFilesStoredinanEntityList"></a>
 
 # Merge PDF Files Stored in an Entity List

@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="EnhancingKBPredictions"></a>
 
 # Enhancing KB Predictions

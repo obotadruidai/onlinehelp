@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="MachineReadingZoneOCR"></a>
 
 # Machine Reading Zone OCR

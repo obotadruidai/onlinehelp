@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="Howtousethesolutionforusers"></a>
 
 # How to use the solution (for users)

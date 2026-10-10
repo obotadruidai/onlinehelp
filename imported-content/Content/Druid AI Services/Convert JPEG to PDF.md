@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="ConvertJPEGtoPDF"></a>
 
 # Convert JPEG to PDF

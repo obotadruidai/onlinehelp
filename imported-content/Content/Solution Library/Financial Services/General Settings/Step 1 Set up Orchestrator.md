@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="Step1SetupOrchestratorVictorAttendedNextBestDealProcess"></a>
 
 # Step 1: Set up Orchestrator Victor\_Attended Next Best Deal Process

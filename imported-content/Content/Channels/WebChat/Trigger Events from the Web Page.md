@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="TriggerEventsfromtheWebPageHostingtheAIAgent"></a>
 
 # Trigger Events from the Web Page Hosting the AI Agent

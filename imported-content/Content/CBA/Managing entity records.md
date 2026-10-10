@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="ManagingEntityRecords"></a>
 
 # Managing Entity Records

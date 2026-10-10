@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="UnderstandingAIAgentRoutingLogic"></a>
 
 # Understanding AI Agent Routing Logic

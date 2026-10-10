@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="AdvancedCallParametersandSessionEvents"></a>
 
 # Advanced Call Parameters and Session Events

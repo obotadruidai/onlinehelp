@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="AIAgentAuthoringPrivilegesviaRBACPolicy"></a>
 
 # AI Agent Authoring Privileges via RBAC Policy

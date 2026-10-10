@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="ConfigurationforSensitiveDataManipulation"></a>
 
 # Configuration for Sensitive Data Manipulation

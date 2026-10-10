@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="AmazonLiveChatIntegration"></a>
 
 # Amazon Live Chat Integration

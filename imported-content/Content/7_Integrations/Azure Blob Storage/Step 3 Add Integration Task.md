@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="Step3AddIntegrationTask"></a>
 
 # Step 3. Add Integration Task

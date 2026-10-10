@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="CiscoContactCenterExpressLiveChatIntegration"></a>
 
 # Cisco Contact Center Express Live Chat Integration

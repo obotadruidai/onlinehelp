@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="CreateSpecialViewsforFormsandCharts"></a>
 
 # Create Special Views for Forms and Charts

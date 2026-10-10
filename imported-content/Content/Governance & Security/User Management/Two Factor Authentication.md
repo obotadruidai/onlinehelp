@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="TwoFactorAuthenticationUsinganAuthenticatorApp"></a>
 
 # Two-Factor Authentication Using an Authenticator App

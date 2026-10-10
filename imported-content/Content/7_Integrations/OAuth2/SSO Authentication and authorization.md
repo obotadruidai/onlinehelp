@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="SSOAuthenticationOAuth20"></a>
 
 # SSO Authentication OAuth 2.0

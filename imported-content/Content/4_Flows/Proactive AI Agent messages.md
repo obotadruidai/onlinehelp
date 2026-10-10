@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="ProactiveAIAgentMessages"></a>
 
 # Proactive AI Agent Messages

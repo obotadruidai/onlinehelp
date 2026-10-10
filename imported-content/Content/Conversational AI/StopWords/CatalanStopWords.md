@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="CatalanStopWords"></a>
 
 # Catalan Stop Words

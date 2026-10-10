@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="DruidAIPlatformNetworkMatrix"></a>
 
 # Druid AI Platform Network Matrix

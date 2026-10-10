@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="AdvancedFeaturesandOptimization"></a>
 
 # Advanced Features and Optimization

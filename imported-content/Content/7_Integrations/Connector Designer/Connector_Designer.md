@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="ConnectorDesigner"></a>
 
 # Connector Designer

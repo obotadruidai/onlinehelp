@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="FileExtractors"></a>
 
 # File Extractors

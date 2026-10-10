@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="UsingConnectorLocalVariables"></a>
 
 # Using Connector Local Variables

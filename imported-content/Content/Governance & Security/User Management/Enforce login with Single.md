@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="EnforceLoginwithSingleSignOnforDruidPortaladmins"></a>
 
 # Enforce Login with Single Sign On (for Druid Portal admins)

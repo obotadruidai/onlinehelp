@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="AddQuickSearchtoTableViews"></a>
 
 # Add Quick Search to Table Views

@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="CroatianStopWords"></a>
 
 # Croatian Stop Words

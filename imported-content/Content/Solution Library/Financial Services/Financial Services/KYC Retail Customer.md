@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="KYCRetailCustomer"></a>
 
 # KYC Retail Customer

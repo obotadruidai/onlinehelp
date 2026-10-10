@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="HungarianStopWords"></a>
 
 # Hungarian Stop Words

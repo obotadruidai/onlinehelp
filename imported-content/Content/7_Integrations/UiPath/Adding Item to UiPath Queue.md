@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="AddingItemtoUiPathQueue"></a>
 
 # Adding Item to UiPath Queue

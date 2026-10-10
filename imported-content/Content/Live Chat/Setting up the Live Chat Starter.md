@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="SettingupLiveChat"></a>
 
 # Setting up Live Chat

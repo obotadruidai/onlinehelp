@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="SwedishStopWords"></a>
 
 # Swedish Stop Words

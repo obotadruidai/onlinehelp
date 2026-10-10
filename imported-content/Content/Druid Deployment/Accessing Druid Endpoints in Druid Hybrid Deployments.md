@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="AccessingDruidEndpointsinDruidHybridDeployments"></a>
 
 # Accessing Druid Endpoints in Druid Hybrid Deployments

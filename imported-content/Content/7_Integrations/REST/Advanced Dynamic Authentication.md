@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="AdvancedDynamicAuthentication"></a>
 
 # Advanced Dynamic Authentication

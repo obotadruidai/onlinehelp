@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="Setupthesolution"></a>
 
 # Set up the solution

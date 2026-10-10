@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="PortugueseStopWords"></a>
 
 # Portuguese Stop Words

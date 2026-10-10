@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="UpgradingSolutionTemplates"></a>
 
 # Upgrading Solution Templates

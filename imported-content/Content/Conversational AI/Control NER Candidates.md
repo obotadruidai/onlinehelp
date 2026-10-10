@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="ManipulatingNERCandidates"></a>
 
 # Manipulating NER Candidates

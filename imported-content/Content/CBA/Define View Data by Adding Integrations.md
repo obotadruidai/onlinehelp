@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="DefineViewDatabyAddingIntegrations"></a>
 
 # Define View Data by Adding Integrations

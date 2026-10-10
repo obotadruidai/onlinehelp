@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="RomanianCarRegistrationCertificatesOCR"></a>
 
 # Romanian Car Registration Certificates OCR

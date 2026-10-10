@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="StartDruidConversationsviaAPI"></a>
 
 # Start Druid Conversations via API

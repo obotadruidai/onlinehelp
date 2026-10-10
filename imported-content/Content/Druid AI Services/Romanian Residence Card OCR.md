@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="RomanianResidenceCardOCR"></a>
 
 # Romanian Residence Card OCR

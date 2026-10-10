@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="DefiningDetailedinformationtable"></a>
 
 # Defining Detailed information - table

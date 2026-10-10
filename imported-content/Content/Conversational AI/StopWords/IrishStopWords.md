@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="IrishStopWords"></a>
 
 # Irish Stop Words

@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="FAQCarRental"></a>
 
 # FAQ Car Rental

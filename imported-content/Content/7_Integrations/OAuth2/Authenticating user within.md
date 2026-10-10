@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="SigninginuserswithOAuthv2"></a>
 
 # Signing in users with OAuth v2

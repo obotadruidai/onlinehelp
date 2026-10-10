@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="EmailCaseHandlingAgenticSolution"></a>
 
 # Email Case Handling Agentic Solution

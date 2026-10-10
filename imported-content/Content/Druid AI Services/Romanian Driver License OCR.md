@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="RomanianDriverLicenseOCR"></a>
 
 # Romanian Driver License OCR

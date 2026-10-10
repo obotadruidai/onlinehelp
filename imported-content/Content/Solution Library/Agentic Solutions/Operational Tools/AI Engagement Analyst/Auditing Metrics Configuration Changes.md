@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="AuditingMetricsConfigurationChanges"></a>
 
 # Auditing Metrics Configuration Changes

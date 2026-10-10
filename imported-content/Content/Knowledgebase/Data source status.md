@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="DataSourceStatusandBulkActions"></a>
 
 # Data Source Status and Bulk Actions

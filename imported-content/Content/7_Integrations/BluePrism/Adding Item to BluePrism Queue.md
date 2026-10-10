@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="AddingItemtoBluePrismQueue"></a>
 
 # Adding Item to BluePrism Queue

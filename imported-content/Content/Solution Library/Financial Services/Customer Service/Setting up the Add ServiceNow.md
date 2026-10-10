@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="SettinguptheAddServiceNowTicketUiPathProcess"></a>
 
 # Setting up the Add ServiceNow Ticket UiPath Process

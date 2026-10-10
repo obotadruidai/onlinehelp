@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="ClientCertificateSecurity"></a>
 
 # Client Certificate Security

@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="SocialMediaReactionsFlow"></a>
 
 # Social Media Reactions Flow

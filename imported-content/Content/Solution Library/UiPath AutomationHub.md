@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="UiPathAutomationHubStarter"></a>
 
 # UiPath Automation Hub Starter

@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="ProvisioningPortalUsersandSingleSignOnAuthenticationviaOpenIDConnect"></a>
 
 # Provisioning Portal Users and Single Sign On Authentication via OpenID Connect

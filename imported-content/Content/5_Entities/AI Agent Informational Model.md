@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="AIAgentInformationalModel"></a>
 
 # AI Agent Informational Model

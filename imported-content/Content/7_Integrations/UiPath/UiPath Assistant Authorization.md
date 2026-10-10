@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="UiPathAssistantAuthorization"></a>
 
 # UiPath Assistant Authorization

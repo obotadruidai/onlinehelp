@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="Druid101Latest"></a>
 
 # Druid 10.1 - Latest

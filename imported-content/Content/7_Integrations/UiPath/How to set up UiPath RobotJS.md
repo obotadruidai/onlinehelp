@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="HowtoSetUpUiPathRobotJS"></a>
 
 # How to Set Up UiPath RobotJS

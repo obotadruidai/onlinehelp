@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="BestPracticesforLowVoiceLatency"></a>
 
 # Best Practices for Low Voice Latency

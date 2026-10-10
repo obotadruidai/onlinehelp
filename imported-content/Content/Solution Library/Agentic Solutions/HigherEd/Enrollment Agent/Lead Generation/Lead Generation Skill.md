@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="LeadGenerationSkill"></a>
 
 # Lead Generation Skill

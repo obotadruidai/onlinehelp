@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="ChangingtheAgentNameShownintheChat"></a>
 
 # Changing the Agent Name Shown in the Chat

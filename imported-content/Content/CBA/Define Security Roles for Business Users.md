@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="DefineSecurityRolesforBusinessUsers"></a>
 
 # Define Security Roles for Business Users

@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="LoadingUiPathEntitySchemaandMappingFields"></a>
 
 # Loading UiPath Entity Schema and Mapping Fields

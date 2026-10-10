@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="DefineFormDatabyAddingIntegrations"></a>
 
 # Define Form Data by Adding Integrations

@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="SunshineOldSunshineConversationsapps"></a>
 
 # Sunshine (Old Sunshine Conversations apps)

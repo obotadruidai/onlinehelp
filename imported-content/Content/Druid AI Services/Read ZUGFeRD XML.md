@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="ReadZUGFeRDXML"></a>
 
 # Read ZUGFeRD XML

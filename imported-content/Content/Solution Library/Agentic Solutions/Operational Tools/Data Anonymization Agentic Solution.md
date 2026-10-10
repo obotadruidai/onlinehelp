@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="DataAnonymizationAgenticSolution"></a>
 
 # Data Anonymization Agentic Solution

@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="SeeRetailBotinAction"></a>
 
 # See Retail Bot in Action

@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="GPTAgentTemplatev2"></a>
 
 # GPT Agent Template v2

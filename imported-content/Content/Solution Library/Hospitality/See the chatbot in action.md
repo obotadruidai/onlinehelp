@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="SeetheAIAgentinaction"></a>
 
 # See the AI Agent in action

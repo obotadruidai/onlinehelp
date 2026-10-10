@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="AdvancedSettingsJSON"></a>
 
 # Advanced Settings JSON

@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="CreateandDesignViews"></a>
 
 # Create and Design Views

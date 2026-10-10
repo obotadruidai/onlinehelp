@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="GeneratingInvoicesUsingExcelTemplates"></a>
 
 # Generating Invoices Using Excel Templates

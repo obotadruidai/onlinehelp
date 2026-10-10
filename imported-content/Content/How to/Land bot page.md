@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="IntegrateLandAIAgentPagewithTelephonySystems"></a>
 
 # Integrate Land AI Agent Page with Telephony Systems

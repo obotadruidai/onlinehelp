@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="DebuggingandUnderstandingContextualMeaningfromtheChat"></a>
 
 # Debugging and Understanding Contextual Meaning from the Chat

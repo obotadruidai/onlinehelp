@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="SendingEmailLinksintheChat"></a>
 
 # Sending Email Links in the Chat

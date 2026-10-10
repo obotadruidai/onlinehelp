@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="UiPathAddEntity"></a>
 
 # UiPath Add Entity

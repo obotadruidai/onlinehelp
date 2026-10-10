@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="OrderMedicationSkill"></a>
 
 # Order Medication Skill

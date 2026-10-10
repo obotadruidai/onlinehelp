@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="VietnameseStopWords"></a>
 
 # Vietnamese Stop Words

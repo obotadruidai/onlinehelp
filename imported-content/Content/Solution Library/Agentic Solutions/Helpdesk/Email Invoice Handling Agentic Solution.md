@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="EmailInvoiceHandlingAgenticSolution"></a>
 
 # Email Invoice Handling Agentic Solution

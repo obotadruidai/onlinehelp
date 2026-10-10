@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="UseCaseforusingFormDataRequestType"></a>
 
 # Use Case for using Form Data Request Type

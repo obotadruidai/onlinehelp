@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="GenerateDocumentsUsingDynamicTemplates"></a>
 
 # Generate Documents Using Dynamic Templates

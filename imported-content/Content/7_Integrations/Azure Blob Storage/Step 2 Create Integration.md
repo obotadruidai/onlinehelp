@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="Step2CreateIntegrationAction"></a>
 
 # Step 2. Create Integration Action

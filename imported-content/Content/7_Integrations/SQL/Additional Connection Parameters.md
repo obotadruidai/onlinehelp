@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="AdditionalConnectionParameters"></a>
 
 # Additional Connection Parameters

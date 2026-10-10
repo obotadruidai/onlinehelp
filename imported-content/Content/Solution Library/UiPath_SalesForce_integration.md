@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="UiPathSalesforceIntegration"></a>
 
 # UiPath Salesforce Integration

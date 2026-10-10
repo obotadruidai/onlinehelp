@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="AddingDescriptionforHeroCardButtons"></a>
 
 # Adding Description for Hero Card Buttons

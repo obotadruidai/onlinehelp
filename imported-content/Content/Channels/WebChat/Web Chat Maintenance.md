@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="WebChatMaintenance"></a>
 
 # Web Chat Maintenance

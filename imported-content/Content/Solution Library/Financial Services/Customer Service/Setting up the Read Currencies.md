@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="SettinguptheReadCurrenciesUiPathProcess"></a>
 
 # Setting up the Read Currencies UiPath Process

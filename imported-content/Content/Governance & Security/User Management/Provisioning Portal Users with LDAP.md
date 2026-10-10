@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="ProvisioningPortalUserswithActiveDirectoryviaLDAP"></a>
 
 # Provisioning Portal Users with Active Directory via LDAP

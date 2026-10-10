@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="UiPathQueryRelatedEntity"></a>
 
 # UiPath Query Related Entity

@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="BusinessAppsReleases"></a>
 
 # Business Apps Releases

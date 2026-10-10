@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="Step2Uploaddocument"></a>
 
 # Step 2. Upload document

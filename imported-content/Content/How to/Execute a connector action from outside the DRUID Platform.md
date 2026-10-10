@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="ExecutingConnectorActionsFromOutsidetheDRUIDPlatform"></a>
 
 # Executing Connector Actions From Outside the DRUID Platform

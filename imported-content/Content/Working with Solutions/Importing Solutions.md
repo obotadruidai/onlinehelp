@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="ImportSolutions"></a>
 
 # Import Solutions

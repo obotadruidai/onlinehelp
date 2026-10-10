@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="CaptureViberStickerID"></a>
 
 # Capture Viber Sticker ID

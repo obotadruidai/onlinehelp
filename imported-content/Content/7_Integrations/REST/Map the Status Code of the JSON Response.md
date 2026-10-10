@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="MaptheStatusCodeoftheJSONResponse"></a>
 
 # Map the Status Code of the JSON Response

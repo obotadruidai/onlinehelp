@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="microcontent1"></a>
 
 <a id="TransferringComplexDataTypethroughtheStartUnattendedJobIntegration"></a>

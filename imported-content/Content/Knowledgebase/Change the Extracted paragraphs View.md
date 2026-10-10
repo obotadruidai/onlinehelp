@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="ChangetheExtractedParagraphsView"></a>
 
 # Change the Extracted Paragraphs View

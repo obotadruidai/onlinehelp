@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="AgentAssistforHelpdeskAgents"></a>
 
 # Agent Assist for Helpdesk Agents

@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="UiPathDownloadFilefromEntity"></a>
 
 # UiPath Download File from Entity

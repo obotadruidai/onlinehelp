@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="StandardQueryDateFunctionsReference"></a>
 
 # Standard Query Date Functions Reference

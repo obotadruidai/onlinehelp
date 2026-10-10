@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="ConversationTimeTranslation"></a>
 
 # Conversation Time Translation

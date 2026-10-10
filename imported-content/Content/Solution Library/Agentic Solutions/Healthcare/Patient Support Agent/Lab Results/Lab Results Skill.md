@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="LabResultsSkill"></a>
 
 # Lab Results Skill

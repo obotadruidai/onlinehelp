@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="ChatandVoiceAssistedChatInteractions"></a>
 
 # Chat and Voice-Assisted Chat Interactions

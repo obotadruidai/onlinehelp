@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="ChineseTraditionalStopWords"></a>
 
 # Chinese (Traditional) Stop Words

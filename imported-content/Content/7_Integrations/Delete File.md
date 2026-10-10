@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="DeleteFileswiththeDruidConnectorHost"></a>
 
 # Delete Files with the Druid Connector Host

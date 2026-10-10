@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="AddingConditionalMergeStatementsintoTemplate"></a>
 
 # Adding Conditional Merge Statements into Template

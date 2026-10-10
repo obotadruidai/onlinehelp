@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="RecommendAutomationsonForms"></a>
 
 # Recommend Automations on Forms

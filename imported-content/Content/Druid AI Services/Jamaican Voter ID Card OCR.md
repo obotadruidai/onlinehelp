@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="JamaicanVoterIDCardOCR"></a>
 
 # Jamaican Voter ID Card OCR

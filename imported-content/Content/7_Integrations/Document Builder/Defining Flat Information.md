@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="DefiningFlatInformation"></a>
 
 # Defining Flat Information

@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="DashboardDrilldownViews"></a>
 
 # Dashboard Drill-down Views

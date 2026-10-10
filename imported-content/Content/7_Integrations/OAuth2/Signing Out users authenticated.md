@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="SigningOutusersauthenticatedusingOAuthv2"></a>
 
 # Signing Out users authenticated using OAuth v2

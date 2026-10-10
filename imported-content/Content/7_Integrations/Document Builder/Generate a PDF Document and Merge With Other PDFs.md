@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="GenerateaPDFDocumentandMergeitWithPDFsfromDRUIDStorage"></a>
 
 # Generate a PDF Document and Merge it With PDFs from DRUID Storage

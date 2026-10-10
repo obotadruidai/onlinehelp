@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="ConfiguringSpeechtoTextDataExtraction"></a>
 
 # Configuring Speech-to-Text Data Extraction

@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="AddingIntentVariations"></a>
 
 # Adding Intent Variations

@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="EpicAPIinventory"></a>
 
 # <a id="_Epic_API_inventory"></a>Epic API inventory

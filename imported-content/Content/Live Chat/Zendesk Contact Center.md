@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="ZendeskLiveChat"></a>
 
 # Zendesk Live Chat

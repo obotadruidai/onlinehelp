@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="DruidPortalCookiesPolicy"></a>
 
 # Druid Portal Cookies Policy

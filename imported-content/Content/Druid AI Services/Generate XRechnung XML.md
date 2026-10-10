@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="GenerateXRechnungXML"></a>
 
 # Generate XRechnung XML

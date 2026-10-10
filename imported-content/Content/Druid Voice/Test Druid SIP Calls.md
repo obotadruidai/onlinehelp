@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="TestDruidSIPCalls"></a>
 
 # Test Druid SIP Calls

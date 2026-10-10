@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="StandardAPIAuthentication"></a>
 
 # Standard API Authentication

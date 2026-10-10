@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="GenesysLiveChat"></a>
 
 # Genesys Live Chat

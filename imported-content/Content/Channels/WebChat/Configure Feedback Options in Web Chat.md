@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="FeedbackReactionsinWebChat"></a>
 
 # Feedback Reactions in Web Chat

@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="EnablingManagerstoDisconnectHelpdeskAgents"></a>
 
 # Enabling Managers to Disconnect Helpdesk Agents

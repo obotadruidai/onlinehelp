@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="ConfiguringtheSolutionTemplate"></a>
 
 # Configuring the Solution Template

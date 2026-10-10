@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="AuthenticateConversationswithSSOTeams"></a>
 
 # Authenticate Conversations with SSO Teams

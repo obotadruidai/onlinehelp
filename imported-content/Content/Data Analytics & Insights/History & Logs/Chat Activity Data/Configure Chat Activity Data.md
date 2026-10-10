@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="ConfigureChatActivityData"></a>
 
 # Configure Chat Activity Data

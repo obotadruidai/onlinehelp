@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="HowtoSetUptheUiPathIntegration"></a>
 
 # How to Set Up the UiPath Integration

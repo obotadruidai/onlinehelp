@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="UnstructuredDataSourceLogs"></a>
 
 # Unstructured Data Source Logs

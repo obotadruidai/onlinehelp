@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="FAQProcurementOperations"></a>
 
 # FAQ Procurement Operations

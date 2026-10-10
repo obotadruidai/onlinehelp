@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="MaptheJSONpayloadasJObjectorJArray"></a>
 
 # Map the JSON payload as JObject or JArray

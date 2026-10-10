@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="TalkdeskLiveChat"></a>
 
 # Talkdesk Live Chat

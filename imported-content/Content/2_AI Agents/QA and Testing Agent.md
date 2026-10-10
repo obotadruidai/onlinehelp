@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="QATestingAgent"></a>
 
 # QA Testing Agent

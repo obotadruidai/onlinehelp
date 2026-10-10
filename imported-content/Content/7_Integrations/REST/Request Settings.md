@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="RESTRequestSettings"></a>
 
 # REST Request Settings

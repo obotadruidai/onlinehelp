@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="EvaluateTrainPhrases"></a>
 
 # Evaluate Train Phrases

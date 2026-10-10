@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="WebChatStyles"></a>
 
 # Web Chat Styles

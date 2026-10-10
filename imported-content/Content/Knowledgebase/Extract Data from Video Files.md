@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="ExtractDatafromVideoFiles"></a>
 
 # Extract Data from Video Files

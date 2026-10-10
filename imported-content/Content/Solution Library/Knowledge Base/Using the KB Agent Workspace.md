@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="UsingtheKBAgentWorkspace"></a>
 
 # Using the KB Agent Workspace

@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="UiPathUpdateEntity"></a>
 
 # UiPath Update Entity

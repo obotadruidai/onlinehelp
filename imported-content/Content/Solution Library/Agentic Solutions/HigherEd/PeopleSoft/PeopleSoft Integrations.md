@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="RetrieveStudentDataFromPeopleSoft"></a>
 
 # Retrieve Student Data From PeopleSoft

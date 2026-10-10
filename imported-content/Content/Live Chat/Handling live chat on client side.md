@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="HandlingLiveChatonClientSide"></a>
 
 # Handling Live Chat on Client Side

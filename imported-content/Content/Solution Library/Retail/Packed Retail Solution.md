@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="PackedRetailSolution"></a>
 
 # Packed Retail Solution

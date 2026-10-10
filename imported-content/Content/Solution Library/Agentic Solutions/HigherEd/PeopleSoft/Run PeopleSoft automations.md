@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="RunPeopleSoftautomations"></a>
 
 # Run PeopleSoft automations

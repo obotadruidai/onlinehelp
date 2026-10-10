@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="CreateandDesignForms"></a>
 
 # Create and Design Forms

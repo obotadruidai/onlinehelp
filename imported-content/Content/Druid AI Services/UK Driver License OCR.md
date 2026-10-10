@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="UKDriverLicenseOCR"></a>
 
 # UK Driver License OCR

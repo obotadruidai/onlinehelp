@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="NaturalLanguageProcessingNLP"></a>
 
 # Natural Language Processing (NLP)

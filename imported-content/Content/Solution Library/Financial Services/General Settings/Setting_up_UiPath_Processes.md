@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="SettinguptheUiPathProcess"></a>
 
 # Setting up the UiPath Process

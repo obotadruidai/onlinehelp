@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="MapHeaderFromJSONResponse"></a>
 
 # Map Header From JSON Response

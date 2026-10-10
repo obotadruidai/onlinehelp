@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="AuthoringFlowsandVoiceBestPractices"></a>
 
 # Authoring Flows and Voice Best Practices

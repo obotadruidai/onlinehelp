@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="MapRESTResponseusingCustomCode"></a>
 
 # Map REST Response using Custom Code

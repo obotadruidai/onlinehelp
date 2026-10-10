@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="SetaDefaultLandingWorkspaceforBusinessUsers"></a>
 
 # Set a Default Landing Workspace for Business Users

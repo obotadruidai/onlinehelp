@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="BelarusianStopWords"></a>
 
 # Belarusian Stop Words

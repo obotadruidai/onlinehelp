@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="BlockChatUsersforLiveChat"></a>
 
 # Block Chat Users for Live Chat

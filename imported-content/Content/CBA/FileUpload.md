@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="FileUploadinWebViewsandForms"></a>
 
 # File Upload in Web Views and Forms

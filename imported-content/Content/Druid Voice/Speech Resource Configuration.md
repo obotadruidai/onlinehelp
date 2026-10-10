@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="SpeechResourceConfiguration"></a>
 
 # Speech Resource Configuration

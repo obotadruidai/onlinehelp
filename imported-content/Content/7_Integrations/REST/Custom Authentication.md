@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="CustomAuthentication"></a>
 
 # Custom Authentication

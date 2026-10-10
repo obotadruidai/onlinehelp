@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="SendingtheConversationTranscripttoExternalSystems"></a>
 
 # Sending the Conversation Transcript to External Systems

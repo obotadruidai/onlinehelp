@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="CreatingEntityModels"></a>
 
 # Creating Entity Models

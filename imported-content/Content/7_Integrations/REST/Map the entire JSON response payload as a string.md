@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="MaptheResponsePayloadasaString"></a>
 
 # Map the Response Payload as a String

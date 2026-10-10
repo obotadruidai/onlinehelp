@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="ViewingandManagingEntitiesinaFlow"></a>
 
 # Viewing and Managing Entities in a Flow

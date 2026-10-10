@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="DefiningtheIntegrationActions"></a>
 
 # Defining the Integration Actions

@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="Step1CreateSQLApp"></a>
 
 # Step 1.  Create SQL App

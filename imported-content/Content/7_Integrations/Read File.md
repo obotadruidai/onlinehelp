@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="ReadFileswiththeDruidConnectorHost"></a>
 
 # Read Files with the Druid Connector Host

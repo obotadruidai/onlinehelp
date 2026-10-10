@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="DruidPortalUsersLoginAttemptsReport"></a>
 
 # Druid Portal Users Login Attempts Report

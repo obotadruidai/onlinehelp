@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="DruidDataServiceInstallation"></a>
 
 # Druid Data Service Installation

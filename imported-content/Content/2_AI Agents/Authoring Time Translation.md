@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="AuthoringTimeTranslation"></a>
 
 # Authoring Time Translation

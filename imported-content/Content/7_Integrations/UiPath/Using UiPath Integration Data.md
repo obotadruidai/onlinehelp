@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="UsingUiPathIntegrationData"></a>
 
 # Using UiPath Integration Data

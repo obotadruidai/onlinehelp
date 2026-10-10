@@ -1,3 +1,9 @@
+---
+layout:
+  title:
+    visible: false
+---
+
 <a id="OracleB2CLiveAgentIntegration"></a>
 
 # Oracle B2C Live Agent Integration
