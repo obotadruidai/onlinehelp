@@ -112,12 +112,10 @@ site:
     - type: section-group
       key: section-group-2
       title: Human Handoff
-      draft: true
       children:
         - type: section-group
           key: section-group-3
           title: Live Chat
-          draft: true
           children:
             - type: section
               key: section-9
