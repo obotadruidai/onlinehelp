@@ -119,3 +119,16 @@ site:
           title: Live Chat
           draft: true
           children: []
+    - type: section
+      key: section-9
+      title: Live Chat
+      path: live-chat
+      children:
+        - type: space
+          key: space-9
+          title: Imported content docs
+          path: imported-content-docs
+          default: true
+          draft: true
+          content:
+            directory: ./imported-content
