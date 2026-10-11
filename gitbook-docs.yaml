@@ -3,24 +3,11 @@ site:
   title: Druid AI Docs
   structure:
     - type: section
-      key: section-6
-      title: DruidHelp
-      path: imported-content
-      description: ""
-      default: true
-      children:
-        - type: space
-          key: space-6
-          title: docs
-          path: docs
-          default: true
-          content:
-            directory: ./imported-content
-    - type: section
       key: section-1
       title: Home
       path: home
       description: ""
+      default: true
       children:
         - type: space
           key: space-2
