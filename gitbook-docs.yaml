@@ -10,8 +10,8 @@ site:
       children:
         - type: space
           key: space-6
-          title: Imported content
-          path: imported-content
+          title: docs
+          path: docs
           content:
             directory: ./imported-content
         - type: space
