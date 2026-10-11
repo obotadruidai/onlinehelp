@@ -64,7 +64,6 @@ site:
           key: section-group-2
           title: AI Governance & Security
           icon: shield-quartered
-          draft: true
           children:
             - type: section
               key: section-5
