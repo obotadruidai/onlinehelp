@@ -113,23 +113,6 @@ site:
       key: section-group-2
       title: Human Handoff
       children:
-        - type: section-group
-          key: section-group-3
-          title: Live Chat
-          children:
-            - type: section
-              key: section-14
-              title: Live Dashboard
-              path: imported-content-docs-live-dashboard
-              description: ""
-              children:
-                - type: space
-                  key: space-14
-                  title: Imported content docs
-                  path: imported-content-docs
-                  default: true
-                  content:
-                    directory: ./imported-content
         - type: section
           key: section-9
           title: Live Chat
@@ -189,6 +172,19 @@ site:
           children:
             - type: space
               key: space-13
+              title: Imported content docs
+              path: imported-content-docs
+              default: true
+              content:
+                directory: ./imported-content
+        - type: section
+          key: section-14
+          title: Live Dashboard
+          path: imported-content-docs-live-dashboard
+          description: ""
+          children:
+            - type: space
+              key: space-14
               title: Imported content docs
               path: imported-content-docs
               default: true
