@@ -12,39 +12,39 @@ Log in to your orchestrator account.
 
 Download the UiPath Studio.
 
-![](<../../../../.gitbook/assets/Setting up the Read Currencies.png>)
+![](<../../../../.gitbook/assets/AI Center_48.png>)
 
 Install UiPath on your computer.
 
 Click on the desired tenant (we will use SetupTenant).
 
-![](<../../../../.gitbook/assets/Setting up the Read Currencies_1.png>)
+![](<../../../../.gitbook/assets/AI Center_49.png>)
 
 Go to Tenant, click Machines and then Add.
 
-![](<../../../../.gitbook/assets/Setting up the Read Currencies_2.png>)
+![](<../../../../.gitbook/assets/AI Center_50.png>)
 
 Choose Machine Template.
 
-![](<../../../../.gitbook/assets/Setting up the Read Currencies_3.png>)
+![](<../../../../.gitbook/assets/AI Center_51.png>)
 
 Add a name and a description and click PROVISION.
 
-![](<../../../../.gitbook/assets/Setting up the Read Currencies_4.png>)
+![](<../../../../.gitbook/assets/AI Center_52.png>)
 
 Copy the Machine Key and the extended URL (in our case, [https://cloud.uipath.com/Druidsoft1/SetupTenant/](https://cloud.uipath.com/Druidsoft1/SetupTenant/)), as you will need them later.
 
-![](<../../../../.gitbook/assets/Setting up the Read Currencies_5.png>)
+![](<../../../../.gitbook/assets/AI Center_53.png>)
 
 Open the UiPath Assistant app.
 
 Click on Preferences.
 
-![](<../../../../.gitbook/assets/Setting up the Read Currencies_6.png>)
+![](<../../../../.gitbook/assets/AI Center_54.png>)
 
 Go to Orchestrator Settings and choose Machine Key. The Machine Name will be automatically filled in.
 
-![](<../../../../.gitbook/assets/Setting up the Read Currencies_7.png>)
+![](<../../../../.gitbook/assets/AI Center_55.png>)
 
 Paste the Machine Key and Orchestrator URL (the ones you copied earlier) and click Connect.
 
@@ -54,19 +54,19 @@ After clicking Connect, the status should be “Connected, Unlicensed” for now
 
 Go to Tenant, click Users, and search for your email address.
 
-![](<../../../../.gitbook/assets/Setting up the Read Currencies_9.png>)
+![](<../../../../.gitbook/assets/AI Center_57.png>)
 
 Click the 3 dots on its right and select Edit.
 
 Go to the Unattended Robot section and enable “Automatically create an unattended robot for this user”.
 
-![](<../../../../.gitbook/assets/Setting up the Read Currencies_10.png>)
+![](<../../../../.gitbook/assets/AI Center_58.png>)
 
 Open the command prompt app and type in "whoami". Copy the answer and paste it in the Domain\Username field.
 
-![](<../../../../.gitbook/assets/Setting up the Read Currencies_11.png>)
+![](<../../../../.gitbook/assets/AI Center_59.png>)
 
-![](<../../../../.gitbook/assets/Setting up the Read Currencies_12.png>)
+![](<../../../../.gitbook/assets/AI Center_60.png>)
 
 In the Password field, write the password of your Windows Credentials for this machine and click UPDATE.
 
@@ -74,7 +74,7 @@ You have created an UiPath Floating Unattended Robot.
 
 Go to the Folders tab and click New Folder.
 
-![](<../../../../.gitbook/assets/Setting up the Read Currencies_13.png>)
+![](<../../../../.gitbook/assets/AI Center_61.png>)
 
 Give the new folder a name, a description, select Modern as folder type and Tenant package feed as process packages source and click CREATE.
 
@@ -82,11 +82,11 @@ Give the new folder a name, a description, select Modern as folder type and Tena
 
 In the Tenant > Folders tab, select your folder, go to Machine Templates and click Manage Machine Templates.
 
-![](<../../../../.gitbook/assets/Setting up the Read Currencies_15.png>)
+![](<../../../../.gitbook/assets/Step 2 Set up Orchestrator_12.png>)
 
 Select your Machine Template (the one you created earlier) and click UPDATE.
 
-![](<../../../../.gitbook/assets/Setting up the Read Currencies_16.png>)
+![](<../../../../.gitbook/assets/AI Center_64.png>)
 
 On the left navigation bar, click the folder you created. Go to Queues, click Add and complete the fields for a new queue. Store the queue’s name.
 
@@ -98,11 +98,11 @@ Unzip the read-currencies-victor file (it contains the UiPath project).
 
 Open UiPath Studio.
 
-![](<../../../../.gitbook/assets/Setting up the Read Currencies_19.png>)
+![](<../../../../.gitbook/assets/AI Center_67.png>)
 
 Click Open a Local Project and choose the project.json file from the unzipped folder.
 
-![](<../../../../.gitbook/assets/Setting up the Read Currencies_20.png>)
+![](<../../../../.gitbook/assets/AI Center_68.png>)
 
 ![](<../../../../.gitbook/assets/Setting up the Read Currencies_21.png>)
 
@@ -116,7 +116,7 @@ Open DruidConfig.json. Complete all the fields as shown in the screenshot and sa
 
 Fill in the correct service account username or email address and password for a service account, which has enough permissions to create a flow.
 
-![](<../../../../.gitbook/assets/Setting up the Read Currencies_23.png>)
+![](<../../../../.gitbook/assets/Step 2 Set up Orchestrator_19.png>)
 
 Open UiPathConfig.json. Complete both fields and save. Make sure to add the correct folder name, and the correct queue name (the ones you created earlier), and save.
 
@@ -130,7 +130,7 @@ Click Next, select Publish to Orchestrator Tenant Process Feed and click Publish
 
 In your folder, go to Automations, Processes and click Add.
 
-![](<../../../../.gitbook/assets/Setting up the Read Currencies_26.png>)
+![](<../../../../.gitbook/assets/AI Center_75.png>)
 
 Choose the published package, enter a Process name and click CREATE.
 

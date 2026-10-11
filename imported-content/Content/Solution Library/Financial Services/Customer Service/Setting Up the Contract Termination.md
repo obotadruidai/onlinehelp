@@ -16,7 +16,7 @@ Install UiPath on your PC.
 
 Click on the desired tenant (we will use SetupTenant).
 
-![](<../../../../.gitbook/assets/Setting Up the Contract Termination_1.png>)
+![](<../../../../.gitbook/assets/Step 2 Set up Orchestrator.png>)
 
 Go to Tenant(1), Machines(2) and click Add(3).
 
@@ -30,11 +30,11 @@ Open the UiPath Assistant app.
 
 Click on Preferences (1,2).
 
-![](<../../../../.gitbook/assets/Setting Up the Contract Termination_4.png>)
+![](<../../../../.gitbook/assets/AI Center_54.png>)
 
 Go to Orchestrator Settings(1), choose Machine Key(2) and copy the Machine Name(3).
 
-![](<../../../../.gitbook/assets/Setting Up the Contract Termination_5.png>)
+![](<../../../../.gitbook/assets/AI Center_55.png>)
 
 Switch back to Orchestrator, paste in the Name field(1), add an attended license(2) and click PROVISION.
 
@@ -46,7 +46,7 @@ Click Copy Machine Key to Clipboard, store it and the extended URL (in our case,
 
 Switch to UiPath Assistant, paste the Machine Key and Orchestrator URL and click Connect .
 
-![](<../../../../.gitbook/assets/Setting Up the Contract Termination_8.png>)
+![](<../../../../.gitbook/assets/Setting up the Read Currencies_8.png>)
 
 After clicking Connect, the status should be “Connected, Licensed”.
 
@@ -74,7 +74,7 @@ Open UiPath Studio.
 
 Click Open a Local Project and choose the project.json file from the unzipped folder
 
-![](<../../../../.gitbook/assets/Setting Up the Contract Termination_13.png>)
+![](<../../../../.gitbook/assets/AI Center_68.png>)
 
 Switch to UiPath Studio. Click **Publish**.
 

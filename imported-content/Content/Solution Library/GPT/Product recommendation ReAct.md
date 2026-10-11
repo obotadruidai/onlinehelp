@@ -62,7 +62,7 @@ To customize the system role, click the **Settings** icon on the first message s
 
 Using the Code Extension, customize the system role for your use case or just include basic instructions.
 
-![A screenshot of a computer Description automatically generated with medium confidence](<../../../.gitbook/assets/Product recommendation with_5 (1).png>)
+![A screenshot of a computer Description automatically generated with medium confidence](<../../../.gitbook/assets/Product recommendation with_5.png>)
 
 The system role that comes with the solution template provides GPT with the following instructions:
 
@@ -110,7 +110,7 @@ Present the Open AI response in the chat and capture the user input.
 
 #### Step 6: Set the User role, prompt OpenAI again and loop
 
-To set the User role (that is, add user messages to the Messages collection that is sent to OpenAI), in the Set variables section  enter the name of the request entity you used in the REST integration for GPT, and then click the Code Editor icon and add set the user role by using the code format below.
+To set the User role (that is, add user messages to the Messages collection that is sent to OpenAI), in the Set variables section enter the name of the request entity you used in the REST integration for GPT, and then click the Code Editor icon and add set the user role by using the code format below.
 
 ```
 (

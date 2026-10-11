@@ -108,5 +108,5 @@ Natural language understanding (NLU) is the process that examines an **utterance
 
 ### Related Topics
 
-* [Druid AI Platform](<Druid Platform.md>)
+* [Druid AI Platform](../Home.md)
 * [Druid Portal](<Druid Portal.md>)

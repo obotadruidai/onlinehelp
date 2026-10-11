@@ -81,9 +81,7 @@ Make a request to your authentication endpoint (as required by the API). Set
 {% hint style="info" %}
 **NOTE:** Define the integration context variables in clear on the connector app and refer them on the integration tasks using the "@" SYMBOL.
 
-<img src="../../../.gitbook/assets/variables2.png" alt="" data-size="original">
-
-<img src="../../../.gitbook/assets/druid docs get context reqquest variables.png" alt="" data-size="original">
+<img src="../../../.gitbook/assets/variables2.png" alt="" data-size="original"> <img src="../../../.gitbook/assets/druid docs get context reqquest variables.png" alt="" data-size="original">
 {% endhint %}
 
 **Step 2. Configure the response of the main authentication call (Authenticate Client Request)**

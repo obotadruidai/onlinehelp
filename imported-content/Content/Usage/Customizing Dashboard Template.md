@@ -14,17 +14,17 @@ The toolbar provides you with the following options:
 
 |                                                                   |                                                                                                                                                                                                                                             |
 | ----------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ![](<../../.gitbook/assets/Customizing Dashboard Template_1.png>) | Add a new widget on the dashboard page.                                                                                                                                                                                                     |
-| ![](<../../.gitbook/assets/Customizing Dashboard Template_2.png>) | Add a new dashboard page. Useful when you want to have your custom KPIs on the same page.                                                                                                                                                   |
-| ![](<../../.gitbook/assets/Customizing Dashboard Template_3.png>) | Rename the current dashboard page.                                                                                                                                                                                                          |
-| ![](<../../.gitbook/assets/Customizing Dashboard Template_4.png>) | Delete the current dashboard page. **IMPORTANT!** This action cannot be undone. Make sure that you really want to delete the current dashboard page.                                                                                        |
-| ![](<../../.gitbook/assets/Customizing Dashboard Template_5.png>) | Restores the current page to default dashboard template. **IMPORTANT!** This action cannot be undone; any customizations you did to the current page will be lost! Make sure that you really want to restore the dashboard page to default. |
+| ![](<../../.gitbook/assets/Live Dashboard_2.png>)                 | Add a new widget on the dashboard page.                                                                                                                                                                                                     |
+| ![](<../../.gitbook/assets/Live Dashboard_3.png>)                 | Add a new dashboard page. Useful when you want to have your custom KPIs on the same page.                                                                                                                                                   |
+| ![](<../../.gitbook/assets/Live Dashboard_4.png>)                 | Rename the current dashboard page.                                                                                                                                                                                                          |
+| ![](<../../.gitbook/assets/Live Dashboard_5.png>)                 | Delete the current dashboard page. **IMPORTANT!** This action cannot be undone. Make sure that you really want to delete the current dashboard page.                                                                                        |
+| ![](<../../.gitbook/assets/Live Dashboard_6.png>)                 | Restores the current page to default dashboard template. **IMPORTANT!** This action cannot be undone; any customizations you did to the current page will be lost! Make sure that you really want to restore the dashboard page to default. |
 | ![](<../../.gitbook/assets/Customizing Dashboard Template_6.png>) | Saves the current dashboard page customization and exists the edit mode.                                                                                                                                                                    |
-| ![](<../../.gitbook/assets/Customizing Dashboard Template_7.png>) | Cancels dashboard page customizations (new or existing widgets, reordering, etc.) and exists the edit mode.                                                                                                                                 |
+| ![](<../../.gitbook/assets/Live Dashboard_8.png>)                 | Cancels dashboard page customizations (new or existing widgets, reordering, etc.) and exists the edit mode.                                                                                                                                 |
 
 ### Adding widgets
 
-To add a widget, click the **Add widget** button (![](<../../.gitbook/assets/Customizing Dashboard Template_1.png>)) on the toolbar. The Add widget page appears.
+To add a widget, click the **Add widget** button (![](<../../.gitbook/assets/Live Dashboard_2.png>)) on the toolbar. The Add widget page appears.
 
 Select the desired widget type:
 
@@ -169,7 +169,7 @@ You can reorder the widgets on a dashboard page by using drag and drop and click
 
 ### Adding Dashboard Pages
 
-To add a new dashboard page, click the **Add page** button (![](<../../.gitbook/assets/Customizing Dashboard Template_2.png>)) from the toolbar. A pop-up appears. Type the name of the page and click **Save**.
+To add a new dashboard page, click the **Add page** button (![](<../../.gitbook/assets/Live Dashboard_3.png>)) from the toolbar. A pop-up appears. Type the name of the page and click **Save**.
 
 ![](<../../.gitbook/assets/Customizing Dashboard Template_23.png>)
 
@@ -179,7 +179,7 @@ The page is added as a new tab to the dashboard but you remain on the current pa
 
 ### Renaming Dashboard Pages
 
-To rename the current dashboard page, click the **Rename page** button (![](<../../.gitbook/assets/Customizing Dashboard Template_3.png>)) on the toolbar. A pop-up appears. Type the new name of the page and click **Save**.
+To rename the current dashboard page, click the **Rename page** button (![](<../../.gitbook/assets/Live Dashboard_4.png>)) on the toolbar. A pop-up appears. Type the new name of the page and click **Save**.
 
 ![](<../../.gitbook/assets/Customizing Dashboard Template_25.png>)
 
@@ -193,7 +193,7 @@ The new page name is saved.
 **IMPORTANT!** This action cannot be undone. Make sure that you really want to delete the current dashboard page.
 {% endhint %}
 
-To delete the current dashboard page, click the **Delete page** button ( ![](<../../.gitbook/assets/Customizing Dashboard Template_4.png>)) from the toolbar. A confirmation dialog appears.
+To delete the current dashboard page, click the **Delete page** button ( ![](<../../.gitbook/assets/Live Dashboard_5.png>)) from the toolbar. A confirmation dialog appears.
 
 ![](<../../.gitbook/assets/Customizing Dashboard Template_27.png>)
 

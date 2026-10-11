@@ -10,7 +10,7 @@ From the main menu, click the folder you created when setting up the unattended 
 
 Click the Queues tab.
 
-![IMG\_256](<../../../../.gitbook/assets/Step 4 Set up Orchestrator.jpg>)
+![IMG\_256](<../../../../.gitbook/assets/Step 3 Set up Orchestrator.jpg>)
 
 Click the Add icon. The Create Queue page appears. Complete the required fields. You will use this queue for adding data to the UiPath Action Center. Write down the queue name.
 
@@ -18,7 +18,7 @@ Click the Add icon. The Create Queue page appears. Complete the required fields.
 
 Open UiPath Studio.
 
-![IMG\_259](<../../../../.gitbook/assets/Step 4 Set up Orchestrator_1_176x333.jpg>)
+![IMG\_259](<../../../../.gitbook/assets/Step 3 Set up Orchestrator_1_176x333.jpg>)
 
 Click Open a Local Project, browse to the Loan Request Workflow Process folder (from the prerequisites) and choose the project.json file.
 
@@ -54,17 +54,17 @@ Click Publish.
 
 Click Next, select Publish to Orchestrator Tenant Process Feed and click Publish.
 
-![IMG\_266](<../../../../.gitbook/assets/Step 4 Set up Orchestrator_2.jpg>)
+![IMG\_266](<../../../../.gitbook/assets/Step 3 Set up Orchestrator_2.jpg>)
 
 In your folder, click Automations > Processes and click the Add icon.
 
-![IMG\_268](<../../../../.gitbook/assets/Step 4 Set up Orchestrator_3.jpg>)
+![IMG\_268](<../../../../.gitbook/assets/Step 3 Set up Orchestrator_3.jpg>)
 
 Choose the published package, enter a Process name (optional) and click CREATE.
 
 ![](<../../../../.gitbook/assets/Step 4 Set up Orchestrator_7.png>)
 
-Click the Triggers tab and click the Add icon. ![IMG\_271](<../../../../.gitbook/assets/Step 4 Set up Orchestrator_4.jpg>) Click the Queue button, enter a trigger name, select the queue and the process you previously created and click ADD. ![](<../../../../.gitbook/assets/Step 4 Set up Orchestrator_8.png>)
+Click the Triggers tab and click the Add icon. ![IMG\_271](<../../../../.gitbook/assets/Step 3 Set up Orchestrator_4.jpg>) Click the Queue button, enter a trigger name, select the queue and the process you previously created and click ADD. ![](<../../../../.gitbook/assets/Step 4 Set up Orchestrator_8.png>)
 
 Switch to UiPath Assistant. Search for the process you created, click the three dots on the right and click Install.
 

@@ -12,7 +12,7 @@ Click on the desired tenant (we will use SetupTenant).
 
 From the main menu, click Tenant. On the navigation bar, click the Machines tab and click the Add icon.
 
-![](<../../../../.gitbook/assets/Step 2 Set up Orchestrator_1.png>)
+![](<../../../../.gitbook/assets/Step 1 Set up Orchestrator_4.png>)
 
 Click Machine Template.
 
@@ -24,7 +24,7 @@ The Add machine page appears. Enter a Template name, an unattended runtime licen
 
 Click **Copy Machine Key to Clipboard**.
 
-![](<../../../../.gitbook/assets/Step 2 Set up Orchestrator_4.png>)
+![](<../../../../.gitbook/assets/AI Center_53.png>)
 
 Copy the extended URL (in our case, [https://cloud.uipath.com/Druidsoft1/SetupTenant/](https://cloud.uipath.com/Druidsoft1/SetupTenant/)).
 
@@ -44,7 +44,7 @@ The machine status changes to “Connected, Unlicensed”.
 
 Go to Tenant, click Users, and search for your email address.
 
-![](<../../../../.gitbook/assets/Step 2 Set up Orchestrator_7.png>)
+![](<../../../../.gitbook/assets/AI Center_57.png>)
 
 Click the three dots on the right and click Edit. The Edit user page appears.
 
@@ -52,7 +52,7 @@ On the page menu, click Unattended Robot and tap on Automatically create an unat
 
 Open the command prompt app and type in “whoami”, copy the answer and paste it in the Domain\Username field.
 
-![](<../../../../.gitbook/assets/Step 2 Set up Orchestrator_8.png>)
+![](<../../../../.gitbook/assets/AI Center_59.png>)
 
 In the Password field, write the password of your Windows account for this machine and click UPDATE.
 
@@ -74,7 +74,7 @@ In the Tenant, click the Folders tab, select your folder, go to **Machine Templa
 
 Select your Machine Template (the one you created) and click UPDATE.
 
-![](<../../../../.gitbook/assets/Step 2 Set up Orchestrator_13.png>)
+![](<../../../../.gitbook/assets/AI Center_64.png>)
 
 On the navigation bar, click the folder you created. Click the Queues tab, and then click the Add icon.
 
@@ -118,7 +118,7 @@ Click **Next**, select **Publish to Orchestrator Tenant Process Feed** and click
 
 In your folder, on the navigation bar, click Automations > Processes and click the Add icon.
 
-![](<../../../../.gitbook/assets/Step 2 Set up Orchestrator_23.png>)
+![](<../../../../.gitbook/assets/AI Center_75.png>)
 
 Choose the published package, enter a Process name and click CREATE.
 

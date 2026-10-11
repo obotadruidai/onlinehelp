@@ -17,9 +17,7 @@ To enable user permission-based content filtering, the **KBCheckUserPermissions*
 {% hint style="warning" %}
 **IMPORTANT!** The Druid AI Platform calls the **GetUserEffectivePermissions** method of the SharePoint REST API, and only this method, to check the user permissions on the cited documents, at conversation time. As per [Microsoft documentation](https://learn.microsoft.com/en-us/sharepoint/dev/sp-add-ins/sharepoint-admin-apis-authentication-and-authorization), this method requires SharePoint **Sites.FullContrall.All** permission on the App Registration. The app registered in Microsoft Entra is configured with access without a user. Druid will adopt Microsoft's enhanced permission scopes for admin APIs as they become available.
 
-<img src="../../.gitbook/assets/perms1.png" alt="" data-size="original">
-
-<img src="../../.gitbook/assets/perms2.png" alt="" data-size="original">
+<img src="../../.gitbook/assets/perms1.png" alt="" data-size="original"> <img src="../../.gitbook/assets/perms2.png" alt="" data-size="original">
 {% endhint %}
 
 ### Filter User Permission-based Content

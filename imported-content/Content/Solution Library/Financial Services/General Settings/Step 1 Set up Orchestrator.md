@@ -8,7 +8,7 @@ Go to [https://cloud.uipath.com.](https://cloud.uipath.com)
 
 Log in to your orchestrator account. Download UiPath Studio (if you don’t have it already) by going to the resource center and choosing the Stable Community Edition.
 
-![](<../../../../.gitbook/assets/Step 1 Set up Orchestrator.png>)
+![](<../../../../.gitbook/assets/AI Center_48.png>)
 
 ![](<../../../../.gitbook/assets/Step 1 Set up Orchestrator_1.png>)
 
@@ -18,7 +18,7 @@ Install UiPath on your PC. Don’t launch it yet, close the Get Started window w
 
 Click on the desired tenant (we will use SetupTenant).
 
-![](<../../../../.gitbook/assets/Step 1 Set up Orchestrator_3.png>)
+![](<../../../../.gitbook/assets/Step 2 Set up Orchestrator.png>)
 
 From the main menu, click Tenant. On the navigation bar, click Machines and click Add.
 

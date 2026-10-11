@@ -81,7 +81,7 @@ Make the following settings:
 | InitialCatalog      | Enter the name of the database used by the connection string, which is located on the server that you specified in the **DataSource** field. |
 | UserID and Password | The credentials (user name and password) of your SQL Server account.                                                                         |
 
-![](<../../../../.gitbook/assets/Setting up the solution template.png>)
+![](<../../../../.gitbook/assets/Customer 360.png>)
 
 Click **Save and Close**.
 

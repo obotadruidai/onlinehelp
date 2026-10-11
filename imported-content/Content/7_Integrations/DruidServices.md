@@ -37,9 +37,7 @@ This section guides you through setting up and connecting DRUID-specific resourc
 {% hint style="info" %}
 **Info:** Starting with DRUID 9.1, you can concatenate a variable that holds the DRUID service URL (for example, @\_Druid.LLM\_URL) with an API path (such as chat/completions) directly in the Base URL field. This enables dynamic construction of endpoints and eliminates the need to manually enter or update the full request path when defining integrations.
 
-<img src="../../.gitbook/assets/BASE URL.png" alt="" data-size="original">
-
-<img src="../../.gitbook/assets/integration url.png" alt="" data-size="original">
+<img src="../../.gitbook/assets/BASE URL.png" alt="" data-size="original"> <img src="../../.gitbook/assets/integration url.png" alt="" data-size="original">
 {% endhint %}
 
 {% hint style="info" %}

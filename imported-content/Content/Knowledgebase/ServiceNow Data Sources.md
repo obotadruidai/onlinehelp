@@ -57,9 +57,7 @@ If you want to authenticate with OAuth when creating your ServiceNow data source
 {% hint style="info" %}
 **Info:** As a best practice, create a dedicated integration user for each external client, e.g. “oauth\_integration\_druid”, give it only the roles **rest\_service** (Internal Integration User) and **web\_service\_admin** (Web service access only), and select it as your **OAuth Application User**.
 
-<img src="../../.gitbook/assets/druid user.png" alt="" data-size="original">
-
-<img src="../../.gitbook/assets/user roles.png" alt="" data-size="original">
+<img src="../../.gitbook/assets/druid user.png" alt="" data-size="original"> <img src="../../.gitbook/assets/user roles.png" alt="" data-size="original">
 {% endhint %}
 
 #### Step 2: Create the data source

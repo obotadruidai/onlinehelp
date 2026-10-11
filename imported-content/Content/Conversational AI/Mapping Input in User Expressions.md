@@ -12,9 +12,9 @@ Expressions in input mapping fields are similar to flow training phrases; the di
 
 To map input fields in user expressions on Prompt steps, click the Training Phrases section and add variations of what the user might answer in the chat. Each training phrase on the step should contain the entity provided on the step in the **Input Mapping** field (General section).
 
-![](<../../.gitbook/assets/Mapping Input Fields in User.png>)
+![](<../../.gitbook/assets/Prompt Steps_1.png>)
 
-![](<../../.gitbook/assets/Mapping Input Fields in User_1.png>)
+![](<../../.gitbook/assets/Prompt Steps_2.png>)
 
 #### Multiple Inputs in user expressions
 
@@ -36,8 +36,8 @@ If the Flow Engine does not extract any value, it proceeds to data validation. I
 
 You can test the training phrases on the flow step by entering an expression and clicking the **Test** icon and selecting the desired AI Agent language.
 
-![](<../../.gitbook/assets/Mapping Input Fields in User_2.png>)
+![](<../../.gitbook/assets/Prompt Steps_3.png>)
 
 Below the test area, you will see the information AI Agent extracted in the entity provided in Input mapping (and in the step training phrases).
 
-![](<../../.gitbook/assets/Mapping Input Fields in User_3.png>)
+![](<../../.gitbook/assets/Prompt Steps_4.png>)

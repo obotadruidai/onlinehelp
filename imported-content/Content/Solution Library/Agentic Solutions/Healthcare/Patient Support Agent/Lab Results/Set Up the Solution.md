@@ -37,7 +37,7 @@ Click **Publish** to make the apps available.
 
 Click on the **SendGrid App REST** and in the variable key value field, enter your SendGrid API key.
 
-[../../../../../Resources/Images/Patient%20Billing%20Agent/SENDGRID%20APP.png](../../../../../Resources/Images/Patient%20Billing%20Agent/SENDGRID%20APP.png)![](<../../../../../../.gitbook/assets/Set Up the Solution.png>)
+[../../../../../Resources/Images/Patient%20Billing%20Agent/SENDGRID%20APP.png](../../../../../Resources/Images/Patient%20Billing%20Agent/SENDGRID%20APP.png)![](<../../../../../../.gitbook/assets/SENDGRID APP.png>)
 
 Click **Save & Close** to apply the configuration and return to the Apps page.
 
@@ -53,7 +53,7 @@ To configure the required special flows:
 | Welcome flow          | welcome-flow     |
 | Intent not found flow | agent-small-talk |
 
-[../../../../../Resources/Images/Patient%20Billing%20Agent/SPECIAL%20FLOWS.png](../../../../../Resources/Images/Patient%20Billing%20Agent/SPECIAL%20FLOWS.png)![](<../../../../../../.gitbook/assets/Set Up the Solution_1.png>)
+[../../../../../Resources/Images/Patient%20Billing%20Agent/SPECIAL%20FLOWS.png](../../../../../Resources/Images/Patient%20Billing%20Agent/SPECIAL%20FLOWS.png)![](<../../../../../../.gitbook/assets/SPECIAL FLOWS.png>)
 
 3. Save the configuration.
 

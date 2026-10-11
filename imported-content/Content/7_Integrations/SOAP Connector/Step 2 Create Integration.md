@@ -18,7 +18,7 @@ Using the solution’s Connector Designer, you can define the integration action
 
 ![](<../../../.gitbook/assets/Step 2 Create Integration (2).png>)
 
-2. At the top-right corner of the page, click the **Create Connector Action** button (![](<../../../.gitbook/assets/Step 2 Create Integration_1 (2).png>)). The Edit Connector Action page appears by default on the **ConnectorGeneral** tab.
+2. At the top-right corner of the page, click the **Create Connector Action** button (![](<../../../.gitbook/assets/Creating Integration Actions.png>)). The Edit Connector Action page appears by default on the **ConnectorGeneral** tab.
 3. Provide the connector action general details by setting up the parameters described in the table below.
 
 | Parameter              | Description                                                                                                                                                                                                                                                                                              |

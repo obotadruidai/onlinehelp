@@ -43,7 +43,7 @@ If you want to add data encryption on existing UiPath connector actions, add the
 
 To add an Encrypt Data integration task, go to the desired UiPath connector action, click the **Create Task** button, click **Security** and select **Encrypt data**.
 
-![](<../../../.gitbook/assets/Encrypt Data UiPath Use Cases_3.png>)
+![](<../../../.gitbook/assets/Encrypt Data_3.png>)
 
 The Encrypt Data configuration page appears.
 

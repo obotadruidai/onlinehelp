@@ -22,7 +22,7 @@ Go to the **Main.xaml**, open it.
 
 To publish this process in your orchestrator, click Publish.
 
-![](<../../../../.gitbook/assets/Setting up the Add ServiceNow_3.png>)
+![](<../../../../.gitbook/assets/Setting up the Claim Insurance.png>)
 
 ### Step 3: Add new process in orchestrator
 

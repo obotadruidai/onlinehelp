@@ -52,7 +52,7 @@ To configure the app connection, follow these steps:
 1. Go to **Administration** > **Druid Services**.
 2. Copy the claims and token corresponding to the DRUID-LLM resource you want to use — you’ll need them to configure the app connection.
 
-![](<../../../../.gitbook/assets/Agentic Campaign Management_4.png>)
+![](<../../../../.gitbook/assets/druid llm.png>)
 
 {% hint style="info" %}
 **NOTE:** If the DRUID-LLM resource does not appear, contact your sales representative to activate DRUID-dedicated resources for one of the following providers on your tenant: Azure OpenAI, Mistral, or Google.

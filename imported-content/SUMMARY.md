@@ -1,7 +1,6 @@
 # Table of contents
 
-* [Druid AI Documentation](Content/Home.md)
-* [Druid AI Platform](<Content/1_Druid AI Platform/Druid Platform.md>)
+* [Druid AI Platform](Content/Home.md)
   * [Druid Portal](<Content/1_Druid AI Platform/Druid Portal.md>)
   * [Concepts and Terminology](<Content/1_Druid AI Platform/Concepts and Terminology.md>)
 * [AI Agent Orchestration](<Content/AI Agent Orhestration/Druid Conductor.md>)
