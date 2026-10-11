@@ -109,3 +109,8 @@ site:
               default: true
               content:
                 directory: ./imported-content
+    - type: section-group
+      key: section-group-2
+      title: Human Handoff
+      draft: true
+      children: []
