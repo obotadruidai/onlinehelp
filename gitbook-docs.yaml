@@ -51,12 +51,13 @@ site:
               content:
                 directory: ./imported-content
         - type: section
-          key: section-3
-          title: Build AI Agents
-          path: build-ai-agents
+          key: section-4
+          title: AI Agent Orchestration
+          path: ai-agent-orchestration
+          description: ""
           children:
             - type: space
-              key: space-1
+              key: space-4
               title: Imported content docs
               path: imported-content-docs
               default: true
@@ -64,12 +65,12 @@ site:
               content:
                 directory: ./imported-content
         - type: section
-          key: section-4
-          title: AI Agent Orchestration
-          path: ai-agent-orchestration
+          key: section-3
+          title: Build AI Agents
+          path: build-ai-agents
           children:
             - type: space
-              key: space-4
+              key: space-1
               title: Imported content docs
               path: imported-content-docs
               default: true
