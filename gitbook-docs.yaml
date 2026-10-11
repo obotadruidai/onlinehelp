@@ -2,11 +2,6 @@ $schema: https://api.gitbook.com/gitbook-docs.yaml
 site:
   title: Druid AI Docs
   structure:
-    - type: section-group
-      key: section-group-7
-      title: Get Started
-      draft: true
-      children: []
     - type: section
       key: section-1
       title: Home
