@@ -195,3 +195,8 @@ site:
                   draft: true
                   content:
                     directory: ./imported-content
+    - type: section-group
+      key: section-group-4
+      title: Get Started
+      draft: true
+      children: []
