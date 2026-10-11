@@ -51,6 +51,7 @@ site:
           key: section-3
           title: Build AI Agents
           path: build-ai-agents
+          description: ""
           children:
             - type: space
               key: space-1
