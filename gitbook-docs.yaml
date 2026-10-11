@@ -72,3 +72,16 @@ site:
               default: true
               content:
                 directory: ./imported-content
+    - type: section
+      key: section-6
+      title: Data Analytics & Insights
+      path: data-analytics-and-insights
+      children:
+        - type: space
+          key: space-6
+          title: Imported content docs
+          path: imported-content-docs
+          default: true
+          draft: true
+          content:
+            directory: ./imported-content
