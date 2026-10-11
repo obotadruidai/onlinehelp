@@ -112,5 +112,6 @@ site:
     - type: section-group
       key: section-group-2
       title: Human Handoff
+      icon: headset
       draft: true
       children: []
