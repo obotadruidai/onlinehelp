@@ -14,7 +14,6 @@ site:
           title: Home
           path: home
           default: true
-          draft: true
           content:
             directory: ./home
     - type: section-group
