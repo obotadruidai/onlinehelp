@@ -38,7 +38,7 @@ site:
       children:
         - type: section
           key: section-2
-          title: Imported content docs - Druid AI Platform
+          title: Get Started
           path: imported-content-docs-druid-ai-platform
           description: ""
           children:
