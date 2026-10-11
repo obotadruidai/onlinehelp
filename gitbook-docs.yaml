@@ -205,3 +205,8 @@ site:
       title: Get Started
       draft: true
       children: []
+    - type: section-group
+      key: section-group-6
+      title: AI Platform
+      draft: true
+      children: []
