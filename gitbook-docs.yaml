@@ -201,11 +201,6 @@ site:
                   content:
                     directory: ./imported-content
     - type: section-group
-      key: section-group-4
-      title: Get Started
-      draft: true
-      children: []
-    - type: section-group
       key: section-group-6
       title: AI Platform
       draft: true
@@ -214,4 +209,17 @@ site:
           key: section-group-7
           title: Get Started
           draft: true
-          children: []
+          children:
+            - type: section
+              key: section-15
+              title: Druid AI Platform
+              path: druid-ai-platform
+              children:
+                - type: space
+                  key: space-15
+                  title: Imported content docs
+                  path: imported-content-docs
+                  default: true
+                  draft: true
+                  content:
+                    directory: ./imported-content
