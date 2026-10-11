@@ -112,6 +112,10 @@ site:
     - type: section-group
       key: section-group-2
       title: Human Handoff
-      icon: headset
       draft: true
-      children: []
+      children:
+        - type: section-group
+          key: section-group-3
+          title: Live Chat
+          draft: true
+          children: []
