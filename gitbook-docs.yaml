@@ -123,6 +123,19 @@ site:
           title: Live Chat
           children:
             - type: section
+              key: section-9
+              title: Live Chat
+              path: live-chat
+              description: ""
+              children:
+                - type: space
+                  key: space-9
+                  title: Imported content docs
+                  path: imported-content-docs
+                  default: true
+                  content:
+                    directory: ./imported-content
+            - type: section
               key: section-10
               title: Set up Live Chat
               path: set-up-live-chat
@@ -187,16 +200,3 @@ site:
                   draft: true
                   content:
                     directory: ./imported-content
-        - type: section
-          key: section-9
-          title: Live Chat
-          path: live-chat
-          description: ""
-          children:
-            - type: space
-              key: space-9
-              title: Imported content docs
-              path: imported-content-docs
-              default: true
-              content:
-                directory: ./imported-content
