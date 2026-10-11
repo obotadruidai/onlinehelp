@@ -109,11 +109,6 @@ site:
               default: true
               content:
                 directory: ./imported-content
-        - type: section-group
-          key: section-group-5
-          title: Get Started
-          draft: true
-          children: []
     - type: section-group
       key: section-group-2
       title: Human Handoff
