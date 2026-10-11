@@ -40,5 +40,6 @@ site:
     - type: section-group
       key: section-group-1
       title: AI Platform
+      icon: layer-plus
       draft: true
       children: []
