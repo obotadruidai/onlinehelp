@@ -95,7 +95,6 @@ site:
               title: Imported content docs
               path: imported-content-docs
               default: true
-              draft: true
               content:
                 directory: ./imported-content
         - type: section
@@ -108,6 +107,5 @@ site:
               title: Imported content docs
               path: imported-content-docs
               default: true
-              draft: true
               content:
                 directory: ./imported-content
