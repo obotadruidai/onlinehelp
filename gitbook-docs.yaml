@@ -4,8 +4,9 @@ site:
   structure:
     - type: section
       key: section-6
-      title: Imported content
+      title: DruidHelp
       path: imported-content
+      description: ""
       default: true
       children:
         - type: space
