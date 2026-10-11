@@ -118,31 +118,6 @@ site:
           title: Live Chat
           children:
             - type: section
-              key: section-12
-              title: Agent Assist
-              path: agent-assist
-              children:
-                - type: space
-                  key: space-12
-                  title: Imported content docs
-                  path: imported-content-docs
-                  default: true
-                  content:
-                    directory: ./imported-content
-            - type: section
-              key: section-13
-              title: Real-time Machine Translation
-              path: real-time-machine-translation
-              description: ""
-              children:
-                - type: space
-                  key: space-13
-                  title: Imported content docs
-                  path: imported-content-docs
-                  default: true
-                  content:
-                    directory: ./imported-content
-            - type: section
               key: section-14
               title: Live Dashboard
               path: imported-content-docs-live-dashboard
@@ -189,6 +164,31 @@ site:
           children:
             - type: space
               key: space-11
+              title: Imported content docs
+              path: imported-content-docs
+              default: true
+              content:
+                directory: ./imported-content
+        - type: section
+          key: section-12
+          title: Agent Assist
+          path: agent-assist
+          children:
+            - type: space
+              key: space-12
+              title: Imported content docs
+              path: imported-content-docs
+              default: true
+              content:
+                directory: ./imported-content
+        - type: section
+          key: section-13
+          title: Real-time Machine Translation
+          path: real-time-machine-translation
+          description: ""
+          children:
+            - type: space
+              key: space-13
               title: Imported content docs
               path: imported-content-docs
               default: true
