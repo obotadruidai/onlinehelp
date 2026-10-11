@@ -60,20 +60,15 @@ site:
               default: true
               content:
                 directory: ./imported-content
-        - type: section-group
-          key: section-group-2
+        - type: section
+          key: section-5
           title: AI Governance & Security
-          icon: shield-quartered
+          path: ai-governance-and-security
           children:
-            - type: section
-              key: section-5
-              title: AI Governance & Security
-              path: ai-governance-and-security
-              children:
-                - type: space
-                  key: space-5
-                  title: Imported content docs
-                  path: imported-content-docs
-                  default: true
-                  content:
-                    directory: ./imported-content
+            - type: space
+              key: space-5
+              title: Imported content docs
+              path: imported-content-docs
+              default: true
+              content:
+                directory: ./imported-content
