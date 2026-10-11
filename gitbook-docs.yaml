@@ -86,6 +86,20 @@ site:
               content:
                 directory: ./imported-content
         - type: section
+          key: section-8
+          title: Tools & Integrations
+          path: tools-and-integrations
+          description: ""
+          children:
+            - type: space
+              key: space-8
+              title: Imported content docs
+              path: imported-content-docs
+              default: true
+              draft: true
+              content:
+                directory: ./imported-content
+        - type: section
           key: section-7
           title: Release Lifecycle & Versioning
           path: release-lifecycle-and-versioning
@@ -98,16 +112,3 @@ site:
               draft: true
               content:
                 directory: ./imported-content
-    - type: section
-      key: section-8
-      title: Tools & Integrations
-      path: tools-and-integrations
-      children:
-        - type: space
-          key: space-8
-          title: Imported content docs
-          path: imported-content-docs
-          default: true
-          draft: true
-          content:
-            directory: ./imported-content
