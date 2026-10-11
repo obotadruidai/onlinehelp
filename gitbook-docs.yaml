@@ -39,7 +39,7 @@ site:
         - type: section
           key: section-2
           title: Get Started
-          path: imported-content-docs-druid-ai-platform
+          path: docs-platform-get-started
           description: ""
           children:
             - type: space
