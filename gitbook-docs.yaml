@@ -42,4 +42,18 @@ site:
       title: AI Platform
       icon: layer-plus
       draft: true
-      children: []
+      children:
+        - type: section
+          key: section-2
+          title: Imported content docs - Druid AI Platform
+          path: imported-content-docs-druid-ai-platform
+          description: ""
+          children:
+            - type: space
+              key: space-3
+              title: Imported content docs
+              path: imported-content-docs
+              default: true
+              draft: true
+              content:
+                directory: ./imported-content
