@@ -118,32 +118,6 @@ site:
           title: Live Chat
           children:
             - type: section
-              key: section-10
-              title: Set up Live Chat
-              path: set-up-live-chat
-              description: ""
-              children:
-                - type: space
-                  key: space-10
-                  title: Imported content docs
-                  path: imported-content-docs
-                  default: true
-                  content:
-                    directory: ./imported-content
-            - type: section
-              key: section-11
-              title: Multichat
-              path: multichat
-              description: ""
-              children:
-                - type: space
-                  key: space-11
-                  title: Imported content docs
-                  path: imported-content-docs
-                  default: true
-                  content:
-                    directory: ./imported-content
-            - type: section
               key: section-12
               title: Agent Assist
               path: agent-assist
@@ -189,6 +163,32 @@ site:
           children:
             - type: space
               key: space-9
+              title: Imported content docs
+              path: imported-content-docs
+              default: true
+              content:
+                directory: ./imported-content
+        - type: section
+          key: section-10
+          title: Set up Live Chat
+          path: set-up-live-chat
+          description: ""
+          children:
+            - type: space
+              key: space-10
+              title: Imported content docs
+              path: imported-content-docs
+              default: true
+              content:
+                directory: ./imported-content
+        - type: section
+          key: section-11
+          title: Multichat
+          path: multichat
+          description: ""
+          children:
+            - type: space
+              key: space-11
               title: Imported content docs
               path: imported-content-docs
               default: true
