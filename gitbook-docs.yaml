@@ -57,6 +57,18 @@ site:
               content:
                 directory: ./ai-platform/build-ai-agents
         - type: section
+          key: section-8
+          title: "Integrations"
+          path: integrations
+          children:
+            - type: space
+              key: space-34
+              title: "Integrations"
+              path: integrations
+              default: true
+              content:
+                directory: ./ai-platform/integrations
+        - type: section
           key: section-5
           title: "AI Governance & Security"
           path: ai-governance-and-security
@@ -80,18 +92,6 @@ site:
               default: true
               content:
                 directory: ./ai-platform/data-analytics-insights
-        - type: section
-          key: section-8
-          title: "Integrations"
-          path: integrations
-          children:
-            - type: space
-              key: space-34
-              title: "Integrations"
-              path: integrations
-              default: true
-              content:
-                directory: ./ai-platform/integrations
         - type: section
           key: section-15
           title: "Conversational AI Apps"
