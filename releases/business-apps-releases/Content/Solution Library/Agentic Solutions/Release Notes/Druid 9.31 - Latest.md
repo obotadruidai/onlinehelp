@@ -30,7 +30,7 @@ These release notes provide a high-level overview of new features and improvemen
 ### Campaign Management Agent
 
 - **Delivery & Status Synchronization**. Enhanced real-time activity tracking across SMS and Voice channels through automated status synchronization with Twilio and AudioCodes. This update provides precise delivery visibility and automated status tracking for both bulk messaging and outbound survey flows.
-  For more information, see [Campaign Automations](https://druidai.gitbook.io/druid-ai-docs/solution-library/business-apps/agentic-solutions/campaign-management-agentic-solution/campaign-automations).
+  For more information, see [Campaign Automations](https://druidai.gitbook.io/druid-ai-docs/solution-library/business-apps/campaign-management-agentic-solution/campaign-automations).
 
 <a id="OperationalTools"></a>
 
@@ -40,8 +40,8 @@ These release notes provide a high-level overview of new features and improvemen
 
 ### AI Engagement Analyst
 
-- **Interactive Metric and Outcome Validation**. Prevent logic conflicts and ensure high reporting accuracy when configuring metrics and outcomes. Solution admins can click **Check Metric Definitions** or **Check Outcome Definitions** to run real-time backend checks and open a interactive chat window. The agent presents optimization recommendations and can apply updates automatically, eliminating manual reconfiguration effort. For more information, see [Step 5. Configure metric definitions](https://druidai.gitbook.io/druid-ai-docs/solution-library/business-apps/agentic-solutions/ai-engagement-analyst/set-up-the-solution#Step2) and [Step 6. Configure the conversation outcomes](https://druidai.gitbook.io/druid-ai-docs/solution-library/business-apps/agentic-solutions/ai-engagement-analyst/set-up-the-solution#Step3).
+- **Interactive Metric and Outcome Validation**. Prevent logic conflicts and ensure high reporting accuracy when configuring metrics and outcomes. Solution admins can click **Check Metric Definitions** or **Check Outcome Definitions** to run real-time backend checks and open a interactive chat window. The agent presents optimization recommendations and can apply updates automatically, eliminating manual reconfiguration effort. For more information, see [Step 5. Configure metric definitions](https://druidai.gitbook.io/druid-ai-docs/solution-library/business-apps/ai-engagement-analyst/set-up-the-solution#Step2) and [Step 6. Configure the conversation outcomes](https://druidai.gitbook.io/druid-ai-docs/solution-library/business-apps/ai-engagement-analyst/set-up-the-solution#Step3).
 
 {% hint style="info" %}
-**NOTE:** If you upgrade the solution to version 9.31, data provisioning is required due to updated configuration settings. For detailed instructions, refer to [Step 3. Import default settings](https://druidai.gitbook.io/druid-ai-docs/solution-library/business-apps/agentic-solutions/ai-engagement-analyst/set-up-the-solution#Step).
+**NOTE:** If you upgrade the solution to version 9.31, data provisioning is required due to updated configuration settings. For detailed instructions, refer to [Step 3. Import default settings](https://druidai.gitbook.io/druid-ai-docs/solution-library/business-apps/ai-engagement-analyst/set-up-the-solution#Step).
 {% endhint %}

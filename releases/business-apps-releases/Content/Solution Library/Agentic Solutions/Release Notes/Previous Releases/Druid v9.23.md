@@ -19,7 +19,7 @@ These release notes provide a high-level overview of new features and improvemen
 
 ### Patient Billing Agent
 
-The Patient Billing Agent automates end-to-end billing interactions, enabling patients to view outstanding balances, choose payment options and make payments, and request billing clarifications without needing to speak with a human representative. By handling routine billing enquiries autonomously, it reduces call-center load, accelerates revenue collection, and significantly improves the patient financial experience. For more information, see [Patient Billing Agent](https://druidai.gitbook.io/druid-ai-docs/solution-library/business-apps/agentic-solutions/healthcare/patient-billing-agent).
+The Patient Billing Agent automates end-to-end billing interactions, enabling patients to view outstanding balances, choose payment options and make payments, and request billing clarifications without needing to speak with a human representative. By handling routine billing enquiries autonomously, it reduces call-center load, accelerates revenue collection, and significantly improves the patient financial experience. For more information, see [Patient Billing Agent](https://druidai.gitbook.io/druid-ai-docs/solution-library/business-apps/healthcare/patient-billing-agent).
 
 <a id="AppointmentManagementAgent"></a>
 
@@ -27,7 +27,7 @@ The Patient Billing Agent automates end-to-end billing interactions, enabling pa
 
 - **Dashboard & Analytics Skill** - The Appointment Management Dashboard Skill provides healthcare staff with a unified, real-time view of all scheduled, pending, and canceled appointments across the organization. It enables proactive scheduling decisions, reduces gaps in clinical capacity, and supports better patient-flow management through intuitive visual workflows.
 
-For more information, see [Appointment Management Agent](https://druidai.gitbook.io/druid-ai-docs/solution-library/business-apps/agentic-solutions/healthcare/appointment-management-agent).
+For more information, see [Appointment Management Agent](https://druidai.gitbook.io/druid-ai-docs/solution-library/business-apps/healthcare/appointment-management-agent).
 
 <a id="HigherEducation"></a>
 
@@ -42,4 +42,4 @@ The Advisor Agent is the foundational agent for higher education, equipping acad
 - **Instructor Course Management Skill** - The Instructor Course Management Skill enables academic advisors to view, manage, and coordinate course offerings on behalf of instructors, streamlining the course planning process and reducing back-and-forth between departments. It ensures advisors always have up-to-date course availability information to guide student registration decisions more effectively.
 - **Student Communication (Email) Skill** - The Student Communication Skill automates personalized email outreach to students at key touchpoints in the academic journey, from enrollment reminders to academic progress updates. It allows advisors to maintain consistent, timely communication at scale without sacrificing the personal tone that is essential to driving student engagement and retention.
 
-For more information, see [Academic Advisor Agent](https://druidai.gitbook.io/druid-ai-docs/solution-library/business-apps/agentic-solutions/higher-education/academic-advisor-agent).
+For more information, see [Academic Advisor Agent](https://druidai.gitbook.io/druid-ai-docs/solution-library/business-apps/higher-education/academic-advisor-agent).

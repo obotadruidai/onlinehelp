@@ -20,7 +20,7 @@ These release notes provide a high-level overview of new features and improvemen
 ### Conductor for Patients
 
 - **Order Medication Agent** - The Order Medication Agent automates the complete prescription lifecycle — from initial creation, through ongoing changes, to patient-initiated repeat reorders — transforming prescription management into a guided, conversational experience for both medics and patients.
-  For more information, see [Order Medication Agent](https://druidai.gitbook.io/druid-ai-docs/solution-library/business-apps/agentic-solutions/healthcare/patient-support-agent/order-medication-skill).
+  For more information, see [Order Medication Agent](https://druidai.gitbook.io/druid-ai-docs/solution-library/business-apps/healthcare/patient-support-agent/order-medication-skill).
 
 <a id="HigherEducation"></a>
 
@@ -31,8 +31,8 @@ These release notes provide a high-level overview of new features and improvemen
 ### Academic Advisor Agent
 
 - **New PeopleSoft Integrations Skill** - Connects the platform natively with PeopleSoft, one of the most widely used Student Information Systems in higher education. This skill enables seamless, bi-directional data exchange — including student records, enrollment data, and course information — eliminating manual data entry and ensuring consistency across systems.
-  For more information, see [PeopleSoft Integrations](https://druidai.gitbook.io/druid-ai-docs/solution-library/business-apps/agentic-solutions/higher-education/academic-advisor-agent/peoplesoft-integrations).
-- With this release, you can import your own instructor and student records instead of using the sample data provisioned with the solution. For more information on how to do that, see [Step 6. Import instructors and students (optional)](https://druidai.gitbook.io/druid-ai-docs/solution-library/business-apps/agentic-solutions/higher-education/academic-advisor-agent/set-up-the-academic-advisor-agent#Step).
+  For more information, see [PeopleSoft Integrations](https://druidai.gitbook.io/druid-ai-docs/solution-library/business-apps/higher-education/academic-advisor-agent/peoplesoft-integrations).
+- With this release, you can import your own instructor and student records instead of using the sample data provisioned with the solution. For more information on how to do that, see [Step 6. Import instructors and students (optional)](https://druidai.gitbook.io/druid-ai-docs/solution-library/business-apps/higher-education/academic-advisor-agent/set-up-the-academic-advisor-agent#Step).
 
 <a id="Helpdesk"></a>
 
@@ -43,11 +43,11 @@ These release notes provide a high-level overview of new features and improvemen
 ### Case Management Agentic Solution
 
 - **Dashboard and Analytics Skill** - The Case Management Dashboard Skill provides a real-time, consolidated view of all open, pending, and resolved cases across the organization, giving teams instant visibility into workload distribution, case ageing, and resolution trends. It helps supervisors prioritize escalations, balance team capacity, and track SLA compliance — all from a single, purpose-built operational interface.
-  For more information, see [Case Reporting Dashboard](https://druidai.gitbook.io/druid-ai-docs/solution-library/business-apps/agentic-solutions/case-management-agentic-solution/case-reporting-dashboard).
+  For more information, see [Case Reporting Dashboard](https://druidai.gitbook.io/druid-ai-docs/solution-library/business-apps/case-management-agentic-solution/case-reporting-dashboard).
 
 <a id="EmailCaseHandlingAgenticSolution"></a>
 
 ### Email Case Handling Agentic Solution
 
 - **Dashboard and Analytics Skill** - The Case Management Dashboard Skill provides a real-time, consolidated view of all open, pending, and resolved cases across the organization, giving teams instant visibility into workload distribution, case ageing, and resolution trends. It helps supervisors prioritize escalations, balance team capacity, and track SLA compliance — all from a single, purpose-built operational interface.
-  For more information, see [Case Reporting Dashboard](https://druidai.gitbook.io/druid-ai-docs/solution-library/business-apps/agentic-solutions/email-case-handling-agentic-solution/case-reporting-dashboard).
+  For more information, see [Case Reporting Dashboard](https://druidai.gitbook.io/druid-ai-docs/solution-library/business-apps/email-case-handling-agentic-solution/case-reporting-dashboard).
