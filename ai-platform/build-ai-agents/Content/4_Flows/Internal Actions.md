@@ -24,7 +24,7 @@ string / List<string> / [[Entity]].EntityField / @Variable
 ```
 
 {% hint style="info" %}
-**NOTE:** Ensure the roles you specify exist in the Druid Portal. For information on how to create security roles, see [Authoring User Management](https://druidai.gitbook.io/druid-ai-docs/ai-governance-and-security/data-security-and-privacy/authoring-user-management).
+**NOTE:** Ensure the roles you specify exist in the Druid Portal. For information on how to create security roles, see [Authoring User Management](https://druidai.gitbook.io/druid-ai-docs/ai-platform/ai-governance-and-security/data-security-and-privacy/authoring-user-management).
 {% endhint %}
 
 **Parameters**
@@ -424,7 +424,7 @@ This internal action loads the \[\[AlertInfo]] system entity, which is used in t
 
 This internal action saves the conversation transcript in **\[\[ConversationInfo]].TranscriptJSON** if **\[\[ConversationInfo]].ExportType** is 'json' or in **\[\[ConversationInfo]].TranscriptTxt** in all other cases. If no parameter is set, the conversation from current ActivityId will be saved as text, in \[\[ConversationInfo]].TranscriptTxt.
 
-This action allows authors to save and send conversation transcripts to external systems through DRUID connectors (e.g., email, CRM). For setup information, refer to [Sending the conversation transcript to external systems](https://druidai.gitbook.io/druid-ai-docs/how-to/sending-the-conversation-transcript-to-external-systems).
+This action allows authors to save and send conversation transcripts to external systems through DRUID connectors (e.g., email, CRM). For setup information, refer to [Sending the conversation transcript to external systems](https://druidai.gitbook.io/druid-ai-docs/ai-platform/how-to/sending-the-conversation-transcript-to-external-systems).
 
 **Parameters**
 
@@ -514,7 +514,7 @@ Unlike integrations that return an explicit response payload, this internal acti
 This internal action retrieves the intent specified by **\[\[Intent]].Text** considering the Druid Conductor feature. Use it to capture the exact intent communicated to the user in the chat and manually execute a prediction against the NLU/KB models of Druid Conductor and orchestrated AI Agents.
 
 {% hint style="warning" %}
-**IMPORTANT!** This internal action functions only when the conversation is initiated through the Druid Conductor. If a user interacts with an orchestrated AI Agent directly, this internal action will not execute the cross-AI agent prediction logic, nor will it query the Druid Conductor models. To learn more about multi-AI Agent orchestration, see [Druid Conductor](https://druidai.gitbook.io/druid-ai-docs/ai-agent-orchestration/druid-conductor).
+**IMPORTANT!** This internal action functions only when the conversation is initiated through the Druid Conductor. If a user interacts with an orchestrated AI Agent directly, this internal action will not execute the cross-AI agent prediction logic, nor will it query the Druid Conductor models. To learn more about multi-AI Agent orchestration, see [Druid Conductor](https://druidai.gitbook.io/druid-ai-docs/ai-platform/ai-agent-orchestration/druid-conductor).
 {% endhint %}
 
 The sequence in which the system searches for a match depends on which flow triggers the internal action::
@@ -967,7 +967,7 @@ string / List<string> / [[Entity]].EntityField / @Variable
 ```
 
 {% hint style="info" %}
-**NOTE:** Ensure the roles you specify exist in the Druid Portal. For more information on security roles, see [Authoring User Management](https://druidai.gitbook.io/druid-ai-docs/ai-governance-and-security/data-security-and-privacy/authoring-user-management).
+**NOTE:** Ensure the roles you specify exist in the Druid Portal. For more information on security roles, see [Authoring User Management](https://druidai.gitbook.io/druid-ai-docs/ai-platform/ai-governance-and-security/data-security-and-privacy/authoring-user-management).
 {% endhint %}
 
 **Parameters**
@@ -994,7 +994,7 @@ This internal action sets **\[\[ChatUser]].IsAuthenticated** to **true**, indica
 
 ## SaveIdentifiedUser
 
-This internal action to match an existing profile or provision a new user as an authenticated user in the Druid Portal. This action is designed for the [Authentication Flow](https://druidai.gitbook.io/druid-ai-docs/how-to/handling-authentication).
+This internal action to match an existing profile or provision a new user as an authenticated user in the Druid Portal. This action is designed for the [Authentication Flow](https://druidai.gitbook.io/druid-ai-docs/ai-platform/how-to/handling-authentication).
 
 The action uses \[\[ChatUser]].MasterId and \[\[ChatUser]].DomainUserName to search the DRUID Users database for a matching user profile. If it finds a match, it replaces the current anonymous user profile with the identified user’s profile. If it doesn’t find a match, it provisions a new user profile.
 

@@ -28,11 +28,11 @@ If you have questions about your Druid tenant, please contact [support@Druidai.c
 * **Standard Conversion**: Returns the PDF as a byte array, perfect for immediate storage or simple file sharing.
 * **Streamed Conversion**: Optimized for performance and low memory overhead, making it the preferred choice for high-volume or large-file conversions.
 
-Both endpoints support multi-file uploads to create multi-page PDFs and offer customizable parameters for DPI, color mode, and scaling. For more information, see [Convert JPEG to PDF](https://druidai.gitbook.io/druid-ai-docs/integrations/druid-vision/convert-jpeg-to-pdf).
+Both endpoints support multi-file uploads to create multi-page PDFs and offer customizable parameters for DPI, color mode, and scaling. For more information, see [Convert JPEG to PDF](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/druid-vision/convert-jpeg-to-pdf).
 
 * **DRUID Connector Host – Enhanced file manipulation support.** This release extends file management capabilities in the DRUID Connector Host for hybrid and on-premises deployments. You can now list files from directories and delete files from local disks or network locations. These enhancements complement the existing Read File and Save File tasks, enabling more complete file-based workflow automation.
-* **List Files** task. Retrieves a list of files from a specified directory, similar to the Linux ls command. This task is useful for discovering available files before reading, processing, or applying additional logic to them. For more information, see [List Files with the Druid Connector Host](https://druidai.gitbook.io/druid-ai-docs/integrations/enterprise-connectors/list-files).
-* **Delete File** task. Deletes a single file from a local disk or network location. Each task execution removes one file, ensuring controlled and intentional deletion operations. For more information, see [Delete File with the Druid Connector Host](https://druidai.gitbook.io/druid-ai-docs/integrations/enterprise-connectors/delete-file).
+* **List Files** task. Retrieves a list of files from a specified directory, similar to the Linux ls command. This task is useful for discovering available files before reading, processing, or applying additional logic to them. For more information, see [List Files with the Druid Connector Host](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/list-files).
+* **Delete File** task. Deletes a single file from a local disk or network location. Each task execution removes one file, ensuring controlled and intentional deletion operations. For more information, see [Delete File with the Druid Connector Host](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/delete-file).
 
 ## Improvements
 
@@ -58,7 +58,7 @@ With this release, the Antimalware Engine treats .eml files as archives. If a se
 
 ![](<../../../.gitbook/assets/web page extract.png>)
 
-* **Web Forms – Dynamic Filtering and Update of Automations**. This release introduces enhanced programmatic control over how automations appear on forms. Authors can now use the Code Editor to dynamically manage the Automation List, allowing for a more personalized and context-aware user experience. For more information, see [Filter and update automations on forms](https://druidai.gitbook.io/druid-ai-docs/conversational-ai-apps/forms/trigger-events-on-forms#Filter).
+* **Web Forms – Dynamic Filtering and Update of Automations**. This release introduces enhanced programmatic control over how automations appear on forms. Authors can now use the Code Editor to dynamically manage the Automation List, allowing for a more personalized and context-aware user experience. For more information, see [Filter and update automations on forms](https://druidai.gitbook.io/druid-ai-docs/ai-platform/conversational-ai-apps/forms/trigger-events-on-forms#Filter).
 * **Webchat – New language support**. This release adds support for Sinhala in the webchat, improving accessibility for Sinhala-speaking users.
 
 ## Bug Fixes

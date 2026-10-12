@@ -19,5 +19,5 @@ The AI Agent automatically provisions the following ChatUser parameters in the c
 
 ## Related Topics
 
-- [Handling Authentication](https://druidai.gitbook.io/druid-ai-docs/how-to/handling-authentication)
+- [Handling Authentication](https://druidai.gitbook.io/druid-ai-docs/ai-platform/how-to/handling-authentication)
 - [WhatsApp](https://druidai.gitbook.io/druid-ai-docs/channels/social-media-and-chat/whatsapp-integration)

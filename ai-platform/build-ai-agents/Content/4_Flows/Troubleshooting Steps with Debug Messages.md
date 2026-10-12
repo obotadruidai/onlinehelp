@@ -38,4 +38,4 @@ By leveraging debug messages, you can efficiently troubleshoot and optimize flow
 
 ## Related Topics
 
-* [Conversation Trace](https://druidai.gitbook.io/druid-ai-docs/ai-governance-and-security/observability-and-explainability/conversation-trace)
+* [Conversation Trace](https://druidai.gitbook.io/druid-ai-docs/ai-platform/ai-governance-and-security/observability-and-explainability/conversation-trace)

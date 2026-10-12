@@ -61,4 +61,4 @@ The **Test Result** tabs are similar to the fields include in the Action Informa
 
 ## Related Topics
 
-* [Flow Designer](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/flows/flow-designer)
+* [Flow Designer](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/flows/flow-designer)

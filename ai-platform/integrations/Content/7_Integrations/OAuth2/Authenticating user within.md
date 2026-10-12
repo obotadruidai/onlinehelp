@@ -29,7 +29,7 @@ To enable user sign-in using OAuth 2.0, follow these steps:
 * **Sign In** - Set the value to: **\[\[ChatUser]].OauthAccessURL**.
 
 {% hint style="warning" %}
-**IMPORTANT!** After you save the step, you need to configure the **Sign In** button to open the URL, otherwise, at runtime, the user will not be redirected to the sign in page. For more information, see[Configuring hero card buttons to open URLs](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/flows/conversational-flows/flow-steps/hero-steps-configuration#Configur).
+**IMPORTANT!** After you save the step, you need to configure the **Sign In** button to open the URL, otherwise, at runtime, the user will not be redirected to the sign in page. For more information, see[Configuring hero card buttons to open URLs](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/flows/conversational-flows/flow-steps/hero-steps-configuration#Configur).
 {% endhint %}
 
 * **Cancel** - Set the value to: **cancel**.

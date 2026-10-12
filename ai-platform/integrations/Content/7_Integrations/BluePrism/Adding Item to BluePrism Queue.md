@@ -126,4 +126,4 @@ In BluePrism Studio, go to your process, and add a POST JSON action for calling 
 
 ## Related Topics
 
-* [System Entities](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/ai-agent-informational-model/system-entities)
+* [System Entities](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/ai-agent-informational-model/system-entities)

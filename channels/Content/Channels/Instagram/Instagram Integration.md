@@ -372,7 +372,7 @@ For further details and direct guidance from Meta, refer to these official resou
 
 ## Handle story reactions
 
-To process user reactions to Instagram stories (such as applause or heart reactions), you must configure the **Social media reactions flow** for your AI Agent. If the flow is not assigned, all story reactions are ignored by default. For step-by-step setup details, see [Social Media Reactions Flow](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/flows/special-flows/social-media-reactions-flow).
+To process user reactions to Instagram stories (such as applause or heart reactions), you must configure the **Social media reactions flow** for your AI Agent. If the flow is not assigned, all story reactions are ignored by default. For step-by-step setup details, see [Social Media Reactions Flow](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/flows/special-flows/social-media-reactions-flow).
 
 ## Related Topics
 

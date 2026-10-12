@@ -39,7 +39,7 @@ Create the Request and Response entities. Define the AI Agent informational mode
 **IMPORTANT!** For the Callback flow to be triggered, make sure to add a field named **FlowId** to the Response Entity. This field will store the ID of the Callback flow.
 {% endhint %}
 
-For information on how to create entities, see [Creating Entities](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/ai-agent-informational-model/managing-entities).
+For information on how to create entities, see [Creating Entities](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/ai-agent-informational-model/managing-entities).
 
 ### Step 3: Create the UiPath connector.
 
@@ -49,9 +49,9 @@ Create the UiPath connection string. For information on how to do that, see [Cre
 
 Configure the request flow, defining the dialog. Make sure to add an Action step where you call the UiPath connector.
 
-Configure the Callback flow. Make sure that you add an [Action step](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/flows/conversational-flows/flow-steps/action-steps-configuration) where you call the UiPath connector and in the Set Variables section you set the **FlowId** field of the Response Entity to the ID of the Callback flow created at Step 1.
+Configure the Callback flow. Make sure that you add an [Action step](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/flows/conversational-flows/flow-steps/action-steps-configuration) where you call the UiPath connector and in the Set Variables section you set the **FlowId** field of the Response Entity to the ID of the Callback flow created at Step 1.
 
-For information on how to configure flows, see [Configuring Flow Steps](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/flows/conversational-flows/flow-steps/common-flow-settings).
+For information on how to configure flows, see [Configuring Flow Steps](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/flows/conversational-flows/flow-steps/common-flow-settings).
 
 ### Step 5: Submit items to the UiPath queue.
 

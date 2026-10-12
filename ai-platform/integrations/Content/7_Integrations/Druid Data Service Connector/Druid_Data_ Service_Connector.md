@@ -6,7 +6,7 @@ title: Druid Data Service Connector
 Druid Data Service Connector enables authors to use (at a conversational level) Druid entity records that are stored in Druid Data Service. Using this connector is out of the box, as entity records are stored in Druid Data Service, there is no need to define connection strings. You create connector actions and define the Druid Data Service specific integration tasks, then call the integrations tasks on the flows as best suits your needs.
 
 {% hint style="info" %}
-**NOTE:** Instead of manually configuring integrations, you can use AI Authoring Agents to automate the process. By launching the Integrations Engineer from the Page Help icon on the Integrations page, you can describe your business requirements in natural language to automatically create or fine-tune Druid Data Service integration through guided chat interactions. For more information, see the [AI Authoring Agents](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/ai-authoring-agents#Create2).
+**NOTE:** Instead of manually configuring integrations, you can use AI Authoring Agents to automate the process. By launching the Integrations Engineer from the Page Help icon on the Integrations page, you can describe your business requirements in natural language to automatically create or fine-tune Druid Data Service integration through guided chat interactions. For more information, see the [AI Authoring Agents](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/ai-authoring-agents#Create2).
 {% endhint %}
 
 ## Step 1. Create connector action
@@ -63,5 +63,5 @@ Call the integration tasks on flow steps as best suits your needs.
 ## Related Topics
 
 * [Debugging Integrations](<../Debugging Integrations.md>)
-* [Post Actions](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/flows/conversational-flows/flow-steps/common-flow-settings/post-actions)
-* [Pre Actions](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/flows/conversational-flows/flow-steps/common-flow-settings/pre-actions)
+* [Post Actions](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/flows/conversational-flows/flow-steps/common-flow-settings/post-actions)
+* [Pre Actions](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/flows/conversational-flows/flow-steps/common-flow-settings/pre-actions)

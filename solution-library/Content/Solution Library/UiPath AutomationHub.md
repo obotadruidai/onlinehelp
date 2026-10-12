@@ -13,7 +13,7 @@ Use this solution if you want to showcase DRUID-UiPath AutomationHub integration
 
 [!\[\](../Resources/Images/Download.png)](https://druiddocs.file.core.windows.net/docs-shares/UiPathAutomationHub_202144040244.zip?st=2022-01-18T11%3A27%3A09Z\&se=2026-01-19T11%3A27%3A00Z\&sp=rl\&sv=2018-03-28\&sr=f\&sig=auxlLYNtXzaO7dp20Ahofcz0vQCm2lG1u%2BwClLSdrwg%3D)
 
-2. On the desired AI Agent, import the solution .zip file. For information on how to import solutions, see [Importing Solutions](https://druidai.gitbook.io/druid-ai-docs/release-lifecycle-and-versioning/importing-solutions).
+2. On the desired AI Agent, import the solution .zip file. For information on how to import solutions, see [Importing Solutions](https://druidai.gitbook.io/druid-ai-docs/ai-platform/release-lifecycle-and-versioning/importing-solutions).
 3. Set up the UiPathAutomationHub solution.
 
 ## How to set up UiPath Automation Hub solution template

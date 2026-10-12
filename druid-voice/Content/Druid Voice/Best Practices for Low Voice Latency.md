@@ -87,7 +87,7 @@ LLM Streamer is especially recommended for intent rephrasing, Knowledge Base res
 <img src="../../.gitbook/assets/RESPONSES API TYPE.png" alt="" data-size="original">
 {% endhint %}
 
-For configuration instructions, see [Use LLM Response Streaming for Voice Interactions](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/flows/agentic-flows/use-llm-response-streaming-for-voice-interactions).
+For configuration instructions, see [Use LLM Response Streaming for Voice Interactions](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/flows/agentic-flows/use-llm-response-streaming-for-voice-interactions).
 
 ### Minimize LLM Calls Per User Messages
 

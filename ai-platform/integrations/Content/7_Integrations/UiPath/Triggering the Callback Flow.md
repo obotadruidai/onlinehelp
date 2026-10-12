@@ -103,4 +103,4 @@ Now the DRUID Entity metadata is created and you can provide it as parameter to 
 
 ## Related Topics
 
-* [Endpoint Logs](https://druidai.gitbook.io/druid-ai-docs/data-analytics-and-insights/operational-visibility-and-history/endpoint-logs)
+* [Endpoint Logs](https://druidai.gitbook.io/druid-ai-docs/ai-platform/data-analytics-and-insights/operational-visibility-and-history/endpoint-logs)

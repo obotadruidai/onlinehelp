@@ -25,7 +25,7 @@ If you have questions about your DRUID tenant, please contact [support@Druidai.c
 
 ![](<../../../.gitbook/assets/LDAP AD Test.png>)
 
-For more information, see [Provisioning Portal Users with Active Directory via LDAP](https://druidai.gitbook.io/druid-ai-docs/ai-governance-and-security/data-security-and-privacy/authoring-user-management/provisioning-portal-users-with-ldap).
+For more information, see [Provisioning Portal Users with Active Directory via LDAP](https://druidai.gitbook.io/druid-ai-docs/ai-platform/ai-governance-and-security/data-security-and-privacy/authoring-user-management/provisioning-portal-users-with-ldap).
 
 * **Flow Diagram - Layered Digraph view**. The Layered Digraph view is now available in the Flow Diagram, providing a clear, structured layout that organizes nodes in layers, enhancing readability and flow visualization.
 
@@ -71,12 +71,12 @@ For more information about the embedding models, see [Knowledge Base](https://dr
 **NOTE:** If the same chat user sends messages to multiple phone numbers associated to the same AI Agent, different conversation IDs will be generated for each phone number. This ensures that each ChannelBotIdentifier corresponds to a unique ConversationId.
 {% endhint %}
 
-* **Data Service Connector - Custom Query enhancement**. The `OFFSET` statement is now available in DRUID custom queries to filter request data more precisely. The OFFSET statement skips a specified number of records before returning results. When used with FETCH NEXT, it limits the number of records returned after the offset, enabling more efficient data retrieval. For more information, see [Filter Data using DRUID Custom Query](https://druidai.gitbook.io/druid-ai-docs/integrations/enterprise-connectors/druid_data_-service_connector/filter-using-druid-custom-query).
+* **Data Service Connector - Custom Query enhancement**. The `OFFSET` statement is now available in DRUID custom queries to filter request data more precisely. The OFFSET statement skips a specified number of records before returning results. When used with FETCH NEXT, it limits the number of records returned after the offset, enabling more efficient data retrieval. For more information, see [Filter Data using DRUID Custom Query](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/druid_data_-service_connector/filter-using-druid-custom-query).
 * **Conversational Artificial Intelligence - Embeddings Model**. You can now select an embeddings model in the **NLU Configurations** > **Thresholds and parameters** area with the new parameter **NLU.NER.Classification.ModelEmbeddings**. This enhancement allows greater flexibility in tailoring the model to optimize semantic understanding and search efficiency.
 
 ![](<../../../.gitbook/assets/nlp param.png>)
 
-For more information, [NLP Special Parameters](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/conversational-ai/nlp-special-parameters).
+For more information, [NLP Special Parameters](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/conversational-ai/nlp-special-parameters).
 
 * **Druid Portal - Publish Notification**: A new icon now appears in the toolbar to indicate when changes made in the Druid Portal require publishing. Once the publish process is completed successfully, the icon will disappear.
 

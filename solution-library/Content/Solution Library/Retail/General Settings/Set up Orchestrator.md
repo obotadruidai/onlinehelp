@@ -59,7 +59,7 @@ Click **Publish**.
 
 Click **Next**, select **Publish to Orchestrator Tenant Process Feed** and click **Publish**
 
-Set up the **retail-case-workflow** UiPath process by following the [Starting UiPath Unattended Process](https://druidai.gitbook.io/druid-ai-docs/integrations/enterprise-connectors/uipath-connector/starting-uipath-unattended) procedure.
+Set up the **retail-case-workflow** UiPath process by following the [Starting UiPath Unattended Process](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/uipath-connector/starting-uipath-unattended) procedure.
 
 After you publish the process in the orchestrator and set up the webhooks, in the Druid Portal, go to **Integrations** and search for the **add-complain-add-case** integration. Load the input and output arguments (TicketNumber>\[\[Case]].TicketNumber) and map them as shown in the figure below:
 

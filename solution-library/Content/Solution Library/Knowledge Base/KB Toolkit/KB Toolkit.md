@@ -18,7 +18,7 @@ No intents are added to your AI Agent. All Flows (automations) are triggered fro
 ## Prerequisites
 
 * Tenant Druid community (open new tenant [here](https://www.druidai.com/license-activation)) or Druid subscription.
-* You should have a AI Agent. For information on how to create an AI Agent, see [Creating AI Agents](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/creating-ai-agents).
+* You should have a AI Agent. For information on how to create an AI Agent, see [Creating AI Agents](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/creating-ai-agents).
 * Ensure you have a Druid Portal service account with full permissions.
 * You should have the Knowledge Base feature active on your tenant. If you want to activate it for your tenant, get in touch with [DRUID Support Team](mailto:support@druidai.com?subject=Activate%20KB%20for%20my%20tenant).
 * You should have data sources added to the KB and the KB trained.

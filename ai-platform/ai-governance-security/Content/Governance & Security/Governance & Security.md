@@ -27,7 +27,7 @@ This pillar establishes a "Zero Trust" environment by securing user identity and
   For more information, see [Authoring User Management](User%20Management/Authoring%20User%20Management.md).
 - **Platform Data Encryption**: All data in transit and at rest is secured using enterprise-grade encryption standards, such as AES-256 and TLS 1.2.
 - **Extensive Sensitive Data Manipulation**: Beyond platform-level encryption, Druid allows for field and entity-level masking to ensure sensitive information is never exposed in the UI or plain-text logs.
-- **Integration Data Security**: Use the [Encrypt Data Connector](https://druidai.gitbook.io/druid-ai-docs/integrations/enterprise-connectors/encryptdata) to secure data payloads exchanged with third-party systems.
+- **Integration Data Security**: Use the [Encrypt Data Connector](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/encryptdata) to secure data payloads exchanged with third-party systems.
 - **PII Data Anonymization**: Using the [Data Anonymization Agentic Solution](https://druidai.gitbook.io/druid-ai-docs/solution-library/business-apps/data-anonymization-agentic-solution), the AI Agent identifies and redacts sensitive information (Personally Identifiable Information) in real time before it is stored or processed by Large Language Models (LLMs). This ensures compliance with GDPR, HIPAA, and CCPA.
 
 <a id="AIEvaluationandResponseGuardrails"></a>

@@ -10,7 +10,7 @@ For solution admins
 ### Mandatory
 
 * Tenant Druid community (open new tenant [here](https://www.druidai.com/license-activation)) or Druid subscription.
-* You should have a AI Agent. For information on how to create an AI Agent, see [Creating AI Agents](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/creating-ai-agents).
+* You should have a AI Agent. For information on how to create an AI Agent, see [Creating AI Agents](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/creating-ai-agents).
 * You should have installed and configured the [Appointment Management Agent](<../Appointment Management Agent/Appointment Management Agent.md>) and [Patient Billing Agent.](<../Patient Billing Agent/Patient Billing Agent.md>)
 * A dedicated web page that hosts the WebChat snippet for the Direct Line channel.
 * The Audiocodes channel configured for your AI Agent. For setup instructions, see [Voice AudioCodes Channel](https://druidai.gitbook.io/druid-ai-docs/channels/voice-and-telephony/voice-audio-codes-channel).
@@ -26,7 +26,7 @@ For solution admins
 
 1. Go to the **Solutions Library**.
 2. Search for **Outbound Patient Engagement Agent**.
-3. Import the solution following the instructions provided in section [Installing Solution Templates](https://druidai.gitbook.io/druid-ai-docs/release-lifecycle-and-versioning/importing-solutions).
+3. Import the solution following the instructions provided in section [Installing Solution Templates](https://druidai.gitbook.io/druid-ai-docs/ai-platform/release-lifecycle-and-versioning/importing-solutions).
 
 Wait until the import status shows **Success**.
 
@@ -101,7 +101,7 @@ To define when and how often an alert runs, follow these steps:
 
 6. Save the flow.
 
-For more information on alerts, see [Alert Flows](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/flows/alert-flows).
+For more information on alerts, see [Alert Flows](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/flows/alert-flows).
 
 {% hint style="info" %}
 **Info:** If you want to build custom campaigns, follow the instructions provided in section [Campaign Management Agentic Solution](<../../Marketing/Campaign Management Agentic Solution.md#Building>) of the Campaign Management Agentic solution topic.

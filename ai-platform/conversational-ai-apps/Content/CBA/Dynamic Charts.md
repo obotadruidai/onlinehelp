@@ -26,7 +26,7 @@ Create the integration designated for gathering data for the chart. In the Reque
 ![](<../../.gitbook/assets/dynamic chart integration.png>)
 
 {% hint style="info" %}
-**NOTE:** Rather than building dynamic charts from scratch, you can leverage AI Authoring Agents. By launching the Workspace Designer from the Page Help icon, you can describe your chart requirements in natural language to automatically create charts following the Workspace Designer guidance in the chat. For more information, see [AI Authoring Agents](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/ai-authoring-agents#Create3). If you want to manually create a chart, follow the subsequent steps described below.
+**NOTE:** Rather than building dynamic charts from scratch, you can leverage AI Authoring Agents. By launching the Workspace Designer from the Page Help icon, you can describe your chart requirements in natural language to automatically create charts following the Workspace Designer guidance in the chat. For more information, see [AI Authoring Agents](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/ai-authoring-agents#Create3). If you want to manually create a chart, follow the subsequent steps described below.
 {% endhint %}
 
 ### Step 2. Create the chart
@@ -56,7 +56,7 @@ Configure the parameters described in the table below.
 | View drill down             | Select the special view you created (if any) to allow users click on the chart to get more insights about the information presented in the chart. For information on how to create a special view for this, see [Create special views to drill-down info in Forms and Charts](https://docs.druidai.com/docs/Content/CBA/Create%20special%20views%20to%20drill-down%20info%20in%20Forms%20and%20Charts.htm). |
 | Chart type                  | The current chart type. You can change the type.                                                                                                                                                                                                                                                                                                                                                            |
 | Show value on chart         | Toggle this option on to display data labels directly on chart elements, ensuring key values are visible at a glance without requiring a mouse hover.                                                                                                                                                                                                                                                       |
-| Apply Dashboard Date Filter | Filters data in dynamic charts on the custom dashboards by dashboard date filter. For more information, see [Custom dashboards](https://druidai.gitbook.io/druid-ai-docs/data-analytics-and-insights/track-business-kpis).. **Info:** In Druid versions prior to 9.31, this field name is **Filter By**.                                                                                                                                       |
+| Apply Dashboard Date Filter | Filters data in dynamic charts on the custom dashboards by dashboard date filter. For more information, see [Custom dashboards](https://druidai.gitbook.io/druid-ai-docs/ai-platform/data-analytics-and-insights/track-business-kpis).. **Info:** In Druid versions prior to 9.31, this field name is **Filter By**.                                                                                                                                       |
 
 For chart type specific parameters, refer to the sections below.
 
@@ -125,7 +125,7 @@ Ensure that your entity contains a field that stores colors.
 ### Create dynamic charts with two X-axes
 
 {% hint style="info" %}
-**NOTE:** Rather than building dynamic charts from scratch, you can leverage AI Authoring Agents. By launching the Workspace Designer from the Page Help icon, you can describe your chart requirements in natural language to automatically create the chart following the Workspace Designer guidance in the chat. For more information, see [AI Authoring Agents](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/ai-authoring-agents#Create3).
+**NOTE:** Rather than building dynamic charts from scratch, you can leverage AI Authoring Agents. By launching the Workspace Designer from the Page Help icon, you can describe your chart requirements in natural language to automatically create the chart following the Workspace Designer guidance in the chat. For more information, see [AI Authoring Agents](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/ai-authoring-agents#Create3).
 {% endhint %}
 
 To create a dynamic bar chart with two axes, create a dynamic chart of type bar following the procedure described above. In addition, click the **Plus** icon next to the X axis. Another X-axis section appears that allows you to select the field and function for grouping the data for the second X-axis.

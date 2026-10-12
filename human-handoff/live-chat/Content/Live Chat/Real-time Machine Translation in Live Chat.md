@@ -29,4 +29,4 @@ To use real-time machine translation in Live Chat:
 - Machine translation must be enabled and the desired machine language service must be configured for Conversation time translation on your AI Agent.
 - Enable and configure language change detection on the AI Agent.
 
-For information on how to enable and configure machine translation, see [Using Machine Translation](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/multilingual-ai-agents/using-machine-translation).
+For information on how to enable and configure machine translation, see [Using Machine Translation](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/multilingual-ai-agents/using-machine-translation).

@@ -85,6 +85,6 @@ The default snippet contains:
 
 ## Related Topics
 
-* [Handling Authentication](https://druidai.gitbook.io/druid-ai-docs/how-to/handling-authentication)
+* [Handling Authentication](https://druidai.gitbook.io/druid-ai-docs/ai-platform/how-to/handling-authentication)
 * [WebChat Common Styling and Behavior (Bot framework v3)](https://docs.druidai.com/docs/Content/Channels/WebChat/WebChat%20Common%20Styling%20and%20Behavior_v3.htm)
 * [WebChat Common Styling and Behavior](WebChat_Common_Styling_and_Behavior_v4.md)

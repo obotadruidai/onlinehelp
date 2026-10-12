@@ -26,4 +26,4 @@ To create a new solution:
 
 ## Related Topics
 
-* [Release Lifecycle & Versioning](https://druidai.gitbook.io/druid-ai-docs/release-lifecycle-and-versioning/release-lifecycle-and-versioning)
+* [Release Lifecycle & Versioning](https://druidai.gitbook.io/druid-ai-docs/ai-platform/release-lifecycle-and-versioning/release-lifecycle-and-versioning)

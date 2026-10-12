@@ -72,7 +72,7 @@ By default, the Druid AI Platform generates a flat JSON object with the fields y
 If you have a object in object data structure to send within the body (Body tab), you can use field mapping on level one and child mapping to indent fields and make a nested JSON objects data structure.
 
 {% hint style="info" %}
-**NOTE:** Prior to using field mapping, make sure that you created the needed DRUID entities and fields and the relationships between the entities. If the request data is has an object in object data structure, your DRUID entities should reflect the structure of all objects (parent object and subsequent child objects). In this regard, make sure that you properly create DRUID entities and their relationships. For more information about entities, see [Entities](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/ai-agent-informational-model).
+**NOTE:** Prior to using field mapping, make sure that you created the needed DRUID entities and fields and the relationships between the entities. If the request data is has an object in object data structure, your DRUID entities should reflect the structure of all objects (parent object and subsequent child objects). In this regard, make sure that you properly create DRUID entities and their relationships. For more information about entities, see [Entities](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/ai-agent-informational-model).
 {% endhint %}
 
 If your REST API endpoint expects data as collection, you have to set your request as a collection, as follows:
@@ -178,7 +178,7 @@ If the child object is a collection, in the child mapping page, select **Request
 
 You can now set the response.
 
-The Druid AI Platform enables you to do enhance fields mapping by using expressions. For information on how to use expressions in requests field mapping, see [Using Expressions in Request mappings](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/flows/conversational-flows/dialog-expressions-reference).
+The Druid AI Platform enables you to do enhance fields mapping by using expressions. For information on how to use expressions in requests field mapping, see [Using Expressions in Request mappings](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/flows/conversational-flows/dialog-expressions-reference).
 
 If you need a JSON with a complex structure, use **Body Template** instead.
 

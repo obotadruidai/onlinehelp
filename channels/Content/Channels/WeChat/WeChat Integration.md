@@ -108,4 +108,4 @@ After you successfully complete the WeChat integration, you have to make the WeC
 
 ## Related Topics
 
-* [Handling Authentication](https://druidai.gitbook.io/druid-ai-docs/how-to/handling-authentication)
+* [Handling Authentication](https://druidai.gitbook.io/druid-ai-docs/ai-platform/how-to/handling-authentication)

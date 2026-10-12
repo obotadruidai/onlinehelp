@@ -62,7 +62,7 @@ For more information on all KB settings, see [Knowledgebase.htm](https://druidai
 
 ![](<../../../.gitbook/assets/light widget.png>)
 
-For more information, see [Custom dashboards](https://druidai.gitbook.io/druid-ai-docs/data-analytics-and-insights/track-business-kpis).
+For more information, see [Custom dashboards](https://druidai.gitbook.io/druid-ai-docs/ai-platform/data-analytics-and-insights/track-business-kpis).
 
 ## Bug Fixes
 

@@ -32,7 +32,7 @@ If you have questions about your DRUID tenant, please contact [support@Druidai.c
 
 ![](<../../../.gitbook/assets/llm translation.png>)
 
-For more information, see [Using Machine Translation](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/multilingual-ai-agents/using-machine-translation).
+For more information, see [Using Machine Translation](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/multilingual-ai-agents/using-machine-translation).
 
 * **Webchat and Multichat - Deepgram STT Support**.DRUID now supports speech-to-text (STT) for the Webchat and Multichat using any available Deepgram model, giving you the flexibility to choose the best fit for your use case. This includes specialized models like Nova-2 Medical, which is optimized for clinical conversations and medical terminology—ideal for healthcare environments such as telemedicine and patient consultations. You can select the Deepgram model that best aligns with your domain and transcription accuracy needs.
 
@@ -44,7 +44,7 @@ For information how to set it up, see the Voice Channel.
 
 * **SAML-based SSO authentication**. You can now integrate DRUID with external identity providers using the SAML protocol for Single Sign-On (SSO). This enables secure user authentication through your organization’s existing identity management system.
 
-For more information, see [SSO Authentication with the SAML Protocol](https://druidai.gitbook.io/druid-ai-docs/integrations/enterprise-connectors/sso-authentication-with-saml).
+For more information, see [SSO Authentication with the SAML Protocol](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/sso-authentication-with-saml).
 
 ## Improvements
 
@@ -83,7 +83,7 @@ You can use this method in your Custom Code to convert date objects into localiz
 
 ![](../../../.gitbook/assets/TOlOCALEsTRING.png)
 
-For more information, see [Custom Code](https://druidai.gitbook.io/druid-ai-docs/integrations/enterprise-connectors/custom-code).
+For more information, see [Custom Code](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/custom-code).
 
 * **Custom Code - New utility methods: Base64 Encoding and Decoding**. You can now use `StringUtils.Base64Encode()` and `StringUtils.Base64Decode()` in Custom Code to safely encode and decode data. These methods are useful for handling sensitive information in headers, URLs, or other request parts.
 
@@ -91,7 +91,7 @@ For more information, see [Custom Code](https://druidai.gitbook.io/druid-ai-docs
 
 ![](../../../.gitbook/assets/decodeBase64.png)
 
-For more information, see [Custom Code](https://druidai.gitbook.io/druid-ai-docs/integrations/enterprise-connectors/custom-code).
+For more information, see [Custom Code](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/custom-code).
 
 * **Druid Services Apps – Concatenated Base URL support**. You can now dynamically construct the Base URL in a Druid Services app by concatenating a variable that holds the DRUID service URL (e.g., @\_Druid.LLM\_URL) with the API path (e.g., chat/completions).
 

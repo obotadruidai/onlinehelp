@@ -103,7 +103,7 @@ On the flow you created to send the document for signature, add as last step a s
 
 ![](<../../.gitbook/assets/eSign Namirial_3.png>)
 
-For Druid 1.67 or higher, if you want to trigger a second conversation to process information returned by the Workstep event callback, use secondary parameters available in the \[\[NamirialEnvelope]] system entity. For more information on the available entity fields, see [System Entities](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/ai-agent-informational-model/system-entities).
+For Druid 1.67 or higher, if you want to trigger a second conversation to process information returned by the Workstep event callback, use secondary parameters available in the \[\[NamirialEnvelope]] system entity. For more information on the available entity fields, see [System Entities](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/ai-agent-informational-model/system-entities).
 
 In order for the callback to initiate a secondary conversation, you need to add the parameter “**secondary=true**” to the corresponding callback URL (to any of the 3 URLs which can be specified in the request: Callback URL, Status Callback URL or Workstep event callback URL).
 

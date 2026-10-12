@@ -336,8 +336,8 @@ The following fields are now available in \[\[HelpdeskClient]]:
 ## Related Topics
 
 * [Amazon Live Chat Integration](https://druidai.gitbook.io/druid-ai-docs/contact-centers/amazon-live-chat)
-* [Changing the Agent Name Shown in the Chat](https://druidai.gitbook.io/druid-ai-docs/how-to/changing-the-agent-user-name)
-* [Chat Activity History](https://druidai.gitbook.io/druid-ai-docs/data-analytics-and-insights/operational-visibility-and-history/chat-activity-history)
-* [Handling Authentication](https://druidai.gitbook.io/druid-ai-docs/how-to/handling-authentication)
+* [Changing the Agent Name Shown in the Chat](https://druidai.gitbook.io/druid-ai-docs/ai-platform/how-to/changing-the-agent-user-name)
+* [Chat Activity History](https://druidai.gitbook.io/druid-ai-docs/ai-platform/data-analytics-and-insights/operational-visibility-and-history/chat-activity-history)
+* [Handling Authentication](https://druidai.gitbook.io/druid-ai-docs/ai-platform/how-to/handling-authentication)
 * [Multichat for Helpdesk Agents](<Multichat v2 for Helpdesk.md>)
-* [Sending the Conversation Transcript to External Systems](https://druidai.gitbook.io/druid-ai-docs/how-to/sending-the-conversation-transcript-to-external-systems)
+* [Sending the Conversation Transcript to External Systems](https://druidai.gitbook.io/druid-ai-docs/ai-platform/how-to/sending-the-conversation-transcript-to-external-systems)

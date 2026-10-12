@@ -15,4 +15,4 @@ This section covers the following topics:
 
 ## Related Topics
 
-* [NLU Model Evaluation](https://druidai.gitbook.io/druid-ai-docs/data-analytics-and-insights/ai-quality-testing-and-accuracy/nlu-model-evaluation)
+* [NLU Model Evaluation](https://druidai.gitbook.io/druid-ai-docs/ai-platform/data-analytics-and-insights/ai-quality-testing-and-accuracy/nlu-model-evaluation)

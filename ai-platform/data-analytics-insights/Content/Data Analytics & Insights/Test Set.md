@@ -57,4 +57,4 @@ To export a test data, click the **Test Set** button, then click **Download**. T
 
 ## Related Topics
 
-* [Explainability and Utterances Annotation](https://druidai.gitbook.io/druid-ai-docs/ai-governance-and-security/observability-and-explainability/explainability-and-utterances-annotation)
+* [Explainability and Utterances Annotation](https://druidai.gitbook.io/druid-ai-docs/ai-platform/ai-governance-and-security/observability-and-explainability/explainability-and-utterances-annotation)

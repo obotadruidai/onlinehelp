@@ -44,7 +44,7 @@ This new action offers several key benefits:
 * Optimizes the handling of GPT-generated responses, particularly in "Intent Not Found" scenarios.
 * Facilitates Knowledge Base refinement. Logs the source of KB articles, aiding in the evaluation and improvement of KB content.
 
-For more information, see [Internal Actions](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/flows/conversational-flows/internal-actions).
+For more information, see [Internal Actions](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/flows/conversational-flows/internal-actions).
 
 * **KB - Enhanced search with new rerankers**. We’ve added two new rerankers to help improve the accuracy and relevance of search results in your Knowledge Base:
 * **HigherEducation** – Optimized for content related to universities and higher education.
@@ -54,7 +54,7 @@ You can configure these rerankers in KB Advanced Settings to fine-tune how your 
 
 * **Flow Engine - Configure prediction destination (KB or NLP) at the conversation level**. You can now control where intent prediction occurs within a conversation using the new **\[\[ChatUser]].PredictDestination** parameter. This allows you to define whether predictions should be processed using the Knowledge Base (KB), Natural Language Processing (NLP), or a combination of both.
 
-The system retains the selected prediction method until it is explicitly changed. Using this parameter optimizes the execution pipeline, eliminating the need for separate intent-matching actions. For more information, see [System Entities](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/ai-agent-informational-model/system-entities).
+The system retains the selected prediction method until it is explicitly changed. Using this parameter optimizes the execution pipeline, eliminating the need for separate intent-matching actions. For more information, see [System Entities](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/ai-agent-informational-model/system-entities).
 
 * **Enhanced NLU and KB with new embedding models**. We've expanded the capabilities of NLU Classification and Knowledge Base search with the introduction of two new embedding models, now available in KB basic settings and the NLU.NER.Classification.ModelEmbeddings parameter:
 * **HigherEducation.v1** (English): This specialized model is trained on a rich dataset of higher education content, including university-specific information, leading to improved accuracy when dealing with queries related to this domain.
@@ -88,7 +88,7 @@ These new embedding models provide more options to optimize your AI Agent's unde
 
 ## Improvements
 
-* **REST Connector - JWT Assertion Authentication with Microsoft Identity Platform**. This release introduces JWT Assertion Authentication, providing a robust and secure method for authenticating API calls. This new feature allows you to leverage JSON Web Tokens (JWTs) signed with a certificate owned by your application and issued by the Microsoft Identity Platform. Ideal for integrations with APIs requiring this authentication method, you can now configure DRUID apps with the 'MicrosoftIdentityPlatform' security type, streamlining the process and enhancing security. For more information, see [JWT Assertion Authentication](https://druidai.gitbook.io/druid-ai-docs/integrations/enterprise-connectors/rest/rest-apps/jwt-assertion-authentication).
+* **REST Connector - JWT Assertion Authentication with Microsoft Identity Platform**. This release introduces JWT Assertion Authentication, providing a robust and secure method for authenticating API calls. This new feature allows you to leverage JSON Web Tokens (JWTs) signed with a certificate owned by your application and issued by the Microsoft Identity Platform. Ideal for integrations with APIs requiring this authentication method, you can now configure DRUID apps with the 'MicrosoftIdentityPlatform' security type, streamlining the process and enhancing security. For more information, see [JWT Assertion Authentication](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/rest/rest-apps/jwt-assertion-authentication).
 * **Live Chat – Reply to Previous Messages**. We've introduced a new parameter, **replyToMessageEnabled** (**Send Box** > **Layout**), in the web chat snippet customization. When enabled, helpdesk agents can reply to any of the user messages within the Active Conversation section, improving the live chat experience.
 
 ![](<../../../.gitbook/assets/send box.png>)
@@ -101,7 +101,7 @@ These new embedding models provide more options to optimize your AI Agent's unde
 
 This enhancement provides better control and visibility over potential connection issues with the VoiceText channel.
 
-* **LookupEntity internal action - MaxLimitForOutput**. The LookupEntity Internal Action now includes the MaxLimitForOutput parameter, providing you with enhanced control over the number of entities returned by the machine learning (ML) model. You can now define the maximum number of entities the model will output, allowing you to tailor the result set size to your specific needs. By default, this value is set to 10. For more information, see [Internal Actions](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/flows/conversational-flows/internal-actions).
+* **LookupEntity internal action - MaxLimitForOutput**. The LookupEntity Internal Action now includes the MaxLimitForOutput parameter, providing you with enhanced control over the number of entities returned by the machine learning (ML) model. You can now define the maximum number of entities the model will output, allowing you to tailor the result set size to your specific needs. By default, this value is set to 10. For more information, see [Internal Actions](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/flows/conversational-flows/internal-actions).
 * **\[\[ChatUser]].AvailableLanguages improvement**. In this release, \[\[ChatUser]].AvailableLanguages now includes additional languages defined through the conversation time machine translation feature. Previously, only the AI Agent languages were considered. With this update, any additional languages you define for machine translation will also be included, ensuring proper use in the Language Changed flow for accurate language detection.
 * **Connector Integration Tasks – improved Test experience**. The **Test** tab now automatically prefills the BotId, allowing you to seamlessly test an integration task without manually searching for and entering the BotId when required.
 
@@ -125,7 +125,7 @@ When **Support voice messages** is enabled, the AI Agent replies with text by de
 
 ![](../../../.gitbook/assets/vertex.png)
 
-* **Alert Flows – UI Enhancements**. The Alert Flows UI has been improved to provide a more seamless and intuitive experience for authors. For more details, see [Alert Flows](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/flows/alert-flows).
+* **Alert Flows – UI Enhancements**. The Alert Flows UI has been improved to provide a more seamless and intuitive experience for authors. For more details, see [Alert Flows](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/flows/alert-flows).
 
 ![](<../../../.gitbook/assets/alerts (1).png>)
 

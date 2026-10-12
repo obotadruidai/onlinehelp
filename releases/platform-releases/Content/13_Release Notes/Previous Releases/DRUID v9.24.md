@@ -25,7 +25,7 @@ If you have questions about your Druid tenant, please contact [support@Druidai.c
 
 ![](<../../../.gitbook/assets/basic auth header.png>)
 
-This enhancement simplifies integrations with APIs that require HTTP Basic Authentication and improves compatibility with authenticated endpoints and redirect-based authentication flows, reducing the need for custom authentication handling. For more information, see [Basic Authentication](https://druidai.gitbook.io/druid-ai-docs/integrations/enterprise-connectors/rest/rest-apps/basic-authentication).
+This enhancement simplifies integrations with APIs that require HTTP Basic Authentication and improves compatibility with authenticated endpoints and redirect-based authentication flows, reducing the need for custom authentication handling. For more information, see [Basic Authentication](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/rest/rest-apps/basic-authentication).
 
 * **Enhanced Conversation Transcript JSON Export**. We've enhanced conversation transcript exports to provide deeper visibility into customer interactions. When exporting conversation transcripts in JSON format using the **GetConversationTranscript** internal action, each message now includes an **OriginatorCode** that identifies whether it was sent by:
 * A user interacting with the AI Agent
@@ -72,7 +72,7 @@ This improvement helps teams:
 * Build more accurate reporting and dashboards
 * Send richer conversation data to CRMs, ticketing systems, and other external systems.
 
-For more information, see [GetConversationTranscript](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/flows/conversational-flows/internal-actions#GetConve) and [\[\[ConversationInfo\]\]](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/ai-agent-informational-model/system-entities#\[\[Conver).
+For more information, see [GetConversationTranscript](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/flows/conversational-flows/internal-actions#GetConve) and [\[\[ConversationInfo\]\]](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/ai-agent-informational-model/system-entities#\[\[Conver).
 
 * **WebChat Voice Channel - Speechmatics Custom Dictionary Support**. You can now configure Custom Dictionary entries for the Speechmatics speech-to-text provider used in the WebChat Voice channel.
 

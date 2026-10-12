@@ -30,7 +30,7 @@ This feature supports both pre-actions and post-actions.
 
 ![](<../../../.gitbook/assets/proactive messages.png>)
 
-For more information, see [Proactive AI Agent Messages](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/flows/conversational-flows/flow-steps/common-flow-settings/proactive-ai-agent-messages).
+For more information, see [Proactive AI Agent Messages](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/flows/conversational-flows/flow-steps/common-flow-settings/proactive-ai-agent-messages).
 
 *   **REST Integrations – DRUID Services app for simplified setup**. This release introduces support for DRUID Services apps, which streamline the setup of REST integrations using DRUID-specific resources such as DRUID LLM and DRUID Vision. Instead of manually entering the Base URL and token for each resource, you can now use predefined variables pulled from your tenant’s Druid Services settings.
 
@@ -38,7 +38,7 @@ For more information, see [Proactive AI Agent Messages](https://druidai.gitbook.
 
     ![](<../../../.gitbook/assets/cnn variables ds.png>)
 
-    For more information, see [Druid Services](https://druidai.gitbook.io/druid-ai-docs/integrations/enterprise-connectors/druidservices).
+    For more information, see [Druid Services](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/druidservices).
 * **Knowledge Base – A faster extractor for XLSX and XLSM files**. A new file extractor, OpenPan, is now available for .xlsx and .xlsm files, offering significantly reduced data extraction times, especially for large spreadsheets.
 
 ![](../../../.gitbook/assets/openpan.png)
@@ -88,7 +88,7 @@ This list of columns is also accessible in SQL integrations via the \[\[]].PageI
 * The step is now rendered as a hero card, where users can click **Sign In** to open the authentication page in a new browser tab.
 * This update is backwards compatible. Existing **OAuth 2.0 Sign In** that display the sign-in link (\[\[ChatUser]].OauthAccessURL) directly in the message will continue to work as expected.
 
-For more information, see [Authenticating user within the conversation using OAuth v2](https://druidai.gitbook.io/druid-ai-docs/integrations/enterprise-connectors/sso-authentication-and-authorization/authenticating-user-within).
+For more information, see [Authenticating user within the conversation using OAuth v2](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/sso-authentication-and-authorization/authenticating-user-within).
 
 ## Bug Fixes
 

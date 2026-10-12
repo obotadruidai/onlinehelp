@@ -73,7 +73,7 @@ Following the upgrades, a new system field of type 'Entity', **PageInfo**, becom
 
 ![](<../../.gitbook/assets/page info added.png>)
 
-For more information about the \[\[PageInfo]] system entity, see [System Entities](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/ai-agent-informational-model/system-entities).
+For more information about the \[\[PageInfo]] system entity, see [System Entities](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/ai-agent-informational-model/system-entities).
 
 ## Server-side pagination for non-DRUID Data Service databases
 

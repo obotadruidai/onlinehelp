@@ -65,7 +65,7 @@ Add the following UiPath assets:
 **Step 3.3. Publish the Salesforce Ticket UiPath Processes**
 
 {% hint style="info" %}
-**NOTE:** The UiPath setup for the UiPath processes **add-salesforce-ticket** and **close-salesforce-ticket** is done on the [Druid-Uipath integration via Webhooks](https://druidai.gitbook.io/druid-ai-docs/integrations/enterprise-connectors/uipath-connector/starting-uipath-unattended).
+**NOTE:** The UiPath setup for the UiPath processes **add-salesforce-ticket** and **close-salesforce-ticket** is done on the [Druid-Uipath integration via Webhooks](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/uipath-connector/starting-uipath-unattended).
 {% endhint %}
 
 **3.3.1 For each of the following UiPath Processes: add-salesforce-ticket and close-salesforce-ticket, follow these steps:**
@@ -81,7 +81,7 @@ Add the following UiPath assets:
 **3.3.2 Publish the get-salesforce-tickets process**
 
 {% hint style="info" %}
-**NOTE:** The UiPath setup for the **get-salesforce-tickets** process is done on the [Druid-Uipath integration via Orchestrator queues](https://druidai.gitbook.io/druid-ai-docs/integrations/enterprise-connectors/uipath-connector/running-unattended-process-using-orchestrator-queues).
+**NOTE:** The UiPath setup for the **get-salesforce-tickets** process is done on the [Druid-Uipath integration via Orchestrator queues](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/uipath-connector/running-unattended-process-using-orchestrator-queues).
 {% endhint %}
 
 To publish this process, follow these steps:
@@ -103,14 +103,14 @@ To publish this process, follow these steps:
 
 ### Step 4: Set up Druid
 
-1. In Druid, go to **Apps**, search for Salesforce UiPath and configure the connection string to your orchestrator following the procedure described in [Creating the UiPath Connection Strings](https://druidai.gitbook.io/druid-ai-docs/integrations/enterprise-connectors/uipath-connector/creating-the-uipath-connection-strings).
+1. In Druid, go to **Apps**, search for Salesforce UiPath and configure the connection string to your orchestrator following the procedure described in [Creating the UiPath Connection Strings](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/uipath-connector/creating-the-uipath-connection-strings).
 2. Go to **Integrations** and configure each UiPath integration following the integration procedure as listed below:
 
 | UiPath Process          | Integration Procedure                                                                                                                      |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| add-salesforce-ticket   | [Starting UiPath Unattended Processes](https://druidai.gitbook.io/druid-ai-docs/integrations/enterprise-connectors/uipath-connector/starting-uipath-unattended)                                           |
-| close-salesforce-ticket | [Starting UiPath Unattended Processes](https://druidai.gitbook.io/druid-ai-docs/integrations/enterprise-connectors/uipath-connector/starting-uipath-unattended)                                           |
-| get-salesforce-tickets  | [Running Unattended Process using Orchestrator Queues](https://druidai.gitbook.io/druid-ai-docs/integrations/enterprise-connectors/uipath-connector/running-unattended-process-using-orchestrator-queues) |
+| add-salesforce-ticket   | [Starting UiPath Unattended Processes](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/uipath-connector/starting-uipath-unattended)                                           |
+| close-salesforce-ticket | [Starting UiPath Unattended Processes](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/uipath-connector/starting-uipath-unattended)                                           |
+| get-salesforce-tickets  | [Running Unattended Process using Orchestrator Queues](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/uipath-connector/running-unattended-process-using-orchestrator-queues) |
 
 3. Go to the Salesforce Flows, search for the **show-open-tickets-response** flow and copy the flow ID.
 4. Search for the **show-open-tickets-trigger** flow and open it. It contains only one step.

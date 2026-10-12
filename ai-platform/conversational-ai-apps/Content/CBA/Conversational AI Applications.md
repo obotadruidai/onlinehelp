@@ -42,6 +42,6 @@ This approach allows DRUID to enhance existing enterprise systems without replac
 
 ## Related Topics
 
-* [AI Agent Informational Model](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/ai-agent-informational-model)
-* [Enterprise Connectors](https://druidai.gitbook.io/druid-ai-docs/integrations/enterprise-connectors)
-* [Flows](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/flows)
+* [AI Agent Informational Model](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/ai-agent-informational-model)
+* [Enterprise Connectors](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors)
+* [Flows](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/flows)

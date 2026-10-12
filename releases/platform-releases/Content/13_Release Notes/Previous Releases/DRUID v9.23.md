@@ -21,7 +21,7 @@ If you have questions about your Druid tenant, please contact [support@Druidai.c
 
 Previously, authors had to manually define informational models and configure Druid Data Service integrations after the initial agentic skill creation. With this release, AI Authoring Agents automate the entire pipeline, generating complete and functional agentic skills out of the box.
 
-For more information, see [AI Authoring Agents](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/ai-authoring-agents).
+For more information, see [AI Authoring Agents](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/ai-authoring-agents).
 
 * **Druid External Live Chat**. The Druid External Live Chat is a unified contact center that enables support teams to efficiently manage and respond to client interactions across multiple AI Agents from a single interface. For more information, see [Druid External Live Chat](https://druidai.gitbook.io/druid-ai-docs/contact-centers/druid-external-live-chat).
 
@@ -38,7 +38,7 @@ For more information, see [AI Authoring Agents](https://druidai.gitbook.io/druid
 * Shared support centers serving several business units or customer segments
 * Multi-tenant deployments
 * Organizations that need centralized live chat governance and reporting.
-* **Google SAML SSO Authentication for Portal Users**. We are excited to introduce support for Google Single Sign-On (SSO) authentication via the SAML protocol. Driven by client feedback to better support enterprise user management, this feature allows your team members to securely log into the portal using their managed Google Account credentials. For more information, see [Provisioning Portal Users with Google SAML](https://druidai.gitbook.io/druid-ai-docs/ai-governance-and-security/data-security-and-privacy/authoring-user-management/provisioning-portal-users-with-google-saml).
+* **Google SAML SSO Authentication for Portal Users**. We are excited to introduce support for Google Single Sign-On (SSO) authentication via the SAML protocol. Driven by client feedback to better support enterprise user management, this feature allows your team members to securely log into the portal using their managed Google Account credentials. For more information, see [Provisioning Portal Users with Google SAML](https://druidai.gitbook.io/druid-ai-docs/ai-platform/ai-governance-and-security/data-security-and-privacy/authoring-user-management/provisioning-portal-users-with-google-saml).
 
 **Key Benefits**
 
@@ -61,7 +61,7 @@ For more information, see [AI Engagement Analyst](https://druidai.gitbook.io/dru
 
 ![](<../../../.gitbook/assets/log in.png>)
 
-For more information, see [Passkey Login Configuration](https://druidai.gitbook.io/druid-ai-docs/ai-governance-and-security/data-security-and-privacy/authoring-user-management/passkey-login-configuration).
+For more information, see [Passkey Login Configuration](https://druidai.gitbook.io/druid-ai-docs/ai-platform/ai-governance-and-security/data-security-and-privacy/authoring-user-management/passkey-login-configuration).
 
 ## Improvements
 
@@ -91,7 +91,7 @@ That workaround is no longer needed. Repeater elements can now read nested field
 * **Performance-Safe Execution**. Runs in a "fire-and-forget" asynchronous mode to ensure that background data wiping never impacts live platform performance.
 * **Enhanced Security & Auditing**. Restricts execution to authorized system levels to prevent accidental data clearance, while logging webhook timestamps, conversation IDs, and success status for compliance reporting.
 
-For more information, see [Facebook Data Deletion Flow](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/flows/special-flows/facebook-data-deletion-flow).
+For more information, see [Facebook Data Deletion Flow](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/flows/special-flows/facebook-data-deletion-flow).
 
 * **Code Extension - Added Logging Messages Support**. Authors can now insert custom log messages directly from Code Extension on flow steps by using the new `Context.LogMessage()` and `Context.LogDebugMessage()` methods.
 
@@ -100,7 +100,7 @@ This enhancement improves flow troubleshooting and observability by allowing aut
 * **Context.LogMessage()** writes informational messages to the Conversation History logs.
 * **Context.LogDebugMessage()** writes debug-only messages visible exclusively in the Conversation Trace, helping authors investigate complex scenarios without exposing technical details to end users.
 
-For more information, see [Logging Messages from Code Extension](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/flows/conversational-flows/flow-steps/common-flow-settings/code-extension#Logging).
+For more information, see [Logging Messages from Code Extension](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/flows/conversational-flows/flow-steps/common-flow-settings/code-extension#Logging).
 
 * **Dashboards – Export to PDF Improvement**. The exported dashboard PDF file now includes the selected reporting period in the document title. This enhancement makes exported reports easier to identify, organize, and share, especially when working with recurring analytics snapshots or historical comparisons.
 

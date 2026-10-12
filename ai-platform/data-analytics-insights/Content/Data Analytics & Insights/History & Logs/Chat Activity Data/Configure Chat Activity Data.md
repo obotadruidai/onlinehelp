@@ -8,7 +8,7 @@ The Chat Activity Data feature enables you to store specific context data in the
 To configure chat activity data, follow these steps:
 
 1. On the flows where you want to store activity data, configure existing step(s) or create a new one and make sure to:
-2. Put the activity data into context by setting variables. For information on how to set variables on flow steps, see [Set Variables](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/flows/conversational-flows/flow-steps/common-flow-settings/set-variables).
+2. Put the activity data into context by setting variables. For information on how to set variables on flow steps, see [Set Variables](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/flows/conversational-flows/flow-steps/common-flow-settings/set-variables).
 
 Example:
 

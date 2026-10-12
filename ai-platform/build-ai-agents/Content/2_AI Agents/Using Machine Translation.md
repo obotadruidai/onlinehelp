@@ -54,7 +54,7 @@ To enable and configure a translation provider:
 **IMPORTANT!** LLM machine translation is available **only for conversation time translation**.
 {% endhint %}
 
-Before you start, make sure you have an LLM resource set up in the Druid Portal. For more information, see [Create LLM Resources](https://druidai.gitbook.io/druid-ai-docs/ai-governance-and-security/ai-evaluation-and-response-guardrails/llm-resource-management-and-governance).
+Before you start, make sure you have an LLM resource set up in the Druid Portal. For more information, see [Create LLM Resources](https://druidai.gitbook.io/druid-ai-docs/ai-platform/ai-governance-and-security/ai-evaluation-and-response-guardrails/llm-resource-management-and-governance).
 
 To use LLM machine translation, follow these steps:
 

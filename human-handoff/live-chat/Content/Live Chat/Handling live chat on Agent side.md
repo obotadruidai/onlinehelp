@@ -46,7 +46,7 @@ You can configure the following settings:
 
 ## Enable helpdesk agents to use web views and forms
 
-Enabling helpdesk agents to access web views and forms is particularly useful when they need to manage records stored in [conversational business applications](https://druidai.gitbook.io/druid-ai-docs/conversational-ai-apps/conversational-ai-applications)while talking to the users (e.g., update user account details).
+Enabling helpdesk agents to access web views and forms is particularly useful when they need to manage records stored in [conversational business applications](https://druidai.gitbook.io/druid-ai-docs/ai-platform/conversational-ai-apps/conversational-ai-applications)while talking to the users (e.g., update user account details).
 
 ![](<../../.gitbook/assets/web form tab.png>)
 
@@ -136,7 +136,7 @@ By utilizing these statuses, you can effectively distinguish between an agent ma
 
 ## Related Topics
 
-* [AI Agent Informational Model](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/ai-agent-informational-model)
+* [AI Agent Informational Model](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/ai-agent-informational-model)
 * [Live Chat With Multiple Queues](<Live Chat Multiple Queues.md>)
-* [Post Actions](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/flows/conversational-flows/flow-steps/common-flow-settings/post-actions)
-* [Pre Actions](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/flows/conversational-flows/flow-steps/common-flow-settings/pre-actions)
+* [Post Actions](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/flows/conversational-flows/flow-steps/common-flow-settings/post-actions)
+* [Pre Actions](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/flows/conversational-flows/flow-steps/common-flow-settings/pre-actions)

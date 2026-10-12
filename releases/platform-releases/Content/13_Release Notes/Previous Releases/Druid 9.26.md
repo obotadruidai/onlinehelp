@@ -44,11 +44,11 @@ If you have questions about your Druid tenant, please contact [support@druidai.c
 **Info:** If your telephony provider requires whitelisting IP subnets (such as CIDR blocks or specific IP ranges), please contact Druid Support for advanced security provisioning.
 {% endhint %}
 
-* **Enhanced Visibility for File Upload Restrictions in Conversation Trace**. To simplify troubleshooting and provide clear visibility into runtime file validation, Druid now logs explicit system messages to the Conversation Trace whenever a file upload is rejected based on your [File Type Priority Logic](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/flows/conversational-flows/flow-steps/file-upload-steps-configuration#File).
+* **Enhanced Visibility for File Upload Restrictions in Conversation Trace**. To simplify troubleshooting and provide clear visibility into runtime file validation, Druid now logs explicit system messages to the Conversation Trace whenever a file upload is rejected based on your [File Type Priority Logic](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/flows/conversational-flows/flow-steps/file-upload-steps-configuration#File).
 
 **Multi-file behavior**. The system logs a dedicated message for each unaccepted file. For example, if a user attempts to upload five files at once and three are rejected, three distinct validation messages will be logged in the Conversation Trace to help you pinpoint exactly which files failed and why.
 
-* **Social Media Channels - Support for story reaction handling**. Introduced the Social media reactions flow , enabling AI Agents to capture and process user reactions to Instagram stories. When enabled, the reaction value (such as applause or heart) is stored in **\[\[Intent]].Text** for custom handling; when disabled, story reactions are automatically ignored. For more information, see [Social Media Reactions Flow](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/flows/special-flows/social-media-reactions-flow).
+* **Social Media Channels - Support for story reaction handling**. Introduced the Social media reactions flow , enabling AI Agents to capture and process user reactions to Instagram stories. When enabled, the reaction value (such as applause or heart) is stored in **\[\[Intent]].Text** for custom handling; when disabled, story reactions are automatically ignored. For more information, see [Social Media Reactions Flow](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/flows/special-flows/social-media-reactions-flow).
 
 {% hint style="info" %}
 **NOTE:** Facebook story reactions are not supported as Facebook does not generate reaction events.

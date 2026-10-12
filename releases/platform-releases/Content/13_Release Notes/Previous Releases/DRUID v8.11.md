@@ -27,7 +27,7 @@ If you have questions about your DRUID tenant, please contact [support@Druidai.c
 
 * **External Webhook Call Handling in DRUID**. This release introduces the `/GenericIntegration` webhook endpoint, allowing you to seamlessly handle external webhook calls in DRUID. The feature captures key request details—such as query parameters, headers, and the request body—and processes them through DRUID’s connector integrations. By leveraging this functionality, you can efficiently interact with external systems while ensuring structured data handling within the DRUID platform.
 
-For more information, see [External Webhook Call Handling in DRUID](https://druidai.gitbook.io/druid-ai-docs/integrations/webhooks/exchanging-data-with-external-systems).
+For more information, see [External Webhook Call Handling in DRUID](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/webhooks/exchanging-data-with-external-systems).
 
 * **Debug Messages in Flow Steps**. You can now use Debug Messages to troubleshoot and optimize flow steps without affecting live conversations. This feature allows you to track the execution of specific steps, understand unexpected flow paths, and gain insights into conversation context using the Conversation Trace tool. Since debug messages are never visible to end users, you can safely use them in production to diagnose and resolve issues efficiently.
 
@@ -37,7 +37,7 @@ For more information, see [External Webhook Call Handling in DRUID](https://drui
 
 ![](<../../../.gitbook/assets/debug message.png>)
 
-For more information, see [Debug Messages in Flow Steps](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/flows/troubleshooting-steps-with-debug-messages).
+For more information, see [Debug Messages in Flow Steps](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/flows/troubleshooting-steps-with-debug-messages).
 
 * **WebChat – Update the Conversation Context**. You can now update the conversation context with data from the web page hosting the AI Agent without interrupting the current flow execution. Use the `sendEvent("UpdateConversationContext")` function to achieve this. For more details, see [Trigger AI Agent Events from the Web Page Hosting the AI Agent](https://druidai.gitbook.io/druid-ai-docs/channels/web-and-email/webchat/trigger-events-from-the-web-page).
 * **Multichat – Voice-to-Voice Live Conversations**. Live voice conversations with real-time translation are now available in Multichat when the Voice channel is enabled. This feature allows agents to communicate more efficiently by switching seamlessly between text and voice during live interactions.
@@ -50,7 +50,7 @@ For more information, see [Voice-to-Voice Live Conversations](https://druidai.gi
 
 ![](<../../../.gitbook/assets/login attempts report.png>)
 
-For more information, see [Druid Portal Users Login Attempts Report](https://druidai.gitbook.io/druid-ai-docs/ai-governance-and-security/data-security-and-privacy/authoring-user-management/druid-portal-users-login-attempts-report).
+For more information, see [Druid Portal Users Login Attempts Report](https://druidai.gitbook.io/druid-ai-docs/ai-platform/ai-governance-and-security/data-security-and-privacy/authoring-user-management/druid-portal-users-login-attempts-report).
 
 * **Knowledge Base - Content extraction from PPTX and PPSX files**. DRUID now supports the Standard extractor for content processing of PPTX and PPSX files, enabling efficient and accurate text extraction from presentations.
 
@@ -77,7 +77,7 @@ For more information, see [Druid Portal Users Login Attempts Report](https://dru
 
 ![](<../../../.gitbook/assets/icon on form.png>)
 
-For more information, see [Recommend automations on views](https://druidai.gitbook.io/druid-ai-docs/conversational-ai-apps/views/recommend-automations-on-views) or [Recommend automations on forms](https://druidai.gitbook.io/druid-ai-docs/conversational-ai-apps/forms/recommend-automations-on-forms).
+For more information, see [Recommend automations on views](https://druidai.gitbook.io/druid-ai-docs/ai-platform/conversational-ai-apps/views/recommend-automations-on-views) or [Recommend automations on forms](https://druidai.gitbook.io/druid-ai-docs/ai-platform/conversational-ai-apps/forms/recommend-automations-on-forms).
 
 * **AI Agent Summary Dashboard – Enhanced bar chart reporting**. The AI Agent Summary dashboard now supports side-by-side bar charts for clearer data visualization. Instead of stacking values on the same bar, you can select **Display side by side** in the bar chart configuration to show values as separate bars, making comparisons easier and more intuitive. This update helps you quickly analyze data and gain deeper insights.
 

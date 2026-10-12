@@ -129,7 +129,7 @@ Enter the Cloud Orchestrator details (the ones noted in the prerequisites):
 **IMPORTANT!** To have Druid read all the folders from your UiPath Orchestrator, after you provide the UiPath connection strings to the UiPath Cloud Orchestrator, click the **Get UiPath folders** button.
 {% endhint %}
 
-For more information on how to configure the UiPath connector, see [Triggering an Unattended Process](https://druidai.gitbook.io/druid-ai-docs/integrations/enterprise-connectors/uipath-connector/running-unattended-process-using-orchestrator-queues) or [Creating the UiPath Connection Strings](https://druidai.gitbook.io/druid-ai-docs/integrations/enterprise-connectors/uipath-connector/creating-the-uipath-connection-strings).
+For more information on how to configure the UiPath connector, see [Triggering an Unattended Process](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/uipath-connector/running-unattended-process-using-orchestrator-queues) or [Creating the UiPath Connection Strings](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/uipath-connector/creating-the-uipath-connection-strings).
 
 After you finish setting up the UiPath connector, click **Save and Close**.
 

@@ -11,11 +11,11 @@ DRUID also provides authors with the option to export DRUID schema in JSON forma
 
 ## Prerequisites
 
-* You need to have configured a [UiPath Data Service Connector](https://druidai.gitbook.io/druid-ai-docs/integrations/enterprise-connectors/uipath-data-service-connector) (activate the connection to your UiPath Data Service).
+* You need to have configured a [UiPath Data Service Connector](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/uipath-data-service-connector) (activate the connection to your UiPath Data Service).
 
 ## Create DRUID entities using UiPath schema
 
-1. Load the UiPath entity schema, by clicking the **Actions** drop-down and clicking **Refresh UiPath Schema**. If you want to map certain UiPath fields to specific DRUID entities fields you can do so by following the procedure described in section [Loading UiPath Entity Schema and Mapping Fields](https://druidai.gitbook.io/druid-ai-docs/integrations/enterprise-connectors/uipath-data-service-connector/loading-uipath-entity-schema).
+1. Load the UiPath entity schema, by clicking the **Actions** drop-down and clicking **Refresh UiPath Schema**. If you want to map certain UiPath fields to specific DRUID entities fields you can do so by following the procedure described in section [Loading UiPath Entity Schema and Mapping Fields](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/uipath-data-service-connector/loading-uipath-entity-schema).
 2. Click the **Actions** drop-down, and then click **Create Druid Entities**.
 
 ![](<../../../.gitbook/assets/UiPath Data Service.png>)

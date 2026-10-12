@@ -101,6 +101,6 @@ After publishing, the AI Agent lacks conversation flows. Import the Druid Starte
 
 ## Related Topics
 
-* [AI Agent Authoring Privileges via RBAC Policy](https://druidai.gitbook.io/druid-ai-docs/ai-governance-and-security/data-security-and-privacy/authoring-user-management/ai-agent-authoring-privileges-via)
+* [AI Agent Authoring Privileges via RBAC Policy](https://druidai.gitbook.io/druid-ai-docs/ai-platform/ai-governance-and-security/data-security-and-privacy/authoring-user-management/ai-agent-authoring-privileges-via)
 * [Configuring AI Agent Shortcut Keys](<Configuring AI Agent Shortcut Keys.md>)
-* [Creating Authoring Users (Portal Users)](https://druidai.gitbook.io/druid-ai-docs/ai-governance-and-security/data-security-and-privacy/authoring-user-management/creating-authoring-users)
+* [Creating Authoring Users (Portal Users)](https://druidai.gitbook.io/druid-ai-docs/ai-platform/ai-governance-and-security/data-security-and-privacy/authoring-user-management/creating-authoring-users)

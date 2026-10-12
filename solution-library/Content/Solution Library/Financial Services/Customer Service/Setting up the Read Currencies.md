@@ -158,4 +158,4 @@ Switch to UiPath Assistant. Find the process “awaiting for install”, click t
 
 ## Related Topics
 
-* [Running Unattended Process using Orchestrator Queues](https://druidai.gitbook.io/druid-ai-docs/integrations/enterprise-connectors/uipath-connector/running-unattended-process-using-orchestrator-queues)
+* [Running Unattended Process using Orchestrator Queues](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/uipath-connector/running-unattended-process-using-orchestrator-queues)

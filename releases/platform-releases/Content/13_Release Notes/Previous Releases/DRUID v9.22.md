@@ -33,13 +33,13 @@ With this update, you can define a single security policy in the AI Agent Genera
 2. Flow Step Level
 3. AI Agent Level.
 
-For more information, see [File Type Priority Logic](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/flows/conversational-flows/flow-steps/file-upload-steps-configuration#File) and [General Settings](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/configuring-ai-agent-advanced-settings#General).
+For more information, see [File Type Priority Logic](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/flows/conversational-flows/flow-steps/file-upload-steps-configuration#File) and [General Settings](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/configuring-ai-agent-advanced-settings#General).
 
 * **Error Visibility for Code Extension**. To improve troubleshooting and system transparency, we have enhanced how Code Extension errors are captured and displayed. Any failures occurring within a Code Extension, including variable assignments or missing entity fields defined in the code, are now logged in both Conversation History and Conversation Trace.
 
 This update ensures that errors which previously resulted in silent failures or missing error logs are now fully visible, allowing for faster debugging and more accurate conversation tracking.
 
-* **Netopia Payment Audit Logs**. We have enhanced the Netopia integration to provide better visibility into payment retries. The payment step now remains active during failed attempts, capturing all relevant data into a payment history log. For more information, see [Tracking Payment History](https://druidai.gitbook.io/druid-ai-docs/integrations/enterprise-connectors/netopia-payments#Tracking).
+* **Netopia Payment Audit Logs**. We have enhanced the Netopia integration to provide better visibility into payment retries. The payment step now remains active during failed attempts, capturing all relevant data into a payment history log. For more information, see [Tracking Payment History](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/netopia-payments#Tracking).
 * **Monitoring Druid Voice Connectivity - SIP Ladder**. To support Druid Voice troubleshooting, we have added a dedicated **SIP Ladder** to the Conversation History. This feature allows administrators to monitor AI agent connectivity by providing a visual event history of all signaling between the Druid SIP server and the contact center.
 
 ![](<../../../.gitbook/assets/sip ladder.png>)

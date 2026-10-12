@@ -10,7 +10,7 @@ This section will walk you through the steps to import and configure the solutio
 ## Prerequisites
 
 * Tenant Druid community (open new tenant [here](https://www.druidai.com/license-activation)) or Druid subscription.
-* You should have an AI Agent. For information on how to create an AI Agent, see [Creating AI Agents](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/creating-ai-agents).
+* You should have an AI Agent. For information on how to create an AI Agent, see [Creating AI Agents](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/creating-ai-agents).
 * Druid Vision key with **convert-pdf-to-jpeg** and **convert-pdf-page-to-jpeg** permissions
 * LLM resource enabled on the tenant; not required if you use your own LLM for configuration instead of Druid Service Gateway.
 
@@ -137,7 +137,7 @@ To define when and how often an alert runs, follow these steps:
 
 6. Save the flow.
 
-For more information on alerts, see [Alert Flows](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/flows/alert-flows).
+For more information on alerts, see [Alert Flows](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/flows/alert-flows).
 
 ## Test alerts
 

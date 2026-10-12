@@ -21,7 +21,7 @@ This solution includes:
 ## Prerequisites
 
 * Tenant Druid community (open new tenant [here](https://www.druidai.com/license-activation)) or Druid subscription.
-* You should have a AI Agent. For information on how to create an AI Agent, see [Creating AI Agents](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/creating-ai-agents).
+* You should have a AI Agent. For information on how to create an AI Agent, see [Creating AI Agents](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/creating-ai-agents).
 * Enable the API Resources for Druid WebView and Druid Data Service. Then, activate the Druid Data Service in your tenant by navigating to **Administration** > **Settings** > **Druid Data Service**, and selecting **Is enabled** and clicking the **Save all** button at the top right of the page.
 * You need to have the gpt-4.1 and gpt-4o-mini models deployment via Microsoft Azure, OpenAI, or other LLM provider that supports tools / function calling. If you want to use these models via DRUID LLM API resources, they must be activated for Azure OpenAI (models gpt-4.1 and gpt-4o-mini) on your tenant. Contact your DRUID sales representative to enable DRUID-dedicated resources and generate an API token for Druid.LLM.
 

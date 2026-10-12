@@ -46,7 +46,7 @@ At the top-right corner of the page, click the **Save all** button.
 **IMPORTANT!** Make sure that you click **Save all**; otherwise, enabling Druid Data Service and overwriting the entity fields will have no effect.
 {% endhint %}
 
-Use [Druid Data Service Connector](https://druidai.gitbook.io/druid-ai-docs/integrations/enterprise-connectors/druid_data_-service_connector) to manage entity records within the conversational flows.
+Use [Druid Data Service Connector](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/druid_data_-service_connector) to manage entity records within the conversational flows.
 
 ## Add Data Service Indexes <a href="#add" id="add"></a>
 
@@ -103,4 +103,4 @@ After making changes to your configuration or adding indexes, click the **Refres
 
 ## Related Topics
 
-* [System Entity Fields](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/ai-agent-informational-model/system-entity-fields)
+* [System Entity Fields](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/ai-agent-informational-model/system-entity-fields)

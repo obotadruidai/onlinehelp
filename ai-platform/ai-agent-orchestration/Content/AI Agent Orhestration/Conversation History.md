@@ -12,5 +12,5 @@ To filter conversation history by a specific orchestrated AI Agent, click **More
 ![](<../../.gitbook/assets/more filters.png>)
 
 {% hint style="info" %}
-**Info:** All Druid Conductor conversations involving an orchestrated AI Agent are also visible in that AI Agent's own Conversation History. For more information, see [Conversation History](https://druidai.gitbook.io/druid-ai-docs/data-analytics-and-insights/operational-visibility-and-history/conversation-history).
+**Info:** All Druid Conductor conversations involving an orchestrated AI Agent are also visible in that AI Agent's own Conversation History. For more information, see [Conversation History](https://druidai.gitbook.io/druid-ai-docs/ai-platform/data-analytics-and-insights/operational-visibility-and-history/conversation-history).
 {% endhint %}

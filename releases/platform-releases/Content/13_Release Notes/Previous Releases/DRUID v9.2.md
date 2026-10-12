@@ -26,7 +26,7 @@ If you have questions about your DRUID tenant, please contact [support@Druidai.c
 **NOTE:** To avoid running the same actions twice, update your flow to include a branch condition that checks if `IsCommandChannel = true` and define logic specific to the assistant conversation.
 {% endhint %}
 
-For more information, see [Voice Call Terminate Flow](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/flows/special-flows/voice-call-terminate-flow).
+For more information, see [Voice Call Terminate Flow](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/flows/special-flows/voice-call-terminate-flow).
 
 - **Conversation Transcript – Include assistant conversation**. You can now generate a complete transcript that includes both the main conversation (with the end user) and the assistant conversation (between the agent and the assistant AI Agent). When enabled, the transcript merges and intercalates messages from both conversations in chronological order, providing a unified view of the interaction.
 
@@ -37,7 +37,7 @@ To support this enhancement, the **GetConversationTranscript** internal action i
 
 This feature is useful for auditing, customer support analysis, and CRM integration.
 
-For more information, see [Internal Actions](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/flows/conversational-flows/internal-actions).
+For more information, see [Internal Actions](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/flows/conversational-flows/internal-actions).
 
 - **Website Data Sources – Improved deletion of untrained elements**. When deleting data source nodes or web pages that have not been trained, they are now automatically removed from the data source. These elements are no longer marked for deletion and left pending training. This streamlines data management and reduces unnecessary processing.
 

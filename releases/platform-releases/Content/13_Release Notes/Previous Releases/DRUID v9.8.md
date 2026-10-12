@@ -25,7 +25,7 @@ If you have questions about your DRUID tenant, please contact [support@Druidai.c
 * **Property update**: User properties (e.g., roles, first name, last name) and security roles provided by the SSO identity provider will be used to update the corresponding properties and roles on the existing Druid Portal user account. The merger operates on a **maximum properties basis**, meaning non-null values from the SSO provider will overwrite existing values.
 * **Master ID preservation**: The **masterId** will be preserved. If the existing user has a masterId and the current SSO login request does not provide one, the existing masterId will not be deleted.
 
-For information on how to provision Druid Portal users via OpenID Connect, see [Provisioning Portal Users and SSO Authentication via OpenID Connect](https://druidai.gitbook.io/druid-ai-docs/ai-governance-and-security/data-security-and-privacy/authoring-user-management/provisioning-portal-users).
+For information on how to provision Druid Portal users via OpenID Connect, see [Provisioning Portal Users and SSO Authentication via OpenID Connect](https://druidai.gitbook.io/druid-ai-docs/ai-platform/ai-governance-and-security/data-security-and-privacy/authoring-user-management/provisioning-portal-users).
 
 * **Conversation History - Faster loading for User filter**. Optimized the User filter drop-down to load faster, improving performance for tenants with large numbers of users.
 

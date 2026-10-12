@@ -3,7 +3,7 @@ title: Defining Connection Strings (Apps)
 ---
 
 
-Once you define the data model (the [entities](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/ai-agent-informational-model)) the AI Agent uses to collect and store information), you can define the connection strings (apps) used for integration with third-party applications. Connection strings provide specific connection details.
+Once you define the data model (the [entities](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/ai-agent-informational-model)) the AI Agent uses to collect and store information), you can define the connection strings (apps) used for integration with third-party applications. Connection strings provide specific connection details.
 
 To define an app within the selected solution, click **Apps** on the main menu. The Apps page appears, listing the existing apps for the selected solution.
 
@@ -15,5 +15,5 @@ The New App page appears. The page content varies based on the selected integrat
 
 ## Related Topics
 
-* [AI Agent Informational Model](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/ai-agent-informational-model)
-* [Managing Entities](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/ai-agent-informational-model/managing-entities)
+* [AI Agent Informational Model](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/ai-agent-informational-model)
+* [Managing Entities](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/ai-agent-informational-model/managing-entities)

@@ -25,7 +25,7 @@ The conversation transcript provides you with powerful tools to:
 * Debug messages in the flow diagram per flow.
 
 {% hint style="info" %}
-**Info:** To quickly identify the AI Agent decision-making process, track silent actions, and troubleshoot issues more effectively, use [Conversation Trace](https://druidai.gitbook.io/druid-ai-docs/ai-governance-and-security/observability-and-explainability/conversation-trace).
+**Info:** To quickly identify the AI Agent decision-making process, track silent actions, and troubleshoot issues more effectively, use [Conversation Trace](https://druidai.gitbook.io/druid-ai-docs/ai-platform/ai-governance-and-security/observability-and-explainability/conversation-trace).
 {% endhint %}
 
 ## Debugging message details and integration log per flow steps

@@ -1,0 +1,5 @@
+root: .
+
+structure:
+  readme: "get-started/Content/1_Druid AI Platform/Druid Platform.md"
+  summary: SUMMARY.md

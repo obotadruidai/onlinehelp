@@ -362,7 +362,7 @@ Complete your Facebook app review, make the app public and publish the Facebook 
 
 To comply with Meta data privacy requirements, Druid supports an automated **Facebook data deletion flow**. When a user who has interacted with an AI Agent via the Facebook channel deletes their Facebook account or removes the app, Facebook sends a data deletion notification to Druid. You can configure a specific flow to handle these requests, such as anonymizing personal information or deleting records from the Conversation History.
 
-To enable this functionality, you must create a data deletion handling flow select it from the **Facebook data deletion flow** dropdown in the Dialogue Management section of your AI Agent settings. For more information, see [Facebook Data Deletion Flow](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/flows/special-flows/facebook-data-deletion-flow).
+To enable this functionality, you must create a data deletion handling flow select it from the **Facebook data deletion flow** dropdown in the Dialogue Management section of your AI Agent settings. For more information, see [Facebook Data Deletion Flow](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/flows/special-flows/facebook-data-deletion-flow).
 
 ## Inactivate the channel
 

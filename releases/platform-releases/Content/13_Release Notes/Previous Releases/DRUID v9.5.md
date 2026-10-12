@@ -55,7 +55,7 @@ For more information, see [Enabling Managers to Disconnect Helpdesk Agents](http
 
 ![](<../../../.gitbook/assets/delete user.png>)
 
-For more information, see [Disable Portal Users](https://druidai.gitbook.io/druid-ai-docs/ai-governance-and-security/data-security-and-privacy/authoring-user-management/disableportalusers).
+For more information, see [Disable Portal Users](https://druidai.gitbook.io/druid-ai-docs/ai-platform/ai-governance-and-security/data-security-and-privacy/authoring-user-management/disableportalusers).
 
 * **Knowledge Base - URL Bulk Exclusion for Website data sources**. To streamline your knowledge base authoring, you can now exclude a list of links from scraping in a website data source.
 
@@ -73,7 +73,7 @@ To use this feature, adjust your automation to reference the generated Portal us
 
 ![](../../../.gitbook/assets/runjobalert.png)
 
-For more information, see [Alert Flows](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/flows/alert-flows).
+For more information, see [Alert Flows](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/flows/alert-flows).
 
 ## Bug Fixes
 

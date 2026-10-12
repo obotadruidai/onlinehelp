@@ -115,6 +115,6 @@ This is the list of Live Chat messages:
 
 ## Related Topics
 
-* [Configuring AI Agent Advanced Settings](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/configuring-ai-agent-advanced-settings)
-* [Inactivity Cancel Conversation Flow](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/flows/special-flows/inactivitycancelconversationflow)
-* [Special Flows](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/flows/special-flows)
+* [Configuring AI Agent Advanced Settings](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/configuring-ai-agent-advanced-settings)
+* [Inactivity Cancel Conversation Flow](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/flows/special-flows/inactivitycancelconversationflow)
+* [Special Flows](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/flows/special-flows)

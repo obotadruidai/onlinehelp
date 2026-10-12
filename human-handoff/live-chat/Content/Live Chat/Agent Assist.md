@@ -77,7 +77,7 @@ To paste the copied response into the chat, the helpdesk agent just needs to cli
 
 You can configure the Voice Call Terminate Flow to also run in the assistant conversation (the internal chat between the helpdesk agent and the assistant AI Agent), enabling you to define tailored post-call automation for agent-side actions after a voice call ends.
 
-For more information, see [Voice Call Terminate Flow](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/flows/special-flows/voice-call-terminate-flow).
+For more information, see [Voice Call Terminate Flow](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/flows/special-flows/voice-call-terminate-flow).
 
 ## Access the full conversation transcript
 
@@ -87,4 +87,4 @@ For more information, see [Voice Call Terminate Flow](https://druidai.gitbook.io
 
 When Agent Assist is enabled, you can generate a complete transcript that includes both the client-side and assistant conversations. This provides full visibility into the entire interaction—useful for auditing, support analysis, or CRM integration.
 
-For configuration details, see the [Internal Actions](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/flows/conversational-flows/internal-actions), GetConversationTranscript.
+For configuration details, see the [Internal Actions](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/flows/conversational-flows/internal-actions), GetConversationTranscript.

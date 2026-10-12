@@ -58,7 +58,7 @@ The system applies the following criteria for matching the user profile:
 Call the internal action **SaveAuthenticatedUser** to set the current conversation as authenticated.
 
 {% hint style="info" %}
-**NOTE:** For DRUID version 1.71 and higher, the messages in chat will be sent by the new \[\[ChatUser]].FirstName of the recently authenticated user. If you want to change the user's name in the AI Agent snippet to a specific name, you can further use a backchannel step and configure it based on your use case. For more information about backchannel event steps and the two use cases available, see [Backchannel Event Steps (Bot Framework v4)](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/flows/conversational-flows/flow-steps/backchannel-event-steps-bot-framework-v4).
+**NOTE:** For DRUID version 1.71 and higher, the messages in chat will be sent by the new \[\[ChatUser]].FirstName of the recently authenticated user. If you want to change the user's name in the AI Agent snippet to a specific name, you can further use a backchannel step and configure it based on your use case. For more information about backchannel event steps and the two use cases available, see [Backchannel Event Steps (Bot Framework v4)](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/flows/conversational-flows/flow-steps/backchannel-event-steps-bot-framework-v4).
 {% endhint %}
 
 For the web channels using the Druid webchat snippet, you can also add a second step of type Back Channel to change the user name listed in the conversation.

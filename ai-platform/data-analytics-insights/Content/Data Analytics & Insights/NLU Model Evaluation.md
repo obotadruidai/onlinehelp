@@ -62,7 +62,7 @@ Within the **Conversation History** tab, you can take direct action on specific 
 ## Related Topics
 
 * [Annotation Tool](<Annotation/Annotation Tool.md>)
-* [Configuring AI Agent Advanced Settings](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/configuring-ai-agent-advanced-settings)
-* [Defining the Intent](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/flows/conversational-flows/defining-the-intent)
+* [Configuring AI Agent Advanced Settings](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/configuring-ai-agent-advanced-settings)
+* [Defining the Intent](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/flows/conversational-flows/defining-the-intent)
 * [Evaluate Words Used in Multiple Intents](<../Conversational AI/Word Cloud.md>)
-* [Explainability and Utterances Annotation](https://druidai.gitbook.io/druid-ai-docs/ai-governance-and-security/observability-and-explainability/explainability-and-utterances-annotation)
+* [Explainability and Utterances Annotation](https://druidai.gitbook.io/druid-ai-docs/ai-platform/ai-governance-and-security/observability-and-explainability/explainability-and-utterances-annotation)

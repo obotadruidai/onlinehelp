@@ -27,11 +27,11 @@ The process includes UiPath integration with unattended automation. Contact Cent
 
 [!\[\](../Resources/Images/Download.png)](https://druiddocs.file.core.windows.net/docs-shares/UiPath_Starter_Unnatended_Queues_List.zip?st=2021-07-22T09%3A36%3A27Z&se=2024-07-23T09%3A36%3A00Z&sp=rl&sv=2018-03-28&sr=f&sig=s6YB1HlId7UTKGa5ftVi0dJSpq622Bm8Tyaz9GWmUZU%3D)
 
-2. On the desired AI Agent, import the **Druid\_StartingPack\_Unattended**.zip file. For information on how to import solutions, see [Importing Solutions](https://druidai.gitbook.io/druid-ai-docs/release-lifecycle-and-versioning/importing-solutions).
+2. On the desired AI Agent, import the **Druid\_StartingPack\_Unattended**.zip file. For information on how to import solutions, see [Importing Solutions](https://druidai.gitbook.io/druid-ai-docs/ai-platform/release-lifecycle-and-versioning/importing-solutions).
 3. Customize the process based on your needs following the appropriate procedure listed in the table below.
 
 | UiPath process | Procedure |
 | --- | --- |
-| UiPath process via webhooks | [Starting UiPath Unattended](https://druidai.gitbook.io/druid-ai-docs/integrations/enterprise-connectors/uipath-connector/starting-uipath-unattended) |
-| UiPath process via queues - Retrieve response from UiPath with single item | [Running Unattended Process using Orchestrator Queues](https://druidai.gitbook.io/druid-ai-docs/integrations/enterprise-connectors/uipath-connector/running-unattended-process-using-orchestrator-queues) |
-| UiPath process via queues - Retrieve response from UiPath with a collection | [Running Unattended Process using Orchestrator Queues](https://druidai.gitbook.io/druid-ai-docs/integrations/enterprise-connectors/uipath-connector/running-unattended-process-using-orchestrator-queues) |
+| UiPath process via webhooks | [Starting UiPath Unattended](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/uipath-connector/starting-uipath-unattended) |
+| UiPath process via queues - Retrieve response from UiPath with single item | [Running Unattended Process using Orchestrator Queues](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/uipath-connector/running-unattended-process-using-orchestrator-queues) |
+| UiPath process via queues - Retrieve response from UiPath with a collection | [Running Unattended Process using Orchestrator Queues](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/uipath-connector/running-unattended-process-using-orchestrator-queues) |

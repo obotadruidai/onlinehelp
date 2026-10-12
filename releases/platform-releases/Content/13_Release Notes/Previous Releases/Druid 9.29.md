@@ -21,7 +21,7 @@ If you have questions about your Druid tenant, please contact [support@druidai.c
 
 ## What's New
 
-* **Extended Thinking & Reasoning Support for Anthropic Models in LlmStreamer**. We’ve expanded the capabilities of the LlmStreamer internal action! You can now use Anthropic models (including Claude Opus 4.5+, Claude Sonnet 5, Sonnet 4.6, and other reasoning-capable endpoints) with full support for real-time streaming and extended thinking and reasoning. For more information, see [Advanced Editing for Reasoning and Thinking Models](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/flows/agentic-flows/use-llm-response-streaming-for-voice-interactions#Advanced).
+* **Extended Thinking & Reasoning Support for Anthropic Models in LlmStreamer**. We’ve expanded the capabilities of the LlmStreamer internal action! You can now use Anthropic models (including Claude Opus 4.5+, Claude Sonnet 5, Sonnet 4.6, and other reasoning-capable endpoints) with full support for real-time streaming and extended thinking and reasoning. For more information, see [Advanced Editing for Reasoning and Thinking Models](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/flows/agentic-flows/use-llm-response-streaming-for-voice-interactions#Advanced).
 * **More precise NLU accuracy insights with new Free-Text KPIs**. You can now evaluate NLU accuracy based exclusively on free-text user input, without button selections influencing the results. Three new NLU Accuracy KPIs provide a clearer view of how accurately the conversational model understands freely entered user messages:
 * **Total Free-Text Accurate** – Number of correctly matched free-text messages.
 * **Free-Text Accuracy** – Percentage of correctly matched free-text messages.
@@ -29,14 +29,14 @@ If you have questions about your Druid tenant, please contact [support@druidai.c
 
 ![](<../../../.gitbook/assets/ai summary.png>)
 
-For details about the new KPIs, their calculation, and how to add them to existing AI Agent Summary dashboard, see [NLU KPIs](https://druidai.gitbook.io/druid-ai-docs/data-analytics-and-insights/operational-visibility-and-history/ai-agent-summary-dashboard#NLU_KPIs).
+For details about the new KPIs, their calculation, and how to add them to existing AI Agent Summary dashboard, see [NLU KPIs](https://druidai.gitbook.io/druid-ai-docs/ai-platform/data-analytics-and-insights/operational-visibility-and-history/ai-agent-summary-dashboard#NLU_KPIs).
 
-* **Epic Integration**. Druid now supports native integration with Epic FHIR, enabling AI Agents to seamlessly execute REST API calls against Epic healthcare systems to securely interact with healthcare data. It delivers high security and compliance while streamlining clinical workflows, such as retrieving patient records and managing care team tasks. Additionally, flexible environment management allows organizations to easily configure and test workflows in Epic Sandbox before seamlessly transitioning to Production. For more information, see [Epic Integration](https://druidai.gitbook.io/druid-ai-docs/integrations/enterprise-connectors/epic-integration).
+* **Epic Integration**. Druid now supports native integration with Epic FHIR, enabling AI Agents to seamlessly execute REST API calls against Epic healthcare systems to securely interact with healthcare data. It delivers high security and compliance while streamlining clinical workflows, such as retrieving patient records and managing care team tasks. Additionally, flexible environment management allows organizations to easily configure and test workflows in Epic Sandbox before seamlessly transitioning to Production. For more information, see [Epic Integration](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/epic-integration).
 
 ## Improvements
 
 * **Sprinklr channel - Enhanced parameter passing**. Druid now supports sending custom Contact Center parameters and workflow payload parameters to Sprinklr using the **ConnectToHelpdeskAgent** internal action. For more information, see [Send Contact Center Parameters](https://druidai.gitbook.io/druid-ai-docs/channels/engagement-and-support/sprinklr-integration#Send_Contact_Center_Parameters).
-* **Flow Management - bulk disable**. Managing flow availability in your solutions is now faster and more flexible. Instead of deleting flows or deactivating them one by one, you can now disable multiple flows simultaneously. For more information, see [Disabling Flows](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/flows/disabling-flows).
+* **Flow Management - bulk disable**. Managing flow availability in your solutions is now faster and more flexible. Instead of deleting flows or deactivating them one by one, you can now disable multiple flows simultaneously. For more information, see [Disabling Flows](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/flows/disabling-flows).
 * **Bulk flow management**. Select multiple flows from the Solution Contents > Flows list and click the Bulk disable selected flows icon to deactivate them all at once.
 
 ![](<../../../.gitbook/assets/bulk disable.png>)

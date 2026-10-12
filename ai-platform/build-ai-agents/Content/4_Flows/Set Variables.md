@@ -6,7 +6,7 @@ title: Set Variables
 The Set Variables section allows you to put information into context by setting entities or local variables (prefixed with @) to specific values or to the result of specific functions. While entity fields hold values according to their defined data types, local variables are always treated as strings.
 
 {% hint style="warning" %}
-**IMPORTANT!** You cannot use connector local variables between flow steps and neither can you use local variables set on flow steps within integrations. For more information, see [Using Connector Local Variables](https://druidai.gitbook.io/druid-ai-docs/integrations/enterprise-connectors/use_connector_local_variables).
+**IMPORTANT!** You cannot use connector local variables between flow steps and neither can you use local variables set on flow steps within integrations. For more information, see [Using Connector Local Variables](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/use_connector_local_variables).
 {% endhint %}
 
 To access the flow step Set Variables, in the Flow Step editor, click on the Set Variable section header. The section expands.

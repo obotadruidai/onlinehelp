@@ -48,14 +48,14 @@ Additionally, you can now use Zendesk as a live chat provider. For further infor
 
 ![](../../../.gitbook/assets/dynamic.png)
 
-For more information, see [Alert Flows](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/flows/alert-flows).
+For more information, see [Alert Flows](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/flows/alert-flows).
 
 * **RingCentral channel – Close Interventions.** A new system entity field, **\[\[ChatUser]].RingCentralInterventionId**, is now available. This field stores the intervention ID from RingCentral, enabling you to track agent engagements within a thread. You can use this field in authoring flows in conjunction with the RingCentral bot complete event (via REST integration) to automatically close an intervention once the conversation is resolved.
 * **NLU Configurations – Cancel entity index training**. You now have the option to cancel entity index training in your NLU configurations. This provides greater control over the training process and allows you to stop training if necessary.
 
 ![](<../../../.gitbook/assets/cancel train.png>)
 
-* **DRUID Data Service Connector – New Operators in custom queries**. This release introduces the `UNION`, `UNION ALL`, `INTERSECT`, and `EXCEPT` operators in custom queries. You can now use these operators to filter request data for Query entities and Query-related entity integration tasks, enabling more flexible and powerful data manipulation. For more information, see [Filter Data using DRUID Custom Query](https://druidai.gitbook.io/druid-ai-docs/integrations/enterprise-connectors/druid_data_-service_connector/filter-using-druid-custom-query).
+* **DRUID Data Service Connector – New Operators in custom queries**. This release introduces the `UNION`, `UNION ALL`, `INTERSECT`, and `EXCEPT` operators in custom queries. You can now use these operators to filter request data for Query entities and Query-related entity integration tasks, enabling more flexible and powerful data manipulation. For more information, see [Filter Data using DRUID Custom Query](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/druid_data_-service_connector/filter-using-druid-custom-query).
 * **KB – improvements**. This release introduces new improvements to website data sources:
 * **Website data sources UI**. The Website Data Sources UI now provides improved tooltips for website pages. The tooltip now displays both the page name and its URL on separate lines. This enhancement helps users differentiate between pages with the same name and makes it easier to decide whether to exclude a page after crawling.
 
@@ -78,7 +78,7 @@ For more information, see [Alert Flows](https://druidai.gitbook.io/druid-ai-docs
 
 ![](<../../../.gitbook/assets/auto refresh.png>)
 
-* **DRUID Vision - new endpoints for structured electronic invoices**. DRUID Vision now includes three new endpoints: **read-zugferd-xml**, **generate-zugferd-xml**, and **generate-xrechnung-xml**. These endpoints enable you to process and generate structured electronic invoices in compliance with the ZUGFeRD and XRechnung standards. With [read-zugferd-xml](https://druidai.gitbook.io/druid-ai-docs/integrations/druid-vision/read-zugferd-xml), you can extract invoice data from ZUGFeRD-compliant XML files, while [generate-zugferd-xml](https://druidai.gitbook.io/druid-ai-docs/integrations/druid-vision/generate-zugferd-xml) allows you to create invoices in the ZUGFeRD format. The [generate-xrechnung-xml](https://druidai.gitbook.io/druid-ai-docs/integrations/druid-vision/generate-xrechnung-xml) endpoint lets you generate XRechnung-compliant invoices, ensuring seamless compatibility with European e-invoicing regulations.
+* **DRUID Vision - new endpoints for structured electronic invoices**. DRUID Vision now includes three new endpoints: **read-zugferd-xml**, **generate-zugferd-xml**, and **generate-xrechnung-xml**. These endpoints enable you to process and generate structured electronic invoices in compliance with the ZUGFeRD and XRechnung standards. With [read-zugferd-xml](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/druid-vision/read-zugferd-xml), you can extract invoice data from ZUGFeRD-compliant XML files, while [generate-zugferd-xml](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/druid-vision/generate-zugferd-xml) allows you to create invoices in the ZUGFeRD format. The [generate-xrechnung-xml](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/druid-vision/generate-xrechnung-xml) endpoint lets you generate XRechnung-compliant invoices, ensuring seamless compatibility with European e-invoicing regulations.
 
 ## Bug Fixes <a href="#bugfixes" id="bugfixes"></a>
 

@@ -25,7 +25,7 @@ Before configuring the MS Teams channel, ensure you have:
 {% endhint %}
 
 {% hint style="info" %}
-**Info:** The MS Teams channel supports sensitive data input. For more information, see [Prompt Steps](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/flows/conversational-flows/flow-steps/prompt-steps-configuration).
+**Info:** The MS Teams channel supports sensitive data input. For more information, see [Prompt Steps](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/flows/conversational-flows/flow-steps/prompt-steps-configuration).
 {% endhint %}
 
 ### Deploy your AI Agent in MS Teams
@@ -253,4 +253,4 @@ To inactivate the channel, go to the Channels page and turn off the **Enabled** 
 
 ## Related Topics
 
-* [Handling Authentication](https://druidai.gitbook.io/druid-ai-docs/how-to/handling-authentication)
+* [Handling Authentication](https://druidai.gitbook.io/druid-ai-docs/ai-platform/how-to/handling-authentication)

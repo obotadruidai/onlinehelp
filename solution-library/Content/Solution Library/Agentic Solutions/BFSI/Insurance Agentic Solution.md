@@ -55,7 +55,7 @@ For existing policyholders, the AI Agent streamlines support and reporting:
 ## Prerequisites
 
 * Tenant Druid community (open new tenant [here](https://www.druidai.com/license-activation)) or Druid subscription.
-* You should have a AI Agent. For information on how to create an AI Agent, see [Creating AI Agents](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/creating-ai-agents).
+* You should have a AI Agent. For information on how to create an AI Agent, see [Creating AI Agents](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/creating-ai-agents).
 * Druid Vision key with **convert-pdf-to-jpeg** and **convert-pdf-page-to-jpeg** permissions.
 * LLM resource enabled on the tenant; not required if you use your own LLM for configuration instead of Druid Service Gateway.
 

@@ -73,5 +73,5 @@ To delete a training phrase, click the Delete icon displayed inline with the phr
 
 ## Related Topics
 
-* [Explainability and Utterances Annotation](https://druidai.gitbook.io/druid-ai-docs/ai-governance-and-security/observability-and-explainability/explainability-and-utterances-annotation)
-* [NLU Model Evaluation](https://druidai.gitbook.io/druid-ai-docs/data-analytics-and-insights/ai-quality-testing-and-accuracy/nlu-model-evaluation)
+* [Explainability and Utterances Annotation](https://druidai.gitbook.io/druid-ai-docs/ai-platform/ai-governance-and-security/observability-and-explainability/explainability-and-utterances-annotation)
+* [NLU Model Evaluation](https://druidai.gitbook.io/druid-ai-docs/ai-platform/data-analytics-and-insights/ai-quality-testing-and-accuracy/nlu-model-evaluation)

@@ -112,5 +112,5 @@ Make sure the AI Agent API is enabled to facilitate communication between the AI
 
 ## Related Topics
 
-* [System Entities](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/ai-agent-informational-model/system-entities)
+* [System Entities](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/ai-agent-informational-model/system-entities)
 * [WebChat Common Styling and Behavior](WebChat/WebChat_Common_Styling_and_Behavior_v4.md)

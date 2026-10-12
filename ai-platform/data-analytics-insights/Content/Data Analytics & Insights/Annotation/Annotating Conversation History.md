@@ -116,4 +116,4 @@ The table below provides an overview of the matching score coloring on the Confi
 
 ## Related Topics
 
-* [Explainability and Utterances Annotation](https://druidai.gitbook.io/druid-ai-docs/ai-governance-and-security/observability-and-explainability/explainability-and-utterances-annotation)
+* [Explainability and Utterances Annotation](https://druidai.gitbook.io/druid-ai-docs/ai-platform/ai-governance-and-security/observability-and-explainability/explainability-and-utterances-annotation)

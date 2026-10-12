@@ -5,7 +5,7 @@ title: UiPath Start My Day
 
 Inspired by the [https://marketplace.uipath.com/listings/start-my-day](https://marketplace.uipath.com/listings/start-my-day) workflow, we added adjustments to the actual process in order to showcase the Druid-UiPath start my day workflow.
 
-This solution template provides you with an [UiPath attended process](https://druidai.gitbook.io/druid-ai-docs/integrations/enterprise-connectors/uipath-connector/running-uipath-attended-processes) that opens the following applications:
+This solution template provides you with an [UiPath attended process](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/uipath-connector/running-uipath-attended-processes) that opens the following applications:
 
 * Acme. Open a new account here [https://acme-test.uipath.com/login](https://acme-test.uipath.com/login).
 * SAP. Having an SAP subscription is optional.
@@ -59,7 +59,7 @@ In the Orchestrator, go to your folder, click the **Automations** tab and at the
 
 ### Step 4: Set up Druid
 
-1. In Druid, go to Apps, search for **UiPathStartMyDay** app and configure the UiPath connection string. For more information, see [Creating the UiPath Connection Strings](https://druidai.gitbook.io/druid-ai-docs/integrations/enterprise-connectors/uipath-connector/creating-the-uipath-connection-strings).
+1. In Druid, go to Apps, search for **UiPathStartMyDay** app and configure the UiPath connection string. For more information, see [Creating the UiPath Connection Strings](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/uipath-connector/creating-the-uipath-connection-strings).
 2. Go to the ServiceNow Flows, search for the **UiPath connection string** flow and copy the flow ID.
 3. Search for the **my-open-tickets-trigger** flow and open it.
 4. Go on the step **trigger-process** and load the process from your orchestrator.

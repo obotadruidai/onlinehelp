@@ -31,7 +31,7 @@ Create a flow that provides the user with the possibility to choose the company,
 
 ![](<../../../.gitbook/assets/input mapping.png>)
 
-2. Click the Metadata section and configure the step choices, then save the step. For more information, see [Choice Steps Configuration](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/flows/conversational-flows/flow-steps/choice-steps-configuration).
+2. Click the Metadata section and configure the step choices, then save the step. For more information, see [Choice Steps Configuration](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/flows/conversational-flows/flow-steps/choice-steps-configuration).
 
 ![](../../../.gitbook/assets/choices.png)
 

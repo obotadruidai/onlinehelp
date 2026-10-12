@@ -149,7 +149,7 @@ By storing only the necessary user information and delegating authentication res
 
 ## Integrations
 
-Druid seamlessly integrates with a variety of systems, including Core Banking, CRM, ERP, BI, and HCM, through REST, SOAP, Web services, APIs, MQs, and SQL connections. If applications lack exposed interfaces, integration with RPA solutions like UiPath is also supported. For more information on Druid integrations, see [Integrations](https://druidai.gitbook.io/druid-ai-docs/integrations/enterprise-connectors).
+Druid seamlessly integrates with a variety of systems, including Core Banking, CRM, ERP, BI, and HCM, through REST, SOAP, Web services, APIs, MQs, and SQL connections. If applications lack exposed interfaces, integration with RPA solutions like UiPath is also supported. For more information on Druid integrations, see [Integrations](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors).
 
 In UiPath integration scenarios, the UiPath orchestrator necessitates initiating a callback to the Druid platform to trigger a AI Agent conversation. The method for this callback varies depending on your deployment of the UiPath orchestrator, whether it's cloud-based or on-premise:
 
@@ -189,5 +189,5 @@ Cross-channel interaction is also available, expanding communication capabilitie
 ## Related Topics
 
 * [Channels](https://druidai.gitbook.io/druid-ai-docs/channels/channels)
-* [Enterprise Connectors](https://druidai.gitbook.io/druid-ai-docs/integrations/enterprise-connectors)
-* [Handling Authentication](https://druidai.gitbook.io/druid-ai-docs/how-to/handling-authentication)
+* [Enterprise Connectors](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors)
+* [Handling Authentication](https://druidai.gitbook.io/druid-ai-docs/ai-platform/how-to/handling-authentication)

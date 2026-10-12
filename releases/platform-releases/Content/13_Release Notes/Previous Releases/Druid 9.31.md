@@ -63,13 +63,13 @@ For more information, see [KB Metadata](https://druidai.gitbook.io/druid-ai-docs
 
 ![](<../../../.gitbook/assets/llm streamer.png>)
 
-For more information, see [Use LLM Response Streaming for Voice Interactions](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/flows/agentic-flows/use-llm-response-streaming-for-voice-interactions).
+For more information, see [Use LLM Response Streaming for Voice Interactions](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/flows/agentic-flows/use-llm-response-streaming-for-voice-interactions).
 
 * **REST Apps - Simplified Client Certificate upload**. Configuring client certificate security for REST apps using the **Local Folder** store type has been streamlined. Authors can now upload the certificate file directly within the interface. Upon upload, Druid automatically populates the **File Name** field and sets the **Certificate Store Type** to **Local Folder**. This eliminates the need to manually manage and copy shared file paths, reducing configuration errors and speeding up secure mTLS setup.
 
 ![](<../../../.gitbook/assets/client cert.png>)
 
-For more information, see [Client Certificate Security](https://druidai.gitbook.io/druid-ai-docs/integrations/enterprise-connectors/rest/rest-apps/client-certificate-security).
+For more information, see [Client Certificate Security](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/rest/rest-apps/client-certificate-security).
 
 * **Enhanced Chart Filtering & UI Updates**. This release brings two new improvements:
 * **Chart filtering**. You can now filter chart data by specific entity fields directly within the chart configuration page, mirroring the filtering experience available for data service integration responses.
@@ -77,7 +77,7 @@ For more information, see [Client Certificate Security](https://druidai.gitbook.
 
 ![](../../../.gitbook/assets/charts.png)
 
-For more information, see [Dynamic Charts](https://druidai.gitbook.io/druid-ai-docs/conversational-ai-apps/charts/dynamic-charts).
+For more information, see [Dynamic Charts](https://druidai.gitbook.io/druid-ai-docs/ai-platform/conversational-ai-apps/charts/dynamic-charts).
 
 * **Automatic microphone disabling on blocked user input**. To enforce strict user choices during AI Agent interactions, setting a step to block user input now automatically disables the Webchat microphone capability for that specific step. Previously, users could bypass choice button restrictions on Choice, Hero, or Thumbnail steps by speaking via Speech-to-Text. With this update, voice input is deactivated whenever user text input is rejected, ensuring users must select one of the predefined options.
 

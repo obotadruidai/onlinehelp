@@ -77,7 +77,7 @@ Usually, the AI Agents for your employees uses Active Directory integration, MS 
 
 Druid can quickly connect with any Core Banking, CRM, ERP, BI, HCM through REST, SOAP, Web services, APIs, MQs, SQL connections. If applications do not expose interfaces, the conversational platform can be integrated with RPA - UiPath. ​
 
-For more information on Druid integrations, see [Integrations](https://druidai.gitbook.io/druid-ai-docs/integrations/enterprise-connectors).​
+For more information on Druid integrations, see [Integrations](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors).​
 
 ## Channels
 
@@ -93,5 +93,5 @@ Cross-channel interaction is also available. In addition to standard channels me
 ## Related Topics
 
 * [Channels](https://druidai.gitbook.io/druid-ai-docs/channels/channels)
-* [Enterprise Connectors](https://druidai.gitbook.io/druid-ai-docs/integrations/enterprise-connectors)
-* [Handling Authentication](https://druidai.gitbook.io/druid-ai-docs/how-to/handling-authentication)
+* [Enterprise Connectors](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors)
+* [Handling Authentication](https://druidai.gitbook.io/druid-ai-docs/ai-platform/how-to/handling-authentication)

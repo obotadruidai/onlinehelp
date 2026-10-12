@@ -71,5 +71,5 @@ Once you create your AI Agent and its container solution, you have two options f
 * [Configuring AI Agent Advanced Settings](<Configuring AI Agent Advanced Settings.md>)
 * [Configuring AI Agent Shortcut Keys](<Configuring AI Agent Shortcut Keys.md>)
 * [Creating AI Agents](<Creating AI Agents.md>)
-* [Enterprise Connectors](https://druidai.gitbook.io/druid-ai-docs/integrations/enterprise-connectors)
+* [Enterprise Connectors](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors)
 * [Flows](../4_Flows/Flows.md)

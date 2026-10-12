@@ -21,7 +21,7 @@ If you have questions about your Druid tenant, please contact [support@Druidai.c
 
 ## What's New
 
-* **Google - Portal SSO login**. This release introduces Google Portal SSO login support to simplify your authentication workflow. By allowing team members to access the Druid Portal with their Google credentials, this feature reduces the need for credential management and makes portal access faster and more secure. For more information, see [Provisioning Portal Users with Google](https://druidai.gitbook.io/druid-ai-docs/ai-governance-and-security/data-security-and-privacy/authoring-user-management/provisioning-portal-users-with-google).
+* **Google - Portal SSO login**. This release introduces Google Portal SSO login support to simplify your authentication workflow. By allowing team members to access the Druid Portal with their Google credentials, this feature reduces the need for credential management and makes portal access faster and more secure. For more information, see [Provisioning Portal Users with Google](https://druidai.gitbook.io/druid-ai-docs/ai-platform/ai-governance-and-security/data-security-and-privacy/authoring-user-management/provisioning-portal-users-with-google).
 
 ## Improvements
 
@@ -37,7 +37,7 @@ If you have questions about your Druid tenant, please contact [support@Druidai.c
 
 **NOTE:** While these options ensure higher quality matching at prediction time, they may increase chunking execution time.
 
-* **Extract content from EML documents**. When extracting data from EML documents—using either the **KBExtractDocumentContent** internal action or the **ExtractDocumentContent** API—the full email content is saved in the **answer** and **content** fields. In addition, the response JSON now includes the following email metadata fields: **To**, **From**, **Subject**, and **Date**, making the extracted data easier to process and use in business applications. For more information, see [KBExtractDocumentContent](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/flows/conversational-flows/internal-actions#KBExtrac) or [KB Extraction Tools](https://druidai.gitbook.io/druid-ai-docs/knowledge-base/knowledgebase/advanced-features-and-optimization/kbextractiontools).
+* **Extract content from EML documents**. When extracting data from EML documents—using either the **KBExtractDocumentContent** internal action or the **ExtractDocumentContent** API—the full email content is saved in the **answer** and **content** fields. In addition, the response JSON now includes the following email metadata fields: **To**, **From**, **Subject**, and **Date**, making the extracted data easier to process and use in business applications. For more information, see [KBExtractDocumentContent](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/flows/conversational-flows/internal-actions#KBExtrac) or [KB Extraction Tools](https://druidai.gitbook.io/druid-ai-docs/knowledge-base/knowledgebase/advanced-features-and-optimization/kbextractiontools).
 
 ```
 {

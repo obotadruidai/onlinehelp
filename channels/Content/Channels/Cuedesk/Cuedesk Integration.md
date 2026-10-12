@@ -215,4 +215,4 @@ To enable voice messages support, follow these steps:
 
 ## Related Topics
 
-* [Internal Actions](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/flows/conversational-flows/internal-actions)
+* [Internal Actions](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/flows/conversational-flows/internal-actions)

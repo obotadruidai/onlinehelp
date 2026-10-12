@@ -39,7 +39,7 @@ For example, an Appointment Management Agent can use multiple Agentic Skills to 
 
 Compared to traditional agentic skills that mainly provide reusable instructions, tools, or artifacts for automations, Druid Agentic Skills go further by combining those artifacts with enterprise context, governance, integrations, and orchestration. They enable the AI Agent not only to perform tasks, but also to operate inside the enterprise and deliver outcomes across real business processes.
 
-For more information, see [Understanding Agentic Skills](https://druidai.gitbook.io/druid-ai-docs/ai-agent-orchestration/druid-conductor#Understa).
+For more information, see [Understanding Agentic Skills](https://druidai.gitbook.io/druid-ai-docs/ai-platform/ai-agent-orchestration/druid-conductor#Understa).
 
 ## Artificial Intelligence (AI)
 

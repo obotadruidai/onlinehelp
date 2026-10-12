@@ -28,7 +28,7 @@ If you have questions about your Druid tenant, please contact [support@Druidai.c
 For more information, see [Druid Voice](https://druidai.gitbook.io/druid-ai-docs/druid-voice/druid-voice).
 
 * **Speechmatics STT Integration**. Voice Channel capabilities now include Speechmatics as a speech-to-text provider. This integration supports both real-time and batch transcription, offering high accuracy across various languages and accents to improve voice interaction reliability.
-* **Event-Driven Form Automations via Code Editor**. With this release, you can now trigger integrations and flows using form events—such as OnLoad, OnSave, or field and tab changes—by using the Code Editor without relying on standard form automations. This update allows for seamless, background execution of complex logic, enhancing interactivity while reducing manual user steps. For more information, see [Trigger Events on Forms](https://druidai.gitbook.io/druid-ai-docs/conversational-ai-apps/forms/trigger-events-on-forms).
+* **Event-Driven Form Automations via Code Editor**. With this release, you can now trigger integrations and flows using form events—such as OnLoad, OnSave, or field and tab changes—by using the Code Editor without relying on standard form automations. This update allows for seamless, background execution of complex logic, enhancing interactivity while reducing manual user steps. For more information, see [Trigger Events on Forms](https://druidai.gitbook.io/druid-ai-docs/ai-platform/conversational-ai-apps/forms/trigger-events-on-forms).
 
 ## Improvements
 
@@ -44,7 +44,7 @@ This permission applies to all data export points, including:
 * **Flow-level analytics** – Export data filtered by specific flows in Flow Designer.
 * **NLU model evaluation** – Export conversation history and model performance data for analysis.
 
-For more information, see the [Conversation History](https://druidai.gitbook.io/druid-ai-docs/data-analytics-and-insights/operational-visibility-and-history/conversation-history) and [NLU Model Evaluation](https://druidai.gitbook.io/druid-ai-docs/data-analytics-and-insights/ai-quality-testing-and-accuracy/nlu-model-evaluation).
+For more information, see the [Conversation History](https://druidai.gitbook.io/druid-ai-docs/ai-platform/data-analytics-and-insights/operational-visibility-and-history/conversation-history) and [NLU Model Evaluation](https://druidai.gitbook.io/druid-ai-docs/ai-platform/data-analytics-and-insights/ai-quality-testing-and-accuracy/nlu-model-evaluation).
 
 * **Set Variables and Code Extension – Enhanced Error Handling**. The **Set variable error severity setting**, located in AI Agent details > Dialogue management, now supports exception handling for both Set Variables and Code Extension errors.
 
@@ -54,7 +54,7 @@ Starting with this release, you can define how the Flow Engine treats errors enc
 * **Raise exception**. Create a dedicated flow for error handling and select it from the **Exception flow** drop-down in AI Agent details > Dialogue management. For flow steps where **Exception handler** is active, the AI Agent will follow the Exception flow logic.
 * If the Raise exception severity is active but no Exception flow is defined, the conversation will stop when an error occurs, and an exception will be logged in the Conversation History.
 
-For more information, see [Set Variables – Error Handling](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/flows/conversational-flows/flow-steps/common-flow-settings/set-variables#Set) and [Code Extension – Error Handling](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/flows/conversational-flows/flow-steps/common-flow-settings/code-extension#Code).
+For more information, see [Set Variables – Error Handling](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/flows/conversational-flows/flow-steps/common-flow-settings/set-variables#Set) and [Code Extension – Error Handling](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/flows/conversational-flows/flow-steps/common-flow-settings/code-extension#Code).
 
 * **SSO Authentication – Timeout Management**. We have enhanced the **Oauth 2.0 Sign in** and **SAML SSO Sign in** flow steps to prevent conversation deadlocks during the authentication process. Previously, if a user failed to complete the sign-in process, the flow could remain stuck until manually canceled. This update introduces an automatic timeout mechanism within the Flow Engine to ensure a smoother user experience and better session management.
 
@@ -69,7 +69,7 @@ Flow authors can now use the **Exception Handler** directly on the sign in step 
 * Redirecting the user to a different functional flow.
 * Displaying a tailored message explaining the session expiry.
 
-This update provides you with full control over the conversation path when authentication timeout limits are met, ensuring users are never left without guidance. For more information, see [Signing in users with OAuth v2](https://druidai.gitbook.io/druid-ai-docs/integrations/enterprise-connectors/sso-authentication-and-authorization/authenticating-user-within) and [SSO Authentication with SAML](https://druidai.gitbook.io/druid-ai-docs/integrations/enterprise-connectors/sso-authentication-with-saml).
+This update provides you with full control over the conversation path when authentication timeout limits are met, ensuring users are never left without guidance. For more information, see [Signing in users with OAuth v2](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/sso-authentication-and-authorization/authenticating-user-within) and [SSO Authentication with SAML](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/sso-authentication-with-saml).
 
 * **File Upload Improvements**. We enhanced file upload handling to improve visibility and support partial uploads when files are flagged by the anti-malware system.
 * When a file is rejected, the existing exception behavior remains unchanged. The system now also logs the event in Conversation History:
@@ -81,7 +81,7 @@ _“File was found corrupted by DRUID Antimalware system”._
 * Rejected files trigger the exception \[\[SystemError]].ExceptionType == “UnsupportedFileUpload”.
 * Rejected files are logged in the Conversation History.
 
-For more information on the File Upload steps, see [File Upload](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/flows/conversational-flows/flow-steps/file-upload-steps-configuration).
+For more information on the File Upload steps, see [File Upload](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/flows/conversational-flows/flow-steps/file-upload-steps-configuration).
 
 * **New LLM Resource - Anthropic Claude**. We are excited to announce full support for Anthropic Claude models within the Druid AI Platform. This integration allows you to leverage Claude’s advanced reasoning and conversational capabilities across your AI Agents.
 
@@ -114,7 +114,7 @@ When **Use OCR for pictures** is set to **Auto**, the system dynamically decides
 
 ![](<../../../.gitbook/assets/nlu with llm.png>)
 
-For more information, see [NLU Intents Classification](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/conversational-ai/nlu-intents-classification).
+For more information, see [NLU Intents Classification](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/conversational-ai/nlu-intents-classification).
 
 * **Knowledge Base - Synonym Dictionary**. Druid now supports **Synonym Sets** in **Knowledge Base Advanced Settings**, giving your AI Agent the ability to recognize that different words can mean the same thing.
 
@@ -130,7 +130,7 @@ For more information, see [Synonyms Dictionary](https://druidai.gitbook.io/druid
 
 ![](<../../../.gitbook/assets/bar 2 axes view.png>)
 
-For more information on how to set configure dynamic charts, see [Dynamic Charts](https://druidai.gitbook.io/druid-ai-docs/conversational-ai-apps/charts/dynamic-charts).
+For more information on how to set configure dynamic charts, see [Dynamic Charts](https://druidai.gitbook.io/druid-ai-docs/ai-platform/conversational-ai-apps/charts/dynamic-charts).
 
 ## Bug Fixes
 

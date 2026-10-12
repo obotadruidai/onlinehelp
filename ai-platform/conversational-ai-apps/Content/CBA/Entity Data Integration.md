@@ -33,4 +33,4 @@ To add a web view and form that fetch entity data from DRUID Data Services, foll
 ## Related Topics
 
 * [Conversational AI Applications](<Conversational AI Applications.md>)
-* [Druid Data Service Connector](https://druidai.gitbook.io/druid-ai-docs/integrations/enterprise-connectors/druid_data_-service_connector)
+* [Druid Data Service Connector](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/druid_data_-service_connector)

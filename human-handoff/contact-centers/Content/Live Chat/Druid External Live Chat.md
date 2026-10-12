@@ -25,7 +25,7 @@ The helpdesk AI Agent must focus exclusively on live chat operations. It should 
 
 To configure Druid External Live Chat, follow these steps:
 
-1. Create an AI Agent dedicated only to managing incoming live chat requests. For more information, see [Creating AI Agents](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/creating-ai-agents).
+1. Create an AI Agent dedicated only to managing incoming live chat requests. For more information, see [Creating AI Agents](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/creating-ai-agents).
 
 {% hint style="warning" %}
 **IMPORTANT!** Do not set the Welcome flow on this AI Agent as its purpose is only to manage incoming live chat calls.

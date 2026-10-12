@@ -28,7 +28,7 @@ To get the AI Agent ID, select the desired AI Agent and from the browser get the
 
 ### Authorization
 
-To authenticate your request for DRUID Endpoints, ensure inclusion of the Bearer token. Obtain the token by generating a permanent token or utilizing the authentication endpoint. Refer to [Webhooks](https://druidai.gitbook.io/druid-ai-docs/integrations/webhooks) for detailed instructions.
+To authenticate your request for DRUID Endpoints, ensure inclusion of the Bearer token. Obtain the token by generating a permanent token or utilizing the authentication endpoint. Refer to [Webhooks](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/webhooks) for detailed instructions.
 
 Remember to include the bearer token in the **Authorization** section of your request.
 

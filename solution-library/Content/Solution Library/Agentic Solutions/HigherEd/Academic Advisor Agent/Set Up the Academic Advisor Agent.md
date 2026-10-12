@@ -10,7 +10,7 @@ This section will walk you through the steps to import and configure the solutio
 ## Prerequisites
 
 * Tenant Druid community (open new tenant [here](https://www.druidai.com/license-activation)) or Druid subscription.
-* You should have an AI Agent. For information on how to create an AI Agent, see [Creating AI Agents](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/creating-ai-agents).
+* You should have an AI Agent. For information on how to create an AI Agent, see [Creating AI Agents](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/creating-ai-agents).
 * An LLM resource enabled on the tenant, or your own Azure OpenAI resource if not using the Druid Service Gateway. Minimum GPT 4.1 is required.
 * The Outlook channel should be configured to enable email delivery for student and instructor notifications. For more information, see [Outlook](https://druidai.gitbook.io/druid-ai-docs/channels/web-and-email/outlook).
 

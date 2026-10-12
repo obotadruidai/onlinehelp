@@ -54,7 +54,7 @@ The DRUID Connector automatically generates a JSON based on the structure define
 Nested JSON objects can be build using Child Mapping the option. If you have a more complex data structure to send within the body, you can use field mapping on level one and child mapping to indent fields and make a nested JSON objects data structure.
 
 {% hint style="info" %}
-**NOTE:**  Prior to using field mapping, make sure that you created the needed DRUID entities and fields. For more information about entities, see [Entities](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/ai-agent-informational-model).
+**NOTE:**  Prior to using field mapping, make sure that you created the needed DRUID entities and fields. For more information about entities, see [Entities](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/ai-agent-informational-model).
 {% endhint %}
 
 The Druid AI Platform enables you to do enhance fields mapping by using expressions. For information on how to use expressions in requests field mapping, see Using Expressions in Request mappings.

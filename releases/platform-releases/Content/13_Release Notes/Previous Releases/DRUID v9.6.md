@@ -51,7 +51,7 @@ The email files are also supported in the [KB at conversation time](https://drui
 
 If you are using a custom LLM prompt for content chunking, you can add these rules manually. You can apply the new default LLM prompt by clicking the **Reset Advanced Settings** button; however, this will remove any custom changes.
 
-* **Machine translation**. Proactive AI Agent messages are now translated when machine translation is enabled. For more information about these messages, see [Proactive AI Agent Messages](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/flows/conversational-flows/flow-steps/common-flow-settings/proactive-ai-agent-messages).
+* **Machine translation**. Proactive AI Agent messages are now translated when machine translation is enabled. For more information about these messages, see [Proactive AI Agent Messages](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/flows/conversational-flows/flow-steps/common-flow-settings/proactive-ai-agent-messages).
 * **Sprinklr integration**. Users are now connected directly to a helpdesk agent without being placed in a waiting queue, improving the live chat experience.
 * **Voice channel**. The Deepgram speech settings have been refactored for easier configuration and improved model selection. For more information, see the Voice channel.
 

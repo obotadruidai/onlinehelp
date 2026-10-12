@@ -12,7 +12,7 @@ This section explains how to install and configure the Case Management Agentic S
 Before installing the solution, verify that the following requirements are met:
 
 * Tenant Druid community (open new tenant [here](https://www.druidai.com/license-activation)) or Druid subscription.
-* A published AI Agent. For information on how to create an AI Agent, see [Creating AI Agents](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/creating-ai-agents).
+* A published AI Agent. For information on how to create an AI Agent, see [Creating AI Agents](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/creating-ai-agents).
 * Microsoft Office 365 email is configured and activated as [Email Channel](https://druidai.gitbook.io/druid-ai-docs/channels/web-and-email/email-integration).
 * LLM and translation resources enabled on your tenant.
 * Azure subscription credentials for the Blob Storage service for secure attachment handling.

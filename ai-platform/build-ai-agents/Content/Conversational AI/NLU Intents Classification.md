@@ -104,7 +104,7 @@ If you want to use Druid-dedicated LLM resources, contact your sales representat
 ## In Druid 9.11 to Druid 9.19
 
 {% hint style="info" %}
-**NOTE:** Before you start, make sure you have an LLM resource set up in the Druid Portal. For more information, see [Create LLM Resources](https://druidai.gitbook.io/druid-ai-docs/ai-governance-and-security/ai-evaluation-and-response-guardrails/llm-resource-management-and-governance).
+**NOTE:** Before you start, make sure you have an LLM resource set up in the Druid Portal. For more information, see [Create LLM Resources](https://druidai.gitbook.io/druid-ai-docs/ai-platform/ai-governance-and-security/ai-evaluation-and-response-guardrails/llm-resource-management-and-governance).
 {% endhint %}
 
 To configure NLU intents classification with LLM, follow these steps:

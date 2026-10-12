@@ -8,7 +8,7 @@ DRUID provides authors with extensive options to create AI Agents able to secure
 ## Sensitive data manipulation in MS Teams channel
 
 {% hint style="info" %}
-**NOTE:** This feature is available in DRUID version 1.63 for AI Agents using Bot framework version 4. Sensitive data manipulation is only available on prompt steps on both direct line and MS Teams channel. For information on how to configure the prompt steps to manipulate sensitive data, see [Prompt Steps Configuration](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/flows/conversational-flows/flow-steps/prompt-steps-configuration).
+**NOTE:** This feature is available in DRUID version 1.63 for AI Agents using Bot framework version 4. Sensitive data manipulation is only available on prompt steps on both direct line and MS Teams channel. For information on how to configure the prompt steps to manipulate sensitive data, see [Prompt Steps Configuration](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/flows/conversational-flows/flow-steps/prompt-steps-configuration).
 {% endhint %}
 
 When the AI Agent deployed in the MS Teams channel asks the user to enter sensitive data (a prompt message that will capture sensitive data is executed), MS Teams will automatically generate a Teams built-in card that asks for the user confirmation to continue.
@@ -52,6 +52,6 @@ _Example: DRUID Community Cloud_
 
 ## Related Topics
 
-* [Extensive Sensitive Data Manipulation](https://druidai.gitbook.io/druid-ai-docs/ai-governance-and-security/data-security-and-privacy/extensive-sensitive-data-manipulation)
-* [Managing Entity Fields](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/ai-agent-informational-model/managing-entity-fields)
-* [Prompt](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/flows/conversational-flows/flow-steps/prompt-steps-configuration)
+* [Extensive Sensitive Data Manipulation](https://druidai.gitbook.io/druid-ai-docs/ai-platform/ai-governance-and-security/data-security-and-privacy/extensive-sensitive-data-manipulation)
+* [Managing Entity Fields](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/ai-agent-informational-model/managing-entity-fields)
+* [Prompt](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/flows/conversational-flows/flow-steps/prompt-steps-configuration)

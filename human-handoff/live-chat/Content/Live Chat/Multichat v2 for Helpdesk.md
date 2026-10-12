@@ -191,6 +191,6 @@ If an agent clicks to log out while having ongoing conversations or when engaged
 ## Related Topics
 
 * [Automatically Allocating Clients to Agents](<Automatically Allocating Clients to Agents.md>)
-* [Changing the Agent Name Shown in the Chat](https://druidai.gitbook.io/druid-ai-docs/how-to/changing-the-agent-user-name)
+* [Changing the Agent Name Shown in the Chat](https://druidai.gitbook.io/druid-ai-docs/ai-platform/how-to/changing-the-agent-user-name)
 * [Live Chat With Multiple Queues](<Live Chat Multiple Queues.md>)
-* [Sending the Conversation Transcript to External Systems](https://druidai.gitbook.io/druid-ai-docs/how-to/sending-the-conversation-transcript-to-external-systems)
+* [Sending the Conversation Transcript to External Systems](https://druidai.gitbook.io/druid-ai-docs/ai-platform/how-to/sending-the-conversation-transcript-to-external-systems)

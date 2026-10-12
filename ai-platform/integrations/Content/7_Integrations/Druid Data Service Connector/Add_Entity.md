@@ -123,6 +123,6 @@ Use the connector task on desired flow step(s). Whenever in a conversation, the 
 
 ## Test the integration task
 
-You can test the integration task by clicking the **Test** tab and clicking the **Test** button (![](<../../../.gitbook/assets/Add Entity_8.png>)). The response will return the following system entity fields: OperatedByBotId, Id and CreatedOn. For description of these fields, see [System Entity Fields](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/ai-agent-informational-model/system-entity-fields). The Id of the entity record is saved within the conversation context and is particularly useful when you want to query, update or delete entity records.
+You can test the integration task by clicking the **Test** tab and clicking the **Test** button (![](<../../../.gitbook/assets/Add Entity_8.png>)). The response will return the following system entity fields: OperatedByBotId, Id and CreatedOn. For description of these fields, see [System Entity Fields](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/ai-agent-informational-model/system-entity-fields). The Id of the entity record is saved within the conversation context and is particularly useful when you want to query, update or delete entity records.
 
 ![](<../../../.gitbook/assets/Add Entity_9.png>)

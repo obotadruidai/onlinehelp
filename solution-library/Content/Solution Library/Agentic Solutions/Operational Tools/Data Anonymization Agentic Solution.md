@@ -36,7 +36,7 @@ This solution includes:
 ## Prerequisites
 
 * Tenant Druid community (open new tenant [here](https://www.druidai.com/license-activation)) or Druid subscription.
-* You should have a AI Agent. For information on how to create an AI Agent, see [Creating AI Agents](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/creating-ai-agents).
+* You should have a AI Agent. For information on how to create an AI Agent, see [Creating AI Agents](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/creating-ai-agents).
 * API resources enabled for DRUID WebView and DRUID Data Service.
 * DRUID LLM API resources must be activated for DRUID Becus 1.0 and gpt-4o-mini. Contact your DRUID sales representative to enable these resources and generate an API token.
 

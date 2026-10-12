@@ -8,7 +8,7 @@ This section will walk you through the steps to import and configure the solutio
 ## Mandatory Prerequisites
 
 * Tenant Druid community (open new tenant [here](https://www.druidai.com/license-activation)) or Druid subscription.
-* You should have a published AI Agent. For information on how to create an AI Agent, see   [Creating AI Agents](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/creating-ai-agents).
+* You should have a published AI Agent. For information on how to create an AI Agent, see   [Creating AI Agents](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/creating-ai-agents).
 * The Audiocodes channel configured for your AI Agent. For setup instructions, see [Voice AudioCodes Channel](https://druidai.gitbook.io/druid-ai-docs/channels/voice-and-telephony/voice-audio-codes-channel).
 
 ## Optional Prerequisites

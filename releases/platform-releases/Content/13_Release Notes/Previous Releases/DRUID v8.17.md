@@ -29,7 +29,7 @@ If you have questions about your DRUID tenant, please contact [support@Druidai.c
 **NOTE:** To use the GoogleLLM Connector in hybrid and on-premises DRUID deployments, upgrade the DRUID Connector Host to version 8.17 or later.
 {% endhint %}
 
-For more information, see [Google LLM](https://druidai.gitbook.io/druid-ai-docs/integrations/enterprise-connectors/googlellm).
+For more information, see [Google LLM](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/googlellm).
 
 ## Improvements
 

@@ -25,11 +25,11 @@ If you have questions about your DRUID tenant, please contact [support@Druidai.c
 
 * **LLM Response Streaming (Technology Preview)**. We introduced LLM response streaming, which delivers model output token by token, significantly improving perceived speed and creating a more natural conversational flow. This feature is **currently optimized for voice interactions**, where early partial responses enhance responsiveness.
 
-LLM streaming is available through the new internal action **LlmStreamer**, which replaces standard LLM integrations in your [Agent Steps](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/flows/conversational-flows/flow-steps/agent-step) and Agent Builder configurations.
+LLM streaming is available through the new internal action **LlmStreamer**, which replaces standard LLM integrations in your [Agent Steps](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/flows/conversational-flows/flow-steps/agent-step) and Agent Builder configurations.
 
 ![](<../../../.gitbook/assets/llm setramer action.png>)
 
-For more information, see [Use LLM Response Streaming for Voice Interactions](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/flows/agentic-flows/use-llm-response-streaming-for-voice-interactions).
+For more information, see [Use LLM Response Streaming for Voice Interactions](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/flows/agentic-flows/use-llm-response-streaming-for-voice-interactions).
 
 ## Improvements
 
@@ -39,7 +39,7 @@ For more information, see [Use LLM Response Streaming for Voice Interactions](ht
 
 ![](<../../../.gitbook/assets/llm res details.png>)
 
-For more information, see [Create LLM Resources](https://druidai.gitbook.io/druid-ai-docs/ai-governance-and-security/ai-evaluation-and-response-guardrails/llm-resource-management-and-governance).
+For more information, see [Create LLM Resources](https://druidai.gitbook.io/druid-ai-docs/ai-platform/ai-governance-and-security/ai-evaluation-and-response-guardrails/llm-resource-management-and-governance).
 
 * **Outlook channel**. The Outlook channel has been significantly updated to provide authors with more control over email conversation flow and email data manipulation:
 * **Reply behavior**: Choose whether the AI Agent replies to the sender only or to all recipients.
@@ -66,7 +66,7 @@ These updates help you quickly identify when your AI Agent model needs retrainin
 
 For more information, see [Extracting Data from Video Files](https://druidai.gitbook.io/druid-ai-docs/knowledge-base/knowledgebase/advanced-features-and-optimization/extract-data-from-video-files).
 
-* **Druid Data Service – DATEDIFF Function in Custom Queries**. This new function enables users to calculate the difference between two date/time columns, returning the result in a specified time unit. This simplifies time-series analysis and reporting by allowing you to calculate and filter by key business durations directly in custom queries. This is helpful for analyzing order trends over time, identifying seasonal patterns, or creating monthly order distribution reports. For more information, see [Filter Data Using DRUID Custom Query](https://druidai.gitbook.io/druid-ai-docs/integrations/enterprise-connectors/druid_data_-service_connector/filter-using-druid-custom-query).
+* **Druid Data Service – DATEDIFF Function in Custom Queries**. This new function enables users to calculate the difference between two date/time columns, returning the result in a specified time unit. This simplifies time-series analysis and reporting by allowing you to calculate and filter by key business durations directly in custom queries. This is helpful for analyzing order trends over time, identifying seasonal patterns, or creating monthly order distribution reports. For more information, see [Filter Data Using DRUID Custom Query](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/druid_data_-service_connector/filter-using-druid-custom-query).
 * **Data Service - Web views and forms**. This release introduces two improvements to web views and forms:
 * **Set row height in views**. Choose between **Small,** **Medium**, or **High** row height options. The default is **Medium**.
 

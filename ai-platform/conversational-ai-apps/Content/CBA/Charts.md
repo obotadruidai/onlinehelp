@@ -18,7 +18,7 @@ As a best practice, first get business entity records through an integration and
 At authoring time, the authors can define multiple charts for an entity. In a future release, charts defined at the entity level can be also added as elements to forms.
 
 {% hint style="info" %}
-**NOTE:** Rather than building charts from scratch, you can leverage AI Authoring Agents. By launching the Workspace Designer from the Page Help icon, you can describe your chart requirements in natural language to automatically create the chart following the Workspace Designer guidance in the chat. For more information, see [AI Authoring Agents](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/ai-authoring-agents#Create3).
+**NOTE:** Rather than building charts from scratch, you can leverage AI Authoring Agents. By launching the Workspace Designer from the Page Help icon, you can describe your chart requirements in natural language to automatically create the chart following the Workspace Designer guidance in the chat. For more information, see [AI Authoring Agents](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/ai-authoring-agents#Create3).
 {% endhint %}
 
 To create a chart, follow these steps:
@@ -120,7 +120,7 @@ The following actions are available on charts in the Charts list: make default (
 ![](../../.gitbook/assets/Charts_12.png)
 
 {% hint style="info" %}
-**NOTE:** You can leverage the Workspace Designer AI Authoring Agent to modify existing charts using natural language. From the chart configuration page, click **Author with AI**, describe the changes you want to make, and let the Workspace Designer update the chart configuration through guided chat interactions. For more information, see [AI Authoring Agents](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/ai-authoring-agents#Fine-tun).
+**NOTE:** You can leverage the Workspace Designer AI Authoring Agent to modify existing charts using natural language. From the chart configuration page, click **Author with AI**, describe the changes you want to make, and let the Workspace Designer update the chart configuration through guided chat interactions. For more information, see [AI Authoring Agents](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/ai-authoring-agents#Fine-tun).
 {% endhint %}
 
 You can edit a chart by changing: the chart properties (name, display name and details), the chart layout and the chart data.

@@ -29,7 +29,7 @@ If the user clicks the **Cancel** button, the following string is stored in the 
 
 The user data will be encrypted using a Druid proprietary encryption method from the moment the user inputs data in the chat and remains encrypted while being transmitted to the connector. The connector will decrypt the data using a Druid proprietary decryption method and send the data to external systems (if data encryption is not set on connectors).
 
-When an AI Agent deployed in the MS Teams channel asks the user to enter sensitive data, it has a channel-specific behavior. For more information, see [Prompt Steps Configuration](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/flows/conversational-flows/flow-steps/prompt-steps-configuration).
+When an AI Agent deployed in the MS Teams channel asks the user to enter sensitive data, it has a channel-specific behavior. For more information, see [Prompt Steps Configuration](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/flows/conversational-flows/flow-steps/prompt-steps-configuration).
 
 ## Manipulate Sensitive Data <a href="#manipulate_sensitive_data" id="manipulate_sensitive_data"></a>
 
@@ -130,4 +130,4 @@ If you want to add data encryption on existing connector actions, add the **Encr
 **NOTE:** Use Encrypt Data as the first integration task on a connector action only if you are using the encrypted data on subsequent integration tasks within that action; otherwise, the encrypted data remains inside the connector, Druid will not transmit it to 3rd party systems.
 {% endhint %}
 
-For more information on the Encrypt Data integration task and how clients receiving the encrypted data can decrypt it, see [Encrypt Data](https://druidai.gitbook.io/druid-ai-docs/integrations/enterprise-connectors/encryptdata).
+For more information on the Encrypt Data integration task and how clients receiving the encrypted data can decrypt it, see [Encrypt Data](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/encryptdata).

@@ -23,7 +23,7 @@ If you have questions about your DRUID tenant, please contact [support@Druidai.c
 
 * **DRUID Data Service Connector – Support for `IN`/`NOT IN` Operators in Custom Queries**. With this release, DRUID supports `IN` and `NOT IN` operators in custom queries, making multi-value filtering simpler. Use them in `WHERE` clauses to easily include or exclude multiple values.
 
-For more information, see [Filter Data using DRUID Custom Query](https://druidai.gitbook.io/druid-ai-docs/integrations/enterprise-connectors/druid_data_-service_connector/filter-using-druid-custom-query).
+For more information, see [Filter Data using DRUID Custom Query](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/druid_data_-service_connector/filter-using-druid-custom-query).
 
 ## Improvements
 
@@ -40,7 +40,7 @@ For more information, see [Filter Data using DRUID Custom Query](https://druidai
 
 * **DRUID Data Service Connector – improved** `LIKE` **operator**. The `LIKE` operator now provides flexibility for users to choose between familiar SQL wildcards and regex-style expressions to suit their querying needs. The **^** and **$** symbols provide an alternative to specifying start or end-of-string patterns without the need for additional **%** wildcards.
 
-For more information, see [Filter Data using DRUID Custom Query](https://druidai.gitbook.io/druid-ai-docs/integrations/enterprise-connectors/druid_data_-service_connector/filter-using-druid-custom-query).
+For more information, see [Filter Data using DRUID Custom Query](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/druid_data_-service_connector/filter-using-druid-custom-query).
 
 * **Charts - do not show in workspaces**. You can now choose to hide specific charts from workspaces, helping you keep them clean and focused on what matters.
 

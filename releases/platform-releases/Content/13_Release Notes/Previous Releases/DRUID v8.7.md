@@ -26,7 +26,7 @@ If you have questions about your DRUID tenant, please contact [support@Druidai.c
 
 ![](<../../../.gitbook/assets/alerts (2).png>)
 
-For more information, see [Alert Flows](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/flows/alert-flows).
+For more information, see [Alert Flows](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/flows/alert-flows).
 
 ## Improvements
 
@@ -40,9 +40,9 @@ For transferred clients, they are moved to the end of the new queue. However, to
 
 ![](<../../../.gitbook/assets/inactivity cancel timeout.png>)
 
-For more information, see [Inactivity Cancel Conversation Flow](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/flows/special-flows/inactivitycancelconversationflow).
+For more information, see [Inactivity Cancel Conversation Flow](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/flows/special-flows/inactivitycancelconversationflow).
 
-* **Custom Code - Clone Entities**. With this release, the `EntityUtils.Clone(entity)` function allows you to create a clone of an entity, ensuring that modifications to the clone do not impact the original entity. This is particularly useful when working with multiple instances of an entity, as it preserves the integrity of the original data and prevents accidental changes. Cloning enables independent management of different versions of the entity, enhancing flexibility in your workflows. For more information, see [Custom Code](https://druidai.gitbook.io/druid-ai-docs/integrations/enterprise-connectors/custom-code).
+* **Custom Code - Clone Entities**. With this release, the `EntityUtils.Clone(entity)` function allows you to create a clone of an entity, ensuring that modifications to the clone do not impact the original entity. This is particularly useful when working with multiple instances of an entity, as it preserves the integrity of the original data and prevents accidental changes. Cloning enables independent management of different versions of the entity, enhancing flexibility in your workflows. For more information, see [Custom Code](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/custom-code).
 * **AI Agent - Deployment State**. In this release, you can now organize your AI Agents more effectively by setting the Deployment State at the AI Agent level, located in the General section of the AI Agent details page.
 
 ![](<../../../.gitbook/assets/SELECT BOT STATE.png>)
@@ -55,7 +55,7 @@ This setting does not affect the AI Agent behavior at runtime but helps streamli
 
 ![](<../../../.gitbook/assets/pages coutn response.png>)
 
-For more information, see [PDF Page Count](https://druidai.gitbook.io/druid-ai-docs/integrations/druid-vision/pdf-page-count).
+For more information, see [PDF Page Count](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/druid-vision/pdf-page-count).
 
 * **File Upload step field - authoring improvement**. This release enhances the authoring experience for configuring File Upload steps. Instead of manually entering allowed file types, you can now select one or more file types from a predefined list, making the configuration process faster and more user-friendly.
 

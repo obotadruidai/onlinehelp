@@ -215,4 +215,4 @@ To enable voice messages support, follow these steps:
 
 ## Related Topics
 
-* [Handling Authentication](https://druidai.gitbook.io/druid-ai-docs/how-to/handling-authentication)
+* [Handling Authentication](https://druidai.gitbook.io/druid-ai-docs/ai-platform/how-to/handling-authentication)

@@ -28,7 +28,7 @@ If you have questions about your DRUID tenant, please contact [support@Druidai.c
 
 ![](<../../../.gitbook/assets/Agent Step.png>)
 
-For more information, see [Agent Step](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/flows/conversational-flows/flow-steps/agent-step).
+For more information, see [Agent Step](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/flows/conversational-flows/flow-steps/agent-step).
 
 * **VoiceText Channel - Enhanced responsiveness with Long Polling**. We're excited to announce the introduction of Long Polling for the VoiceText channel, significantly improving responsiveness and user experience in Contact Center voice integrations. While the VoiceText channel traditionally uses a synchronous request-response model, which is ideal for simpler conversations, it can sometimes introduce delays during complex interactions involving integrations or Proactive AI Agent messages. The new asynchronous long polling mechanism addresses this by allowing your Contact Center to receive AI Agent responses as soon as they're available, ensuring a more fluid and efficient conversation flow.
 
@@ -40,7 +40,7 @@ For more information, see [VoiceText channel](https://druidai.gitbook.io/druid-a
 
 ![](<../../../.gitbook/assets/cascade delete.png>)
 
-For more information, see [Delete Entity](https://druidai.gitbook.io/druid-ai-docs/integrations/enterprise-connectors/druid_data_-service_connector/delete_entity).
+For more information, see [Delete Entity](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/druid_data_-service_connector/delete_entity).
 
 * **Knowledge Base - Website data sources - Subdomain Crawling Support**. Website data sources now support crawling web pages from subdomains of the provided URL. This improvement removes the need to create separate data sources for each subdomain, streamlining setup and maintenance. You can enable subdomain crawling during data source creation or later from the data source details.
 
@@ -58,7 +58,7 @@ For more information, see [Delete Entity](https://druidai.gitbook.io/druid-ai-do
 
 ![](<../../../.gitbook/assets/DRUID SERVICES.png>)
 
-For more information, see [DRUID Services](https://druidai.gitbook.io/druid-ai-docs/integrations/enterprise-connectors/druidservices).
+For more information, see [DRUID Services](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/druidservices).
 
 * **Live Chat – Reply to Previous Messages**. We’ve improved the user experience and UI when replying to previous messages in Live Chat. These updates make it easier to follow conversations and provide more context when responding to users.
 

@@ -25,4 +25,4 @@ If you add a field of type File on a view or form, the integrations you add on t
 
 ## Related Topics
 
-* [Azure Blob Storage Connector](https://druidai.gitbook.io/druid-ai-docs/integrations/enterprise-connectors/azure-blob-storage-connector)
+* [Azure Blob Storage Connector](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/azure-blob-storage-connector)

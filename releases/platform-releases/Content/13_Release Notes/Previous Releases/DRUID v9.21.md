@@ -17,7 +17,7 @@ If you have questions about your Druid tenant, please contact [support@Druidai.c
 
 ## Improvements
 
-* **Enhanced Agent Availability Filtering**. The **GetOnlineHelpdeskAgents** internal action now provides a more accurate count of available staff by filtering out inactive sessions. An agent is only included in the list if they meet all active status criteria: they must be logged in without a logout request, possess a stable socket connection, and be outside of any current or requested break periods. For more information, see [GetOnlineHelpdeskAgents](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/flows/conversational-flows/internal-actions#GetOnlin).
+* **Enhanced Agent Availability Filtering**. The **GetOnlineHelpdeskAgents** internal action now provides a more accurate count of available staff by filtering out inactive sessions. An agent is only included in the list if they meet all active status criteria: they must be logged in without a logout request, possess a stable socket connection, and be outside of any current or requested break periods. For more information, see [GetOnlineHelpdeskAgents](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/flows/conversational-flows/internal-actions#GetOnlin).
 * **Improved Intent Configuration and terminology**. We have streamlined the intent authoring process by consolidating NLU-related fields and refining terminology to better reflect their function within the platform:
 * Terminology Updates:
 * **Description LLM** is now **Description for NLU**.
@@ -26,7 +26,7 @@ If you have questions about your Druid tenant, please contact [support@Druidai.c
 
 ![](<../../../.gitbook/assets/clasif model type.png>)
 
-* **Unified NLU Training**. To simplify the authoring experience, the **Training Phrases** and **Description for NLU** (formerly Description LLM) are now grouped within a single **Training Description & Phrases** section in the flow configuration. This unified view allows authors to manage both context for accurate intent classification and example phrases in one place across all AI Agent languages. For more information, [Step 2. Add training phrases and description](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/flows/conversational-flows/defining-the-intent#Step).
+* **Unified NLU Training**. To simplify the authoring experience, the **Training Phrases** and **Description for NLU** (formerly Description LLM) are now grouped within a single **Training Description & Phrases** section in the flow configuration. This unified view allows authors to manage both context for accurate intent classification and example phrases in one place across all AI Agent languages. For more information, [Step 2. Add training phrases and description](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/flows/conversational-flows/defining-the-intent#Step).
 
 ![](<../../../.gitbook/assets/consolidated ui.png>)
 

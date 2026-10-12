@@ -16,7 +16,7 @@ The table below provides a comprehensive description of the field types availabl
 | Date | Stores only the date portion of the DateTime type, useful when time zone conversion is unnecessary. | Yes |
 | DateTime | Combines a date with a time of day and fractional seconds, adhering to a 24-hour clock. | Yes |
 | Decimal | Allows storage of up to 32 digits with a maximum of six digits after the decimal point. | Yes |
-| Email | Stored as a string but recognized as a distinct type for specialized behavior and validation. The string is stored in Unicode format. Druid applies a set of validation rules to capture email addresses. For more information, see [Capturing Email Addresses in Channels](https://druidai.gitbook.io/druid-ai-docs/how-to/capturing-email-addresses-in-channels). | Yes |
+| Email | Stored as a string but recognized as a distinct type for specialized behavior and validation. The string is stored in Unicode format. Druid applies a set of validation rules to capture email addresses. For more information, see [Capturing Email Addresses in Channels](https://druidai.gitbook.io/druid-ai-docs/ai-platform/how-to/capturing-email-addresses-in-channels). | Yes |
 | Entity | Establishes a one-to-one relation with a specified entity. | Yes |
 | Entity List | Establishes a one-to-many relation with a specified entity. | No |
 | Guid | Represents a unique identifier for objects in a database. It is a number in a 16-byte binary representation. | No |

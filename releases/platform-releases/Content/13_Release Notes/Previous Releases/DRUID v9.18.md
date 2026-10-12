@@ -39,7 +39,7 @@ If needed, administrators can temporarily restore credential-based login using a
 
 ![](<../../../.gitbook/assets/Single Sign On Login Enforcement_2.png>)
 
-For more information, see [Enforce Login with Single Sign On](https://druidai.gitbook.io/druid-ai-docs/ai-governance-and-security/data-security-and-privacy/authoring-user-management/enforce-login-with-single).
+For more information, see [Enforce Login with Single Sign On](https://druidai.gitbook.io/druid-ai-docs/ai-platform/ai-governance-and-security/data-security-and-privacy/authoring-user-management/enforce-login-with-single).
 
 * **ElevenLabs - Full-Stack Voice Support (STT & TTS)**. Druid now supports ElevenLabs as a Speech-to-Text (STT) provider, complementing our existing Text-to-Speech integration. By adding STT capabilities, Druid users can now leverage the industry-standard ElevenLabs ecosystem for the entire voice loop—from crystal-clear voice recognition to world-class synthetic speech. For more information, see Enable voice interactions in the Web channel.
 
@@ -54,7 +54,7 @@ For more information, see [Enforce Login with Single Sign On](https://druidai.gi
 **IMPORTANT!** Existing values from the previous **Description** field were preserved. We **recommend reviewing** them to ensure the text is short, clear, and professional, as it might be visible to the users during chat interactions.
 {% endhint %}
 
-* **New Description LLM field**. A new **Description LLM** field is available for AI Agents that use [NLU intents classification with LLM](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/conversational-ai/nlu-intents-classification). This field provides additional context used by the LLM when identifying user intents. The LLM analyzes the following elements for classification:
+* **New Description LLM field**. A new **Description LLM** field is available for AI Agents that use [NLU intents classification with LLM](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/conversational-ai/nlu-intents-classification). This field provides additional context used by the LLM when identifying user intents. The LLM analyzes the following elements for classification:
 * Flow Name
 * Description LLM
 * Training Phrases
@@ -67,7 +67,7 @@ For more information, see [Enforce Login with Single Sign On](https://druidai.gi
 **NOTE:** For AI Agents that already used LLM-based classification in previous Druid versions, existing content from the legacy **Description** field was automatically migrated to **Description LLM** to ensure classification continuity.
 {% endhint %}
 
-* **Netopia Payments - Full Payment Transaction Details**. With this release, Druid captures the complete transaction payload, giving you total visibility into every payment. Beyond simple success or failure, you can now access rich transaction details—such as bank issuer information, authorization codes, and currency data—directly within your conversational flows. This allows you to provide customers with detailed, real-time confirmation and more personalized service. For more information, see [Netopia Payments](https://druidai.gitbook.io/druid-ai-docs/integrations/enterprise-connectors/netopia-payments).
+* **Netopia Payments - Full Payment Transaction Details**. With this release, Druid captures the complete transaction payload, giving you total visibility into every payment. Beyond simple success or failure, you can now access rich transaction details—such as bank issuer information, authorization codes, and currency data—directly within your conversational flows. This allows you to provide customers with detailed, real-time confirmation and more personalized service. For more information, see [Netopia Payments](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/netopia-payments).
 * **Azure OpenAI LLM Resources – Support for OAuth Authentication**. You can now configure Azure OpenAI LLM resources in DRUID AI using OAuth authentication. This enhancement provides a more secure and flexible way to connect Druid to Azure-hosted LLM deployments.
 
 Instead of relying on static API keys, OAuth uses token-based authentication managed through Microsoft Entra ID, enabling:
@@ -76,7 +76,7 @@ Instead of relying on static API keys, OAuth uses token-based authentication man
 * **Easier Governance**. Centrally manage and revoke access through Azure Service Principals without updating AI Agent configurations.
 * **Compliance**. Meet enterprise security standards by eliminating the risk of hardcoded or exposed API keys.
 
-For more information, see [Create LLM Resources](https://druidai.gitbook.io/druid-ai-docs/ai-governance-and-security/ai-evaluation-and-response-guardrails/llm-resource-management-and-governance).
+For more information, see [Create LLM Resources](https://druidai.gitbook.io/druid-ai-docs/ai-platform/ai-governance-and-security/ai-evaluation-and-response-guardrails/llm-resource-management-and-governance).
 
 * **Data Service Performance Monitoring (Worst Calls)**. We have introduced a new WorstCalls section within the Druid Data Service settings to help you identify and optimize slow-running integrations. This monitoring tool is designed to give you immediate visibility into any Data Service integration that takes longer than 1 second to execute.
 
@@ -96,7 +96,7 @@ This feature allows users to compare data points and analyze trends more quickly
 
 ![](<../../../.gitbook/assets/filter views.png>)
 
-By enabling the **Apply Dashboard Date Filter** toggle and selecting a date-type field from the dropdown directly within any classic view configuration, you can instantly synchronize a table with the dashboard time range. This update removes the tedious setup of building custom filtering integrations, allowing you to reuse existing views while maintaining full filtering functionality. For more information, see [Filtering table records on the dashboard](https://druidai.gitbook.io/druid-ai-docs/data-analytics-and-insights/track-business-kpis#Filterin).
+By enabling the **Apply Dashboard Date Filter** toggle and selecting a date-type field from the dropdown directly within any classic view configuration, you can instantly synchronize a table with the dashboard time range. This update removes the tedious setup of building custom filtering integrations, allowing you to reuse existing views while maintaining full filtering functionality. For more information, see [Filtering table records on the dashboard](https://druidai.gitbook.io/druid-ai-docs/ai-platform/data-analytics-and-insights/track-business-kpis#Filterin).
 
 * **SharePoint Data Sources - User permission-based content filtering**. You can now configure Knowledge Base search results to perform real-time SharePoint Online permissions checks, ensuring the AI Agent only provides information that the current user is authorized to access. For more information, see [User permission-based content filtering](https://druidai.gitbook.io/druid-ai-docs/knowledge-base/knowledgebase/data-sources/sharepoint-data-sources/user-permission-based-content-filtering).
 

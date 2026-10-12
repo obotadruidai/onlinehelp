@@ -34,9 +34,9 @@ Because the AI Agent retrieves personalized student data, you must first establi
 
 Set up an Identity Provider (IdP) in Druid (e.g., Azure AD, Okta) to authenticate students. To ensure the student's identity is correctly mapped to their profile, refer to the help topic specific to your institution's authentication method:
 
-* [Active Directory](https://druidai.gitbook.io/druid-ai-docs/integrations/enterprise-connectors/active-directory-connector)
-* [SSO Authentication and Authorization with OAuth2](https://druidai.gitbook.io/druid-ai-docs/integrations/enterprise-connectors/sso-authentication-and-authorization)
-* [SSO Authentication with SAML](https://druidai.gitbook.io/druid-ai-docs/integrations/enterprise-connectors/sso-authentication-with-saml)
+* [Active Directory](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/active-directory-connector)
+* [SSO Authentication and Authorization with OAuth2](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/sso-authentication-and-authorization)
+* [SSO Authentication with SAML](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/sso-authentication-with-saml)
 
 ### Step 2: Configure the Banner App in Druid
 
@@ -49,7 +49,7 @@ To set up the Banner app within the Druid Portal, follow these steps:
 
 ![](<../../../../../.gitbook/assets/app general.png>)
 
-5. From the **Security type** dropdown, select **Custom**. The Custom security type requires specific connector actions to manage the secure handshake between the Druid AI Platform and Banner. For detailed instructions on how these actions work, refer to [Custom Authentication](https://druidai.gitbook.io/druid-ai-docs/integrations/enterprise-connectors/rest/rest-apps/custom-authentication).
+5. From the **Security type** dropdown, select **Custom**. The Custom security type requires specific connector actions to manage the secure handshake between the Druid AI Platform and Banner. For detailed instructions on how these actions work, refer to [Custom Authentication](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/rest/rest-apps/custom-authentication).
 6. In the Variables table, add a variable named **apikey** and paste the Ethos API Key in the Value column. Check the Encrypted box to secure the key.
 
 ![](<../../../../../.gitbook/assets/custom security.png>)

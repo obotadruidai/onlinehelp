@@ -7,7 +7,7 @@ To provide a more natural and fluid experience in voice-based conversations, you
 
 ### Prerequisite
 
-* Before you start, make sure you have an LLM resource set up in the Druid Portal. For more information, see [Create LLM Resources](https://druidai.gitbook.io/druid-ai-docs/ai-governance-and-security/ai-evaluation-and-response-guardrails/llm-resource-management-and-governance).
+* Before you start, make sure you have an LLM resource set up in the Druid Portal. For more information, see [Create LLM Resources](https://druidai.gitbook.io/druid-ai-docs/ai-platform/ai-governance-and-security/ai-evaluation-and-response-guardrails/llm-resource-management-and-governance).
 
 ### Add LLM Streaming to a Run Agent Step
 

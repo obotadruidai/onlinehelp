@@ -8,7 +8,7 @@ This section will walk you through the steps to import and configure the solutio
 ## Prerequisites
 
 * Tenant Druid community (open new tenant [here](https://www.druidai.com/license-activation)) or Druid subscription.
-* You should have an AI Agent. For information on how to create an AI Agent, see [Creating AI Agents](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/creating-ai-agents).
+* You should have an AI Agent. For information on how to create an AI Agent, see [Creating AI Agents](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/creating-ai-agents).
 * API resources enabled for Druid WebView and Druid Data Service.
 * Druid LLM API resources activated for **Becus 1.0** and **GPT-4.1**. Contact your Druid sales representative to enable these resources and generate API tokens.
 * Azure subscription credentials for the Blob Storage service to enable image upload in the claim process.

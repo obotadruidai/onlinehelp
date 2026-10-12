@@ -21,7 +21,7 @@ If you have questions about your DRUID tenant, please contact [support@Druidai.c
 
 ## What's New
 
-* **DRUID Vision – Convert PDF Page to JPEG**. A new endpoint is now available in DRUID Vision, enabling the conversion of individual PDF pages to .jpeg format. For more information, see [Convert PDF Page to JPEG](https://druidai.gitbook.io/druid-ai-docs/integrations/druid-vision/convert-pdf-page-to-jpeg).
+* **DRUID Vision – Convert PDF Page to JPEG**. A new endpoint is now available in DRUID Vision, enabling the conversion of individual PDF pages to .jpeg format. For more information, see [Convert PDF Page to JPEG](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/druid-vision/convert-pdf-page-to-jpeg).
 
 ## Improvements
 

@@ -29,7 +29,7 @@ To test a phrase, in the **Test** field, enter the phase, click on the **Test** 
 
 ![](<../../.gitbook/assets/Train Set_1.png>)
 
-If testing a phrase (intent) returns no matches found, you can further fine-tune the model using  [../Conversational%20AI/Natural%20Language%20Processing.md](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/conversational-ai/natural-language-processing)[NLP](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/conversational-ai/natural-language-processing) and [NER](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/conversational-ai/named-entity-recognition-ner) settings.
+If testing a phrase (intent) returns no matches found, you can further fine-tune the model using  [../Conversational%20AI/Natural%20Language%20Processing.md](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/conversational-ai/natural-language-processing)[NLP](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/conversational-ai/natural-language-processing) and [NER](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/conversational-ai/named-entity-recognition-ner) settings.
 
 ## View utterance evaluation details <a href="#viewing_utterance_evaluation_details" id="viewing_utterance_evaluation_details"></a>
 
@@ -70,7 +70,7 @@ The NLP model of the parent flow appears.
 ![](<../../.gitbook/assets/parent submodel.png>)
 
 {% hint style="info" %}
-**NOTE:** The [NLP parameters](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/conversational-ai/setting-up-the-conversational-ai-druid-versions-prior-to-5.15) set on the AI Agent apply to the AI Agent model and to child models.
+**NOTE:** The [NLP parameters](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/conversational-ai/setting-up-the-conversational-ai-druid-versions-prior-to-5.15) set on the AI Agent apply to the AI Agent model and to child models.
 {% endhint %}
 
 You can evaluate child models similar to evaluating AI Agent training phrases:
@@ -99,5 +99,5 @@ To go back to the AI Agent model, at the top-left side of the Evaluation page (a
 ## Related Topics
 
 * [Annotation Tool](<Annotation/Annotation Tool.md>)
-* [Explainability and Utterances Annotation](https://druidai.gitbook.io/druid-ai-docs/ai-governance-and-security/observability-and-explainability/explainability-and-utterances-annotation)
-* [Setting Up the AI Agent Conversational AI (DRUID versions prior to 5.15)](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/conversational-ai/setting-up-the-conversational-ai-druid-versions-prior-to-5.15)
+* [Explainability and Utterances Annotation](https://druidai.gitbook.io/druid-ai-docs/ai-platform/ai-governance-and-security/observability-and-explainability/explainability-and-utterances-annotation)
+* [Setting Up the AI Agent Conversational AI (DRUID versions prior to 5.15)](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/conversational-ai/setting-up-the-conversational-ai-druid-versions-prior-to-5.15)

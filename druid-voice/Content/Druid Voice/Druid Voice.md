@@ -48,7 +48,7 @@ The platform includes:
 
 ### LLM Services
 
-For use cases requiring generative AI capabilities, the platform can invoke configured Large Language Model providers through the LLM Resources Manager. LLM providers are configured and governed at the tenant level through the Druid Portal. Supported providers are documented in the [LLM Resource Management and Governance](https://druidai.gitbook.io/druid-ai-docs/ai-governance-and-security/ai-evaluation-and-response-guardrails/llm-resource-management-and-governance) topic.
+For use cases requiring generative AI capabilities, the platform can invoke configured Large Language Model providers through the LLM Resources Manager. LLM providers are configured and governed at the tenant level through the Druid Portal. Supported providers are documented in the [LLM Resource Management and Governance](https://druidai.gitbook.io/druid-ai-docs/ai-platform/ai-governance-and-security/ai-evaluation-and-response-guardrails/llm-resource-management-and-governance) topic.
 
 ### Text-to-Speech Services
 

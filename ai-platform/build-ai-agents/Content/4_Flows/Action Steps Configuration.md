@@ -35,4 +35,4 @@ By following these steps, you can effectively use the Action Step to execute var
 
 * [Code Extension](<Code Extension.md>)
 * [Common Flow Settings](<Common Flow Settings.md>)
-* [Enterprise Connectors](https://druidai.gitbook.io/druid-ai-docs/integrations/enterprise-connectors)
+* [Enterprise Connectors](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors)

@@ -42,7 +42,7 @@ A warning message below the data source predict area indicates that train is req
 
 ![](<../../../.gitbook/assets/new webhook.png>)
 
-For more information, see [Start multiple DRUID conversations by API](https://druidai.gitbook.io/druid-ai-docs/how-to/start-multiple-druid-conversations-by-api).
+For more information, see [Start multiple DRUID conversations by API](https://druidai.gitbook.io/druid-ai-docs/ai-platform/how-to/start-multiple-druid-conversations-by-api).
 
 * **Vonage Voice channel**. The Vonage Voice channel now allows you to integrate AI Agents for seamless voice-based conversations, automated call handling, and efficient call routing. This enhancement improves customer interactions and engagement while reducing operational costs. For more information, see [Vonage Voice](https://druidai.gitbook.io/druid-ai-docs/channels/voice-and-telephony/vonage_voice).
 
@@ -61,7 +61,7 @@ For more information, see [Website data sources](https://druidai.gitbook.io/drui
 
 ![](<../../../.gitbook/assets/GENERATE PDF WITH ATATCH.png>)
 
-For more information, see [Generate word, excel and PDF files using document templates](https://druidai.gitbook.io/druid-ai-docs/integrations/enterprise-connectors/document-builder/generate-word-excel-and-pdf-files-using-document-templates).
+For more information, see [Generate word, excel and PDF files using document templates](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/document-builder/generate-word-excel-and-pdf-files-using-document-templates).
 
 * **Integrations filtering improvement**. Integration Filtering now includes a **Scope** filter, allowing you to easily filter integrations that have at least one integration task with a **Local** or **Global** scope.
 

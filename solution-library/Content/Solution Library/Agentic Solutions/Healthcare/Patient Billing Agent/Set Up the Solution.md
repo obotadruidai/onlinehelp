@@ -165,4 +165,4 @@ To define when and how often an alert runs, follow these steps:
 
 6. Save the flow.
 
-For more information on alerts, see [Alert Flows](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/flows/alert-flows).
+For more information on alerts, see [Alert Flows](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/flows/alert-flows).

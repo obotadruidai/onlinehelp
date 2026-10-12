@@ -10,7 +10,7 @@ This section will walk you through the steps to import and configure the solutio
 ## Prerequisites
 
 * Tenant Druid community (open new tenant [here](https://www.druidai.com/license-activation)) or Druid subscription.
-* A published AI Agent configured on your tenant. For information on how to create an AI Agent, see [Creating AI Agents](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/creating-ai-agents).
+* A published AI Agent configured on your tenant. For information on how to create an AI Agent, see [Creating AI Agents](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/creating-ai-agents).
 * Druid LLM API resources activated for Druid Becus and Azure OpenAI/gpt-4.1-mini on your tenant. Contact your Druid sales representative to enable dedicated resources and generate tokens.
 
 ## Installation and setup procedure

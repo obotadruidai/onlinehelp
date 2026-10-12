@@ -20,7 +20,7 @@ In this video:
 
 ## Invoice Generation Procedure
 
-1. Create the excel document template to be used for invoice generation. For information on how to create an Excel template, see [Creating Excel Templates](https://druidai.gitbook.io/druid-ai-docs/integrations/enterprise-connectors/document-builder/creating-excel-templates).
+1. Create the excel document template to be used for invoice generation. For information on how to create an Excel template, see [Creating Excel Templates](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/document-builder/creating-excel-templates).
 2. Import the excel document template into the Druid Portal. For more information, see  [Upload document](<https://docs.druidai.com/docs/Content/7_Integrations/Document%20Builder/Step%202%20Upload%20document.htm>).
 3. Create a connection action for invoice document generation. For more information, see [Create Action and Add Integration Tasks for Documents Generation](<https://docs.druidai.com/docs/Content/7_Integrations/Document%20Builder/Step%203%20Create%20Action%20and%20Add.htm>).
 4. Create the flow for invoice generation. In the video, the flow has three steps as follows:

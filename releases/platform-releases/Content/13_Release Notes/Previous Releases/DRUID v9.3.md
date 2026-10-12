@@ -22,7 +22,7 @@ If you have questions about your DRUID tenant, please contact [support@Druidai.c
 
 ## Improvements
 
-* **SAML-based SSO authentication - Added support for SAML authentication with certificate signing**. DRUID can now sign SAML AuthnRequests using its private key, allowing Identity Providers to verify requests with the corresponding public key for enhanced security. For more information, see [SSO Authentication with the SAML Protocol](https://druidai.gitbook.io/druid-ai-docs/integrations/enterprise-connectors/sso-authentication-with-saml).
+* **SAML-based SSO authentication - Added support for SAML authentication with certificate signing**. DRUID can now sign SAML AuthnRequests using its private key, allowing Identity Providers to verify requests with the corresponding public key for enhanced security. For more information, see [SSO Authentication with the SAML Protocol](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/sso-authentication-with-saml).
 * **Knowledge Base improvements**. This release introduces various improvements:
 * **Added UI for configuring HTML Selector Tags to Ignore**. You can now manage which HTML elements are excluded during content extraction directly in **Knowledge Base Settings** > **Advanced Settings**, without editing the Advanced Settings JSON configuration.
 

@@ -100,7 +100,7 @@ Incoming audio is sent to the configured Speech-to-Text provider, which converts
 
 ### LLM Services (optional)
 
-When generative AI capabilities are required, the AI Agent can call one or more configured Large Language Model (LLM) providers. LLM calls are optional and depend on the AI Agent setup. Supported providers are documented in the [LLM Resource Management and Governance](https://druidai.gitbook.io/druid-ai-docs/ai-governance-and-security/ai-evaluation-and-response-guardrails/llm-resource-management-and-governance) topic.
+When generative AI capabilities are required, the AI Agent can call one or more configured Large Language Model (LLM) providers. LLM calls are optional and depend on the AI Agent setup. Supported providers are documented in the [LLM Resource Management and Governance](https://druidai.gitbook.io/druid-ai-docs/ai-platform/ai-governance-and-security/ai-evaluation-and-response-guardrails/llm-resource-management-and-governance) topic.
 
 ### Text-to-Speech Services
 

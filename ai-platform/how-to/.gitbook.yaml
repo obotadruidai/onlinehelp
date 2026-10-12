@@ -1,5 +1,0 @@
-root: .
-
-structure:
-  readme: "Content/How to/Handling Authentication.md"
-  summary: SUMMARY.md

@@ -12,7 +12,7 @@ authors can deploy this solution in the following channels: [web chat](https://d
 ## Prerequisites
 
 * Tenant Druid community (open new tenant [here](https://www.druidai.com/license-activation)) or Druid subscription.
-* You should have a AI Agent. For information on how to create an AI Agent, see [Creating AI Agents](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/creating-ai-agents).
+* You should have a AI Agent. For information on how to create an AI Agent, see [Creating AI Agents](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/creating-ai-agents).
 * SQL server connection.
 
 ## Configure the template
@@ -82,7 +82,7 @@ Click **Save and Close**.
 
 ## send\_email
 
-For detailed procedure on how to configure the Email connector, see [Email Connectors](https://druidai.gitbook.io/druid-ai-docs/integrations/enterprise-connectors/email-connectors).
+For detailed procedure on how to configure the Email connector, see [Email Connectors](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/email-connectors).
 
 **Step 3: Run Setup Flow**
 

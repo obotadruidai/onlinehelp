@@ -77,7 +77,7 @@ For SQL integrations, this comprehensive list of visible columns remains accessi
 * **Flow – UI Enhancements**. The Create New Flow page has been updated with a cleaner, more flexible UI.
 * The **Utterances** field is now optional.
 * The **Description** field has been expanded to support up to three lines of text.
-* A new **Commands** field allows you to define technical utterances as exact-match commands, reducing noise in NLP training and improving model accuracy. For more information about using commands on flow details, see [Commands](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/flows/conversational-flows/adding-technical-intents).
+* A new **Commands** field allows you to define technical utterances as exact-match commands, reducing noise in NLP training and improving model accuracy. For more information about using commands on flow details, see [Commands](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/flows/conversational-flows/adding-technical-intents).
 * If the new flow is a special flow type supported by DRUID, you can select the appropriate type from the list.
 
 ![](<../../../.gitbook/assets/create flow (1).png>)

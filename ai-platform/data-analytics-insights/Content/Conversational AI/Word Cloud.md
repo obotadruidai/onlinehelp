@@ -66,5 +66,5 @@ After you edit the flow utterance, click the **Train Set** tab and click the **T
 
 ## Related Topics
 
-* [Defining the Intent](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/flows/conversational-flows/defining-the-intent)
-* [Setting Up the AI Agent Conversational AI (DRUID versions prior to 5.15)](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/conversational-ai/setting-up-the-conversational-ai-druid-versions-prior-to-5.15)
+* [Defining the Intent](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/flows/conversational-flows/defining-the-intent)
+* [Setting Up the AI Agent Conversational AI (DRUID versions prior to 5.15)](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/conversational-ai/setting-up-the-conversational-ai-druid-versions-prior-to-5.15)

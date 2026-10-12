@@ -31,7 +31,7 @@ Built into the Flow Predict Engine, this model automatically learns from flow in
 
 ![](<../../../.gitbook/assets/nlu with llm (1).png>)
 
-For information on how to configure it, see section [NLU Intents Classification with LLM](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/conversational-ai/nlu-intents-classification).
+For information on how to configure it, see section [NLU Intents Classification with LLM](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/conversational-ai/nlu-intents-classification).
 
 {% hint style="info" %}
 **NOTE:** This model currently does not support Named Entity Recognition (NER).
@@ -45,7 +45,7 @@ For information on how to configure it, see section [NLU Intents Classification 
 
 For more information, see [WhatsApp Meta Channel](https://druidai.gitbook.io/druid-ai-docs/channels/social-media-and-chat/whatsappmeta-integration) or [WhatsApp Vonage Channel](https://druidai.gitbook.io/druid-ai-docs/channels/social-media-and-chat/whatsapp-integration).
 
-* **DRUID Data Service Connector – improved `GROUP BY` in custom queries**. In this release, the `GROUP BY` functionality in custom queries has been enhanced. You can now group data not only by aliases but also by column names, following standard SQL grouping conventions. This improvement provides greater flexibility and alignment with SQL query practices. For more information, see [Filter using DRUID custom query](https://druidai.gitbook.io/druid-ai-docs/integrations/enterprise-connectors/druid_data_-service_connector/filter-using-druid-custom-query).
+* **DRUID Data Service Connector – improved `GROUP BY` in custom queries**. In this release, the `GROUP BY` functionality in custom queries has been enhanced. You can now group data not only by aliases but also by column names, following standard SQL grouping conventions. This improvement provides greater flexibility and alignment with SQL query practices. For more information, see [Filter using DRUID custom query](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/druid_data_-service_connector/filter-using-druid-custom-query).
 * **Feedback Options in Web Chat**. You can now enable feedback options in web chat to collect user reactions (thumbs up or thumbs down) on AI Agent responses. This feature helps improve AI Agent interactions by capturing and storing feedback for analysis. For more information, see [Feedback Reactions in Web Chat](https://druidai.gitbook.io/druid-ai-docs/channels/web-and-email/webchat/configure-feedback-options-in-web-chat).
 
 ![](<../../../.gitbook/assets/show actions feedback.png>)

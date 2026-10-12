@@ -10,7 +10,7 @@ For solution admins
 ### Mandatory
 
 * Tenant Druid community (open new tenant [here](https://www.druidai.com/license-activation)) or Druid subscription.
-* You should have an AI Agent. For information on how to create an AI Agent, see [Creating AI Agents](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/creating-ai-agents).
+* You should have an AI Agent. For information on how to create an AI Agent, see [Creating AI Agents](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/creating-ai-agents).
 * You should have installed and configured the [Academic Advisor Agent](<../Academic Advisor Agent.md>).
 * The Audiocodes channel configured for your AI Agent. For setup instructions, see [Voice AudioCodes Channel](https://druidai.gitbook.io/druid-ai-docs/channels/voice-and-telephony/voice-audio-codes-channel).
 
@@ -114,7 +114,7 @@ To define when and how often an alert runs, follow these steps:
 
 6. Save the flow.
 
-For more information on alerts, see [Alert Flows](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/flows/alert-flows).
+For more information on alerts, see [Alert Flows](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/flows/alert-flows).
 
 {% hint style="info" %}
 **Info:** If you want to build custom campaigns, follow the instructions provided in section [Campaign Management Agentic Solution](<../../Marketing/Campaign Management Agentic Solution.md#Building>) of the Campaign Management Agentic solution topic.

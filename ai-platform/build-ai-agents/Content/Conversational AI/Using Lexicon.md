@@ -29,7 +29,7 @@ Example:
 <img src="../../.gitbook/assets/response ner multi.png" alt="" data-size="original">
 {% endhint %}
 
-For more information on how to connect to external data sources, see [Integrations](https://druidai.gitbook.io/druid-ai-docs/integrations/enterprise-connectors).
+For more information on how to connect to external data sources, see [Integrations](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors).
 
 ## Step 2: Index the entity
 

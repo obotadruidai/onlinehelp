@@ -23,7 +23,7 @@ If no parameter is set, the conversation from the current ActivityId will be sav
 
 For Live Chat scenarios, when using the internal action without specified parameters, the conversation transcript will include the conversation of the user from the point where the chat activity began up to the moment when the action is invoked.
 
-For details on parameters to filter the conversation transcript, see [Internal Actions](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/flows/conversational-flows/internal-actions).
+For details on parameters to filter the conversation transcript, see [Internal Actions](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/flows/conversational-flows/internal-actions).
 
 ## Step 2. Set \[\[ConversationInfo]].TranscriptTxt/\[\[ConversationInfo]].TranscriptJSON to your business request entity
 

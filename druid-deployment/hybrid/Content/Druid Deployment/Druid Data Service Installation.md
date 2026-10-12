@@ -150,7 +150,7 @@ At the top-right corner of the page, click the **Save all** button.
 **IMPORTANT!** Make sure that you click **Save all**; otherwise, enabling Druid Data Service and overwriting the entity fields will have no effect.
 {% endhint %}
 
-Use [Druid Data Service Connector](https://druidai.gitbook.io/druid-ai-docs/integrations/enterprise-connectors/druid_data_-service_connector) to manage entity records within the conversational flows.
+Use [Druid Data Service Connector](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/druid_data_-service_connector) to manage entity records within the conversational flows.
 
 ## Step 4. Configure secured access to your MongoDB database <a href="#configure_secured_access_to_your_mongodb_database" id="configure_secured_access_to_your_mongodb_database"></a>
 

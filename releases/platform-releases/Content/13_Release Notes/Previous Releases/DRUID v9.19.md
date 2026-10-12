@@ -25,7 +25,7 @@ If you have questions about your Druid tenant, please contact [support@Druidai.c
 **NOTE:** For Druid Connector Host hybrid deployments, you **must** whitelist the IP address of the host machine to ensure uninterrupted service.
 {% endhint %}
 
-For more information, see [Enforce Druid Portal Access via IP Whitelisting](https://druidai.gitbook.io/druid-ai-docs/ai-governance-and-security/data-security-and-privacy/authoring-user-management/enforce-druid-portal-access-via-ip-whitelisting).
+For more information, see [Enforce Druid Portal Access via IP Whitelisting](https://druidai.gitbook.io/druid-ai-docs/ai-platform/ai-governance-and-security/data-security-and-privacy/authoring-user-management/enforce-druid-portal-access-via-ip-whitelisting).
 
 * **Support for Azure OpenAI /Responses API**. We have introduced support for the `/Responses` API for Azure OpenAI models. This update allows the AI Agent to provide higher quality and more efficient responses.
 
@@ -37,13 +37,13 @@ Available capabilities include:
 
 ![](<../../../.gitbook/assets/LLM STREAMER.png>)
 
-For more information, see [Use LLM Response Streaming for Voice Interactions](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/flows/agentic-flows/use-llm-response-streaming-for-voice-interactions).
+For more information, see [Use LLM Response Streaming for Voice Interactions](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/flows/agentic-flows/use-llm-response-streaming-for-voice-interactions).
 
 * Enhanced intent recognition
 
 ![](<../../../.gitbook/assets/nluw iytth llm.png>)
 
-For more information, see [NLU Intents Classification with LLM](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/conversational-ai/nlu-intents-classification).
+For more information, see [NLU Intents Classification with LLM](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/conversational-ai/nlu-intents-classification).
 
 * KB Advanced settings - Generative Endpoints (LLM chunker)
 
@@ -55,7 +55,7 @@ For more information, see [Generative Endpoints](https://druidai.gitbook.io/drui
 
 ![](<../../../.gitbook/assets/machien translation.png>)
 
-For more information, see [Using Machine Translation](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/multilingual-ai-agents/using-machine-translation#Use).
+For more information, see [Using Machine Translation](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/multilingual-ai-agents/using-machine-translation#Use).
 
 * **Soniox Speech-To-Text (STT) Support**. Elevate your voice-based AI Agents with our new Soniox STT integration. Complementing our existing list of STT providers, Soniox introduces semantic endpointing to intelligently detect when a user has finished speaking based on context rather than just silence. This integration ensures "human-parity" accuracy across 60+ languages and natively supports multilingual code-switching, allowing the AI Agent to follow conversations seamlessly even when users switch languages mid-sentence.
 
@@ -77,14 +77,14 @@ For more information, see Enable voice interactions in the Web channel.
 * Capture and store users' geographical location shared in the chat (stored in the \[\[GeoLocation]] system entity or a custom entity field).
 * Share a specific location with users in the chat, rendered similar to a Google Maps preview.
 
-For more information, see [Location steps](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/flows/conversational-flows/flow-steps/location_flow_steps).
+For more information, see [Location steps](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/flows/conversational-flows/flow-steps/location_flow_steps).
 
 * **Outlook Channel – Conversation Management Enhancement**. Added a new configuration option to control how email threads are handled. A **Treat emails as separate conversations** toggle is now available in the Outlook channel settings. When enabled, each incoming email is processed as a new conversation, even if it belongs to an existing thread. This is useful for service desk scenarios where every email must be handled as an independent request or ticket.
 
 ![](<../../../.gitbook/assets/outlook config.png>)
 
-* **Webhooks - External File Ingestion**. We have introduced the `/GenericIntegrationFileTransfer` endpoint to simplify how external systems send documents to Druid. By supporting multipart/form-data, this new endpoint provides a standardized way to upload files in Druid via integrations. For more information, see [Uploading Files from External Systems to Druid](https://druidai.gitbook.io/druid-ai-docs/integrations/webhooks/uploading-files-from-external-systems-to-druid).
-* **Facebook Data Deletion Support**. We have introduced a new special flow to help organizations comply with Facebook's data privacy policies. When a user requests data deletion via Facebook, Druid can now automatically trigger a designated **Facebook data deletion flow**. This allows authors to programmatically anonymize or delete user data from the Conversation History and internal entities, ensuring full compliance with GDPR and platform-specific privacy requirements. For more information, see [Facebook Data Deletion Flow](https://druidai.gitbook.io/druid-ai-docs/build-ai-agents/authoring-tools/flows/special-flows/facebook-data-deletion-flow).
+* **Webhooks - External File Ingestion**. We have introduced the `/GenericIntegrationFileTransfer` endpoint to simplify how external systems send documents to Druid. By supporting multipart/form-data, this new endpoint provides a standardized way to upload files in Druid via integrations. For more information, see [Uploading Files from External Systems to Druid](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/webhooks/uploading-files-from-external-systems-to-druid).
+* **Facebook Data Deletion Support**. We have introduced a new special flow to help organizations comply with Facebook's data privacy policies. When a user requests data deletion via Facebook, Druid can now automatically trigger a designated **Facebook data deletion flow**. This allows authors to programmatically anonymize or delete user data from the Conversation History and internal entities, ensuring full compliance with GDPR and platform-specific privacy requirements. For more information, see [Facebook Data Deletion Flow](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/flows/special-flows/facebook-data-deletion-flow).
 * **Microsoft Teams Channel – RBAC with Microsoft Entra ID Groups**. Starting with this release, you can configure the Teams channel to retrieve users’ security groups from Microsoft Entra ID (formerly Azure AD). This enables role-based access control for operational flows, allowing you to grant or restrict access based on the user’s organizational groups.
 
 ![](../../../.gitbook/assets/2026-03-24_21-04-33.png)
