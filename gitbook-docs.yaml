@@ -26,7 +26,7 @@ site:
           path: docs-platform-get-started
           children:
             - type: space
-              key: space-3
+              key: space-29
               title: "Get Started"
               path: get-started
               default: true
@@ -38,7 +38,7 @@ site:
           path: ai-agent-orchestration
           children:
             - type: space
-              key: space-4
+              key: space-30
               title: "AI Agent Orchestration"
               path: ai-agent-orchestration
               default: true
@@ -50,7 +50,7 @@ site:
           path: build-ai-agents
           children:
             - type: space
-              key: space-1
+              key: space-31
               title: "Build AI Agents"
               path: build-ai-agents
               default: true
@@ -62,7 +62,7 @@ site:
           path: ai-governance-and-security
           children:
             - type: space
-              key: space-5
+              key: space-32
               title: "AI Governance & Security"
               path: ai-governance-and-security
               default: true
@@ -74,7 +74,7 @@ site:
           path: data-analytics-and-insights
           children:
             - type: space
-              key: space-6
+              key: space-33
               title: "Data Analytics & Insights"
               path: data-analytics-and-insights
               default: true
@@ -86,7 +86,7 @@ site:
           path: integrations
           children:
             - type: space
-              key: space-8
+              key: space-34
               title: "Integrations"
               path: integrations
               default: true
@@ -110,7 +110,7 @@ site:
           path: release-lifecycle-and-versioning
           children:
             - type: space
-              key: space-7
+              key: space-35
               title: "Release Lifecycle & Versioning"
               path: release-lifecycle-and-versioning
               default: true
@@ -190,7 +190,7 @@ site:
           path: live-chat
           children:
             - type: space
-              key: space-9
+              key: space-36
               title: "Live Chat"
               path: live-chat
               default: true
