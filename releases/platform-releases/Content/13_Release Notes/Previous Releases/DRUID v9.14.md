@@ -32,7 +32,7 @@ If you have questions about your Druid tenant, please contact [support@Druidai.c
 - **Sorting**. Sort file list by specific attributes, making it easier to identify and process files in a predictable order.
 - **Pagination**. Handle large directory listings efficiently by retrieving files in manageable batches, improving performance and resource utilization when working with directories containing numerous files.
 
-For more information, see [List Files with the Druid Connector Host](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/list-files).
+For more information, see [List Files with the Druid Connector Host](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/specialized-and-custom/files/list-files).
 
 <a id="BugFixes"></a>
 

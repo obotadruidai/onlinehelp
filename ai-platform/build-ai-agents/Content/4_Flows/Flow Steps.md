@@ -25,7 +25,7 @@ Below is a brief description of the dialog flow steps available in the platform.
 | Thumbnail         | Similar to Hero steps, but displays the image as a thumbnail.                                                                                                                                                                                  |
 | File Upload       | Prompts the user to upload a file.                                                                                                                                                                                                             |
 | Backchannel Event | Triggers events on the web page that hosts the AI Agent.                                                                                                                                                                                       |
-| UiPath            | Integrates with UiPath to start a UiPath process from DRUID. For configuration details, see [Starting UiPath Unattended Processes](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/uipath-connector/starting-uipath-unattended).                                                  |
+| UiPath            | Integrates with UiPath to start a UiPath process from DRUID. For configuration details, see [Starting UiPath Unattended Processes](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/rpa/uipath-connector/starting-uipath-unattended).                                                  |
 
 ## Related Topics
 

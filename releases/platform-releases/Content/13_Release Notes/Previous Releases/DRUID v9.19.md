@@ -55,7 +55,7 @@ For more information, see [Generative Endpoints](https://druidai.gitbook.io/drui
 
 ![](<../../../.gitbook/assets/machien translation.png>)
 
-For more information, see [Using Machine Translation](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/multilingual-ai-agents/using-machine-translation#Use).
+For more information, see [Using Machine Translation](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/localization/multilingual-ai-agents/using-machine-translation#Use).
 
 * **Soniox Speech-To-Text (STT) Support**. Elevate your voice-based AI Agents with our new Soniox STT integration. Complementing our existing list of STT providers, Soniox introduces semantic endpointing to intelligently detect when a user has finished speaking based on context rather than just silence. This integration ensures "human-parity" accuracy across 60+ languages and natively supports multilingual code-switching, allowing the AI Agent to follow conversations seamlessly even when users switch languages mid-sentence.
 

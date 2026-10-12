@@ -52,7 +52,7 @@ Purpose-built dashboards and an expanded set of charts make trends impossible to
 
 ![](<../../../.gitbook/assets/conv insights.png>)
 
-For more information, see [AI Engagement Analyst](https://druidai.gitbook.io/druid-ai-docs/solution-library/business-apps/ai-engagement-analyst).
+For more information, see [AI Engagement Analyst](https://druidai.gitbook.io/druid-ai-docs/solution-library/business-apps/operational-tools/ai-engagement-analyst).
 
 * **Governance & Security - Passkey Login Support**. This release introduces passkey login support, allowing administrators to enable a more secure, biometric, or hardware-based authentication method for Druid Portal users.
 * **Admin Control**. Administrators can easily activate this feature on the tenant.

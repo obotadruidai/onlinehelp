@@ -31,7 +31,7 @@ If you have questions about your Druid tenant, please contact [support@druidai.c
 
 For details about the new KPIs, their calculation, and how to add them to existing AI Agent Summary dashboard, see [NLU KPIs](https://druidai.gitbook.io/druid-ai-docs/ai-platform/data-analytics-and-insights/operational-visibility-and-history/ai-agent-summary-dashboard#NLU_KPIs).
 
-* **Epic Integration**. Druid now supports native integration with Epic FHIR, enabling AI Agents to seamlessly execute REST API calls against Epic healthcare systems to securely interact with healthcare data. It delivers high security and compliance while streamlining clinical workflows, such as retrieving patient records and managing care team tasks. Additionally, flexible environment management allows organizations to easily configure and test workflows in Epic Sandbox before seamlessly transitioning to Production. For more information, see [Epic Integration](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/epic-integration).
+* **Epic Integration**. Druid now supports native integration with Epic FHIR, enabling AI Agents to seamlessly execute REST API calls against Epic healthcare systems to securely interact with healthcare data. It delivers high security and compliance while streamlining clinical workflows, such as retrieving patient records and managing care team tasks. Additionally, flexible environment management allows organizations to easily configure and test workflows in Epic Sandbox before seamlessly transitioning to Production. For more information, see [Epic Integration](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/web-services/epic-integration).
 
 ## Improvements
 

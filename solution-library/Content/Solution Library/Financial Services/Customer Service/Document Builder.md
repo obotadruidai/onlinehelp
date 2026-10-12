@@ -40,4 +40,4 @@ This type of document is issued by a bank on behalf of one of a customers who ha
 
 ## Related Topics
 
-* [Document Builder](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/document-builder)
+* [Document Builder](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/specialized-and-custom/document-builder)

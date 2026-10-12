@@ -53,7 +53,7 @@ Now your UiPath setup is completed.
 
 ## Step 4: Set up Druid
 
-1. In Druid, go to Apps and create a new UiPath connection. For information on how to do that, see [Creating the UiPath Connection Strings](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/uipath-connector/creating-the-uipath-connection-strings).
+1. In Druid, go to Apps and create a new UiPath connection. For information on how to do that, see [Creating the UiPath Connection Strings](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/rpa/uipath-connector/creating-the-uipath-connection-strings).
 
 {% hint style="info" %}
 **NOTE:** The user used to obtain the UiPath Connector App credentials must have permission to run jobs on the corresponding Orchestrator Folder.
@@ -70,4 +70,4 @@ Now your UiPath setup is completed.
 
 ## Related Topics
 
-* [How to Set Up the UiPath Integration](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/uipath-connector/starting-uipath-unattended/how-to-set-up-the-uipath-integration)
+* [How to Set Up the UiPath Integration](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/rpa/uipath-connector/starting-uipath-unattended/how-to-set-up-the-uipath-integration)

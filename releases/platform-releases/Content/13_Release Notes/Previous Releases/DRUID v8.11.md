@@ -37,7 +37,7 @@ For more information, see [External Webhook Call Handling in DRUID](https://drui
 
 ![](<../../../.gitbook/assets/debug message.png>)
 
-For more information, see [Debug Messages in Flow Steps](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/flows/troubleshooting-steps-with-debug-messages).
+For more information, see [Debug Messages in Flow Steps](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/flows/troubleshooting-and-auditing-flows/troubleshooting-steps-with-debug-messages).
 
 * **WebChat – Update the Conversation Context**. You can now update the conversation context with data from the web page hosting the AI Agent without interrupting the current flow execution. Use the `sendEvent("UpdateConversationContext")` function to achieve this. For more details, see [Trigger AI Agent Events from the Web Page Hosting the AI Agent](https://druidai.gitbook.io/druid-ai-docs/channels/web-and-email/webchat/trigger-events-from-the-web-page).
 * **Multichat – Voice-to-Voice Live Conversations**. Live voice conversations with real-time translation are now available in Multichat when the Voice channel is enabled. This feature allows agents to communicate more efficiently by switching seamlessly between text and voice during live interactions.

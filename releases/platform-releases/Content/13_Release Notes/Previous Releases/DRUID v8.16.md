@@ -27,7 +27,7 @@ For more information, see [Agent Assist](https://druidai.gitbook.io/druid-ai-doc
 
 ![](<../../../.gitbook/assets/AZURE TRANSLATOR SETTINGS.png>)
 
-For more information, see [Using Machine Translation](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/multilingual-ai-agents/using-machine-translation).
+For more information, see [Using Machine Translation](https://druidai.gitbook.io/druid-ai-docs/ai-platform/build-ai-agents/authoring-tools/localization/multilingual-ai-agents/using-machine-translation).
 
 * **Web Chat – Improved feedback reactions**. Feedback reactions in Web Chat have been streamlined. You no longer need to create dedicated feedback event flows to capture positive or negative user reactions. This release introduces three new system fields in the \[\[ChatActivityData]] system entity:
 * FeedbackMessage (string) – captures the user's feedback text.

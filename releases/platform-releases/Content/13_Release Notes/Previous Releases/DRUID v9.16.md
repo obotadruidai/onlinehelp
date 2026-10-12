@@ -49,7 +49,7 @@ Users with the following permissions no longer require email confirmation:
 
 ![](<../../../.gitbook/assets/start date.png>)
 
-* **Druid Data Service Connector - Aggregating large data sets across entities optimization**. You can now efficiently join related entity fields and aggregate large data sets in Druid custom queries. For more information, see [Joining with Entity Fields for Large Data Volumes](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/druid_data_-service_connector/filter-using-druid-custom-query#Joining).
+* **Druid Data Service Connector - Aggregating large data sets across entities optimization**. You can now efficiently join related entity fields and aggregate large data sets in Druid custom queries. For more information, see [Joining with Entity Fields for Large Data Volumes](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/data-and-storage/druid_data_-service_connector/filter-using-druid-custom-query#Joining).
 * **Optimized Deepgram STT Provider Switching**. If Deepgram is set as the primary STT provider and Azure as fallback, and the user selects a language unsupported by Deepgram, the system falls back to Azure. Once the user changes the language back to one that Deepgram supports, the system will automatically switch back to Deepgram (the primary provider) for the remainder of the session.
 
 This automatic fallback and recovery mechanism happens seamlessly and has no impact on the voice interaction performance or the execution of flows in the active chat session.

@@ -55,7 +55,7 @@ For more information, see [Alert Flows](https://druidai.gitbook.io/druid-ai-docs
 
 ![](<../../../.gitbook/assets/cancel train.png>)
 
-* **DRUID Data Service Connector – New Operators in custom queries**. This release introduces the `UNION`, `UNION ALL`, `INTERSECT`, and `EXCEPT` operators in custom queries. You can now use these operators to filter request data for Query entities and Query-related entity integration tasks, enabling more flexible and powerful data manipulation. For more information, see [Filter Data using DRUID Custom Query](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/druid_data_-service_connector/filter-using-druid-custom-query).
+* **DRUID Data Service Connector – New Operators in custom queries**. This release introduces the `UNION`, `UNION ALL`, `INTERSECT`, and `EXCEPT` operators in custom queries. You can now use these operators to filter request data for Query entities and Query-related entity integration tasks, enabling more flexible and powerful data manipulation. For more information, see [Filter Data using DRUID Custom Query](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/data-and-storage/druid_data_-service_connector/filter-using-druid-custom-query).
 * **KB – improvements**. This release introduces new improvements to website data sources:
 * **Website data sources UI**. The Website Data Sources UI now provides improved tooltips for website pages. The tooltip now displays both the page name and its URL on separate lines. This enhancement helps users differentiate between pages with the same name and makes it easier to decide whether to exclude a page after crawling.
 

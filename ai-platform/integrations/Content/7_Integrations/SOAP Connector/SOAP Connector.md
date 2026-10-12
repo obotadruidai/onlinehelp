@@ -12,7 +12,7 @@ Druid Integrations are called from the Flow Engine which sends the conversation 
 The entities transport data via integrations. The data is packed as request entity and send it to the systems integrated with the AI Agent. When receiving data from apps, the AI Agent maps the data within the conversation as response entity. For more information, see [Integrations](<../Enterprise Connectors.md>).
 
 {% hint style="info" %}
-**NOTE:** The calls to your on premise systems are possible in a secured way, without being required to have your APIs accessible from the Internet. For more information, see [Installing the Druid Connector Host](https://druidai.gitbook.io/druid-ai-docs/hybrid/druid-connector-host/install-druid-connector-host).
+**NOTE:** The calls to your on premise systems are possible in a secured way, without being required to have your APIs accessible from the Internet. For more information, see [Installing the Druid Connector Host](https://druidai.gitbook.io/druid-ai-docs/hybrid/druid-connector-host/cnn-host-installation-on-windows/install-druid-connector-host).
 {% endhint %}
 
 ## Creating SOAP Connectors

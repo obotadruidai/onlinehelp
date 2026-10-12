@@ -142,4 +142,4 @@ To simplify the AI Agent authoring experience, go to Solutions Library and impor
 * Sample document template to be signed. If you want to use another document template, you should generate it from your Namirial organization.
 * eSignAnywhere.Api V5 and full management of namirial-Druid integration services like: upload file to Namirial, generate file, get signature url, get envelope status or download documents.
 
-For information on how to configure the solution template, see [eSignature Namirial solution template](https://druidai.gitbook.io/druid-ai-docs/solution-library/solution-templates/esignature_namirial).
+For information on how to configure the solution template, see [eSignature Namirial solution template](https://druidai.gitbook.io/druid-ai-docs/solution-library/solution-templates/esignature/esignature_namirial).

@@ -21,7 +21,7 @@ If you have questions about your DRUID tenant, please contact [support@Druidai.c
 
 ## Improvements
 
-* **Druid Data Service and REST Connectors - Enhanced Integration Log Detail**. Debugging integrations is now faster and more intuitive. The **Request task** section in **Integration log detail** now displays the API call request body in a clean, formatted JSON view. You can immediately review and validate your integration mappings—no need to copy and decode an escaped stringified JSON in external tools—making your debugging workflow smoother and more efficient. For more information on how to debug integrations, see [Debugging Integrations](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/debugging-integrations).
+* **Druid Data Service and REST Connectors - Enhanced Integration Log Detail**. Debugging integrations is now faster and more intuitive. The **Request task** section in **Integration log detail** now displays the API call request body in a clean, formatted JSON view. You can immediately review and validate your integration mappings—no need to copy and decode an escaped stringified JSON in external tools—making your debugging workflow smoother and more efficient. For more information on how to debug integrations, see [Debugging Integrations](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/developer-tools/debugging-integrations).
 
 ![](<../../../.gitbook/assets/request task.png>)
 

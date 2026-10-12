@@ -130,4 +130,4 @@ If you want to add data encryption on existing connector actions, add the **Encr
 **NOTE:** Use Encrypt Data as the first integration task on a connector action only if you are using the encrypted data on subsequent integration tasks within that action; otherwise, the encrypted data remains inside the connector, Druid will not transmit it to 3rd party systems.
 {% endhint %}
 
-For more information on the Encrypt Data integration task and how clients receiving the encrypted data can decrypt it, see [Encrypt Data](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/encryptdata).
+For more information on the Encrypt Data integration task and how clients receiving the encrypted data can decrypt it, see [Encrypt Data](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/identity-and-encryption/encryptdata).

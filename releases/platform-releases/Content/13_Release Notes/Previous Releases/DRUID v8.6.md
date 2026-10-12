@@ -61,7 +61,7 @@ For more information, see [Website data sources](https://druidai.gitbook.io/drui
 
 ![](<../../../.gitbook/assets/GENERATE PDF WITH ATATCH.png>)
 
-For more information, see [Generate word, excel and PDF files using document templates](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/document-builder/generate-word-excel-and-pdf-files-using-document-templates).
+For more information, see [Generate word, excel and PDF files using document templates](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/specialized-and-custom/document-builder/generate-word-excel-and-pdf-files-using-document-templates).
 
 * **Integrations filtering improvement**. Integration Filtering now includes a **Scope** filter, allowing you to easily filter integrations that have at least one integration task with a **Local** or **Global** scope.
 

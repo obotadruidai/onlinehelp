@@ -37,7 +37,7 @@ To create a flow that allows the AI Agent to modify specific fields on the form 
 2. Add an action step to retrieve the current form record data:
 
 * In **Set Variables**, set the entity ID to **\[\[QueryParams]].recordId**. When an automation is opened from a form, the form record ID is passed through \[\[QueryParams]]. Retrieving the full record ensures that only selected fields are updated and existing data is not overwritten or lost.
-* Select a **GetEntity** Druid Data Service integration to the step. This retrieves all data for the current form record. Use the [CRUD template integration](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/druid_data_-service_connector/crud-template) for the entity to automatically create the GetEntity integration if it doen't exist.
+* Select a **GetEntity** Druid Data Service integration to the step. This retrieves all data for the current form record. Use the [CRUD template integration](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/data-and-storage/druid_data_-service_connector/crud-template) for the entity to automatically create the GetEntity integration if it doen't exist.
 
 ![](<../../.gitbook/assets/AI Agent Interaction With_3.png>)
 

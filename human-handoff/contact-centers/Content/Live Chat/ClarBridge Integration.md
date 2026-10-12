@@ -92,4 +92,4 @@ To activate the sunshine channel:
 
 ## Step 6. Import solution template Clarabridge Live Chat and configure it.
 
-For information on how to configure the solution template, see [Clarabridge Live Chat](https://druidai.gitbook.io/druid-ai-docs/solution-library/solution-templates/clarabridge-live-chat).
+For information on how to configure the solution template, see [Clarabridge Live Chat](https://druidai.gitbook.io/druid-ai-docs/solution-library/solution-templates/live-chat/clarabridge-live-chat).

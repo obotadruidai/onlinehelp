@@ -25,7 +25,7 @@ If you have questions about your Druid tenant, please contact [support@Druidai.c
 
 ![](<../../../.gitbook/assets/basic auth header.png>)
 
-This enhancement simplifies integrations with APIs that require HTTP Basic Authentication and improves compatibility with authenticated endpoints and redirect-based authentication flows, reducing the need for custom authentication handling. For more information, see [Basic Authentication](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/rest/rest-apps/basic-authentication).
+This enhancement simplifies integrations with APIs that require HTTP Basic Authentication and improves compatibility with authenticated endpoints and redirect-based authentication flows, reducing the need for custom authentication handling. For more information, see [Basic Authentication](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/web-services/rest/rest-apps/basic-authentication).
 
 * **Enhanced Conversation Transcript JSON Export**. We've enhanced conversation transcript exports to provide deeper visibility into customer interactions. When exporting conversation transcripts in JSON format using the **GetConversationTranscript** internal action, each message now includes an **OriginatorCode** that identifies whether it was sent by:
 * A user interacting with the AI Agent

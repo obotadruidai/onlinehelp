@@ -15,7 +15,7 @@ Data transfer between the platform and external systems relies entirely on two p
 ![](<../../../.gitbook/assets/REST Overview image.png>)
 
 {% hint style="info" %}
-**NOTE:** To connect securely to internal enterprise software without exposing APIs to the public internet, deploy the Druid Connector Host inside your local firewall. For configuration details, see the [Installing the Druid Connector Host](https://druidai.gitbook.io/druid-ai-docs/hybrid/druid-connector-host/install-druid-connector-host) documentation.
+**NOTE:** To connect securely to internal enterprise software without exposing APIs to the public internet, deploy the Druid Connector Host inside your local firewall. For configuration details, see the [Installing the Druid Connector Host](https://druidai.gitbook.io/druid-ai-docs/hybrid/druid-connector-host/cnn-host-installation-on-windows/install-druid-connector-host) documentation.
 {% endhint %}
 
 ## Technical Workflow Execution

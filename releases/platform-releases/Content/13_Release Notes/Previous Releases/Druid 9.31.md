@@ -69,7 +69,7 @@ For more information, see [Use LLM Response Streaming for Voice Interactions](ht
 
 ![](<../../../.gitbook/assets/client cert.png>)
 
-For more information, see [Client Certificate Security](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/rest/rest-apps/client-certificate-security).
+For more information, see [Client Certificate Security](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/web-services/rest/rest-apps/client-certificate-security).
 
 * **Enhanced Chart Filtering & UI Updates**. This release brings two new improvements:
 * **Chart filtering**. You can now filter chart data by specific entity fields directly within the chart configuration page, mirroring the filtering experience available for data service integration responses.

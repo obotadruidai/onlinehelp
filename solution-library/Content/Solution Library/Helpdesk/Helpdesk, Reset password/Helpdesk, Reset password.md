@@ -29,7 +29,7 @@ Click **Publish** to publish the process in your orchestrator.
 
 ### Step 4: Set up Druid
 
-1. In Druid, go to **Apps**, search for UiPath Process and configure the connection string to your orchestrator following the procedure described in [Creating the UiPath Connection Strings](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/uipath-connector/creating-the-uipath-connection-strings).
+1. In Druid, go to **Apps**, search for UiPath Process and configure the connection string to your orchestrator following the procedure described in [Creating the UiPath Connection Strings](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/rpa/uipath-connector/creating-the-uipath-connection-strings).
 2. Go to the Flows, search for the **reset-password** flow and open it in diagram view. You can use this flow to trigger both attended and unattended UiPath process.
 3. For both attended and unattended technology, map the Process input/output parameters to Druid entity fields as follows:
 
@@ -37,7 +37,7 @@ Click **Publish** to publish the process in your orchestrator.
 
 **OUT**: Status --> **\[\[Client]].Status**.
 
-For more information on how to set up thee flow, see [Starting UiPath Unattended](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/uipath-connector/starting-uipath-unattended), Step 3 from substep (5) onwards.
+For more information on how to set up thee flow, see [Starting UiPath Unattended](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/rpa/uipath-connector/starting-uipath-unattended), Step 3 from substep (5) onwards.
 
 ![](<../../../../.gitbook/assets/reset pass process.png>)
 
@@ -49,4 +49,4 @@ For more information on how to set up thee flow, see [Starting UiPath Unattended
 
 ## Related Topics
 
-* [Starting UiPath Unattended Processes](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/uipath-connector/starting-uipath-unattended)
+* [Starting UiPath Unattended Processes](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/rpa/uipath-connector/starting-uipath-unattended)

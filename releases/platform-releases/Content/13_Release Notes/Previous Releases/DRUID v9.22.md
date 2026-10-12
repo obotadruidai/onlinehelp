@@ -39,7 +39,7 @@ For more information, see [File Type Priority Logic](https://druidai.gitbook.io/
 
 This update ensures that errors which previously resulted in silent failures or missing error logs are now fully visible, allowing for faster debugging and more accurate conversation tracking.
 
-* **Netopia Payment Audit Logs**. We have enhanced the Netopia integration to provide better visibility into payment retries. The payment step now remains active during failed attempts, capturing all relevant data into a payment history log. For more information, see [Tracking Payment History](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/netopia-payments#Tracking).
+* **Netopia Payment Audit Logs**. We have enhanced the Netopia integration to provide better visibility into payment retries. The payment step now remains active during failed attempts, capturing all relevant data into a payment history log. For more information, see [Tracking Payment History](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/specialized-and-custom/netopia-payments#Tracking).
 * **Monitoring Druid Voice Connectivity - SIP Ladder**. To support Druid Voice troubleshooting, we have added a dedicated **SIP Ladder** to the Conversation History. This feature allows administrators to monitor AI agent connectivity by providing a visual event history of all signaling between the Druid SIP server and the contact center.
 
 ![](<../../../.gitbook/assets/sip ladder.png>)

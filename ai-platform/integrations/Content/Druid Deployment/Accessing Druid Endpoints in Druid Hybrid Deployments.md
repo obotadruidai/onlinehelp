@@ -13,7 +13,7 @@ The Druid Connector Host will forward the calls received in its endpoint service
 
 To access Druid endpoints in Druid hybrid deployments, you need to configure the endpoint parameters (Base URL and Local port number) as follows:
 
-* For Druid version 1.57 or higher, configure the Druid Endpoints parameters in the installation wizard ([Druid Connector Host installer](https://druidai.gitbook.io/druid-ai-docs/hybrid/druid-connector-host/install-druid-connector-host)).
+* For Druid version 1.57 or higher, configure the Druid Endpoints parameters in the installation wizard ([Druid Connector Host installer](https://druidai.gitbook.io/druid-ai-docs/hybrid/druid-connector-host/cnn-host-installation-on-windows/install-druid-connector-host)).
 * From Druid version 1.52 to 1.56, add the **Base URL** and **Local port number** parameters in the Druid Connector Host configuration file.
 
 ## Use Case: UiPath

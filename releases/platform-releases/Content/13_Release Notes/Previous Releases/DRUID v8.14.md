@@ -71,7 +71,7 @@ If you have questions about your DRUID tenant, please contact [support@Druidai.c
 
 ![](<../../../.gitbook/assets/set parent reference.png>)
 
-For more information, see [Add Entity](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/druid_data_-service_connector/add_entity).
+For more information, see [Add Entity](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/data-and-storage/druid_data_-service_connector/add_entity).
 
 * **Knowledge Base – Improved Word Extractor**. The Word Extractor now captures hyperlinks embedded in portions of text, making it easier to extract linked URLs along with the associated content.
 

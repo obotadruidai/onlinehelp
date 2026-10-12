@@ -36,7 +36,7 @@ Navigate to **Solution Contents** > **Apps** and configure the apps as follows:
 | ----------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------- |
 | gpt-agent               | Default connection using tenant credentials. No additional configuration required. If you're using your own LLM resources, configure the endpoint and key.                                     | Yes       |
 | Druid Vision (optional) | Enter the key inside the Variables tab. Ensure permissions for **convert-pdf-to-jpeg** and **convert-pdf-page-to-jpeg** are active in **Administration** > **Druid Services**.                 | No        |
-| Epic                    | Configure the Epic app to establish the connection between Druid and Epic on FHIR. For configuration instructions, see [Epic Integration](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/epic-integration). | Yes       |
+| Epic                    | Configure the Epic app to establish the connection between Druid and Epic on FHIR. For configuration instructions, see [Epic Integration](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/web-services/epic-integration). | Yes       |
 
 Click **Publish** to make the apps available.
 

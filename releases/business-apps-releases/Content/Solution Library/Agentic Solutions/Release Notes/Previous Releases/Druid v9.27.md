@@ -43,11 +43,11 @@ These release notes provide a high-level overview of new features and improvemen
 ### Case Management Agentic Solution
 
 - **Dashboard and Analytics Skill** - The Case Management Dashboard Skill provides a real-time, consolidated view of all open, pending, and resolved cases across the organization, giving teams instant visibility into workload distribution, case ageing, and resolution trends. It helps supervisors prioritize escalations, balance team capacity, and track SLA compliance — all from a single, purpose-built operational interface.
-  For more information, see [Case Reporting Dashboard](https://druidai.gitbook.io/druid-ai-docs/solution-library/business-apps/case-management-agentic-solution/case-reporting-dashboard).
+  For more information, see [Case Reporting Dashboard](https://druidai.gitbook.io/druid-ai-docs/solution-library/business-apps/helpdesk/case-management-agentic-solution/case-reporting-dashboard).
 
 <a id="EmailCaseHandlingAgenticSolution"></a>
 
 ### Email Case Handling Agentic Solution
 
 - **Dashboard and Analytics Skill** - The Case Management Dashboard Skill provides a real-time, consolidated view of all open, pending, and resolved cases across the organization, giving teams instant visibility into workload distribution, case ageing, and resolution trends. It helps supervisors prioritize escalations, balance team capacity, and track SLA compliance — all from a single, purpose-built operational interface.
-  For more information, see [Case Reporting Dashboard](https://druidai.gitbook.io/druid-ai-docs/solution-library/business-apps/email-case-handling-agentic-solution/case-reporting-dashboard).
+  For more information, see [Case Reporting Dashboard](https://druidai.gitbook.io/druid-ai-docs/solution-library/business-apps/helpdesk/email-case-handling-agentic-solution/case-reporting-dashboard).

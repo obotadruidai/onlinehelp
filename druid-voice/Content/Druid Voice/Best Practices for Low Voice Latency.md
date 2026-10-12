@@ -51,7 +51,7 @@ Best practice: Deliver a response or a "reasoning/explanation" message to the us
 
 ### Use the "Knowledgebase with GPT V4" Solution
 
-Deploy the pre-configured [Knowledgebase with GPT V4](https://druidai.gitbook.io/druid-ai-docs/solution-library/solution-templates/knowledgebase-with-gpt-v4) solution available in the Solution Library. It includes optimized **Rephrase** and **KB Agent** flows natively connected to Druid Becus for low latency. Import the solution and use it without changes.
+Deploy the pre-configured [Knowledgebase with GPT V4](https://druidai.gitbook.io/druid-ai-docs/solution-library/solution-templates/knowledge-base/knowledgebase-with-gpt-v4) solution available in the Solution Library. It includes optimized **Rephrase** and **KB Agent** flows natively connected to Druid Becus for low latency. Import the solution and use it without changes.
 
 ![](<../../.gitbook/assets/custom kb.png>)
 
@@ -99,7 +99,7 @@ As a best practice, each user utterance should trigger no more than one intent r
 
 **Use Optimized Rephrase Flows**
 
-When implementing intent rephrasing, use the preconfigured rephrase flow included in the [Knowledgebase with GPT V4](https://druidai.gitbook.io/druid-ai-docs/solution-library/solution-templates/knowledgebase-with-gpt-v4) solution. This flow is optimized for low latency and is preconfigured to use LLM streaming with Druid Becus.
+When implementing intent rephrasing, use the preconfigured rephrase flow included in the [Knowledgebase with GPT V4](https://druidai.gitbook.io/druid-ai-docs/solution-library/solution-templates/knowledge-base/knowledgebase-with-gpt-v4) solution. This flow is optimized for low latency and is preconfigured to use LLM streaming with Druid Becus.
 
 **Keep Prompts Concise**
 

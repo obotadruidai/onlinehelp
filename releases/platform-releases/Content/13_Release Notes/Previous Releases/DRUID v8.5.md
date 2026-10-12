@@ -23,7 +23,7 @@ If you have questions about your DRUID tenant, please contact [support@Druidai.c
 
 For more information, see [Vonage SMS](https://druidai.gitbook.io/druid-ai-docs/channels/voice-and-telephony/vonage_sms).
 
-* **Custom Code - read and write XML Files**. DRUID now supports reading content from XML files and generating new XML files. These enhancements enable seamless handling of XML data, including dynamic mapping, manipulation, file generation, and sending XML files directly within the chat. For more information, see [Custom Code](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/custom-code).
+* **Custom Code - read and write XML Files**. DRUID now supports reading content from XML files and generating new XML files. These enhancements enable seamless handling of XML data, including dynamic mapping, manipulation, file generation, and sending XML files directly within the chat. For more information, see [Custom Code](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/specialized-and-custom/custom-code).
 * **File Upload - support for XML files**. DRUID now allows users to upload XML files directly within the chat, enabling efficient reading and processing of XML data.
 
 ## Improvements

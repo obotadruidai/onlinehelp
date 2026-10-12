@@ -25,7 +25,7 @@ If you have questions about your DRUID tenant, please contact [support@Druidai.c
 
 ![](../../../.gitbook/assets/options.png)
 
-For more information, see [Read Files with the DRUID Connector Host](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/read-file) and [Save Files with the DRUID Connector Host](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/save-file).
+For more information, see [Read Files with the DRUID Connector Host](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/specialized-and-custom/files/read-file) and [Save Files with the DRUID Connector Host](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/specialized-and-custom/files/save-file).
 
 ## Improvements
 

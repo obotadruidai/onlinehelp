@@ -35,7 +35,7 @@ For more information, see [External Webhook Call Handling in Druid](https://drui
 * **GETDATE()** – Returns the current UTC date and time.
 * **TODAY()** – Returns the current UTC date with the time set to midnight.
 
-These functions help you create more accurate and consistent time-based filters in your custom queries. For more information, see [Filter Data Using DRUID Custom Query](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/druid_data_-service_connector/filter-using-druid-custom-query).
+These functions help you create more accurate and consistent time-based filters in your custom queries. For more information, see [Filter Data Using DRUID Custom Query](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/data-and-storage/druid_data_-service_connector/filter-using-druid-custom-query).
 
 * **KB – Website data sources – Flexible control of 'HTML Selector Tags to Ignore'**. You can now set **HTML Selector Tags to Ignore** directly at the data source, node, and leaf levels. This update gives you more flexibility to fine-tune extraction rules for each website data source, so you can exclude unwanted HTML elements without relying on global KB settings.
 

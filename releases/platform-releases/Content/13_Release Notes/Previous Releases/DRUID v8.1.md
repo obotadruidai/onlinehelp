@@ -53,7 +53,7 @@ For more information on the new fields, see [Reviewing and Validating LLM Respon
 * **Parse XML to DRUID entity fields**: Introduced the ParseXMLToEntityFields feature, which allows parsing an XML array into a DRUID entity list. This enhancement simplifies the process of mapping XML data, such as currency rates, to entity fields using custom mappings, providing more flexibility and efficiency in handling XML-based datasets.
 * **Add Delay with Wait() Method**: Introduced the `Wait()` method, allowing you to delay task execution by specifying a wait time in milliseconds, up to a maximum of 5000 ms (5 seconds). This method can be called up to 3 times per task, giving you greater control over the timing of integration tasks.
 
-For more information, see [Custom Code](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/custom-code).
+For more information, see [Custom Code](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/specialized-and-custom/custom-code).
 
 * **Document Builder**: With this release, you can now use the **Excel generator** integration task to create CSV files based on XLSX document templates.
 

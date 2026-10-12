@@ -69,7 +69,7 @@ Flow authors can now use the **Exception Handler** directly on the sign in step 
 * Redirecting the user to a different functional flow.
 * Displaying a tailored message explaining the session expiry.
 
-This update provides you with full control over the conversation path when authentication timeout limits are met, ensuring users are never left without guidance. For more information, see [Signing in users with OAuth v2](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/sso-authentication-and-authorization/authenticating-user-within) and [SSO Authentication with SAML](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/sso-authentication-with-saml).
+This update provides you with full control over the conversation path when authentication timeout limits are met, ensuring users are never left without guidance. For more information, see [Signing in users with OAuth v2](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/identity-and-encryption/sso-authentication-and-authorization/authenticating-user-within) and [SSO Authentication with SAML](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/identity-and-encryption/sso-authentication-with-saml).
 
 * **File Upload Improvements**. We enhanced file upload handling to improve visibility and support partial uploads when files are flagged by the anti-malware system.
 * When a file is rejected, the existing exception behavior remains unchanged. The system now also logs the event in Conversation History:

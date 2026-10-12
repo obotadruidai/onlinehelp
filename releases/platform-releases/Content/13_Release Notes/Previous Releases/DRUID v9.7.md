@@ -27,7 +27,7 @@ If you have questions about your DRUID tenant, please contact [support@Druidai.c
 
 The integration helps streamline sales and billing workflows by combining conversational engagement with fast, secure online payments — all within the chat interface.
 
-For more information, see [Netopia Payments](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/netopia-payments).
+For more information, see [Netopia Payments](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/specialized-and-custom/netopia-payments).
 
 * **Knowledge Base - ServiceNow data sources**. A new data source type, **ServiceNow**, is now available in the Knowledge Base. You can use it to connect to your ServiceNow instance and extract articles from the ServiceNow Knowledge Base.
 

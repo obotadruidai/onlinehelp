@@ -27,8 +27,8 @@ This pillar establishes a "Zero Trust" environment by securing user identity and
   For more information, see [Authoring User Management](User%20Management/Authoring%20User%20Management.md).
 - **Platform Data Encryption**: All data in transit and at rest is secured using enterprise-grade encryption standards, such as AES-256 and TLS 1.2.
 - **Extensive Sensitive Data Manipulation**: Beyond platform-level encryption, Druid allows for field and entity-level masking to ensure sensitive information is never exposed in the UI or plain-text logs.
-- **Integration Data Security**: Use the [Encrypt Data Connector](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/encryptdata) to secure data payloads exchanged with third-party systems.
-- **PII Data Anonymization**: Using the [Data Anonymization Agentic Solution](https://druidai.gitbook.io/druid-ai-docs/solution-library/business-apps/data-anonymization-agentic-solution), the AI Agent identifies and redacts sensitive information (Personally Identifiable Information) in real time before it is stored or processed by Large Language Models (LLMs). This ensures compliance with GDPR, HIPAA, and CCPA.
+- **Integration Data Security**: Use the [Encrypt Data Connector](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/identity-and-encryption/encryptdata) to secure data payloads exchanged with third-party systems.
+- **PII Data Anonymization**: Using the [Data Anonymization Agentic Solution](https://druidai.gitbook.io/druid-ai-docs/solution-library/business-apps/operational-tools/data-anonymization-agentic-solution), the AI Agent identifies and redacts sensitive information (Personally Identifiable Information) in real time before it is stored or processed by Large Language Models (LLMs). This ensures compliance with GDPR, HIPAA, and CCPA.
 
 <a id="AIEvaluationandResponseGuardrails"></a>
 
@@ -36,7 +36,7 @@ This pillar establishes a "Zero Trust" environment by securing user identity and
 
 To ensure AI Agent reliability, Druid provides native guardrails that govern how models interpret and generate content.
 
-- **Hallucination Prevention**: Leveraging [Knowledgebase with GPT V4](https://druidai.gitbook.io/druid-ai-docs/solution-library/solution-templates/knowledgebase-with-gpt-v4) and Graph RAG to ground every answer and natural-language query in verified enterprise data. This ensures that every response includes built-in source citations for auditability. This prevents the model from generating fabricated information.
+- **Hallucination Prevention**: Leveraging [Knowledgebase with GPT V4](https://druidai.gitbook.io/druid-ai-docs/solution-library/solution-templates/knowledge-base/knowledgebase-with-gpt-v4) and Graph RAG to ground every answer and natural-language query in verified enterprise data. This ensures that every response includes built-in source citations for auditability. This prevents the model from generating fabricated information.
 - **LLM Resource Management and Governance**: Provides a centralized, LLM-agnostic framework to manage connections across various model providers. This ensures that AI Agent execution is decoupled from specific providers and governed by platform-wide RBAC policies.
 - **Content and Policy Enforcement**: Definable topic filters and keyword restrictions to ensure the AI Agent maintains a professional tone and stays within its defined business domain.
 

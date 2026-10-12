@@ -54,7 +54,7 @@ This section describes how to set up a custom data source.
 
 To create a crawling integration:
 
-1. Add an integration action (**Integrations** > **Create connector action**). For information on how to create a connector action, see [Defining the Integration Actions](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/defining-the-integration-actions). When defining the connector action:
+1. Add an integration action (**Integrations** > **Create connector action**). For information on how to create a connector action, see [Defining the Integration Actions](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/general-integration-settings/defining-the-integration-actions). When defining the connector action:
 
 * For both **Request Entity Name** and **Response Entity Name**, select the **\[\[KBCustomDSDiscoverTask]]** entity.
 * Check both **Reduce Connector Audit Logging** and **Disable Connector Audit Full Database Logging**. This helps prevent performance issues and heavy database loading.
@@ -165,7 +165,7 @@ How this template script works:
 
 To create an extraction integration:
 
-1.  Add an integration action (**Integrations** > **Create connector action**). For information on how to create a connector action, see [Defining the Integration Actions](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/defining-the-integration-actions). When defining the connector action:
+1.  Add an integration action (**Integrations** > **Create connector action**). For information on how to create a connector action, see [Defining the Integration Actions](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/general-integration-settings/defining-the-integration-actions). When defining the connector action:
 
     * For both **Request Entity Name** and **Response Entity Name**, select the **\[\[KBCustomDSProcessNodeTask]]** entity.
     * Check both **Reduce Connector Audit Logging** and **Disable Connector Audit Full Database Logging**. This helps prevent performance issues and heavy database loading.

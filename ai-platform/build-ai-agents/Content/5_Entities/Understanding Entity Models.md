@@ -52,5 +52,5 @@ You to easily navigate to a specific flow or integration where the selected enti
 
 ## Related Topics
 
-* [Defining the Integration Actions](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/defining-the-integration-actions)
+* [Defining the Integration Actions](https://druidai.gitbook.io/druid-ai-docs/ai-platform/integrations/enterprise-connectors/general-integration-settings/defining-the-integration-actions)
 * [Set Variables](<../4_Flows/Set Variables.md>)
