@@ -44,7 +44,7 @@ This update ensures that errors which previously resulted in silent failures or 
 
 ![](<../../../.gitbook/assets/sip ladder.png>)
 
-For more information, see [Monitoring Voice Connectivity](https://druidai.gitbook.io/druid-ai-docs/druid-voice/druid-sip/druid-sip/monitoring-voice-connectivity).
+For more information, see [Monitoring Voice Connectivity](https://druidai.gitbook.io/druid-ai-docs/druid-voice/druid-sip/monitoring-voice-connectivity).
 
 * **Connector Diagram - Search Integration Task**. To streamline the authoring experience, we have introduced a search task feature within the Connector Diagram. Similar to the flow step search functionality in the Flow Diagram, authors can now quickly locate specific integration tasks by name.
 

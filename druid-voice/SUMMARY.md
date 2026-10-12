@@ -1,13 +1,13 @@
 # Table of contents
 
-* [Overview](<Content/Druid Voice/Druid Voice.md>)
+* [Druid Voice](<Content/Druid Voice/Druid Voice.md>)
 ## Druid SIP
 
-* [Druid SIP](<Content/Druid Voice/Druid SIP.md>)
-  * [Configure Druid SIP Connectivity](<Content/Druid Voice/Configure Druid SIP Connectivity.md>)
-  * [Test Druid SIP Calls](<Content/Druid Voice/Test Druid SIP Calls.md>)
-  * [Monitoring Voice Connectivity](<Content/Druid Voice/Monitoring Voice Connectivity.md>)
-  * [Voice Conversation History](<Content/Druid Voice/Voice Conversation History.md>)
+* [Overview](<Content/Druid Voice/Druid SIP.md>)
+* [Configure Druid SIP Connectivity](<Content/Druid Voice/Configure Druid SIP Connectivity.md>)
+* [Test Druid SIP Calls](<Content/Druid Voice/Test Druid SIP Calls.md>)
+* [Monitoring Voice Connectivity](<Content/Druid Voice/Monitoring Voice Connectivity.md>)
+* [Voice Conversation History](<Content/Druid Voice/Voice Conversation History.md>)
 ## webRTC
 
 * [webRTC](<Content/Druid Voice/webRTC.md>)

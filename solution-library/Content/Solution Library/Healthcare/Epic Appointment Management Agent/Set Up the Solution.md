@@ -10,7 +10,7 @@ This section explains how to install and configure the Epic Appointment Manageme
 ## Prerequisites
 
 * Tenant Druid community (open new tenant [here](https://www.druidai.com/license-activation)) or Druid subscription.
-* You should have the Druid SIP Channel. For information on how to configure the Druid SIP Channel, see [Configure Druid SIP Connectivity](https://druidai.gitbook.io/druid-ai-docs/druid-voice/druid-sip/druid-sip/configure-druid-sip-connectivity).
+* You should have the Druid SIP Channel. For information on how to configure the Druid SIP Channel, see [Configure Druid SIP Connectivity](https://druidai.gitbook.io/druid-ai-docs/druid-voice/druid-sip/configure-druid-sip-connectivity).
 * Access to an Epic FHIR Sandbox.
 * An application created in your Epic FHIR Sandbox.  In the application configuration, make sure to select under the Incoming APIs section, the Epic APIs listed in [Epic API inventory](<Epic API inventory.md#_Epic_API_inventory>)
 * Druid Vision key with **convert-pdf-to-jpeg** and **convert-pdf-page-to-jpeg** permissions.

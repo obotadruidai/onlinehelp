@@ -25,7 +25,7 @@ If you have questions about your Druid tenant, please contact [support@druidai.c
 
 ## Improvements
 
-* **Druid SIP - Incoming SIP header mapping**. Pass rich contextual data directly from your contact center or Session Border Controller (SBC) to your AI Agent using incoming SIP headers. For more information, see [Map incoming SIP headers](https://druidai.gitbook.io/druid-ai-docs/druid-voice/druid-sip/druid-sip/configure-druid-sip-connectivity#Map).
+* **Druid SIP - Incoming SIP header mapping**. Pass rich contextual data directly from your contact center or Session Border Controller (SBC) to your AI Agent using incoming SIP headers. For more information, see [Map incoming SIP headers](https://druidai.gitbook.io/druid-ai-docs/druid-voice/druid-sip/configure-druid-sip-connectivity#Map).
 * **Smarter flow logic**. Seamlessly map custom incoming SIP headers (such as x-CustomerId) directly to \[\[QueryParams]] entity fields (e.g., \[\[QueryParams]].CustomerId) to trigger personalized conversational flows from the moment a call starts.
 * **Eliminate redundant caller prompts**. Utilize pre-existing caller metadata from your contact center or telephony stack, sparing users from re-entering account IDs or authentication tokens.
 * **Streamlined telephony integration**. Easily define mappings in the Druid SIP channel configuration under Call Settings without writing complex code or requiring custom backend middleware.

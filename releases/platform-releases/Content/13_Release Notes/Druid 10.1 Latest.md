@@ -25,7 +25,7 @@ If you have questions about your Druid tenant, please contact [support@druidai.c
 * **Flexible Modes**. Choose between a dedicated voice-only experience or a hybrid mode that lets users seamlessly switch from talking to typing.
 
 {% hint style="info" %}
-**NOTE:** Druid webRTC channel requires prior setup of [Druid SIP Connectivity](https://druidai.gitbook.io/druid-ai-docs/druid-voice/druid-sip/druid-sip/configure-druid-sip-connectivity).
+**NOTE:** Druid webRTC channel requires prior setup of [Druid SIP Connectivity](https://druidai.gitbook.io/druid-ai-docs/druid-voice/druid-sip/configure-druid-sip-connectivity).
 {% endhint %}
 
 * **ElevenLabs Voices**. We are thrilled to announce the release of ElevenLabs Voices, a super useful and powerful capability designed to elevate your ElevenLabs voice management directly in the Druid Portal. For more information, see [ElevenLabs Voices](https://druidai.gitbook.io/druid-ai-docs/druid-voice/speech-resources/elevenlabs-voices).

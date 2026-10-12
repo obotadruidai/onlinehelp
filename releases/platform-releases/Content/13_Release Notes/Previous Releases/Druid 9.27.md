@@ -44,7 +44,7 @@ Test calls do not vanish once you hang up. Every interaction is automatically re
 
 ![](<../../../.gitbook/assets/test call in CH.png>)
 
-For more information, see [Test Druid SIP Calls](https://druidai.gitbook.io/druid-ai-docs/druid-voice/druid-sip/druid-sip/test-druid-sip-calls).
+For more information, see [Test Druid SIP Calls](https://druidai.gitbook.io/druid-ai-docs/druid-voice/druid-sip/test-druid-sip-calls).
 
 * **Voice Call End Time Logging**. Druid SIP and AudioCodes channels now automatically record the exact voice call end time by saving the **ActivityEnd** event to \[\[ChatActivityData]].
 

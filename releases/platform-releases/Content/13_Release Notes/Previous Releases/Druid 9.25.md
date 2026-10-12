@@ -53,7 +53,7 @@ For more information, see [AI Authoring Agents](https://druidai.gitbook.io/druid
 
 ![](<../../../.gitbook/assets/voice conv transcript.png>)
 
-For more information, see [Configure Druid SIP Connectivity](https://druidai.gitbook.io/druid-ai-docs/druid-voice/druid-sip/druid-sip/configure-druid-sip-connectivity) and [Voice Conversation History](https://druidai.gitbook.io/druid-ai-docs/druid-voice/druid-sip/druid-sip/voice-conversation-history).
+For more information, see [Configure Druid SIP Connectivity](https://druidai.gitbook.io/druid-ai-docs/druid-voice/druid-sip/configure-druid-sip-connectivity) and [Voice Conversation History](https://druidai.gitbook.io/druid-ai-docs/druid-voice/druid-sip/voice-conversation-history).
 
 * **Speech Synthesis Markup Language (SSML) Support for Voice-Enabled Flows**. We have expanded the capabilities of the Voice settings within flow steps to give authors total control over how AI Agents sound during voice interactions. The **Speak message** fields on flow steps now natively accept and forward SSML strings directly to your configured Text-to-Speech (TTS) engine (such as Azure Speech Services or AudioCodes channels).
 
