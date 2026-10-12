@@ -1,5 +1,5 @@
 ---
-title: KB General Settings
+title: General
 ---
 
 

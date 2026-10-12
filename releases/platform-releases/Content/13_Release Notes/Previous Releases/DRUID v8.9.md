@@ -61,7 +61,7 @@ For more information, see [Alert Flows](https://druidai.gitbook.io/druid-ai-docs
 
 ![](<../../../.gitbook/assets/kb tooltip.png>)
 
-* **Data extraction from structured JSON files**. Data extraction from structured JSON files is now supported for unstructured and Custom data sources. This allows users to integrate content from third-party systems (e.g., Salesforce, Confluence) into the Knowledge Base. For more information, see [File Extractors](https://druidai.gitbook.io/druid-ai-docs/knowledge-base/knowledgebase/kb-advanced-settings/file-extractors), JSON.
+* **Data extraction from structured JSON files**. Data extraction from structured JSON files is now supported for unstructured and Custom data sources. This allows users to integrate content from third-party systems (e.g., Salesforce, Confluence) into the Knowledge Base. For more information, see [File Extractors](https://druidai.gitbook.io/druid-ai-docs/knowledge-base/kb-settings/kb-advanced-settings/file-extractors), JSON.
 * **AI Agent Summary – Export dashboard pages to PDF**. You can now export the current page of the AI Agent Summary Dashboard as a PDF. To export, simply navigate to the desired dashboard page and click the **Export to PDF** icon at the top-right corner. This feature is especially useful for incorporating AI Agent KPIs, performance metrics, and usage statistics into regular reports.
 
 ![](<../../../.gitbook/assets/export bot page.png>)

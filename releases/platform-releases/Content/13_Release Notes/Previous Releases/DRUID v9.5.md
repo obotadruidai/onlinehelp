@@ -21,7 +21,7 @@ If you have questions about your DRUID tenant, please contact [support@Druidai.c
 
 ![](<../../../.gitbook/assets/new data source.png>)
 
-For more information, see [Network Shared Drive Data Sources](https://druidai.gitbook.io/druid-ai-docs/knowledge-base/knowledgebase/data-sources/network-shared-drive-data-sources).
+For more information, see [Network Shared Drive Data Sources](https://druidai.gitbook.io/druid-ai-docs/knowledge-base/data-sources/network-shared-drive-data-sources).
 
 * **Knowledge Base – AWS Bedrock LLM support**. DRUID now supports AWS Bedrock LLM in both Knowledge Base advanced settings and NLU intents with LLM. The following models are available:
 * anthropic.claude-3-haiku-20240307-v1:0
@@ -37,7 +37,7 @@ For more information, see [Network Shared Drive Data Sources](https://druidai.gi
 
 ![](<../../../.gitbook/assets/render script (1).png>)
 
-For more information, see [Website Data Sources](https://druidai.gitbook.io/druid-ai-docs/knowledge-base/knowledgebase/data-sources/website-data-sources).
+For more information, see [Website Data Sources](https://druidai.gitbook.io/druid-ai-docs/knowledge-base/data-sources/website-data-sources).
 
 ## Improvements
 
@@ -65,7 +65,7 @@ This new bulk exclusion option saves you from having to exclude links one by one
 
 ![](<../../../.gitbook/assets/manually exclude.png>)
 
-For more information, see [Website Data Sources](https://druidai.gitbook.io/druid-ai-docs/knowledge-base/knowledgebase/data-sources/website-data-sources).
+For more information, see [Website Data Sources](https://druidai.gitbook.io/druid-ai-docs/knowledge-base/data-sources/website-data-sources).
 
 * **Alert Flows – Support for automated workflows**. A new **RunAsJob** option is available in the Subscribers section. It enables alerts to be sent through a dedicated static Portal user and conversation, making it easier to integrate alerts into automated workflows and other jobs.
 

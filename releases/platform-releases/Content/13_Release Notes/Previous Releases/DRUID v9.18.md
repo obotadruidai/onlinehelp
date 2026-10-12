@@ -98,7 +98,7 @@ This feature allows users to compare data points and analyze trends more quickly
 
 By enabling the **Apply Dashboard Date Filter** toggle and selecting a date-type field from the dropdown directly within any classic view configuration, you can instantly synchronize a table with the dashboard time range. This update removes the tedious setup of building custom filtering integrations, allowing you to reuse existing views while maintaining full filtering functionality. For more information, see [Filtering table records on the dashboard](https://druidai.gitbook.io/druid-ai-docs/ai-platform/data-analytics-and-insights/track-business-kpis#Filterin).
 
-* **SharePoint Data Sources - User permission-based content filtering**. You can now configure Knowledge Base search results to perform real-time SharePoint Online permissions checks, ensuring the AI Agent only provides information that the current user is authorized to access. For more information, see [User permission-based content filtering](https://druidai.gitbook.io/druid-ai-docs/knowledge-base/knowledgebase/data-sources/sharepoint-data-sources/user-permission-based-content-filtering).
+* **SharePoint Data Sources - User permission-based content filtering**. You can now configure Knowledge Base search results to perform real-time SharePoint Online permissions checks, ensuring the AI Agent only provides information that the current user is authorized to access. For more information, see [User permission-based content filtering](https://druidai.gitbook.io/druid-ai-docs/knowledge-base/data-sources/sharepoint-data-sources/user-permission-based-content-filtering).
 
 ## Bug Fixes
 

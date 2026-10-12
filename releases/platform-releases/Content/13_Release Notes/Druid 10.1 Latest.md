@@ -66,7 +66,7 @@ By bringing the agent’s mandate and tooling together in one place, you gain gr
 ![](../../.gitbook/assets/metrics.png)
 
 * **Knowledge Base improvements**. This release introduces various improvements:
-* **Dynamic search priority at conversation time**. With this release, you have greater control over knowledge retrieval during live interactions. While you can configure default search priorities at the data source level, you can now override these priorities dynamically at runtime during a conversation. For more information, see [Dynamic Search Priority at Conversation Time](https://druidai.gitbook.io/druid-ai-docs/knowledge-base/knowledgebase/advanced-features-and-optimization/dynamic-search-priority-at-conversation-time).
+* **Dynamic search priority at conversation time**. With this release, you have greater control over knowledge retrieval during live interactions. While you can configure default search priorities at the data source level, you can now override these priorities dynamically at runtime during a conversation. For more information, see [Dynamic Search Priority at Conversation Time](https://druidai.gitbook.io/druid-ai-docs/knowledge-base/advanced-features-and-optimization/dynamic-search-priority-at-conversation-time).
 * **Intelligent Document Processing (IDP) extractor (Technology Preview)**. The IDP extractor is now available for Knowledge Base extraction, supporting CSV, Word, PowerPoint, Excel, and PDF files. It provides advanced document parsing to improve the accuracy and contextual understanding of content extracted from complex business documents.
 
 {% hint style="info" %}
@@ -83,7 +83,7 @@ The new **Augmentation** area in **Knowledge Base Settings** > **Advanced** allo
 
 ![](<../../.gitbook/assets/augmentation page.png>)
 
-For more information, see [Augmentation](https://docs.druidai.com/docs/Content/Knowledgebase/KB%20Settings/Augmentation.htm) and [Basic Content Chunking](https://druidai.gitbook.io/druid-ai-docs/knowledge-base/knowledgebase/kb-advanced-settings/content-chunkers#Basic).
+For more information, see [Augmentation](https://docs.druidai.com/docs/Content/Knowledgebase/KB%20Settings/Augmentation.htm) and [Basic Content Chunking](https://druidai.gitbook.io/druid-ai-docs/knowledge-base/kb-settings/kb-advanced-settings/content-chunkers#Basic).
 
 ## Improvements
 

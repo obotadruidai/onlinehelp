@@ -42,7 +42,7 @@ For more information, see [Agent Assist](https://druidai.gitbook.io/druid-ai-doc
 
 ![](<../../../.gitbook/assets/content chunker prompt.png>)
 
-For more information, see [Content Chunkers](https://druidai.gitbook.io/druid-ai-docs/knowledge-base/knowledgebase/kb-advanced-settings/content-chunkers).
+For more information, see [Content Chunkers](https://druidai.gitbook.io/druid-ai-docs/knowledge-base/kb-settings/kb-advanced-settings/content-chunkers).
 
 * **Improved Solution selector**. The Solution drop-down selector has been redesigned for better usability. It now auto-sizes to display full solution names and includes a search function to help you quickly find a solution, especially useful when your AI Agent has many.
 

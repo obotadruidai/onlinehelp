@@ -135,17 +135,17 @@ Well-structured content improves retrieval accuracy and reduces the need to proc
 
 **Optimize Retrieval Features**
 
-Different embedding models can produce different retrieval results, so testing multiple embedding options may help improve relevance. For more information, see [Embeddings](https://druidai.gitbook.io/druid-ai-docs/knowledge-base/knowledgebase/kb-advanced-settings/embeddings).
+Different embedding models can produce different retrieval results, so testing multiple embedding options may help improve relevance. For more information, see [Embeddings](https://druidai.gitbook.io/druid-ai-docs/knowledge-base/kb-settings/kb-advanced-settings/embeddings).
 
 {% hint style="info" %}
 **Info:** Druid embedding models are optimized for low-latency retrieval scenarios. While actual performance depends on factors such as article size, index size, and retrieval complexity, embedding-related processing typically takes between 10 and 30 milliseconds.
 {% endhint %}
 
-Where applicable, use the Synonyms Dictionary to enhance retrieval accuracy. For more information, see [KB Dictionary](https://druidai.gitbook.io/druid-ai-docs/knowledge-base/knowledgebase/kb-advanced-settings/embeddings/synonyms-dictionary).
+Where applicable, use the Synonyms Dictionary to enhance retrieval accuracy. For more information, see [KB Dictionary](https://druidai.gitbook.io/druid-ai-docs/knowledge-base/kb-settings/kb-advanced-settings/embeddings/synonyms-dictionary).
 
 ![](<../../.gitbook/assets/kb dictionary.png>)
 
-Additionally, enable **Content Chunker** > **Generated Elements** to improve content indexing and increase the likelihood that the most relevant information is retrieved among the top 5 results. For more information, see [Content Chunkers](https://druidai.gitbook.io/druid-ai-docs/knowledge-base/knowledgebase/kb-advanced-settings/content-chunkers#Generate).
+Additionally, enable **Content Chunker** > **Generated Elements** to improve content indexing and increase the likelihood that the most relevant information is retrieved among the top 5 results. For more information, see [Content Chunkers](https://druidai.gitbook.io/druid-ai-docs/knowledge-base/kb-settings/kb-advanced-settings/content-chunkers#Generate).
 
 ![](<../../.gitbook/assets/generate elements.png>)
 

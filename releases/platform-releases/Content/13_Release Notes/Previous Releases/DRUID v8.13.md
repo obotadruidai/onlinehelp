@@ -33,7 +33,7 @@ If you have questions about your DRUID tenant, please contact [support@Druidai.c
 **NOTE:** The KB Schedule is a tenant feature. If you want activate it on your tenant, reach out to [DRUID Support](../../13_Release%20Notes/Previous%20Releases/mailto:support@druidai.com).
 {% endhint %}
 
-For more information, see [Knowledge Base Schedule](https://druidai.gitbook.io/druid-ai-docs/knowledge-base/knowledgebase/data-management-and-schedules/knowledge-base-schedule).
+For more information, see [Knowledge Base Schedule](https://druidai.gitbook.io/druid-ai-docs/knowledge-base/data-management-and-schedules/knowledge-base-schedule).
 
 * **Flow Engine - UpdateIntentMatching internal action**. We're excited to introduce the **UpdateIntentMatching** internal action, a powerful enhancement for refining intent matching outcomes within your Knowledge Base. Primarily utilized in the KB Response Flow, this action ensures the Evaluation Tool accurately reflects whether a relevant intent was ultimately identified, particularly in situations where a Large Language Model (LLM) provides the final answer following an initial 'Intent Not Found' classification.
 
@@ -50,7 +50,7 @@ For more information, see [Internal Actions](https://druidai.gitbook.io/druid-ai
 * **HigherEducation** – Optimized for content related to universities and higher education.
 * **LLM Reranker** – Uses large language models (LLMs) to deliver more semantically relevant results.
 
-You can configure these rerankers in KB Advanced Settings to fine-tune how your AI Agent retrieves and ranks information. For more information, see [Score Calculator](https://druidai.gitbook.io/druid-ai-docs/knowledge-base/knowledgebase/kb-advanced-settings/score-calculator).
+You can configure these rerankers in KB Advanced Settings to fine-tune how your AI Agent retrieves and ranks information. For more information, see [Score Calculator](https://druidai.gitbook.io/druid-ai-docs/knowledge-base/kb-settings/kb-advanced-settings/score-calculator).
 
 * **Flow Engine - Configure prediction destination (KB or NLP) at the conversation level**. You can now control where intent prediction occurs within a conversation using the new **\[\[ChatUser]].PredictDestination** parameter. This allows you to define whether predictions should be processed using the Knowledge Base (KB), Natural Language Processing (NLP), or a combination of both.
 
@@ -137,4 +137,4 @@ When **Support voice messages** is enabled, the AI Agent replies with text by de
 
 ![](<../../../.gitbook/assets/generative endpoints.png>)
 
-For more information, see [Generative Endpoints](https://druidai.gitbook.io/druid-ai-docs/knowledge-base/knowledgebase/kb-advanced-settings/generative-endpoints).
+For more information, see [Generative Endpoints](https://druidai.gitbook.io/druid-ai-docs/knowledge-base/kb-settings/kb-advanced-settings/generative-endpoints).

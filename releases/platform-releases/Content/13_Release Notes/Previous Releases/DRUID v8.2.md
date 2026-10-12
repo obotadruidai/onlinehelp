@@ -35,7 +35,7 @@ If you have questions about your DRUID tenant, please contact [support@Druidai.c
 
 ![](../../../.gitbook/assets/SFTP.png)
 
-For more information, see [Network shared drive data sources](https://druidai.gitbook.io/druid-ai-docs/knowledge-base/knowledgebase/data-sources/network-shared-drive-data-sources).
+For more information, see [Network shared drive data sources](https://druidai.gitbook.io/druid-ai-docs/knowledge-base/data-sources/network-shared-drive-data-sources).
 
 * **Network shared drive and SharePoint data sources - Download Original File**. In this release, for Network shared drive and SharePoint data sources, users now have the capability to download the original file version that was uploaded into the data source. This feature enables users to access the original version of files, providing them with the ability to compare it with any updated or modified extracted articles.
 

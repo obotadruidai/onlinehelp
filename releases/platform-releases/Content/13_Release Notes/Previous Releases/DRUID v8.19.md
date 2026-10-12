@@ -34,7 +34,7 @@ For more information, see Agent Builder.
 
 ![](<../../../.gitbook/assets/external domain new ds.png>)
 
-For more information, see [Website data sources](https://druidai.gitbook.io/druid-ai-docs/knowledge-base/knowledgebase/data-sources/website-data-sources).
+For more information, see [Website data sources](https://druidai.gitbook.io/druid-ai-docs/knowledge-base/data-sources/website-data-sources).
 
 * **Website Data Sources – Recrawl selected pages.** You can now recrawl a list of selected website pages or documents directly—without applying depth, throttle, sitemap, or follow links settings.
 

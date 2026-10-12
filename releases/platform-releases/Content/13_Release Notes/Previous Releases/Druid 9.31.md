@@ -52,7 +52,7 @@ For more information, see [Speech Resource Management and Governance](https://dr
 **NOTE:** To support a seamless transition, data source tree elements (roots, nodes, and leaves) will display two tabs through version 10.1: **Metadata** (legacy experience) and **Metadata (New)** , allowing you to validate the new setup alongside existing configurations.
 {% endhint %}
 
-For more information, see [KB Metadata](https://druidai.gitbook.io/druid-ai-docs/knowledge-base/knowledgebase/advanced-features-and-optimization/kb-metadata).
+For more information, see [KB Metadata](https://druidai.gitbook.io/druid-ai-docs/knowledge-base/advanced-features-and-optimization/kb-metadata).
 
 ## Improvements
 

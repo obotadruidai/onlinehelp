@@ -93,4 +93,4 @@ You can import your own knowledge base documents or use the provided examples:
 * [FAQ – English](../../Solution%20Library/Hospitality/https:/druiddocs.file.core.windows.net/docs-shares/Hospitality/FAQ%20EN.xlsx)
 * [FAQ – Portuguese](../../Solution%20Library/Hospitality/https:/druiddocs.file.core.windows.net/docs-shares/Hospitality/FAQ%20PT.xlsx).
 
-For information on how to import files, see [File repository data sources](https://druidai.gitbook.io/druid-ai-docs/knowledge-base/knowledgebase/data-sources/file-repository-data-sources).
+For information on how to import files, see [File repository data sources](https://druidai.gitbook.io/druid-ai-docs/knowledge-base/data-sources/file-repository-data-sources).

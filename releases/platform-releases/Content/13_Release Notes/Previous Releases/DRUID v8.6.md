@@ -54,7 +54,7 @@ With this release, you can configure the **HtmlSelectorTagsToIgnore** parameter 
 
 ![](<../../../.gitbook/assets/ignore tag.png>)
 
-For more information, see [Website data sources](https://druidai.gitbook.io/druid-ai-docs/knowledge-base/knowledgebase/data-sources/website-data-sources).
+For more information, see [Website data sources](https://druidai.gitbook.io/druid-ai-docs/knowledge-base/data-sources/website-data-sources).
 
 * **Cuedesk channel - support for Cue web chat channel**. You can now integrate AI Agents with Cue to handle user requests through the Cue web chat channel, in addition to WhatsApp and Facebook Messenger.
 * **Document Builder - generate PDF with attachments**. With this release, you can generate PDFs with attachments using Word templates. This feature streamlines document creation, enhances flexibility, and ensures all relevant information is consolidated into a single, professional PDF file.

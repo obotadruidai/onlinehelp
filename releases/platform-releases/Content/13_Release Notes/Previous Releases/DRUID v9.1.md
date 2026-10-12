@@ -109,7 +109,7 @@ This enhancement simplifies integrations by allowing flexible, variable-based UR
 **NOTE:** Using the gpt-4.1 model will incur additional costs.
 {% endhint %}
 
-* **Knowledge Base - Video Processing (technology preview)**. With this release, DRUID supports video processing to allow data extraction from video content for the following data sources: SharePoint, Custom Data Sources and Website with videos directly hosted (embedded third-party videos like YouTube are not supported). For more information, see [Extracting Data from Video Files](https://druidai.gitbook.io/druid-ai-docs/knowledge-base/knowledgebase/advanced-features-and-optimization/extract-data-from-video-files).
+* **Knowledge Base - Video Processing (technology preview)**. With this release, DRUID supports video processing to allow data extraction from video content for the following data sources: SharePoint, Custom Data Sources and Website with videos directly hosted (embedded third-party videos like YouTube are not supported). For more information, see [Extracting Data from Video Files](https://druidai.gitbook.io/druid-ai-docs/knowledge-base/advanced-features-and-optimization/extract-data-from-video-files).
 
 {% hint style="info" %}
 **NOTE:** This is a tenant feature and requires **Druid Knowledge Base Multimedia Extractor** activation on your tenant. For activation, reach out to [DRUID Support](../../13_Release%20Notes/Previous%20Releases/mailto:support@druidai.com).

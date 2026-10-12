@@ -33,7 +33,7 @@ For more information, see [Netopia Payments](https://druidai.gitbook.io/druid-ai
 
 ![](<../../../.gitbook/assets/servicenow type.png>)
 
-For more information, see [ServiceNow Data Sources](https://druidai.gitbook.io/druid-ai-docs/knowledge-base/knowledgebase/data-sources/servicenow-data-sources).
+For more information, see [ServiceNow Data Sources](https://druidai.gitbook.io/druid-ai-docs/knowledge-base/data-sources/servicenow-data-sources).
 
 * **Channels – Outlook Channel**. The new Outlook email channel connects directly with Microsoft using the Graph API, offering an alternative to the Office 365 email channel, which integrates through the Bot Framework.
 

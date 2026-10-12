@@ -49,7 +49,7 @@ For more information, see [NLU Intents Classification with LLM](https://druidai.
 
 ![](<../../../.gitbook/assets/machien translation.png>)
 
-For more information, see [Generative Endpoints](https://druidai.gitbook.io/druid-ai-docs/knowledge-base/knowledgebase/kb-advanced-settings/generative-endpoints#API).
+For more information, see [Generative Endpoints](https://druidai.gitbook.io/druid-ai-docs/knowledge-base/kb-settings/kb-advanced-settings/generative-endpoints#API).
 
 * Machine Translation with LLM
 
@@ -122,7 +122,7 @@ Supported Extractors:
 * **HTML**: Standard extractor.
 * **PDF**: Elpis and Daguerre extractors.
 
-For more information, see [File Extractors](https://druidai.gitbook.io/druid-ai-docs/knowledge-base/knowledgebase/kb-advanced-settings/file-extractors).
+For more information, see [File Extractors](https://druidai.gitbook.io/druid-ai-docs/knowledge-base/kb-settings/kb-advanced-settings/file-extractors).
 
 ## Bug Fixes
 

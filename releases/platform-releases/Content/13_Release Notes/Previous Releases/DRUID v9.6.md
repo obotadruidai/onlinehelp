@@ -27,7 +27,7 @@ For more information, see the [Infobip channel](https://druidai.gitbook.io/druid
 
 ![](<../../../.gitbook/assets/email support.png>)
 
-The email files are also supported in the [KB at conversation time](https://druidai.gitbook.io/druid-ai-docs/knowledge-base/knowledgebase/advanced-features-and-optimization/kbconversationtime) and in the [KB Extraction Tools](https://druidai.gitbook.io/druid-ai-docs/knowledge-base/knowledgebase/advanced-features-and-optimization/kbextractiontools).
+The email files are also supported in the [KB at conversation time](https://druidai.gitbook.io/druid-ai-docs/knowledge-base/advanced-features-and-optimization/kbconversationtime) and in the [KB Extraction Tools](https://druidai.gitbook.io/druid-ai-docs/knowledge-base/advanced-features-and-optimization/kbextractiontools).
 
 ## Improvements
 

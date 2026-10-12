@@ -49,7 +49,7 @@ For information on how to provision Druid Portal users via OpenID Connect, see [
 
 ![](<../../../.gitbook/assets/shared folder.png>)
 
-For more information, see [Google Drive Data Sources](https://druidai.gitbook.io/druid-ai-docs/knowledge-base/knowledgebase/data-sources/google-drive).
+For more information, see [Google Drive Data Sources](https://druidai.gitbook.io/druid-ai-docs/knowledge-base/data-sources/google-drive).
 
 ## Bug Fixes
 

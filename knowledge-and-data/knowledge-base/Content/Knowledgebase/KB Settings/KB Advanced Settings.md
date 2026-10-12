@@ -1,5 +1,5 @@
 ---
-title: KB Advanced Settings
+title: Advanced
 ---
 
 

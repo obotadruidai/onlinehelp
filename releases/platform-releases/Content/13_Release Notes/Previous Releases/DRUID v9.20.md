@@ -104,7 +104,7 @@ Configure Anthropic Claude as a centralized LLM resource and assign models to AI
 * **Live Chat Dashboard - New Agent Performance Metrics**. We have introduced two new metrics to the LiveAgentsList widget, providing helpdesk managers with deeper insights into agent productivity and time management. These metrics help track both the volume of work and the total time spent in active support: **Number of conversations (per day)** and **Total conversations (per day)**. This improvement allows a more granular analysis of agent occupancy, helping supervisors identify trends in daily workload and engagement efficiency. For more information, see [Configuring LiveAgentsList](https://druidai.gitbook.io/druid-ai-docs/live-chat/live-dashboard#Configur).
 * **KB PDF Extractors - OCR improvement**. Building on our OCR capabilities, this release introduces the **Auto** mode for the Elpis and Daguerre PDF extractors. This mode provides an intelligent balance between text searchability and visual context.
 
-When **Use OCR for pictures** is set to **Auto**, the system dynamically decides how to process content on a per-page basis. If the extractor finds both images and text on the same page, it skips OCR for the image. Instead, it extracts the image, stores it in Druid storage, and embeds a link with a 30-minute authentication token in the paragraph, allowing users to view the original image within the chat. For more information, see [File Extractors](https://druidai.gitbook.io/druid-ai-docs/knowledge-base/knowledgebase/kb-advanced-settings/file-extractors).
+When **Use OCR for pictures** is set to **Auto**, the system dynamically decides how to process content on a per-page basis. If the extractor finds both images and text on the same page, it skips OCR for the image. Instead, it extracts the image, stores it in Druid storage, and embeds a link with a 30-minute authentication token in the paragraph, allowing users to view the original image within the chat. For more information, see [File Extractors](https://druidai.gitbook.io/druid-ai-docs/knowledge-base/kb-settings/kb-advanced-settings/file-extractors).
 
 * **NLU Intents classification - Dedicated Configuration UI**. To streamline configuration and reduce setup complexity, intent classification settings are available in a dedicated UI section. It is no longer available in section **Threshold and Parameters**.
 * **New location**. Go to **NLU > Configurations > Intents**, then expand **NLU intent classification**.
@@ -122,7 +122,7 @@ Users rarely phrase questions the way your documentation is written. With synony
 
 ![](../../../.gitbook/assets/SYNONYMS.png)
 
-For more information, see [Synonyms Dictionary](https://druidai.gitbook.io/druid-ai-docs/knowledge-base/knowledgebase/kb-advanced-settings/embeddings/synonyms-dictionary).
+For more information, see [Synonyms Dictionary](https://druidai.gitbook.io/druid-ai-docs/knowledge-base/kb-settings/kb-advanced-settings/embeddings/synonyms-dictionary).
 
 * **Dynamic Charts – Multi-level sorting**. You can now apply sorting at each X-axis level in dynamic charts. This improvement gives you better control over how multi-level grouped data is displayed, making complex charts easier to read and interpret./p>
 

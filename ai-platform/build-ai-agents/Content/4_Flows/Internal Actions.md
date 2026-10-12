@@ -645,7 +645,7 @@ The action utilizes a tiered verification system to ensure content security:
 | KBQnAItems     | The collection of Knowledge Base results returned by the intent.                                                   |
 | UserIdentifier | The unique identifier for the user (typically the Domain User Name) used to verify access against the data source. |
 
-The internal action returns the result in the field **\[\[Intent]].KBQnAItems\[i].HasReadAccess**. You can use this boolean value to determine whether to share the information with the KB agent or to remove specific KB records from the agent context if the user lacks access. For more information on how to filter KB responses based on user permissions, see [User Permission-based Content Filtering](https://druidai.gitbook.io/druid-ai-docs/knowledge-base/knowledgebase/data-sources/sharepoint-data-sources/user-permission-based-content-filtering).
+The internal action returns the result in the field **\[\[Intent]].KBQnAItems\[i].HasReadAccess**. You can use this boolean value to determine whether to share the information with the KB agent or to remove specific KB records from the agent context if the user lacks access. For more information on how to filter KB responses based on user permissions, see [User Permission-based Content Filtering](https://druidai.gitbook.io/druid-ai-docs/knowledge-base/data-sources/sharepoint-data-sources/user-permission-based-content-filtering).
 
 ## KBCreateDataSource
 
@@ -706,7 +706,7 @@ The action returns the following data source information that you can use to mat
 * \[\[KBOperation]].CreatedDataSource.Name
 * \[\[KBOperation]].CreatedDataSource.CreatedOn
 
-For more information, see [KB Management at Conversation Time](https://druidai.gitbook.io/druid-ai-docs/knowledge-base/knowledgebase/advanced-features-and-optimization/kbconversationtime).
+For more information, see [KB Management at Conversation Time](https://druidai.gitbook.io/druid-ai-docs/knowledge-base/advanced-features-and-optimization/kbconversationtime).
 
 ## KBDeleteDataSource
 

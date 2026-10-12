@@ -64,7 +64,7 @@ For more information, see [Proactive AI Agent Messages](https://druidai.gitbook.
 
 ![](<../../../.gitbook/assets/llm reranker.png>)
 
-For more information, see [Score Calculator](https://druidai.gitbook.io/druid-ai-docs/knowledge-base/knowledgebase/kb-advanced-settings/score-calculator).
+For more information, see [Score Calculator](https://druidai.gitbook.io/druid-ai-docs/knowledge-base/kb-settings/kb-advanced-settings/score-calculator).
 
 * **\[\[PageInfo]] – New SelectedFields field**. A new field, SelectedFields, is now available in the \[\[PageInfo]] system entity. It captures only the columns visible in the table views, helping reduce payload size and improve performance in DRUID Data Service query entity integrations — only when using the **Map all** fields option.
 
