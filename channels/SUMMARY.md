@@ -71,4 +71,6 @@
   * [Web Chat Maintenance](<Content/Channels/WebChat/Web Chat Maintenance.md>)
 * [Outlook](Content/Channels/Outlook.md)
 * [Email](<Content/Channels/Email/Email Integration.md>)
+## Other
+
 * [Mobile App](<Content/Channels/Mobile App Channel.md>)
