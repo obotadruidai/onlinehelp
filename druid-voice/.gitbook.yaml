@@ -1,0 +1,5 @@
+root: .
+
+structure:
+  readme: "Content/Druid Voice/Druid Voice.md"
+  summary: SUMMARY.md

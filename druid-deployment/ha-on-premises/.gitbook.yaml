@@ -1,0 +1,5 @@
+root: .
+
+structure:
+  readme: "Content/Druid Deployment/High Availability On Premises.md"
+  summary: SUMMARY.md

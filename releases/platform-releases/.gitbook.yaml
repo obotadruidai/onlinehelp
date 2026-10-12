@@ -1,0 +1,5 @@
+root: .
+
+structure:
+  readme: "Content/13_Release Notes/Druid AI Releases.md"
+  summary: SUMMARY.md

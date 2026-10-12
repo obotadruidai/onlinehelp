@@ -1,0 +1,5 @@
+root: .
+
+structure:
+  readme: "Content/Knowledgebase/Knowledgebase.md"
+  summary: SUMMARY.md

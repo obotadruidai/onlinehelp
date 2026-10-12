@@ -1,0 +1,5 @@
+root: .
+
+structure:
+  readme: "Content/Working with Solutions/Release Lifecycle & Versioning.md"
+  summary: SUMMARY.md

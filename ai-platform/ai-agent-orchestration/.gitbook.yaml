@@ -1,0 +1,5 @@
+root: .
+
+structure:
+  readme: "Content/AI Agent Orhestration/Druid Conductor.md"
+  summary: SUMMARY.md

@@ -1,0 +1,5 @@
+root: .
+
+structure:
+  readme: "Content/Governance & Security/Governance & Security.md"
+  summary: SUMMARY.md

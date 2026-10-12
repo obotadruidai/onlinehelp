@@ -1,0 +1,5 @@
+root: .
+
+structure:
+  readme: "Content/Solution Library/Agentic Solutions/Release Notes/Business Apps Releases.md"
+  summary: SUMMARY.md

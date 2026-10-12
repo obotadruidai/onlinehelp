@@ -4,189 +4,299 @@ site:
   structure:
     - type: section
       key: section-1
-      title: Home
+      title: "Home"
       path: home
-      description: ""
       default: true
       children:
         - type: space
           key: space-2
-          title: Home
+          title: "Home"
           path: home
           default: true
           content:
             directory: ./home
     - type: section-group
       key: section-group-1
-      title: AI Platform
+      title: "AI Platform"
       icon: layer-plus
       children:
         - type: section
           key: section-2
-          title: Get Started
+          title: "Get Started"
           path: docs-platform-get-started
-          description: ""
           children:
             - type: space
               key: space-3
-              title: Imported content docs
-              path: imported-content-docs
+              title: "Get Started"
+              path: get-started
               default: true
               content:
-                directory: ./imported-content
+                directory: ./ai-platform/get-started
         - type: section
           key: section-4
-          title: AI Agent Orchestration
+          title: "AI Agent Orchestration"
           path: ai-agent-orchestration
-          description: ""
           children:
             - type: space
               key: space-4
-              title: Imported content docs
-              path: imported-content-docs
+              title: "AI Agent Orchestration"
+              path: ai-agent-orchestration
               default: true
               content:
-                directory: ./imported-content
+                directory: ./ai-platform/ai-agent-orchestration
         - type: section
           key: section-3
-          title: Build AI Agents
+          title: "Build AI Agents"
           path: build-ai-agents
-          description: ""
           children:
             - type: space
               key: space-1
-              title: Imported content docs
-              path: imported-content-docs
+              title: "Build AI Agents"
+              path: build-ai-agents
               default: true
               content:
-                directory: ./imported-content
+                directory: ./ai-platform/build-ai-agents
         - type: section
           key: section-5
-          title: AI Governance & Security
+          title: "AI Governance & Security"
           path: ai-governance-and-security
           children:
             - type: space
               key: space-5
-              title: Imported content docs
-              path: imported-content-docs
+              title: "AI Governance & Security"
+              path: ai-governance-and-security
               default: true
               content:
-                directory: ./imported-content
+                directory: ./ai-platform/ai-governance-security
         - type: section
           key: section-6
-          title: Data Analytics & Insights
+          title: "Data Analytics & Insights"
           path: data-analytics-and-insights
           children:
             - type: space
               key: space-6
-              title: Imported content docs
-              path: imported-content-docs
+              title: "Data Analytics & Insights"
+              path: data-analytics-and-insights
               default: true
               content:
-                directory: ./imported-content
+                directory: ./ai-platform/data-analytics-insights
         - type: section
           key: section-8
-          title: Tools & Integrations
-          path: tools-and-integrations
-          description: ""
+          title: "Integrations"
+          path: integrations
           children:
             - type: space
               key: space-8
-              title: Imported content docs
-              path: imported-content-docs
+              title: "Integrations"
+              path: integrations
               default: true
               content:
-                directory: ./imported-content
+                directory: ./ai-platform/integrations
+        - type: section
+          key: section-15
+          title: "Conversational AI Apps"
+          path: conversational-ai-apps
+          children:
+            - type: space
+              key: space-15
+              title: "Conversational AI Apps"
+              path: conversational-ai-apps
+              default: true
+              content:
+                directory: ./ai-platform/conversational-ai-apps
         - type: section
           key: section-7
-          title: Release Lifecycle & Versioning
+          title: "Release Lifecycle & Versioning"
           path: release-lifecycle-and-versioning
           children:
             - type: space
               key: space-7
-              title: Imported content docs
-              path: imported-content-docs
+              title: "Release Lifecycle & Versioning"
+              path: release-lifecycle-and-versioning
               default: true
               content:
-                directory: ./imported-content
+                directory: ./ai-platform/release-lifecycle
+        - type: section
+          key: section-16
+          title: "How to"
+          path: how-to
+          children:
+            - type: space
+              key: space-16
+              title: "How to"
+              path: how-to
+              default: true
+              content:
+                directory: ./ai-platform/how-to
+    - type: section-group
+      key: section-group-3
+      title: "Knowledge & Data"
+      children:
+        - type: section
+          key: section-17
+          title: "Knowledge Base"
+          path: knowledge-base
+          children:
+            - type: space
+              key: space-17
+              title: "Knowledge Base"
+              path: knowledge-base
+              default: true
+              content:
+                directory: ./knowledge-and-data/knowledge-base
+        - type: section
+          key: section-18
+          title: "Data Service"
+          path: data-service
+          children:
+            - type: space
+              key: space-18
+              title: "Data Service"
+              path: data-service
+              default: true
+              content:
+                directory: ./knowledge-and-data/data-service
+    - type: section
+      key: section-19
+      title: "Solution Library"
+      path: solution-library
+      children:
+        - type: space
+          key: space-19
+          title: "Solution Library"
+          path: solution-library
+          default: true
+          content:
+            directory: ./solution-library
+    - type: section
+      key: section-20
+      title: "Druid Voice"
+      path: druid-voice
+      children:
+        - type: space
+          key: space-20
+          title: "Druid Voice"
+          path: druid-voice
+          default: true
+          content:
+            directory: ./druid-voice
     - type: section-group
       key: section-group-2
-      title: Human Handoff
+      title: "Human Handoff"
       children:
         - type: section
           key: section-9
-          title: Live Chat
+          title: "Live Chat"
           path: live-chat
-          description: ""
           children:
             - type: space
               key: space-9
-              title: Imported content docs
-              path: imported-content-docs
+              title: "Live Chat"
+              path: live-chat
               default: true
               content:
-                directory: ./imported-content
+                directory: ./human-handoff/live-chat
         - type: section
-          key: section-10
-          title: Set up Live Chat
-          path: set-up-live-chat
-          description: ""
+          key: section-21
+          title: "Contact Centers"
+          path: contact-centers
           children:
             - type: space
-              key: space-10
-              title: Imported content docs
-              path: imported-content-docs
+              key: space-21
+              title: "Contact Centers"
+              path: contact-centers
               default: true
               content:
-                directory: ./imported-content
+                directory: ./human-handoff/contact-centers
+    - type: section
+      key: section-22
+      title: "Channels"
+      path: channels
+      children:
+        - type: space
+          key: space-22
+          title: "Channels"
+          path: channels
+          default: true
+          content:
+            directory: ./channels
+    - type: section-group
+      key: section-group-4
+      title: "Druid Deployment"
+      children:
         - type: section
-          key: section-11
-          title: Multichat
-          path: multichat
-          description: ""
+          key: section-23
+          title: "Full Cloud"
+          path: full-cloud
           children:
             - type: space
-              key: space-11
-              title: Imported content docs
-              path: imported-content-docs
+              key: space-23
+              title: "Full Cloud"
+              path: full-cloud
               default: true
               content:
-                directory: ./imported-content
+                directory: ./druid-deployment/full-cloud
         - type: section
-          key: section-12
-          title: Agent Assist
-          path: agent-assist
+          key: section-24
+          title: "Hybrid"
+          path: hybrid
           children:
             - type: space
-              key: space-12
-              title: Imported content docs
-              path: imported-content-docs
+              key: space-24
+              title: "Hybrid"
+              path: hybrid
               default: true
               content:
-                directory: ./imported-content
+                directory: ./druid-deployment/hybrid
         - type: section
-          key: section-13
-          title: Real-time Machine Translation
-          path: real-time-machine-translation
-          description: ""
+          key: section-25
+          title: "HA On-premises"
+          path: ha-on-premises
           children:
             - type: space
-              key: space-13
-              title: Imported content docs
-              path: imported-content-docs
+              key: space-25
+              title: "HA On-premises"
+              path: ha-on-premises
               default: true
               content:
-                directory: ./imported-content
+                directory: ./druid-deployment/ha-on-premises
         - type: section
-          key: section-14
-          title: Live Dashboard
-          path: imported-content-docs-live-dashboard
-          description: ""
+          key: section-26
+          title: "Edge"
+          path: edge
           children:
             - type: space
-              key: space-14
-              title: Imported content docs
-              path: imported-content-docs
+              key: space-26
+              title: "Edge"
+              path: edge
               default: true
               content:
-                directory: ./imported-content
+                directory: ./druid-deployment/edge
+    - type: section-group
+      key: section-group-5
+      title: "Releases & Roadmap"
+      children:
+        - type: section
+          key: section-27
+          title: "Platform Releases"
+          path: platform-releases
+          children:
+            - type: space
+              key: space-27
+              title: "Platform Releases"
+              path: platform-releases
+              default: true
+              content:
+                directory: ./releases/platform-releases
+        - type: section
+          key: section-28
+          title: "Business Apps Releases"
+          path: business-apps-releases
+          children:
+            - type: space
+              key: space-28
+              title: "Business Apps Releases"
+              path: business-apps-releases
+              default: true
+              content:
+                directory: ./releases/business-apps-releases

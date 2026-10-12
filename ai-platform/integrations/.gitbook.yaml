@@ -1,0 +1,5 @@
+root: .
+
+structure:
+  readme: "Content/7_Integrations/Integrations.md"
+  summary: SUMMARY.md

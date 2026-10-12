@@ -1,0 +1,5 @@
+root: .
+
+structure:
+  readme: "Content/Druid Deployment/Hybrid Deployment.md"
+  summary: SUMMARY.md

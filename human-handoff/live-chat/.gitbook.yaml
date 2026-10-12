@@ -1,0 +1,5 @@
+root: .
+
+structure:
+  readme: "Content/Live Chat/Live Chat.md"
+  summary: SUMMARY.md

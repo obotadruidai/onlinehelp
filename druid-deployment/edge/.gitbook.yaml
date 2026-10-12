@@ -1,0 +1,5 @@
+root: .
+
+structure:
+  readme: "Content/Druid Deployment/Edge Deployment.md"
+  summary: SUMMARY.md

@@ -1,3 +1,3 @@
 # Table of contents
 
-* [Druid AI](README.md)
+* [Home](Content/Home.md)

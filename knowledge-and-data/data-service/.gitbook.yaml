@@ -1,0 +1,5 @@
+root: .
+
+structure:
+  readme: "Content/7_Integrations/Data Service/Druid_Data_Service.md"
+  summary: SUMMARY.md

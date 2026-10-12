@@ -1,0 +1,28 @@
+---
+title: Adding Conditional Merge Statements into Template
+---
+
+
+To include document sections or specific field values depending on the value filled in the record, add conditional statements to the template by using IF THEN logic. Conditional statements are case and space sensitive.
+
+To add a conditional merge statement:
+
+1. In the main document, click where you want to insert the field.
+2. In the **Insert** tab, click **Quick Parts** and then **Field…**.
+
+![](<../../../.gitbook/assets/Adding Merge Fields.png>)
+
+The Field page appears.
+
+3. From the Field names, select **If**.
+4. In the **Field code**, enter the IF statement.
+
+{% hint style="info" %}
+**NOTE:** When writing the statement always use double quote marks for expressions, TrueText and FalseText.
+{% endhint %}
+
+Example:
+
+![](<../../../.gitbook/assets/Adding Conditional Merge Statements.png>)
+
+5. Click **OK**.
