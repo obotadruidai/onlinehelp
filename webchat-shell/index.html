@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Druid AI Docs</title>
+    <link rel="stylesheet" href="https://prod-druid-apc.azureedge.net/v2/druid_webchat_v2.css">
+    <style>
+        html, body {
+            margin: 0;
+            height: 100%;
+            font-family: sans-serif;
+        }
+        header {
+            height: 60px;
+            box-sizing: border-box;
+            background: #1e1e1e;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 18px;
+            font-weight: 600;
+        }
+        iframe {
+            display: block;
+            width: 100%;
+            height: calc(100% - 60px);
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Druid AI Docs</h1>
+    </header>
+
+    <iframe src="https://druidai.gitbook.io/druid-ai-docs" title="Documentation"></iframe>
+
+    <script defer src="https://prod-druid-apc.azureedge.net/v2/druid_webchat_v2.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            DruidWebchat_v2.init({
+                botId: "2ae61f2a-e12d-4ef2-c883-08d942b1c484",
+                baseUrl: "https://druidapi.druidplatform.com",
+                queryParams: ""
+            });
+        });
+    </script>
+</body>
+</html>
