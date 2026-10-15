@@ -4,197 +4,197 @@ site:
   structure:
     - type: section
       key: section-1
-      title: "Home"
+      title: Home
       path: home
       default: true
       children:
         - type: space
           key: space-2
-          title: "Home"
+          title: Home
           path: home
           default: true
           content:
             directory: ./home
     - type: section
       key: section-37
-      title: "AI Platform"
+      title: AI Platform
       path: ai-platform
       children:
         - type: space
           key: space-37
-          title: "AI Platform"
+          title: AI Platform
           path: ai-platform
           default: true
           content:
             directory: ./ai-platform
     - type: section-group
       key: section-group-3
-      title: "Knowledge & Data"
+      title: Knowledge & Data
       children:
         - type: section
           key: section-17
-          title: "Knowledge Base"
+          title: Knowledge Base
           path: knowledge-base
           children:
             - type: space
               key: space-17
-              title: "Knowledge Base"
+              title: Knowledge Base
               path: knowledge-base
               default: true
               content:
                 directory: ./knowledge-and-data/knowledge-base
         - type: section
           key: section-18
-          title: "Data Service"
+          title: Data Service
           path: data-service
           children:
             - type: space
               key: space-18
-              title: "Data Service"
+              title: Data Service
               path: data-service
               default: true
               content:
                 directory: ./knowledge-and-data/data-service
     - type: section
       key: section-19
-      title: "Solution Library"
+      title: Solution Library
       path: solution-library
       children:
         - type: space
           key: space-19
-          title: "Solution Library"
+          title: Solution Library
           path: solution-library
           default: true
           content:
             directory: ./solution-library
     - type: section
       key: section-20
-      title: "Druid Voice"
+      title: Druid Voice
       path: druid-voice
       children:
         - type: space
           key: space-20
-          title: "Druid Voice"
+          title: Druid Voice
           path: druid-voice
           default: true
           content:
             directory: ./druid-voice
     - type: section-group
       key: section-group-2
-      title: "Human Handoff"
+      title: Human Handoff
       children:
         - type: section
           key: section-9
-          title: "Live Chat"
+          title: Live Chat
           path: live-chat
           children:
             - type: space
               key: space-36
-              title: "Live Chat"
+              title: Live Chat
               path: live-chat
               default: true
               content:
                 directory: ./human-handoff/live-chat
         - type: section
           key: section-21
-          title: "Contact Centers"
+          title: Contact Centers
           path: contact-centers
           children:
             - type: space
               key: space-21
-              title: "Contact Centers"
+              title: Contact Centers
               path: contact-centers
               default: true
               content:
                 directory: ./human-handoff/contact-centers
     - type: section
       key: section-22
-      title: "Channels"
+      title: Channels
       path: channels
       children:
         - type: space
           key: space-22
-          title: "Channels"
+          title: Channels
           path: channels
           default: true
           content:
             directory: ./channels
     - type: section-group
       key: section-group-4
-      title: "Druid Deployment"
+      title: Druid Deployment
       children:
         - type: section
           key: section-23
-          title: "Full Cloud"
+          title: Full Cloud
           path: full-cloud
           children:
             - type: space
               key: space-23
-              title: "Full Cloud"
+              title: Full Cloud
               path: full-cloud
               default: true
               content:
                 directory: ./druid-deployment/full-cloud
         - type: section
           key: section-24
-          title: "Hybrid"
+          title: Hybrid
           path: hybrid
           children:
             - type: space
               key: space-24
-              title: "Hybrid"
+              title: Hybrid
               path: hybrid
               default: true
               content:
                 directory: ./druid-deployment/hybrid
         - type: section
           key: section-25
-          title: "HA On-premises"
+          title: HA On-premises
           path: ha-on-premises
           children:
             - type: space
               key: space-25
-              title: "HA On-premises"
+              title: HA On-premises
               path: ha-on-premises
               default: true
               content:
                 directory: ./druid-deployment/ha-on-premises
         - type: section
           key: section-26
-          title: "Edge"
+          title: Edge
           path: edge
           children:
             - type: space
               key: space-26
-              title: "Edge"
+              title: Edge
               path: edge
               default: true
               content:
                 directory: ./druid-deployment/edge
     - type: section-group
       key: section-group-5
-      title: "Releases & Roadmap"
+      title: Releases & Roadmap
       children:
         - type: section
           key: section-27
-          title: "Platform Releases"
+          title: Platform Releases
           path: platform-releases
           children:
             - type: space
               key: space-27
-              title: "Platform Releases"
+              title: Platform Releases
               path: platform-releases
               default: true
               content:
                 directory: ./releases/platform-releases
         - type: section
           key: section-28
-          title: "Business Apps Releases"
+          title: Business Apps Releases
           path: business-apps-releases
           children:
             - type: space
               key: space-28
-              title: "Business Apps Releases"
+              title: Business Apps Releases
               path: business-apps-releases
               default: true
               content:
